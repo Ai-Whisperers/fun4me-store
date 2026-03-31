@@ -188,7 +188,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^20.3.1",
-    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/config-conventional": "^20.5.0",
     "@faker-js/faker": "^10.2.0",
     "@next/bundle-analyzer": "^16.1.6",
     "@playwright/test": "^1.57.0",
