@@ -1,0 +1,327 @@
+{
+  "$schema": "../_TEMPLATE/images-schema.json",
+  "version": "1.0",
+  "basePath": "/branding/terrapet/images",
+  "images": {
+    "hero": {
+      "main": {
+        "src": "hero-bg.jpg",
+        "alt": "Veterinaria Adris - Cuidado experto para tu mascota",
+        "width": 1920,
+        "height": 1080
+      },
+      "about": {
+        "src": "about-hero.jpg",
+        "alt": "Nuestra historia - Veterinaria Adris",
+        "width": 1920,
+        "height": 1080
+      },
+      "services": {
+        "src": "services-hero.jpg",
+        "alt": "Servicios veterinarios profesionales",
+        "width": 1920,
+        "height": 1080
+      },
+      "store": {
+        "src": "store-hero.jpg",
+        "alt": "Tienda de productos para mascotas",
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "team": {
+      "adriana": {
+        "src": "team/adriana.jpg",
+        "alt": "Dra. Adriana - Directora Médica",
+        "width": 400,
+        "height": 533
+      },
+      "jorge": {
+        "src": "team/jorge.jpg",
+        "alt": "Dr. Jorge - Cirujano Veterinario",
+        "width": 400,
+        "height": 533
+      },
+      "fernanda": {
+        "src": "team/fernanda.jpg",
+        "alt": "Dra. Fernanda - Imagenología",
+        "width": 400,
+        "height": 533
+      },
+      "carolina": {
+        "src": "team/carolina.jpg",
+        "alt": "Carolina - Especialista en Grooming",
+        "width": 400,
+        "height": 533
+      }
+    },
+    "facilities": {
+      "reception": {
+        "src": "facilities/reception.jpg",
+        "alt": "Recepción de Veterinaria Adris",
+        "width": 800,
+        "height": 600
+      },
+      "surgery": {
+        "src": "facilities/surgery.jpg",
+        "alt": "Quirófano equipado",
+        "width": 800,
+        "height": 600
+      },
+      "lab": {
+        "src": "facilities/lab.jpg",
+        "alt": "Laboratorio de diagnóstico",
+        "width": 800,
+        "height": 600
+      },
+      "grooming": {
+        "src": "facilities/grooming.jpg",
+        "alt": "Salón de grooming",
+        "width": 800,
+        "height": 600
+      },
+      "hospitalization": {
+        "src": "facilities/hospitalization.jpg",
+        "alt": "Área de hospitalización",
+        "width": 800,
+        "height": 600
+      },
+      "imaging": {
+        "src": "facilities/imaging.jpg",
+        "alt": "Sala de imagenología",
+        "width": 800,
+        "height": 600
+      },
+      "consultation": {
+        "src": "facilities/consultation.jpg",
+        "alt": "Consultorio veterinario",
+        "width": 800,
+        "height": 600
+      }
+    },
+    "services": {
+      "consultation": {
+        "src": "services/consultation.jpg",
+        "alt": "Consulta veterinaria general",
+        "width": 800,
+        "height": 600
+      },
+      "vaccination": {
+        "src": "services/vaccination.jpg",
+        "alt": "Vacunación de mascotas",
+        "width": 800,
+        "height": 600
+      },
+      "surgery": {
+        "src": "services/surgery.jpg",
+        "alt": "Cirugía veterinaria",
+        "width": 800,
+        "height": 600
+      },
+      "dental": {
+        "src": "services/dental.jpg",
+        "alt": "Odontología veterinaria",
+        "width": 800,
+        "height": 600
+      },
+      "imaging": {
+        "src": "services/imaging.jpg",
+        "alt": "Ecografía y rayos X",
+        "width": 800,
+        "height": 600
+      },
+      "lab": {
+        "src": "services/lab.jpg",
+        "alt": "Análisis de laboratorio",
+        "width": 800,
+        "height": 600
+      },
+      "emergency": {
+        "src": "services/emergency.jpg",
+        "alt": "Urgencias 24 horas",
+        "width": 800,
+        "height": 600
+      },
+      "hospitalization": {
+        "src": "services/hospitalization.jpg",
+        "alt": "Hospitalización y cuidados",
+        "width": 800,
+        "height": 600
+      },
+      "grooming-bath": {
+        "src": "services/grooming-bath.jpg",
+        "alt": "Baño y spa para mascotas",
+        "width": 800,
+        "height": 600
+      },
+      "grooming-haircut": {
+        "src": "services/grooming-haircut.jpg",
+        "alt": "Corte y estilismo",
+        "width": 800,
+        "height": 600
+      },
+      "senior-care": {
+        "src": "services/senior-care.jpg",
+        "alt": "Cuidado de mascotas senior",
+        "width": 800,
+        "height": 600
+      },
+      "travel-docs": {
+        "src": "services/travel-docs.jpg",
+        "alt": "Documentación para viajes",
+        "width": 800,
+        "height": 600
+      }
+    },
+    "features": {
+      "emergency-24h": {
+        "src": "features/emergency-24h.jpg",
+        "alt": "Atención 24 horas",
+        "width": 400,
+        "height": 400
+      },
+      "certified-vaccines": {
+        "src": "features/certified-vaccines.jpg",
+        "alt": "Vacunas certificadas",
+        "width": 400,
+        "height": 400
+      },
+      "advanced-diagnostics": {
+        "src": "features/advanced-diagnostics.jpg",
+        "alt": "Diagnóstico avanzado",
+        "width": 400,
+        "height": 400
+      },
+      "delivery": {
+        "src": "features/delivery.jpg",
+        "alt": "Delivery de productos",
+        "width": 400,
+        "height": 400
+      }
+    },
+    "store": {
+      "category-food": {
+        "src": "store/category-food.jpg",
+        "alt": "Alimentos premium para mascotas",
+        "width": 800,
+        "height": 600
+      },
+      "category-accessories": {
+        "src": "store/category-accessories.jpg",
+        "alt": "Accesorios para mascotas",
+        "width": 800,
+        "height": 600
+      },
+      "category-health": {
+        "src": "store/category-health.jpg",
+        "alt": "Productos de salud",
+        "width": 800,
+        "height": 600
+      },
+      "category-hygiene": {
+        "src": "store/category-hygiene.jpg",
+        "alt": "Productos de higiene",
+        "width": 800,
+        "height": 600
+      }
+    },
+    "tools": {
+      "toxic-checker": {
+        "src": "tools/toxic-checker.jpg",
+        "alt": "Verificador de alimentos tóxicos",
+        "width": 1200,
+        "height": 675
+      },
+      "age-calculator": {
+        "src": "tools/age-calculator.jpg",
+        "alt": "Calculadora de edad",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "patterns": {
+      "paw-pattern": {
+        "src": "patterns/paw-pattern.png",
+        "alt": "",
+        "width": 200,
+        "height": 200
+      },
+      "pet-silhouettes": {
+        "src": "patterns/pet-silhouettes.png",
+        "alt": "Ilustración de mascota perdida",
+        "width": 400,
+        "height": 400
+      }
+    },
+    "branding": {
+      "logo": {
+        "src": "logo.png",
+        "alt": "Veterinaria Adris Logo",
+        "width": 300,
+        "height": 112
+      },
+      "logo-dark": {
+        "src": "logo-dark.png",
+        "alt": "Veterinaria Adris Logo (dark)",
+        "width": 300,
+        "height": 112
+      },
+      "favicon": {
+        "src": "favicon.ico",
+        "alt": "Favicon",
+        "width": 32,
+        "height": 32
+      },
+      "og-image": {
+        "src": "og-image.jpg",
+        "alt": "Veterinaria Adris - Open Graph",
+        "width": 1200,
+        "height": 630
+      },
+      "apple-touch-icon": {
+        "src": "apple-touch-icon.png",
+        "alt": "Apple Touch Icon",
+        "width": 180,
+        "height": 180
+      }
+    },
+    "brands": {
+      "royal-canin": {
+        "src": "brands/royal-canin.png",
+        "alt": "Royal Canin",
+        "width": 150,
+        "height": 60
+      },
+      "pro-plan": {
+        "src": "brands/pro-plan.png",
+        "alt": "Pro Plan",
+        "width": 150,
+        "height": 60
+      },
+      "hills": {
+        "src": "brands/hills.png",
+        "alt": "Hill's",
+        "width": 150,
+        "height": 60
+      },
+      "bravecto": {
+        "src": "brands/bravecto.png",
+        "alt": "Bravecto",
+        "width": 150,
+        "height": 60
+      }
+    }
+  },
+  "placeholders": {
+    "pet": "/images/placeholders/pet-placeholder.jpg",
+    "product": "/images/placeholders/product-placeholder.jpg",
+    "team": "/images/placeholders/team-placeholder.jpg",
+    "service": "/images/placeholders/service-placeholder.jpg"
+  },
+  "testimonials": {
+    "pet-1": "/branding/terrapet/images/testimonials/pet-1.jpg",
+    "pet-2": "/branding/terrapet/images/testimonials/pet-2.jpg",
+    "pet-5": "/branding/terrapet/images/testimonials/pet-5.jpg",
+    "pet-6": "/branding/terrapet/images/testimonials/pet-6.jpg"
+  }
+}

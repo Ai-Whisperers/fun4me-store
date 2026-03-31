@@ -1,0 +1,21 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aboutGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="aboutGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#aboutGradient)"/>
+  <ellipse cx="960" cy="540" rx="700" ry="450" fill="url(#aboutGlow)"/>
+  <!-- Heart icon -->
+  <g transform="translate(910, 470)" opacity="0.25">
+    <path d="M50 30 Q50 0 80 0 Q110 0 110 30 Q110 0 140 0 Q170 0 170 30 Q170 70 110 110 Q50 70 50 30 Z" fill="#E91E63"/>
+  </g>
+  <!-- Decorative elements -->
+  <circle cx="300" cy="250" r="60" fill="none" stroke="#9C27B0" stroke-width="1" opacity="0.15"/>
+  <circle cx="1600" cy="800" r="100" fill="none" stroke="#E91E63" stroke-width="1" opacity="0.15"/>
+</svg>

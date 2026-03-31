@@ -1,0 +1,6 @@
+export { PetSummaryTab } from './pet-summary-tab'
+export { PetVaccinesTab } from './pet-vaccines-tab'
+export { PetHistoryTab } from './pet-history-tab'
+export { PetAppointmentsTab } from './pet-appointments-tab'
+export { PetDocumentsTab } from './pet-documents-tab'
+export { PetFinancesTab } from './pet-finances-tab'

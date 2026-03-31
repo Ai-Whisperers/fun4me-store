@@ -1,0 +1,327 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "pedigree",
+  "products": [
+    {
+      "sku": "PED-DOG-ADULT",
+      "name": "Pedigree Adulto",
+      "description": "Alimento completo para perros adultos con carne y vegetales",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 58000,
+          "cost_price": 34800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-15KG"
+        },
+        {
+          "size": "21kg",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-21KG"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "main_ingredient": "Carne"
+      }
+    },
+    {
+      "sku": "PED-DOG-ADULT-CARNE",
+      "name": "Pedigree Adulto Carne",
+      "description": "Alimento para perros adultos sabor carne",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 62000,
+          "cost_price": 37200,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 235000,
+          "cost_price": 141000,
+          "sku_suffix": "-15KG"
+        },
+        {
+          "size": "21kg",
+          "base_price": 305000,
+          "cost_price": 183000,
+          "sku_suffix": "-21KG"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png"
+      ],
+      "attributes": {
+        "flavor": "Carne",
+        "age_range": "1+ años"
+      }
+    },
+    {
+      "sku": "PED-DOG-PUPPY",
+      "name": "Pedigree Cachorro",
+      "description": "Alimento para cachorros con vitaminas y minerales esenciales",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 68000,
+          "cost_price": 40800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 155000,
+          "cost_price": 93000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 265000,
+          "cost_price": 159000,
+          "sku_suffix": "-15KG"
+        },
+        {
+          "size": "21kg",
+          "base_price": 345000,
+          "cost_price": 207000,
+          "sku_suffix": "-21KG"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Puppy"
+      }
+    },
+    {
+      "sku": "PED-DOG-SENIOR",
+      "name": "Pedigree Senior 7+",
+      "description": "Alimento para perros mayores de 7 años con antioxidantes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png"
+      ],
+      "attributes": {
+        "age_range": "7+ años",
+        "special_need": "Senior"
+      }
+    },
+    {
+      "sku": "PED-DOG-MINI",
+      "name": "Pedigree Razas Pequeñas",
+      "description": "Alimento para perros adultos de razas pequeñas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 32000,
+          "cost_price": 19200,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 78000,
+          "cost_price": 46800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "6kg",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-6KG"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png"
+      ],
+      "attributes": {
+        "breed_size": "Pequeño",
+        "kibble_size": "Mini"
+      }
+    },
+    {
+      "sku": "PED-DOG-WET-CARNE",
+      "name": "Pedigree Húmedo Carne",
+      "description": "Alimento húmedo en lata sabor carne para perros adultos",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "290g",
+          "base_price": 18000,
+          "cost_price": 10800,
+          "sku_suffix": "-290G"
+        }
+      ],
+      "image_url": "https://www.ciudaddemascotas.com/pub/media/catalog/product/p/e/pedigree_lata_adulto_carne.jpg",
+      "images": [
+        "https://www.ciudaddemascotas.com/pub/media/catalog/product/p/e/pedigree_lata_adulto_carne.jpg",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-08/12345678-product-image-1.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png"
+      ],
+      "attributes": {
+        "format": "Lata",
+        "flavor": "Carne"
+      }
+    },
+    {
+      "sku": "PED-DOG-WET-POLLO",
+      "name": "Pedigree Húmedo Pollo",
+      "description": "Alimento húmedo en lata sabor pollo para perros adultos",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "290g",
+          "base_price": 18000,
+          "cost_price": 10800,
+          "sku_suffix": "-290G"
+        }
+      ],
+      "image_url": "https://www.ciudaddemascotas.com/pub/media/catalog/product/p/e/pedigree_lata_adulto_carne.jpg",
+      "images": [
+        "https://www.ciudaddemascotas.com/pub/media/catalog/product/p/e/pedigree_lata_adulto_carne.jpg",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-08/12345678-product-image-1.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png"
+      ],
+      "attributes": {
+        "format": "Lata",
+        "flavor": "Pollo"
+      }
+    },
+    {
+      "sku": "PED-DENTASTIX",
+      "name": "Pedigree Dentastix",
+      "description": "Snacks dentales para limpieza de dientes y aliento fresco",
+      "category_slug": "NUT-CAN-SNA",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "7 unidades",
+          "base_price": 42000,
+          "cost_price": 25200,
+          "sku_suffix": "-7"
+        },
+        {
+          "size": "28 unidades",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-28"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png"
+      ],
+      "attributes": {
+        "purpose": "Salud dental",
+        "texture": "Masticable"
+      }
+    },
+    {
+      "sku": "PED-BISCROK",
+      "name": "Pedigree Biscrok",
+      "description": "Galletas crujientes para perros adultos",
+      "category_slug": "NUT-CAN-SNA",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 32000,
+          "cost_price": 19200,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 52000,
+          "cost_price": 31200,
+          "sku_suffix": "-1KG"
+        }
+      ],
+      "image_url": "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+      "images": [
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-12/balance-natural-croquetas-adulto-con-res-y-vegetales-4kg_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/ADULTO-11KG_0.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/CACHORRO-4KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2024-11/RP-10KG.png",
+        "https://www.pedigree.com.mx/cdn-cgi/image/width=410,format=auto,q=90/sites/g/files/fnmzdf1501/files/2022-10/7506174515065-product-image-1.png"
+      ],
+      "attributes": {
+        "type": "Galletas",
+        "texture": "Crujiente"
+      }
+    }
+  ]
+}

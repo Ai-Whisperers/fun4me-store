@@ -1,0 +1,123 @@
+# ===========================================
+# SKILL: Explicar Codigo
+# ===========================================
+# Explica codigo de forma didactica para estudiantes
+
+name: explain-code
+description: "Explica codigo de forma clara y didactica"
+version: "1.0.0"
+author: "Estudiantes FPUNA"
+
+# Cuando se activa este skill
+triggers:
+  - "/explain"
+  - "/explicar"
+  - "explicame este codigo"
+  - "que hace este codigo"
+  - "como funciona"
+
+# Parametros que acepta
+parameters:
+  - name: codigo
+    type: string
+    required: true
+    description: "Codigo a explicar"
+    
+  - name: nivel
+    type: string
+    required: false
+    default: "intermedio"
+    options:
+      - basico
+      - intermedio
+      - avanzado
+    description: "Nivel de detalle de la explicacion"
+
+# Instrucciones para el agente
+instructions: |
+  Explica el codigo de forma didactica siguiendo este formato:
+  
+  ## 1. RESUMEN GENERAL
+  En 1-2 oraciones, explica QUE HACE el codigo en general.
+  
+  ## 2. LINEA POR LINEA
+  Explica cada linea o bloque importante:
+  ```
+  Linea X: [codigo]
+  -> Explicacion: [que hace y por que]
+  ```
+  
+  ## 3. CONCEPTOS CLAVE
+  Lista los conceptos de programacion usados:
+  - Concepto 1: breve explicacion
+  - Concepto 2: breve explicacion
+  
+  ## 4. FLUJO DE EJECUCION
+  Describe paso a paso como se ejecuta:
+  1. Primero...
+  2. Luego...
+  3. Finalmente...
+  
+  ## 5. EJEMPLO PRACTICO
+  Si es posible, muestra un ejemplo de uso con entrada y salida esperada.
+  
+  ## NIVELES DE EXPLICACION
+  
+  **BASICO**: Asume que el estudiante conoce solo lo fundamental
+  - Explica cada concepto
+  - Usa analogias simples
+  - Evita jerga tecnica
+  
+  **INTERMEDIO**: Asume conocimiento medio
+  - Explica conceptos nuevos
+  - Menciona buenas practicas
+  - Sugiere mejoras
+  
+  **AVANZADO**: Asume conocimiento solido
+  - Discute complejidad
+  - Menciona alternativas
+  - Habla de optimizaciones
+
+# Ejemplos de explicaciones
+examples:
+  - codigo: |
+      def factorial(n):
+          if n <= 1:
+              return 1
+          return n * factorial(n - 1)
+    
+    explicacion: |
+      ## RESUMEN
+      Esta funcion calcula el factorial de un numero usando recursion.
+      
+      ## LINEA POR LINEA
+      
+      `def factorial(n):` 
+      -> Define una funcion llamada "factorial" que recibe un parametro "n"
+      
+      `if n <= 1:`
+      -> Caso base: si n es 0 o 1, terminamos la recursion
+      
+      `return 1`
+      -> El factorial de 0 y 1 es 1
+      
+      `return n * factorial(n - 1)`
+      -> Caso recursivo: n! = n * (n-1)!
+      
+      ## CONCEPTOS CLAVE
+      - **Recursion**: funcion que se llama a si misma
+      - **Caso base**: condicion para detener la recursion
+      - **Caso recursivo**: la llamada recursiva
+      
+      ## FLUJO DE EJECUCION
+      Para factorial(4):
+      1. factorial(4) -> 4 * factorial(3)
+      2. factorial(3) -> 3 * factorial(2)
+      3. factorial(2) -> 2 * factorial(1)
+      4. factorial(1) -> 1 (caso base)
+      5. Se "desenrolla": 2*1=2, 3*2=6, 4*6=24
+      
+      ## EJEMPLO
+      ```python
+      print(factorial(5))  # Output: 120
+      ```

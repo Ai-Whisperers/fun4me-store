@@ -1,0 +1,16 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#8BC34A;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="170" r="50" fill="#4CAF50" opacity="0.2" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M175 170 L190 185 L225 150" stroke="#4CAF50" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="170" cy="220" r="15" fill="#8BC34A" opacity="0.3"/>
+  <circle cx="200" cy="240" r="15" fill="#8BC34A" opacity="0.3"/>
+  <circle cx="230" cy="220" r="15" fill="#8BC34A" opacity="0.3"/>
+  <text x="200" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4CAF50" font-weight="bold">Bienestar Intimo</text>
+  <text x="200" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8BC34A" opacity="0.7">Fun4Me</text>
+</svg>

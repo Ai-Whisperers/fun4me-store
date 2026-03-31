@@ -1,0 +1,316 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "nd-farmina",
+  "products": [
+    {
+      "sku": "ND-DOG-CHICKEN-POME-MED",
+      "name": "N&D Chicken & Pomegranate Adult Medium",
+      "description": "Alimento super premium sin cereales con pollo y granada",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "12kg",
+          "base_price": 995000,
+          "cost_price": 597000,
+          "sku_suffix": "-12KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png"
+      ],
+      "attributes": {
+        "line": "Ancestral Grain",
+        "grain_free": false,
+        "protein_source": "Pollo",
+        "breed_size": "Mediano"
+      }
+    },
+    {
+      "sku": "ND-DOG-LAMB-BLUEBERRY-MED",
+      "name": "N&D Lamb & Blueberry Adult Medium",
+      "description": "Alimento super premium sin cereales con cordero y arándano",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "12kg",
+          "base_price": 1050000,
+          "cost_price": 630000,
+          "sku_suffix": "-12KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png"
+      ],
+      "attributes": {
+        "line": "Prime",
+        "grain_free": true,
+        "protein_source": "Cordero"
+      }
+    },
+    {
+      "sku": "ND-DOG-PUMPKIN-BOAR",
+      "name": "N&D Pumpkin Boar & Apple Adult",
+      "description": "Alimento súper premium con jabalí, calabaza y manzana",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 325000,
+          "cost_price": 195000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "12kg",
+          "base_price": 1150000,
+          "cost_price": 690000,
+          "sku_suffix": "-12KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png"
+      ],
+      "attributes": {
+        "line": "Pumpkin",
+        "grain_free": true,
+        "protein_source": "Jabalí",
+        "digestive_support": "Calabaza"
+      }
+    },
+    {
+      "sku": "ND-DOG-QUINOA-DIGESTION",
+      "name": "N&D Quinoa Digestion Lamb",
+      "description": "Alimento funcional con quinoa para digestión sensible",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 315000,
+          "cost_price": 189000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 745000,
+          "cost_price": 447000,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png"
+      ],
+      "attributes": {
+        "line": "Quinoa",
+        "functional": "Digestión",
+        "grain_free": true
+      }
+    },
+    {
+      "sku": "ND-DOG-PUPPY-CHICKEN",
+      "name": "N&D Chicken & Pomegranate Puppy Medium",
+      "description": "Alimento super premium para cachorros medianos",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "12kg",
+          "base_price": 1050000,
+          "cost_price": 630000,
+          "sku_suffix": "-12KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png"
+      ],
+      "attributes": {
+        "lifestage": "Puppy",
+        "breed_size": "Mediano"
+      }
+    },
+    {
+      "sku": "ND-CAT-CHICKEN-POME",
+      "name": "N&D Chicken & Pomegranate Adult Cat",
+      "description": "Alimento super premium para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "5kg",
+          "base_price": 545000,
+          "cost_price": 327000,
+          "sku_suffix": "-5KG"
+        },
+        {
+          "size": "10kg",
+          "base_price": 995000,
+          "cost_price": 597000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png"
+      ],
+      "attributes": {
+        "line": "Prime",
+        "grain_free": true
+      }
+    },
+    {
+      "sku": "ND-CAT-FISH-ORANGE",
+      "name": "N&D Fish & Orange Adult Cat",
+      "description": "Alimento super premium con pescado y naranja para gatos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 205000,
+          "cost_price": 123000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "5kg",
+          "base_price": 575000,
+          "cost_price": 345000,
+          "sku_suffix": "-5KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png"
+      ],
+      "attributes": {
+        "line": "Prime",
+        "grain_free": true,
+        "protein_source": "Pescado"
+      }
+    },
+    {
+      "sku": "ND-CAT-NEUTERED",
+      "name": "N&D Chicken & Pomegranate Neutered Cat",
+      "description": "Alimento para gatos esterilizados con control de peso",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 205000,
+          "cost_price": 123000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "5kg",
+          "base_price": 575000,
+          "cost_price": 345000,
+          "sku_suffix": "-5KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png"
+      ],
+      "attributes": {
+        "special_need": "Esterilizado",
+        "weight_control": true
+      }
+    },
+    {
+      "sku": "ND-CAT-KITTEN",
+      "name": "N&D Chicken & Pomegranate Kitten",
+      "description": "Alimento super premium para gatitos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "5kg",
+          "base_price": 545000,
+          "cost_price": 327000,
+          "sku_suffix": "-5KG"
+        }
+      ],
+      "image_url": "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+      "images": [
+        "https://www.farmina.com/images/linee/brand-head/10_09_nd-prime.png",
+        "https://www.farmina.com/images/linee/brand-head/11_35_nd-ancestral-grain-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/_10_nd-ocean@web.png",
+        "https://www.farmina.com/images/linee/brand-head/50_47_nd-pumpkin-logo.png",
+        "https://www.farmina.com/images/linee/brand-head/54_39_nd-quinoa.png"
+      ],
+      "attributes": {
+        "lifestage": "Kitten",
+        "grain_free": true
+      }
+    }
+  ]
+}

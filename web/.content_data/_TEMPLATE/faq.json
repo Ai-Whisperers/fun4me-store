@@ -1,0 +1,32 @@
+[
+  {
+    "id": "appointment",
+    "category": "citas",
+    "question": "¿Cómo puedo agendar una cita?",
+    "answer": "Puedes agendar una cita a través de nuestro portal web haciendo clic en 'Agendar Cita', llamándonos por teléfono, o enviándonos un mensaje por WhatsApp."
+  },
+  {
+    "id": "payment-methods",
+    "category": "pagos",
+    "question": "¿Qué formas de pago aceptan?",
+    "answer": "Aceptamos efectivo, tarjetas de débito y crédito, y transferencias bancarias."
+  },
+  {
+    "id": "emergency",
+    "category": "urgencias",
+    "question": "¿Atienden emergencias?",
+    "answer": "Contamos con servicio de emergencias. En caso de emergencia, llámanos inmediatamente a nuestro número de contacto."
+  },
+  {
+    "id": "vaccines",
+    "category": "vacunas",
+    "question": "¿Qué vacunas necesita mi mascota?",
+    "answer": "El esquema de vacunación depende de la especie, edad y estilo de vida de tu mascota. Nuestros veterinarios te darán un plan personalizado."
+  },
+  {
+    "id": "medical-records",
+    "category": "historial",
+    "question": "¿Puedo ver el historial médico de mi mascota?",
+    "answer": "Sí, a través del Portal de Dueños puedes acceder al historial completo de vacunas, consultas y tratamientos."
+  }
+]

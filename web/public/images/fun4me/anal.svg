@@ -1,0 +1,14 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#673AB7;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <ellipse cx="200" cy="160" rx="35" ry="45" fill="#673AB7" opacity="0.3" stroke="#673AB7" stroke-width="2"/>
+  <rect x="185" y="200" width="30" height="40" rx="5" fill="#9C27B0" opacity="0.3" stroke="#9C27B0" stroke-width="2"/>
+  <ellipse cx="200" cy="260" rx="40" ry="15" fill="#673AB7" opacity="0.3" stroke="#673AB7" stroke-width="2"/>
+  <text x="200" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#673AB7" font-weight="bold">Juguetes Anales</text>
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9C27B0" opacity="0.7">Fun4Me</text>
+</svg>

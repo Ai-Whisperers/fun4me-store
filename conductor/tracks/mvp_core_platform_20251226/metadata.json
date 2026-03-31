@@ -1,0 +1,8 @@
+{
+  "track_id": "mvp_core_platform_20251226",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2025-12-26T18:07:00Z",
+  "updated_at": "2025-12-26T18:07:00Z",
+  "description": "MVP core veterinary platform with multi-tenancy, dynamic CMS, and appointment requests."
+}

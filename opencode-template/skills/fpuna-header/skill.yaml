@@ -1,0 +1,118 @@
+# ===========================================
+# SKILL: Encabezado FPUNA
+# ===========================================
+# Genera encabezados estandar para trabajos academicos
+
+name: fpuna-header
+description: "Genera encabezado estandar para trabajos de la FPUNA"
+version: "1.0.0"
+author: "Estudiantes FPUNA"
+
+# Cuando se activa este skill
+triggers:
+  - "/fpuna-header"
+  - "generar encabezado"
+  - "header fpuna"
+
+# Parametros que acepta
+parameters:
+  - name: materia
+    type: string
+    required: true
+    description: "Nombre de la materia"
+    
+  - name: profesor
+    type: string
+    required: true
+    description: "Nombre del profesor"
+    
+  - name: estudiante
+    type: string
+    required: true
+    description: "Nombre del estudiante"
+    
+  - name: ci
+    type: string
+    required: false
+    description: "Cedula de identidad"
+    
+  - name: fecha
+    type: string
+    required: false
+    default: "{{current_date}}"
+    description: "Fecha del trabajo"
+
+# Template del encabezado
+template: |
+  /*
+   * ============================================
+   * UNIVERSIDAD NACIONAL DE ASUNCION
+   * FACULTAD POLITECNICA
+   * ============================================
+   * 
+   * Materia: {{materia}}
+   * Profesor: {{profesor}}
+   * 
+   * Estudiante: {{estudiante}}
+   * CI: {{ci}}
+   * 
+   * Fecha: {{fecha}}
+   * ============================================
+   */
+
+# Variantes para diferentes lenguajes
+variants:
+  python:
+    extension: ".py"
+    template: |
+      """
+      ============================================
+      UNIVERSIDAD NACIONAL DE ASUNCION
+      FACULTAD POLITECNICA
+      ============================================
+      
+      Materia: {{materia}}
+      Profesor: {{profesor}}
+      
+      Estudiante: {{estudiante}}
+      CI: {{ci}}
+      
+      Fecha: {{fecha}}
+      ============================================
+      """
+
+  html:
+    extension: ".html"
+    template: |
+      <!--
+      ============================================
+      UNIVERSIDAD NACIONAL DE ASUNCION
+      FACULTAD POLITECNICA
+      ============================================
+      
+      Materia: {{materia}}
+      Profesor: {{profesor}}
+      
+      Estudiante: {{estudiante}}
+      CI: {{ci}}
+      
+      Fecha: {{fecha}}
+      ============================================
+      -->
+
+  sql:
+    extension: ".sql"
+    template: |
+      -- ============================================
+      -- UNIVERSIDAD NACIONAL DE ASUNCION
+      -- FACULTAD POLITECNICA
+      -- ============================================
+      -- 
+      -- Materia: {{materia}}
+      -- Profesor: {{profesor}}
+      -- 
+      -- Estudiante: {{estudiante}}
+      -- CI: {{ci}}
+      -- 
+      -- Fecha: {{fecha}}
+      -- ============================================

@@ -1,0 +1,8 @@
+{
+  "track_id": "conduct_authorization_audit_20251223",
+  "type": "bug",
+  "status": "new",
+  "created_at": "2025-12-23T12:00:00Z",
+  "updated_at": "2025-12-23T12:00:00Z",
+  "description": "Conduct a full audit of all API routes and server actions to ensure proper authorization logic is applied everywhere."
+}

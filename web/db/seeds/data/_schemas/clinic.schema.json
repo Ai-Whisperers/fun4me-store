@@ -1,0 +1,338 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "clinic.schema.json",
+  "title": "Clinic Operations Schemas",
+  "description": "Schemas for clinic-specific data: services, payment methods, kennels, templates, etc.",
+
+  "definitions": {
+    "Service": {
+      "type": "object",
+      "description": "Veterinary service offered by the clinic",
+      "required": ["name", "category", "base_price", "duration_minutes"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "consultation",
+            "grooming",
+            "treatment",
+            "vaccination",
+            "surgery",
+            "diagnostic",
+            "identification",
+            "hospitalization",
+            "dental",
+            "emergency"
+          ]
+        },
+        "base_price": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Price in Guaranies"
+        },
+        "duration_minutes": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 1440
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        },
+        "is_public": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether this service is visible for online booking"
+        },
+        "display_order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Calendar color (hex)"
+        },
+        "available_days": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1, "maximum": 7 },
+          "description": "Days available (1=Monday, 7=Sunday)"
+        },
+        "available_start_time": {
+          "type": "string",
+          "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+        },
+        "available_end_time": {
+          "type": "string",
+          "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+        },
+        "requires_deposit": {
+          "type": "boolean",
+          "default": false
+        },
+        "deposit_percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "species": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["dog", "cat", "bird", "rabbit", "all"] },
+          "default": ["all"],
+          "description": "Which species this service applies to"
+        }
+      }
+    },
+
+    "PaymentMethod": {
+      "type": "object",
+      "description": "Payment method accepted by the clinic",
+      "required": ["name", "type"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Display name in Spanish"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["cash", "card", "transfer", "qr", "check", "credit", "other"]
+        },
+        "is_default": {
+          "type": "boolean",
+          "default": false
+        },
+        "display_order": {
+          "type": "integer"
+        },
+        "fee_percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0,
+          "description": "Processing fee percentage"
+        },
+        "min_amount": {
+          "type": "integer",
+          "description": "Minimum amount for this method"
+        },
+        "max_amount": {
+          "type": "integer",
+          "description": "Maximum amount for this method"
+        },
+        "instructions": {
+          "type": "string",
+          "description": "Instructions for using this payment method"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "Kennel": {
+      "type": "object",
+      "description": "Hospitalization kennel/cage",
+      "required": ["name", "code", "kennel_type", "daily_rate"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Display name (e.g., 'Jaula 1')"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]+$",
+          "description": "Short code (e.g., 'K01')"
+        },
+        "kennel_type": {
+          "type": "string",
+          "enum": ["standard", "large", "extra-large", "icu", "isolation", "oxygen", "recovery"]
+        },
+        "daily_rate": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Daily rate in Guaranies"
+        },
+        "current_status": {
+          "type": "string",
+          "enum": ["available", "occupied", "cleaning", "maintenance", "reserved"],
+          "default": "available"
+        },
+        "max_weight_kg": {
+          "type": "number",
+          "description": "Maximum animal weight for this kennel"
+        },
+        "features": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Special features (e.g., 'heating', 'camera')"
+        },
+        "location": {
+          "type": "string",
+          "description": "Physical location in clinic"
+        }
+      }
+    },
+
+    "MessageTemplate": {
+      "type": "object",
+      "description": "Message template for notifications",
+      "required": ["code", "name", "category", "content"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z_]+$",
+          "description": "Unique template code"
+        },
+        "name": {
+          "type": "string",
+          "description": "Template name"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["appointment", "reminder", "transactional", "marketing", "system"]
+        },
+        "subject": {
+          "type": "string",
+          "description": "Email subject line (supports {{variables}})"
+        },
+        "content": {
+          "type": "string",
+          "description": "Message content (supports {{variables}})"
+        },
+        "content_html": {
+          "type": "string",
+          "description": "HTML version for emails"
+        },
+        "channels": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["email", "sms", "whatsapp", "push"] },
+          "default": ["email"]
+        },
+        "variables": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Available template variables"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "ConsentTemplate": {
+      "type": "object",
+      "description": "Consent form template",
+      "required": ["code", "name", "category", "title", "content_html"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z_]+$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "surgery",
+            "anesthesia",
+            "euthanasia",
+            "boarding",
+            "grooming",
+            "treatment",
+            "general"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Form title shown to client"
+        },
+        "content_html": {
+          "type": "string",
+          "description": "HTML content with {{variables}}"
+        },
+        "requires_witness": {
+          "type": "boolean",
+          "default": false
+        },
+        "validity_days": {
+          "type": ["integer", "null"],
+          "description": "Days until consent expires (null = never)"
+        },
+        "version": {
+          "type": "string",
+          "default": "1.0"
+        }
+      }
+    },
+
+    "TimeOffType": {
+      "type": "object",
+      "description": "Staff time-off category",
+      "required": ["name", "code"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]+$"
+        },
+        "is_paid": {
+          "type": "boolean",
+          "default": false
+        },
+        "max_days_per_year": {
+          "type": "integer"
+        },
+        "requires_approval": {
+          "type": "boolean",
+          "default": true
+        },
+        "requires_documentation": {
+          "type": "boolean",
+          "default": false
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      }
+    },
+
+    "QrTag": {
+      "type": "object",
+      "description": "QR tag for pet identification",
+      "required": ["code"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}[0-9]{3}[A-Z]{3}$",
+          "description": "Tag code (e.g., VT001ABC)"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        },
+        "is_registered": {
+          "type": "boolean",
+          "default": false
+        },
+        "batch_id": {
+          "type": "string",
+          "description": "Production batch ID"
+        }
+      }
+    }
+  }
+}

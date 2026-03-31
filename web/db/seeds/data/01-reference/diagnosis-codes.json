@@ -1,0 +1,844 @@
+{
+  "$schema": "../_schemas/reference.schema.json",
+  "diagnosis_codes": [
+    {
+      "code": "OTIT001",
+      "term": "Otitis Externa",
+      "term_en": "Otitis Externa",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "mild",
+      "common_symptoms": ["sacudida de cabeza", "olor fétido", "rascado de oreja"]
+    },
+    {
+      "code": "OTIT002",
+      "term": "Otitis Media",
+      "term_en": "Otitis Media",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "OTIT003",
+      "term": "Otitis Interna",
+      "term_en": "Otitis Interna",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "PYOD001",
+      "term": "Pioderma Superficial",
+      "term_en": "Superficial Pyoderma",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog"],
+      "severity": "mild"
+    },
+    {
+      "code": "PYOD002",
+      "term": "Pioderma Profunda",
+      "term_en": "Deep Pyoderma",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+    {
+      "code": "DERM001",
+      "term": "Dermatitis Atópica",
+      "term_en": "Atopic Dermatitis",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "moderate",
+      "common_symptoms": ["prurito", "enrojecimiento", "alopecia"]
+    },
+    {
+      "code": "DERM002",
+      "term": "Dermatitis por Pulgas",
+      "term_en": "Flea Allergy Dermatitis",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "DERM003",
+      "term": "Dermatitis por Contacto",
+      "term_en": "Contact Dermatitis",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "DERM004",
+      "term": "Dermatitis Alérgica Alimentaria",
+      "term_en": "Food Allergy Dermatitis",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ALOP001",
+      "term": "Alopecia",
+      "term_en": "Alopecia",
+      "standard": "venom",
+      "category": "dermatology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "SARN001",
+      "term": "Sarna Demodécica",
+      "term_en": "Demodectic Mange",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "SARN002",
+      "term": "Sarna Sarcóptica",
+      "term_en": "Sarcoptic Mange",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "SARN003",
+      "term": "Sarna Otodéctica",
+      "term_en": "Otodectic Mange",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+
+    {
+      "code": "GAST001",
+      "term": "Gastroenteritis Aguda",
+      "term_en": "Acute Gastroenteritis",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "moderate",
+      "common_symptoms": ["vómito", "diarrea", "anorexia"]
+    },
+    {
+      "code": "GAST002",
+      "term": "Gastritis",
+      "term_en": "Gastritis",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "GAST003",
+      "term": "Colitis",
+      "term_en": "Colitis",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "GAST004",
+      "term": "Enfermedad Inflamatoria Intestinal",
+      "term_en": "Inflammatory Bowel Disease",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "GAST005",
+      "term": "Pancreatitis Aguda",
+      "term_en": "Acute Pancreatitis",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "GAST006",
+      "term": "Pancreatitis Crónica",
+      "term_en": "Chronic Pancreatitis",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "GAST007",
+      "term": "Obstrucción Intestinal",
+      "term_en": "Intestinal Obstruction",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "critical"
+    },
+    {
+      "code": "GAST008",
+      "term": "Intususcepción",
+      "term_en": "Intussusception",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "critical"
+    },
+    {
+      "code": "GAST009",
+      "term": "Dilatación Gástrica-Vólvulo",
+      "term_en": "Gastric Dilatation-Volvulus",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog"],
+      "severity": "critical"
+    },
+    {
+      "code": "HEPA001",
+      "term": "Hepatopatía",
+      "term_en": "Hepatopathy",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "HEPA002",
+      "term": "Lipidosis Hepática",
+      "term_en": "Hepatic Lipidosis",
+      "standard": "venom",
+      "category": "gastroenterology",
+      "species": ["cat"],
+      "severity": "severe"
+    },
+
+    {
+      "code": "FRAC001",
+      "term": "Fractura de Miembro",
+      "term_en": "Limb Fracture",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "FRAC002",
+      "term": "Fractura de Pelvis",
+      "term_en": "Pelvic Fracture",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "FRAC003",
+      "term": "Fractura de Columna",
+      "term_en": "Spinal Fracture",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog", "cat"],
+      "severity": "critical"
+    },
+    {
+      "code": "ARTR001",
+      "term": "Artritis",
+      "term_en": "Arthritis",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ARTR002",
+      "term": "Osteoartritis",
+      "term_en": "Osteoarthritis",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "DISP001",
+      "term": "Displasia de Cadera",
+      "term_en": "Hip Dysplasia",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "DISP002",
+      "term": "Displasia de Codo",
+      "term_en": "Elbow Dysplasia",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "LUXP001",
+      "term": "Luxación Patelar",
+      "term_en": "Patellar Luxation",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "RCCL001",
+      "term": "Rotura de Ligamento Cruzado",
+      "term_en": "Cruciate Ligament Rupture",
+      "standard": "venom",
+      "category": "orthopedics",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+
+    {
+      "code": "CONJ001",
+      "term": "Conjuntivitis",
+      "term_en": "Conjunctivitis",
+      "standard": "venom",
+      "category": "ophthalmology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "ULCR001",
+      "term": "Úlcera Corneal",
+      "term_en": "Corneal Ulcer",
+      "standard": "venom",
+      "category": "ophthalmology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "CATA001",
+      "term": "Cataratas",
+      "term_en": "Cataracts",
+      "standard": "venom",
+      "category": "ophthalmology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "GLAU001",
+      "term": "Glaucoma",
+      "term_en": "Glaucoma",
+      "standard": "venom",
+      "category": "ophthalmology",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "QUER001",
+      "term": "Queratoconjuntivitis Seca",
+      "term_en": "Keratoconjunctivitis Sicca",
+      "standard": "venom",
+      "category": "ophthalmology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "PROL001",
+      "term": "Prolapso de Glándula Nictitante",
+      "term_en": "Cherry Eye",
+      "standard": "venom",
+      "category": "ophthalmology",
+      "species": ["dog"],
+      "severity": "mild"
+    },
+
+    {
+      "code": "PERI001",
+      "term": "Enfermedad Periodontal",
+      "term_en": "Periodontal Disease",
+      "standard": "venom",
+      "category": "dentistry",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "PERI002",
+      "term": "Gingivitis",
+      "term_en": "Gingivitis",
+      "standard": "venom",
+      "category": "dentistry",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "DENT001",
+      "term": "Resorción Dental Felina",
+      "term_en": "Feline Tooth Resorption",
+      "standard": "venom",
+      "category": "dentistry",
+      "species": ["cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "DENT002",
+      "term": "Fractura Dental",
+      "term_en": "Tooth Fracture",
+      "standard": "venom",
+      "category": "dentistry",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ESTO001",
+      "term": "Estomatitis",
+      "term_en": "Stomatitis",
+      "standard": "venom",
+      "category": "dentistry",
+      "species": ["cat"],
+      "severity": "severe"
+    },
+
+    {
+      "code": "DIAB001",
+      "term": "Diabetes Mellitus",
+      "term_en": "Diabetes Mellitus",
+      "standard": "venom",
+      "category": "endocrinology",
+      "species": ["dog", "cat"],
+      "severity": "moderate",
+      "common_symptoms": ["poliuria", "polidipsia", "pérdida de peso"]
+    },
+    {
+      "code": "HIPO001",
+      "term": "Hipotiroidismo",
+      "term_en": "Hypothyroidism",
+      "standard": "venom",
+      "category": "endocrinology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "HIPE001",
+      "term": "Hipertiroidismo",
+      "term_en": "Hyperthyroidism",
+      "standard": "venom",
+      "category": "endocrinology",
+      "species": ["cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "CUSH001",
+      "term": "Síndrome de Cushing",
+      "term_en": "Cushing's Syndrome",
+      "standard": "venom",
+      "category": "endocrinology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ADDI001",
+      "term": "Enfermedad de Addison",
+      "term_en": "Addison's Disease",
+      "standard": "venom",
+      "category": "endocrinology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+
+    {
+      "code": "CKID001",
+      "term": "Enfermedad Renal Crónica",
+      "term_en": "Chronic Kidney Disease",
+      "standard": "venom",
+      "category": "nephrology",
+      "species": ["dog", "cat"],
+      "severity": "moderate",
+      "common_symptoms": ["poliuria", "polidipsia", "vómitos", "anorexia"]
+    },
+    {
+      "code": "AKID001",
+      "term": "Insuficiencia Renal Aguda",
+      "term_en": "Acute Kidney Injury",
+      "standard": "venom",
+      "category": "nephrology",
+      "species": ["dog", "cat"],
+      "severity": "critical"
+    },
+    {
+      "code": "CIST001",
+      "term": "Cistitis",
+      "term_en": "Cystitis",
+      "standard": "venom",
+      "category": "urology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "UROL001",
+      "term": "Urolitiasis",
+      "term_en": "Urolithiasis",
+      "standard": "venom",
+      "category": "urology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "FLUT001",
+      "term": "Enfermedad del Tracto Urinario Inferior Felino",
+      "term_en": "FLUTD",
+      "standard": "venom",
+      "category": "urology",
+      "species": ["cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "OBSU001",
+      "term": "Obstrucción Uretral",
+      "term_en": "Urethral Obstruction",
+      "standard": "venom",
+      "category": "urology",
+      "species": ["cat"],
+      "severity": "critical"
+    },
+
+    {
+      "code": "CARD001",
+      "term": "Insuficiencia Cardíaca Congestiva",
+      "term_en": "Congestive Heart Failure",
+      "standard": "venom",
+      "category": "cardiology",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "CARD002",
+      "term": "Cardiomiopatía Dilatada",
+      "term_en": "Dilated Cardiomyopathy",
+      "standard": "venom",
+      "category": "cardiology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+    {
+      "code": "CARD003",
+      "term": "Cardiomiopatía Hipertrófica",
+      "term_en": "Hypertrophic Cardiomyopathy",
+      "standard": "venom",
+      "category": "cardiology",
+      "species": ["cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "CARD004",
+      "term": "Endocardiosis Mitral",
+      "term_en": "Mitral Valve Disease",
+      "standard": "venom",
+      "category": "cardiology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ARRH001",
+      "term": "Arritmia",
+      "term_en": "Arrhythmia",
+      "standard": "venom",
+      "category": "cardiology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+
+    {
+      "code": "HEAR001",
+      "term": "Dirofilariasis",
+      "term_en": "Heartworm Disease",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "GIAR001",
+      "term": "Giardiasis",
+      "term_en": "Giardiasis",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "COCC001",
+      "term": "Coccidiosis",
+      "term_en": "Coccidiosis",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "ERLI001",
+      "term": "Ehrlichiosis",
+      "term_en": "Ehrlichiosis",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "BABE001",
+      "term": "Babesiosis",
+      "term_en": "Babesiosis",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+    {
+      "code": "LEISH001",
+      "term": "Leishmaniasis",
+      "term_en": "Leishmaniasis",
+      "standard": "venom",
+      "category": "parasitology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+
+    {
+      "code": "PARO001",
+      "term": "Parvovirus Canino",
+      "term_en": "Canine Parvovirus",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["dog"],
+      "severity": "critical",
+      "common_symptoms": ["vómito", "diarrea hemorrágica", "deshidratación"]
+    },
+    {
+      "code": "DIST001",
+      "term": "Distemper Canino",
+      "term_en": "Canine Distemper",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["dog"],
+      "severity": "critical"
+    },
+    {
+      "code": "LEPTO001",
+      "term": "Leptospirosis",
+      "term_en": "Leptospirosis",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+    {
+      "code": "PANLEU001",
+      "term": "Panleucopenia Felina",
+      "term_en": "Feline Panleukopenia",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["cat"],
+      "severity": "critical"
+    },
+    {
+      "code": "FELV001",
+      "term": "Leucemia Felina",
+      "term_en": "Feline Leukemia Virus",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "FIV001",
+      "term": "Inmunodeficiencia Felina",
+      "term_en": "Feline Immunodeficiency Virus",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "PIF001",
+      "term": "Peritonitis Infecciosa Felina",
+      "term_en": "Feline Infectious Peritonitis",
+      "standard": "venom",
+      "category": "infectious",
+      "species": ["cat"],
+      "severity": "critical"
+    },
+
+    {
+      "code": "OBES001",
+      "term": "Obesidad",
+      "term_en": "Obesity",
+      "standard": "venom",
+      "category": "nutrition",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+    {
+      "code": "DESN001",
+      "term": "Desnutrición",
+      "term_en": "Malnutrition",
+      "standard": "venom",
+      "category": "nutrition",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+
+    {
+      "code": "NEOP001",
+      "term": "Neoplasia/Tumor",
+      "term_en": "Neoplasia",
+      "standard": "venom",
+      "category": "oncology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "LINF001",
+      "term": "Linfoma",
+      "term_en": "Lymphoma",
+      "standard": "venom",
+      "category": "oncology",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "MAST001",
+      "term": "Mastocitoma",
+      "term_en": "Mast Cell Tumor",
+      "standard": "venom",
+      "category": "oncology",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "OSTE001",
+      "term": "Osteosarcoma",
+      "term_en": "Osteosarcoma",
+      "standard": "venom",
+      "category": "oncology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+
+    {
+      "code": "EPIL001",
+      "term": "Epilepsia",
+      "term_en": "Epilepsy",
+      "standard": "venom",
+      "category": "neurology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "DISC001",
+      "term": "Enfermedad de Disco Intervertebral",
+      "term_en": "Intervertebral Disc Disease",
+      "standard": "venom",
+      "category": "neurology",
+      "species": ["dog"],
+      "severity": "severe"
+    },
+    {
+      "code": "VEST001",
+      "term": "Síndrome Vestibular",
+      "term_en": "Vestibular Syndrome",
+      "standard": "venom",
+      "category": "neurology",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+
+    {
+      "code": "PIOM001",
+      "term": "Piometra",
+      "term_en": "Pyometra",
+      "standard": "venom",
+      "category": "reproductive",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "PROST001",
+      "term": "Hiperplasia Prostática",
+      "term_en": "Prostatic Hyperplasia",
+      "standard": "venom",
+      "category": "reproductive",
+      "species": ["dog"],
+      "severity": "moderate"
+    },
+    {
+      "code": "CRIPT001",
+      "term": "Criptorquidismo",
+      "term_en": "Cryptorchidism",
+      "standard": "venom",
+      "category": "reproductive",
+      "species": ["dog", "cat"],
+      "severity": "mild"
+    },
+
+    {
+      "code": "ALER001",
+      "term": "Reacción Alérgica",
+      "term_en": "Allergic Reaction",
+      "standard": "venom",
+      "category": "other",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ANAF001",
+      "term": "Anafilaxia",
+      "term_en": "Anaphylaxis",
+      "standard": "venom",
+      "category": "other",
+      "species": ["dog", "cat"],
+      "severity": "critical"
+    },
+    {
+      "code": "INTX001",
+      "term": "Intoxicación",
+      "term_en": "Poisoning",
+      "standard": "venom",
+      "category": "other",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "TRAU001",
+      "term": "Trauma/Atropellamiento",
+      "term_en": "Trauma",
+      "standard": "venom",
+      "category": "other",
+      "species": ["dog", "cat"],
+      "severity": "severe"
+    },
+    {
+      "code": "MORD001",
+      "term": "Mordedura",
+      "term_en": "Bite Wound",
+      "standard": "venom",
+      "category": "other",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    },
+    {
+      "code": "ABSC001",
+      "term": "Absceso",
+      "term_en": "Abscess",
+      "standard": "venom",
+      "category": "other",
+      "species": ["dog", "cat"],
+      "severity": "moderate"
+    }
+  ]
+}

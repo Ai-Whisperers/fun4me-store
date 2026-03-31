@@ -1,0 +1,273 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "monello",
+  "products": [
+    {
+      "sku": "MON-DOG-ADULT",
+      "name": "Monello Adult Dog",
+      "description": "Alimento premium brasileño para perros adultos",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-15KG"
+        },
+        {
+          "size": "25kg",
+          "base_price": 445000,
+          "cost_price": 267000,
+          "sku_suffix": "-25KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png",
+        "https://www.nutrire.ind.br/images/15UJAhWMRHuk.png",
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "main_ingredient": "Pollo"
+      }
+    },
+    {
+      "sku": "MON-DOG-PUPPY",
+      "name": "Monello Puppy",
+      "description": "Alimento premium para cachorros con DHA",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 39000,
+          "cost_price": 23400,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 335000,
+          "cost_price": 201000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png",
+        "https://www.nutrire.ind.br/images/15UJAhWMRHuk.png",
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Puppy"
+      }
+    },
+    {
+      "sku": "MON-DOG-LIGHT",
+      "name": "Monello Light",
+      "description": "Alimento reducido en calorías para perros con sobrepeso",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "7kg",
+          "base_price": 175000,
+          "cost_price": 105000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 315000,
+          "cost_price": 189000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/isED4xp9SdCR.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png",
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/15UJAhWMRHuk.png",
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png"
+      ],
+      "attributes": {
+        "special_need": "Control de peso",
+        "low_calorie": true
+      }
+    },
+    {
+      "sku": "MON-DOG-SELECT",
+      "name": "Monello Select",
+      "description": "Línea premium con ingredientes seleccionados",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "7kg",
+          "base_price": 215000,
+          "cost_price": 129000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/15UJAhWMRHuk.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/15UJAhWMRHuk.png",
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png",
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png"
+      ],
+      "attributes": {
+        "line": "Premium Select",
+        "main_ingredient": "Carne y pollo"
+      }
+    },
+    {
+      "sku": "MON-CAT-ADULT",
+      "name": "Monello Adult Cat",
+      "description": "Alimento premium brasileño para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 42000,
+          "cost_price": 25200,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "10.1kg",
+          "base_price": 265000,
+          "cost_price": 159000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png",
+        "https://www.nutrire.ind.br/images/UsLviWo4edXw.png",
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "main_ingredient": "Salmón y pollo"
+      }
+    },
+    {
+      "sku": "MON-CAT-KITTEN",
+      "name": "Monello Kitten",
+      "description": "Alimento premium para gatitos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 28000,
+          "cost_price": 16800,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 48000,
+          "cost_price": 28800,
+          "sku_suffix": "-1KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/UsLviWo4edXw.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/UsLviWo4edXw.png",
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png",
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Kitten"
+      }
+    },
+    {
+      "sku": "MON-CAT-CASTRADO",
+      "name": "Monello Cat Castrados",
+      "description": "Alimento para gatos esterilizados con control de peso",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 205000,
+          "cost_price": 123000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "10.1kg",
+          "base_price": 275000,
+          "cost_price": 165000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png",
+      "images": [
+        "https://www.nutrire.ind.br/images/vStjGl9yX4_u.png",
+        "https://www.nutrire.ind.br/images/UsLviWo4edXw.png",
+        "https://www.nutrire.ind.br/images/vu09hWGNA5_p.png",
+        "https://www.nutrire.ind.br/images/8e9qaGUTQ_tz.png",
+        "https://www.nutrire.ind.br/images/isED4xp9SdCR.png"
+      ],
+      "attributes": {
+        "special_need": "Esterilizado",
+        "weight_control": true
+      }
+    }
+  ]
+}

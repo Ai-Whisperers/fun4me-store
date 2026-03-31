@@ -1,0 +1,825 @@
+# =============================================================================
+# GitHub Actions Cron Jobs
+# =============================================================================
+# Centralized scheduling for all 13 cron endpoints.
+# Replaces Vercel cron (limited to 2 jobs on Hobby plan).
+#
+# Schedule Summary (Paraguay Time = UTC-4):
+#   - release-reservations: Every 5 minutes (critical - prevents overselling)
+#   - stock-alerts-customers: Hourly (back-in-stock emails)
+#   - generate-recurring: Midnight (recurring appointments)
+#   - process-subscriptions: 6:00 AM (revenue processing)
+#   - reminders-pipeline: 7:00 AM (generate + send reminders)
+#   - inventory-alerts: 8:00 AM (staff + expiry alerts)
+#   - billing-daily: 10:00 AM (grace + charge + remind)
+#   - monthly-invoicing: 1st of month @ 9:00 AM
+#
+# Manual Testing:
+#   gh workflow run cron.yml -f job=release-reservations
+#   gh workflow run cron.yml -f job=all
+# =============================================================================
+
+name: Scheduled Cron Jobs
+
+on:
+  schedule:
+    # CRITICAL: Release expired stock reservations (prevents overselling)
+    - cron: '*/5 * * * *'
+
+    # Capture metrics (periodic performance snapshots)
+    - cron: '*/5 * * * *'
+
+    # Check health of all cron jobs
+    - cron: '*/5 * * * *'
+
+    # Hourly: Customer back-in-stock notifications
+    - cron: '0 * * * *'
+
+    # Daily: Midnight Paraguay (04:00 UTC) - Generate recurring appointments
+    - cron: '0 4 * * *'
+
+    # Daily: 3:00 AM UTC - Cleanup expired exports
+    - cron: '0 3 * * *'
+
+    # Daily: 6:00 AM Paraguay (10:00 UTC) - Process subscriptions
+    - cron: '0 10 * * *'
+
+    # Daily: 7:00 AM Paraguay (11:00 UTC) - Reminders pipeline
+    - cron: '0 11 * * *'
+
+    # Daily: 8:00 AM Paraguay (12:00 UTC) - Inventory alerts
+    - cron: '0 12 * * *'
+
+    # Daily: 10:00 AM Paraguay (14:00 UTC) - Billing pipeline
+    - cron: '0 14 * * *'
+
+    # Weekly: Sunday 02:00 UTC - Verify backups
+    - cron: '0 2 * * 0'
+
+    # Weekly: Sunday 03:00 UTC - Data retention
+    - cron: '0 3 * * 0'
+
+    # Monthly: 1st of month, 9:00 AM Paraguay (13:00 UTC) - Invoice generation
+    - cron: '0 13 1 * *'
+
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Specific job to run'
+        required: true
+        type: choice
+        default: 'all'
+        options:
+          - all
+          - release-reservations
+          - capture-metrics
+          - check-health
+          - stock-alerts-customers
+          - generate-recurring
+          - cleanup-exports
+          - process-subscriptions
+          - reminders-pipeline
+          - inventory-alerts
+          - billing-daily
+          - verify-backup
+          - retention
+          - monthly-invoicing
+
+env:
+  PRODUCTION_URL: https://vetepy-bay.vercel.app
+
+jobs:
+  # ===========================================================================
+  # HIGH FREQUENCY: Every 5 minutes
+  # ===========================================================================
+  release-reservations:
+    name: Release Expired Reservations
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '*/5 * * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","release-reservations"]'), github.event.inputs.job))
+    timeout-minutes: 2
+    concurrency:
+      group: cron-release-reservations
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call release-reservations endpoint
+        run: |
+          echo "Calling release-reservations..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/release-reservations")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Cron job failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # HIGH FREQUENCY: Every 5 minutes
+  # ===========================================================================
+  capture-metrics:
+    name: Capture Metrics
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '*/5 * * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","capture-metrics"]'), github.event.inputs.job))
+    timeout-minutes: 2
+    concurrency:
+      group: cron-capture-metrics
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call capture-metrics endpoint
+        run: |
+          echo "Calling capture-metrics..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/capture-metrics")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Capture metrics failed with status $http_code"
+            exit 1
+          fi
+
+  check-health:
+    name: Cron Health Check
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '*/5 * * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","check-health"]'), github.event.inputs.job))
+    timeout-minutes: 2
+    concurrency:
+      group: cron-check-health
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call check-health endpoint
+        run: |
+          echo "Calling check-health..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/check-health")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Health check job failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # HOURLY: Customer stock alerts (back-in-stock notifications)
+  # ===========================================================================
+  stock-alerts-customers:
+    name: Stock Alerts (Customers)
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 * * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","stock-alerts-customers"]'), github.event.inputs.job))
+    timeout-minutes: 5
+    concurrency:
+      group: cron-stock-alerts-customers
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call stock-alerts endpoint
+        run: |
+          echo "Calling stock-alerts (customers)..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/stock-alerts")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Stock alerts failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # DAILY: Midnight Paraguay - Generate Recurring Appointments
+  # ===========================================================================
+  generate-recurring:
+    name: Generate Recurring Appointments
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 4 * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","generate-recurring"]'), github.event.inputs.job))
+    timeout-minutes: 5
+    concurrency:
+      group: cron-generate-recurring
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call generate-recurring endpoint
+        run: |
+          echo "Calling generate-recurring..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/generate-recurring")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Generate recurring failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # DAILY: Cleanup expired exports
+  # ===========================================================================
+  cleanup-exports:
+    name: Cleanup Expired Exports
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 3 * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","cleanup-exports"]'), github.event.inputs.job))
+    timeout-minutes: 5
+    concurrency:
+      group: cron-cleanup-exports
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call cleanup-exports endpoint
+        run: |
+          echo "Calling cleanup-exports..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/cleanup-exports")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Cleanup exports failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # DAILY: 6:00 AM Paraguay - Process Subscriptions (Revenue Critical)
+  # ===========================================================================
+  process-subscriptions:
+    name: Process Subscriptions
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 10 * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","process-subscriptions"]'), github.event.inputs.job))
+    timeout-minutes: 10
+    concurrency:
+      group: cron-process-subscriptions
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call process-subscriptions endpoint
+        run: |
+          echo "Calling process-subscriptions..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/process-subscriptions")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Process subscriptions failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # DAILY: 7:00 AM Paraguay - Reminders Pipeline (Generate + Send)
+  # ===========================================================================
+  reminders-pipeline:
+    name: Reminders Pipeline
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 11 * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","reminders-pipeline"]'), github.event.inputs.job))
+    timeout-minutes: 10
+    concurrency:
+      group: cron-reminders-pipeline
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Step 1 - Generate reminders
+        run: |
+          echo "Step 1: Generating reminders..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/reminders/generate")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Generate Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Generate reminders failed with status $http_code"
+            exit 1
+          fi
+
+      - name: Step 2 - Send reminders
+        run: |
+          echo "Step 2: Sending reminders..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/reminders")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Send Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Send reminders failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # DAILY: 8:00 AM Paraguay - Inventory Alerts (Staff + Expiry)
+  # ===========================================================================
+  inventory-alerts:
+    name: Inventory Alerts (Staff + Expiry)
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 12 * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","inventory-alerts"]'), github.event.inputs.job))
+    timeout-minutes: 10
+    concurrency:
+      group: cron-inventory-alerts
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Step 1 - Staff stock alerts
+        run: |
+          echo "Step 1: Staff stock alerts..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/stock-alerts/staff")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Staff Alerts Response: $body"
+          echo "HTTP Code: $http_code"
+
+          # Continue even if this step fails (non-critical)
+          if [ "$http_code" -ne 200 ]; then
+            echo "::warning::Staff alerts failed with status $http_code (continuing)"
+          fi
+
+      - name: Step 2 - Expiry alerts
+        run: |
+          echo "Step 2: Expiry alerts..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/expiry-alerts")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Expiry Alerts Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::warning::Expiry alerts failed with status $http_code"
+          fi
+
+  # ===========================================================================
+  # DAILY: 10:00 AM Paraguay - Billing Daily Pipeline
+  # ===========================================================================
+  billing-daily:
+    name: Billing Daily Pipeline
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 14 * * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","billing-daily"]'), github.event.inputs.job))
+    timeout-minutes: 15
+    concurrency:
+      group: cron-billing-daily
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Step 1 - Evaluate grace periods
+        run: |
+          echo "Step 1: Evaluating grace periods..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/billing/evaluate-grace")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Evaluate Grace Response: $body"
+          echo "HTTP Code: $http_code"
+
+          # Continue even if this step fails (non-blocking)
+          if [ "$http_code" -ne 200 ]; then
+            echo "::warning::Evaluate grace failed with status $http_code (continuing)"
+          fi
+
+      - name: Step 2 - Auto-charge invoices
+        run: |
+          echo "Step 2: Auto-charging invoices..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/billing/auto-charge")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Auto-charge Response: $body"
+          echo "HTTP Code: $http_code"
+
+          # Continue even if this step fails (non-blocking)
+          if [ "$http_code" -ne 200 ]; then
+            echo "::warning::Auto-charge failed with status $http_code (continuing)"
+          fi
+
+      - name: Step 3 - Send billing reminders
+        run: |
+          echo "Step 3: Sending billing reminders..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/billing/send-reminders")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Send Reminders Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Send billing reminders failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # WEEKLY: Sunday 02:00 UTC - Verify Backups
+  # ===========================================================================
+  verify-backup:
+    name: Verify Backups
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 2 * * 0' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","verify-backup"]'), github.event.inputs.job))
+    timeout-minutes: 5
+    concurrency:
+      group: cron-verify-backup
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call verify-backup endpoint
+        run: |
+          echo "Calling verify-backup..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/verify-backup")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Verify backup failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # WEEKLY: Sunday 03:00 UTC - Data Retention
+  # ===========================================================================
+  retention:
+    name: Data Retention
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 3 * * 0' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","retention"]'), github.event.inputs.job))
+    timeout-minutes: 15
+    concurrency:
+      group: cron-retention
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Call retention endpoint
+        run: |
+          echo "Calling retention..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/retention")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Data retention failed with status $http_code"
+            exit 1
+          fi
+
+  # ===========================================================================
+  # MONTHLY: 1st of Month, 9:00 AM Paraguay - Invoice Generation
+  # ===========================================================================
+  monthly-invoicing:
+    name: Monthly Invoice Generation
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 13 1 * *' ||
+      (github.event_name == 'workflow_dispatch' &&
+       contains(fromJson('["all","monthly-invoicing"]'), github.event.inputs.job))
+    timeout-minutes: 20
+    concurrency:
+      group: cron-monthly-invoicing
+      cancel-in-progress: false
+    steps:
+      - name: Health Check
+        run: |
+          echo "Checking application health at ${{ env.PRODUCTION_URL }}..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/health")
+          if [ "$response" -ne 200 ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Application is healthy"
+
+      - name: Step 1 - Generate platform invoices
+        run: |
+          echo "Step 1: Generating platform invoices..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/billing/generate-platform-invoices")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Platform Invoices Response: $body"
+          echo "HTTP Code: $http_code"
+
+          # Continue even if this step fails
+          if [ "$http_code" -ne 200 ]; then
+            echo "::warning::Platform invoices failed with status $http_code (continuing)"
+          fi
+
+      - name: Step 2 - Generate commission invoices
+        run: |
+          echo "Step 2: Generating commission invoices..."
+          response=$(curl -s -w "\n%{http_code}" \
+            --retry 3 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            "${{ env.PRODUCTION_URL }}/api/cron/generate-commission-invoices")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Commission Invoices Response: $body"
+          echo "HTTP Code: $http_code"
+
+          if [ "$http_code" -ne 200 ]; then
+            echo "::error::Commission invoices failed with status $http_code"
+            exit 1
+          fi

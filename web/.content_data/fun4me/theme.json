@@ -1,0 +1,227 @@
+{
+  "colors": {
+    "primary": {
+      "main": "#9C27B0",
+      "light": "#BA68C8",
+      "dark": "#7B1FA2",
+      "contrast": "#FFFFFF",
+      "50": "#F3E5F5",
+      "100": "#E1BEE7",
+      "200": "#CE93D8",
+      "300": "#BA68C8",
+      "400": "#AB47BC",
+      "500": "#9C27B0",
+      "600": "#8E24AA",
+      "700": "#7B1FA2",
+      "800": "#6A1B9A",
+      "900": "#4A148C",
+      "950": "#38006B",
+      "rgb": "156, 39, 176"
+    },
+    "secondary": {
+      "main": "#E91E63",
+      "light": "#F06292",
+      "dark": "#C2185B",
+      "contrast": "#FFFFFF",
+      "50": "#FCE4EC",
+      "100": "#F8BBD9",
+      "200": "#F48FB1",
+      "300": "#F06292",
+      "400": "#EC407A",
+      "500": "#E91E63",
+      "600": "#D81B60",
+      "700": "#C2185B",
+      "800": "#AD1457",
+      "900": "#880E4F",
+      "950": "#560027",
+      "rgb": "233, 30, 99"
+    },
+    "accent": "#FF4081",
+    "background": {
+      "default": "#FDF8FC",
+      "paper": "#FFFFFF",
+      "subtle": "#F8F0F6",
+      "dark": "#4A148C",
+      "hero": "#4A148C",
+      "surface": "#FFFFFF",
+      "surfaceElevated": "#FFFFFF",
+      "surfaceOverlay": "rgba(74, 20, 140, 0.9)"
+    },
+    "text": {
+      "primary": "#2D1B36",
+      "secondary": "#5C4066",
+      "muted": "#8B7394",
+      "invert": "#FFFFFF",
+      "link": "#9C27B0",
+      "linkHover": "#7B1FA2",
+      "disabled": "#C9B8D1"
+    },
+    "border": {
+      "light": "#E8D5ED",
+      "default": "#D4B8DC",
+      "dark": "#BA9BC5",
+      "focus": "#9C27B0"
+    },
+    "status": {
+      "success": {
+        "main": "#4CAF50",
+        "light": "#81C784",
+        "dark": "#388E3C",
+        "bg": "#E8F5E9",
+        "border": "#A5D6A7"
+      },
+      "warning": {
+        "main": "#FF9800",
+        "light": "#FFB74D",
+        "dark": "#F57C00",
+        "bg": "#FFF3E0",
+        "border": "#FFCC80"
+      },
+      "error": {
+        "main": "#F44336",
+        "light": "#E57373",
+        "dark": "#D32F2F",
+        "bg": "#FFEBEE",
+        "border": "#FFCDD2"
+      },
+      "info": {
+        "main": "#2196F3",
+        "light": "#64B5F6",
+        "dark": "#1976D2",
+        "bg": "#E3F2FD",
+        "border": "#90CAF9"
+      }
+    },
+    "neutral": {
+      "50": "#FAFAFA",
+      "100": "#F5F5F5",
+      "200": "#EEEEEE",
+      "300": "#E0E0E0",
+      "400": "#BDBDBD",
+      "500": "#9E9E9E",
+      "600": "#757575",
+      "700": "#616161",
+      "800": "#424242",
+      "900": "#212121",
+      "950": "#121212"
+    },
+    "interactive": {
+      "hover": "rgba(156, 39, 176, 0.08)",
+      "active": "rgba(156, 39, 176, 0.12)",
+      "focus": "rgba(156, 39, 176, 0.16)",
+      "focusRing": "rgba(156, 39, 176, 0.3)",
+      "disabled": "#F3E5F5",
+      "selected": "rgba(156, 39, 176, 0.12)"
+    },
+    "input": {
+      "bg": "#FFFFFF",
+      "border": "#D4B8DC",
+      "borderHover": "#BA9BC5",
+      "borderFocus": "#9C27B0",
+      "placeholder": "#8B7394",
+      "ring": "rgba(156, 39, 176, 0.2)"
+    },
+    "chart": {
+      "1": "#9C27B0",
+      "2": "#E91E63",
+      "3": "#FF4081",
+      "4": "#7B1FA2",
+      "5": "#C2185B",
+      "6": "#BA68C8",
+      "7": "#F06292",
+      "8": "#4A148C",
+      "9": "#CE93D8",
+      "10": "#F48FB1",
+      "11": "#38006B",
+      "12": "#880E4F"
+    },
+    "accents": {
+      "purple": "#9C27B0",
+      "pink": "#E91E63",
+      "magenta": "#FF4081",
+      "violet": "#7B1FA2",
+      "fuchsia": "#C2185B",
+      "lavender": "#BA68C8",
+      "rose": "#F06292",
+      "grape": "#4A148C",
+      "orchid": "#CE93D8",
+      "blush": "#F48FB1"
+    }
+  },
+  "gradients": {
+    "hero": "linear-gradient(135deg, #4A148C 0%, #7B1FA2 50%, #9C27B0 100%)",
+    "primary": "linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%)",
+    "accent": "linear-gradient(135deg, #E91E63 0%, #C2185B 100%)",
+    "dark": "linear-gradient(180deg, #4A148C 0%, #38006B 100%)",
+    "card": "linear-gradient(145deg, #FFFFFF 0%, #FDF8FC 100%)",
+    "vibrant": "linear-gradient(135deg, #9C27B0 0%, #E91E63 100%)",
+    "toRight": "linear-gradient(to right, #9C27B0, #E91E63)",
+    "toBottom": "linear-gradient(to bottom, #4A148C, #7B1FA2)",
+    "radial": "radial-gradient(circle, #BA68C8, #9C27B0)"
+  },
+  "fonts": {
+    "heading": "'Poppins', 'Montserrat', sans-serif",
+    "body": "'Inter', 'Roboto', sans-serif",
+    "mono": "'JetBrains Mono', monospace"
+  },
+  "typography": {
+    "h1": {
+      "size": "3rem",
+      "weight": "700",
+      "line_height": "1.2"
+    },
+    "h2": {
+      "size": "2.25rem",
+      "weight": "600",
+      "line_height": "1.3"
+    },
+    "h3": {
+      "size": "1.5rem",
+      "weight": "600",
+      "line_height": "1.4"
+    },
+    "h4": {
+      "size": "1.25rem",
+      "weight": "600",
+      "line_height": "1.4"
+    },
+    "body": {
+      "size": "1rem",
+      "weight": "400",
+      "line_height": "1.6"
+    },
+    "small": {
+      "size": "0.875rem",
+      "weight": "400",
+      "line_height": "1.5"
+    }
+  },
+  "ui": {
+    "border_radius": "16px",
+    "border_radius_sm": "8px",
+    "border_radius_lg": "24px",
+    "border_radius_xl": "32px",
+    "border_radius_full": "9999px",
+    "shadow_sm": "0 1px 2px 0 rgba(74, 20, 140, 0.05)",
+    "shadow_md": "0 4px 6px -1px rgba(74, 20, 140, 0.1), 0 2px 4px -2px rgba(74, 20, 140, 0.1)",
+    "shadow_lg": "0 10px 15px -3px rgba(74, 20, 140, 0.1), 0 4px 6px -4px rgba(74, 20, 140, 0.1)",
+    "shadow_xl": "0 20px 25px -5px rgba(74, 20, 140, 0.1), 0 8px 10px -6px rgba(74, 20, 140, 0.1)",
+    "shadow_card": "0 4px 20px -2px rgba(156, 39, 176, 0.15)",
+    "shadow_button": "0 4px 14px 0 rgba(156, 39, 176, 0.35)",
+    "shadow_input": "0 1px 3px 0 rgba(74, 20, 140, 0.05)",
+    "shadow_dropdown": "0 10px 40px -5px rgba(74, 20, 140, 0.2)"
+  },
+  "spacing": {
+    "section_padding": "5rem",
+    "container_max_width": "1280px",
+    "card_padding": "1.5rem",
+    "input_padding": "0.75rem 1rem"
+  },
+  "animations": {
+    "transition_fast": "150ms ease-out",
+    "transition_normal": "250ms ease-out",
+    "transition_slow": "400ms ease-out",
+    "hover_scale": "1.02",
+    "hover_lift": "-2px"
+  }
+}

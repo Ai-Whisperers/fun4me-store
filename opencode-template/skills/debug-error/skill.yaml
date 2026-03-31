@@ -1,0 +1,124 @@
+# ===========================================
+# SKILL: Debuggear Error
+# ===========================================
+# Ayuda a debuggear errores de forma sistematica
+
+name: debug-error
+description: "Analiza y resuelve errores de forma sistematica"
+version: "1.0.0"
+author: "Estudiantes FPUNA"
+
+# Cuando se activa este skill
+triggers:
+  - "/debug"
+  - "/error"
+  - "tengo un error"
+  - "no funciona"
+  - "ayuda con error"
+
+# Parametros que acepta
+parameters:
+  - name: error_message
+    type: string
+    required: true
+    description: "Mensaje de error completo"
+    
+  - name: codigo
+    type: string
+    required: false
+    description: "Codigo que produce el error"
+    
+  - name: lenguaje
+    type: string
+    required: false
+    description: "Lenguaje de programacion"
+
+# Instrucciones para el agente
+instructions: |
+  Sigue este proceso sistematico para debuggear:
+  
+  ## 1. ENTENDER EL ERROR
+  - Lee el mensaje de error completo
+  - Identifica el tipo de error (syntax, runtime, logic)
+  - Encuentra la linea exacta donde ocurre
+  
+  ## 2. REPRODUCIR EL ERROR
+  - Confirma que puedes reproducir el error
+  - Identifica los pasos para reproducirlo
+  - Nota cualquier condicion especial
+  
+  ## 3. ANALIZAR CAUSAS
+  - Lista las posibles causas (minimo 3)
+  - Ordena por probabilidad
+  - Verifica cada una sistematicamente
+  
+  ## 4. PROPONER SOLUCION
+  - Explica la causa raiz encontrada
+  - Proporciona el codigo corregido
+  - Explica POR QUE funciona la solucion
+  
+  ## 5. PREVENIR
+  - Sugiere como evitar este error en el futuro
+  - Recomienda tests si aplica
+  
+  ## FORMATO DE RESPUESTA
+  
+  ```
+  ERROR DETECTADO: [tipo de error]
+  
+  CAUSA: [explicacion clara]
+  
+  SOLUCION:
+  [codigo corregido con comentarios]
+  
+  EXPLICACION:
+  [por que esto soluciona el problema]
+  
+  PREVENCION:
+  [como evitarlo en el futuro]
+  ```
+
+# Errores comunes y soluciones
+common_errors:
+  python:
+    - error: "IndentationError"
+      causa: "Mezcla de tabs y espacios o indentacion incorrecta"
+      solucion: "Usa solo espacios (4 por nivel) o configura tu editor"
+      
+    - error: "NameError: name 'x' is not defined"
+      causa: "Variable no definida o typo en el nombre"
+      solucion: "Verifica que la variable este definida antes de usarla"
+      
+    - error: "TypeError: 'NoneType' object"
+      causa: "Intentando operar sobre None"
+      solucion: "Verifica que la funcion retorne un valor, no None"
+      
+    - error: "ModuleNotFoundError"
+      causa: "Modulo no instalado o nombre incorrecto"
+      solucion: "pip install [modulo] o verifica el nombre"
+
+  javascript:
+    - error: "undefined is not a function"
+      causa: "Llamando a algo que no es funcion"
+      solucion: "Verifica que el objeto/metodo existe"
+      
+    - error: "Cannot read property of undefined"
+      causa: "Accediendo a propiedad de undefined/null"
+      solucion: "Usa optional chaining: obj?.prop"
+      
+    - error: "SyntaxError: Unexpected token"
+      causa: "Error de sintaxis (falta coma, parentesis, etc)"
+      solucion: "Revisa la linea indicada y la anterior"
+
+  sql:
+    - error: "relation does not exist"
+      causa: "Tabla no existe o nombre incorrecto"
+      solucion: "Verifica el nombre de la tabla y schema"
+      
+    - error: "column does not exist"
+      causa: "Columna no existe o typo"
+      solucion: "Verifica nombres de columnas con \\d tabla"
+      
+    - error: "syntax error at or near"
+      causa: "Error de sintaxis SQL"
+      solucion: "Revisa palabras clave, comas, parentesis"

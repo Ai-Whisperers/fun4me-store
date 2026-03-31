@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "node",
+      "args": ["scripts/playwright-mcp.js"]
+    },
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=okddppczckbjdotrxiev",
+      "headers": {
+        "Authorization": "Bearer sbp_6f467823a91cc68ab2d7f0506e598d3ecd81cc27"
+      }
+    }
+  }
+}

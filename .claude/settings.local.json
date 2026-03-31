@@ -1,0 +1,9 @@
+{
+  "outputStyle": "senior-dev",
+  "enabledMcpjsonServers": [
+    "playwright",
+    "document-analyzer",
+    "supabase"
+  ],
+  "enableAllProjectMcpServers": true
+}

@@ -1,0 +1,102 @@
+{
+  "intro": {
+    "title": "Tu Veterinaria de Confianza",
+    "text": "En CavillPet creemos que cada mascota merece ser tratada como un miembro de la familia. Por eso ofrecemos atención veterinaria cercana, profesional y con el cariño que tu compañero merece.\n\nNos especializamos en el cuidado integral de perros y gatos, combinando conocimiento médico con un ambiente tranquilo y amigable donde tu mascota se sienta segura.",
+    "image": "/branding/cavillpet/images/about-hero.jpg"
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "text": "Brindar atención veterinaria de calidad con trato cercano y familiar. Cuidamos la salud de tu mascota como si fuera nuestra, con honestidad, responsabilidad y todo el amor que merecen."
+  },
+  "vision": {
+    "title": "Nuestra Visión",
+    "text": "Ser la veterinaria de referencia en el barrio, reconocida por el trato humano, la atención personalizada y el compromiso genuino con el bienestar de cada paciente y su familia."
+  },
+  "values": [
+    {
+      "icon": "heart",
+      "title": "Amor por los Animales",
+      "text": "Cada mascota recibe el cariño y la dedicación que merece. Tu compañero es nuestra prioridad."
+    },
+    {
+      "icon": "handshake",
+      "title": "Compromiso",
+      "text": "Nos comprometemos con la salud de tu mascota en cada consulta, cada tratamiento y cada visita."
+    },
+    {
+      "icon": "users",
+      "title": "Empatía",
+      "text": "Entendemos lo importante que es tu mascota para vos. Te acompañamos en cada momento."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Honestidad",
+      "text": "Comunicación clara y transparente. Te explicamos todo sin tecnicismos y con sinceridad."
+    },
+    {
+      "icon": "clipboard-check",
+      "title": "Responsabilidad",
+      "text": "Cuidamos cada detalle con seriedad y profesionalismo. Tu confianza es nuestra responsabilidad."
+    }
+  ],
+  "team": [
+    {
+      "name": "José Villalba",
+      "role": "Propietario / Médico Veterinario",
+      "bio": "Médico Veterinario con 4 años de experiencia. Apasionado por la medicina interna y el bienestar animal. Su enfoque es brindar diagnósticos precisos con un trato cálido.",
+      "image": "/branding/cavillpet/images/team/jose.jpg",
+      "specialties": ["Medicina General", "Cirugía", "Ecografía"]
+    },
+    {
+      "name": "Sofía Castro",
+      "role": "Copropietaria / Auxiliar Veterinaria",
+      "bio": "Copropietaria y corazón de la clínica. Encargada del cuidado, atención al cliente y asistencia en procedimientos, asegurando que cada visita sea una experiencia positiva.",
+      "image": "/branding/cavillpet/images/team/sofia.jpg",
+      "specialties": ["Atención al Cliente", "Asistencia Veterinaria", "Peluquería"]
+    }
+  ],
+  "facilities": {
+    "title": "Nuestras Instalaciones",
+    "description": "Instalaciones cómodas y equipadas para la atención integral de tu mascota.",
+    "features": [
+      {
+        "icon": "stethoscope",
+        "title": "Consultorios",
+        "text": "Espacios climatizados y tranquilos para la consulta médica."
+      },
+      {
+        "icon": "heart-pulse",
+        "title": "Área Quirúrgica",
+        "text": "Quirófano equipado para cirugías seguras y procedimientos especializados."
+      },
+      {
+        "icon": "bed",
+        "title": "Hospitalización 24hs",
+        "text": "Cuidado y monitoreo constante para pacientes internados."
+      },
+      {
+        "icon": "home",
+        "title": "Guardería 24hs",
+        "text": "Dejá a tu mascota en buenas manos mientras viajás o trabajás."
+      },
+      {
+        "icon": "scissors",
+        "title": "Peluquería",
+        "text": "Baños, cortes y spa para que tu mascota luzca hermosa."
+      },
+      {
+        "icon": "shopping-bag",
+        "title": "Farmacia",
+        "text": "Medicamentos y productos para el cuidado de tu mascota."
+      }
+    ],
+    "images": [
+      "/branding/cavillpet/images/facilities/fachada.jpg",
+      "/branding/cavillpet/images/facilities/recepcion.jpg",
+      "/branding/cavillpet/images/facilities/consultorio.jpg",
+      "/branding/cavillpet/images/facilities/farmacia.jpg"
+    ]
+  },
+  "certifications": [],
+  "timeline": []
+}

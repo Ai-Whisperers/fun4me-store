@@ -1,0 +1,91 @@
+# ===========================================
+# .gitignore para proyectos con OpenCode
+# ===========================================
+# Copia este archivo como .gitignore en tu proyecto
+
+# ============================================
+# OPENCODE - ARCHIVOS SENSIBLES
+# ============================================
+# NUNCA subas credenciales!
+.opencode/mcp-servers.json
+.opencode/*.key
+.opencode/*.pem
+.opencode/secrets/
+
+# ============================================
+# VARIABLES DE ENTORNO
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# ============================================
+# DEPENDENCIAS
+# ============================================
+node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# ============================================
+# LOGS Y TEMPORALES
+# ============================================
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# ============================================
+# IDEs
+# ============================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# BUILD
+# ============================================
+dist/
+build/
+*.egg-info/
+.next/
+out/
+
+# ============================================
+# TESTS
+# ============================================
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.nyc_output/
+
+# ============================================
+# BASES DE DATOS LOCALES
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# ARCHIVOS GRANDES
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# PERSONALIZADO
+# ============================================
+# Agrega aqui archivos especificos de tu proyecto

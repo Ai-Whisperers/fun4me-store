@@ -1,0 +1,72 @@
+# =============================================================================
+# Vete Platform - Docker Compose Configuration
+# =============================================================================
+#
+# Usage:
+#   Development:  docker-compose up
+#   Production:   docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#   With tunnel:  docker-compose --profile tunnel up -d
+#
+# Profiles:
+#   - default: Web application only
+#   - tunnel: Includes Cloudflare tunnel sidecar
+#
+# =============================================================================
+
+version: '3.8'
+
+services:
+  # ---------------------------------------------------------------------------
+  # Web Application (Next.js)
+  # ---------------------------------------------------------------------------
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vete-web
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./web/.env.local
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - vete-network
+
+  # ---------------------------------------------------------------------------
+  # Cloudflare Tunnel (Optional)
+  # ---------------------------------------------------------------------------
+  # Enable with: docker-compose --profile tunnel up
+  # Requires: ./cloudflared/config.yml and tunnel credentials
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: vete-tunnel
+    profiles:
+      - tunnel
+    command: tunnel --config /etc/cloudflared/config.yml run
+    volumes:
+      - ./cloudflared:/etc/cloudflared:ro
+    depends_on:
+      web:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - vete-network
+
+networks:
+  vete-network:
+    driver: bridge
+
+# =============================================================================
+# Volume mounts (uncomment if needed for development)
+# =============================================================================
+# volumes:
+#   node_modules:

@@ -1,0 +1,114 @@
+{
+  "$comment": "Replace CLINIC_SLUG with your clinic's slug (e.g., 'terrapet', 'petlife')",
+  "version": "1.0",
+  "basePath": "/branding/CLINIC_SLUG/images",
+  "images": {
+    "hero": {
+      "main": {
+        "src": "hero-bg.jpg",
+        "alt": "Tu Clínica - Cuidado experto para tu mascota",
+        "width": 1920,
+        "height": 1080
+      },
+      "about": {
+        "src": "about-hero.jpg",
+        "alt": "Nuestra historia",
+        "width": 1920,
+        "height": 1080
+      },
+      "services": {
+        "src": "services-hero.jpg",
+        "alt": "Servicios veterinarios profesionales",
+        "width": 1920,
+        "height": 1080
+      },
+      "store": {
+        "src": "store-hero.jpg",
+        "alt": "Tienda de productos para mascotas",
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "team": {
+      "$comment": "Add team member photos here",
+      "example": {
+        "src": "team/example.jpg",
+        "alt": "Dr. Nombre - Especialidad",
+        "width": 400,
+        "height": 533
+      }
+    },
+    "facilities": {
+      "reception": {
+        "src": "facilities/reception.jpg",
+        "alt": "Recepción",
+        "width": 800,
+        "height": 600
+      },
+      "consultation": {
+        "src": "facilities/consultation.jpg",
+        "alt": "Consultorio",
+        "width": 800,
+        "height": 600
+      }
+    },
+    "services": {
+      "consultation": {
+        "src": "services/consultation.jpg",
+        "alt": "Consulta veterinaria",
+        "width": 800,
+        "height": 600
+      },
+      "vaccination": {
+        "src": "services/vaccination.jpg",
+        "alt": "Vacunación",
+        "width": 800,
+        "height": 600
+      },
+      "surgery": {
+        "src": "services/surgery.jpg",
+        "alt": "Cirugía",
+        "width": 800,
+        "height": 600
+      },
+      "grooming": {
+        "src": "services/grooming.jpg",
+        "alt": "Peluquería",
+        "width": 800,
+        "height": 600
+      }
+    },
+    "branding": {
+      "logo": {
+        "src": "logo.png",
+        "alt": "Logo",
+        "width": 300,
+        "height": 112
+      },
+      "logo-dark": {
+        "src": "logo-dark.png",
+        "alt": "Logo (dark)",
+        "width": 300,
+        "height": 112
+      },
+      "favicon": {
+        "src": "favicon.ico",
+        "alt": "Favicon",
+        "width": 32,
+        "height": 32
+      },
+      "og-image": {
+        "src": "og-image.jpg",
+        "alt": "Open Graph Image",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  },
+  "placeholders": {
+    "pet": "/images/placeholders/pet-placeholder.jpg",
+    "product": "/images/placeholders/product-placeholder.jpg",
+    "team": "/images/placeholders/team-placeholder.jpg",
+    "service": "/images/placeholders/service-placeholder.jpg"
+  }
+}

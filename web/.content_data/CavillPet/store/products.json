@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "prod_0431",
+    "name": "Mordillo Nerf Dog",
+    "category": "Juguetes",
+    "price": 14900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0392",
+    "name": "Soga JW",
+    "category": "Juguetes",
+    "price": 11500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0119",
+    "name": "Húmedo Pro Plan Perro Adulto 15kg",
+    "category": "Alimentos",
+    "price": 87200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0085",
+    "name": "Seco Hill's Gato Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 125100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Hill's. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0389",
+    "name": "Peluche Nerf Dog",
+    "category": "Juguetes",
+    "price": 11700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0074",
+    "name": "Medicado Whiskas Perro Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 60500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Whiskas. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0037",
+    "name": "Medicado Pro Plan Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 66800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0321",
+    "name": "Peine Osspret",
+    "category": "Higiene",
+    "price": 8000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0106",
+    "name": "Medicado Pro Plan Perro Senior 20kg",
+    "category": "Alimentos",
+    "price": 121500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0382",
+    "name": "Mordillo Chuckit!",
+    "category": "Juguetes",
+    "price": 10200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0221",
+    "name": "Comedero Generico Negro Talle S",
+    "category": "Accesorios",
+    "price": 22300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Generico. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0253",
+    "name": "Cama Zee.Dog Rosa Talle M",
+    "category": "Accesorios",
+    "price": 15600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Zee.Dog. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0203",
+    "name": "Suplemento Apto-Flex x1 unid.",
+    "category": "Farmacia",
+    "price": 56100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0326",
+    "name": "Shampoo Osspret",
+    "category": "Higiene",
+    "price": 12200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0301",
+    "name": "Peine Trixie",
+    "category": "Higiene",
+    "price": 11800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0184",
+    "name": "Dermatología Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 42500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0072",
+    "name": "Snacks Excellent Perro Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 34200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Excellent. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0189",
+    "name": "Ojos y Oídos Apto-Flex x6 unid.",
+    "category": "Farmacia",
+    "price": 58400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0218",
+    "name": "Suplemento NexGard x3 unid.",
+    "category": "Farmacia",
+    "price": 57200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0290",
+    "name": "Transportadora Zee.Dog Negro Talle M",
+    "category": "Accesorios",
+    "price": 14700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Zee.Dog. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0031",
+    "name": "Medicado Pro Plan Gato Senior 20kg",
+    "category": "Alimentos",
+    "price": 129200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0123",
+    "name": "Ojos y Oídos Bravecto x3 unid.",
+    "category": "Farmacia",
+    "price": 42400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0219",
+    "name": "Dermatología Apto-Flex x1 unid.",
+    "category": "Farmacia",
+    "price": 59600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0207",
+    "name": "Antibiótico Total Full x3 unid.",
+    "category": "Farmacia",
+    "price": 35700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0446",
+    "name": "Mordillo JW",
+    "category": "Juguetes",
+    "price": 13800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0011",
+    "name": "Medicado Pro Plan Gato Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 73300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0170",
+    "name": "Antibiótico Frontline x6 unid.",
+    "category": "Farmacia",
+    "price": 34600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0414",
+    "name": "Soga Chuckit!",
+    "category": "Juguetes",
+    "price": 12600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0267",
+    "name": "Pretal Generico Negro Talle L",
+    "category": "Accesorios",
+    "price": 22000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Generico. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0153",
+    "name": "Ojos y Oídos Simparica x3 unid.",
+    "category": "Farmacia",
+    "price": 54900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0302",
+    "name": "Corta Uñas Baviera",
+    "category": "Higiene",
+    "price": 14300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0291",
+    "name": "Pretal Zee.Dog Rosa Talle S",
+    "category": "Accesorios",
+    "price": 17400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Zee.Dog. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0394",
+    "name": "Mordillo Nerf Dog",
+    "category": "Juguetes",
+    "price": 12000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0139",
+    "name": "Suplemento Simparica x3 unid.",
+    "category": "Farmacia",
+    "price": 59200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0448",
+    "name": "Soga Chuckit!",
+    "category": "Juguetes",
+    "price": 14000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0133",
+    "name": "Desparasitante Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 49100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0125",
+    "name": "Ojos y Oídos Bravecto x3 unid.",
+    "category": "Farmacia",
+    "price": 33700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0181",
+    "name": "Suplemento Apto-Flex x6 unid.",
+    "category": "Farmacia",
+    "price": 37600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0299",
+    "name": "Cama Kong Rojo Talle L",
+    "category": "Accesorios",
+    "price": 19000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0323",
+    "name": "Shampoo Furminator",
+    "category": "Higiene",
+    "price": 10100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0398",
+    "name": "Soga JW",
+    "category": "Juguetes",
+    "price": 14500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0073",
+    "name": "Snacks Whiskas Perro Adulto 20kg",
+    "category": "Alimentos",
+    "price": 116100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Whiskas. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0225",
+    "name": "Transportadora Generico Rosa Talle XL",
+    "category": "Accesorios",
+    "price": 20400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Generico. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0241",
+    "name": "Cama Generico Camuflado Talle S",
+    "category": "Accesorios",
+    "price": 14500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Generico. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0163",
+    "name": "Ojos y Oídos Simparica x3 unid.",
+    "category": "Farmacia",
+    "price": 32800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0100",
+    "name": "Húmedo Pro Plan Gato Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 52700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0026",
+    "name": "Natural Eukanuba Gato Senior 15kg",
+    "category": "Alimentos",
+    "price": 92300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Eukanuba. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0385",
+    "name": "Caña Nerf Dog",
+    "category": "Juguetes",
+    "price": 10400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0263",
+    "name": "Comedero Ruffwear Azul Talle XL",
+    "category": "Accesorios",
+    "price": 12600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Ruffwear. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0411",
+    "name": "Peluche Chuckit!",
+    "category": "Juguetes",
+    "price": 9400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0022",
+    "name": "Húmedo Excellent Gato Cachorro 15kg",
+    "category": "Alimentos",
+    "price": 105300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Excellent. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0427",
+    "name": "Soga Chuckit!",
+    "category": "Juguetes",
+    "price": 9200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0412",
+    "name": "Mordillo Nerf Dog",
+    "category": "Juguetes",
+    "price": 12200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0007",
+    "name": "Húmedo Whiskas Perro Adulto 15kg",
+    "category": "Alimentos",
+    "price": 77400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Whiskas. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0335",
+    "name": "Corta Uñas Trixie",
+    "category": "Higiene",
+    "price": 11700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0069",
+    "name": "Medicado Excellent Gato Adulto 15kg",
+    "category": "Alimentos",
+    "price": 81200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Excellent. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0223",
+    "name": "Correa Zee.Dog Negro Talle S",
+    "category": "Accesorios",
+    "price": 14800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Zee.Dog. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0054",
+    "name": "Seco Old Prince Perro Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 47300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Old Prince. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0275",
+    "name": "Comedero Ruffwear Azul Talle M",
+    "category": "Accesorios",
+    "price": 19500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Ruffwear. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0180",
+    "name": "Dermatología Seresto x3 unid.",
+    "category": "Farmacia",
+    "price": 34200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0309",
+    "name": "Paños Húmedos Baviera",
+    "category": "Higiene",
+    "price": 13200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0068",
+    "name": "Seco Whiskas Perro Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 45200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Whiskas. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0076",
+    "name": "Húmedo Old Prince Perro Adulto 20kg",
+    "category": "Alimentos",
+    "price": 133600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Old Prince. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0313",
+    "name": "Paños Húmedos Furminator",
+    "category": "Higiene",
+    "price": 9100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0084",
+    "name": "Natural Pedigree Perro Senior 15kg",
+    "category": "Alimentos",
+    "price": 109800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Pedigree. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0206",
+    "name": "Antibiótico NexGard x6 unid.",
+    "category": "Farmacia",
+    "price": 54700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0080",
+    "name": "Húmedo Royal Canin Perro Adulto 3kg",
+    "category": "Alimentos",
+    "price": 34500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0331",
+    "name": "Colonia Furminator",
+    "category": "Higiene",
+    "price": 11300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Colonia de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0216",
+    "name": "Antipulgas Frontline x3 unid.",
+    "category": "Farmacia",
+    "price": 33000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0130",
+    "name": "Antipulgas Frontline x3 unid.",
+    "category": "Farmacia",
+    "price": 43500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0244",
+    "name": "Correa Zee.Dog Azul Talle S",
+    "category": "Accesorios",
+    "price": 14400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Zee.Dog. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0439",
+    "name": "Interactivo Kong",
+    "category": "Juguetes",
+    "price": 12200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0239",
+    "name": "Cama Zee.Dog Rojo Talle M",
+    "category": "Accesorios",
+    "price": 20200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Zee.Dog. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0083",
+    "name": "Natural Pro Plan Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 76700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0443",
+    "name": "Mordillo Kong",
+    "category": "Juguetes",
+    "price": 10900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0023",
+    "name": "Seco Excellent Perro Adulto 15kg",
+    "category": "Alimentos",
+    "price": 78400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0169",
+    "name": "Antipulgas Apto-Flex x6 unid.",
+    "category": "Farmacia",
+    "price": 47400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0336",
+    "name": "Piedras Sanitarias Trixie",
+    "category": "Higiene",
+    "price": 13900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0205",
+    "name": "Ojos y Oídos Apto-Flex x3 unid.",
+    "category": "Farmacia",
+    "price": 57200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0342",
+    "name": "Peine Baviera",
+    "category": "Higiene",
+    "price": 14400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0260",
+    "name": "Cama Kong Rojo Talle S",
+    "category": "Accesorios",
+    "price": 12700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0092",
+    "name": "Medicado Pro Plan Perro Cachorro 1kg",
+    "category": "Alimentos",
+    "price": 36800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0217",
+    "name": "Dermatología Simparica x6 unid.",
+    "category": "Farmacia",
+    "price": 56400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0040",
+    "name": "Medicado Excellent Perro Cachorro 15kg",
+    "category": "Alimentos",
+    "price": 126900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Excellent. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0229",
+    "name": "Comedero Kong Rojo Talle S",
+    "category": "Accesorios",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0034",
+    "name": "Seco Excellent Perro Cachorro 15kg",
+    "category": "Alimentos",
+    "price": 118700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0295",
+    "name": "Comedero Generico Azul Talle M",
+    "category": "Accesorios",
+    "price": 18800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Generico. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0310",
+    "name": "Colonia Furminator",
+    "category": "Higiene",
+    "price": 11200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Colonia de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0368",
+    "name": "Pelota Kong",
+    "category": "Juguetes",
+    "price": 12400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0143",
+    "name": "Suplemento Advantage x6 unid.",
+    "category": "Farmacia",
+    "price": 38900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0388",
+    "name": "Mordillo Trixie",
+    "category": "Juguetes",
+    "price": 9100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0052",
+    "name": "Snacks Excellent Gato Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 30800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Excellent. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0041",
+    "name": "Seco Eukanuba Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 44200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0129",
+    "name": "Suplemento Total Full x6 unid.",
+    "category": "Farmacia",
+    "price": 43500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0151",
+    "name": "Antipulgas Total Full x1 unid.",
+    "category": "Farmacia",
+    "price": 55000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0407",
+    "name": "Pelota Kong",
+    "category": "Juguetes",
+    "price": 12000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0016",
+    "name": "Húmedo Pro Plan Perro Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 79000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0404",
+    "name": "Interactivo Chuckit!",
+    "category": "Juguetes",
+    "price": 8200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0190",
+    "name": "Ojos y Oídos Advantage x6 unid.",
+    "category": "Farmacia",
+    "price": 47200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0086",
+    "name": "Húmedo Excellent Perro Adulto 1kg",
+    "category": "Alimentos",
+    "price": 28700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Excellent. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0296",
+    "name": "Ropa Zee.Dog Azul Talle L",
+    "category": "Accesorios",
+    "price": 13600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Zee.Dog. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0135",
+    "name": "Desparasitante Frontline x3 unid.",
+    "category": "Farmacia",
+    "price": 58900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0099",
+    "name": "Húmedo Pedigree Perro Adulto 1kg",
+    "category": "Alimentos",
+    "price": 38000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pedigree. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0444",
+    "name": "Caña Trixie",
+    "category": "Juguetes",
+    "price": 12200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0122",
+    "name": "Dermatología Simparica x3 unid.",
+    "category": "Farmacia",
+    "price": 45300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0271",
+    "name": "Pretal Kong Rojo Talle M",
+    "category": "Accesorios",
+    "price": 18100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0160",
+    "name": "Dermatología Apto-Flex x3 unid.",
+    "category": "Farmacia",
+    "price": 50600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0373",
+    "name": "Pelota Chuckit!",
+    "category": "Juguetes",
+    "price": 10000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0060",
+    "name": "Medicado Whiskas Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 105900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Whiskas. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0071",
+    "name": "Medicado Eukanuba Perro Adulto 1kg",
+    "category": "Alimentos",
+    "price": 29900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0358",
+    "name": "Piedras Sanitarias Trixie",
+    "category": "Higiene",
+    "price": 10800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0224",
+    "name": "Comedero Generico Verde Talle L",
+    "category": "Accesorios",
+    "price": 14200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Generico. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0111",
+    "name": "Húmedo Excellent Perro Senior 15kg",
+    "category": "Alimentos",
+    "price": 68100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Excellent. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0228",
+    "name": "Pretal Ruffwear Rojo Talle XL",
+    "category": "Accesorios",
+    "price": 19300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Ruffwear. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0258",
+    "name": "Collar Ruffwear Camuflado Talle L",
+    "category": "Accesorios",
+    "price": 14700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Ruffwear. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0137",
+    "name": "Desparasitante Frontline x6 unid.",
+    "category": "Farmacia",
+    "price": 54000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0333",
+    "name": "Peine Furminator",
+    "category": "Higiene",
+    "price": 14000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0428",
+    "name": "Interactivo Chuckit!",
+    "category": "Juguetes",
+    "price": 11200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0055",
+    "name": "Natural Royal Canin Gato Senior 20kg",
+    "category": "Alimentos",
+    "price": 85200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Royal Canin. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0186",
+    "name": "Dermatología Drontal x6 unid.",
+    "category": "Farmacia",
+    "price": 47700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0324",
+    "name": "Piedras Sanitarias Sanicat",
+    "category": "Higiene",
+    "price": 11100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0246",
+    "name": "Collar Kong Rosa Talle S",
+    "category": "Accesorios",
+    "price": 12100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Kong. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0009",
+    "name": "Snacks Royal Canin Perro Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 51900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0178",
+    "name": "Antipulgas Frontline x1 unid.",
+    "category": "Farmacia",
+    "price": 52700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0232",
+    "name": "Ropa Zee.Dog Verde Talle M",
+    "category": "Accesorios",
+    "price": 16100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Zee.Dog. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0117",
+    "name": "Medicado Whiskas Perro Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 69200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Whiskas. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0136",
+    "name": "Dermatología Bravecto x1 unid.",
+    "category": "Farmacia",
+    "price": 34800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0192",
+    "name": "Antibiótico Frontline x6 unid.",
+    "category": "Farmacia",
+    "price": 47900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0420",
+    "name": "Interactivo Nerf Dog",
+    "category": "Juguetes",
+    "price": 8800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0050",
+    "name": "Húmedo Old Prince Perro Cachorro 15kg",
+    "category": "Alimentos",
+    "price": 126500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Old Prince. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0430",
+    "name": "Mordillo Nerf Dog",
+    "category": "Juguetes",
+    "price": 9400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0058",
+    "name": "Natural Old Prince Perro Adulto 3kg",
+    "category": "Alimentos",
+    "price": 47900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Old Prince. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0175",
+    "name": "Antipulgas Advantage x3 unid.",
+    "category": "Farmacia",
+    "price": 55500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0332",
+    "name": "Peine Baviera",
+    "category": "Higiene",
+    "price": 9300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0300",
+    "name": "Correa Ruffwear Rojo Talle L",
+    "category": "Accesorios",
+    "price": 19400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Ruffwear. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0028",
+    "name": "Natural Pedigree Gato Cachorro 1kg",
+    "category": "Alimentos",
+    "price": 28900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Pedigree. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0101",
+    "name": "Húmedo Royal Canin Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 67700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0049",
+    "name": "Natural Royal Canin Gato Adulto 1kg",
+    "category": "Alimentos",
+    "price": 32400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Royal Canin. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0400",
+    "name": "Peluche JW",
+    "category": "Juguetes",
+    "price": 9300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0315",
+    "name": "Acondicionador Sanicat",
+    "category": "Higiene",
+    "price": 10400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Acondicionador de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0399",
+    "name": "Peluche Nerf Dog",
+    "category": "Juguetes",
+    "price": 9100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0447",
+    "name": "Pelota Chuckit!",
+    "category": "Juguetes",
+    "price": 12600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0354",
+    "name": "Corta Uñas Furminator",
+    "category": "Higiene",
+    "price": 8100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0240",
+    "name": "Pretal Kong Verde Talle S",
+    "category": "Accesorios",
+    "price": 12200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Kong. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0098",
+    "name": "Húmedo Royal Canin Gato Senior 20kg",
+    "category": "Alimentos",
+    "price": 154900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Royal Canin. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0401",
+    "name": "Soga Chuckit!",
+    "category": "Juguetes",
+    "price": 12900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0316",
+    "name": "Piedras Sanitarias Baviera",
+    "category": "Higiene",
+    "price": 12100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0053",
+    "name": "Natural Whiskas Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 53000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0243",
+    "name": "Comedero Mpets Negro Talle XL",
+    "category": "Accesorios",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Mpets. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0112",
+    "name": "Húmedo Vital Can Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 71800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Vital Can. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0293",
+    "name": "Collar Ruffwear Azul Talle M",
+    "category": "Accesorios",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Ruffwear. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0090",
+    "name": "Snacks Whiskas Gato Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 53000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0095",
+    "name": "Snacks Excellent Perro Adulto 20kg",
+    "category": "Alimentos",
+    "price": 87600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Excellent. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0328",
+    "name": "Peine Trixie",
+    "category": "Higiene",
+    "price": 11600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0261",
+    "name": "Ropa Zee.Dog Verde Talle M",
+    "category": "Accesorios",
+    "price": 14700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Zee.Dog. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0230",
+    "name": "Bebedero Generico Azul Talle S",
+    "category": "Accesorios",
+    "price": 16000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Generico. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0372",
+    "name": "Soga Nerf Dog",
+    "category": "Juguetes",
+    "price": 14200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0155",
+    "name": "Desparasitante Simparica x3 unid.",
+    "category": "Farmacia",
+    "price": 53500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0191",
+    "name": "Desparasitante Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 54100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0093",
+    "name": "Húmedo Excellent Gato Senior 1kg",
+    "category": "Alimentos",
+    "price": 32100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Excellent. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0242",
+    "name": "Cama Kong Rojo Talle XL",
+    "category": "Accesorios",
+    "price": 13200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0391",
+    "name": "Interactivo Chuckit!",
+    "category": "Juguetes",
+    "price": 11900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0039",
+    "name": "Húmedo Pro Plan Gato Senior 20kg",
+    "category": "Alimentos",
+    "price": 92600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0307",
+    "name": "Acondicionador Sanicat",
+    "category": "Higiene",
+    "price": 10600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Acondicionador de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0393",
+    "name": "Mordillo JW",
+    "category": "Juguetes",
+    "price": 13900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0325",
+    "name": "Shampoo Sanicat",
+    "category": "Higiene",
+    "price": 13000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0254",
+    "name": "Transportadora Zee.Dog Rosa Talle M",
+    "category": "Accesorios",
+    "price": 14500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Zee.Dog. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0386",
+    "name": "Soga Chuckit!",
+    "category": "Juguetes",
+    "price": 10200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0081",
+    "name": "Seco Excellent Perro Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 31000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0312",
+    "name": "Paños Húmedos Osspret",
+    "category": "Higiene",
+    "price": 12900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0265",
+    "name": "Cama Generico Camuflado Talle M",
+    "category": "Accesorios",
+    "price": 16800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Generico. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0319",
+    "name": "Shampoo Trixie",
+    "category": "Higiene",
+    "price": 12900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0231",
+    "name": "Ropa Mpets Azul Talle S",
+    "category": "Accesorios",
+    "price": 18500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Mpets. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0405",
+    "name": "Soga Kong",
+    "category": "Juguetes",
+    "price": 11700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0061",
+    "name": "Snacks Whiskas Perro Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 75600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Whiskas. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0375",
+    "name": "Pelota Kong",
+    "category": "Juguetes",
+    "price": 12300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0274",
+    "name": "Bebedero Kong Camuflado Talle S",
+    "category": "Accesorios",
+    "price": 13500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Kong. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0360",
+    "name": "Shampoo Osspret",
+    "category": "Higiene",
+    "price": 9100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0078",
+    "name": "Natural Vital Can Perro Cachorro 1kg",
+    "category": "Alimentos",
+    "price": 30100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Vital Can. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0108",
+    "name": "Medicado Whiskas Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 157100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Whiskas. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0379",
+    "name": "Soga Kong",
+    "category": "Juguetes",
+    "price": 13400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0270",
+    "name": "Cama Kong Rojo Talle M",
+    "category": "Accesorios",
+    "price": 16000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0421",
+    "name": "Caña JW",
+    "category": "Juguetes",
+    "price": 14700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0029",
+    "name": "Húmedo Hill's Gato Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 47300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Hill's. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0435",
+    "name": "Pelota Kong",
+    "category": "Juguetes",
+    "price": 8800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0051",
+    "name": "Medicado Vital Can Gato Adulto 3kg",
+    "category": "Alimentos",
+    "price": 35900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Vital Can. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0161",
+    "name": "Antipulgas Total Full x1 unid.",
+    "category": "Farmacia",
+    "price": 57600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0363",
+    "name": "Mordillo Kong",
+    "category": "Juguetes",
+    "price": 13900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0182",
+    "name": "Suplemento Seresto x6 unid.",
+    "category": "Farmacia",
+    "price": 53900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0259",
+    "name": "Collar Kong Rojo Talle XL",
+    "category": "Accesorios",
+    "price": 17600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0286",
+    "name": "Ropa Zee.Dog Rosa Talle XL",
+    "category": "Accesorios",
+    "price": 19200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Zee.Dog. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0308",
+    "name": "Peine Furminator",
+    "category": "Higiene",
+    "price": 13500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0124",
+    "name": "Suplemento Drontal x3 unid.",
+    "category": "Farmacia",
+    "price": 58200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0423",
+    "name": "Pelota Nerf Dog",
+    "category": "Juguetes",
+    "price": 14500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0370",
+    "name": "Soga Nerf Dog",
+    "category": "Juguetes",
+    "price": 8400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0109",
+    "name": "Snacks Whiskas Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 146800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Whiskas. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0196",
+    "name": "Ojos y Oídos Frontline x1 unid.",
+    "category": "Farmacia",
+    "price": 45200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0145",
+    "name": "Desparasitante Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 45700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0021",
+    "name": "Natural Whiskas Perro Cachorro 1kg",
+    "category": "Alimentos",
+    "price": 35300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Whiskas. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0156",
+    "name": "Dermatología Apto-Flex x1 unid.",
+    "category": "Farmacia",
+    "price": 53600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0176",
+    "name": "Dermatología Apto-Flex x1 unid.",
+    "category": "Farmacia",
+    "price": 38000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0027",
+    "name": "Natural Old Prince Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 151600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Old Prince. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0278",
+    "name": "Pretal Mpets Rojo Talle L",
+    "category": "Accesorios",
+    "price": 17400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Mpets. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0262",
+    "name": "Bebedero Mpets Camuflado Talle L",
+    "category": "Accesorios",
+    "price": 14300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Mpets. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0165",
+    "name": "Ojos y Oídos Total Full x3 unid.",
+    "category": "Farmacia",
+    "price": 40800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0227",
+    "name": "Ropa Mpets Camuflado Talle S",
+    "category": "Accesorios",
+    "price": 17800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Mpets. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0200",
+    "name": "Suplemento Frontline x1 unid.",
+    "category": "Farmacia",
+    "price": 41400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0127",
+    "name": "Suplemento Simparica x3 unid.",
+    "category": "Farmacia",
+    "price": 41600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0017",
+    "name": "Natural Hill's Gato Senior 1kg",
+    "category": "Alimentos",
+    "price": 26200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Hill's. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0033",
+    "name": "Seco Whiskas Gato Senior 20kg",
+    "category": "Alimentos",
+    "price": 103300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0281",
+    "name": "Ropa Zee.Dog Verde Talle L",
+    "category": "Accesorios",
+    "price": 18200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Zee.Dog. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0097",
+    "name": "Snacks Excellent Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 62200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Excellent. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0045",
+    "name": "Snacks Royal Canin Gato Adulto 3kg",
+    "category": "Alimentos",
+    "price": 48400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Royal Canin. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0087",
+    "name": "Medicado Old Prince Perro Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 61400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Old Prince. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0314",
+    "name": "Peine Baviera",
+    "category": "Higiene",
+    "price": 9300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0287",
+    "name": "Pretal Kong Rojo Talle M",
+    "category": "Accesorios",
+    "price": 20600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Kong. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0347",
+    "name": "Paños Húmedos Trixie",
+    "category": "Higiene",
+    "price": 14700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0003",
+    "name": "Natural Eukanuba Perro Senior 3kg",
+    "category": "Alimentos",
+    "price": 30600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0264",
+    "name": "Correa Ruffwear Negro Talle M",
+    "category": "Accesorios",
+    "price": 12800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Ruffwear. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0410",
+    "name": "Mordillo Chuckit!",
+    "category": "Juguetes",
+    "price": 10000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0008",
+    "name": "Medicado Hill's Perro Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 60600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Hill's. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0057",
+    "name": "Húmedo Whiskas Perro Senior 15kg",
+    "category": "Alimentos",
+    "price": 98700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Whiskas. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0445",
+    "name": "Mordillo Trixie",
+    "category": "Juguetes",
+    "price": 14500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0162",
+    "name": "Ojos y Oídos Seresto x1 unid.",
+    "category": "Farmacia",
+    "price": 39300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0252",
+    "name": "Bebedero Zee.Dog Negro Talle L",
+    "category": "Accesorios",
+    "price": 20900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Zee.Dog. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0429",
+    "name": "Caña Nerf Dog",
+    "category": "Juguetes",
+    "price": 10000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0292",
+    "name": "Ropa Mpets Camuflado Talle L",
+    "category": "Accesorios",
+    "price": 13700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Mpets. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0318",
+    "name": "Piedras Sanitarias Osspret",
+    "category": "Higiene",
+    "price": 11500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0433",
+    "name": "Interactivo Kong",
+    "category": "Juguetes",
+    "price": 12500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0397",
+    "name": "Peluche JW",
+    "category": "Juguetes",
+    "price": 14800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0043",
+    "name": "Natural Whiskas Gato Cachorro 1kg",
+    "category": "Alimentos",
+    "price": 24100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0172",
+    "name": "Antipulgas Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 40400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0311",
+    "name": "Peine Baviera",
+    "category": "Higiene",
+    "price": 11500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0255",
+    "name": "Transportadora Ruffwear Negro Talle L",
+    "category": "Accesorios",
+    "price": 22200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Ruffwear. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0035",
+    "name": "Medicado Pedigree Gato Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 44100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pedigree. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0142",
+    "name": "Antibiótico Simparica x6 unid.",
+    "category": "Farmacia",
+    "price": 42800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0249",
+    "name": "Comedero Mpets Azul Talle L",
+    "category": "Accesorios",
+    "price": 22300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Mpets. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0064",
+    "name": "Natural Vital Can Perro Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 81300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Vital Can. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0183",
+    "name": "Antipulgas Apto-Flex x6 unid.",
+    "category": "Farmacia",
+    "price": 45100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0138",
+    "name": "Ojos y Oídos Apto-Flex x3 unid.",
+    "category": "Farmacia",
+    "price": 35100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0425",
+    "name": "Pelota Trixie",
+    "category": "Juguetes",
+    "price": 14800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0157",
+    "name": "Antibiótico NexGard x1 unid.",
+    "category": "Farmacia",
+    "price": 51300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0235",
+    "name": "Cama Kong Camuflado Talle L",
+    "category": "Accesorios",
+    "price": 19100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Kong. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0344",
+    "name": "Piedras Sanitarias Sanicat",
+    "category": "Higiene",
+    "price": 13300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0387",
+    "name": "Caña Trixie",
+    "category": "Juguetes",
+    "price": 12700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0004",
+    "name": "Snacks Pedigree Gato Adulto 15kg",
+    "category": "Alimentos",
+    "price": 68800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Pedigree. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0415",
+    "name": "Interactivo Nerf Dog",
+    "category": "Juguetes",
+    "price": 13600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0063",
+    "name": "Snacks Vital Can Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 90900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Vital Can. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0042",
+    "name": "Húmedo Old Prince Gato Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 46600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Old Prince. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0140",
+    "name": "Suplemento NexGard x1 unid.",
+    "category": "Farmacia",
+    "price": 46100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0222",
+    "name": "Ropa Generico Negro Talle M",
+    "category": "Accesorios",
+    "price": 12600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Generico. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0413",
+    "name": "Mordillo Chuckit!",
+    "category": "Juguetes",
+    "price": 8400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0355",
+    "name": "Corta Uñas Sanicat",
+    "category": "Higiene",
+    "price": 14700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0419",
+    "name": "Interactivo Kong",
+    "category": "Juguetes",
+    "price": 13700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0343",
+    "name": "Colonia Osspret",
+    "category": "Higiene",
+    "price": 13600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Colonia de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0038",
+    "name": "Húmedo Eukanuba Perro Senior 3kg",
+    "category": "Alimentos",
+    "price": 35400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0173",
+    "name": "Desparasitante Drontal x6 unid.",
+    "category": "Farmacia",
+    "price": 40500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0105",
+    "name": "Snacks Eukanuba Perro Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 60900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0015",
+    "name": "Natural Whiskas Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 129500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Whiskas. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0131",
+    "name": "Antibiótico Bravecto x6 unid.",
+    "category": "Farmacia",
+    "price": 58400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0185",
+    "name": "Suplemento Advantage x3 unid.",
+    "category": "Farmacia",
+    "price": 54300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0327",
+    "name": "Shampoo Osspret",
+    "category": "Higiene",
+    "price": 10300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0128",
+    "name": "Antibiótico Total Full x6 unid.",
+    "category": "Farmacia",
+    "price": 55900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0144",
+    "name": "Dermatología Apto-Flex x1 unid.",
+    "category": "Farmacia",
+    "price": 59000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Apto-Flex. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0256",
+    "name": "Pretal Mpets Rojo Talle M",
+    "category": "Accesorios",
+    "price": 18500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Mpets. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0337",
+    "name": "Paños Húmedos Sanicat",
+    "category": "Higiene",
+    "price": 13600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0089",
+    "name": "Seco Hill's Gato Adulto 3kg",
+    "category": "Alimentos",
+    "price": 45600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Hill's. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0320",
+    "name": "Shampoo Sanicat",
+    "category": "Higiene",
+    "price": 14600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0006",
+    "name": "Húmedo Whiskas Perro Adulto 3kg",
+    "category": "Alimentos",
+    "price": 54200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Whiskas. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0215",
+    "name": "Antibiótico Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 42500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0096",
+    "name": "Seco Royal Canin Perro Adulto 15kg",
+    "category": "Alimentos",
+    "price": 124400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0110",
+    "name": "Medicado Hill's Gato Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 112200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Hill's. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0115",
+    "name": "Medicado Eukanuba Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 81600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Eukanuba. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0018",
+    "name": "Snacks Pro Plan Perro Senior 15kg",
+    "category": "Alimentos",
+    "price": 120200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0434",
+    "name": "Pelota Chuckit!",
+    "category": "Juguetes",
+    "price": 9800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0214",
+    "name": "Antipulgas Bravecto x3 unid.",
+    "category": "Farmacia",
+    "price": 39900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0349",
+    "name": "Corta Uñas Trixie",
+    "category": "Higiene",
+    "price": 11800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0030",
+    "name": "Medicado Hill's Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 45700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Hill's. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0366",
+    "name": "Caña Kong",
+    "category": "Juguetes",
+    "price": 10600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0114",
+    "name": "Húmedo Pedigree Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 126500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pedigree. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0187",
+    "name": "Suplemento Seresto x1 unid.",
+    "category": "Farmacia",
+    "price": 35900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0376",
+    "name": "Interactivo Nerf Dog",
+    "category": "Juguetes",
+    "price": 10000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0248",
+    "name": "Bebedero Ruffwear Azul Talle XL",
+    "category": "Accesorios",
+    "price": 18500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Ruffwear. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0266",
+    "name": "Comedero Ruffwear Camuflado Talle M",
+    "category": "Accesorios",
+    "price": 19800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Ruffwear. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0257",
+    "name": "Pretal Zee.Dog Rosa Talle S",
+    "category": "Accesorios",
+    "price": 20600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Zee.Dog. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0329",
+    "name": "Paños Húmedos Furminator",
+    "category": "Higiene",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0208",
+    "name": "Ojos y Oídos Total Full x6 unid.",
+    "category": "Farmacia",
+    "price": 34900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0380",
+    "name": "Pelota Chuckit!",
+    "category": "Juguetes",
+    "price": 10200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0070",
+    "name": "Medicado Pro Plan Perro Adulto 3kg",
+    "category": "Alimentos",
+    "price": 52900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pro Plan. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0067",
+    "name": "Medicado Vital Can Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 64700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Vital Can. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0201",
+    "name": "Dermatología Total Full x3 unid.",
+    "category": "Farmacia",
+    "price": 52300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0132",
+    "name": "Dermatología Seresto x1 unid.",
+    "category": "Farmacia",
+    "price": 32200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0024",
+    "name": "Seco Excellent Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 63400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0118",
+    "name": "Medicado Old Prince Perro Senior 20kg",
+    "category": "Alimentos",
+    "price": 128700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Old Prince. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0102",
+    "name": "Seco Vital Can Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 47600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Vital Can. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0202",
+    "name": "Antipulgas NexGard x6 unid.",
+    "category": "Farmacia",
+    "price": 38800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0276",
+    "name": "Collar Ruffwear Verde Talle XL",
+    "category": "Accesorios",
+    "price": 15400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Ruffwear. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0066",
+    "name": "Natural Pedigree Perro Adulto 15kg",
+    "category": "Alimentos",
+    "price": 124400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Pedigree. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0437",
+    "name": "Pelota Kong",
+    "category": "Juguetes",
+    "price": 11900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0079",
+    "name": "Natural Excellent Perro Adulto 1kg",
+    "category": "Alimentos",
+    "price": 27800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Excellent. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0233",
+    "name": "Pretal Mpets Rosa Talle S",
+    "category": "Accesorios",
+    "price": 20700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Mpets. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0280",
+    "name": "Pretal Ruffwear Rosa Talle L",
+    "category": "Accesorios",
+    "price": 22000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Ruffwear. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0107",
+    "name": "Natural Royal Canin Perro Senior 1kg",
+    "category": "Alimentos",
+    "price": 42500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0403",
+    "name": "Caña JW",
+    "category": "Juguetes",
+    "price": 10600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0211",
+    "name": "Ojos y Oídos Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 48800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0346",
+    "name": "Paños Húmedos Sanicat",
+    "category": "Higiene",
+    "price": 13900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0350",
+    "name": "Acondicionador Sanicat",
+    "category": "Higiene",
+    "price": 8100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Acondicionador de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0449",
+    "name": "Mordillo Chuckit!",
+    "category": "Juguetes",
+    "price": 11100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0378",
+    "name": "Interactivo Kong",
+    "category": "Juguetes",
+    "price": 14300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0374",
+    "name": "Caña Chuckit!",
+    "category": "Juguetes",
+    "price": 8800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0014",
+    "name": "Húmedo Eukanuba Perro Adulto 1kg",
+    "category": "Alimentos",
+    "price": 42500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0305",
+    "name": "Shampoo Sanicat",
+    "category": "Higiene",
+    "price": 8500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0020",
+    "name": "Snacks Eukanuba Perro Senior 15kg",
+    "category": "Alimentos",
+    "price": 89000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Eukanuba. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0193",
+    "name": "Antibiótico Frontline x1 unid.",
+    "category": "Farmacia",
+    "price": 37500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0148",
+    "name": "Desparasitante Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 52900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0396",
+    "name": "Caña Trixie",
+    "category": "Juguetes",
+    "price": 11900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0279",
+    "name": "Transportadora Zee.Dog Azul Talle L",
+    "category": "Accesorios",
+    "price": 22300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Zee.Dog. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0198",
+    "name": "Antipulgas NexGard x3 unid.",
+    "category": "Farmacia",
+    "price": 51200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0395",
+    "name": "Pelota Kong",
+    "category": "Juguetes",
+    "price": 11100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0361",
+    "name": "Interactivo Nerf Dog",
+    "category": "Juguetes",
+    "price": 12600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0212",
+    "name": "Ojos y Oídos Bravecto x6 unid.",
+    "category": "Farmacia",
+    "price": 32200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0362",
+    "name": "Peluche Kong",
+    "category": "Juguetes",
+    "price": 14000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0237",
+    "name": "Ropa Mpets Verde Talle M",
+    "category": "Accesorios",
+    "price": 18300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Mpets. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0164",
+    "name": "Desparasitante Total Full x3 unid.",
+    "category": "Farmacia",
+    "price": 59100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Total Full. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0356",
+    "name": "Corta Uñas Baviera",
+    "category": "Higiene",
+    "price": 11600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0236",
+    "name": "Cama Zee.Dog Camuflado Talle M",
+    "category": "Accesorios",
+    "price": 22000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Zee.Dog. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0238",
+    "name": "Bebedero Kong Camuflado Talle L",
+    "category": "Accesorios",
+    "price": 15000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Kong. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0285",
+    "name": "Pretal Ruffwear Rojo Talle M",
+    "category": "Accesorios",
+    "price": 19300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Ruffwear. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0075",
+    "name": "Natural Royal Canin Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 79800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Royal Canin. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0426",
+    "name": "Pelota Trixie",
+    "category": "Juguetes",
+    "price": 9900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0001",
+    "name": "Seco Hill's Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 75000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Hill's. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0065",
+    "name": "Seco Old Prince Perro Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 149200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Old Prince. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0154",
+    "name": "Ojos y Oídos Bravecto x3 unid.",
+    "category": "Farmacia",
+    "price": 54800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0367",
+    "name": "Caña JW",
+    "category": "Juguetes",
+    "price": 10500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0210",
+    "name": "Dermatología Seresto x3 unid.",
+    "category": "Farmacia",
+    "price": 52600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0289",
+    "name": "Collar Zee.Dog Verde Talle M",
+    "category": "Accesorios",
+    "price": 13600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Zee.Dog. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0284",
+    "name": "Transportadora Ruffwear Negro Talle L",
+    "category": "Accesorios",
+    "price": 15600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Ruffwear. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0121",
+    "name": "Antibiótico Bravecto x6 unid.",
+    "category": "Farmacia",
+    "price": 43400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0424",
+    "name": "Peluche Nerf Dog",
+    "category": "Juguetes",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0364",
+    "name": "Mordillo Trixie",
+    "category": "Juguetes",
+    "price": 11400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0116",
+    "name": "Húmedo Pedigree Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 51400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Pedigree. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0268",
+    "name": "Bebedero Ruffwear Rosa Talle L",
+    "category": "Accesorios",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Ruffwear. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0209",
+    "name": "Antipulgas NexGard x6 unid.",
+    "category": "Farmacia",
+    "price": 47900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca NexGard. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0194",
+    "name": "Antipulgas Bravecto x1 unid.",
+    "category": "Farmacia",
+    "price": 59400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0234",
+    "name": "Correa Mpets Verde Talle S",
+    "category": "Accesorios",
+    "price": 17900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Mpets. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0341",
+    "name": "Piedras Sanitarias Sanicat",
+    "category": "Higiene",
+    "price": 8300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0019",
+    "name": "Medicado Old Prince Gato Cachorro 15kg",
+    "category": "Alimentos",
+    "price": 80900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Old Prince. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0365",
+    "name": "Mordillo Kong",
+    "category": "Juguetes",
+    "price": 13200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0150",
+    "name": "Ojos y Oídos Drontal x3 unid.",
+    "category": "Farmacia",
+    "price": 53100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0288",
+    "name": "Pretal Generico Rojo Talle S",
+    "category": "Accesorios",
+    "price": 19400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Generico. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0103",
+    "name": "Medicado Whiskas Gato Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 156500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0334",
+    "name": "Shampoo Furminator",
+    "category": "Higiene",
+    "price": 11900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0171",
+    "name": "Desparasitante Advantage x3 unid.",
+    "category": "Farmacia",
+    "price": 50500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0432",
+    "name": "Soga Nerf Dog",
+    "category": "Juguetes",
+    "price": 14000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0317",
+    "name": "Peine Trixie",
+    "category": "Higiene",
+    "price": 8500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0013",
+    "name": "Seco Royal Canin Perro Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 31800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0298",
+    "name": "Correa Ruffwear Camuflado Talle M",
+    "category": "Accesorios",
+    "price": 17200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Ruffwear. Accesorio de alta calidad, color Camuflado. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0062",
+    "name": "Medicado Vital Can Perro Adulto 20kg",
+    "category": "Alimentos",
+    "price": 123200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Vital Can. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0149",
+    "name": "Antibiótico Seresto x1 unid.",
+    "category": "Farmacia",
+    "price": 53300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0422",
+    "name": "Mordillo Chuckit!",
+    "category": "Juguetes",
+    "price": 9000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0330",
+    "name": "Paños Húmedos Sanicat",
+    "category": "Higiene",
+    "price": 11900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0005",
+    "name": "Seco Vital Can Gato Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 56100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Vital Can. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0177",
+    "name": "Antibiótico Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 41600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0077",
+    "name": "Húmedo Vital Can Gato Senior 15kg",
+    "category": "Alimentos",
+    "price": 79000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Vital Can. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0282",
+    "name": "Pretal Mpets Rojo Talle L",
+    "category": "Accesorios",
+    "price": 14200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pretal de la marca Mpets. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0088",
+    "name": "Medicado Hill's Perro Adulto 15kg",
+    "category": "Alimentos",
+    "price": 105200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Hill's. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0147",
+    "name": "Suplemento Bravecto x6 unid.",
+    "category": "Farmacia",
+    "price": 43200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0306",
+    "name": "Colonia Sanicat",
+    "category": "Higiene",
+    "price": 10000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Colonia de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0304",
+    "name": "Paños Húmedos Sanicat",
+    "category": "Higiene",
+    "price": 8200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Paños Húmedos de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0082",
+    "name": "Seco Pro Plan Gato Cachorro 20kg",
+    "category": "Alimentos",
+    "price": 85600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0340",
+    "name": "Peine Baviera",
+    "category": "Higiene",
+    "price": 14100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0226",
+    "name": "Cama Zee.Dog Rojo Talle L",
+    "category": "Accesorios",
+    "price": 13200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Cama de la marca Zee.Dog. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0245",
+    "name": "Ropa Kong Rosa Talle S",
+    "category": "Accesorios",
+    "price": 13800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Kong. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0048",
+    "name": "Seco Excellent Gato Senior 15kg",
+    "category": "Alimentos",
+    "price": 105800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0303",
+    "name": "Piedras Sanitarias Osspret",
+    "category": "Higiene",
+    "price": 14300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0417",
+    "name": "Interactivo Trixie",
+    "category": "Juguetes",
+    "price": 10700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0384",
+    "name": "Peluche JW",
+    "category": "Juguetes",
+    "price": 10200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0277",
+    "name": "Transportadora Generico Rojo Talle XL",
+    "category": "Accesorios",
+    "price": 12300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Transportadora de la marca Generico. Accesorio de alta calidad, color Rojo. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0383",
+    "name": "Peluche Kong",
+    "category": "Juguetes",
+    "price": 9800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0418",
+    "name": "Caña Trixie",
+    "category": "Juguetes",
+    "price": 8400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0348",
+    "name": "Colonia Sanicat",
+    "category": "Higiene",
+    "price": 10700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Colonia de la marca Sanicat. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0283",
+    "name": "Collar Zee.Dog Verde Talle S",
+    "category": "Accesorios",
+    "price": 13700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Zee.Dog. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0168",
+    "name": "Dermatología Advantage x3 unid.",
+    "category": "Farmacia",
+    "price": 47400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0146",
+    "name": "Dermatología Simparica x6 unid.",
+    "category": "Farmacia",
+    "price": 59100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0120",
+    "name": "Natural Royal Canin Perro Senior 3kg",
+    "category": "Alimentos",
+    "price": 44300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Natural de la marca Royal Canin. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0339",
+    "name": "Corta Uñas Baviera",
+    "category": "Higiene",
+    "price": 10000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0416",
+    "name": "Soga Nerf Dog",
+    "category": "Juguetes",
+    "price": 11500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0408",
+    "name": "Mordillo Trixie",
+    "category": "Juguetes",
+    "price": 14400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0294",
+    "name": "Ropa Ruffwear Rosa Talle L",
+    "category": "Accesorios",
+    "price": 12700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Ruffwear. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0091",
+    "name": "Seco Eukanuba Gato Adulto 7.5kg",
+    "category": "Alimentos",
+    "price": 59000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Eukanuba. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0025",
+    "name": "Snacks Whiskas Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 54500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0441",
+    "name": "Interactivo Chuckit!",
+    "category": "Juguetes",
+    "price": 13800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0273",
+    "name": "Collar Kong Rosa Talle M",
+    "category": "Accesorios",
+    "price": 13600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Collar de la marca Kong. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0438",
+    "name": "Interactivo Chuckit!",
+    "category": "Juguetes",
+    "price": 14000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0369",
+    "name": "Interactivo Nerf Dog",
+    "category": "Juguetes",
+    "price": 10500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0046",
+    "name": "Medicado Pedigree Perro Adulto 20kg",
+    "category": "Alimentos",
+    "price": 119200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Pedigree. Alimento balanceado completo para Perros en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0167",
+    "name": "Suplemento Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 51200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0371",
+    "name": "Peluche Kong",
+    "category": "Juguetes",
+    "price": 11600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0174",
+    "name": "Desparasitante Advantage x6 unid.",
+    "category": "Farmacia",
+    "price": 44600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0188",
+    "name": "Dermatología Simparica x6 unid.",
+    "category": "Farmacia",
+    "price": 53100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0450",
+    "name": "Caña Nerf Dog",
+    "category": "Juguetes",
+    "price": 10800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Nerf Dog. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0247",
+    "name": "Comedero Kong Negro Talle M",
+    "category": "Accesorios",
+    "price": 18500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Comedero de la marca Kong. Accesorio de alta calidad, color Negro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0056",
+    "name": "Húmedo Vital Can Perro Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 63500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Vital Can. Alimento balanceado completo para Perros en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0199",
+    "name": "Desparasitante Frontline x3 unid.",
+    "category": "Farmacia",
+    "price": 43900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0338",
+    "name": "Peine Furminator",
+    "category": "Higiene",
+    "price": 11600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peine de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0353",
+    "name": "Acondicionador Baviera",
+    "category": "Higiene",
+    "price": 14400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Acondicionador de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0402",
+    "name": "Interactivo Kong",
+    "category": "Juguetes",
+    "price": 9200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Kong. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0409",
+    "name": "Soga JW",
+    "category": "Juguetes",
+    "price": 12400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0012",
+    "name": "Seco Pro Plan Gato Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 34700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Pro Plan. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0141",
+    "name": "Dermatología Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 34100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0179",
+    "name": "Suplemento Advantage x6 unid.",
+    "category": "Farmacia",
+    "price": 34800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0010",
+    "name": "Seco Excellent Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 50300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0322",
+    "name": "Corta Uñas Trixie",
+    "category": "Higiene",
+    "price": 8500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0250",
+    "name": "Ropa Mpets Verde Talle S",
+    "category": "Accesorios",
+    "price": 21000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ropa de la marca Mpets. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0220",
+    "name": "Ojos y Oídos Advantage x1 unid.",
+    "category": "Farmacia",
+    "price": 40100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Advantage. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0032",
+    "name": "Seco Excellent Gato Cachorro 7.5kg",
+    "category": "Alimentos",
+    "price": 63500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0251",
+    "name": "Correa Zee.Dog Rosa Talle S",
+    "category": "Accesorios",
+    "price": 16400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Zee.Dog. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0113",
+    "name": "Húmedo Excellent Gato Senior 20kg",
+    "category": "Alimentos",
+    "price": 110500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Excellent. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0390",
+    "name": "Pelota Chuckit!",
+    "category": "Juguetes",
+    "price": 14600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Pelota de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0152",
+    "name": "Antibiótico Bravecto x3 unid.",
+    "category": "Farmacia",
+    "price": 59400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0269",
+    "name": "Correa Ruffwear Rosa Talle XL",
+    "category": "Accesorios",
+    "price": 15500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Correa de la marca Ruffwear. Accesorio de alta calidad, color Rosa. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0345",
+    "name": "Shampoo Baviera",
+    "category": "Higiene",
+    "price": 13200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0002",
+    "name": "Seco Whiskas Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 49400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Whiskas. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0272",
+    "name": "Bebedero Zee.Dog Verde Talle S",
+    "category": "Accesorios",
+    "price": 19700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Zee.Dog. Accesorio de alta calidad, color Verde. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0036",
+    "name": "Snacks Eukanuba Gato Cachorro 3kg",
+    "category": "Alimentos",
+    "price": 29600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Snacks de la marca Eukanuba. Alimento balanceado completo para Gatos en etapa Cachorro. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0104",
+    "name": "Seco Excellent Gato Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 50100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Excellent. Alimento balanceado completo para Gatos en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0195",
+    "name": "Antipulgas Frontline x6 unid.",
+    "category": "Farmacia",
+    "price": 44000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0357",
+    "name": "Piedras Sanitarias Furminator",
+    "category": "Higiene",
+    "price": 12400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Piedras Sanitarias de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0134",
+    "name": "Suplemento Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 58300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0159",
+    "name": "Desparasitante Simparica x1 unid.",
+    "category": "Farmacia",
+    "price": 47400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Desparasitante de la marca Simparica. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0406",
+    "name": "Interactivo Trixie",
+    "category": "Juguetes",
+    "price": 11400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0442",
+    "name": "Caña Trixie",
+    "category": "Juguetes",
+    "price": 9300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Caña de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0094",
+    "name": "Húmedo Vital Can Gato Adulto 15kg",
+    "category": "Alimentos",
+    "price": 108600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Húmedo de la marca Vital Can. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0213",
+    "name": "Antipulgas Bravecto x3 unid.",
+    "category": "Farmacia",
+    "price": 52800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0059",
+    "name": "Medicado Vital Can Gato Adulto 20kg",
+    "category": "Alimentos",
+    "price": 112500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Vital Can. Alimento balanceado completo para Gatos en etapa Adulto. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0047",
+    "name": "Medicado Vital Can Perro Senior 7.5kg",
+    "category": "Alimentos",
+    "price": 60500,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Medicado de la marca Vital Can. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0158",
+    "name": "Dermatología Frontline x3 unid.",
+    "category": "Farmacia",
+    "price": 51400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Dermatología de la marca Frontline. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0440",
+    "name": "Interactivo Chuckit!",
+    "category": "Juguetes",
+    "price": 12700,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Interactivo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0352",
+    "name": "Corta Uñas Furminator",
+    "category": "Higiene",
+    "price": 13400,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Furminator. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0044",
+    "name": "Seco Whiskas Perro Senior 15kg",
+    "category": "Alimentos",
+    "price": 90100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Seco de la marca Whiskas. Alimento balanceado completo para Perros en etapa Senior. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0377",
+    "name": "Peluche Trixie",
+    "category": "Juguetes",
+    "price": 11600,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Peluche de la marca Trixie. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0297",
+    "name": "Bebedero Ruffwear Azul Talle XL",
+    "category": "Accesorios",
+    "price": 15300,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Bebedero de la marca Ruffwear. Accesorio de alta calidad, color Azul. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0126",
+    "name": "Antipulgas Drontal x1 unid.",
+    "category": "Farmacia",
+    "price": 53200,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antipulgas de la marca Drontal. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0166",
+    "name": "Suplemento Bravecto x6 unid.",
+    "category": "Farmacia",
+    "price": 42800,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Suplemento de la marca Bravecto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0351",
+    "name": "Shampoo Baviera",
+    "category": "Higiene",
+    "price": 10100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Shampoo de la marca Baviera. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0359",
+    "name": "Corta Uñas Osspret",
+    "category": "Higiene",
+    "price": 9000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Corta Uñas de la marca Osspret. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0197",
+    "name": "Ojos y Oídos Seresto x1 unid.",
+    "category": "Farmacia",
+    "price": 56900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Ojos y Oídos de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0436",
+    "name": "Soga JW",
+    "category": "Juguetes",
+    "price": 12000,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Soga de la marca JW. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0381",
+    "name": "Mordillo Chuckit!",
+    "category": "Juguetes",
+    "price": 14900,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Mordillo de la marca Chuckit!. Excelente calidad garantizada."
+  },
+  {
+    "id": "prod_0204",
+    "name": "Antibiótico Seresto x1 unid.",
+    "category": "Farmacia",
+    "price": 49100,
+    "image": "/images/placeholders/product-placeholder.jpg",
+    "description": "Antibiótico de la marca Seresto. Producto farmacéutico veterinario de venta libre. Excelente calidad garantizada."
+  }
+]

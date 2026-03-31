@@ -1,0 +1,66 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Pre-generated QR tags for PetLife.",
+  "qr_tags": [
+    {
+      "code": "PL001XYZ",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL002ABC",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL003DEF",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL004GHI",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL005JKL",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL006MNO",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL007PQR",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL008STU",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL009VWX",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    },
+    {
+      "code": "PL010YZA",
+      "is_active": true,
+      "is_registered": false,
+      "batch_id": "BATCH-PL-2024-001"
+    }
+  ]
+}

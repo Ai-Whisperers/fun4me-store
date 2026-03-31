@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "badge_text": "Centro de Referencia",
+    "headline": "Diagnóstico de Alta Precisión",
+    "subhead": "El centro veterinario más tecnológico del área metropolitana. Especialistas en diagnóstico por imágenes, medicina interna y derivaciones de alta complejidad.",
+    "cta_primary": "Solicitar Turno",
+    "cta_secondary": "Conocer el Centro",
+    "trust_badges": [
+      { "icon": "microscope", "text": "Equipos de Última Generación" },
+      { "icon": "graduation-cap", "text": "Especialistas Certificados" },
+      { "icon": "building-2", "text": "Centro de Referencia" }
+    ]
+  },
+  "features": [
+    {
+      "icon": "scan",
+      "title": "Ecografía Doppler Color",
+      "text": "Evaluación hemodinámica en tiempo real. Ideal para cardiología y estudios vasculares."
+    },
+    {
+      "icon": "x-ray",
+      "title": "Radiología Digital DR",
+      "text": "Imágenes de alta resolución en segundos. Sistema de detección directa sin revelado químico."
+    },
+    {
+      "icon": "heart-pulse",
+      "title": "Ecocardiografía",
+      "text": "Evaluación completa de la función cardíaca por cardiólogo veterinario certificado."
+    },
+    {
+      "icon": "flask-conical",
+      "title": "Laboratorio In-House",
+      "text": "Hemograma, bioquímica y urianálisis con resultados en 30 minutos."
+    },
+    {
+      "icon": "video",
+      "title": "Telemedicina",
+      "text": "Consultas virtuales y segunda opinión con especialistas sin salir de tu casa."
+    },
+    {
+      "icon": "clipboard-list",
+      "title": "Informes Digitales",
+      "text": "Recibe los resultados de estudios en tu email con imágenes adjuntas en 24 horas."
+    }
+  ],
+  "promo_banner": {
+    "enabled": false,
+    "text": "",
+    "link": "",
+    "expires": ""
+  },
+  "stats_section": {
+    "enabled": true,
+    "title": "Centro de Referencia Regional",
+    "stats": [
+      { "value": "12.000+", "label": "Estudios Realizados" },
+      { "value": "350+", "label": "Clínicas Derivantes" },
+      { "value": "98%", "label": "Precisión Diagnóstica" },
+      { "value": "24h", "label": "Entrega de Informes" }
+    ]
+  },
+  "interactive_tools_section": {
+    "enabled": true,
+    "title": "Recursos para Profesionales",
+    "subtitle": "Herramientas digitales para veterinarios y propietarios responsables.",
+    "toxic_food_cta": "",
+    "age_calc_cta": "Calculadora de Edad Fisiológica",
+    "tools": [
+      {
+        "id": "age-calculator",
+        "icon": "calculator",
+        "title": "Edad Fisiológica",
+        "description": "Calcula la edad equivalente según especie y categoría de peso",
+        "color": "#0EA5E9"
+      }
+    ]
+  },
+  "services_preview": {
+    "enabled": true,
+    "title": "Estudios Destacados",
+    "subtitle": "Tecnología de punta para diagnósticos precisos",
+    "featured_services": ["imaging", "hospital"],
+    "cta_text": "Ver Todos los Estudios"
+  },
+  "testimonials_section": {
+    "enabled": true,
+    "title": "Confianza de Colegas",
+    "subtitle": "Lo que dicen los veterinarios que nos derivan pacientes.",
+    "show_count": 3
+  },
+  "partners_section": {
+    "enabled": true,
+    "title": "Equipamiento Certificado",
+    "logos": [
+      { "name": "GE Healthcare", "image": "/brands/ge-healthcare.png" },
+      { "name": "Mindray", "image": "/brands/mindray.png" },
+      { "name": "IDEXX", "image": "/brands/idexx.png" },
+      { "name": "Fujifilm", "image": "/brands/fujifilm.png" }
+    ]
+  },
+  "referral_section": {
+    "enabled": true,
+    "title": "Programa de Derivaciones",
+    "subtitle": "Si eres veterinario y necesitas estudios especializados para tus pacientes, coordinamos turnos prioritarios.",
+    "benefits": [
+      "Turnos prioritarios para derivaciones",
+      "Informes completos con imágenes",
+      "Comunicación directa con especialistas",
+      "Precios especiales para colegas"
+    ],
+    "cta_text": "Coordinar Derivación"
+  },
+  "cta_section": {
+    "enabled": true,
+    "title": "¿Necesitas un estudio especializado?",
+    "subtitle": "Agenda tu turno online o contáctanos por WhatsApp para coordinación.",
+    "primary_cta": "Agendar Turno",
+    "secondary_cta": "WhatsApp Directo"
+  },
+  "seo": {
+    "meta_title": "PetLife Center | Centro de Diagnóstico Veterinario - Mariano Roque Alonso",
+    "meta_description": "Centro veterinario especializado en diagnóstico por imágenes. Ecografía Doppler, radiología digital, ecocardiografía. Recibimos derivaciones. Ruta 2 Km 14, Gran Asunción.",
+    "keywords": [
+      "ecografia veterinaria",
+      "radiografia digital mascotas",
+      "ecocardiograma perros",
+      "centro referencia veterinario",
+      "derivacion veterinaria",
+      "diagnostico veterinario asuncion"
+    ],
+    "og_type": "website",
+    "og_locale": "es_PY"
+  }
+}

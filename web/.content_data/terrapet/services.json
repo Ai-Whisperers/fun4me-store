@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Atención integral de clase mundial: Desde prevención hasta alta complejidad."
+  },
+  "services": [
+    {
+      "id": "consultation",
+      "visible": true,
+      "category": "medical",
+      "title": "Consultas Médicas",
+      "icon": "stethoscope",
+      "summary": "Atención primaria y de especialidad.",
+      "image": "/branding/terrapet/images/services/consultation.jpg",
+      "details": {
+        "description": "Evaluación física completa por profesionales capacitados.",
+        "duration_minutes": 30,
+        "includes": ["Revisión General", "Control de Peso", "Plan Sanitario"]
+      },
+      "variants": [
+        {
+          "name": "Consulta Clínica General",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "image": "/branding/terrapet/images/icons/consultation_general.png"
+        },
+        {
+          "name": "Consulta Puppy/Kitten (Primera Visita)",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "image": "/branding/terrapet/images/icons/consultation_puppy.png"
+        },
+        {
+          "name": "Consulta Gerontológica (Senior)",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "image": "/branding/terrapet/images/icons/consultation_senior.png"
+        },
+        {
+          "name": "Consulta de Urgencia (24hs)",
+          "price_display": "250.000 Gs",
+          "price_value": 250000,
+          "image": "/branding/terrapet/images/icons/consultation_emergency.png"
+        },
+        {
+          "name": "Telemedicina (Video Consulta)",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "image": "/branding/terrapet/images/icons/telemedicine.png"
+        },
+        {
+          "name": "Consulta a Domicilio (Mobile Vet)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "image": "/branding/terrapet/images/icons/mobile_vet.png"
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": true }
+    },
+    {
+      "id": "vaccination",
+      "visible": true,
+      "category": "preventative",
+      "title": "Vacunación y Prevención",
+      "icon": "shield-check",
+      "summary": "Inmunización certificada y control de parásitos.",
+      "image": "/branding/terrapet/images/services/vaccination.jpg",
+      "details": {
+        "description": "Biológicos de primera calidad con Carnet Digital.",
+        "duration_minutes": 20,
+        "includes": ["Revisión Pre-vacunal", "Registro Digital"]
+      },
+      "variants": [
+        {
+          "name": "Antirrábica",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "image": "/branding/terrapet/images/icons/rabies.png"
+        },
+        {
+          "name": "Polivalente Canina (Séxtuple/Óctuple)",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "image": "/branding/terrapet/images/icons/polyvalent.png"
+        },
+        {
+          "name": "Triple Felina",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "image": "/branding/terrapet/images/icons/polyvalent.png"
+        },
+        {
+          "name": "Tos de las Perreras (Intranasal)",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "image": "/branding/terrapet/images/icons/kennel_cough.png"
+        },
+        {
+          "name": "Vacuna Leishmaniasis (Dosis)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "image": "/branding/terrapet/images/icons/vaccination_generic.png"
+        },
+        {
+          "name": "Desparasitación Interna (Comprimido)",
+          "price_display": "Desde 25.000 Gs",
+          "price_value": 30000,
+          "image": "/branding/terrapet/images/icons/deworming.png",
+          "size_pricing": {
+            "mini": 25000,
+            "pequeño": 30000,
+            "mediano": 40000,
+            "grande": 50000,
+            "gigante": 60000
+          }
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "specialties",
+      "visible": true,
+      "category": "medical",
+      "title": "Especialidades Médicas",
+      "icon": "activity",
+      "summary": "Cardio, Onco, Neuro, Oftalmo y más.",
+      "image": "/branding/terrapet/images/services/specialties.jpg",
+      "details": {
+        "description": "Atención por especialistas certificados.",
+        "duration_minutes": 45,
+        "includes": ["Evaluación Específica", "Informe Escrito"]
+      },
+      "variants": [
+        {
+          "name": "Consulta Cardiología",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "image": "/branding/terrapet/images/icons/cardiology.png"
+        },
+        {
+          "name": "Consulta Dermatología (Alergias)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "image": "/branding/terrapet/images/icons/dermatology.png"
+        },
+        {
+          "name": "Consulta Oftalmología",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "image": "/branding/terrapet/images/icons/ophthalmology.png"
+        },
+        {
+          "name": "Consulta Neurología",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "image": "/branding/terrapet/images/icons/neurology.png"
+        },
+        {
+          "name": "Consulta Oncología",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "image": "/branding/terrapet/images/icons/oncology.png"
+        },
+        {
+          "name": "Consulta Reproducción (Theriogenology)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000
+        },
+        {
+          "name": "Consulta Animales Exóticos (Birds/Reptiles)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "image": "/branding/terrapet/images/icons/exotic.png"
+        },
+        {
+          "name": "Consulta Comportamiento (Etología)",
+          "price_display": "200.000 Gs",
+          "price_value": 200000,
+          "image": "/branding/terrapet/images/icons/behavior.png"
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "diagnostics",
+      "visible": true,
+      "category": "diagnostics",
+      "title": "Diagnóstico Avanzado",
+      "icon": "microscope",
+      "summary": "Laboratorio, Imágenes y Genética.",
+      "image": "/branding/terrapet/images/services/diagnostics.jpg",
+      "details": {
+        "description": "Tecnología de última generación para diagnósticos precisos.",
+        "duration_minutes": 30,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Hemograma + Bioquímica",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "image": "/branding/terrapet/images/icons/bloodwork.png"
+        },
+        {
+          "name": "Radiografía Digital",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "image": "/branding/terrapet/images/icons/xray.png"
+        },
+        {
+          "name": "Ecografía Doppler Color",
+          "price_display": "250.000 Gs",
+          "price_value": 250000,
+          "image": "/branding/terrapet/images/icons/ultrasound.png"
+        },
+        {
+          "name": "Ecocardiograma",
+          "price_display": "300.000 Gs",
+          "price_value": 300000,
+          "image": "/branding/terrapet/images/icons/ultrasound.png"
+        },
+        { "name": "Tomografía (CT Scan)", "price_display": "Consultar", "price_value": 0 },
+        { "name": "Resonancia Magnética (MRI)", "price_display": "Consultar", "price_value": 0 },
+        { "name": "Endoscopía Digestiva", "price_display": "800.000 Gs", "price_value": 800000 },
+        { "name": "Test de ADN (Genético/Raza)", "price_display": "Consultar", "price_value": 0 },
+        { "name": "Biopsia + Histoptalogía", "price_display": "350.000 Gs", "price_value": 350000 }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": true }
+    },
+    {
+      "id": "surgery",
+      "visible": true,
+      "category": "surgery",
+      "title": "Cirugía y Anestesia",
+      "icon": "scalpel",
+      "summary": "Desde rutina hasta alta complejidad.",
+      "image": "/branding/terrapet/images/services/surgery.jpg",
+      "details": {
+        "description": "Quirófano inteligente con anestesia sevofluorane.",
+        "duration_minutes": 0,
+        "includes": ["Anestesia", "Monitoreo", "Cuidado Post-quirúrgico"]
+      },
+      "variants": [
+        {
+          "name": "Castración / Ovariectomía",
+          "price_display": "Desde 280.000 Gs",
+          "price_value": 350000,
+          "size_pricing": {
+            "mini": 280000,
+            "pequeño": 350000,
+            "mediano": 420000,
+            "grande": 490000,
+            "gigante": 560000
+          }
+        },
+        {
+          "name": "Limpieza Dental (Ultrasonido)",
+          "price_display": "Desde 270.000 Gs",
+          "price_value": 300000,
+          "size_pricing": {
+            "mini": 270000,
+            "pequeño": 300000,
+            "mediano": 330000,
+            "grande": 360000,
+            "gigante": 390000
+          }
+        },
+        {
+          "name": "Traumatología (Fracturas/TPLO)",
+          "price_display": "A presupuestar",
+          "price_value": 0
+        },
+        {
+          "name": "Cirugía de Tejidos Blandos (Masas)",
+          "price_display": "A presupuestar",
+          "price_value": 0
+        },
+        { "name": "C-Section (Cesárea)", "price_display": "A presupuestar", "price_value": 0 }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    },
+    {
+      "id": "hospital",
+      "visible": true,
+      "category": "medical",
+      "title": "Internación y Cuidados Críticos",
+      "icon": "pulse",
+      "summary": "UCI y monitoreo 24/7.",
+      "image": "/branding/terrapet/images/services/hospitalization.jpg",
+      "details": {
+        "description": "Cuidado intensivo para pacientes graves.",
+        "duration_minutes": 1440,
+        "includes": ["Oxigenoterapia", "Fluidoterapia", "Control de Dolor"]
+      },
+      "variants": [
+        {
+          "name": "Día de Internación (General)",
+          "price_display": "Desde 160.000 Gs",
+          "price_value": 200000,
+          "size_pricing": {
+            "mini": 160000,
+            "pequeño": 200000,
+            "mediano": 240000,
+            "grande": 280000,
+            "gigante": 320000
+          }
+        },
+        {
+          "name": "Día de Internación (UCI/Oxígeno)",
+          "price_display": "Desde 280.000 Gs",
+          "price_value": 350000,
+          "size_pricing": {
+            "mini": 280000,
+            "pequeño": 350000,
+            "mediano": 420000,
+            "grande": 490000,
+            "gigante": 560000
+          }
+        },
+        { "name": "Transfusión Sanguínea", "price_display": "Consultar", "price_value": 0 }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    },
+    {
+      "id": "holistic",
+      "visible": true,
+      "category": "wellness",
+      "title": "Bienestar y Rehabilitación",
+      "icon": "sun",
+      "summary": "Fisioterapia y medicina integrativa.",
+      "image": "/branding/terrapet/images/services/senior-care.jpg",
+      "details": {
+        "description": "Recuperación funcional y terapias naturales.",
+        "duration_minutes": 45,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Sesión de Fisioterapia",
+          "price_display": "Desde 90.000 Gs",
+          "price_value": 100000,
+          "size_pricing": {
+            "mini": 90000,
+            "pequeño": 100000,
+            "mediano": 110000,
+            "grande": 120000,
+            "gigante": 130000
+          }
+        },
+        {
+          "name": "Hidroterapia (Cinta Subacuática)",
+          "price_display": "Desde 108.000 Gs",
+          "price_value": 120000,
+          "size_pricing": {
+            "mini": 108000,
+            "pequeño": 120000,
+            "mediano": 132000,
+            "grande": 144000,
+            "gigante": 156000
+          }
+        },
+        { "name": "Acupuntura", "price_display": "100.000 Gs", "price_value": 100000 },
+        { "name": "Ozonoterapia", "price_display": "80.000 Gs", "price_value": 80000 },
+        { "name": "Terapia con Células Madre", "price_display": "Consultar", "price_value": 0 }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "grooming",
+      "visible": true,
+      "category": "wellness",
+      "title": "Spa & Grooming de Lujo",
+      "icon": "scissors",
+      "summary": "Estética premium.",
+      "image": "/branding/terrapet/images/services/grooming-bath.jpg",
+      "details": {
+        "description": "Productos importados y trato Fear-Free.",
+        "duration_minutes": 60,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Baño Completo",
+          "price_display": "Desde 48.000 Gs",
+          "price_value": 60000,
+          "size_pricing": {
+            "mini": 48000,
+            "pequeño": 60000,
+            "mediano": 78000,
+            "grande": 90000,
+            "gigante": 108000
+          }
+        },
+        {
+          "name": "Corte de Raza",
+          "price_display": "Desde 72.000 Gs",
+          "price_value": 90000,
+          "size_pricing": {
+            "mini": 72000,
+            "pequeño": 90000,
+            "mediano": 117000,
+            "grande": 135000,
+            "gigante": 162000
+          }
+        },
+        {
+          "name": "Baño con Ozono (Piel sensible)",
+          "price_display": "Desde 80.000 Gs",
+          "price_value": 100000,
+          "size_pricing": {
+            "mini": 80000,
+            "pequeño": 100000,
+            "mediano": 130000,
+            "grande": 150000,
+            "gigante": 180000
+          }
+        },
+        {
+          "name": "Máscara de Barro (Mud Mask)",
+          "price_display": "+40.000 Gs",
+          "price_value": 40000
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "luxury",
+      "visible": true,
+      "category": "luxury",
+      "title": "Servicios Premium & Hotel",
+      "icon": "star",
+      "summary": "Comodidad máxima para vos y tu mascota.",
+      "image": "/branding/terrapet/images/services/hotel.jpg",
+      "details": {
+        "description": "Soluciones exclusivas.",
+        "duration_minutes": 0,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Hotel / Guardería (Por Noche)",
+          "price_display": "Desde 80.000 Gs",
+          "price_value": 100000,
+          "size_pricing": {
+            "mini": 80000,
+            "pequeño": 100000,
+            "mediano": 120000,
+            "grande": 140000,
+            "gigante": 160000
+          }
+        },
+        { "name": "Pet Taxi (Transporte)", "price_display": "Según Zona", "price_value": 0 },
+        {
+          "name": "Tramitación de Viaje (Concierge)",
+          "price_display": "Consultar",
+          "price_value": 0
+        },
+        {
+          "name": "Eutanasia Humanitaria a Domicilio",
+          "price_display": "Consultar",
+          "price_value": 0
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "documents",
+      "visible": true,
+      "category": "administrative",
+      "title": "Trámites",
+      "icon": "file-text",
+      "summary": "Documentación oficial.",
+      "image": "/branding/terrapet/images/services/travel-docs.jpg",
+      "details": {
+        "description": "Gestión de papeles.",
+        "duration_minutes": 20,
+        "includes": []
+      },
+      "variants": [
+        { "name": "Certificado de Salud", "price_display": "80.000 Gs", "price_value": 80000 },
+        { "name": "Microchip ISO", "price_display": "250.000 Gs", "price_value": 250000 }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    }
+  ]
+}

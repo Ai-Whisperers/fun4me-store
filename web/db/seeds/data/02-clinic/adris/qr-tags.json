@@ -1,0 +1,26 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Pre-generated QR tags for Adris. Batch 2024-001.",
+  "qr_tags": [
+    { "code": "VT001ABC", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT002DEF", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT003GHI", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT004JKL", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT005MNO", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT006PQR", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT007STU", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT008VWX", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT009YZA", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT010BCD", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-001" },
+    { "code": "VT011EFG", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT012HIJ", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT013KLM", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT014NOP", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT015QRS", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT016TUV", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT017WXY", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT018ZAB", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT019CDE", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" },
+    { "code": "VT020FGH", "is_active": true, "is_registered": false, "batch_id": "BATCH-2024-002" }
+  ]
+}

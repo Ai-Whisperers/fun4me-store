@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Atención cercana y profesional para tu mascota"
+  },
+  "services": [
+    {
+      "id": "consultation",
+      "visible": true,
+      "category": "medical",
+      "title": "Consultas Veterinarias",
+      "icon": "stethoscope",
+      "summary": "Atención general, emergencias y domicilio.",
+      "image": "/branding/cavillpet/images/services/consultation.jpg",
+      "details": {
+        "description": "Evaluación completa por veterinarios capacitados. Atención cercana y personalizada.",
+        "duration_minutes": 30,
+        "includes": ["Revisión General", "Control de Peso", "Recomendaciones"]
+      },
+      "variants": [
+        {
+          "name": "Consulta General",
+          "price_display": "50.000 Gs",
+          "price_value": 50000
+        },
+        {
+          "name": "Consulta de Emergencia",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Disponible 24 horas"
+        },
+        {
+          "name": "Consulta a Domicilio",
+          "price_display": "80.000 Gs + Traslado",
+          "price_value": 80000,
+          "description": "Traslado: Gs. 30.000 - 50.000 según zona"
+        },
+        {
+          "name": "Chequeo Pre-quirúrgico",
+          "price_display": "50.000 Gs",
+          "price_value": 50000
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": true }
+    },
+    {
+      "id": "vaccination",
+      "visible": true,
+      "category": "preventative",
+      "title": "Vacunación",
+      "icon": "shield-check",
+      "summary": "Vacunas para perros y gatos con carnet incluido.",
+      "image": "/branding/cavillpet/images/services/vaccination.jpg",
+      "details": {
+        "description": "Vacunas de calidad con carnet de vacunación incluido.",
+        "duration_minutes": 20,
+        "includes": ["Revisión Pre-vacunal", "Carnet de Vacunación"]
+      },
+      "variants": [
+        {
+          "name": "Vacuna Séxtuple (Perros)",
+          "price_display": "75.000 Gs",
+          "price_value": 75000
+        },
+        {
+          "name": "Vacuna Triple Felina (Gatos)",
+          "price_display": "80.000 Gs",
+          "price_value": 80000
+        },
+        {
+          "name": "Vacuna Leucemia Felina",
+          "price_display": "300.000 Gs",
+          "price_value": 300000
+        },
+        {
+          "name": "Plan Vacunación Cachorros",
+          "price_display": "105.000 Gs",
+          "price_value": 105000,
+          "description": "Primera vacuna + servicio a domicilio"
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "deworming",
+      "visible": true,
+      "category": "preventative",
+      "title": "Desparasitación",
+      "icon": "shield",
+      "summary": "Control de parásitos internos y externos.",
+      "image": "/branding/cavillpet/images/services/vaccination.jpg",
+      "details": {
+        "description": "Tratamientos antiparasitarios completos para mantener a tu mascota saludable.",
+        "duration_minutes": 15,
+        "includes": ["Evaluación", "Aplicación/Entrega"]
+      },
+      "variants": [
+        {
+          "name": "Desparasitación Interna",
+          "price_display": "Desde 30.000 Gs",
+          "price_value": 30000
+        },
+        {
+          "name": "Desparasitación Externa",
+          "price_display": "20.000 - 80.000 Gs",
+          "price_value": 20000,
+          "description": "Precio según tamaño y producto"
+        },
+        {
+          "name": "Tratamiento Completo (Interno + Externo)",
+          "price_display": "50.000 - 140.000 Gs",
+          "price_value": 50000
+        },
+        {
+          "name": "Plan Anual de Desparasitación",
+          "price_display": "120.000 Gs",
+          "price_value": 120000
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "surgery",
+      "visible": true,
+      "category": "surgery",
+      "title": "Cirugías",
+      "icon": "scalpel",
+      "summary": "Esterilizaciones, cirugías generales y más.",
+      "image": "/branding/cavillpet/images/services/surgery.jpg",
+      "details": {
+        "description": "Cirugías realizadas con los más altos estándares de seguridad. Hospitalización post-quirúrgica disponible.",
+        "duration_minutes": 0,
+        "includes": ["Anestesia", "Monitoreo", "Medicación Post-operatoria"]
+      },
+      "variants": [
+        {
+          "name": "Castración Perro Macho",
+          "price_display": "185.000 Gs",
+          "price_value": 185000
+        },
+        {
+          "name": "Esterilización Perra",
+          "price_display": "285.000 Gs",
+          "price_value": 285000
+        },
+        {
+          "name": "Castración Gato Macho",
+          "price_display": "185.000 Gs",
+          "price_value": 185000
+        },
+        {
+          "name": "Esterilización Gata",
+          "price_display": "285.000 Gs",
+          "price_value": 285000
+        },
+        {
+          "name": "Cesárea",
+          "price_display": "300.000 Gs",
+          "price_value": 300000
+        },
+        {
+          "name": "Extracción de Tumores",
+          "price_display": "Desde 400.000 Gs",
+          "price_value": 400000
+        },
+        {
+          "name": "Cirugía de Tejidos Blandos",
+          "price_display": "Desde 400.000 Gs",
+          "price_value": 400000
+        },
+        {
+          "name": "Cirugía Abdominal",
+          "price_display": "Desde 500.000 Gs",
+          "price_value": 500000
+        }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    },
+    {
+      "id": "diagnostics",
+      "visible": true,
+      "category": "diagnostics",
+      "title": "Diagnóstico por Imagen y Laboratorio",
+      "icon": "microscope",
+      "summary": "Radiografías, ecografías y análisis de laboratorio.",
+      "image": "/branding/cavillpet/images/services/diagnostics.jpg",
+      "details": {
+        "description": "Diagnóstico preciso con equipos modernos. Muestras enviadas a laboratorio externo para análisis.",
+        "duration_minutes": 30,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Radiografía Simple (1 placa)",
+          "price_display": "250.000 Gs",
+          "price_value": 250000
+        },
+        {
+          "name": "Radiografía (2 placas)",
+          "price_display": "500.000 Gs",
+          "price_value": 500000
+        },
+        {
+          "name": "Estudio Radiográfico Completo",
+          "price_display": "250.000 - 700.000 Gs",
+          "price_value": 250000,
+          "description": "Precio según especie"
+        },
+        {
+          "name": "Ecografía Abdominal",
+          "price_display": "350.000 Gs",
+          "price_value": 350000
+        },
+        {
+          "name": "Ecografía de Gestación",
+          "price_display": "350.000 Gs",
+          "price_value": 350000
+        },
+        {
+          "name": "Hemograma Completo",
+          "price_display": "60.000 Gs",
+          "price_value": 60000
+        },
+        {
+          "name": "Bioquímica Sanguínea Básica",
+          "price_display": "60.000 Gs",
+          "price_value": 60000
+        },
+        {
+          "name": "Urianálisis",
+          "price_display": "Consultar",
+          "price_value": 0
+        },
+        {
+          "name": "Coprológico",
+          "price_display": "Consultar",
+          "price_value": 0
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "hospital",
+      "visible": true,
+      "category": "medical",
+      "title": "Hospitalización",
+      "icon": "pulse",
+      "summary": "Internación con monitoreo constante.",
+      "image": "/branding/cavillpet/images/services/hospitalization.jpg",
+      "details": {
+        "description": "Internación con cuidado profesional. Área de aislamiento para gatos disponible.",
+        "duration_minutes": 1440,
+        "includes": ["Alojamiento", "Alimentación", "Medicamentos básicos", "Monitoreo constante", "Suero/Fluidoterapia", "Curaciones"]
+      },
+      "variants": [
+        {
+          "name": "Hospitalización Básica (por día)",
+          "price_display": "240.000 Gs",
+          "price_value": 240000
+        },
+        {
+          "name": "Hospitalización Post-quirúrgica",
+          "price_display": "120.000 Gs",
+          "price_value": 120000
+        }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    },
+    {
+      "id": "reproduction",
+      "visible": true,
+      "category": "medical",
+      "title": "Reproducción",
+      "icon": "heart",
+      "summary": "Control de gestación y asistencia de parto.",
+      "image": "/branding/cavillpet/images/services/specialties.jpg",
+      "details": {
+        "description": "Seguimiento completo del embarazo de tu mascota.",
+        "duration_minutes": 30,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Diagnóstico de Gestación",
+          "price_display": "185.000 Gs",
+          "price_value": 185000
+        },
+        {
+          "name": "Control Prenatal",
+          "price_display": "50.000 Gs",
+          "price_value": 50000
+        },
+        {
+          "name": "Asistencia de Parto",
+          "price_display": "185.000 Gs",
+          "price_value": 185000
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": true }
+    },
+    {
+      "id": "grooming",
+      "visible": true,
+      "category": "wellness",
+      "title": "Peluquería",
+      "icon": "scissors",
+      "summary": "Baños, cortes y spa para tu mascota.",
+      "image": "/branding/cavillpet/images/services/grooming-bath.jpg",
+      "details": {
+        "description": "Servicio de peluquería con tratamiento antipulgas incluido. Horario: Lunes a Sábado de 10:00 a 18:00.",
+        "duration_minutes": 60,
+        "includes": ["Baño", "Secado", "Tratamiento Antipulgas"]
+      },
+      "variants": [
+        {
+          "name": "Baño Pequeño (1-5 kg)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio diferenciado pelo corto/largo"
+        },
+        {
+          "name": "Baño Mediano (5-10 kg)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio diferenciado pelo corto/largo"
+        },
+        {
+          "name": "Baño Intermedio (10-15 kg)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio diferenciado pelo corto/largo"
+        },
+        {
+          "name": "Baño Grande (15-25 kg)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio diferenciado pelo corto/largo"
+        },
+        {
+          "name": "Baño Extra Grande (25-40 kg)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio diferenciado pelo corto/largo"
+        },
+        {
+          "name": "Baño Gigante (+40 kg)",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio diferenciado pelo corto/largo"
+        },
+        {
+          "name": "Corte Higiénico",
+          "price_display": "20.000 Gs",
+          "price_value": 20000
+        },
+        {
+          "name": "Corte de Uñas",
+          "price_display": "10.000 Gs",
+          "price_value": 10000
+        },
+        {
+          "name": "Limpieza de Oídos",
+          "price_display": "10.000 Gs",
+          "price_value": 10000
+        },
+        {
+          "name": "Limpieza de Glándulas Anales",
+          "price_display": "30.000 Gs",
+          "price_value": 30000
+        },
+        {
+          "name": "Baño Medicado",
+          "price_display": "Según peso",
+          "price_value": 0
+        },
+        {
+          "name": "Spa Completo",
+          "price_display": "Según peso",
+          "price_value": 0
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "boarding",
+      "visible": true,
+      "category": "wellness",
+      "title": "Guardería",
+      "icon": "home",
+      "summary": "Cuidado profesional 24 horas.",
+      "image": "/branding/cavillpet/images/services/hotel.jpg",
+      "details": {
+        "description": "Guardería con servicio veterinario las 24 horas. Tu mascota en buenas manos mientras no estás.",
+        "duration_minutes": 0,
+        "includes": ["Alojamiento", "Alimentación", "Supervisión Veterinaria"]
+      },
+      "variants": [
+        {
+          "name": "Guardería (por día)",
+          "price_display": "Consultar",
+          "price_value": 0
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "nutrition",
+      "visible": true,
+      "category": "wellness",
+      "title": "Nutrición y Adiestramiento",
+      "icon": "apple",
+      "summary": "Consultas de nutrición y entrenamiento.",
+      "image": "/branding/cavillpet/images/services/consultation.jpg",
+      "details": {
+        "description": "Asesoramiento nutricional y clases de adiestramiento para tu mascota.",
+        "duration_minutes": 45,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Consulta de Nutrición/Dietas Especiales",
+          "price_display": "150.000 Gs",
+          "price_value": 150000
+        },
+        {
+          "name": "Sesión de Entrenamiento/Adiestramiento",
+          "price_display": "150.000 Gs",
+          "price_value": 150000
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "documents",
+      "visible": true,
+      "category": "administrative",
+      "title": "Documentación y Trámites",
+      "icon": "file-text",
+      "summary": "Certificados, microchip y trámites de viaje.",
+      "image": "/branding/cavillpet/images/services/travel-docs.jpg",
+      "details": {
+        "description": "Gestión de documentación oficial para tu mascota.",
+        "duration_minutes": 30,
+        "includes": []
+      },
+      "variants": [
+        {
+          "name": "Certificado de Salud",
+          "price_display": "1.550.000 Gs",
+          "price_value": 1550000
+        },
+        {
+          "name": "Certificado de Viaje",
+          "price_display": "750.000 Gs",
+          "price_value": 750000
+        },
+        {
+          "name": "Microchip",
+          "price_display": "375.000 Gs",
+          "price_value": 375000
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "endoflife",
+      "visible": true,
+      "category": "medical",
+      "title": "Despedida Humanitaria",
+      "icon": "heart",
+      "summary": "Acompañamiento en los momentos difíciles.",
+      "image": "/branding/cavillpet/images/services/senior-care.jpg",
+      "details": {
+        "description": "Servicio de eutanasia humanitaria y disposición final del cuerpo con respeto y dignidad.",
+        "duration_minutes": 30,
+        "includes": ["Sedación", "Eutanasia sin dolor", "Acompañamiento"]
+      },
+      "variants": [
+        {
+          "name": "Eutanasia Humanitaria",
+          "price_display": "200.000 Gs",
+          "price_value": 200000
+        },
+        {
+          "name": "Disposición Final del Cadáver",
+          "price_display": "100.000 Gs",
+          "price_value": 100000
+        }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    }
+  ]
+}

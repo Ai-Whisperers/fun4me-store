@@ -1,0 +1,176 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "belcan",
+  "products": [
+    {
+      "sku": "BELCAN-ADULT-25KG",
+      "name": "BelCan Adulto 25kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "25kg",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg",
+        "https://http2.mlstatic.com/D_Q_NP_996096-MLA92795306733_092025-F.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "24%"
+      }
+    },
+    {
+      "sku": "BELCAN-ADULT-15KG",
+      "name": "BelCan Adulto 15kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 155000,
+          "cost_price": 93000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg",
+        "https://http2.mlstatic.com/D_Q_NP_996096-MLA92795306733_092025-F.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "24%"
+      }
+    },
+    {
+      "sku": "BELCAN-ADULT-8KG",
+      "name": "BelCan Adulto 8kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "8kg",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "24%"
+      }
+    },
+    {
+      "sku": "BELCAN-ADULT-3KG",
+      "name": "BelCan Adulto 3kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 48000,
+          "cost_price": 28800,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_739554-MLA99409884620_112025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "24%"
+      }
+    },
+    {
+      "sku": "BELCAN-PUPPY-15KG",
+      "name": "BelCan Cachorro 15kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_996096-MLA92795306733_092025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_996096-MLA92795306733_092025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "28%"
+      }
+    },
+    {
+      "sku": "BELCAN-PUPPY-8KG",
+      "name": "BelCan Cachorro 8kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "8kg",
+          "base_price": 105000,
+          "cost_price": 63000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_996096-MLA92795306733_092025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_996096-MLA92795306733_092025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "28%"
+      }
+    },
+    {
+      "sku": "BELCAN-PUPPY-3KG",
+      "name": "BelCan Cachorro 3kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 52000,
+          "cost_price": 31200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_996096-MLA92795306733_092025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_996096-MLA92795306733_092025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "28%"
+      }
+    }
+  ]
+}

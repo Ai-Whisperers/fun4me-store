@@ -1,0 +1,2054 @@
+{
+  "$schema": "../_schemas/reference.schema.json",
+  "growth_standards": [
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 0.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 1.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 1.6,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 2.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 2.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 3.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 0.7,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 1.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 1.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 2.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 2.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 2.7,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 2.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 3.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 6.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 8.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 9.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 1.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 2.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 4.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 5.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 7.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "small",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 8.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 3.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 6.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 9.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 14.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 18.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 22.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 3.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 5.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 7.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 12.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 15.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 18.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 5.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 9.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 14.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 22.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 28.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 32.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 78,
+      "weight_kg": 35.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 8.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 12.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 18.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 24.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 28.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 78,
+      "weight_kg": 30.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 7.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 13.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 20.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 32.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 42.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 50.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 78,
+      "weight_kg": 55.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 104,
+      "weight_kg": 60.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 6.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 11.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 17.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 27.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 36.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 42.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 78,
+      "weight_kg": 47.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 104,
+      "weight_kg": 50.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 0.9,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 1.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 1.9,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 2.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 3.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 0.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 1.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 1.6,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 2.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 3.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 3.8,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 1.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 1.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 2.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 4.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 5.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 7.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 156,
+      "weight_kg": 9.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 1.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 1.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 2.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 3.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 5.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 156,
+      "weight_kg": 6.5,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 0.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 0.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 1.1,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 1.6,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 2.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 2.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 0.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 0.7,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 1.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 1.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 1.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Chihuahua",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 2.2,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 0.6,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 0.9,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 1.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 1.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 2.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 3.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 0.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 0.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 1.1,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 1.6,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 2.1,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Yorkshire Terrier",
+      "breed_category": "toy",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 2.7,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 2.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 4.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 5.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 8.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 10.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 12.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 2.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 3.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 4.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 7.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 9.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "French Bulldog",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 10.5,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 2.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 6.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 9.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 12.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 13.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 2.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 4.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 5.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 8.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 10.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Beagle",
+      "breed_category": "medium",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 11.5,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 5.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 9.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 14.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 22.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 28.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 32.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 78,
+      "weight_kg": 34.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 8.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 12.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 19.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 24.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 28.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Labrador Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 78,
+      "weight_kg": 30.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 4.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 8.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 13.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 21.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 27.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 31.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 78,
+      "weight_kg": 33.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 4.3,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 7.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 11.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 18.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 23.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 27.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 78,
+      "weight_kg": 29.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 5.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 10.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 15.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 24.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 30.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 35.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "male",
+      "age_weeks": 78,
+      "weight_kg": 38.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 4.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 8.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 13.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 20.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 26.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 30.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "German Shepherd",
+      "breed_category": "large",
+      "gender": "female",
+      "age_weeks": 78,
+      "weight_kg": 32.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 8.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 15.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 22.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 35.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 48.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 60.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 78,
+      "weight_kg": 70.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "male",
+      "age_weeks": 104,
+      "weight_kg": 75.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 7.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 13.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 19.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 30.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 42.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 52.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 78,
+      "weight_kg": 58.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "dog",
+      "breed": "Great Dane",
+      "breed_category": "giant",
+      "gender": "female",
+      "age_weeks": 104,
+      "weight_kg": 62.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 0.9,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 1.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 2.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 3.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 4.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 5.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 0.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 1.3,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 1.7,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 2.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 3.3,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Siamese",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 4.0,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 1.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 1.6,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 2.2,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 3.3,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 5.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 0.9,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 1.4,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 1.9,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 2.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 3.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Persian",
+      "breed_category": "cat_standard",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 8,
+      "weight_kg": 1.3,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 12,
+      "weight_kg": 2.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 16,
+      "weight_kg": 2.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 24,
+      "weight_kg": 4.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 36,
+      "weight_kg": 6.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 52,
+      "weight_kg": 8.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "male",
+      "age_weeks": 156,
+      "weight_kg": 10.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 8,
+      "weight_kg": 1.1,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 12,
+      "weight_kg": 1.7,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 16,
+      "weight_kg": 2.3,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 24,
+      "weight_kg": 3.8,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 36,
+      "weight_kg": 5.0,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 52,
+      "weight_kg": 6.5,
+      "percentile": "P50"
+    },
+    {
+      "species": "cat",
+      "breed": "Maine Coon",
+      "breed_category": "cat_large",
+      "gender": "female",
+      "age_weeks": 156,
+      "weight_kg": 7.5,
+      "percentile": "P50"
+    }
+  ]
+}

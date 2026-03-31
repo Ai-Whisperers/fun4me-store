@@ -1,0 +1,623 @@
+{
+  "$schema": "../../_schemas/store.schema.json#/definitions/TenantProductsFile",
+  "tenant_id": "terrapet",
+  "description": "Real inventory from Veterinaria Adris - Updated from Excel January 2026",
+  "products": [
+    {
+      "sku": "DOMINAL-MAX-GATOS-9068",
+      "barcode": "7791432889068",
+      "sale_price": 51500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "DOMINAL-MAX-GATOS-9051",
+      "barcode": "7791432889051",
+      "sale_price": 50000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9044",
+      "barcode": "7791432889044",
+      "sale_price": 61000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9037",
+      "barcode": "7791432889037",
+      "sale_price": 57500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9020",
+      "barcode": "7791432889020",
+      "sale_price": 53500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9013",
+      "barcode": "7791432889013",
+      "sale_price": 51500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9006",
+      "barcode": "7791432889006",
+      "sale_price": 50000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "NEXGARD-COMBO-0,8-5695",
+      "barcode": "4064951005695",
+      "sale_price": 100000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "NEXGARD-COMBO-2,5-5688",
+      "barcode": "4064951005688",
+      "sale_price": 112000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-15,1-0942",
+      "barcode": "7730997410942",
+      "sale_price": 105000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-7,6-0959",
+      "barcode": "7730997410959",
+      "sale_price": 83000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-3,6-0966",
+      "barcode": "7730997410966",
+      "sale_price": 75000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-2-0973",
+      "barcode": "7730997410973",
+      "sale_price": 72000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "COLLAR-TEA-327-4124",
+      "barcode": "7791432024124",
+      "sale_price": 51500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "COLLAR-TEA-327-4094",
+      "barcode": "7791432024094",
+      "sale_price": 59500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "COLLAR-TEA-327-4087",
+      "barcode": "7791432024087",
+      "sale_price": 66000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "COLLAR-TEA-327-4131",
+      "barcode": "7791432024131",
+      "sale_price": 51500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "COLLAR-SCALIBOR-48CM-0484",
+      "barcode": "8713184000484",
+      "sale_price": 127500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "COLLAR-SCALIBOR-65CM-0651",
+      "barcode": "8713184000651",
+      "sale_price": 155000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 3
+    },
+    {
+      "sku": "AFOXOPET-2---6660",
+      "barcode": "7841567006660",
+      "sale_price": 15000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 5
+    },
+    {
+      "sku": "AFOXOCAN-4,1---6670",
+      "barcode": "7841567006670",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 5
+    },
+    {
+      "sku": "AFOXOPET-10,1---6684",
+      "barcode": "7841567006684",
+      "sale_price": 35000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 5
+    },
+    {
+      "sku": "AFOXOPET-25,1---6691",
+      "barcode": "7841567006691",
+      "sale_price": 45000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 5
+    },
+    {
+      "sku": "FLURAPET-10---6694",
+      "barcode": "7841567006694",
+      "sale_price": 40000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "FLURAPET-20---6695",
+      "barcode": "7841567006695",
+      "sale_price": 70000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "IVERM-ANTEL-PLUS-HAS-6698",
+      "barcode": "7841567006698",
+      "sale_price": 13000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "IVERM-ANTEL-PLUS-12-6699",
+      "barcode": "7841567006699",
+      "sale_price": 15000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "IVERM-ANTEL-PLUS-23-6700",
+      "barcode": "7841567006700",
+      "sale_price": 22000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "FIPROMET-0,8---6705",
+      "barcode": "7841567006705",
+      "sale_price": 46000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "FIPROMET-2,5---6706",
+      "barcode": "7841567006706",
+      "sale_price": 50000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "FINTOX-PETS-1-8772",
+      "barcode": "7840282038772",
+      "sale_price": 17500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "FINTOX-PETS-10-8789",
+      "barcode": "7840282038789",
+      "sale_price": 18500,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 2
+    },
+    {
+      "sku": "FINTOX-PETS-20-8796",
+      "barcode": "7840282038796",
+      "sale_price": 23000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "SHOOTER-TOTAL-1-4732",
+      "barcode": "7730952034732",
+      "sale_price": 40000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "SHOOTER-TOTAL-4-4749",
+      "barcode": "7730952034749",
+      "sale_price": 41000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "GALPET-TALCO-4437",
+      "barcode": "7841567004437",
+      "sale_price": 16000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "FIPECTO-SPRAY-4440",
+      "barcode": "7841567004440",
+      "sale_price": 15000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 1
+    },
+    {
+      "sku": "SANIPPEL-9328",
+      "barcode": "7840282039328",
+      "sale_price": 28500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 3
+    },
+    {
+      "sku": "LUKY-DOG-SUAVE-2334",
+      "barcode": "7898923822334",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 4
+    },
+    {
+      "sku": "LUKY-DOG-HERVA-4404",
+      "barcode": "7898923774404",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 4
+    },
+    {
+      "sku": "LUKY-DOG-HIPOALERGEN-2341",
+      "barcode": "7898923822341",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 4
+    },
+    {
+      "sku": "GALPET-COLONIA-HEMBR-4666",
+      "barcode": "7841567004666",
+      "sale_price": 20000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "GALPET-COLONIA-MACHO-4659",
+      "barcode": "7841567004659",
+      "sale_price": 20000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "GALPET-COLONIA-REPEL-4420",
+      "barcode": "7841567004420",
+      "sale_price": 20000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIP-4833",
+      "barcode": "7841567004833",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIS-4888",
+      "barcode": "7841567004888",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIM-4880",
+      "barcode": "7841567004880",
+      "sale_price": 32500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIP-4987",
+      "barcode": "7841567004987",
+      "sale_price": 45000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 1
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-ANTIPA-7898",
+      "barcode": "7840282037898",
+      "sale_price": 18500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-ANTIMI-0010",
+      "barcode": "7840282040010",
+      "sale_price": 46000,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-HIPOAL-0843",
+      "barcode": "7840282040843",
+      "sale_price": 34500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-NORMAL-7924",
+      "barcode": "7840282037924",
+      "sale_price": 16500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-MEDICA-7920",
+      "barcode": "7840282037920",
+      "sale_price": 34500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "PUPPY-ACONDICIONADOR-8864",
+      "barcode": "7840282038864",
+      "sale_price": 24500,
+      "min_stock_level": 2,
+      "location": "Higiene",
+      "initial_stock": 2
+    },
+    {
+      "sku": "SAND-CAT-4KG-0211",
+      "barcode": "7842249000211",
+      "sale_price": 37000,
+      "min_stock_level": 2,
+      "location": "Arena",
+      "initial_stock": 4
+    },
+    {
+      "sku": "NUTRIMIX-CACHORROS-1-0017",
+      "barcode": "7841606000017",
+      "sale_price": 16500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 5
+    },
+    {
+      "sku": "NUTRIMIX-GATOS-1KG-0116",
+      "barcode": "7841606000116",
+      "sale_price": 13500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 5
+    },
+    {
+      "sku": "NUTRIMIX-RAZAS-GRAND-0048",
+      "barcode": "7841606000048",
+      "sale_price": 20000,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "NUTRIMIX-RAZAS-GRAND-0055",
+      "barcode": "7841606000055",
+      "sale_price": 53000,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 2
+    },
+    {
+      "sku": "NUTRIMIX-RAZAS-GRAND-0062",
+      "barcode": "7841606000062",
+      "sale_price": 87000,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 2
+    },
+    {
+      "sku": "BRAVO-CORDERO-&-5481",
+      "barcode": "7896803075481",
+      "sale_price": 21500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 2
+    },
+    {
+      "sku": "BRAVO-PEQUENAS-RAZAS-2411",
+      "barcode": "7896803072411",
+      "sale_price": 24000,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 2
+    },
+    {
+      "sku": "BRAVO-FRANGO-Y-5580",
+      "barcode": "7896803075580",
+      "sale_price": 36000,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 2
+    },
+    {
+      "sku": "ASTRO-SENIOR-900GR-0003",
+      "barcode": "7896803080003",
+      "sale_price": 28000,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "HOP!-RAZAS-PEQUENAS-8255",
+      "barcode": "7798098848255",
+      "sale_price": 69500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "HOP!-RAZAS-GRANDES-8217",
+      "barcode": "7798098848217",
+      "sale_price": 69500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "BELCATS-1KG-6664",
+      "barcode": "7798098846664",
+      "sale_price": 26500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "BELCAN-1,5-KG-6640",
+      "barcode": "7798098846640",
+      "sale_price": 27800,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "BELCAN-3-KG-6626",
+      "barcode": "7798098846626",
+      "sale_price": 51500,
+      "min_stock_level": 2,
+      "location": "Alimentos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "WET-COMPLETE-CAT-0197",
+      "barcode": "7798429430197",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "WET-COMPLETE-CAT-0227",
+      "barcode": "7798429430227",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "WET-COMPLETE-DOG-9603",
+      "barcode": "7798098849603",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 4
+    },
+    {
+      "sku": "WET-COMPLETE-CAT-9610",
+      "barcode": "7798098849610",
+      "sale_price": 25000,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 4
+    },
+    {
+      "sku": "WET-BALANCED-DOG-9399",
+      "barcode": "7798098849399",
+      "sale_price": 11300,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "WET-BALANCED-DOG-9429",
+      "barcode": "7798098849429",
+      "sale_price": 11300,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "WET-BALANCED-CAT-9337",
+      "barcode": "7798098849337",
+      "sale_price": 11300,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 3
+    },
+    {
+      "sku": "WET-BALANCED-CAT-9344",
+      "barcode": "7798098849344",
+      "sale_price": 11300,
+      "min_stock_level": 2,
+      "location": "H�medos",
+      "initial_stock": 3
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "author": "Dr. Martín Acosta",
+    "clinic_name": "Veterinaria San Miguel",
+    "is_veterinarian": true,
+    "rating": 5,
+    "text": "Derivo a PetLife todos mis casos que requieren ecografía o estudios especializados. La calidad de los informes es excelente y la comunicación con los especialistas es fluida. El Dr. Carlos siempre está disponible para discutir casos complicados.",
+    "date": "2024-11-10",
+    "source": "Referido",
+    "verified": true,
+    "service_used": "Ecografía Doppler"
+  },
+  {
+    "id": 2,
+    "author": "Dra. Alejandra Romero",
+    "clinic_name": "Clínica Veterinaria Luque",
+    "is_veterinarian": true,
+    "rating": 5,
+    "text": "La Dra. Sofía realizó un ecocardiograma a un paciente mío con soplo cardíaco. El informe fue completísimo, con mediciones detalladas y recomendaciones terapéuticas precisas. Excelente nivel profesional.",
+    "date": "2024-10-22",
+    "source": "Referido",
+    "verified": true,
+    "service_used": "Ecocardiografía"
+  },
+  {
+    "id": 3,
+    "author": "Patricia Fernández",
+    "pet_name": "Canela",
+    "pet_type": "Perro",
+    "is_veterinarian": false,
+    "rating": 5,
+    "text": "Mi veterinario me derivó a PetLife para una ecografía porque mi perra tenía dolores abdominales. El diagnóstico fue rápido y preciso. Me explicaron todo con paciencia y enviaron el informe completo a mi veterinario el mismo día.",
+    "date": "2024-09-15",
+    "source": "Google",
+    "verified": true,
+    "service_used": "Ecografía Abdominal"
+  },
+  {
+    "id": 4,
+    "author": "Dr. Federico López",
+    "clinic_name": "Emergencias Veterinarias 24hs",
+    "is_veterinarian": true,
+    "rating": 5,
+    "text": "Mandamos muestras de laboratorio de urgencia y nos devuelven resultados en menos de una hora. Fundamental para el manejo de casos críticos. El laboratorio de PetLife es de primer nivel.",
+    "date": "2024-08-28",
+    "source": "Referido",
+    "verified": true,
+    "service_used": "Laboratorio Urgencia"
+  },
+  {
+    "id": 5,
+    "author": "Gustavo Benítez",
+    "pet_name": "Thor",
+    "pet_type": "Perro",
+    "is_veterinarian": false,
+    "rating": 4,
+    "text": "Thor necesitaba radiografías por una cadera que le dolía. Las imágenes fueron muy claras y el informe muy detallado. El único tema es que queda un poco lejos del centro, pero vale la pena por la calidad.",
+    "date": "2024-07-12",
+    "source": "Google",
+    "verified": true,
+    "service_used": "Radiología Digital"
+  },
+  {
+    "id": 6,
+    "author": "Dra. Carmen Insfrán",
+    "clinic_name": "Veterinaria Villa Elisa",
+    "is_veterinarian": true,
+    "rating": 5,
+    "text": "El programa de derivaciones es muy práctico. Agenda online, turnos rápidos y precios accesibles para colegas. Mis clientes quedan muy conformes con la atención que reciben.",
+    "date": "2024-06-05",
+    "source": "Referido",
+    "verified": true,
+    "service_used": "Derivación General"
+  }
+]

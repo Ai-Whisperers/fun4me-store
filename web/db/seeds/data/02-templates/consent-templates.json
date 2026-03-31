@@ -1,0 +1,86 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Global consent templates (tenant_id = null). Clinics can override with their own.",
+  "consent_templates": [
+    {
+      "code": "SURG_GENERAL",
+      "name": "Consentimiento Quirúrgico General",
+      "category": "surgical",
+      "title": "Consentimiento Informado para Procedimiento Quirúrgico",
+      "content_html": "<h2>Consentimiento Quirúrgico</h2><p>Yo, <strong>{{owner_name}}</strong>, documento de identidad <strong>{{owner_id}}</strong>, propietario/a de <strong>{{pet_name}}</strong> ({{pet_species}}, {{pet_breed}}), autorizo al equipo veterinario de <strong>{{clinic_name}}</strong> a realizar el siguiente procedimiento quirúrgico:</p><p><strong>Procedimiento: {{procedure_name}}</strong></p><h3>Declaro que:</h3><ul><li>He sido informado/a sobre la naturaleza del procedimiento, sus beneficios esperados, riesgos potenciales y alternativas disponibles.</li><li>Comprendo que toda intervención quirúrgica conlleva riesgos inherentes, incluyendo pero no limitados a: reacciones adversas a la anestesia, sangrado, infección, y en casos excepcionales, muerte.</li><li>He informado al veterinario sobre cualquier condición médica previa, medicamentos actuales y alergias conocidas de mi mascota.</li><li>Autorizo cualquier procedimiento adicional que el veterinario considere necesario durante la cirugía para salvaguardar la salud de mi mascota.</li><li>Entiendo que el ayuno pre-quirúrgico es esencial y confirmo que mi mascota ha cumplido con las instrucciones recibidas.</li></ul><p>Contacto de emergencia: {{emergency_contact}} - Tel: {{emergency_phone}}</p>",
+      "requires_witness": false,
+      "validity_days": 1,
+      "version": "1.0"
+    },
+    {
+      "code": "ANEST_GENERAL",
+      "name": "Consentimiento Anestésico",
+      "category": "anesthetic",
+      "title": "Consentimiento para Anestesia",
+      "content_html": "<h2>Consentimiento Anestésico</h2><p>Yo, <strong>{{owner_name}}</strong>, autorizo la administración de anestesia a <strong>{{pet_name}}</strong>.</p><h3>He sido informado/a que:</h3><ul><li>La anestesia general conlleva riesgos, incluyendo reacciones adversas, complicaciones cardiovasculares o respiratorias, y en casos raros, muerte.</li><li>Se realizará una evaluación pre-anestésica para minimizar riesgos.</li><li>El protocolo anestésico será seleccionado según la condición de mi mascota.</li><li>Mi mascota será monitoreada durante todo el procedimiento.</li></ul><p><strong>Confirmo que:</strong></p><ul><li>Mi mascota ha cumplido con el ayuno pre-quirúrgico indicado ({{fasting_hours}} horas sin alimento sólido, {{water_hours}} horas sin agua).</li><li>He informado sobre cualquier medicamento que mi mascota esté tomando.</li></ul>",
+      "requires_witness": false,
+      "validity_days": 1,
+      "version": "1.0"
+    },
+    {
+      "code": "EUTH_CONSENT",
+      "name": "Consentimiento para Eutanasia Humanitaria",
+      "category": "euthanasia",
+      "title": "Consentimiento para Eutanasia Humanitaria",
+      "content_html": "<h2>Consentimiento para Eutanasia</h2><p>Yo, <strong>{{owner_name}}</strong>, documento de identidad <strong>{{owner_id}}</strong>, solicito y autorizo la eutanasia humanitaria de mi mascota <strong>{{pet_name}}</strong>.</p><h3>Entiendo que:</h3><ul><li>Este procedimiento es irreversible y resultará en la muerte de mi mascota.</li><li>La decisión ha sido tomada de manera voluntaria y consciente.</li><li>He sido informado/a sobre alternativas de tratamiento.</li></ul><p><strong>Motivo de la eutanasia:</strong> {{reason}}</p><p><strong>Deseo estar presente durante el procedimiento:</strong> {{owner_present}}</p><h3>Disposición de los restos:</h3><ul><li>[ ] Cremación individual con devolución de cenizas</li><li>[ ] Cremación colectiva</li><li>[ ] Retiro de restos para disposición propia</li><li>[ ] Entierro en cementerio de mascotas</li></ul><p>Opción seleccionada: {{remains_disposition}}</p>",
+      "requires_witness": true,
+      "validity_days": null,
+      "version": "1.0"
+    },
+    {
+      "code": "HOSP_ADMIT",
+      "name": "Contrato de Internación",
+      "category": "therapeutic",
+      "title": "Contrato de Internación/Hospitalización",
+      "content_html": "<h2>Contrato de Internación</h2><p>Yo, <strong>{{owner_name}}</strong>, autorizo la internación de <strong>{{pet_name}}</strong> en <strong>{{clinic_name}}</strong>.</p><p><strong>Fecha de ingreso:</strong> {{admission_date}}</p><p><strong>Motivo:</strong> {{reason}}</p><p><strong>Diagnóstico presuntivo:</strong> {{diagnosis}}</p><h3>Condiciones:</h3><ul><li>Autorizo la realización de procedimientos diagnósticos y terapéuticos necesarios.</li><li>Entiendo que seré contactado/a para autorizar procedimientos adicionales que excedan Gs. {{limit_amount}}.</li><li>Me comprometo a mantener comunicación y responder a llamadas del equipo veterinario.</li><li>Entiendo que la tarifa de internación es de Gs. {{daily_rate}} por día.</li><li>Autorizo atención de emergencia si no estoy disponible para contacto.</li></ul><p><strong>Contacto de emergencia:</strong> {{emergency_contact}} - Tel: {{emergency_phone}}</p>",
+      "requires_witness": false,
+      "validity_days": null,
+      "version": "1.0"
+    },
+    {
+      "code": "BOARD_CONTRACT",
+      "name": "Contrato de Hospedaje/Pensión",
+      "category": "general",
+      "title": "Contrato de Hospedaje",
+      "content_html": "<h2>Contrato de Hospedaje</h2><p>Yo, <strong>{{owner_name}}</strong>, solicito el servicio de hospedaje para <strong>{{pet_name}}</strong> en <strong>{{clinic_name}}</strong>.</p><p><strong>Período:</strong> Desde {{start_date}} hasta {{end_date}} ({{total_days}} días)</p><p><strong>Tarifa diaria:</strong> Gs. {{daily_rate}}</p><p><strong>Total estimado:</strong> Gs. {{estimated_total}}</p><h3>Información de la mascota:</h3><ul><li>Alimentación: {{food_instructions}}</li><li>Medicamentos: {{medication_instructions}}</li><li>Necesidades especiales: {{special_needs}}</li></ul><h3>Condiciones:</h3><ul><li>Autorizo atención veterinaria de emergencia si fuera necesario.</li><li>Mi mascota está al día con sus vacunas y desparasitaciones.</li><li>Informaré de cualquier condición de salud o comportamiento relevante.</li><li>El retiro debe realizarse en horario de atención.</li><li>Retiros tardíos (más de 2 horas) se cobran como día adicional.</li></ul>",
+      "requires_witness": false,
+      "validity_days": null,
+      "version": "1.0"
+    },
+    {
+      "code": "GROOM_CONSENT",
+      "name": "Consentimiento de Estética",
+      "category": "general",
+      "title": "Consentimiento para Servicio de Estética",
+      "content_html": "<h2>Consentimiento de Estética</h2><p>Yo, <strong>{{owner_name}}</strong>, autorizo la realización de los siguientes servicios de estética para <strong>{{pet_name}}</strong>:</p><ul>{{services_list}}</ul><h3>Entiendo que:</h3><ul><li>Si se encuentran parásitos, nudos severos o problemas de piel, seré contactado/a.</li><li>En caso de nudos imposibles de desenredar, se procederá con rasurado para el bienestar del animal.</li><li>El tiempo de servicio puede variar según el estado del pelaje y comportamiento.</li></ul><p><strong>Instrucciones especiales:</strong> {{special_instructions}}</p>",
+      "requires_witness": false,
+      "validity_days": 1,
+      "version": "1.0"
+    },
+    {
+      "code": "PHOTO_CONSENT",
+      "name": "Autorización de Uso de Imagen",
+      "category": "general",
+      "title": "Autorización de Uso de Fotografías",
+      "content_html": "<h2>Autorización de Uso de Imagen</h2><p>Yo, <strong>{{owner_name}}</strong>, propietario/a de <strong>{{pet_name}}</strong>, autorizo a <strong>{{clinic_name}}</strong> a:</p><ul><li>Tomar fotografías y/o videos de mi mascota.</li><li>Utilizar dicho material para fines promocionales, educativos y de marketing.</li><li>Publicar en redes sociales, sitio web y material publicitario de la clínica.</li></ul><p>Esta autorización es válida por <strong>{{validity_period}}</strong> y puede ser revocada en cualquier momento mediante solicitud escrita.</p>",
+      "requires_witness": false,
+      "validity_days": 365,
+      "version": "1.0"
+    },
+    {
+      "code": "DNR_ORDER",
+      "name": "Orden de No Resucitar",
+      "category": "therapeutic",
+      "title": "Orden de No Resucitar (DNR)",
+      "content_html": "<h2>Orden de No Resucitar</h2><p>Yo, <strong>{{owner_name}}</strong>, solicito que en caso de paro cardiorrespiratorio de <strong>{{pet_name}}</strong>, NO se realicen maniobras de reanimación cardiopulmonar (RCP).</p><h3>Entiendo que:</h3><ul><li>Esta decisión significa que no se intentará reanimación si el corazón o la respiración de mi mascota se detienen.</li><li>Esta decisión ha sido tomada de manera voluntaria después de discutir las opciones con el veterinario.</li><li>Puedo revocar esta orden en cualquier momento mediante notificación verbal o escrita.</li></ul><p><strong>Motivo:</strong> {{reason}}</p>",
+      "requires_witness": true,
+      "validity_days": null,
+      "version": "1.0"
+    }
+  ]
+}

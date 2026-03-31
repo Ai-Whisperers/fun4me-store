@@ -1,0 +1,34 @@
+-- =============================================================================
+-- 06_MULTI_SERVICE_BOOKING.SQL
+-- =============================================================================
+-- Atomic multi-service appointment booking.
+-- Creates sequential appointments linked by booking_group_id.
+--
+-- DEPENDENCIES: 40_scheduling/02_appointments.sql, 40_scheduling/05_atomic_booking.sql
+-- =============================================================================
+
+-- Note: The booking_group_id column and main function are created in:
+-- migrations/044_multi_service_booking.sql
+--
+-- This file serves as documentation and reference for the multi-service booking logic.
+
+-- =============================================================================
+-- MULTI-SERVICE BOOKING FLOW
+-- =============================================================================
+--
+-- 1. User selects multiple services in the booking wizard
+-- 2. Frontend calculates total duration (sum of all service durations)
+-- 3. Frontend shows only slots that can fit the entire block
+-- 4. User selects a start time
+-- 5. Frontend calls createMultiServiceAppointment() server action
+-- 6. Server action calls create_multi_service_booking() RPC
+-- 7. RPC creates sequential appointments, each with:
+--    - Its own id, start_time, end_time, service_id
+--    - Same booking_group_id (if multiple services)
+--    - Same pet_id, vet_id, notes, created_by
+-- 8. Portal shows appointments grouped by booking_group_id
+-- 9. Each appointment can be individually cancelled/completed
+--
+-- =============================================================================
+
+-- See migrations/044_multi_service_booking.sql for the actual implementation.

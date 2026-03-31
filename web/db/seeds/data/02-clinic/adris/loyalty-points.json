@@ -1,0 +1,50 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Client loyalty point balances with tier status (bronze: 0-499, silver: 500-1999, gold: 2000-4999, platinum: 5000+)",
+  "loyalty_points": [
+    {
+      "id": "lp-001-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "balance": 2450,
+      "lifetime_earned": 3200,
+      "lifetime_redeemed": 750,
+      "tier": "gold",
+      "created_at": "{{daysAgo(180)}}",
+      "updated_at": "{{daysAgo(2)}}"
+    },
+    {
+      "id": "lp-002-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440002",
+      "balance": 890,
+      "lifetime_earned": 1240,
+      "lifetime_redeemed": 350,
+      "tier": "silver",
+      "created_at": "{{daysAgo(150)}}",
+      "updated_at": "{{daysAgo(5)}}"
+    },
+    {
+      "id": "lp-003-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440006",
+      "balance": 320,
+      "lifetime_earned": 420,
+      "lifetime_redeemed": 100,
+      "tier": "bronze",
+      "created_at": "{{daysAgo(90)}}",
+      "updated_at": "{{daysAgo(10)}}"
+    },
+    {
+      "id": "lp-004-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440007",
+      "balance": 5680,
+      "lifetime_earned": 6500,
+      "lifetime_redeemed": 820,
+      "tier": "platinum",
+      "created_at": "{{daysAgo(365)}}",
+      "updated_at": "{{daysAgo(1)}}"
+    }
+  ]
+}

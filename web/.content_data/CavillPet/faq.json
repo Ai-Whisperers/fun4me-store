@@ -1,0 +1,110 @@
+[
+  {
+    "id": "how-to-book",
+    "category": "citas",
+    "question": "¿Cómo agendo una cita?",
+    "answer": "Puedes agendar tu cita de varias formas: desde nuestra web usando el botón 'Agendar Cita', por WhatsApp, o llamando directamente a la clínica. Te confirmaremos la cita a la brevedad."
+  },
+  {
+    "id": "walk-ins",
+    "category": "citas",
+    "question": "¿Atienden sin cita previa?",
+    "answer": "Sí, atendemos sin cita, aunque recomendamos reservar para evitar esperas. Para servicios como peluquería, cirugías o guardería es necesario agendar con anticipación."
+  },
+  {
+    "id": "consultation-duration",
+    "category": "citas",
+    "question": "¿Cuánto dura una consulta?",
+    "answer": "Una consulta general dura aproximadamente 20-30 minutos, dependiendo del caso. Nos tomamos el tiempo necesario para revisar a tu mascota y responder todas tus preguntas."
+  },
+  {
+    "id": "reschedule",
+    "category": "citas",
+    "question": "¿Puedo cancelar o reprogramar mi cita?",
+    "answer": "Sí, puedes cancelar o reprogramar tu cita avisando con anticipación por WhatsApp o llamando a la clínica. Te pedimos avisar con al menos 2 horas de anticipación."
+  },
+  {
+    "id": "emergency-available",
+    "category": "emergencias",
+    "question": "¿Atienden emergencias?",
+    "answer": "Sí, atendemos emergencias fuera de horario. Contamos con servicio veterinario las 24 horas para casos urgentes. Comunícate por WhatsApp o llamada para coordinar atención inmediata."
+  },
+  {
+    "id": "emergency-hours",
+    "category": "emergencias",
+    "question": "¿Cuál es el horario de emergencias?",
+    "answer": "Nuestro horario regular es de lunes a viernes de 10:00 a 20:00 y sábados de 10:00 a 18:00. Domingos y fuera de horario atendemos solo emergencias, las 24 horas del día."
+  },
+  {
+    "id": "emergency-cost",
+    "category": "emergencias",
+    "question": "¿Hay costo adicional por emergencias?",
+    "answer": "Sí, las emergencias fuera de horario tienen un recargo de Gs. 50.000 adicional al costo de la consulta. Este recargo aplica en domingos, feriados y fuera del horario habitual de atención."
+  },
+  {
+    "id": "payment-methods",
+    "category": "pagos",
+    "question": "¿Qué métodos de pago aceptan?",
+    "answer": "Aceptamos efectivo, tarjetas de débito y crédito, y transferencias bancarias. Consultá por otras opciones de pago al momento de tu visita."
+  },
+  {
+    "id": "credit-cards",
+    "category": "pagos",
+    "question": "¿Aceptan tarjetas de crédito?",
+    "answer": "Sí, aceptamos tarjetas de crédito y débito de las principales marcas. También podés pagar en efectivo o por transferencia bancaria."
+  },
+  {
+    "id": "payment-plans",
+    "category": "pagos",
+    "question": "¿Tienen planes de pago?",
+    "answer": "Para procedimientos costosos como cirugías podemos coordinar un plan de pago. Consultá en recepción sobre las opciones disponibles según el monto total."
+  },
+  {
+    "id": "surgery",
+    "category": "servicios",
+    "question": "¿Hacen cirugías?",
+    "answer": "Sí, realizamos cirugías generales, esterilizaciones, castraciones, cesáreas, cirugía de tumores y más. Todas las cirugías incluyen prequirúrgico y hospitalización post-operatoria según sea necesario."
+  },
+  {
+    "id": "hospitalization",
+    "category": "servicios",
+    "question": "¿Tienen internación?",
+    "answer": "Sí, contamos con hospitalización las 24 horas. Tu mascota estará bajo cuidado y monitoreo constante. El costo es de Gs. 240.000 por día, con revisión veterinaria incluida."
+  },
+  {
+    "id": "laboratory",
+    "category": "servicios",
+    "question": "¿Hacen laboratorio?",
+    "answer": "Realizamos análisis básicos y prequirúrgicos en la clínica. Para análisis especializados trabajamos con laboratorios de referencia y coordinamos el envío de muestras."
+  },
+  {
+    "id": "exotic-pets",
+    "category": "servicios",
+    "question": "¿Atienden animales exóticos?",
+    "answer": "Actualmente nos especializamos en perros y gatos. Para animales exóticos (aves, reptiles, roedores) te recomendamos consultar con clínicas especializadas en esas especies."
+  },
+  {
+    "id": "daycare",
+    "category": "servicios",
+    "question": "¿Cómo funciona la guardería?",
+    "answer": "Ofrecemos guardería las 24 horas para que dejes a tu mascota en buenas manos mientras viajás o trabajás. Tu mascota recibe cuidado, alimentación y supervisión veterinaria. Consultá por disponibilidad y precios."
+  },
+  {
+    "id": "what-to-bring",
+    "category": "visita",
+    "question": "¿Qué debo llevar a la consulta?",
+    "answer": "Traé a tu mascota con su carnet de vacunas si lo tiene, información sobre medicamentos que esté tomando, y cualquier documentación médica anterior que pueda ser útil."
+  },
+  {
+    "id": "stay-during-procedure",
+    "category": "visita",
+    "question": "¿Puedo quedarme durante el procedimiento?",
+    "answer": "En consultas generales podés quedarte con tu mascota. Para procedimientos como cirugías o algunos estudios, te pediremos esperar en recepción por seguridad e higiene."
+  },
+  {
+    "id": "parking",
+    "category": "visita",
+    "question": "¿Tienen estacionamiento?",
+    "answer": "Contamos con espacio para estacionamiento cercano a la clínica. Consultá disponibilidad al momento de tu visita."
+  }
+]

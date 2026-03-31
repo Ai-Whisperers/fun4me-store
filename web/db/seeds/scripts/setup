@@ -1,0 +1,191 @@
+#!/bin/bash
+
+# =============================================================================
+# SETUP CLI WRAPPER
+# =============================================================================
+# Simple CLI wrapper for the API-based environment setup
+# Provides easy commands for common setup scenarios
+#
+# Usage:
+#   ./setup basic        # Basic clinic setup
+#   ./setup full         # Full clinic with sample data
+#   ./setup demo         # Complete demo environment
+#   ./setup --help       # Show help
+#
+# =============================================================================
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SETUP_SCRIPT="$SCRIPT_DIR/setup-via-api.ts"
+
+# Default configuration
+ENV_URL="http://localhost:3000"
+TENANT="adris"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Helper functions
+log_info() {
+    echo -e "${BLUE}ℹ️  $1${NC}"
+}
+
+log_success() {
+    echo -e "${GREEN}✅ $1${NC}"
+}
+
+log_warning() {
+    echo -e "${YELLOW}⚠️  $1${NC}"
+}
+
+log_error() {
+    echo -e "${RED}❌ $1${NC}"
+}
+
+show_help() {
+    cat << EOF
+🐾 Veterinary Platform Environment Setup
+
+USAGE:
+    ./setup [COMMAND] [OPTIONS]
+
+COMMANDS:
+    basic       Setup basic clinic structure (services, payment methods, kennels)
+    full        Setup complete clinic with sample data (profiles, pets, appointments)
+    demo        Setup complete demo environment (all features including medical records)
+    clear       Clear all data for the specified tenant
+    reset       Clear then setup demo environment (env:reset)
+
+OPTIONS:
+    -e, --env URL       API environment URL (default: http://localhost:3000)
+    -t, --tenant ID     Tenant ID to setup (default: adris)
+    --token TOKEN       Admin authentication token
+    --no-skip           Don't skip existing entities
+    -h, --help          Show this help message
+
+EXAMPLES:
+    ./setup basic
+    ./setup full --env https://staging.api.com
+    ./setup demo --tenant petlife --token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...
+    ./setup full --no-skip
+
+EOF
+}
+
+check_dependencies() {
+    if ! command -v npx &> /dev/null; then
+        log_error "npx is not installed. Please install Node.js and npm."
+        exit 1
+    fi
+
+    if ! command -v tsx &> /dev/null && ! npx tsx --version &> /dev/null; then
+        log_warning "tsx not found globally. Will use npx tsx."
+    fi
+}
+
+run_setup() {
+    local setup_type="$1"
+    shift
+
+    log_info "Starting $setup_type setup..."
+    log_info "Environment: $ENV_URL"
+    log_info "Tenant: $TENANT"
+    echo
+
+    # Build the command
+    local cmd="npx tsx \"$SETUP_SCRIPT\" --env \"$ENV_URL\" --tenant \"$TENANT\" --type \"$setup_type\" $@"
+
+    # Execute the command
+    if eval "$cmd"; then
+        log_success "$setup_type setup completed successfully!"
+    else
+        log_error "$setup_type setup failed!"
+        exit 1
+    fi
+}
+
+# Parse command line arguments
+COMMAND=""
+EXTRA_ARGS=""
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        basic|full|demo|clear|reset)
+            COMMAND="$1"
+            shift
+            break
+            ;;
+        -h|--help)
+            show_help
+            exit 0
+            ;;
+        -e|--env)
+            ENV_URL="$2"
+            shift 2
+            ;;
+        -t|--tenant)
+            TENANT="$2"
+            shift 2
+            ;;
+        --token)
+            EXTRA_ARGS="$EXTRA_ARGS --token $2"
+            shift 2
+            ;;
+        --no-skip)
+            EXTRA_ARGS="$EXTRA_ARGS --no-skip"
+            shift
+            ;;
+        --clear-first)
+            EXTRA_ARGS="$EXTRA_ARGS --clear-first"
+            shift
+            ;;
+        *)
+            log_error "Unknown option: $1"
+            echo
+            show_help
+            exit 1
+            ;;
+    esac
+done
+
+# If no command provided, show help
+if [ -z "$COMMAND" ]; then
+    show_help
+    exit 1
+fi
+
+# Check dependencies
+check_dependencies
+
+# Run the appropriate setup
+case $COMMAND in
+    basic)
+        run_setup "basic" $EXTRA_ARGS
+        ;;
+    full)
+        run_setup "full" $EXTRA_ARGS
+        ;;
+    demo)
+        run_setup "demo" $EXTRA_ARGS
+        ;;
+    clear)
+        run_setup "clear" $EXTRA_ARGS
+        ;;
+    reset)
+        log_info "Resetting environment (clear + demo setup)..."
+        run_setup "clear" $EXTRA_ARGS
+        log_success "Environment cleared"
+        log_info "Setting up demo environment..."
+        run_setup "demo" $EXTRA_ARGS
+        ;;
+    *)
+        log_error "Unknown command: $COMMAND"
+        show_help
+        exit 1
+        ;;
+esac

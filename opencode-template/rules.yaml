@@ -1,0 +1,156 @@
+# ===========================================
+# REGLAS DE CODIGO PARA ESTUDIANTES FPUNA
+# ===========================================
+# Estas reglas se aplican automaticamente segun el tipo de archivo
+
+rules:
+  # ============================================
+  # REGLAS GLOBALES (todos los archivos)
+  # ============================================
+  global:
+    - name: "no-hardcoded-secrets"
+      description: "No hardcodear credenciales en el codigo"
+      patterns:
+        - "password\\s*=\\s*['\"][^'\"]+['\"]"
+        - "api_key\\s*=\\s*['\"][^'\"]+['\"]"
+        - "secret\\s*=\\s*['\"][^'\"]+['\"]"
+      message: "ALERTA: Posible credencial hardcodeada detectada. Usa variables de entorno."
+      severity: error
+
+    - name: "no-console-in-production"
+      description: "Evitar console.log en produccion"
+      patterns:
+        - "console\\.log\\("
+      message: "Considera usar un logger apropiado en lugar de console.log"
+      severity: warning
+
+  # ============================================
+  # REGLAS PARA PYTHON
+  # ============================================
+  python:
+    file_patterns:
+      - "**/*.py"
+    rules:
+      - name: "use-type-hints"
+        description: "Usar type hints en funciones"
+        message: "Agrega type hints a tus funciones para mejor documentacion"
+        severity: info
+
+      - name: "docstrings-required"
+        description: "Funciones publicas deben tener docstrings"
+        message: "Agrega docstring a funciones publicas"
+        severity: warning
+
+      - name: "no-bare-except"
+        description: "No usar except sin especificar excepcion"
+        patterns:
+          - "except\\s*:"
+        message: "Especifica el tipo de excepcion: except ValueError:"
+        severity: error
+
+  # ============================================
+  # REGLAS PARA JAVASCRIPT/TYPESCRIPT
+  # ============================================
+  javascript:
+    file_patterns:
+      - "**/*.js"
+      - "**/*.ts"
+      - "**/*.jsx"
+      - "**/*.tsx"
+    rules:
+      - name: "prefer-const"
+        description: "Usar const para variables que no cambian"
+        patterns:
+          - "let\\s+\\w+\\s*=\\s*[^;]+;(?!.*\\1\\s*=)"
+        message: "Considera usar 'const' si la variable no sera reasignada"
+        severity: info
+
+      - name: "no-any-type"
+        description: "Evitar tipo 'any' en TypeScript"
+        patterns:
+          - ":\\s*any\\b"
+        message: "Evita usar 'any'. Define un tipo especifico."
+        severity: warning
+
+      - name: "async-await-error-handling"
+        description: "Manejar errores en funciones async"
+        message: "Usa try/catch en funciones async para manejar errores"
+        severity: warning
+
+  # ============================================
+  # REGLAS PARA SQL
+  # ============================================
+  sql:
+    file_patterns:
+      - "**/*.sql"
+    rules:
+      - name: "no-select-star"
+        description: "No usar SELECT * en produccion"
+        patterns:
+          - "SELECT\\s+\\*\\s+FROM"
+        message: "Especifica las columnas en lugar de SELECT *"
+        severity: warning
+
+      - name: "parameterized-queries"
+        description: "Usar queries parametrizadas"
+        message: "Usa queries parametrizadas para prevenir SQL injection"
+        severity: error
+
+  # ============================================
+  # REGLAS PARA DOCUMENTACION
+  # ============================================
+  documentation:
+    file_patterns:
+      - "**/*.md"
+      - "**/README*"
+    rules:
+      - name: "readme-structure"
+        description: "README debe tener estructura basica"
+        message: |
+          Un buen README incluye:
+          - Titulo y descripcion
+          - Instalacion
+          - Uso basico
+          - Ejemplos
+          - Licencia
+        severity: info
+
+  # ============================================
+  # REGLAS PARA CONFIGURACION
+  # ============================================
+  config:
+    file_patterns:
+      - "**/*.json"
+      - "**/*.yaml"
+      - "**/*.yml"
+      - "**/*.toml"
+    rules:
+      - name: "no-secrets-in-config"
+        description: "No incluir secretos en archivos de configuracion"
+        patterns:
+          - "password"
+          - "secret"
+          - "api_key"
+          - "token"
+        message: "Usa variables de entorno para secretos, no archivos de configuracion"
+        severity: error
+
+# ============================================
+# SEVERIDADES
+# ============================================
+# error   - Bloquea la accion, debe corregirse
+# warning - Muestra advertencia, deberia corregirse
+# info    - Solo informativo, sugerencia
+
+# ============================================
+# REGLAS PERSONALIZADAS
+# ============================================
+# Agrega reglas especificas para tu proyecto:
+
+custom_rules:
+  # Ejemplo:
+  # mi-regla:
+  #   file_patterns: ["src/**/*.py"]
+  #   patterns: ["TODO"]
+  #   message: "Hay TODOs pendientes en el codigo"
+  #   severity: info

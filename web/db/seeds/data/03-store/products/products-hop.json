@@ -1,0 +1,186 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "hop",
+  "products": [
+    {
+      "sku": "HOP-ADULT-CARNE-21KG",
+      "name": "Hop! Adulto Carne 21kg",
+      "description": "Alimento premium para perros adultos sabor carne",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "21kg",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "flavor": "Carne",
+        "protein": "25%"
+      }
+    },
+    {
+      "sku": "HOP-ADULT-CARNE-10KG",
+      "name": "Hop! Adulto Carne 10kg",
+      "description": "Alimento premium para perros adultos sabor carne",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "10kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "flavor": "Carne",
+        "protein": "25%"
+      }
+    },
+    {
+      "sku": "HOP-ADULT-CARNE-3KG",
+      "name": "Hop! Adulto Carne 3kg",
+      "description": "Alimento premium para perros adultos sabor carne",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 55000,
+          "cost_price": 33000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "flavor": "Carne",
+        "protein": "25%"
+      }
+    },
+    {
+      "sku": "HOP-ADULT-POLLO-21KG",
+      "name": "Hop! Adulto Pollo 21kg",
+      "description": "Alimento premium para perros adultos sabor pollo",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "21kg",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "flavor": "Pollo",
+        "protein": "25%"
+      }
+    },
+    {
+      "sku": "HOP-ADULT-POLLO-10KG",
+      "name": "Hop! Adulto Pollo 10kg",
+      "description": "Alimento premium para perros adultos sabor pollo",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "10kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "flavor": "Pollo",
+        "protein": "25%"
+      }
+    },
+    {
+      "sku": "HOP-PUPPY-10KG",
+      "name": "Hop! Cachorro 10kg",
+      "description": "Alimento premium para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "10kg",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "28%"
+      }
+    },
+    {
+      "sku": "HOP-PUPPY-3KG",
+      "name": "Hop! Cachorro 3kg",
+      "description": "Alimento premium para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 58000,
+          "cost_price": 34800,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_966122-MLA82942988806_032025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_823079-MLA83226786437_032025-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "28%"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+# =============================================================================
+# Cloudflare Tunnel Configuration
+# =============================================================================
+#
+# This file configures the routing for your Cloudflare tunnel.
+# Place in ~/.cloudflared/config.yml after creating the tunnel.
+#
+# Setup:
+#   1. cloudflared tunnel login
+#   2. cloudflared tunnel create vete
+#   3. Copy this file to ~/.cloudflared/config.yml
+#   4. Update the tunnel ID below
+#   5. Configure DNS in Cloudflare dashboard
+#
+# =============================================================================
+
+# Tunnel ID (get from: cloudflared tunnel list)
+tunnel: YOUR_TUNNEL_ID_HERE
+
+# Credentials file location
+credentials-file: /home/YOUR_USER/.cloudflared/YOUR_TUNNEL_ID.json
+
+# Ingress rules - route traffic to services
+ingress:
+  # Main Vete application
+  - hostname: vete.ai-whisperers.org
+    service: http://localhost:3000
+    originRequest:
+      noTLSVerify: true
+
+  # Wildcard for clinic subdomains (if needed)
+  - hostname: "*.vete.ai-whisperers.org"
+    service: http://localhost:3000
+    originRequest:
+      noTLSVerify: true
+
+  # Catch-all (required)
+  - service: http_status:404

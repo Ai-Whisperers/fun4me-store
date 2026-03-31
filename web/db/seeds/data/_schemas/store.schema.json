@@ -1,0 +1,397 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "store.schema.json",
+  "title": "Store/E-commerce Schemas",
+  "description": "Schemas for store data: brands, categories, products, suppliers",
+
+  "definitions": {
+    "Brand": {
+      "type": "object",
+      "description": "Product brand",
+      "required": ["slug", "name"],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "URL-friendly identifier"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "logo_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "country_origin": {
+          "type": "string",
+          "description": "Country of origin"
+        },
+        "manufacturer": {
+          "type": "string",
+          "description": "Parent company name"
+        },
+        "categories": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Primary product categories for this brand"
+        },
+        "is_premium": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is a premium brand"
+        },
+        "is_veterinary": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is a veterinary-exclusive brand"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "Category": {
+      "type": "object",
+      "description": "Product category (hierarchical)",
+      "required": ["slug", "name", "level"],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}(-[A-Z]{3}){0,2}$",
+          "description": "Category code (e.g., NUT-CAN-SEC)"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3,
+          "description": "Hierarchy level (1=top, 2=sub, 3=leaf)"
+        },
+        "parent_slug": {
+          "type": ["string", "null"],
+          "description": "Parent category slug"
+        },
+        "display_order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "image_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon name or emoji"
+        },
+        "species": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["dog", "cat", "bird", "small_animal", "all"] },
+          "description": "Which species this category is for"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        },
+        "subcategories": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Category" },
+          "description": "Nested subcategories (for hierarchical files)"
+        }
+      }
+    },
+
+    "ProductVariant": {
+      "type": "object",
+      "description": "Product size/variant",
+      "required": ["size", "base_price", "cost_price", "sku_suffix"],
+      "properties": {
+        "size": {
+          "type": "string",
+          "description": "Size label (e.g., '3kg', '500ml', 'S')"
+        },
+        "base_price": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Sale price in Guaranies"
+        },
+        "cost_price": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cost/purchase price in Guaranies"
+        },
+        "sku_suffix": {
+          "type": "string",
+          "pattern": "^-[A-Z0-9.]+$",
+          "description": "SKU suffix (e.g., '-3KG')"
+        },
+        "barcode": {
+          "type": "string",
+          "description": "EAN/UPC barcode"
+        },
+        "weight_kg": {
+          "type": "number",
+          "description": "Physical weight for shipping"
+        }
+      }
+    },
+
+    "Product": {
+      "type": "object",
+      "description": "Store product",
+      "required": ["sku", "name", "category_slug", "variants"],
+      "properties": {
+        "sku": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,5}-[A-Z0-9-]+$",
+          "description": "Base SKU (variants add suffix)"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "category_slug": {
+          "type": "string",
+          "description": "Category code"
+        },
+        "target_species": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["dog", "cat", "bird", "rabbit", "hamster", "all"] },
+          "default": ["all"]
+        },
+        "requires_prescription": {
+          "type": "boolean",
+          "default": false
+        },
+        "variants": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ProductVariant" },
+          "minItems": 1
+        },
+        "image_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "gallery_urls": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Product-specific attributes",
+          "additionalProperties": true
+        },
+        "ingredients": {
+          "type": "string",
+          "description": "Ingredient list (for food)"
+        },
+        "guaranteed_analysis": {
+          "type": "object",
+          "description": "Nutritional analysis (for food)",
+          "properties": {
+            "protein_min": { "type": "number" },
+            "fat_min": { "type": "number" },
+            "fiber_max": { "type": "number" },
+            "moisture_max": { "type": "number" }
+          }
+        },
+        "is_featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "ProductFile": {
+      "type": "object",
+      "description": "Product file structure (one per brand)",
+      "required": ["brand_slug", "products"],
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "brand_slug": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Product" }
+        }
+      }
+    },
+
+    "TenantProductAssignment": {
+      "type": "object",
+      "description": "Product assignment to a clinic with local pricing",
+      "required": ["sku"],
+      "properties": {
+        "sku": {
+          "type": "string",
+          "description": "Global catalog product SKU"
+        },
+        "sale_price": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Clinic's sale price in Guaranies"
+        },
+        "min_stock_level": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Minimum stock level before reorder"
+        },
+        "location": {
+          "type": "string",
+          "description": "Storage location in clinic"
+        },
+        "initial_stock": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Initial stock quantity for seeding"
+        },
+        "requires_prescription": {
+          "type": "boolean",
+          "description": "Override prescription requirement"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "TenantProductsFile": {
+      "type": "object",
+      "description": "Tenant product assignments file",
+      "required": ["tenant_id", "products"],
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "tenant_id": {
+          "type": "string",
+          "description": "Clinic tenant ID"
+        },
+        "description": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TenantProductAssignment" }
+        }
+      }
+    },
+
+    "Supplier": {
+      "type": "object",
+      "description": "B2B supplier/distributor",
+      "required": ["slug", "name", "type"],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Trading name"
+        },
+        "legal_name": {
+          "type": "string",
+          "description": "Legal business name"
+        },
+        "ruc": {
+          "type": "string",
+          "description": "RUC (tax ID)"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["products", "services", "both"],
+          "description": "What they supply"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "whatsapp": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "contact_name": {
+          "type": "string",
+          "description": "Primary contact person"
+        },
+        "contact_position": {
+          "type": "string"
+        },
+        "min_order_gs": {
+          "type": "integer",
+          "description": "Minimum order in Guaranies"
+        },
+        "payment_terms": {
+          "type": "string",
+          "description": "Payment terms (e.g., '30 days', 'COD')"
+        },
+        "delivery_days": {
+          "type": "integer",
+          "description": "Typical delivery time in days"
+        },
+        "brands": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Brands this supplier carries"
+        },
+        "product_categories": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Product categories supplied"
+        },
+        "verified": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether supplier is verified"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}

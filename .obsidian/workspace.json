@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "4f4b58e3bd1ebd8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9855b9ae3c7a7f29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "796df0c2f471fc4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documentation/architecture/diagrams/23-vaccine-schedule-tracking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "23-vaccine-schedule-tracking"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fcb870dc81a36908",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e29892925807b76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "991b9c4458c77762",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d126d542fa5e0008",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4a1b381105a8d98b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9cdd485aa1df0dcc",
+    "type": "split",
+    "children": [
+      {
+        "id": "3db2329af6b079a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23f2b0ea40310758",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "documentation/architecture/BACKEND_CRITIQUE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for BACKEND_CRITIQUE"
+            }
+          },
+          {
+            "id": "05bc0e852c3eb076",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "documentation/architecture/BACKEND_CRITIQUE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from BACKEND_CRITIQUE"
+            }
+          },
+          {
+            "id": "50a12d1074819d0d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c16a8958e265f3eb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e94e3974cf6a2646",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "documentation/architecture/BACKEND_CRITIQUE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of BACKEND_CRITIQUE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "796df0c2f471fc4f",
+  "lastOpenFiles": [
+    "web/scripts/gsheets/sample-data.ts.tmp.56692.1766275725749",
+    "web/scripts/gsheets/sample-data.ts.tmp.56692.1766275667075",
+    "web/scripts/gsheets/formatting.ts.tmp.56692.1766275628123",
+    "web/db/seeds/seed-from-json.ts.tmp.36632.1766270437574",
+    "web/db/seeds/seed-from-json.ts.tmp.36632.1766270219742",
+    "web/scripts/gsheets/sample-data.ts.tmp.56692.1766268905984",
+    "web/db/seeds/README.md.tmp.36632.1766268432670",
+    "web/db/seeds/data/services/services.json",
+    "web/db/seeds/data/schemas/categories.schema.json",
+    "web/db/seeds/data/schemas/products.schema.json",
+    "web/db/seeds/data/schemas/brands.schema.json",
+    "web/db/seeds/README.md",
+    "documentation/architecture/diagrams/ORGANIZATION_STATUS.md",
+    "documentation/architecture/diagrams/documentation/architecture/diagrams/workflows/34-client-invitation-flow.md",
+    "documentation/architecture/diagrams/ORGANIZATION_PLAN.md",
+    "documentation/architecture/diagrams/19-lab-order-workflow.md",
+    "documentation/architecture/diagrams/18-hospitalization-flow.md",
+    "documentation/testing/QUICK_SUMMARY.md",
+    "documentation/testing/ANALYSIS.md",
+    "documentation/architecture/diagrams/17-user-journey-veterinarian.md",
+    "documentation/architecture/diagrams/16-user-journey-pet-owner.md",
+    "documentation/architecture/diagrams/15-api-request-lifecycle.md",
+    "documentation/architecture/diagrams/14-invoice-state-machine.md",
+    "documentation/architecture/diagrams/12-medical-record-creation.md",
+    "documentation/architecture/diagrams/11-inventory-management.md",
+    "documentation/architecture/diagrams/10-invoice-creation-payment.md",
+    "documentation/architecture/diagrams/09-prescription-workflow.md",
+    "documentation/architecture/diagrams/08-entity-relationship.md",
+    "documentation/architecture/diagrams/07-page-load-flow.md",
+    "documentation/architecture/diagrams/06-authentication-flow.md",
+    "documentation/architecture/diagrams/05-rls-isolation-flow.md",
+    "documentation/architecture/diagrams/33-deployment-ci-cd-flow.md",
+    "documentation/architecture/diagrams/32-component-hierarchy-dashboard.md",
+    "documentation/architecture/diagrams/31-role-based-access-control.md",
+    "documentation/architecture/diagrams/30-admin-user-journey.md",
+    "documentation/architecture/diagrams/29-store-shopping-flow.md",
+    "web/db/99_seed/data/products/rural-center-page.png",
+    "web/public/branding/adris/images/services/hotel.jpg",
+    "web/public/branding/adris/images/services/diagnostics.jpg",
+    "web/public/branding/adris/images/services/specialties.jpg",
+    "web/public/branding/adris/images/testimonials/pet-6.jpg",
+    "web/public/branding/adris/images/testimonials/pet-5.jpg",
+    "web/public/branding/adris/images/testimonials/pet-1.jpg",
+    "web/public/branding/adris/images/testimonials/pet-2.jpg",
+    "web/public/branding/adris/images/store/category-health.jpg",
+    "web/public/branding/adris/images/tools/toxic-checker.jpg"
+  ]
+}

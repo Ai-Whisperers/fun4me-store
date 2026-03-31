@@ -1,0 +1,132 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Staff schedules with parent schedule definitions and daily time entries. All IDs are UUIDs.",
+  "staff_schedules": [
+    {
+      "id": "c0000001-0001-0001-0001-000000000001",
+      "staff_id": "a0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "name": "Horario Regular",
+      "is_default": true,
+      "effective_from": "2024-01-01",
+      "is_active": true
+    },
+    {
+      "id": "c0000001-0001-0001-0001-000000000002",
+      "staff_id": "a0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "name": "Horario Cirugía",
+      "is_default": true,
+      "effective_from": "2024-01-01",
+      "is_active": true
+    }
+  ],
+  "staff_schedule_entries": [
+    {
+      "id": "d0000001-0001-0001-0001-000000000001",
+      "schedule_id": "c0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "day_of_week": 1,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000002",
+      "schedule_id": "c0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "day_of_week": 2,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000003",
+      "schedule_id": "c0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "day_of_week": 3,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000004",
+      "schedule_id": "c0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "day_of_week": 4,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000005",
+      "schedule_id": "c0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "day_of_week": 5,
+      "start_time": "08:00",
+      "end_time": "18:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000006",
+      "schedule_id": "c0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "day_of_week": 6,
+      "start_time": "08:00",
+      "end_time": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000007",
+      "schedule_id": "c0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000008",
+      "schedule_id": "c0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "day_of_week": 2,
+      "start_time": "08:00",
+      "end_time": "14:00",
+      "location": "Quirófano"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000009",
+      "schedule_id": "c0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000010",
+      "schedule_id": "c0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "day_of_week": 4,
+      "start_time": "08:00",
+      "end_time": "14:00",
+      "location": "Quirófano"
+    },
+    {
+      "id": "d0000001-0001-0001-0001-000000000011",
+      "schedule_id": "c0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:00",
+      "break_end": "13:00"
+    }
+  ]
+}

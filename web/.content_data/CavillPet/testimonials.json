@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "author": "María González",
+    "pet_name": "Rocky",
+    "pet_type": "Perro",
+    "rating": 5,
+    "pet_image": "/branding/terrapet/images/testimonials/pet-1.jpg",
+    "text": "¡Excelente atención! Salvaron a mi perrito Rocky cuando estaba muy mal por una intoxicación. La Dra. Adriana es un ángel, se quedó hasta las 3am monitoreándolo. No tengo palabras para agradecer. Ahora Rocky está sano y feliz gracias a ellos.",
+    "date": "2024-10-15",
+    "source": "Google",
+    "verified": true,
+    "service_used": "Urgencias"
+  },
+  {
+    "id": 2,
+    "author": "Juan Pablo Pérez",
+    "pet_name": "Luna",
+    "pet_type": "Gato",
+    "rating": 5,
+    "pet_image": "/branding/terrapet/images/testimonials/pet-2.jpg",
+    "text": "El sistema de carnet digital es increíble. Ya no tengo que buscar el papelito de las vacunas cada vez que viajo con Luna. Todo está en la app, con fechas de vencimiento y recordatorios. Muy profesionales y modernos.",
+    "date": "2024-11-02",
+    "source": "Facebook",
+    "verified": true,
+    "service_used": "Vacunación"
+  },
+  {
+    "id": 3,
+    "author": "Estela Benítez",
+    "pet_name": "Toby",
+    "pet_type": "Perro",
+    "rating": 5,
+    "pet_image": "/terrapet/images/testimonials/pet-3.jpg",
+    "text": "Muy buen servicio de peluquería. Mi caniche Toby quedó hermoso y súper relajado. Carolina tiene una paciencia increíble con él, que es bastante miedoso. El área de grooming está impecable.",
+    "date": "2024-09-20",
+    "source": "Google",
+    "verified": true,
+    "service_used": "Grooming"
+  },
+  {
+    "id": 4,
+    "author": "Carlos Mendoza",
+    "pet_name": "Max",
+    "pet_type": "Perro",
+    "rating": 5,
+    "pet_image": "/terrapet/images/testimonials/pet-4.jpg",
+    "text": "El Dr. Jorge operó a mi Max de una fractura en la pata trasera. La cirugía fue un éxito total. Explicaron todo el proceso con paciencia, el presupuesto fue transparente y el seguimiento post-operatorio impecable. Max ya corre como si nada.",
+    "date": "2024-08-10",
+    "source": "Google",
+    "verified": true,
+    "service_used": "Cirugía"
+  },
+  {
+    "id": 5,
+    "author": "Sofía Villalba",
+    "pet_name": "Michi",
+    "pet_type": "Gato",
+    "rating": 4,
+    "pet_image": "/branding/terrapet/images/testimonials/pet-5.jpg",
+    "text": "Llevé a Michi para un chequeo general y quedé muy satisfecha. La Dra. López hizo una ecografía completa y me explicó todo con videos. El único detalle es que a veces hay espera, pero vale la pena por la calidad de atención.",
+    "date": "2024-07-25",
+    "source": "Facebook",
+    "verified": true,
+    "service_used": "Consulta"
+  },
+  {
+    "id": 6,
+    "author": "Roberto Agüero",
+    "pet_name": "Bruno y Lola",
+    "pet_type": "Perros",
+    "rating": 5,
+    "pet_image": "/branding/terrapet/images/testimonials/pet-6.jpg",
+    "text": "Tengo dos Golden Retriever y en Adris siempre nos atienden de maravilla. El delivery de balanceado es super conveniente, llega siempre a tiempo. Las vacunas al día y el programa de fidelidad es un plus genial.",
+    "date": "2024-06-18",
+    "source": "Google",
+    "verified": true,
+    "service_used": "Tienda"
+  }
+]

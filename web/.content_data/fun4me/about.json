@@ -1,0 +1,62 @@
+{
+  "intro": {
+    "title": "Sobre Fun4Me",
+    "text": "Fun4Me nacio en 2018 con la mision de ofrecer productos de calidad para adultos en Paraguay, con la discrecion y el profesionalismo que nuestros clientes merecen.\n\nDesde nuestra tienda en Herrera 875, Asuncion, atendemos a clientes de todo el pais con envios discretos y seguros. Tambien podes visitarnos personalmente para una atencion mas personalizada.\n\nCreemos que cada persona tiene derecho a explorar su intimidad de manera segura y sin juicios. Por eso seleccionamos cuidadosamente cada producto de nuestro catalogo.",
+    "founded_year": 2018,
+    "image": "/branding/fun4me/images/about-hero.svg"
+  },
+  "mission": {
+    "title": "Nuestra Mision",
+    "text": "Ofrecer productos de calidad para adultos con total discrecion, profesionalismo y respeto. Queremos que cada cliente se sienta comodo explorando su intimidad con productos seguros y de las mejores marcas."
+  },
+  "vision": {
+    "title": "Nuestra Vision",
+    "text": "Ser la tienda de referencia en Paraguay para productos de adultos, reconocida por la calidad de nuestros productos, la discrecion de nuestro servicio y la confianza que generamos en nuestros clientes."
+  },
+  "values": [
+    {
+      "icon": "eye-slash",
+      "title": "Discrecion Total",
+      "text": "Entendemos la importancia de la privacidad. Desde el empaque hasta la facturacion, todo es 100% discreto."
+    },
+    {
+      "icon": "truck",
+      "title": "Envio a Todo el Pais",
+      "text": "Delivery rapido y seguro a cualquier punto de Paraguay con total confidencialidad."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Productos de Calidad",
+      "text": "Seleccionamos productos de marcas reconocidas para garantizar tu satisfaccion y seguridad."
+    },
+    {
+      "icon": "heart",
+      "title": "Atencion Sin Juicios",
+      "text": "Nuestro equipo esta capacitado para asesorarte con respeto y profesionalismo."
+    }
+  ],
+  "team": [],
+  "facilities": {
+    "title": "Nuestra Tienda",
+    "description": "Visitanos en nuestra tienda fisica para ver los productos en persona.",
+    "features": [
+      {
+        "icon": "building-storefront",
+        "title": "Tienda Fisica",
+        "text": "Local en Herrera 875, Asuncion"
+      },
+      {
+        "icon": "truck",
+        "title": "Delivery Nacional",
+        "text": "Envios a todo Paraguay"
+      },
+      {
+        "icon": "shield-check",
+        "title": "Empaque Discreto",
+        "text": "Sin logos ni indicaciones del contenido"
+      }
+    ],
+    "images": []
+  },
+  "certifications": []
+}

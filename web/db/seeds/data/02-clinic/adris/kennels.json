@@ -1,0 +1,131 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "kennels": [
+    {
+      "name": "Jaula 1",
+      "code": "K01",
+      "kennel_type": "standard",
+      "daily_rate": 80000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "Jaula 2",
+      "code": "K02",
+      "kennel_type": "standard",
+      "daily_rate": 80000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "Jaula 3",
+      "code": "K03",
+      "kennel_type": "standard",
+      "daily_rate": 80000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "Jaula 4",
+      "code": "K04",
+      "kennel_type": "standard",
+      "daily_rate": 80000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "Jaula Grande 1",
+      "code": "KG1",
+      "kennel_type": "large",
+      "daily_rate": 100000,
+      "current_status": "available",
+      "max_weight_kg": 40,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "Jaula Grande 2",
+      "code": "KG2",
+      "kennel_type": "large",
+      "daily_rate": 100000,
+      "current_status": "available",
+      "max_weight_kg": 40,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "Jaula Extra Grande",
+      "code": "KXL",
+      "kennel_type": "extra-large",
+      "daily_rate": 120000,
+      "current_status": "available",
+      "max_weight_kg": 60,
+      "location": "Sala de Internación Principal"
+    },
+    {
+      "name": "UCI 1",
+      "code": "UCI1",
+      "kennel_type": "icu",
+      "daily_rate": 180000,
+      "current_status": "available",
+      "features": ["monitor", "oxígeno", "calefacción"],
+      "location": "Unidad de Cuidados Intensivos"
+    },
+    {
+      "name": "UCI 2",
+      "code": "UCI2",
+      "kennel_type": "icu",
+      "daily_rate": 180000,
+      "current_status": "available",
+      "features": ["monitor", "oxígeno", "calefacción"],
+      "location": "Unidad de Cuidados Intensivos"
+    },
+    {
+      "name": "Oxígeno 1",
+      "code": "O2-1",
+      "kennel_type": "oxygen",
+      "daily_rate": 200000,
+      "current_status": "available",
+      "features": ["concentrador O2", "nebulizador"],
+      "location": "Unidad de Cuidados Intensivos"
+    },
+    {
+      "name": "Aislamiento 1",
+      "code": "ISO1",
+      "kennel_type": "isolation",
+      "daily_rate": 150000,
+      "current_status": "available",
+      "features": ["ventilación independiente"],
+      "location": "Sala de Aislamiento"
+    },
+    {
+      "name": "Aislamiento 2",
+      "code": "ISO2",
+      "kennel_type": "isolation",
+      "daily_rate": 150000,
+      "current_status": "available",
+      "features": ["ventilación independiente"],
+      "location": "Sala de Aislamiento"
+    },
+    {
+      "name": "Recuperación 1",
+      "code": "REC1",
+      "kennel_type": "recovery",
+      "daily_rate": 60000,
+      "current_status": "available",
+      "features": ["colchoneta térmica"],
+      "location": "Sala de Recuperación"
+    },
+    {
+      "name": "Recuperación 2",
+      "code": "REC2",
+      "kennel_type": "recovery",
+      "daily_rate": 60000,
+      "current_status": "available",
+      "features": ["colchoneta térmica"],
+      "location": "Sala de Recuperación"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "$comment": "Fun4Me store images - using SVG placeholders",
+  "version": "1.0",
+  "basePath": "/branding/fun4me/images",
+  "images": {
+    "hero": {
+      "main": {
+        "src": "hero-bg.svg",
+        "alt": "Fun4Me - Tu tienda de confianza",
+        "width": 1920,
+        "height": 1080
+      },
+      "store": {
+        "src": "store-hero.svg",
+        "alt": "Tienda Fun4Me - Productos de calidad",
+        "width": 1920,
+        "height": 1080
+      },
+      "about": {
+        "src": "about-hero.svg",
+        "alt": "Nuestra historia",
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "store": {
+      "interior": {
+        "src": "store-hero.svg",
+        "alt": "Interior de la tienda Fun4Me",
+        "width": 800,
+        "height": 600
+      }
+    },
+    "branding": {
+      "logo": {
+        "src": "logo.svg",
+        "alt": "Fun4Me Logo",
+        "width": 300,
+        "height": 80
+      },
+      "logo-white": {
+        "src": "logo-white.svg",
+        "alt": "Fun4Me Logo (blanco)",
+        "width": 300,
+        "height": 80
+      },
+      "og-image": {
+        "src": "og-image.svg",
+        "alt": "Fun4Me - Open Graph Image",
+        "width": 1200,
+        "height": 630
+      },
+      "og-image-store": {
+        "src": "og-image.svg",
+        "alt": "Fun4Me Store - Open Graph",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    "categories": {
+      "vibradores": {
+        "src": "categories/vibradores.svg",
+        "alt": "Vibradores - Categoria",
+        "width": 600,
+        "height": 400
+      },
+      "dildos": {
+        "src": "categories/dildos.svg",
+        "alt": "Dildos - Categoria",
+        "width": 600,
+        "height": 400
+      },
+      "anal": {
+        "src": "categories/anal.svg",
+        "alt": "Juguetes Anales - Categoria",
+        "width": 600,
+        "height": 400
+      },
+      "parejas": {
+        "src": "categories/parejas.svg",
+        "alt": "Para Parejas - Categoria",
+        "width": 600,
+        "height": 400
+      },
+      "lenceria": {
+        "src": "categories/lenceria.svg",
+        "alt": "Lenceria - Categoria",
+        "width": 600,
+        "height": 400
+      },
+      "lubricantes": {
+        "src": "categories/lubricantes.svg",
+        "alt": "Lubricantes - Categoria",
+        "width": 600,
+        "height": 400
+      },
+      "accesorios": {
+        "src": "categories/accesorios.svg",
+        "alt": "Accesorios - Categoria",
+        "width": 600,
+        "height": 400
+      }
+    }
+  },
+  "placeholders": {
+    "product": "/images/placeholders/product-placeholder.svg",
+    "category": "/images/placeholders/category-placeholder.svg"
+  }
+}

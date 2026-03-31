@@ -1,0 +1,273 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "virbac",
+  "products": [
+    {
+      "sku": "VIR-ANXITANE",
+      "name": "Anxitane",
+      "description": "Suplemento ansiolítico natural (L-teanina)",
+      "category_slug": "FAR-SUP-VIT",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 30 comp (S)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "Caja x 30 comp (M/L)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-ML"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "L-teanina",
+        "indication": "Ansiedad, fobias",
+        "route": "Oral"
+      }
+    },
+    {
+      "sku": "VIR-EPIPHEN",
+      "name": "Epiphen (Fenobarbital)",
+      "description": "Anticonvulsivante para epilepsia canina",
+      "category_slug": "CLI-FAR-NEU",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Frasco x 100 comp (30mg)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-30MG"
+        },
+        {
+          "size": "Frasco x 100 comp (60mg)",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-60MG"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Fenobarbital",
+        "controlled_substance": true,
+        "rx_required": true
+      }
+    },
+    {
+      "sku": "VIR-EASOTIC",
+      "name": "Easotic Gotas Óticas",
+      "description": "Tratamiento ótico completo para otitis",
+      "category_slug": "FAR-DER-OTI",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Frasco 10ml",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-10ML"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Hidrocortisona, miconazol, gentamicina",
+        "indication": "Otitis externa bacteriana y fúngica",
+        "rx_required": true
+      }
+    },
+    {
+      "sku": "VIR-EFFIPRO",
+      "name": "Effipro Spot-On",
+      "description": "Pipeta antiparasitaria con fipronil",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2-10kg x 4 pipetas",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "10-20kg x 4 pipetas",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "20-40kg x 4 pipetas",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-L"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Fipronil 10%",
+        "duration_days": 30
+      }
+    },
+    {
+      "sku": "VIR-NUTRIBOUND",
+      "name": "Nutribound",
+      "description": "Soporte nutricional líquido para convalecencia",
+      "category_slug": "FAR-SUP-VIT",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Frasco 150ml (Perros)",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-DOG"
+        },
+        {
+          "size": "Frasco 150ml (Gatos)",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-CAT"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg"
+      ],
+      "attributes": {
+        "indication": "Anorexia, convalecencia",
+        "palatability": "Alta"
+      }
+    },
+    {
+      "sku": "VIR-CET-DENTAL",
+      "name": "C.E.T. Enzymatic Toothpaste",
+      "description": "Pasta dental enzimática veterinaria",
+      "category_slug": "ACC-HIG-DEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Tubo 70g (Pollo)",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-POLLO"
+        },
+        {
+          "size": "Tubo 70g (Carne)",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-CARNE"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "enzymatic": true,
+        "no_rinse": true
+      }
+    },
+    {
+      "sku": "VIR-ALLERDERM",
+      "name": "Allerderm Spot-On",
+      "description": "Pipetas dermatológicas para piel sensible",
+      "category_slug": "FAR-DER-TOP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 6 pipetas (hasta 10kg)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "Caja x 6 pipetas (10-25kg)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "Caja x 6 pipetas (>25kg)",
+          "base_price": 265000,
+          "cost_price": 159000,
+          "sku_suffix": "-L"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "indication": "Dermatitis, piel seca",
+        "application": "Semanal"
+      }
+    },
+    {
+      "sku": "VIR-EPIOTIC",
+      "name": "Epi-Otic Limpiador Ótico",
+      "description": "Limpiador auricular de rutina",
+      "category_slug": "FAR-DER-OTI",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Frasco 125ml",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-125ML"
+        }
+      ],
+      "image_url": "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+      "images": [
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-vanilla-mint-96.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-poultry-100.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-beef-174.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-malt-99.jpg",
+        "https://s.turbifycdn.com/aah/entirelypets/virbac-cet-toothpaste-for-dogs-cats-2-5-oz-70-gm-seafood-83.jpg"
+      ],
+      "attributes": {
+        "indication": "Limpieza ótica regular",
+        "antiseptic": true
+      }
+    }
+  ]
+}

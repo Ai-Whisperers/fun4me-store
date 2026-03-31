@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Cómo podemos ayudarte"
+  },
+  "categories": [
+    {
+      "id": "store",
+      "name": "Tienda",
+      "icon": "shopping-bag",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "delivery",
+      "name": "Delivery",
+      "icon": "truck",
+      "color": "#E91E63"
+    }
+  ],
+  "services": [
+    {
+      "id": "compra-tienda",
+      "visible": true,
+      "category": "store",
+      "title": "Compra en Tienda",
+      "icon": "building-storefront",
+      "summary": "Visitanos en nuestra tienda física para ver los productos.",
+      "details": {
+        "description": "Te esperamos en Herrera 875, Asunción. Podés ver y comparar productos en persona con atención personalizada.",
+        "includes": [
+          "Atención personalizada",
+          "Ver productos en persona",
+          "Asesoramiento sin compromiso",
+          "Empaque discreto"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Horario de Atención",
+          "price_display": "Lun-Vie: 09:00-20:00 | Sáb: 09:00-18:00",
+          "price_value": 0,
+          "description": "Domingos cerrado"
+        }
+      ],
+      "booking": {
+        "online_enabled": false,
+        "requires_deposit": false
+      }
+    },
+    {
+      "id": "compra-online",
+      "visible": true,
+      "category": "store",
+      "title": "Compra Online",
+      "icon": "shopping-cart",
+      "summary": "Comprá desde la comodidad de tu casa.",
+      "details": {
+        "description": "Navegá nuestro catálogo online, agregá productos al carrito y recibí tu pedido en tu domicilio con total discreción.",
+        "includes": [
+          "Catálogo completo online",
+          "Pago seguro",
+          "Empaque 100% discreto",
+          "Seguimiento de envío"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Compra Online",
+          "price_display": "Disponible 24/7",
+          "price_value": 0,
+          "description": "Comprá cuando quieras"
+        }
+      ],
+      "booking": {
+        "online_enabled": true,
+        "requires_deposit": false
+      }
+    },
+    {
+      "id": "delivery-asuncion",
+      "visible": true,
+      "category": "delivery",
+      "title": "Delivery en Asunción",
+      "icon": "truck",
+      "summary": "Entrega rápida en la capital.",
+      "details": {
+        "description": "Recibí tu pedido en Asunción y alrededores con entrega rápida y discreta.",
+        "includes": [
+          "Entrega en 24-48 horas",
+          "Empaque neutro sin logos",
+          "Pago contra entrega disponible",
+          "Horarios flexibles"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Delivery Estándar",
+          "price_display": "Gs. 20.000",
+          "price_value": 20000,
+          "description": "Asunción y Gran Asunción"
+        },
+        {
+          "name": "Delivery Express",
+          "price_display": "Gs. 35.000",
+          "price_value": 35000,
+          "description": "Mismo día (pedidos antes de 14:00)"
+        }
+      ],
+      "booking": {
+        "online_enabled": true,
+        "requires_deposit": false
+      }
+    },
+    {
+      "id": "envio-interior",
+      "visible": true,
+      "category": "delivery",
+      "title": "Envío al Interior",
+      "icon": "globe-americas",
+      "summary": "Enviamos a todo el país.",
+      "details": {
+        "description": "Llegamos a cualquier ciudad del Paraguay con envío discreto y seguro.",
+        "includes": [
+          "Cobertura nacional",
+          "Empaque reforzado y discreto",
+          "Código de seguimiento",
+          "Múltiples opciones de envío"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Envío Estándar",
+          "price_display": "Gs. 30.000 - 50.000",
+          "price_value": 30000,
+          "description": "3-5 días hábiles según destino"
+        },
+        {
+          "name": "Envío Gratis",
+          "price_display": "En compras +Gs. 200.000",
+          "price_value": 0,
+          "description": "Todo el país"
+        }
+      ],
+      "booking": {
+        "online_enabled": true,
+        "requires_deposit": false
+      }
+    },
+    {
+      "id": "atencion-whatsapp",
+      "visible": true,
+      "category": "store",
+      "title": "Atención por WhatsApp",
+      "icon": "chat-bubble-left-right",
+      "summary": "Consultanos por WhatsApp para asesoramiento.",
+      "details": {
+        "description": "¿Tenés dudas sobre un producto? Escribinos por WhatsApp y te asesoramos sin compromiso.",
+        "includes": [
+          "Respuesta rápida",
+          "Asesoramiento personalizado",
+          "Fotos y videos de productos",
+          "Reserva de productos"
+        ]
+      },
+      "variants": [
+        {
+          "name": "WhatsApp",
+          "price_display": "Gratuito",
+          "price_value": 0,
+          "description": "Escribinos cuando quieras"
+        }
+      ],
+      "booking": {
+        "online_enabled": false,
+        "requires_deposit": false
+      }
+    }
+  ]
+}

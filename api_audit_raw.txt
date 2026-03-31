@@ -1,0 +1,2084 @@
+--- web/app/api/admin/products/pending/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+          created_by_tenant:created_by_tenant_id (id, name),
+      // Products submitted for global catalog have created_by_tenant_id set
+      query = query.not('created_by_tenant_id', 'is', null)
+--- web/app/api/admin/products/[id]/approve/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .select('id, name, created_by_tenant_id, verification_status')
+      // If verified, mark as global catalog and clear tenant_id
+        // Keep created_by_tenant_id for reference but product becomes global
+--- web/app/api/ambassador/payouts/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+  } = await supabase.auth.getUser()
+--- web/app/api/ambassador/process-conversion/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+      .eq('tenant_id', tenantId)
+--- web/app/api/ambassador/referrals/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      tenant:tenant_id (
+--- web/app/api/ambassador/route.ts ---
+export async function GET(): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/ambassador/stats/route.ts ---
+export async function GET(): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/ambassador/validate/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+--- web/app/api/analytics/customers/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        p_tenant_id: profile.tenant_id,
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/analytics/export/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      const tenantId = profile.tenant_id
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/analytics/operations/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const tenantId = profile.tenant_id
+    .eq('tenant_id', tenantId)
+    .eq('tenant_id', tenantId)
+--- web/app/api/analytics/patients/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const tenantId = profile.tenant_id
+    .eq('tenant_id', tenantId)
+    .eq('tenant_id', tenantId)
+--- web/app/api/analytics/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const tenantId = profile.tenant_id
+    .eq('tenant_id', tenantId)
+    .eq('tenant_id', tenantId)
+--- web/app/api/analytics/store/margins/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/analytics/store/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      const tenantId = profile.tenant_id
+          .eq('tenant_id', tenantId)
+          .eq('tenant_id', tenantId)
+--- web/app/api/analytics/store/turnover/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/appointments/recurrences/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+      tenantId: profile.tenant_id,
+--- web/app/api/appointments/recurrences/[id]/generate/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/appointments/recurrences/[id]/pause/route.ts ---
+export const POST = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/appointments/recurrences/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams(
+--- web/app/api/appointments/slots/route.ts ---
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper';
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+  if (clinicSlug !== profile.tenant_id && !isStaff) {
+--- web/app/api/appointments/waitlist/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+      tenantId: profile.tenant_id,
+--- web/app/api/appointments/waitlist/[id]/accept/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+          tenant_id: profile.tenant_id,
+          tenantId: profile.tenant_id,
+--- web/app/api/appointments/waitlist/[id]/decline/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/appointments/waitlist/[id]/offer/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/appointments/waitlist/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const DELETE = withApiAuthParams(
+--- web/app/api/appointments/[id]/check-in/route.ts ---
+export const POST = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth';
+export const POST = withApiAuthParams<Params>(
+    const result = await service.checkIn(id, profile.tenant_id, user.id);
+--- web/app/api/appointments/[id]/complete/route.ts ---
+export const POST = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth';
+export const POST = withApiAuthParams<Params>(
+    const result = await service.complete(id, profile.tenant_id, user.id, notes);
+--- web/app/api/billing/bank-transfer/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .eq('tenant_id', profile.tenant_id)
+        reference_code: `VETIC-${invoice.invoice_number}-${profile.tenant_id.substring(0, 6).toUpperCase()}`,
+    .eq('id', profile.tenant_id)
+--- web/app/api/billing/commissions/services/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/billing/commissions/services/summary/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      p_tenant_id: tenantId,
+--- web/app/api/billing/commissions/store/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/billing/commissions/store/summary/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      p_tenant_id: tenantId,
+--- web/app/api/billing/confirm-transfer/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role, full_name')
+    if (invoice.tenant_id !== profile.tenant_id) {
+      .eq('tenant_id', profile.tenant_id)
+          tenant_id: profile.tenant_id,
+--- web/app/api/billing/invoices/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/billing/invoices/[id]/pdf/route.tsx ---
+export async function GET(request: NextRequest, context: RouteContext): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+    if (invoice.tenant_id !== profile.tenant_id) {
+      .eq('id', invoice.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/billing/invoices/[id]/route.ts ---
+export async function GET(request: NextRequest, context: RouteContext): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+        tenant_id,
+    if (invoice.tenant_id !== profile.tenant_id) {
+      .eq('id', invoice.tenant_id)
+--- web/app/api/billing/invoices/[id]/send/route.ts ---
+export async function POST(request: NextRequest, context: RouteContext): Promise<NextResponse> {
+      .select('role, tenant_id')
+    tenantIdForAudit = profile.tenant_id
+        tenant_id,
+        tenant_id: invoice.tenant_id,
+      .eq('tenant_id', invoice.tenant_id)
+--- web/app/api/billing/overview/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/billing/pay-invoice/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+    if (invoice.tenant_id !== profile.tenant_id) {
+      .eq('id', profile.tenant_id)
+      .select('tenant_id')
+--- web/app/api/billing/payment-methods/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+  } = await supabase.auth.getUser()
+--- web/app/api/billing/payment-methods/[id]/route.ts ---
+export async function DELETE(request: NextRequest, context: RouteContext): Promise<NextResponse> {
+export async function PUT(request: NextRequest, context: RouteContext): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .select('id, tenant_id, stripe_payment_method_id, is_default')
+    if (method.tenant_id !== profile.tenant_id) {
+        .eq('id', profile.tenant_id)
+--- web/app/api/billing/stripe/setup-intent/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role, full_name')
+      .eq('id', profile.tenant_id)
+          tenant_id: tenant.id,
+      tenant_id: tenant.id,
+--- web/app/api/booking/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth';
+export const GET = withApiAuth(
+    const tenantId = profile.tenant_id;
+export const POST = withApiAuth(
+      .select('id, owner_id, tenant_id')
+--- web/app/api/calendar/check-availability/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/calendar/events/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        tenant_id,
+      .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/claim/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse<ClaimResponse>> {
+          tenant_id: clinicSlug,
+      tenant_id: clinicSlug,
+--- web/app/api/clients/bulk-discount/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+            tenant_id: profile.tenant_id,
+--- web/app/api/clients/bulk-email/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+          .eq('tenant_id', profile.tenant_id)
+--- web/app/api/clients/bulk-whatsapp/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+    const featureCheck = await requireFeature(profile.tenant_id, 'whatsappApi')
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/clients/export/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+          .eq('tenant_id', profile.tenant_id)
+--- web/app/api/clients/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+          .eq('tenant_id', profile.tenant_id)
+            tenantId: profile.tenant_id,
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/clients/[id]/loyalty/route.ts ---
+export const GET = withApiAuthParams(
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+    const clinic = searchParams.get('clinic') || profile.tenant_id
+        .eq('tenant_id', clinic)
+        tenantId: profile.tenant_id,
+--- web/app/api/clients/[id]/notes/route.ts ---
+export const GET = withApiAuthParams(
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/clients/[id]/tags/route.ts ---
+export const GET = withApiAuthParams(
+export const POST = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/consents/blanket/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+export const PATCH = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      pet:pets!pet_id(id, name, owner_id, tenant_id),
+    query = query.eq('pet.tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/consents/preferences/analytics/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      const analytics = await getConsentAnalytics(supabase, profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/consents/preferences/audit/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      const history = await getAuditHistory(supabase, user.id, profile.tenant_id, {
+--- web/app/api/consents/preferences/export/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      const exportData = await exportUserConsentData(supabase, user.id, profile.tenant_id)
+--- web/app/api/consents/preferences/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      const status = await getConsentStatus(supabase, user.id, profile.tenant_id)
+    const preferences = await getUserPreferences(supabase, user.id, profile.tenant_id)
+export const POST = withApiAuth(
+--- web/app/api/consents/requests/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('clinic_id:tenant_id, role')
+    .select('id, tenant_id, owner_id, name')
+  if (pet.tenant_id !== profile.clinic_id) {
+  } = await supabase.auth.getUser()
+--- web/app/api/consents/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      pet:pets!inner(id, name, owner_id, tenant_id),
+    query = query.eq('pet.tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/consents/templates/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      .or(`tenant_id.is.null,tenant_id.eq.${profile.tenant_id}`)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/consents/templates/[id]/route.ts ---
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const PUT = withApiAuthParams(
+      .select('tenant_id')
+    if (!existingTemplate.tenant_id) {
+    if (existingTemplate.tenant_id !== profile.tenant_id) {
+--- web/app/api/consents/templates/[id]/versions/route.ts ---
+export const GET = withApiAuthParams(
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .select('id, tenant_id, code')
+      if (template.tenant_id && template.tenant_id !== profile.tenant_id) {
+        tenantId: profile.tenant_id,
+--- web/app/api/consents/templates/[id]/versions/[versionNumber]/route.ts ---
+export const GET = withApiAuthParams(
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .select('id, tenant_id')
+      if (template.tenant_id && template.tenant_id !== profile.tenant_id) {
+        tenantId: profile.tenant_id,
+--- web/app/api/consents/[id]/audit/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        pet:pets!inner(tenant_id)
+    const pet = petData as { tenant_id: string }
+      if (pet.tenant_id !== profile.tenant_id) {
+--- web/app/api/consents/[id]/email/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+          pet:pets!inner(id, name, species, breed, tenant_id),
+        .eq('pet.tenant_id', profile.tenant_id)
+        .eq('id', profile.tenant_id)
+--- web/app/api/consents/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        pet:pets!inner(id, name, owner_id, tenant_id, species, breed),
+        tenantId: profile.tenant_id,
+    const pet = petData as { tenant_id: string; owner_id: string }
+--- web/app/api/conversations/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/conversations/[id]/messages/route.ts ---
+export const POST = withApiAuthParams<Params>(async (ctx) => {
+import { withApiAuthParams } from '@/lib/auth/api-wrapper'
+export const POST = withApiAuthParams<Params>(async (ctx) => {
+      .select('id, client_id, tenant_id, status')
+            tenant_id: profile.tenant_id,
+--- web/app/api/conversations/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(async (ctx) => {
+export const PATCH = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuthParams<Params>(async (ctx) => {
+export const PATCH = withApiAuthParams<Params>(
+        .eq('tenant_id', profile.tenant_id)
+export const DELETE = withApiAuthParams<Params>(
+--- web/app/api/cron/billing/auto-charge/route.ts ---
+export const POST = createCronHandler(handler)
+  tenant_id: string
+        tenant_id,
+    tenant_id: string
+    tenant_id: invoice.tenant_id,
+      .eq('id', invoice.tenant_id)
+--- web/app/api/cron/billing/evaluate-grace/route.ts ---
+export const POST = createCronHandler(handler)
+  tenant_id: string
+        tenant_id,
+          tenant_id: invoice.tenant_id,
+    tenant_id: string
+  const metrics = await collectTenantMetrics(supabase, invoice.tenant_id)
+--- web/app/api/cron/billing/generate-platform-invoices/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function GET(request: NextRequest): Promise<NextResponse> {
+          .eq('tenant_id', tenant.id)
+          p_tenant_id: tenant.id,
+          .eq('tenant_id', tenant.id)
+--- web/app/api/cron/billing/send-reminders/route.ts ---
+export const POST = createCronHandler(handler)
+  tenant_id: string
+        tenant_id,
+    tenant_id: string
+    tenant_id: invoice.tenant_id,
+    tenant_id: string
+--- web/app/api/cron/capture-metrics/route.ts ---
+export const POST = withCronMonitoring('capture-metrics', handleCaptureMetrics, {
+export const GET = withCronMonitoring('capture-metrics', handleCaptureMetrics, {
+--- web/app/api/cron/check-health/route.ts ---
+export async function GET() {
+--- web/app/api/cron/cleanup-exports/route.ts ---
+export const POST = withCronMonitoring('cleanup-exports', handleCleanupExports)
+export const GET = withCronMonitoring('cleanup-exports', handleCleanupExports)
+--- web/app/api/cron/expiry-alerts/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  tenant_id: string
+  tenant_id: string
+          p_tenant_id: tenant.id,
+          p_tenant_id: tenant.id,
+          .eq('tenant_id', tenant.id)
+--- web/app/api/cron/generate-commission-invoices/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function GET(request: NextRequest): Promise<NextResponse> {
+        tenant_id,
+      if (!uniqueTenants.has(row.tenant_id) && tenant) {
+        uniqueTenants.set(row.tenant_id, tenant.name)
+          .eq('tenant_id', tenantId)
+          p_tenant_id: tenantId,
+--- web/app/api/cron/generate-recurring/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+        tenant_id,
+        const existing = byTenant.get(r.tenant_id) || []
+        byTenant.set(r.tenant_id, existing)
+--- web/app/api/cron/process-subscriptions/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+        tenant_id,
+        tenant_id,
+    // Create lookup map for O(1) access: key = "product_id:tenant_id"
+    const productMap = new Map(products?.map((p) => [`${p.id}:${p.tenant_id}`, p]) ?? [])
+        const product = productMap.get(`${subscription.product_id}:${subscription.tenant_id}`)
+--- web/app/api/cron/release-reservations/route.ts ---
+export async function GET(request: NextRequest) {
+--- web/app/api/cron/reminders/generate/route.ts ---
+export async function GET(request: NextRequest) {
+  tenant_id: string
+        tenant_id: string
+        tenant_id: string
+  tenant_id: string
+        .eq('tenant_id', tenant.id)
+--- web/app/api/cron/reminders/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+        id, tenant_id, client_id, pet_id, type,
+    const tenantIds = [...new Set(reminders.map((r) => r.tenant_id))]
+        const tenant = tenantMap.get(reminder.tenant_id)
+--- web/app/api/cron/retention/route.ts ---
+export const POST = withCronMonitoring('data-retention', handleRetention, {
+export const GET = withCronMonitoring('data-retention', handleRetention, {
+--- web/app/api/cron/stock-alerts/route.ts ---
+export async function GET(request: NextRequest) {
+        const { product_id, tenant_id, new_quantity } = notification.payload
+          .eq('id', tenant_id)
+        const productUrl = `/${tenant_id}/store/products/${product.slug || product.id}`
+--- web/app/api/cron/stock-alerts/staff/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  tenant_id: string
+  tenant_id: string
+  tenant_id: string
+          .eq('tenant_id', tenant.id)
+          .eq('tenant_id', tenant.id)
+--- web/app/api/cron/verify-backup/route.ts ---
+export const POST = withCronMonitoring('verify-backup', handleVerifyBackup, {
+export const GET = withCronMonitoring('verify-backup', handleVerifyBackup, {
+--- web/app/api/dashboard/alert-preferences/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenant_id: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/dashboard/appointments/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth';
+export const GET = withApiAuth(
+    const result = await service.getAnalytics(profile.tenant_id, period);
+--- web/app/api/dashboard/campaigns/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+  tenant_id: string
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/dashboard/campaigns/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams(
+--- web/app/api/dashboard/coupons/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  tenant_id: string
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (!profile || profile.tenant_id !== clinic) {
+      .eq('tenant_id', clinic)
+--- web/app/api/dashboard/coupons/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams(
+--- web/app/api/dashboard/expiring-products/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+          p_tenant_id: profile.tenant_id,
+        .eq('tenant_id', profile.tenant_id)
+        p_tenant_id: profile.tenant_id,
+--- web/app/api/dashboard/inventory/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+ * - clinic: tenant_id (required)
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (!profile || profile.tenant_id !== clinic) {
+        .eq('tenant_id', clinic)
+--- web/app/api/dashboard/inventory-alerts/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+            .eq('tenant_id', profile.tenant_id)
+            .eq('tenant_id', profile.tenant_id)
+--- web/app/api/dashboard/lost-pets/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('id, tenant_id, role')
+    const clinic = searchParams.get('clinic') || profile.tenant_id
+    if (clinic !== profile.tenant_id) {
+      .eq('tenant_id', clinic)
+--- web/app/api/dashboard/lost-pets/[id]/route.ts ---
+export async function GET(
+export async function PUT(
+  } = await supabase.auth.getUser()
+    .select('id, tenant_id, role')
+      .eq('tenant_id', profile.tenant_id)
+  } = await supabase.auth.getUser()
+    .select('id, tenant_id, role')
+--- web/app/api/dashboard/my-patients/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/dashboard/orders/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/dashboard/orders/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams(
+--- web/app/api/dashboard/pets/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/dashboard/revenue/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/dashboard/stats/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+            .eq('tenant_id', profile.tenant_id)
+            .eq('tenant_id', profile.tenant_id)
+--- web/app/api/dashboard/time-off/[id]/route.ts ---
+export const PATCH = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const PATCH = withApiAuthParams(
+            tenant_id
+      const staffProfile = timeOffRequest.staff_profiles as unknown as { tenant_id: string }
+      if (staffProfile.tenant_id !== profile.tenant_id) {
+--- web/app/api/dashboard/today-appointments/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth';
+export const GET = withApiAuth(
+    const result = await service.list(profile.tenant_id, {
+--- web/app/api/dashboard/vaccines/route.ts ---
+export async function GET(request: Request) {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .eq('tenant_id', profile.tenant_id)
+    // Query vaccines for tenant's pets (vaccines table doesn't have tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/dashboard/waiting-room/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/debug-network/route.ts ---
+export async function GET() {
+--- web/app/api/diagnosis_codes/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        tenantId: profile.tenant_id,
+--- web/app/api/drug_dosages/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        tenantId: profile.tenant_id,
+--- web/app/api/epidemiology/heatmap/route.ts ---
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+      .eq('tenant_id', profile.tenant_id) // Security: enforce tenant isolation
+      tenantId: profile.tenant_id,
+--- web/app/api/epidemiology/reports/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/euthanasia_assessments/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      pet:pets!inner(id, name, owner_id, tenant_id)
+    query = query.eq('pet.tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/export/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  const result = await createExportJob(user.id, profile.tenant_id, {
+    tenantId: profile.tenant_id,
+  } = await supabase.auth.getUser()
+--- web/app/api/export/[id]/route.ts ---
+export async function GET(
+  } = await supabase.auth.getUser()
+--- web/app/api/finance/expenses/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const clinic = searchParams.get('clinic') || profile.tenant_id
+    if (clinic !== profile.tenant_id) {
+        tenantId: profile.tenant_id,
+--- web/app/api/finance/pl/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const clinic = searchParams.get('clinic') || profile.tenant_id
+    if (clinic !== profile.tenant_id) {
+        tenantId: profile.tenant_id,
+--- web/app/api/gdpr/delete/route.ts ---
+export async function POST(request: NextRequest) {
+export async function DELETE(request: NextRequest) {
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+      .select('tenant_id')
+    const { canDelete, blockers } = await canDeleteUser(user.id, profile.tenant_id)
+        tenant_id: profile.tenant_id,
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+--- web/app/api/gdpr/export/route.ts ---
+export async function GET(request: NextRequest) {
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+        tenant_id: userData.dataSubject.tenantId,
+--- web/app/api/gdpr/route.ts ---
+export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+      .select('tenant_id')
+      .eq('tenant_id', profile.tenant_id)
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+      .select('tenant_id, email, full_name')
+--- web/app/api/gdpr/verify/route.ts ---
+export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+--- web/app/api/gdpr/[requestId]/route.ts ---
+export async function GET(
+export async function PATCH(
+export async function DELETE(
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+      .select('id, status, tenant_id')
+      tenant_id: existing.tenant_id,
+--- web/app/api/growth_charts/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+        tenantId: profile.tenant_id,
+--- web/app/api/growth_standards/route.ts ---
+export async function GET(request: Request) {
+--- web/app/api/health/cron/route.ts ---
+export async function GET() {
+--- web/app/api/health/errors/route.ts ---
+export async function GET(request: Request): Promise<NextResponse> {
+export async function POST(request: Request): Promise<NextResponse> {
+--- web/app/api/health/metrics/history/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/health/metrics/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+    } = await supabase.auth.getUser()
+--- web/app/api/health/queries/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse<QueryHealthResponse | { error: string }>> {
+--- web/app/api/health/retention/route.ts ---
+export async function GET(
+--- web/app/api/health/route.ts ---
+export async function GET() {
+--- web/app/api/homepage/owner-preview/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (profile.tenant_id !== clinic) {
+      .eq('tenant_id', clinic)
+      .eq('tenant_id', clinic)
+--- web/app/api/homepage/staff-preview/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+    if (profile.tenant_id !== clinic) {
+          .eq('tenant_id', profile.tenant_id)
+          .eq('tenant_id', profile.tenant_id)
+--- web/app/api/hospitalizations/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const PATCH = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      .eq('pet.tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/hospitalizations/[id]/discharge/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        profile.tenant_id,
+        .eq('pet.tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/hospitalizations/[id]/feedings/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+      .select('id, pet:pets!inner(tenant_id)')
+    const pet = petData as { tenant_id: string }
+    if (pet.tenant_id !== profile.tenant_id) {
+--- web/app/api/hospitalizations/[id]/invoice/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/hospitalizations/[id]/route.ts ---
+export const GET = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+      .eq('pet.tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/hospitalizations/[id]/treatments/route.ts ---
+export const POST = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+      .select('id, pet:pets!inner(tenant_id)')
+    const pet = petData as { tenant_id: string }
+    if (pet.tenant_id !== profile.tenant_id) {
+--- web/app/api/hospitalizations/[id]/vitals/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+      .select('id, pet:pets!inner(tenant_id)')
+    const pet = petData as { tenant_id: string }
+    if (pet.tenant_id !== profile.tenant_id) {
+--- web/app/api/inngest/route.ts ---
+--- web/app/api/insurance/claims/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/insurance/claims/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PATCH = withApiAuthParams(
+--- web/app/api/insurance/policies/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/insurance/pre-authorizations/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/insurance/providers/route.ts ---
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+        tenantId: profile.tenant_id,
+      tenantId: profile.tenant_id,
+--- web/app/api/inventory/adjust/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        p_tenant_id: profile.tenant_id,
+--- web/app/api/inventory/alerts/route.ts ---
+export const GET = withApiAuth(async ({ supabase, profile, log }) => {
+import { withApiAuth } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ supabase, profile, log }) => {
+      .eq('tenant_id', profile.tenant_id)
+      .eq('tenant_id', profile.tenant_id)
+--- web/app/api/inventory/barcode-lookup/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    if (profile.tenant_id !== clinic) {
+        p_tenant_id: clinic,
+          tenantId: profile.tenant_id,
+--- web/app/api/inventory/catalog/assign/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+ * - clinic_id: tenant_id of clinic
+export const POST = withApiAuth(
+      if (profile.tenant_id !== clinic_id) {
+        .is('tenant_id', null)
+--- web/app/api/inventory/catalog/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+ * - clinic: tenant_id (required)
+      .is('tenant_id', null) // Only global catalog products
+      .is('tenant_id', null)
+      .eq('tenant_id', clinic)
+--- web/app/api/inventory/export/route.ts ---
+export async function GET(req: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('role, tenant_id')
+    filename = `plantilla_inventario_${profile.tenant_id}.xlsx`
+      .eq('tenant_id', profile.tenant_id)
+    filename = `inventario_${profile.tenant_id}_${new Date().toISOString().split('T')[0]}.xlsx`
+--- web/app/api/inventory/import/preview/route.ts ---
+export async function POST(req: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('role, tenant_id')
+  profile: { tenant_id: string },
+      .eq('tenant_id', profile.tenant_id)
+      .eq('tenant_id', profile.tenant_id)
+--- web/app/api/inventory/import/route.ts ---
+export async function POST(req: NextRequest) {
+  } = await supabase.auth.getUser()
+    .select('role, tenant_id')
+        const fileName = `${profile.tenant_id}/${sku}_${Date.now()}.${imageExt}`
+          .eq('tenant_id', profile.tenant_id)
+      p_tenant_id: profile.tenant_id,
+--- web/app/api/inventory/mappings/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+export const POST = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/inventory/mappings/[id]/route.ts ---
+export const GET = withApiAuthParams<IdParams>(
+export const PATCH = withApiAuthParams<IdParams>(
+export const DELETE = withApiAuthParams<IdParams>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams<IdParams>(
+        .eq('tenant_id', profile.tenant_id)
+export const PATCH = withApiAuthParams<IdParams>(
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/inventory/mappings/[id]/use/route.ts ---
+export const POST = withApiAuthParams<IdParams>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams<IdParams>(
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/inventory/receive/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        p_tenant_id: profile.tenant_id,
+--- web/app/api/inventory/reorder-suggestions/route.ts ---
+export async function GET(request: NextRequest) {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  const tenantId = profile.tenant_id
+    .eq('tenant_id', tenantId)
+--- web/app/api/inventory/stats/route.ts ---
+export async function GET(req: NextRequest) {
+  } = await supabase.auth.getUser()
+    .select('tenant_id')
+      .eq('tenant_id', profile.tenant_id)
+      .eq('tenant_id', profile.tenant_id)
+      .eq('tenant_id', profile.tenant_id)
+--- web/app/api/inventory/[productId]/history/route.ts ---
+export async function GET(
+  } = await supabase.auth.getUser()
+    .select('id, tenant_id, role')
+  const tenantId = profile.tenant_id
+      .eq('tenant_id', tenantId)
+      .eq('tenant_id', tenantId)
+--- web/app/api/invoices/route.ts ---
+export const GET = withApiAuth(async ({ user, profile, supabase, request }) => {
+export const POST = withApiAuth(
+import { withApiAuth, isStaff, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ user, profile, supabase, request }) => {
+  const clinic = searchParams.get('clinic') || profile.tenant_id
+  if (!userIsStaff && clinic !== profile.tenant_id) {
+export const POST = withApiAuth(
+--- web/app/api/invoices/[id]/payments/route.ts ---
+export const POST = withApiAuthParams(
+export const GET = withApiAuthParams(
+import { withApiAuthParams, isStaff, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        p_tenant_id: profile.tenant_id,
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/invoices/[id]/pdf/route.tsx ---
+export const GET = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('id', invoice.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/invoices/[id]/refund/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        p_tenant_id: profile.tenant_id,
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/invoices/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, isStaff, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+    const result = await service.getById(id, profile.tenant_id, user.id, userIsStaff)
+export const PATCH = withApiAuthParams(
+    const result = await service.update(id, profile.tenant_id, user.id, body)
+--- web/app/api/invoices/[id]/send/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+          id, status, invoice_number, total, tenant_id,
+        .eq('tenant_id', profile.tenant_id)
+          tenant_id: profile.tenant_id,
+--- web/app/api/kennels/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/lab-catalog/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/lab-orders/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/lab-orders/[id]/comments/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+      .select('id, pets!inner(tenant_id)')
+    if (pet.tenant_id !== profile.tenant_id) {
+        tenantId: profile.tenant_id,
+--- web/app/api/lab-orders/[id]/results/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+      .select('id, tenant_id, pets!inner(tenant_id)')
+    if (pet.tenant_id !== profile.tenant_id) {
+            tenant_id: order.tenant_id,
+--- web/app/api/lab-orders/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        pets!inner(id, name, species, breed, birth_date, tenant_id),
+        tenantId: profile.tenant_id,
+    if (pet.tenant_id !== profile.tenant_id) {
+--- web/app/api/locale/route.ts ---
+export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
+--- web/app/api/lost-found/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/lost-found/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(async ({ profile, supabase, params }: ApiHandlerContextWithParams<Params>) => {
+export const PUT = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuthParams<Params>(async ({ profile, supabase, params }: ApiHandlerContextWithParams<Params>) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams<Params>(
+--- web/app/api/lost-found/[id]/sightings/route.ts ---
+export async function GET(request: NextRequest, { params }: RouteParams) {
+export async function POST(request: NextRequest, { params }: RouteParams) {
+    .select('id, status, tenant_id')
+--- web/app/api/lost-pets/route.ts ---
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+export const PATCH = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const PATCH = withApiAuth(
+--- web/app/api/loyalty/redeem/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+          tenantId: profile.tenant_id,
+        p_tenant_id: profile.tenant_id,
+          tenantId: profile.tenant_id,
+--- web/app/api/loyalty/rewards/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+      .eq('tenant_id', profile.tenant_id)
+--- web/app/api/medical-records/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/medical-records/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PATCH = withApiAuthParams(
+--- web/app/api/messages/attachments/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      .select('tenant_id, role')
+      .select('id, client_id, tenant_id')
+      ? conversation.tenant_id === profile.tenant_id  // Staff: must be from same tenant
+          tenantId: profile.tenant_id,
+--- web/app/api/messages/quick-replies/route.ts ---
+export async function GET(request: Request) {
+export async function POST(request: Request) {
+export async function DELETE(request: Request) {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+  } = await supabase.auth.getUser()
+--- web/app/api/messages/templates/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        tenantId: profile.tenant_id,
+ * Uses scoped.insert() for automatic tenant_id injection
+export const POST = withApiAuth(
+--- web/app/api/notifications/mark-all-read/route.ts ---
+export const POST = withApiAuth(async ({ user, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(async ({ user, profile, supabase }: ApiHandlerContext) => {
+        tenantId: profile.tenant_id,
+      tenantId: profile.tenant_id,
+--- web/app/api/notifications/route.ts ---
+export async function GET(request: NextRequest) {
+export const PATCH = withApiAuth(async ({ request, user, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const PATCH = withApiAuth(async ({ request, user, supabase }: ApiHandlerContext) => {
+--- web/app/api/openapi.json/route.ts ---
+export async function GET() {
+--- web/app/api/pets/route.ts ---
+export const POST = withApiAuth(async ({ user, supabase, request }: ApiHandlerContext) => {
+export const GET = withApiAuth(async ({ user, profile, supabase, request }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(async ({ user, supabase, request }: ApiHandlerContext) => {
+export const GET = withApiAuth(async ({ user, profile, supabase, request }: ApiHandlerContext) => {
+      .select('tenant_id')
+    if (!targetProfile || targetProfile.tenant_id !== profile.tenant_id) {
+--- web/app/api/pets/[id]/qr/route.ts ---
+export const POST = withApiAuthParams(
+export const GET = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .select('id, name, owner_id, tenant_id, species, breed, microchip_id')
+        ['vet', 'admin'].includes(profile.role) && profile.tenant_id === pet.tenant_id
+          tenantId: profile.tenant_id,
+--- web/app/api/pets/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(
+export const PATCH = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams<Params>(
+    const result = await petService.getById(id, user.id, profile.tenant_id, isStaff)
+export const PATCH = withApiAuthParams<Params>(
+    const result = await petService.update(id, user.id, profile.tenant_id, updates, isStaff)
+--- web/app/api/pets/[id]/weight/route.ts ---
+export const GET = withApiAuthParams<Params>(
+export const POST = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams<Params>(
+      .select('owner_id, tenant_id, birth_date')
+      (profile.role === 'vet' || profile.role === 'admin') && profile.tenant_id === pet.tenant_id
+export const POST = withApiAuthParams<Params>(
+--- web/app/api/platform/ambassadors/[id]/approve/route.ts ---
+export async function POST(
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/ambassadors/[id]/reject/route.ts ---
+export async function POST(
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/ambassadors/[id]/suspend/route.ts ---
+export async function POST(
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/announcements/route.ts ---
+export const GET = withApiAuth(async ({ profile, supabase, request, user }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ profile, supabase, request, user }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+      target_tenant_ids,
+        target_tenant_ids: target_tenant_ids || null,
+--- web/app/api/platform/announcements/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(
+export const PUT = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+export const POST = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuthParams<Params>(
+export const PUT = withApiAuthParams<Params>(
+      target_tenant_ids,
+    if (target_tenant_ids !== undefined) updates.target_tenant_ids = target_tenant_ids
+--- web/app/api/platform/billing/pending-transfers/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+        tenant_id,
+--- web/app/api/platform/billing/pending-transfers/[id]/verify/route.ts ---
+export async function POST(request: NextRequest, context: RouteContext): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+          tenant_id
+        .eq('tenant_id', invoice.tenant_id)
+        tenant_id: invoice.tenant_id,
+        .eq('tenant_id', invoice.tenant_id)
+--- web/app/api/platform/commission-invoices/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+ * - tenant_id: string (filter by tenant)
+ *   tenant_id?: string (optional, generates for all tenants if not specified)
+  tenant_id: z.string().optional(),
+  } = await supabase.auth.getUser()
+  const tenantId = searchParams.get('tenant_id')
+--- web/app/api/platform/commission-invoices/[id]/paid/route.ts ---
+export async function POST(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      .select('id, status, tenant_id, invoice_number, amount_due, notes')
+      tenant_id: invoice.tenant_id,
+      tenantId: invoice.tenant_id,
+--- web/app/api/platform/commission-invoices/[id]/route.ts ---
+export async function GET(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/commission-invoices/[id]/send/route.ts ---
+export async function POST(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      .select('id, status, tenant_id, invoice_number, total_amount, period_start, period_end, due_date')
+        tenantId: invoice.tenant_id,
+        tenantId: invoice.tenant_id,
+      tenant_id: invoice.tenant_id,
+--- web/app/api/platform/commissions/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+ * - tenant_id: string (filter by tenant)
+  } = await supabase.auth.getUser()
+  const tenantId = searchParams.get('tenant_id')
+        tenant_id,
+      query = query.eq('tenant_id', tenantId)
+--- web/app/api/platform/commissions/summary/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+          tenant_id,
+          const tenantId = record.tenant_id
+            tenant_id: id,
+--- web/app/api/platform/commissions/[id]/adjust/route.ts ---
+export async function POST(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      .select('id, status, commission_amount, original_commission, tenant_id')
+      tenant_id: commission.tenant_id,
+      tenantId: commission.tenant_id,
+--- web/app/api/platform/commissions/[id]/route.ts ---
+export async function GET(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/commissions/[id]/waive/route.ts ---
+export async function POST(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      .select('id, status, commission_amount, tenant_id')
+      tenant_id: commission.tenant_id,
+      tenantId: commission.tenant_id,
+--- web/app/api/platform/payouts/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/payouts/[id]/process/route.ts ---
+export async function POST(
+  } = await supabase.auth.getUser()
+--- web/app/api/platform/referrals/summary/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  const { data: { user }, error: authError } = await supabase.auth.getUser()
+      .select('tenant_id, tenant_name, total_referrals, converted_referrals')
+      tenant_id: r.tenant_id,
+--- web/app/api/platform/settings/route.ts ---
+export const GET = withApiAuth(async ({ profile, supabase }: ApiHandlerContext) => {
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ profile, supabase }: ApiHandlerContext) => {
+export const PUT = withApiAuth(
+--- web/app/api/platform/stats/route.ts ---
+export const GET = withApiAuth(async ({ profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ profile, supabase }: ApiHandlerContext) => {
+      .select('id, action, action_category, target_tenant_id, created_at')
+--- web/app/api/platform/tenants/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+          .select('tenant_id', { count: 'exact', head: false })
+          .in('tenant_id', tenantIds)
+          .select('tenant_id', { count: 'exact', head: false })
+--- web/app/api/platform/tenants/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(
+export const PUT = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuthParams<Params>(
+        .eq('tenant_id', id)
+        .eq('tenant_id', id)
+        .eq('tenant_id', id)
+--- web/app/api/portal/activity/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/prescriptions/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      pet:pets!inner(id, name, owner_id, tenant_id),
+    query = query.eq('pet.tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/privacy/accept/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+  if (policy.tenantId !== profile.tenant_id) {
+      profile.tenant_id,
+--- web/app/api/privacy/compare/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    if (current.tenantId !== profile.tenant_id || previous.tenantId !== profile.tenant_id) {
+--- web/app/api/privacy/route.ts ---
+export const GET = withApiAuth(async ({ user, profile, log }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ user, profile, log }: ApiHandlerContext) => {
+    const policies = await getAllPolicies(profile.tenant_id)
+  const policy = await getCurrentPolicy(profile.tenant_id)
+export const POST = withApiAuth(
+--- web/app/api/privacy/status/route.ts ---
+export const GET = withApiAuth(async ({ user, profile, log }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ user, profile, log }: ApiHandlerContext) => {
+  const status = await getAcceptanceStatus(user.id, profile.tenant_id)
+--- web/app/api/privacy/[id]/archive/route.ts ---
+export const POST = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams<Params>(
+    if (existing.tenantId !== profile.tenant_id) {
+--- web/app/api/privacy/[id]/publish/route.ts ---
+export const POST = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams<Params>(
+    if (existing.tenantId !== profile.tenant_id) {
+--- web/app/api/privacy/[id]/report/route.ts ---
+export const GET = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams<Params>(
+    if (existing.tenantId !== profile.tenant_id) {
+--- web/app/api/privacy/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(
+export const PATCH = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams<Params>(
+    if (policy.tenantId !== profile.tenant_id) {
+export const PATCH = withApiAuthParams<Params>(
+    if (existing.tenantId !== profile.tenant_id) {
+--- web/app/api/privacy/[id]/stats/route.ts ---
+export const GET = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams<Params>(
+    if (existing.tenantId !== profile.tenant_id) {
+--- web/app/api/procurement/compare/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/procurement/leads/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/procurement/leads/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams(
+--- web/app/api/procurement/orders/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const featureCheck = await requireFeature(profile.tenant_id, 'bulkOrdering')
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/procurement/orders/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        tenantId: profile.tenant_id,
+    if (order.tenant_id !== profile.tenant_id) {
+export const PATCH = withApiAuthParams(
+--- web/app/api/referrals/apply/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+ * - tenant_id: string - The new tenant's ID
+    const { code, tenant_id, utm_source, utm_medium, utm_campaign } = body
+    if (!code || !tenant_id) {
+        { error: 'Código y tenant_id son requeridos' },
+      .eq('id', tenant_id)
+--- web/app/api/referrals/code/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+        p_tenant_id: profile.tenant_id,
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/referrals/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+        referred_tenant:referred_tenant_id (
+      .eq('referrer_tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/referrals/stats/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(
+      .rpc('get_referral_stats', { p_tenant_id: profile.tenant_id })
+        tenantId: profile.tenant_id,
+      .eq('id', profile.tenant_id)
+--- web/app/api/referrals/validate/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+      tenant:tenant_id (
+--- web/app/api/reminders/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/reminders/rules/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const PATCH = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/reminders/stats/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/reproductive_cycles/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      pet:pets!inner(id, name, owner_id, tenant_id)
+    query = query.eq('pet.tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/search/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }) => {
+import { withApiAuth } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }) => {
+  if (profile.tenant_id !== clinic) {
+      .eq('tenant_id', clinic)
+        .eq('tenant_id', clinic)
+--- web/app/api/services/route.ts ---
+export async function GET(request: Request) {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+        'id, tenant_id, name, description, category, base_price, duration_minutes, is_active, created_at, updated_at'
+      .eq('tenant_id', clinic)
+export const POST = withApiAuth(
+          tenant_id: profile.tenant_id,
+--- web/app/api/settings/branding/route.ts ---
+export const GET = withApiAuth(
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    if (profile.tenant_id !== clinic) {
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuth(
+--- web/app/api/settings/general/route.ts ---
+export const GET = withApiAuth(
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    if (profile.role !== 'admin' || profile.tenant_id !== clinic) {
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuth(
+--- web/app/api/settings/modules/route.ts ---
+export const GET = withApiAuth(
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    if (profile.tenant_id !== clinic) {
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuth(
+--- web/app/api/settings/services/route.ts ---
+export const GET = withApiAuth(
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    if (profile.tenant_id !== clinic) {
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuth(
+--- web/app/api/setup/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse<SetupResponse>> {
+export async function GET(): Promise<NextResponse> {
+    } = await supabase.auth.getUser()
+              tenant_id: clinicSlug,
+              onConflict: 'tenant_id,catalog_product_id',
+                tenant_id: clinicSlug,
+--- web/app/api/setup/seed/route.ts ---
+export async function POST(request: NextRequest) {
+export async function DELETE(request: NextRequest) {
+      tenantId: data?.tenant_id,
+      tenantId: data?.tenant_id,
+      tenantId: data?.tenant_id,
+      tenantId: data?.tenant_id,
+      tenantId: data?.tenant_id,
+--- web/app/api/signup/check-slug/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse<CheckSlugResponse>> {
+--- web/app/api/signup/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse<SignupResponse | SignupErrorResponse>> {
+        tenant_id: data.slug,
+        tenant_id: data.slug,
+            p_new_tenant_id: data.slug,
+              referrer_tenant:referrer_tenant_id (name)
+--- web/app/api/signup/upload-logo/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse<UploadLogoResponse>> {
+--- web/app/api/sms/config/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+export const PUT = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/sms/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+          .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/sms/send/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+          .eq('tenant_id', profile.tenant_id)
+        .eq('id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/sms/webhook/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function GET(): Promise<NextResponse> {
+--- web/app/api/staff/schedule/route.ts ---
+export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
+export async function PATCH(request: NextRequest) {
+export async function DELETE(request: NextRequest) {
+ *   - clinic (required): tenant_id
+  } = await supabase.auth.getUser()
+  const { data: isStaff } = await supabase.rpc('is_staff_of', { _tenant_id: clinicSlug })
+      .eq('tenant_id', clinicSlug)
+  } = await supabase.auth.getUser()
+--- web/app/api/staff/time-off/route.ts ---
+export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
+export async function PATCH(request: NextRequest) {
+ *   - clinic (required): tenant_id
+  } = await supabase.auth.getUser()
+  const { data: isStaff } = await supabase.rpc('is_staff_of', { _tenant_id: clinicSlug })
+      .eq('tenant_id', clinicSlug)
+        .eq('tenant_id', clinicSlug)
+--- web/app/api/staff/time-off/types/route.ts ---
+export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
+export async function PATCH(request: NextRequest) {
+export async function DELETE(request: NextRequest) {
+ *   - clinic (optional): tenant_id to get tenant-specific types
+  } = await supabase.auth.getUser()
+      // Get global (tenant_id IS NULL) and tenant-specific types
+      query = query.or(`tenant_id.is.null,tenant_id.eq.${clinicSlug}`)
+      query = query.is('tenant_id', null)
+--- web/app/api/store/cart/items/route.ts ---
+export const POST = withApiAuth(async ({ supabase, user, profile, log, request }: ApiHandlerContext) => {
+export const DELETE = withApiAuth(async ({ supabase, user, profile, log, request }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const POST = withApiAuth(async ({ supabase, user, profile, log, request }: ApiHandlerContext) => {
+  const tenantId = clinic || profile.tenant_id
+    .eq('tenant_id', tenantId)
+        tenant_id: tenantId,
+--- web/app/api/store/cart/route.ts ---
+export async function GET() {
+export async function PUT(request: NextRequest) {
+export async function DELETE() {
+export async function POST(request: NextRequest) {
+    .select('tenant_id')
+  const featureCheck = await checkEcommerceAccess(profile.tenant_id)
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+  // SEC-025: Always get tenant_id from user's profile, never trust client input
+--- web/app/api/store/categories/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+      .eq('tenant_id', clinic)
+--- web/app/api/store/checkout/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+    if (clinic !== profile.tenant_id) {
+    const featureCheck = await requireFeature(profile.tenant_id, 'ecommerce')
+--- web/app/api/store/commission-invoices/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/store/commissions/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/store/commissions/summary/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+  if (clinic && clinic !== profile.tenant_id) {
+  const tenantId = clinic || profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/store/commissions/[id]/route.ts ---
+export async function GET(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+        tenant_id,
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/store/coupons/validate/route.ts ---
+export const POST = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      p_tenant_id: clinic,
+      tenantId: profile.tenant_id,
+--- web/app/api/store/orders/pending-prescriptions/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/store/orders/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      .eq('tenant_id', clinic)
+  } = await supabase.auth.getUser()
+      .eq('tenant_id', clinic)
+        p_tenant_id: clinic,
+--- web/app/api/store/orders/[id]/cancel/route.ts ---
+export async function POST(
+  } = await supabase.auth.getUser()
+    .select('tenant_id')
+    .select('id, status, customer_id, tenant_id')
+  if (order.tenant_id !== profile.tenant_id) {
+    tenantId: profile.tenant_id,
+--- web/app/api/store/orders/[id]/confirm/route.ts ---
+export async function POST(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+      .select('id, status, payment_status, total, tenant_id, order_number, customer_id')
+      .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/store/orders/[id]/prescription/route.ts ---
+export async function GET(
+export async function PUT(
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+  } = await supabase.auth.getUser()
+--- web/app/api/store/orders/[id]/prescription-override/route.ts ---
+export const POST = withApiAuthParams<{ id: string }>(
+export const GET = withApiAuthParams<{ id: string }>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams<{ id: string }>(
+export const GET = withApiAuthParams<{ id: string }>(
+      .eq('tenant_id', profile.tenant_id)
+--- web/app/api/store/prescriptions/upload/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+    // Build path: prescriptions/{tenant_id}/{user_id}/{timestamp}_{filename}.{ext}
+    const filePath = `prescriptions/${profile.tenant_id}/${user.id}/${timestamp}_${safeName}.${validExtension}`
+        tenantId: profile.tenant_id,
+--- web/app/api/store/products/route.ts ---
+export async function GET(request: Request) {
+export async function POST(request: Request) {
+      .eq('tenant_id', clinic)
+  } = await supabase.auth.getUser()
+    .select('tenant_id, role')
+        tenant_id: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/store/products/[id]/route.ts ---
+export async function GET(request: NextRequest, { params }: Props): Promise<NextResponse> {
+export async function DELETE(request: NextRequest, { params }: Props): Promise<NextResponse> {
+      .eq('tenant_id', clinic)
+      .eq('tenant_id', clinic)
+        .eq('tenant_id', clinic)
+      tenant_id: clinic,
+  } = await supabase.auth.getUser()
+--- web/app/api/store/reorder-suggestions/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+          tenant_id,
+      .eq('store_orders.tenant_id', clinic)
+      .eq('tenant_id', clinic)
+--- web/app/api/store/reviews/route.ts ---
+export async function GET(request: NextRequest) {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+        tenant_id: clinic,
+        tenant_id: clinic,
+--- web/app/api/store/search/route.ts ---
+export async function GET(request: NextRequest) {
+  } = await supabase.auth.getUser()
+      .eq('tenant_id', clinic)
+      .eq('tenant_id', clinic)
+      .eq('tenant_id', clinic)
+      .eq('tenant_id', clinic)
+--- web/app/api/store/stock-alerts/route.ts ---
+export async function POST(request: NextRequest) {
+export async function DELETE(request: NextRequest) {
+  } = await supabase.auth.getUser()
+        tenant_id: clinic,
+--- web/app/api/store/subscriptions/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function PATCH(request: NextRequest): Promise<NextResponse> {
+export async function DELETE(request: NextRequest): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+      p_tenant_id: clinic,
+  } = await supabase.auth.getUser()
+      .eq('tenant_id', clinic)
+      .eq('tenant_id', clinic)
+--- web/app/api/store/subscriptions/[id]/skip/route.ts ---
+export async function POST(request: NextRequest, { params }: RouteParams): Promise<NextResponse> {
+  } = await supabase.auth.getUser()
+--- web/app/api/store/wishlist/route.ts ---
+export async function GET() {
+export const POST = withApiAuth(
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+  } = await supabase.auth.getUser()
+    .select('tenant_id')
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/subscriptions/instances/route.ts ---
+export const GET = withApiAuth(async ({ profile, supabase, request }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ profile, supabase, request }: ApiHandlerContext) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/subscriptions/plans/route.ts ---
+export const GET = withApiAuth(async ({ profile, supabase, request }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ profile, supabase, request }: ApiHandlerContext) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/subscriptions/plans/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(async ({ profile, supabase, params }: ApiHandlerContextWithParams<Params>) => {
+export const PUT = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuthParams<Params>(async ({ profile, supabase, params }: ApiHandlerContextWithParams<Params>) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams<Params>(
+--- web/app/api/subscriptions/route.ts ---
+export const GET = withApiAuth(async ({ profile, supabase, request, user }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuth(async ({ profile, supabase, request, user }: ApiHandlerContext) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const POST = withApiAuth(
+--- web/app/api/subscriptions/[id]/route.ts ---
+export const GET = withApiAuthParams<Params>(async ({ profile, supabase, user, params }: ApiHandlerContextWithParams<Params>) => {
+export const PUT = withApiAuthParams<Params>(
+export const DELETE = withApiAuthParams<Params>(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth/api-wrapper'
+export const GET = withApiAuthParams<Params>(async ({ profile, supabase, user, params }: ApiHandlerContextWithParams<Params>) => {
+    .eq('tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams<Params>(
+--- web/app/api/suppliers/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/suppliers/[id]/orders/route.ts ---
+export const GET = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/suppliers/[id]/products/route.ts ---
+export const GET = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/suppliers/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PUT = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+export const PUT = withApiAuthParams(
+--- web/app/api/suppliers/[id]/verify/route.ts ---
+export const POST = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const POST = withApiAuthParams(
+        .eq('tenant_id', profile.tenant_id)
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+--- web/app/api/tenant/features/route.ts ---
+export async function GET(request: NextRequest): Promise<NextResponse> {
+--- web/app/api/user/notification-settings/route.ts ---
+export const GET = withApiAuth(async ({ user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(
+    tenant_id: profile.tenant_id || null,
+    onConflict: 'user_id,tenant_id',
+--- web/app/api/user/onboarding-complete/route.ts ---
+export async function POST(request: Request) {
+  } = await supabase.auth.getUser()
+--- web/app/api/user/preferences/route.ts ---
+export async function GET(request: Request) {
+export async function POST(request: Request) {
+  } = await supabase.auth.getUser()
+    .select('id, tenant_id, user_preferences')
+  } = await supabase.auth.getUser()
+    .select('id, tenant_id, user_preferences')
+--- web/app/api/vaccines/mandatory-alerts/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+    const tenantId = profile.tenant_id
+      .eq('tenant_id', tenantId)
+--- web/app/api/vaccines/recommendations/route.ts ---
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+      tenantId: profile.tenant_id,
+--- web/app/api/vaccines/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        pets!inner(id, name, species, breed, tenant_id)
+      .eq('pets.tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/vaccines/send-reminder/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+    const tenantId = profile.tenant_id
+      .eq('tenant_id', tenantId)
+      tenant_id: string
+--- web/app/api/vaccines/[id]/route.ts ---
+export const GET = withApiAuthParams(
+export const PATCH = withApiAuthParams(
+export const DELETE = withApiAuthParams(
+import { withApiAuthParams, type ApiHandlerContextWithParams } from '@/lib/auth'
+export const GET = withApiAuthParams(
+          id, name, species, breed, date_of_birth, tenant_id,
+      .eq('pet.tenant_id', profile.tenant_id)
+        tenantId: profile.tenant_id,
+--- web/app/api/vaccine_reactions/check/route.ts ---
+export const POST = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(async ({ request, profile, supabase }: ApiHandlerContext) => {
+        tenantId: profile.tenant_id,
+      tenantId: profile.tenant_id,
+--- web/app/api/vaccine_reactions/route.ts ---
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const POST = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const PUT = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+export const DELETE = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(async ({ request, user, profile, supabase }: ApiHandlerContext) => {
+      pet:pets!inner(id, name, owner_id, tenant_id),
+    query = query.eq('pet.tenant_id', profile.tenant_id)
+      tenantId: profile.tenant_id,
+--- web/app/api/webhooks/stripe/route.ts ---
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  const tenantId = metadata.tenant_id
+        .eq('tenant_id', tenantId)
+  const tenantId = metadata.tenant_id
+      .eq('tenant_id', tenantId)
+        tenant_id: tenantId,
+--- web/app/api/whatsapp/route.ts ---
+export const GET = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+          .eq('tenant_id', profile.tenant_id)
+            tenantId: profile.tenant_id,
+        .eq('tenant_id', profile.tenant_id)
+--- web/app/api/whatsapp/send/route.ts ---
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const POST = withApiAuth(
+    const featureCheck = await requireFeature(profile.tenant_id, 'whatsappApi')
+          tenant_id: profile.tenant_id,
+          tenantId: profile.tenant_id,
+--- web/app/api/whatsapp/templates/route.ts ---
+export const GET = withApiAuth(
+export const POST = withApiAuth(
+import { withApiAuth, type ApiHandlerContext } from '@/lib/auth'
+export const GET = withApiAuth(
+        .eq('tenant_id', profile.tenant_id)
+          tenantId: profile.tenant_id,
+        tenantId: profile.tenant_id,
+--- web/app/api/whatsapp/templates/[id]/route.ts ---
+export async function GET(request: NextRequest, { params }: Props) {
+export async function PATCH(request: NextRequest, { params }: Props) {
+export async function DELETE(request: NextRequest, { params }: Props) {
+    } = await supabase.auth.getUser()
+      .select('role, tenant_id')
+      .eq('tenant_id', profile.tenant_id)
+    } = await supabase.auth.getUser()
+      .select('role, tenant_id')

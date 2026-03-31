@@ -1,0 +1,551 @@
+{
+  "$schema": "../_schemas/reference.schema.json",
+  "lab_tests": [
+    {
+      "code": "CBC",
+      "name": "Hemograma Completo",
+      "name_en": "Complete Blood Count",
+      "category": "hematology",
+      "sample_type": "blood",
+      "base_price": 80000,
+      "turnaround_days": 1,
+      "species": ["all"],
+      "requires_fasting": false
+    },
+    {
+      "code": "HTO",
+      "name": "Hematocrito",
+      "name_en": "Hematocrit",
+      "category": "hematology",
+      "sample_type": "blood",
+      "base_price": 25000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "RETIC",
+      "name": "Conteo de Reticulocitos",
+      "name_en": "Reticulocyte Count",
+      "category": "hematology",
+      "sample_type": "blood",
+      "base_price": 45000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "FROT",
+      "name": "Frotis Sanguíneo",
+      "name_en": "Blood Smear",
+      "category": "hematology",
+      "sample_type": "blood",
+      "base_price": 50000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+
+    {
+      "code": "CHEM10",
+      "name": "Perfil Bioquímico 10",
+      "name_en": "Chemistry Panel 10",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 120000,
+      "turnaround_days": 1,
+      "requires_fasting": true,
+      "species": ["all"],
+      "description": "BUN, Creatinina, ALT, ALP, Glucosa, PT, Albúmina, Globulina, Calcio, Fósforo"
+    },
+    {
+      "code": "CHEM17",
+      "name": "Perfil Bioquímico 17",
+      "name_en": "Chemistry Panel 17",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 180000,
+      "turnaround_days": 1,
+      "requires_fasting": true,
+      "species": ["all"],
+      "description": "Perfil completo + electrolitos y enzimas adicionales"
+    },
+    {
+      "code": "BUN",
+      "name": "Nitrógeno Ureico",
+      "name_en": "Blood Urea Nitrogen",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 30000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "CREAT",
+      "name": "Creatinina",
+      "name_en": "Creatinine",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 30000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "SDMA",
+      "name": "SDMA",
+      "name_en": "Symmetric Dimethylarginine",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 95000,
+      "turnaround_days": 2,
+      "species": ["dog", "cat"],
+      "description": "Marcador temprano de enfermedad renal"
+    },
+    {
+      "code": "ALT",
+      "name": "Alanina Aminotransferasa",
+      "name_en": "ALT",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 30000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "ALP",
+      "name": "Fosfatasa Alcalina",
+      "name_en": "Alkaline Phosphatase",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 30000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "GGT",
+      "name": "Gamma Glutamil Transferasa",
+      "name_en": "GGT",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 35000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "TBIL",
+      "name": "Bilirrubina Total",
+      "name_en": "Total Bilirubin",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 30000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "GLU",
+      "name": "Glucosa",
+      "name_en": "Glucose",
+      "category": "chemistry",
+      "sample_type": "blood",
+      "base_price": 25000,
+      "turnaround_days": 1,
+      "requires_fasting": true,
+      "species": ["all"]
+    },
+    {
+      "code": "FRUC",
+      "name": "Fructosamina",
+      "name_en": "Fructosamine",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 65000,
+      "turnaround_days": 2,
+      "species": ["dog", "cat"],
+      "description": "Control diabético a largo plazo"
+    },
+    {
+      "code": "LIPID",
+      "name": "Perfil Lipídico",
+      "name_en": "Lipid Panel",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 90000,
+      "turnaround_days": 1,
+      "requires_fasting": true,
+      "species": ["all"]
+    },
+    {
+      "code": "AMYL",
+      "name": "Amilasa",
+      "name_en": "Amylase",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 35000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "LIPA",
+      "name": "Lipasa",
+      "name_en": "Lipase",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 40000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "SPEC",
+      "name": "Lipasa Pancreática Específica",
+      "name_en": "Specific Pancreatic Lipase",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 95000,
+      "turnaround_days": 2,
+      "species": ["dog", "cat"]
+    },
+    {
+      "code": "ELEC",
+      "name": "Panel de Electrolitos",
+      "name_en": "Electrolyte Panel",
+      "category": "chemistry",
+      "sample_type": "serum",
+      "base_price": 70000,
+      "turnaround_days": 1,
+      "species": ["all"],
+      "description": "Na, K, Cl"
+    },
+
+    {
+      "code": "UA",
+      "name": "Urianálisis Completo",
+      "name_en": "Complete Urinalysis",
+      "category": "urinalysis",
+      "sample_type": "urine",
+      "base_price": 60000,
+      "turnaround_days": 1,
+      "species": ["all"],
+      "description": "Físico, químico y sedimento"
+    },
+    {
+      "code": "UPC",
+      "name": "Ratio Proteína/Creatinina Urinaria",
+      "name_en": "Urine Protein:Creatinine Ratio",
+      "category": "urinalysis",
+      "sample_type": "urine",
+      "base_price": 55000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "UCULT",
+      "name": "Urocultivo",
+      "name_en": "Urine Culture",
+      "category": "microbiology",
+      "sample_type": "urine",
+      "base_price": 120000,
+      "turnaround_days": 3,
+      "species": ["all"]
+    },
+
+    {
+      "code": "T4",
+      "name": "T4 Total",
+      "name_en": "Total T4",
+      "category": "endocrinology",
+      "sample_type": "serum",
+      "base_price": 95000,
+      "turnaround_days": 2,
+      "species": ["dog", "cat"]
+    },
+    {
+      "code": "FT4",
+      "name": "T4 Libre",
+      "name_en": "Free T4",
+      "category": "endocrinology",
+      "sample_type": "serum",
+      "base_price": 110000,
+      "turnaround_days": 2,
+      "species": ["dog", "cat"]
+    },
+    {
+      "code": "TSH",
+      "name": "TSH Canino",
+      "name_en": "Canine TSH",
+      "category": "endocrinology",
+      "sample_type": "serum",
+      "base_price": 110000,
+      "turnaround_days": 2,
+      "species": ["dog"]
+    },
+    {
+      "code": "CORT",
+      "name": "Cortisol Basal",
+      "name_en": "Basal Cortisol",
+      "category": "endocrinology",
+      "sample_type": "serum",
+      "base_price": 85000,
+      "turnaround_days": 2,
+      "species": ["dog", "cat"]
+    },
+    {
+      "code": "LDDS",
+      "name": "Test de Supresión con Dexametasona Baja Dosis",
+      "name_en": "Low Dose Dexamethasone Suppression Test",
+      "category": "endocrinology",
+      "sample_type": "serum",
+      "base_price": 180000,
+      "turnaround_days": 2,
+      "species": ["dog"]
+    },
+    {
+      "code": "ACTH",
+      "name": "Test de Estimulación con ACTH",
+      "name_en": "ACTH Stimulation Test",
+      "category": "endocrinology",
+      "sample_type": "serum",
+      "base_price": 200000,
+      "turnaround_days": 2,
+      "species": ["dog"]
+    },
+
+    {
+      "code": "FELV",
+      "name": "FeLV Antígeno",
+      "name_en": "Feline Leukemia Virus Antigen",
+      "category": "serology",
+      "sample_type": "blood",
+      "base_price": 75000,
+      "turnaround_days": 1,
+      "species": ["cat"]
+    },
+    {
+      "code": "FIV",
+      "name": "FIV Anticuerpos",
+      "name_en": "Feline Immunodeficiency Virus Antibody",
+      "category": "serology",
+      "sample_type": "blood",
+      "base_price": 75000,
+      "turnaround_days": 1,
+      "species": ["cat"]
+    },
+    {
+      "code": "SNAP4DX",
+      "name": "SNAP 4Dx Plus",
+      "name_en": "SNAP 4Dx Plus",
+      "category": "serology",
+      "sample_type": "blood",
+      "base_price": 120000,
+      "turnaround_days": 1,
+      "species": ["dog"],
+      "description": "Dirofilaria, Ehrlichia, Anaplasma, Borrelia"
+    },
+    {
+      "code": "PARVO",
+      "name": "Test Rápido Parvovirus",
+      "name_en": "Parvovirus Rapid Test",
+      "category": "serology",
+      "sample_type": "feces",
+      "base_price": 65000,
+      "turnaround_days": 1,
+      "species": ["dog"]
+    },
+    {
+      "code": "CPVAB",
+      "name": "Anticuerpos Parvovirus",
+      "name_en": "Parvovirus Antibodies",
+      "category": "serology",
+      "sample_type": "serum",
+      "base_price": 85000,
+      "turnaround_days": 2,
+      "species": ["dog"]
+    },
+
+    {
+      "code": "HW",
+      "name": "Dirofilaria Antígeno",
+      "name_en": "Heartworm Antigen",
+      "category": "parasitology",
+      "sample_type": "blood",
+      "base_price": 65000,
+      "turnaround_days": 1,
+      "species": ["dog", "cat"]
+    },
+    {
+      "code": "FECAL",
+      "name": "Coproparasitológico",
+      "name_en": "Fecal Examination",
+      "category": "parasitology",
+      "sample_type": "feces",
+      "base_price": 45000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "GIAR",
+      "name": "Giardia Antígeno",
+      "name_en": "Giardia Antigen",
+      "category": "parasitology",
+      "sample_type": "feces",
+      "base_price": 60000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+
+    {
+      "code": "PT",
+      "name": "Tiempo de Protrombina",
+      "name_en": "Prothrombin Time",
+      "category": "coagulation",
+      "sample_type": "plasma",
+      "base_price": 55000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "APTT",
+      "name": "Tiempo de Tromboplastina Parcial Activada",
+      "name_en": "Activated Partial Thromboplastin Time",
+      "category": "coagulation",
+      "sample_type": "plasma",
+      "base_price": 55000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "COAG",
+      "name": "Perfil de Coagulación",
+      "name_en": "Coagulation Panel",
+      "category": "coagulation",
+      "sample_type": "plasma",
+      "base_price": 100000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "BUCCAL",
+      "name": "Tiempo de Sangrado Bucal",
+      "name_en": "Buccal Mucosal Bleeding Time",
+      "category": "coagulation",
+      "base_price": 40000,
+      "turnaround_days": 1,
+      "species": ["dog"]
+    },
+
+    {
+      "code": "CITO",
+      "name": "Citología",
+      "name_en": "Cytology",
+      "category": "cytology",
+      "sample_type": "tissue",
+      "base_price": 70000,
+      "turnaround_days": 2,
+      "species": ["all"],
+      "description": "Aspirado con aguja fina"
+    },
+    {
+      "code": "CITOV",
+      "name": "Citología Vaginal",
+      "name_en": "Vaginal Cytology",
+      "category": "cytology",
+      "sample_type": "swab",
+      "base_price": 50000,
+      "turnaround_days": 1,
+      "species": ["dog", "cat"]
+    },
+    {
+      "code": "CITOD",
+      "name": "Citología de Oído",
+      "name_en": "Ear Cytology",
+      "category": "cytology",
+      "sample_type": "swab",
+      "base_price": 45000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "BIOPSY",
+      "name": "Biopsia (Histopatología)",
+      "name_en": "Biopsy (Histopathology)",
+      "category": "cytology",
+      "sample_type": "tissue",
+      "base_price": 180000,
+      "turnaround_days": 5,
+      "species": ["all"]
+    },
+
+    {
+      "code": "CULT",
+      "name": "Cultivo y Antibiograma",
+      "name_en": "Culture and Sensitivity",
+      "category": "microbiology",
+      "sample_type": "swab",
+      "base_price": 150000,
+      "turnaround_days": 5,
+      "species": ["all"]
+    },
+    {
+      "code": "DERM",
+      "name": "Cultivo Dermatofitos",
+      "name_en": "Dermatophyte Culture",
+      "category": "microbiology",
+      "sample_type": "swab",
+      "base_price": 90000,
+      "turnaround_days": 14,
+      "species": ["all"]
+    },
+    {
+      "code": "RASP",
+      "name": "Raspado de Piel",
+      "name_en": "Skin Scraping",
+      "category": "cytology",
+      "sample_type": "tissue",
+      "base_price": 50000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+
+    {
+      "code": "RX",
+      "name": "Radiografía (1 vista)",
+      "name_en": "Radiograph (1 view)",
+      "category": "imaging",
+      "base_price": 80000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "RX2",
+      "name": "Radiografía (2 vistas)",
+      "name_en": "Radiograph (2 views)",
+      "category": "imaging",
+      "base_price": 140000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "ECHO",
+      "name": "Ecografía Abdominal",
+      "name_en": "Abdominal Ultrasound",
+      "category": "imaging",
+      "base_price": 200000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "ECOC",
+      "name": "Ecocardiograma",
+      "name_en": "Echocardiogram",
+      "category": "imaging",
+      "base_price": 300000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    },
+    {
+      "code": "ECG",
+      "name": "Electrocardiograma",
+      "name_en": "Electrocardiogram",
+      "category": "imaging",
+      "base_price": 80000,
+      "turnaround_days": 1,
+      "species": ["all"]
+    }
+  ]
+}

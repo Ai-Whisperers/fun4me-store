@@ -1,0 +1,124 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "primogato",
+  "products": [
+    {
+      "sku": "PG-CAT-ADULT",
+      "name": "Primogato Adultos Carne y Pollo",
+      "description": "Alimento económico para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 14000,
+          "cost_price": 8400,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 26000,
+          "cost_price": 15600,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 68000,
+          "cost_price": 40800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "10.1kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/109352460/57a29d3524.jpg",
+      "images": [
+        "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/109352460/57a29d3524.jpg",
+        "https://cdn.awsli.com.br/600x1000/1095/1095221/produto/109352460/975186ed02.jpg",
+        "https://cdn.awsli.com.br/400x400/1095/1095221/produto/48867203/921a6e8577.jpg"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "flavor": "Carne y Pollo"
+      }
+    },
+    {
+      "sku": "PG-CAT-KITTEN",
+      "name": "Primogato Gatitos Pollo y Leche",
+      "description": "Alimento económico para gatitos con leche",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 18000,
+          "cost_price": 10800,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-1KG"
+        }
+      ],
+      "image_url": "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/78327979/8bc5d73f47.jpg",
+      "images": [
+        "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/78327979/8bc5d73f47.jpg",
+        "https://cdn.awsli.com.br/600x1000/1095/1095221/produto/78327979/5f39ef3d49.jpg",
+        "https://cdn.awsli.com.br/400x400/1095/1095221/produto/109352460/57a29d3524.jpg"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Kitten",
+        "flavor": "Pollo y Leche"
+      }
+    },
+    {
+      "sku": "PG-CAT-CASTRADO",
+      "name": "Primogato Castrados",
+      "description": "Alimento económico para gatos esterilizados",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 17000,
+          "cost_price": 10200,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 34000,
+          "cost_price": 20400,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 88000,
+          "cost_price": 52800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "10.1kg",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/48867203/921a6e8577.jpg",
+      "images": [
+        "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/48867203/921a6e8577.jpg",
+        "https://cdn.awsli.com.br/600x1000/1095/1095221/produto/48867203/ddf80fe445.jpg",
+        "https://cdn.awsli.com.br/400x400/1095/1095221/produto/78327979/8bc5d73f47.jpg"
+      ],
+      "attributes": {
+        "special_need": "Esterilizado",
+        "weight_control": true
+      }
+    }
+  ]
+}

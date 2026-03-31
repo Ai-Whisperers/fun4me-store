@@ -1,0 +1,287 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "braun",
+  "products": [
+    {
+      "sku": "BRAUN-NACL-09",
+      "name": "Solución Salina 0.9%",
+      "description": "Cloruro de sodio isotónico para fluidoterapia",
+      "category_slug": "CLI-FAR-FLU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "250ml",
+          "base_price": 18000,
+          "cost_price": 10800,
+          "sku_suffix": "-250"
+        },
+        {
+          "size": "500ml",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": "-500"
+        },
+        {
+          "size": "1000ml",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-1000"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "osmolarity": "308 mOsm/L",
+        "sterile": true,
+        "container": "Bolsa flexible"
+      }
+    },
+    {
+      "sku": "BRAUN-RINGER-LACTATO",
+      "name": "Ringer Lactato",
+      "description": "Solución de Ringer Lactato para reposición de volumen",
+      "category_slug": "CLI-FAR-FLU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 28000,
+          "cost_price": 16800,
+          "sku_suffix": "-500"
+        },
+        {
+          "size": "1000ml",
+          "base_price": 38000,
+          "cost_price": 22800,
+          "sku_suffix": "-1000"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "electrolytes": "Na, K, Ca, Cl, Lactato",
+        "sterile": true,
+        "pH": "6.0-7.5"
+      }
+    },
+    {
+      "sku": "BRAUN-DEXTROSA-5",
+      "name": "Dextrosa 5%",
+      "description": "Solución glucosada para aporte calórico",
+      "category_slug": "CLI-FAR-FLU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 22000,
+          "cost_price": 13200,
+          "sku_suffix": "-500"
+        },
+        {
+          "size": "1000ml",
+          "base_price": 32000,
+          "cost_price": 19200,
+          "sku_suffix": "-1000"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "glucose_concentration": "50g/L",
+        "sterile": true,
+        "calories": "170 kcal/500ml"
+      }
+    },
+    {
+      "sku": "BRAUN-DEXTROSA-SALINA",
+      "name": "Dextrosa 5% en Salina 0.9%",
+      "description": "Solución mixta para mantenimiento",
+      "category_slug": "CLI-FAR-FLU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 26000,
+          "cost_price": 15600,
+          "sku_suffix": "-500"
+        },
+        {
+          "size": "1000ml",
+          "base_price": 36000,
+          "cost_price": 21600,
+          "sku_suffix": "-1000"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BRAUN-INFUSION-SET",
+      "name": "Set de Infusión IV",
+      "description": "Equipo de venoclisis con cámara de goteo",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "drop_factor": "20 gotas/ml",
+        "tubing_length": "180cm",
+        "sterile": true,
+        "roller_clamp": true
+      }
+    },
+    {
+      "sku": "BRAUN-MICRO-INFUSION",
+      "name": "Set de Microinfusión Pediátrico",
+      "description": "Equipo de infusión para pacientes pequeños",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "drop_factor": "60 gotas/ml",
+        "tubing_length": "150cm",
+        "sterile": true,
+        "buretrol": "100ml"
+      }
+    },
+    {
+      "sku": "BRAUN-EXTENSION-SET",
+      "name": "Set de Extensión IV",
+      "description": "Extensión para líneas de infusión",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50 (15cm)",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-15CM"
+        },
+        {
+          "size": "Caja x 50 (30cm)",
+          "base_price": 105000,
+          "cost_price": 63000,
+          "sku_suffix": "-30CM"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "luer_lock": true
+      }
+    },
+    {
+      "sku": "BRAUN-STOPCOCK-3WAY",
+      "name": "Llave de 3 Vías",
+      "description": "Llave de paso para múltiples conexiones",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "luer_lock": true,
+        "rotation": "360°"
+      }
+    },
+    {
+      "sku": "BRAUN-INJECTION-PORT",
+      "name": "Puerto de Inyección Sin Aguja",
+      "description": "Puerto de acceso para administración de medicamentos",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "needle_free": true,
+        "sterile": true,
+        "septum": "Silicona"
+      }
+    },
+    {
+      "sku": "BRAUN-PERFUSOR-SYRINGE",
+      "name": "Jeringa para Bomba de Infusión",
+      "description": "Jeringa compatible con bombas de perfusión",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "20ml - Caja x 50",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-20ML"
+        },
+        {
+          "size": "50ml - Caja x 50",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-50ML"
+        }
+      ],
+      "image_url": "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx",
+      "images": [
+        "https://www.bbraunusa.com/-/media/B-Braun/Product-Images/IV-Solutions/Sodium-Chloride-09-Percent/L8000.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "luer_lock": true,
+        "compatible_pumps": "B. Braun Perfusor"
+      }
+    }
+  ]
+}

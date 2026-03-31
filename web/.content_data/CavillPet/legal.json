@@ -1,0 +1,103 @@
+{
+  "privacy_policy": {
+    "title": "Política de Privacidad",
+    "last_updated": "2024-12-01",
+    "sections": [
+      {
+        "title": "Introducción",
+        "content": "En CavillPet, nos tomamos muy en serio la privacidad de tus datos personales y los de tu mascota. Esta política describe cómo recopilamos, utilizamos y protegemos tu información cuando utilizas nuestros servicios presenciales y digitales."
+      },
+      {
+        "title": "Información que Recopilamos",
+        "content": "Recopilamos la siguiente información:\n\n• **Datos personales:** Nombre, cédula de identidad, dirección, teléfono, correo electrónico.\n• **Datos de mascotas:** Nombre, especie, raza, fecha de nacimiento, peso, número de microchip, historial médico, fotografías.\n• **Datos de transacciones:** Historial de compras, servicios utilizados, métodos de pago.\n• **Datos de navegación:** Cookies, dirección IP, tipo de dispositivo (solo en nuestra plataforma web)."
+      },
+      {
+        "title": "Uso de la Información",
+        "content": "Utilizamos tu información para:\n\n• Brindar servicios veterinarios y llevar el historial médico de tu mascota.\n• Enviar recordatorios de vacunación, citas y promociones (puedes desactivarlos en cualquier momento).\n• Procesar pagos y gestionar el programa de fidelidad.\n• Mejorar nuestros servicios y personalizar tu experiencia.\n• Cumplir con requisitos legales (ej: registros SENACSA)."
+      },
+      {
+        "title": "Almacenamiento y Seguridad",
+        "content": "Toda la información se almacena en servidores seguros con encriptación de nivel bancario (SSL/TLS). Los datos médicos están protegidos con encriptación adicional y solo son accesibles por personal autorizado. Realizamos copias de seguridad diarias y auditorías de seguridad periódicas."
+      },
+      {
+        "title": "Compartir Información",
+        "content": "No vendemos ni compartimos tu información personal con terceros para fines comerciales. Solo compartimos datos cuando:\n\n• Es necesario para completar un servicio (ej: laboratorio externo).\n• Lo solicitas expresamente (ej: derivación a especialista).\n• Es requerido por ley o autoridad competente.\n• Es necesario para proteger nuestros derechos legales."
+      },
+      {
+        "title": "Tus Derechos",
+        "content": "Tienes derecho a:\n\n• Acceder a tus datos y los de tu mascota.\n• Solicitar corrección de información incorrecta.\n• Solicitar eliminación de tus datos (excepto registros médicos legalmente requeridos).\n• Retirar tu consentimiento para comunicaciones de marketing.\n• Exportar tus datos en formato portable (PDF).\n\nPara ejercer estos derechos, escríbenos a: contacto@cavillpet.com"
+      },
+      {
+        "title": "Retención de Datos",
+        "content": "Conservamos tus datos mientras mantengas una cuenta activa con nosotros. Los historiales médicos se conservan por un mínimo de 10 años según normativa veterinaria vigente. Puedes solicitar la eliminación de datos no médicos en cualquier momento."
+      },
+      {
+        "title": "Cambios a esta Política",
+        "content": "Podemos actualizar esta política periódicamente. Te notificaremos de cambios significativos por correo electrónico o mediante aviso en nuestra web. La fecha de última actualización se indica al inicio del documento."
+      },
+      {
+        "title": "Contacto",
+        "content": "Para consultas sobre privacidad:\n\n• Email: contacto@cavillpet.com\n• Teléfono: +595 991 965 767\n• Dirección: San Juan Bautista y Silvio Pettirossi, San Lorenzo"
+      }
+    ]
+  },
+  "terms_of_service": {
+    "title": "Términos y Condiciones",
+    "last_updated": "2024-12-01",
+    "sections": [
+      {
+        "title": "Aceptación de Términos",
+        "content": "Al utilizar los servicios de CavillPet, ya sea presencialmente o a través de nuestra plataforma digital, aceptas estos Términos y Condiciones en su totalidad. Si no estás de acuerdo, te pedimos que no utilices nuestros servicios."
+      },
+      {
+        "title": "Descripción del Servicio",
+        "content": "CavillPet ofrece servicios de salud animal incluyendo, pero no limitado a: consultas médicas, vacunación, cirugías, diagnóstico por imágenes, internación, grooming, y venta de productos veterinarios. También ofrecemos servicios digitales como el carnet de vacunación online y reserva de citas."
+      },
+      {
+        "title": "Responsabilidad Médica",
+        "content": "Nuestros servicios veterinarios son brindados por profesionales habilitados por el Colegio de Médicos Veterinarios del Paraguay. Seguimos protocolos médicos establecidos y utilizamos insumos de calidad certificada. Sin embargo:\n\n• Los tratamientos médicos conllevan riesgos inherentes que serán explicados antes de cada procedimiento.\n• El resultado de tratamientos y cirugías no puede ser garantizado al 100%.\n• El cliente debe informar el historial médico completo y seguir las indicaciones post-tratamiento.\n• No nos hacemos responsables por complicaciones derivadas del incumplimiento de indicaciones."
+      },
+      {
+        "title": "Herramientas Informativas",
+        "content": "El 'Verificador de Alimentos Tóxicos', la 'Calculadora de Edad' y otras herramientas digitales disponibles en nuestra web son de carácter informativo y orientativo. No reemplazan la consulta profesional veterinaria. Ante cualquier emergencia o duda sobre la salud de tu mascota, consulta inmediatamente con un veterinario."
+      },
+      {
+        "title": "Citas y Cancelaciones",
+        "content": "• Las citas pueden ser canceladas o reprogramadas hasta 4 horas antes sin cargo.\n• Cancelaciones con menos de 4 horas de anticipación o inasistencia sin aviso pueden generar un cargo administrativo.\n• Llegadas tardías de más de 15 minutos pueden resultar en reprogramación de la cita.\n• Nos reservamos el derecho de cancelar citas por razones operativas, notificando al cliente con la mayor anticipación posible."
+      },
+      {
+        "title": "Pagos y Precios",
+        "content": "• Los precios publicados son referenciales y pueden variar según el caso específico.\n• El presupuesto final se informa antes de realizar el servicio.\n• El pago debe realizarse al momento de recibir el servicio, salvo acuerdo previo.\n• Para procedimientos programados puede requerirse seña o pago anticipado.\n• Los productos de tienda tienen política de devolución de 7 días con factura y empaque original (excepto alimentos abiertos y medicamentos)."
+      },
+      {
+        "title": "Programa de Fidelidad",
+        "content": "• Los puntos acumulados son válidos por 12 meses desde su obtención.\n• Los puntos no son transferibles ni canjeables por dinero.\n• Nos reservamos el derecho de modificar o discontinuar el programa con aviso de 30 días.\n• El uso fraudulento resultará en la cancelación inmediata de la cuenta."
+      },
+      {
+        "title": "Propiedad Intelectual",
+        "content": "Todo el contenido de nuestra web, incluyendo textos, imágenes, logos, diseños y software, es propiedad de CavillPet o sus licenciantes. No está permitida su reproducción, distribución o uso comercial sin autorización expresa por escrito."
+      },
+      {
+        "title": "Limitación de Responsabilidad",
+        "content": "CavillPet no será responsable por:\n\n• Daños indirectos, incidentales o consecuentes derivados del uso de nuestros servicios.\n• Interrupciones en la plataforma digital por mantenimiento o causas técnicas.\n• Información proporcionada por el cliente que resulte incorrecta o incompleta.\n\nNuestra responsabilidad máxima se limita al valor del servicio contratado."
+      },
+      {
+        "title": "Ley Aplicable y Jurisdicción",
+        "content": "Estos términos se rigen por las leyes de la República del Paraguay. Cualquier controversia será sometida a los tribunales ordinarios de la ciudad de Asunción, renunciando las partes a cualquier otro fuero que pudiera corresponderles."
+      },
+      {
+        "title": "Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor desde su publicación en la web. El uso continuado de nuestros servicios implica la aceptación de los términos modificados."
+      },
+      {
+        "title": "Contacto",
+        "content": "Para consultas sobre estos términos:\n\n• Email: contacto@cavillpet.com\n• Teléfono: +595 991 965 767\n• Dirección: San Juan Bautista y Silvio Pettirossi, San Lorenzo"
+      }
+    ]
+  },
+  "cookie_policy": {
+    "title": "Política de Cookies",
+    "last_updated": "2024-12-01",
+    "content": "Utilizamos cookies para mejorar tu experiencia en nuestra web. Las cookies son pequeños archivos que se almacenan en tu dispositivo y nos ayudan a recordar tus preferencias, analizar el tráfico y personalizar contenido.\n\n**Tipos de cookies que usamos:**\n• Esenciales: Necesarias para el funcionamiento del sitio.\n• Analíticas: Nos ayudan a entender cómo usas la web.\n• Funcionales: Guardan tus preferencias.\n\nPuedes gestionar tus preferencias de cookies en la configuración de tu navegador."
+  }
+}

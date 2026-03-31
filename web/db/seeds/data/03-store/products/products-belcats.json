@@ -1,0 +1,130 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "belcats",
+  "products": [
+    {
+      "sku": "BELCATS-ADULT-10KG",
+      "name": "BelCats Adulto 10kg",
+      "description": "Alimento balanceado para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "10kg",
+          "base_price": 175000,
+          "cost_price": 105000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_766570-MLA44925817485_022021-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_766570-MLA44925817485_022021-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_885770-MLA29054372696_122018-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_630740-MLA29818558786_042019-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_957538-MLA44938566625_022021-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "30%"
+      }
+    },
+    {
+      "sku": "BELCATS-ADULT-3KG",
+      "name": "BelCats Adulto 3kg",
+      "description": "Alimento balanceado para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_766570-MLA44925817485_022021-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_766570-MLA44925817485_022021-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_885770-MLA29054372696_122018-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "30%"
+      }
+    },
+    {
+      "sku": "BELCATS-ADULT-1KG",
+      "name": "BelCats Adulto 1kg",
+      "description": "Alimento balanceado para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 28000,
+          "cost_price": 16800,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_766570-MLA44925817485_022021-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_766570-MLA44925817485_022021-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "30%"
+      }
+    },
+    {
+      "sku": "BELCATS-KITTEN-3KG",
+      "name": "BelCats Gatitos 3kg",
+      "description": "Alimento balanceado para gatitos en crecimiento",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 72000,
+          "cost_price": 43200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_914069-MLA29054372699_122018-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_914069-MLA29054372699_122018-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Gatito",
+        "protein": "34%"
+      }
+    },
+    {
+      "sku": "BELCATS-KITTEN-1KG",
+      "name": "BelCats Gatitos 1kg",
+      "description": "Alimento balanceado para gatitos en crecimiento",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 32000,
+          "cost_price": 19200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_914069-MLA29054372699_122018-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_914069-MLA29054372699_122018-O.jpg"
+      ],
+      "attributes": {
+        "life_stage": "Gatito",
+        "protein": "34%"
+      }
+    }
+  ]
+}

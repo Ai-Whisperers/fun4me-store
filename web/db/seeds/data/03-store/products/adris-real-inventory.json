@@ -1,0 +1,661 @@
+{
+  "brand_slug": "terrapet-real",
+  "description": "Real products from Veterinaria Adris inventory - January 2026",
+  "products": [
+    {
+      "sku": "DOMINAL-MAX-GATOS-9068",
+      "barcode": "7791432889068",
+      "name": "Dominal max gatos +4kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 51500,
+      "is_active": true,
+      "cost_price": 39494
+    },
+    {
+      "sku": "DOMINAL-MAX-GATOS-9051",
+      "barcode": "7791432889051",
+      "name": "Dominal max gatos Hasta 4kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 50000,
+      "is_active": true,
+      "cost_price": 38252
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9044",
+      "barcode": "7791432889044",
+      "name": "Dominal max perros + 40Kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 61000,
+      "is_active": true,
+      "cost_price": 46946
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9037",
+      "barcode": "7791432889037",
+      "name": "Dominal max perros 25 - 40kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 57500,
+      "is_active": true,
+      "cost_price": 44214
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9020",
+      "barcode": "7791432889020",
+      "name": "Dominal max perros  10 - 25kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 53500,
+      "is_active": true,
+      "cost_price": 40985
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9013",
+      "barcode": "7791432889013",
+      "name": "Dominal max perros 5 - 10kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 51500,
+      "is_active": true,
+      "cost_price": 39494
+    },
+    {
+      "sku": "DOMINAL-MAX-PERROS-9006",
+      "barcode": "7791432889006",
+      "name": "Dominal max perros  2,5 - 5kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 50000,
+      "is_active": true,
+      "cost_price": 38252
+    },
+    {
+      "sku": "NEXGARD-COMBO-0,8-5695",
+      "barcode": "4064951005695",
+      "name": "Nexgard combo 0,8 - 2,5kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 100000,
+      "is_active": true,
+      "cost_price": 78000
+    },
+    {
+      "sku": "NEXGARD-COMBO-2,5-5688",
+      "barcode": "4064951005688",
+      "name": "Nexgard combo 2,5 - 7,5kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 112000,
+      "is_active": true,
+      "cost_price": 86400
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-15,1-0942",
+      "barcode": "7730997410942",
+      "name": "Nexgard Spectra 15,1 - 30kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 105000,
+      "is_active": true,
+      "cost_price": 80400
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-7,6-0959",
+      "barcode": "7730997410959",
+      "name": "Nexgard Spectra 7,6 - 15kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 83000,
+      "is_active": true,
+      "cost_price": 63600
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-3,6-0966",
+      "barcode": "7730997410966",
+      "name": "Nexgard Spectra 3,6 - 7,5kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 75000,
+      "is_active": true,
+      "cost_price": 57000
+    },
+    {
+      "sku": "NEXGARD-SPECTRA-2-0973",
+      "barcode": "7730997410973",
+      "name": "Nexgard Spectra 2 - 3,5kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 72000,
+      "is_active": true,
+      "cost_price": 46200
+    },
+    {
+      "sku": "COLLAR-TEA-327-4124",
+      "barcode": "7791432024124",
+      "name": "Collar tea 327 Cachorro 13gr",
+      "category_slug": "ACC-PAS-COL",
+      "base_price": 51500,
+      "is_active": true,
+      "cost_price": 39338
+    },
+    {
+      "sku": "COLLAR-TEA-327-4094",
+      "barcode": "7791432024094",
+      "name": "Collar tea 327 Chicos y medianos 28gr",
+      "category_slug": "ACC-PAS-COL",
+      "base_price": 59500,
+      "is_active": true,
+      "cost_price": 45748
+    },
+    {
+      "sku": "COLLAR-TEA-327-4087",
+      "barcode": "7791432024087",
+      "name": "Collar tea 327 perros grandes 38gr",
+      "category_slug": "ACC-PAS-COL",
+      "base_price": 66000,
+      "is_active": true,
+      "cost_price": 50792
+    },
+    {
+      "sku": "COLLAR-TEA-327-4131",
+      "barcode": "7791432024131",
+      "name": "Collar tea 327 gatos 13gr",
+      "category_slug": "ACC-PAS-COL",
+      "base_price": 51500,
+      "is_active": true,
+      "cost_price": 39349
+    },
+    {
+      "sku": "COLLAR-SCALIBOR-48CM-0484",
+      "barcode": "8713184000484",
+      "name": "Collar scalibor 48cm",
+      "category_slug": "ACC-PAS-COL",
+      "base_price": 127500,
+      "is_active": true,
+      "cost_price": 98000
+    },
+    {
+      "sku": "COLLAR-SCALIBOR-65CM-0651",
+      "barcode": "8713184000651",
+      "name": "Collar scalibor 65cm",
+      "category_slug": "ACC-PAS-COL",
+      "base_price": 155000,
+      "is_active": true,
+      "cost_price": 119000
+    },
+    {
+      "sku": "AFOXOPET-2---6660",
+      "barcode": "7841567006660",
+      "name": "Afoxopet 2 - 4kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 15000,
+      "is_active": true
+    },
+    {
+      "sku": "AFOXOCAN-4,1---6670",
+      "barcode": "7841567006670",
+      "name": "Afoxocan 4,1 - 10kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 25000,
+      "is_active": true
+    },
+    {
+      "sku": "AFOXOPET-10,1---6684",
+      "barcode": "7841567006684",
+      "name": "Afoxopet 10,1 - 25kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 35000,
+      "is_active": true
+    },
+    {
+      "sku": "AFOXOPET-25,1---6691",
+      "barcode": "7841567006691",
+      "name": "Afoxopet 25,1 - 50kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 45000,
+      "is_active": true
+    },
+    {
+      "sku": "FLURAPET-10---6694",
+      "barcode": "7841567006694",
+      "name": "Flurapet 10 - 20kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 40000,
+      "is_active": true
+    },
+    {
+      "sku": "FLURAPET-20---6695",
+      "barcode": "7841567006695",
+      "name": "Flurapet 20 - 40kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 70000,
+      "is_active": true
+    },
+    {
+      "sku": "IVERM-ANTEL-PLUS-HAS-6698",
+      "barcode": "7841567006698",
+      "name": "Iverm-Antel plus hasta 11kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 13000,
+      "is_active": true
+    },
+    {
+      "sku": "IVERM-ANTEL-PLUS-12-6699",
+      "barcode": "7841567006699",
+      "name": "Iverm-Antel plus 12 - 22kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 15000,
+      "is_active": true
+    },
+    {
+      "sku": "IVERM-ANTEL-PLUS-23-6700",
+      "barcode": "7841567006700",
+      "name": "Iverm-Antel plus 23 - 45kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 22000,
+      "is_active": true
+    },
+    {
+      "sku": "FIPROMET-0,8---6705",
+      "barcode": "7841567006705",
+      "name": "Fipromet 0,8 - 2,4kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 46000,
+      "is_active": true
+    },
+    {
+      "sku": "FIPROMET-2,5---6706",
+      "barcode": "7841567006706",
+      "name": "Fipromet 2,5 - 7,4kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 50000,
+      "is_active": true
+    },
+    {
+      "sku": "FINTOX-PETS-1-8772",
+      "barcode": "7840282038772",
+      "name": "Fintox Pets 1 - 10kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 17500,
+      "is_active": true
+    },
+    {
+      "sku": "FINTOX-PETS-10-8789",
+      "barcode": "7840282038789",
+      "name": "Fintox Pets 10 - 20kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 18500,
+      "is_active": true
+    },
+    {
+      "sku": "FINTOX-PETS-20-8796",
+      "barcode": "7840282038796",
+      "name": "Fintox Pets 20 - 40kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 23000,
+      "is_active": true
+    },
+    {
+      "sku": "SHOOTER-TOTAL-1-4732",
+      "barcode": "7730952034732",
+      "name": "Shooter Total 1 - 4kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 40000,
+      "is_active": true
+    },
+    {
+      "sku": "SHOOTER-TOTAL-4-4749",
+      "barcode": "7730952034749",
+      "name": "Shooter Total 4 - 8kg",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 41000,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-TALCO-4437",
+      "barcode": "7841567004437",
+      "name": "Galpet Talco",
+      "category_slug": "ACC-HIG",
+      "base_price": 16000,
+      "is_active": true
+    },
+    {
+      "sku": "FIPECTO-SPRAY-4440",
+      "barcode": "7841567004440",
+      "name": "Fipecto Spray",
+      "category_slug": "FAR-ANT-EXT",
+      "base_price": 15000,
+      "is_active": true
+    },
+    {
+      "sku": "SANIPPEL-9328",
+      "barcode": "7840282039328",
+      "name": "Sanippel",
+      "category_slug": "ACC-HIG",
+      "base_price": 28500,
+      "is_active": true,
+      "cost_price": 22000
+    },
+    {
+      "sku": "LUKY-DOG-SUAVE-2334",
+      "barcode": "7898923822334",
+      "name": "Luky Dog Suave",
+      "category_slug": "ACC-HIG",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 20214
+    },
+    {
+      "sku": "LUKY-DOG-HERVA-4404",
+      "barcode": "7898923774404",
+      "name": "Luky Dog Herva Santa Maria",
+      "category_slug": "ACC-HIG",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 20214
+    },
+    {
+      "sku": "LUKY-DOG-HIPOALERGEN-2341",
+      "barcode": "7898923822341",
+      "name": "Luky Dog Hipoalergenico",
+      "category_slug": "ACC-HIG",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 20214
+    },
+    {
+      "sku": "GALPET-COLONIA-HEMBR-4666",
+      "barcode": "7841567004666",
+      "name": "Galpet Colonia Hembras",
+      "category_slug": "ACC-HIG",
+      "base_price": 20000,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-COLONIA-MACHO-4659",
+      "barcode": "7841567004659",
+      "name": "Galpet Colonia Machos",
+      "category_slug": "ACC-HIG",
+      "base_price": 20000,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-COLONIA-REPEL-4420",
+      "barcode": "7841567004420",
+      "name": "Galpet Colonia Repelente",
+      "category_slug": "ACC-HIG",
+      "base_price": 20000,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIP-4833",
+      "barcode": "7841567004833",
+      "name": "Galpet shampoo Antiparasitario 500ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 25000,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIS-4888",
+      "barcode": "7841567004888",
+      "name": "Galpet Shampoo Antiseptico 500ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 25000,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIM-4880",
+      "barcode": "7841567004880",
+      "name": "Galpet Shampoo Antimicotico 500ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 32500,
+      "is_active": true
+    },
+    {
+      "sku": "GALPET-SHAMPOO-ANTIP-4987",
+      "barcode": "7841567004987",
+      "name": "Galpet shampoo Antiparasitario 1L",
+      "category_slug": "ACC-HIG",
+      "base_price": 45000,
+      "is_active": true
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-ANTIPA-7898",
+      "barcode": "7840282037898",
+      "name": "Puppy Shampoo Antiparasitario 330ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 18500,
+      "is_active": true
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-ANTIMI-0010",
+      "barcode": "7840282040010",
+      "name": "Puppy Shampoo Antimicotico 330ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 46000,
+      "is_active": true
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-HIPOAL-0843",
+      "barcode": "7840282040843",
+      "name": "Puppy Shampoo Hipoalergenico 330ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 34500,
+      "is_active": true
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-NORMAL-7924",
+      "barcode": "7840282037924",
+      "name": "Puppy Shampoo Normal 330ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 16500,
+      "is_active": true
+    },
+    {
+      "sku": "PUPPY-SHAMPOO-MEDICA-7920",
+      "barcode": "7840282037920",
+      "name": "Puppy Shampoo Medicado 330ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 34500,
+      "is_active": true
+    },
+    {
+      "sku": "PUPPY-ACONDICIONADOR-8864",
+      "barcode": "7840282038864",
+      "name": "Puppy Acondicionador 330ml",
+      "category_slug": "ACC-HIG",
+      "base_price": 24500,
+      "is_active": true
+    },
+    {
+      "sku": "SAND-CAT-4KG-0211",
+      "barcode": "7842249000211",
+      "name": "Sand Cat 4kg",
+      "category_slug": "ACC-HIG",
+      "base_price": 37000,
+      "is_active": true,
+      "cost_price": 28314
+    },
+    {
+      "sku": "NUTRIMIX-CACHORROS-1-0017",
+      "barcode": "7841606000017",
+      "name": "nutrimix cachorros 1,5kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 16500,
+      "is_active": true
+    },
+    {
+      "sku": "NUTRIMIX-GATOS-1KG-0116",
+      "barcode": "7841606000116",
+      "name": "nutrimix gatos 1kg",
+      "category_slug": "NUT-FEL-SEC",
+      "base_price": 13500,
+      "is_active": true
+    },
+    {
+      "sku": "NUTRIMIX-RAZAS-GRAND-0048",
+      "barcode": "7841606000048",
+      "name": "nutrimix razas grandes 3kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 20000,
+      "is_active": true
+    },
+    {
+      "sku": "NUTRIMIX-RAZAS-GRAND-0055",
+      "barcode": "7841606000055",
+      "name": "nutrimix razas grandes 8kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 53000,
+      "is_active": true
+    },
+    {
+      "sku": "NUTRIMIX-RAZAS-GRAND-0062",
+      "barcode": "7841606000062",
+      "name": "nutrimix razas grandes 15kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 87000,
+      "is_active": true
+    },
+    {
+      "sku": "BRAVO-CORDERO-&-5481",
+      "barcode": "7896803075481",
+      "name": "Bravo Cordero & Arroz 1kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 21500,
+      "is_active": true,
+      "cost_price": 16500
+    },
+    {
+      "sku": "BRAVO-PEQUENAS-RAZAS-2411",
+      "barcode": "7896803072411",
+      "name": "Bravo pequeñas Razas 1kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 24000,
+      "is_active": true,
+      "cost_price": 18300
+    },
+    {
+      "sku": "BRAVO-FRANGO-Y-5580",
+      "barcode": "7896803075580",
+      "name": "Bravo Frango y legumbres ",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 36000,
+      "is_active": true
+    },
+    {
+      "sku": "ASTRO-SENIOR-900GR-0003",
+      "barcode": "7896803080003",
+      "name": "Astro Senior 900gr",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 28000,
+      "is_active": true
+    },
+    {
+      "sku": "HOP!-RAZAS-PEQUENAS-8255",
+      "barcode": "7798098848255",
+      "name": "Hop! Razas pequeñas 3kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 69500,
+      "is_active": true,
+      "cost_price": 55359
+    },
+    {
+      "sku": "HOP!-RAZAS-GRANDES-8217",
+      "barcode": "7798098848217",
+      "name": "Hop! Razas Grandes 3kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 69500,
+      "is_active": true,
+      "cost_price": 55359
+    },
+    {
+      "sku": "BELCATS-1KG-6664",
+      "barcode": "7798098846664",
+      "name": "BelCats 1kg",
+      "category_slug": "NUT-FEL-SEC",
+      "base_price": 26500,
+      "is_active": true,
+      "cost_price": 21165
+    },
+    {
+      "sku": "BELCAN-1,5-KG-6640",
+      "barcode": "7798098846640",
+      "name": "BelCan 1,5 kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 27800,
+      "is_active": true,
+      "cost_price": 22227
+    },
+    {
+      "sku": "BELCAN-3-KG-6626",
+      "barcode": "7798098846626",
+      "name": "BelCan 3 kg",
+      "category_slug": "NUT-CAN-SEC",
+      "base_price": 51500,
+      "is_active": true,
+      "cost_price": 41126
+    },
+    {
+      "sku": "WET-COMPLETE-CAT-0197",
+      "barcode": "7798429430197",
+      "name": "Wet complete Cat Adult CARNE 340 gr",
+      "category_slug": "NUT-FEL-HUM",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 19400
+    },
+    {
+      "sku": "WET-COMPLETE-CAT-0227",
+      "barcode": "7798429430227",
+      "name": "Wet complete Cat Adult SARDINA 340 gr",
+      "category_slug": "NUT-FEL-HUM",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 19400
+    },
+    {
+      "sku": "WET-COMPLETE-DOG-9603",
+      "barcode": "7798098849603",
+      "name": "Wet complete Dog Adult CARNE 340 gr",
+      "category_slug": "NUT-CAN-HUM",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 19400
+    },
+    {
+      "sku": "WET-COMPLETE-CAT-9610",
+      "barcode": "7798098849610",
+      "name": "Wet complete Cat Adult POLLO 340 gr",
+      "category_slug": "NUT-FEL-HUM",
+      "base_price": 25000,
+      "is_active": true,
+      "cost_price": 19400
+    },
+    {
+      "sku": "WET-BALANCED-DOG-9399",
+      "barcode": "7798098849399",
+      "name": "Wet Balanced Dog Adult CARNE 85gr",
+      "category_slug": "NUT-CAN-HUM",
+      "base_price": 11300,
+      "is_active": true,
+      "cost_price": 8700
+    },
+    {
+      "sku": "WET-BALANCED-DOG-9429",
+      "barcode": "7798098849429",
+      "name": "Wet Balanced Dog Adult POLLO 85gr",
+      "category_slug": "NUT-CAN-HUM",
+      "base_price": 11300,
+      "is_active": true,
+      "cost_price": 8700
+    },
+    {
+      "sku": "WET-BALANCED-CAT-9337",
+      "barcode": "7798098849337",
+      "name": "Wet Balanced Cat Adult MERLUZA 85gr",
+      "category_slug": "NUT-FEL-HUM",
+      "base_price": 11300,
+      "is_active": true,
+      "cost_price": 8700
+    },
+    {
+      "sku": "WET-BALANCED-CAT-9344",
+      "barcode": "7798098849344",
+      "name": "Wet Balanced Cat Adult POLLO 85gr",
+      "category_slug": "NUT-FEL-HUM",
+      "base_price": 11300,
+      "is_active": true,
+      "cost_price": 8700
+    }
+  ]
+}

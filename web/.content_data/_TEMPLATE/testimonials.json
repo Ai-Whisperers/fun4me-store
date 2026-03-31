@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "author": "Nombre Cliente",
+    "rating": 5,
+    "text": "Comentario del cliente.",
+    "date": "2024-01-01",
+    "source": "Google"
+  }
+]

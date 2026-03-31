@@ -1,0 +1,175 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Loyalty point transactions: earn (purchases), redeem (discounts), bonus (promotions), adjust (corrections), expire",
+  "loyalty_transactions": [
+    {
+      "id": "lt-001-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "type": "earn",
+      "points": 250,
+      "description": "Puntos por consulta veterinaria",
+      "invoice_id": "inv-001-terrapet",
+      "balance_after": 2250,
+      "created_at": "{{daysAgo(10)}}"
+    },
+    {
+      "id": "lt-002-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "type": "earn",
+      "points": 350,
+      "description": "Puntos por compra en tienda",
+      "order_id": "ord-001-terrapet",
+      "balance_after": 2600,
+      "created_at": "{{daysAgo(8)}}"
+    },
+    {
+      "id": "lt-003-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "type": "redeem",
+      "points": -150,
+      "description": "Canje por descuento en productos",
+      "balance_after": 2450,
+      "created_at": "{{daysAgo(2)}}"
+    },
+    {
+      "id": "lt-004-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440002",
+      "type": "earn",
+      "points": 145,
+      "description": "Puntos por consulta de seguimiento",
+      "invoice_id": "inv-002-terrapet",
+      "balance_after": 745,
+      "created_at": "{{daysAgo(8)}}"
+    },
+    {
+      "id": "lt-005-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440002",
+      "type": "bonus",
+      "points": 200,
+      "description": "Bono por cumpleaños de mascota",
+      "balance_after": 945,
+      "expires_at": "{{daysFromNow(30)}}",
+      "created_at": "{{daysAgo(7)}}"
+    },
+    {
+      "id": "lt-006-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440002",
+      "type": "redeem",
+      "points": -55,
+      "description": "Canje por descuento en servicio",
+      "balance_after": 890,
+      "created_at": "{{daysAgo(5)}}"
+    },
+    {
+      "id": "lt-007-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440006",
+      "type": "earn",
+      "points": 120,
+      "description": "Puntos por primera compra",
+      "order_id": "ord-003-terrapet",
+      "balance_after": 220,
+      "created_at": "{{daysAgo(30)}}"
+    },
+    {
+      "id": "lt-008-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440006",
+      "type": "bonus",
+      "points": 100,
+      "description": "Bono de bienvenida",
+      "balance_after": 320,
+      "expires_at": "{{daysFromNow(60)}}",
+      "created_at": "{{daysAgo(10)}}"
+    },
+    {
+      "id": "lt-009-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440007",
+      "type": "earn",
+      "points": 450,
+      "description": "Puntos por cirugía mayor",
+      "invoice_id": "inv-004-terrapet",
+      "balance_after": 5230,
+      "created_at": "{{daysAgo(18)}}"
+    },
+    {
+      "id": "lt-010-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440007",
+      "type": "earn",
+      "points": 280,
+      "description": "Puntos por compra de alimentos premium",
+      "order_id": "ord-008-terrapet",
+      "balance_after": 5510,
+      "created_at": "{{daysAgo(15)}}"
+    },
+    {
+      "id": "lt-011-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440007",
+      "type": "bonus",
+      "points": 500,
+      "description": "Bono por alcanzar nivel Platinum",
+      "balance_after": 6010,
+      "created_at": "{{daysAgo(10)}}"
+    },
+    {
+      "id": "lt-012-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440007",
+      "type": "redeem",
+      "points": -330,
+      "description": "Canje por baño gratis",
+      "balance_after": 5680,
+      "created_at": "{{daysAgo(1)}}"
+    },
+    {
+      "id": "lt-013-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "type": "bonus",
+      "points": 100,
+      "description": "Bono por referir amigo",
+      "balance_after": 2100,
+      "created_at": "{{daysAgo(20)}}"
+    },
+    {
+      "id": "lt-014-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "type": "expire",
+      "points": -50,
+      "description": "Puntos expirados (no utilizados)",
+      "balance_after": 2050,
+      "created_at": "{{daysAgo(15)}}"
+    },
+    {
+      "id": "lt-015-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440002",
+      "type": "earn",
+      "points": 180,
+      "description": "Puntos por vacunación anual",
+      "invoice_id": "inv-006-terrapet",
+      "balance_after": 600,
+      "created_at": "{{daysAgo(25)}}"
+    },
+    {
+      "id": "lt-016-terrapet",
+      "tenant_id": "terrapet",
+      "client_id": "550e8400-e29b-41d4-a716-446655440001",
+      "type": "adjust",
+      "points": 50,
+      "description": "Ajuste por error en cálculo anterior",
+      "balance_after": 2100,
+      "created_at": "{{daysAgo(12)}}"
+    }
+  ]
+}

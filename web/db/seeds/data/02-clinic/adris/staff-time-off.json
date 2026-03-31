@@ -1,0 +1,41 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Staff time-off requests with dynamic dates. Uses staff_profiles.id (UUID) and time_off_types.code",
+  "staff_time_off": [
+    {
+      "id": "e0000001-0001-0001-0001-000000000001",
+      "staff_id": "a0000001-0001-0001-0001-000000000001",
+      "tenant_id": "terrapet",
+      "type_code": "VAC",
+      "start_date": "{{daysFromNow(14)}}",
+      "end_date": "{{daysFromNow(21)}}",
+      "status": "approved",
+      "reason": "Vacaciones de verano planificadas",
+      "approved_by": "550e8400-e29b-41d4-a716-446655440005",
+      "approved_at": "{{daysAgo(30)}}"
+    },
+    {
+      "id": "e0000001-0001-0001-0001-000000000002",
+      "staff_id": "a0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "type_code": "SICK",
+      "start_date": "{{daysAgo(5)}}",
+      "end_date": "{{daysAgo(5)}}",
+      "status": "approved",
+      "reason": "Enfermedad leve",
+      "notes": "Reposo médico indicado",
+      "approved_by": "550e8400-e29b-41d4-a716-446655440004",
+      "approved_at": "{{daysAgo(5)}}"
+    },
+    {
+      "id": "e0000001-0001-0001-0001-000000000003",
+      "staff_id": "a0000001-0001-0001-0001-000000000002",
+      "tenant_id": "terrapet",
+      "type_code": "PERS",
+      "start_date": "{{daysFromNow(30)}}",
+      "end_date": "{{daysFromNow(31)}}",
+      "status": "pending",
+      "reason": "Asuntos personales"
+    }
+  ]
+}

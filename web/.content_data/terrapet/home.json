@@ -1,0 +1,130 @@
+{
+  "hero": {
+    "badge_text": "Urgencias 24hs",
+    "headline": "Cuidado Experto, Amor Incondicional.",
+    "subhead": "La clínica veterinaria más completa de Asunción. Tecnología de punta, equipo especializado y atención con el cariño que tu mascota merece.",
+    "cta_primary": "Agendar Turno",
+    "cta_secondary": "Ver Servicios",
+    "trust_badges": [
+      { "icon": "shield-check", "text": "Certificados SENACSA" },
+      { "icon": "clock", "text": "24/7 Emergencias" },
+      { "icon": "award", "text": "+8 años de experiencia" }
+    ]
+  },
+  "features": [
+    {
+      "icon": "heart-pulse",
+      "title": "Clínica General",
+      "text": "Atención integral para el día a día de tu mascota. Consultas, controles y seguimiento personalizado."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Vacunas Certificadas",
+      "text": "Historial 100% digital, certificados SENACSA y recordatorios automáticos. Todo en un solo lugar."
+    },
+    {
+      "icon": "clock",
+      "title": "Urgencias 24hs",
+      "text": "Siempre abiertos para casos críticos. Veterinario de guardia disponible todos los días del año."
+    },
+    {
+      "icon": "microscope",
+      "title": "Diagnóstico Avanzado",
+      "text": "Laboratorio propio, ecografía Doppler, rayos X digitales y más. Resultados en el momento."
+    },
+    {
+      "icon": "scissors",
+      "title": "Spa & Grooming",
+      "text": "Peluquería premium con productos importados. Dejamos a tu mascota como de revista."
+    },
+    {
+      "icon": "truck",
+      "title": "Delivery de Productos",
+      "text": "Te llevamos alimentos, medicamentos y accesorios a tu casa. Gratis en compras mayores a 150.000 Gs."
+    }
+  ],
+  "promo_banner": {
+    "enabled": false,
+    "text": "",
+    "link": "",
+    "expires": ""
+  },
+  "stats_section": {
+    "enabled": true,
+    "title": "Números que nos respaldan",
+    "stats": [
+      { "value": "8+", "label": "Años de Experiencia" },
+      { "value": "15.000+", "label": "Mascotas Atendidas" },
+      { "value": "4.9", "label": "Calificación Google" },
+      { "value": "24/7", "label": "Atención Urgencias" }
+    ]
+  },
+  "interactive_tools_section": {
+    "enabled": true,
+    "title": "¿Dudas Rápidas?",
+    "subtitle": "Usa nuestras herramientas gratuitas mientras esperas. Información verificada por veterinarios.",
+    "toxic_food_cta": "Verificador de Alimentos Tóxicos",
+    "age_calc_cta": "Calculadora de Edad",
+    "tools": [
+      {
+        "id": "toxic-food",
+        "icon": "alert-triangle",
+        "title": "¿Es Tóxico?",
+        "description": "Verifica si un alimento es seguro para tu mascota",
+        "color": "#EF4444"
+      },
+      {
+        "id": "age-calculator",
+        "icon": "calculator",
+        "title": "Edad Humana",
+        "description": "Calcula la edad equivalente de tu mascota",
+        "color": "#3B82F6"
+      }
+    ]
+  },
+  "services_preview": {
+    "enabled": true,
+    "title": "Servicios Destacados",
+    "subtitle": "Todo lo que necesita tu mascota en un solo lugar",
+    "featured_services": ["consultation", "vaccination", "grooming", "surgery"],
+    "cta_text": "Ver Todos los Servicios"
+  },
+  "testimonials_section": {
+    "enabled": true,
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Historias reales de mascotas felices y dueños satisfechos.",
+    "show_count": 3
+  },
+  "partners_section": {
+    "enabled": true,
+    "title": "Marcas que Trabajamos",
+    "logos": [
+      { "name": "Royal Canin", "image": "/branding/terrapet/images/brands/royal-canin.png" },
+      { "name": "Pro Plan", "image": "/branding/terrapet/images/brands/pro-plan.png" },
+      { "name": "Hill's", "image": "/branding/terrapet/images/brands/hills.png" },
+      { "name": "Bravecto", "image": "/branding/terrapet/images/brands/bravecto.png" }
+    ]
+  },
+  "cta_section": {
+    "enabled": true,
+    "title": "¿Tu mascota necesita atención?",
+    "subtitle": "Agenda una cita o comunícate con nosotros por WhatsApp",
+    "primary_cta": "Agendar Cita",
+    "secondary_cta": "Escribir por WhatsApp"
+  },
+  "seo": {
+    "meta_title": "Veterinaria Adris | Clínica Veterinaria 24hs en Asunción, Paraguay",
+    "meta_description": "Clínica veterinaria líder en Asunción. Urgencias 24hs, vacunación certificada SENACSA, cirugía, diagnóstico avanzado y carnet digital para perros y gatos. Av. Santa Teresa.",
+    "keywords": [
+      "veterinaria asuncion",
+      "veterinaria 24 horas",
+      "urgencias veterinarias",
+      "vacunas perros",
+      "vacunas gatos",
+      "peluqueria canina",
+      "veterinario santa teresa"
+    ],
+    "og_type": "website",
+    "og_locale": "es_PY"
+  }
+}

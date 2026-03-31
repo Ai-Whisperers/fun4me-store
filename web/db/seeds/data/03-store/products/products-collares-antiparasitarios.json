@@ -1,0 +1,180 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "collares-antiparasitarios",
+  "products": [
+    {
+      "sku": "COLLAR-TEA-DOG-S",
+      "name": "Collar Tea Perros Pequeños",
+      "description": "Collar antiparasitario natural para perros pequeños con aceite de árbol de té",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "Pequeño (hasta 8kg)",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Cat-Collar.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://www.msd-animal-health-hub.co.uk/sites/default/files/styles/image_square/public/content/image/scalibor_protectorband_0824_packshot.png"
+      ],
+      "attributes": {
+        "active_ingredient": "Aceite de árbol de té",
+        "duration": "90 días",
+        "size": "35cm"
+      }
+    },
+    {
+      "sku": "COLLAR-TEA-DOG-M",
+      "name": "Collar Tea Perros Medianos",
+      "description": "Collar antiparasitario natural para perros medianos con aceite de árbol de té",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "Mediano (8-20kg)",
+          "base_price": 40000,
+          "cost_price": 24000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Cat-Collar.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://www.msd-animal-health-hub.co.uk/sites/default/files/styles/image_square/public/content/image/scalibor_protectorband_0824_packshot.png"
+      ],
+      "attributes": {
+        "active_ingredient": "Aceite de árbol de té",
+        "duration": "90 días",
+        "size": "48cm"
+      }
+    },
+    {
+      "sku": "COLLAR-TEA-DOG-L",
+      "name": "Collar Tea Perros Grandes",
+      "description": "Collar antiparasitario natural para perros grandes con aceite de árbol de té",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "Grande (+20kg)",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Cat-Collar.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://www.msd-animal-health-hub.co.uk/sites/default/files/styles/image_square/public/content/image/scalibor_protectorband_0824_packshot.png"
+      ],
+      "attributes": {
+        "active_ingredient": "Aceite de árbol de té",
+        "duration": "90 días",
+        "size": "66cm"
+      }
+    },
+    {
+      "sku": "COLLAR-TEA-CAT",
+      "name": "Collar Tea Gatos",
+      "description": "Collar antiparasitario natural para gatos con aceite de árbol de té",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "Gatos",
+          "base_price": 32000,
+          "cost_price": 19200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Cat-Collar.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Cat-Collar.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/08/Tea-327-Collar-for-Dogs.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://www.msd-animal-health-hub.co.uk/sites/default/files/styles/image_square/public/content/image/scalibor_protectorband_0824_packshot.png"
+      ],
+      "attributes": {
+        "active_ingredient": "Aceite de árbol de té",
+        "duration": "90 días",
+        "size": "30cm"
+      }
+    },
+    {
+      "sku": "COLLAR-SCALIBOR-DOG-S",
+      "name": "Collar Scalibor Perros Pequeños/Medianos",
+      "description": "Collar antiparasitario de larga duración contra pulgas, garrapatas y mosquitos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "48cm",
+          "base_price": 120000,
+          "cost_price": 72000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+      "images": [
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://www.msd-animal-health-hub.co.uk/sites/default/files/styles/image_square/public/content/image/scalibor_protectorband_0824_packshot.png",
+        "https://canadapetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://canadapetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Deltametrina 4%",
+        "duration": "6 meses",
+        "size": "48cm"
+      }
+    },
+    {
+      "sku": "COLLAR-SCALIBOR-DOG-L",
+      "name": "Collar Scalibor Perros Grandes",
+      "description": "Collar antiparasitario de larga duración contra pulgas, garrapatas y mosquitos para razas grandes",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "65cm",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+      "images": [
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://www.msd-animal-health-hub.co.uk/sites/default/files/styles/image_square/public/content/image/scalibor_protectorband_0824_packshot.png",
+        "https://canadapetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-large-65-cm-1600.jpg",
+        "https://budgetvetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg",
+        "https://canadapetcare.b-cdn.net/images/ProductImagesNew/scalibor-tick-collars-adjustable-smlmed-48-cm-1600.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Deltametrina 4%",
+        "duration": "6 meses",
+        "size": "65cm"
+      }
+    }
+  ]
+}

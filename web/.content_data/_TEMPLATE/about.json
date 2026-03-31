@@ -1,0 +1,13 @@
+{
+  "intro": {
+    "title": "Nuestra Historia",
+    "text": "Texto sobre la historia de la clínica..."
+  },
+  "team": [
+    {
+      "name": "Nombre Doctor",
+      "role": "Cargo",
+      "bio": "Biografía breve."
+    }
+  ]
+}

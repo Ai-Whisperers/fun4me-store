@@ -1,0 +1,39 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2017",
+    "strict": true,
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo-memory-check",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    // Memory optimization
+    "preserveWatchOutput": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "db/**/*",
+    "lib/components/**/*",
+    "lib/middleware/**/*", 
+    "scripts/**/*",
+    "supabase/**/*",
+    "tests/**/*",
+    "test-*/**/*",
+    "e2e/**/*",
+    "playwright*",
+    ".next/**/*",
+    "dist/**/*",
+    "build/**/*",
+    "coverage/**/*"
+  ]
+}

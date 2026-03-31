@@ -1,0 +1,26 @@
+# Robots.txt for Vetic - Multi-tenant Veterinary Platform
+# https://Vetic.vercel.app
+
+User-agent: *
+
+# Allow all public pages
+Allow: /
+
+# Block authenticated/private areas
+Disallow: /*/portal/
+Disallow: /*/dashboard/
+Disallow: /api/
+Disallow: /auth/
+
+# Block internal routes
+Disallow: /_next/
+Disallow: /static/
+
+# Allow specific API endpoints for SEO tools
+Allow: /api/og/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://Vetic.vercel.app/sitemap.xml

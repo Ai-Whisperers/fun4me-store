@@ -1,0 +1,165 @@
+{
+  "$schema": "../_schemas/reference.schema.json",
+  "vaccine_protocols": [
+    {
+      "vaccine_name": "Antirrábica",
+      "vaccine_code": "RAB",
+      "species": "dog",
+      "type": "core",
+      "diseases_prevented": ["Rabia"],
+      "first_dose_weeks": 12,
+      "booster_weeks": [16],
+      "revaccination_months": 12,
+      "notes": "Obligatoria por ley. Única dosis a partir de 12 semanas, refuerzo anual."
+    },
+    {
+      "vaccine_name": "Antirrábica",
+      "vaccine_code": "RAB",
+      "species": "cat",
+      "type": "core",
+      "diseases_prevented": ["Rabia"],
+      "first_dose_weeks": 12,
+      "booster_weeks": [16],
+      "revaccination_months": 12,
+      "notes": "Obligatoria. Única dosis a partir de 12 semanas, refuerzo anual."
+    },
+    {
+      "vaccine_name": "Séxtuple Canina (DHLPP)",
+      "vaccine_code": "DHLPP",
+      "species": "dog",
+      "type": "core",
+      "diseases_prevented": [
+        "Distemper",
+        "Hepatitis",
+        "Leptospirosis",
+        "Parvovirus",
+        "Parainfluenza"
+      ],
+      "first_dose_weeks": 6,
+      "booster_weeks": [9, 12, 16],
+      "revaccination_months": 12,
+      "notes": "Protocolo estándar: 6, 9, 12 y 16 semanas. Refuerzo anual."
+    },
+    {
+      "vaccine_name": "Quíntuple Canina (DHPP)",
+      "vaccine_code": "DHPP",
+      "species": "dog",
+      "type": "core",
+      "diseases_prevented": ["Distemper", "Hepatitis", "Parvovirus", "Parainfluenza"],
+      "first_dose_weeks": 6,
+      "booster_weeks": [9, 12, 16],
+      "revaccination_months": 12,
+      "notes": "Alternativa sin Leptospirosis para áreas de bajo riesgo."
+    },
+    {
+      "vaccine_name": "Parvovirus Canino (Monovalente)",
+      "vaccine_code": "PARVO",
+      "species": "dog",
+      "type": "core",
+      "diseases_prevented": ["Parvovirus"],
+      "first_dose_weeks": 4,
+      "booster_weeks": [6, 8, 12, 16],
+      "revaccination_months": 12,
+      "notes": "Para cachorros de alto riesgo, iniciar a las 4 semanas."
+    },
+    {
+      "vaccine_name": "Bordetella (Tos de Perrera)",
+      "vaccine_code": "KC",
+      "species": "dog",
+      "type": "non-core",
+      "diseases_prevented": ["Tos de Perrera", "Bordetella bronchiseptica"],
+      "first_dose_weeks": 8,
+      "booster_weeks": [],
+      "revaccination_months": 6,
+      "notes": "Recomendada para perros en contacto con otros (peluquerías, guarderías, parques)."
+    },
+    {
+      "vaccine_name": "Leptospirosis (4 serovariedades)",
+      "vaccine_code": "L4",
+      "species": "dog",
+      "type": "non-core",
+      "diseases_prevented": ["Leptospirosis"],
+      "first_dose_weeks": 8,
+      "booster_weeks": [12],
+      "revaccination_months": 12,
+      "notes": "Recomendada en áreas endémicas o con exposición a agua estancada."
+    },
+    {
+      "vaccine_name": "Giardia",
+      "vaccine_code": "GIAR",
+      "species": "dog",
+      "type": "optional",
+      "diseases_prevented": ["Giardiasis"],
+      "first_dose_weeks": 8,
+      "booster_weeks": [12],
+      "revaccination_months": 12,
+      "notes": "Considerada en áreas con alta prevalencia."
+    },
+    {
+      "vaccine_name": "Triple Felina (FVRCP)",
+      "vaccine_code": "FVRCP",
+      "species": "cat",
+      "type": "core",
+      "diseases_prevented": ["Rinotraqueitis", "Calicivirus", "Panleucopenia"],
+      "first_dose_weeks": 6,
+      "booster_weeks": [9, 12, 16],
+      "revaccination_months": 12,
+      "notes": "Protocolo estándar: 6, 9, 12 y 16 semanas. Gatos adultos: cada 1-3 años según riesgo."
+    },
+    {
+      "vaccine_name": "Leucemia Felina (FeLV)",
+      "vaccine_code": "FELV",
+      "species": "cat",
+      "type": "non-core",
+      "diseases_prevented": ["Leucemia Felina"],
+      "first_dose_weeks": 8,
+      "booster_weeks": [12],
+      "revaccination_months": 12,
+      "notes": "Recomendada para gatos con acceso al exterior o contacto con gatos desconocidos. Test FeLV negativo antes de vacunar."
+    },
+    {
+      "vaccine_name": "Clamidiosis Felina",
+      "vaccine_code": "CHLAM",
+      "species": "cat",
+      "type": "optional",
+      "diseases_prevented": ["Clamidiosis", "Conjuntivitis por Chlamydia"],
+      "first_dose_weeks": 9,
+      "booster_weeks": [12],
+      "revaccination_months": 12,
+      "notes": "Considerada en gatos de criaderos o refugios con brotes confirmados."
+    },
+    {
+      "vaccine_name": "PIF (Peritonitis Infecciosa Felina)",
+      "vaccine_code": "FIP",
+      "species": "cat",
+      "type": "optional",
+      "diseases_prevented": ["Peritonitis Infecciosa Felina"],
+      "first_dose_weeks": 16,
+      "booster_weeks": [19],
+      "revaccination_months": 12,
+      "notes": "Eficacia limitada. Solo intranasal. Uso controversial."
+    },
+    {
+      "vaccine_name": "Mixomatosis",
+      "vaccine_code": "MYX",
+      "species": "rabbit",
+      "type": "core",
+      "diseases_prevented": ["Mixomatosis"],
+      "first_dose_weeks": 8,
+      "booster_weeks": [],
+      "revaccination_months": 6,
+      "notes": "Esencial en áreas endémicas. Revacunación cada 6 meses."
+    },
+    {
+      "vaccine_name": "Enfermedad Hemorrágica Viral (RHD)",
+      "vaccine_code": "RHD",
+      "species": "rabbit",
+      "type": "core",
+      "diseases_prevented": ["Enfermedad Hemorrágica Viral del Conejo"],
+      "first_dose_weeks": 8,
+      "booster_weeks": [],
+      "revaccination_months": 12,
+      "notes": "Incluir RHD2 para cobertura completa."
+    }
+  ]
+}

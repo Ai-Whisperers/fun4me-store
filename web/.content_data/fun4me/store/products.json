@@ -1,0 +1,921 @@
+{
+  "meta": {
+    "title": "Tienda Fun4Me",
+    "subtitle": "Productos de calidad para tu placer y bienestar",
+    "currency": "PYG",
+    "shipping": {
+      "free_threshold": 200000,
+      "express_price": 50000,
+      "standard_price": 25000,
+      "discrete_note": "Todos los envíos son 100% discretos"
+    }
+  },
+  "categories": [
+    {
+      "id": "vibradores",
+      "name": "Vibradores",
+      "icon": "sparkles",
+      "description": "Desde clásicos hasta tecnología de punta"
+    },
+    {
+      "id": "dildos",
+      "name": "Dildos",
+      "icon": "adjustments-vertical",
+      "description": "Realistas, fantasy y de todas las formas"
+    },
+    {
+      "id": "anal",
+      "name": "Juguetes Anales",
+      "icon": "arrow-uturn-down",
+      "description": "Explorá nuevos territorios de placer"
+    },
+    {
+      "id": "parejas",
+      "name": "Para Parejas",
+      "icon": "heart",
+      "description": "Juguetes diseñados para compartir"
+    },
+    {
+      "id": "bdsm",
+      "name": "BDSM & Fetish",
+      "icon": "link",
+      "description": "Equipamiento para juegos de poder"
+    },
+    {
+      "id": "lenceria",
+      "name": "Lencería",
+      "icon": "gift",
+      "description": "Piezas sensuales y provocativas"
+    },
+    {
+      "id": "lubricantes",
+      "name": "Lubricantes",
+      "icon": "beaker",
+      "description": "Mejora cada experiencia"
+    },
+    {
+      "id": "bienestar",
+      "name": "Bienestar Íntimo",
+      "icon": "shield-check",
+      "description": "Cuidado y salud sexual"
+    },
+    {
+      "id": "accesorios",
+      "name": "Accesorios",
+      "icon": "squares-2x2",
+      "description": "Complementos y extras"
+    }
+  ],
+  "featured_products": ["lelo-sona-2", "we-vibe-sync", "satisfyer-pro-2", "lelo-hugo"],
+  "products": [
+    {
+      "id": "satisfyer-pro-2",
+      "sku": "SAT-PRO2-RG",
+      "name": "Satisfyer Pro 2",
+      "brand": "Satisfyer",
+      "category": "vibradores",
+      "subcategory": "succionadores",
+      "short_description": "El fenómeno mundial de succión por ondas de presión",
+      "description": "El Satisfyer Pro 2 revolucionó el mercado con su tecnología Air-Pulse que estimula el clítoris sin contacto directo. 11 intensidades de succión para orgasmos intensos y múltiples.",
+      "price": 580000,
+      "price_display": "Gs. 580.000",
+      "compare_price": 720000,
+      "compare_display": "Gs. 720.000",
+      "in_stock": true,
+      "stock_qty": 25,
+      "tags": ["bestseller", "principiantes", "clitoriano"],
+      "features": [
+        "11 programas de intensidad",
+        "Tecnología Air-Pulse",
+        "Sumergible (IPX7)",
+        "Silicona médica",
+        "Carga USB magnética"
+      ],
+      "specs": {
+        "material": "Silicona médica, ABS",
+        "dimensiones": "16.5 x 4.8 cm",
+        "peso": "70g",
+        "batería": "Recargable USB",
+        "duración": "90 minutos",
+        "resistencia_agua": "Sumergible"
+      },
+      "images": [
+        "/images/placeholders/product-placeholder.svg#satisfyer-pro-2-1.jpg",
+        "/images/placeholders/product-placeholder.svg#satisfyer-pro-2-2.jpg"
+      ],
+      "variants": [
+        {
+          "id": "rose-gold",
+          "name": "Rose Gold",
+          "color": "#B76E79",
+          "price": 580000,
+          "in_stock": true
+        },
+        {
+          "id": "black",
+          "name": "Negro",
+          "color": "#1A1A1A",
+          "price": 580000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "lelo-sona-2",
+      "sku": "LELO-SONA2-CR",
+      "name": "LELO Sona 2 Cruise",
+      "brand": "LELO",
+      "category": "vibradores",
+      "subcategory": "succionadores",
+      "short_description": "Tecnología sónica de lujo con Cruise Control",
+      "description": "El SONA 2 Cruise utiliza ondas sónicas que penetran el clítoris internamente para estimulación más profunda. La tecnología Cruise reserva el 20% de potencia para cuando más lo necesitás.",
+      "price": 1850000,
+      "price_display": "Gs. 1.850.000",
+      "in_stock": true,
+      "stock_qty": 8,
+      "tags": ["premium", "luxury", "clitoriano"],
+      "features": [
+        "12 modos de intensidad",
+        "Tecnología Cruise Control",
+        "Ondas sónicas profundas",
+        "100% sumergible",
+        "Silicona suave al tacto",
+        "1 año de garantía"
+      ],
+      "specs": {
+        "material": "Silicona premium, ABS",
+        "dimensiones": "11.2 x 9.3 x 5.8 cm",
+        "peso": "116g",
+        "batería": "Li-Ion recargable",
+        "duración": "60 minutos",
+        "carga": "2 horas"
+      },
+      "images": [
+        "/images/placeholders/product-placeholder.svg#lelo-sona-2-1.jpg",
+        "/images/placeholders/product-placeholder.svg#lelo-sona-2-2.jpg"
+      ],
+      "variants": [
+        {
+          "id": "cerise",
+          "name": "Cerise",
+          "color": "#DE3163",
+          "price": 1850000,
+          "in_stock": true
+        },
+        {
+          "id": "purple",
+          "name": "Purple",
+          "color": "#722F37",
+          "price": 1850000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "we-vibe-sync",
+      "sku": "WV-SYNC-PP",
+      "name": "We-Vibe Sync",
+      "brand": "We-Vibe",
+      "category": "parejas",
+      "subcategory": "vibradores-parejas",
+      "short_description": "El vibrador para parejas más avanzado del mercado",
+      "description": "Diseñado para usarse durante la penetración, el We-Vibe Sync estimula tanto el punto G como el clítoris simultáneamente. Controlable por app desde cualquier distancia.",
+      "price": 2450000,
+      "price_display": "Gs. 2.450.000",
+      "in_stock": true,
+      "stock_qty": 6,
+      "tags": ["premium", "app-control", "parejas"],
+      "features": [
+        "Control por aplicación",
+        "Ajustable al cuerpo",
+        "10 modos de vibración",
+        "Funciona a larga distancia",
+        "Silencioso",
+        "100% sumergible"
+      ],
+      "specs": {
+        "material": "Silicona body-safe",
+        "dimensiones": "7.9 x 7.5 x 4.5 cm",
+        "conectividad": "Bluetooth, App We-Connect",
+        "batería": "Recargable",
+        "duración": "90 minutos",
+        "resistencia_agua": "Sumergible"
+      },
+      "images": [
+        "/images/placeholders/product-placeholder.svg#we-vibe-sync-1.jpg",
+        "/images/placeholders/product-placeholder.svg#we-vibe-sync-2.jpg"
+      ],
+      "variants": [
+        {
+          "id": "purple",
+          "name": "Purple",
+          "color": "#8B4557",
+          "price": 2450000,
+          "in_stock": true
+        },
+        {
+          "id": "coral",
+          "name": "Coral",
+          "color": "#FF7F50",
+          "price": 2450000,
+          "in_stock": false
+        }
+      ]
+    },
+    {
+      "id": "lelo-hugo",
+      "sku": "LELO-HUGO-BK",
+      "name": "LELO Hugo",
+      "brand": "LELO",
+      "category": "anal",
+      "subcategory": "prostatico",
+      "short_description": "El masajeador prostático más lujoso del mundo",
+      "description": "Hugo ofrece estimulación dual con motores independientes en la punta y la base. Control remoto SenseMotion que responde a los movimientos de tu mano.",
+      "price": 3200000,
+      "price_display": "Gs. 3.200.000",
+      "in_stock": true,
+      "stock_qty": 4,
+      "tags": ["premium", "luxury", "prostata", "control-remoto"],
+      "features": [
+        "Doble motor independiente",
+        "Control remoto SenseMotion",
+        "8 modos de vibración",
+        "Silicona de grado médico",
+        "100% sumergible",
+        "Carga inalámbrica"
+      ],
+      "specs": {
+        "material": "Silicona, ABS",
+        "largo_insertable": "9.5 cm",
+        "diámetro": "3.5 cm",
+        "peso": "164g",
+        "batería": "Li-Ion recargable",
+        "duración": "2 horas"
+      },
+      "images": [
+        "/images/placeholders/product-placeholder.svg#lelo-hugo-1.jpg",
+        "/images/placeholders/product-placeholder.svg#lelo-hugo-2.jpg"
+      ],
+      "variants": [
+        {
+          "id": "black",
+          "name": "Black Noir",
+          "color": "#1A1A1A",
+          "price": 3200000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "magic-wand-plus",
+      "sku": "MW-PLUS-WH",
+      "name": "Magic Wand Plus",
+      "brand": "Magic Wand",
+      "category": "vibradores",
+      "subcategory": "wands",
+      "short_description": "La evolución del legendario vibrador de masaje",
+      "description": "El sucesor del Hitachi Magic Wand original. Potencia legendaria ahora con cable flexible, cabezal de silicona y 4 velocidades.",
+      "price": 980000,
+      "price_display": "Gs. 980.000",
+      "in_stock": true,
+      "stock_qty": 12,
+      "tags": ["clasico", "potente", "masaje"],
+      "features": [
+        "4 velocidades de intensidad",
+        "Cabezal de silicona premium",
+        "Cable flexible de 1.8m",
+        "Uso continuo sin límite de batería",
+        "Motor ultra potente"
+      ],
+      "specs": {
+        "material": "Silicona, plástico ABS",
+        "largo_total": "32 cm",
+        "cabezal": "6.35 cm diámetro",
+        "potencia": "Corriente eléctrica (enchufe)",
+        "voltaje": "110-240V"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#magic-wand-plus-1.jpg"],
+      "variants": [
+        {
+          "id": "white",
+          "name": "Blanco Clásico",
+          "color": "#F5F5F5",
+          "price": 980000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "njoy-pure-wand",
+      "sku": "NJOY-PW-SS",
+      "name": "Njoy Pure Wand",
+      "brand": "Njoy",
+      "category": "dildos",
+      "subcategory": "metal",
+      "short_description": "La herramienta definitiva para el punto G y próstata",
+      "description": "Obra maestra de acero inoxidable con doble cabezal de diferentes tamaños. Peso y curvatura perfectos para estimulación de punto G y próstata. De por vida.",
+      "price": 1650000,
+      "price_display": "Gs. 1.650.000",
+      "in_stock": true,
+      "stock_qty": 5,
+      "tags": ["premium", "metal", "punto-g", "prostata"],
+      "features": [
+        "Acero inoxidable quirúrgico",
+        "Doble extremo",
+        "Peso ideal para presión",
+        "Apto para temperatura",
+        "Garantía de por vida",
+        "Pulido espejo"
+      ],
+      "specs": {
+        "material": "Acero inoxidable 316",
+        "largo_total": "20.3 cm",
+        "extremo_pequeño": "2.5 cm",
+        "extremo_grande": "3.8 cm",
+        "peso": "680g"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#njoy-pure-wand-1.jpg"],
+      "variants": [
+        {
+          "id": "steel",
+          "name": "Acero Pulido",
+          "color": "#C0C0C0",
+          "price": 1650000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "b-vibe-snug-plug-3",
+      "sku": "BVIBE-SP3-BK",
+      "name": "B-Vibe Snug Plug 3",
+      "brand": "B-Vibe",
+      "category": "anal",
+      "subcategory": "plugs",
+      "short_description": "Plug anal con peso para sensación de plenitud",
+      "description": "Plug de silicona con peso integrado para una sensación de plenitud única. Perfecto para uso prolongado y entrenamiento. Base segura y cómoda.",
+      "price": 420000,
+      "price_display": "Gs. 420.000",
+      "in_stock": true,
+      "stock_qty": 15,
+      "tags": ["principiantes", "entrenamiento"],
+      "features": [
+        "Peso integrado (128g)",
+        "Silicona libre de ftalatos",
+        "Base segura para uso anal",
+        "Fácil de limpiar",
+        "Apto para principiantes nivel medio"
+      ],
+      "specs": {
+        "material": "Silicona premium",
+        "largo_insertable": "9 cm",
+        "diámetro_máximo": "3.6 cm",
+        "peso_total": "180g"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#b-vibe-snug-plug-1.jpg"],
+      "variants": [
+        {
+          "id": "black",
+          "name": "Negro",
+          "color": "#1A1A1A",
+          "price": 420000,
+          "in_stock": true
+        },
+        {
+          "id": "rose",
+          "name": "Rose",
+          "color": "#D4A5A5",
+          "price": 420000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "leather-collar-leash",
+      "sku": "BDSM-CL-BK",
+      "name": "Collar y Correa de Cuero Premium",
+      "brand": "Fun4Me",
+      "category": "bdsm",
+      "subcategory": "collares",
+      "short_description": "Set de collar ajustable con correa de cuero genuino",
+      "description": "Collar artesanal de cuero genuino con herrajes de metal en acabado dorado antiguo. Correa desmontable de 1 metro. Perfecto para juegos de poder y petplay.",
+      "price": 280000,
+      "price_display": "Gs. 280.000",
+      "in_stock": true,
+      "stock_qty": 20,
+      "tags": ["cuero", "fetish", "bdsm-basico"],
+      "features": [
+        "Cuero genuino premium",
+        "Herrajes de metal dorado",
+        "Collar ajustable",
+        "Correa desmontable",
+        "Anilla D para accesorios"
+      ],
+      "specs": {
+        "material": "Cuero vacuno, metal",
+        "circunferencia_collar": "30-42 cm ajustable",
+        "ancho_collar": "3 cm",
+        "largo_correa": "100 cm"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#collar-leash-1.jpg"],
+      "variants": [
+        {
+          "id": "black-gold",
+          "name": "Negro/Dorado",
+          "color": "#1A1A1A",
+          "price": 280000,
+          "in_stock": true
+        },
+        {
+          "id": "red-silver",
+          "name": "Rojo/Plateado",
+          "color": "#722F37",
+          "price": 280000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "shibari-rope-set",
+      "sku": "BDSM-ROPE-JT",
+      "name": "Set de Cuerdas Shibari",
+      "brand": "Fun4Me",
+      "category": "bdsm",
+      "subcategory": "bondage",
+      "short_description": "Set profesional de 4 cuerdas de yute para bondage japonés",
+      "description": "Set de 4 cuerdas de yute tratado de 8 metros cada una. Procesadas a mano para suavidad óptima. Incluye bolsa de almacenamiento de algodón.",
+      "price": 380000,
+      "price_display": "Gs. 380.000",
+      "in_stock": true,
+      "stock_qty": 18,
+      "tags": ["shibari", "cuerda", "bondage"],
+      "features": [
+        "4 cuerdas de 8 metros",
+        "Yute tratado y suavizado",
+        "6mm de diámetro",
+        "Procesadas a mano",
+        "Bolsa de algodón incluida"
+      ],
+      "specs": {
+        "material": "Yute natural tratado",
+        "largo_por_cuerda": "8 metros",
+        "diámetro": "6mm",
+        "cantidad": "4 cuerdas"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#shibari-rope-1.jpg"],
+      "variants": [
+        {
+          "id": "natural",
+          "name": "Natural",
+          "color": "#C4A35A",
+          "price": 380000,
+          "in_stock": true
+        },
+        {
+          "id": "black",
+          "name": "Negro",
+          "color": "#1A1A1A",
+          "price": 400000,
+          "in_stock": true
+        },
+        {
+          "id": "red",
+          "name": "Rojo",
+          "color": "#722F37",
+          "price": 400000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "restraint-system-under-bed",
+      "sku": "BDSM-UBR-BK",
+      "name": "Sistema de Restricción Bajo Cama",
+      "brand": "Sportsheets",
+      "category": "bdsm",
+      "subcategory": "restricciones",
+      "short_description": "Sistema de ataduras discreto que va bajo el colchón",
+      "description": "Sistema de restricción que se coloca debajo del colchón sin necesidad de modificar la cama. Incluye 4 puños acolchados y correas ajustables.",
+      "price": 520000,
+      "price_display": "Gs. 520.000",
+      "in_stock": true,
+      "stock_qty": 10,
+      "tags": ["bondage", "principiantes", "discreto"],
+      "features": [
+        "Se oculta bajo el colchón",
+        "4 puños acolchados de nylon",
+        "Correas ajustables",
+        "Compatible con cualquier cama",
+        "Instalación sin herramientas"
+      ],
+      "specs": {
+        "material": "Nylon, velcro, acolchado",
+        "correa_central": "Ajustable hasta King Size",
+        "puños": "Para muñecas y tobillos"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#under-bed-restraint-1.jpg"],
+      "variants": [
+        {
+          "id": "black",
+          "name": "Negro",
+          "color": "#1A1A1A",
+          "price": 520000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "blindfold-satin",
+      "sku": "BDSM-BF-ST",
+      "name": "Antifaz de Satén Luxury",
+      "brand": "Fun4Me",
+      "category": "bdsm",
+      "subcategory": "vendas",
+      "short_description": "Antifaz elegante de satén con bloqueo total de luz",
+      "description": "Antifaz de satén de doble capa con acolchado de espuma de memoria. Bloquea completamente la luz para privación sensorial total. Elástico ajustable.",
+      "price": 85000,
+      "price_display": "Gs. 85.000",
+      "in_stock": true,
+      "stock_qty": 35,
+      "tags": ["principiantes", "sensorial", "bondage-suave"],
+      "features": [
+        "Satén suave de doble capa",
+        "Espuma de memoria",
+        "Bloqueo total de luz",
+        "Elástico ajustable",
+        "Lavable a mano"
+      ],
+      "specs": {
+        "material": "Satén, espuma, elástico",
+        "talla": "Única ajustable"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#blindfold-satin-1.jpg"],
+      "variants": [
+        {
+          "id": "black",
+          "name": "Negro",
+          "color": "#1A1A1A",
+          "price": 85000,
+          "in_stock": true
+        },
+        {
+          "id": "burgundy",
+          "name": "Burgundy",
+          "color": "#722F37",
+          "price": 85000,
+          "in_stock": true
+        },
+        {
+          "id": "gold",
+          "name": "Dorado",
+          "color": "#D4AF37",
+          "price": 95000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "lenceria-set-noir",
+      "sku": "LING-SET-NR",
+      "name": "Set Lencería Noir Collection",
+      "brand": "Fun4Me",
+      "category": "lenceria",
+      "subcategory": "sets",
+      "short_description": "Conjunto de encaje negro con detalles de strappy",
+      "description": "Set de 3 piezas: bralette de encaje con tirantes decorativos, tanga a juego y liguero con medias. Diseño atrevido y sofisticado.",
+      "price": 450000,
+      "price_display": "Gs. 450.000",
+      "in_stock": true,
+      "stock_qty": 8,
+      "tags": ["encaje", "strappy", "sexy"],
+      "features": [
+        "Encaje francés premium",
+        "Tirantes decorativos ajustables",
+        "3 piezas incluidas",
+        "Cierre trasero de gancho",
+        "Medias de regalo"
+      ],
+      "specs": {
+        "material": "Encaje, elastano",
+        "composición": "85% nylon, 15% elastano",
+        "cuidado": "Lavado a mano"
+      },
+      "images": [
+        "/images/placeholders/product-placeholder.svg#lenceria-noir-1.jpg",
+        "/images/placeholders/product-placeholder.svg#lenceria-noir-2.jpg"
+      ],
+      "variants": [
+        {
+          "id": "black-s",
+          "name": "Negro - S",
+          "size": "S",
+          "color": "#1A1A1A",
+          "price": 450000,
+          "in_stock": true
+        },
+        {
+          "id": "black-m",
+          "name": "Negro - M",
+          "size": "M",
+          "color": "#1A1A1A",
+          "price": 450000,
+          "in_stock": true
+        },
+        {
+          "id": "black-l",
+          "name": "Negro - L",
+          "size": "L",
+          "color": "#1A1A1A",
+          "price": 450000,
+          "in_stock": true
+        },
+        {
+          "id": "burgundy-s",
+          "name": "Burgundy - S",
+          "size": "S",
+          "color": "#722F37",
+          "price": 450000,
+          "in_stock": true
+        },
+        {
+          "id": "burgundy-m",
+          "name": "Burgundy - M",
+          "size": "M",
+          "color": "#722F37",
+          "price": 450000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "body-harness-leather",
+      "sku": "LING-BH-LTH",
+      "name": "Body Harness de Cuero",
+      "brand": "Fun4Me",
+      "category": "lenceria",
+      "subcategory": "harness",
+      "short_description": "Arnés corporal de cuero con herrajes dorados",
+      "description": "Body harness artesanal de cuero genuino. Diseño ajustable que se adapta a diferentes tallas. Puede usarse sobre o bajo la ropa.",
+      "price": 680000,
+      "price_display": "Gs. 680.000",
+      "in_stock": true,
+      "stock_qty": 6,
+      "tags": ["cuero", "harness", "fetish"],
+      "features": [
+        "Cuero genuino premium",
+        "Herrajes de metal dorado",
+        "Completamente ajustable",
+        "Diseño modular",
+        "Fabricación artesanal"
+      ],
+      "specs": {
+        "material": "Cuero vacuno, metal",
+        "ajuste": "XS a XL (ajustable)",
+        "cuidado": "Acondicionador de cuero"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#body-harness-1.jpg"],
+      "variants": [
+        {
+          "id": "black-gold",
+          "name": "Negro/Dorado",
+          "color": "#1A1A1A",
+          "price": 680000,
+          "in_stock": true
+        },
+        {
+          "id": "red-gold",
+          "name": "Rojo/Dorado",
+          "color": "#722F37",
+          "price": 680000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "uberlube-silicone",
+      "sku": "LUB-UBER-50",
+      "name": "Uberlube Silicone Luxury",
+      "brand": "Uberlube",
+      "category": "lubricantes",
+      "subcategory": "silicona",
+      "short_description": "Lubricante de silicona premium en elegante frasco de vidrio",
+      "description": "Lubricante de silicona ultra premium con fórmula ligera y sedosa. No se vuelve pegajoso, dura más tiempo. Ideal para momentos íntimos y también como tratamiento capilar.",
+      "price": 280000,
+      "price_display": "Gs. 280.000",
+      "in_stock": true,
+      "stock_qty": 25,
+      "tags": ["premium", "silicona", "larga-duracion"],
+      "features": [
+        "Base de silicona premium",
+        "Ultra duradero",
+        "No deja residuos",
+        "Frasco de vidrio elegante",
+        "Compatible con látex"
+      ],
+      "specs": {
+        "base": "Silicona",
+        "volumen": "50ml",
+        "libre_de": "Parabenos, glicerina"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#uberlube-1.jpg"],
+      "variants": [
+        {
+          "id": "50ml",
+          "name": "50ml",
+          "price": 280000,
+          "in_stock": true
+        },
+        {
+          "id": "100ml",
+          "name": "100ml",
+          "price": 480000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "sliquid-h2o",
+      "sku": "LUB-SLIQ-H2O",
+      "name": "Sliquid H2O Natural",
+      "brand": "Sliquid",
+      "category": "lubricantes",
+      "subcategory": "agua",
+      "short_description": "Lubricante a base de agua 100% natural y vegano",
+      "description": "Fórmula hipoalergénica sin glicerina, parabenos ni sulfatos. Compatible con todos los juguetes y condones. Perfecto para pieles sensibles.",
+      "price": 180000,
+      "price_display": "Gs. 180.000",
+      "in_stock": true,
+      "stock_qty": 30,
+      "tags": ["natural", "vegano", "hipoalergenico"],
+      "features": [
+        "100% vegano y cruelty-free",
+        "Sin glicerina ni parabenos",
+        "Hipoalergénico",
+        "Compatible con juguetes de silicona",
+        "pH balanceado"
+      ],
+      "specs": {
+        "base": "Agua",
+        "volumen": "125ml",
+        "libre_de": "Glicerina, parabenos, sulfatos"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#sliquid-h2o-1.jpg"],
+      "variants": [
+        {
+          "id": "125ml",
+          "name": "125ml",
+          "price": 180000,
+          "in_stock": true
+        },
+        {
+          "id": "255ml",
+          "name": "255ml",
+          "price": 320000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "massage-candle-set",
+      "sku": "ACC-CANDLE-3",
+      "name": "Set Velas de Masaje",
+      "brand": "Fun4Me",
+      "category": "accesorios",
+      "subcategory": "masaje",
+      "short_description": "Set de 3 velas de masaje con aromas sensuales",
+      "description": "Velas de cera de soja de baja temperatura que se derriten en aceite de masaje tibio. Set de 3 aromas: vainilla, rosa y sándalo.",
+      "price": 220000,
+      "price_display": "Gs. 220.000",
+      "in_stock": true,
+      "stock_qty": 22,
+      "tags": ["romantico", "masaje", "aromaterapia"],
+      "features": [
+        "Cera de soja natural",
+        "Baja temperatura segura",
+        "3 aromas incluidos",
+        "Aceite hidratante para la piel",
+        "Duración 30+ horas cada una"
+      ],
+      "specs": {
+        "material": "Cera de soja, aceites esenciales",
+        "peso_cada_una": "60g",
+        "aromas": "Vainilla, Rosa, Sándalo",
+        "duración": "30 horas aprox."
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#massage-candles-1.jpg"],
+      "variants": [
+        {
+          "id": "set-3",
+          "name": "Set de 3",
+          "price": 220000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "toy-cleaner-spray",
+      "sku": "BN-CLEANER-250",
+      "name": "Limpiador de Juguetes Antibacterial",
+      "brand": "Fun4Me",
+      "category": "bienestar",
+      "subcategory": "limpieza",
+      "short_description": "Spray limpiador para juguetes íntimos",
+      "description": "Fórmula antibacterial especialmente diseñada para limpiar juguetes íntimos de cualquier material. Sin alcohol, no daña silicona ni plásticos.",
+      "price": 75000,
+      "price_display": "Gs. 75.000",
+      "in_stock": true,
+      "stock_qty": 50,
+      "tags": ["esencial", "higiene", "cuidado"],
+      "features": [
+        "Fórmula antibacterial",
+        "Sin alcohol",
+        "Seguro para todos los materiales",
+        "Secado rápido",
+        "Sin fragancia"
+      ],
+      "specs": {
+        "volumen": "250ml",
+        "tipo": "Spray"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#toy-cleaner-1.jpg"],
+      "variants": [
+        {
+          "id": "250ml",
+          "name": "250ml",
+          "price": 75000,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "kegel-exerciser",
+      "sku": "BN-KEGEL-APP",
+      "name": "Ejercitador Kegel con App",
+      "brand": "Elvie",
+      "category": "bienestar",
+      "subcategory": "kegel",
+      "short_description": "Entrenador de suelo pélvico con feedback en tiempo real",
+      "description": "Dispositivo inteligente para ejercicios de Kegel con sensores de fuerza y movimiento. App gratuita con ejercicios guiados y seguimiento de progreso.",
+      "price": 1450000,
+      "price_display": "Gs. 1.450.000",
+      "in_stock": true,
+      "stock_qty": 5,
+      "tags": ["salud", "kegel", "tech"],
+      "features": [
+        "Sensores de fuerza y movimiento",
+        "App gratuita iOS/Android",
+        "Ejercicios guiados por voz",
+        "Seguimiento de progreso",
+        "Silicona de grado médico"
+      ],
+      "specs": {
+        "conectividad": "Bluetooth",
+        "material": "Silicona médica",
+        "batería": "Recargable USB",
+        "compatibilidad": "iOS 10+, Android 6+"
+      },
+      "images": ["/images/placeholders/product-placeholder.svg#elvie-kegel-1.jpg"],
+      "variants": [
+        {
+          "id": "rose",
+          "name": "Rose",
+          "color": "#D4A5A5",
+          "price": 1450000,
+          "in_stock": true
+        }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "id": "kit-principiantes",
+      "name": "Kit Primeros Pasos",
+      "description": "Todo lo que necesitás para empezar tu exploración",
+      "products": ["satisfyer-pro-2", "sliquid-h2o", "toy-cleaner-spray"],
+      "original_price": 835000,
+      "bundle_price": 699000,
+      "savings": 136000,
+      "tags": ["starter", "bestseller"]
+    },
+    {
+      "id": "kit-bdsm-starter",
+      "name": "Kit BDSM Iniciación",
+      "description": "Introducción suave al mundo del bondage",
+      "products": ["blindfold-satin", "restraint-system-under-bed", "leather-collar-leash"],
+      "original_price": 885000,
+      "bundle_price": 749000,
+      "savings": 136000,
+      "tags": ["bdsm", "starter"]
+    },
+    {
+      "id": "kit-parejas-premium",
+      "name": "Kit Noche de Parejas",
+      "description": "Todo para una noche inolvidable juntos",
+      "products": ["we-vibe-sync", "massage-candle-set", "uberlube-silicone"],
+      "original_price": 2950000,
+      "bundle_price": 2499000,
+      "savings": 451000,
+      "tags": ["parejas", "premium"]
+    }
+  ]
+}

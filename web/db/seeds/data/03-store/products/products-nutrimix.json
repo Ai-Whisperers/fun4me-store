@@ -1,0 +1,146 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "nutrimix",
+  "products": [
+    {
+      "sku": "NUTRIMIX-ADULT-25KG",
+      "name": "Nutrimix Adulto 25kg",
+      "description": "Alimento balanceado económico para perros adultos",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "25kg",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+      "images": [
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-2.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-3.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "21%"
+      }
+    },
+    {
+      "sku": "NUTRIMIX-ADULT-15KG",
+      "name": "Nutrimix Adulto 15kg",
+      "description": "Alimento balanceado económico para perros adultos",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 120000,
+          "cost_price": 72000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-2.png",
+      "images": [
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-2.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-3.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "21%"
+      }
+    },
+    {
+      "sku": "NUTRIMIX-ADULT-8KG",
+      "name": "Nutrimix Adulto 8kg",
+      "description": "Alimento balanceado económico para perros adultos",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "8kg",
+          "base_price": 75000,
+          "cost_price": 45000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-3.png",
+      "images": [
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-3.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-2.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "21%"
+      }
+    },
+    {
+      "sku": "NUTRIMIX-PUPPY-15KG",
+      "name": "Nutrimix Cachorro 15kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png",
+      "images": [
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-2.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-3.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "26%"
+      }
+    },
+    {
+      "sku": "NUTRIMIX-PUPPY-8KG",
+      "name": "Nutrimix Cachorro 8kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "8kg",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+      "images": [
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/balanceado-razas-pequenas-1.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-2.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-3.png",
+        "https://www.schroedercia.com.py/wp-content/uploads/2024/05/producto-4.png"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "26%"
+      }
+    }
+  ]
+}

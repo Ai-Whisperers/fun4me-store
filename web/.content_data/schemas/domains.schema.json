@@ -1,0 +1,189 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "domains.schema.json",
+  "title": "Domains Configuration",
+  "description": "Multi-tenant domain mapping configuration for the Vete platform",
+  "type": "object",
+  "required": ["version", "defaultDomain", "domains"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of this config format"
+    },
+    "defaultDomain": {
+      "type": "string",
+      "format": "hostname",
+      "description": "Default/fallback domain for the platform"
+    },
+    "domains": {
+      "type": "array",
+      "description": "List of all domain mappings",
+      "items": {
+        "$ref": "#/definitions/DomainEntry"
+      }
+    },
+    "cloudflare": {
+      "type": "object",
+      "description": "Cloudflare-specific configuration",
+      "properties": {
+        "tunnels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CloudflareTunnel"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "DomainEntry": {
+      "type": "object",
+      "description": "A single domain mapping entry",
+      "required": ["domain", "tenant", "type", "status"],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9.-]*[a-z0-9]$",
+          "description": "Full domain name (e.g., terrapet.com.py)"
+        },
+        "tenant": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "Tenant/clinic slug from .content_data"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["primary", "subdomain", "redirect", "tunnel"],
+          "description": "Type of domain mapping"
+        },
+        "provider": {
+          "type": "string",
+          "enum": ["vercel", "cloudflare", "selfhosted"],
+          "description": "Hosting provider for this domain"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "active", "verifying", "failed"],
+          "description": "Current verification status"
+        },
+        "ssl": {
+          "$ref": "#/definitions/SSLConfig"
+        },
+        "verifiedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When DNS was verified"
+        },
+        "dnsRecords": {
+          "$ref": "#/definitions/DNSRecord"
+        },
+        "redirectTo": {
+          "type": "string",
+          "format": "hostname",
+          "description": "Target domain for redirect type"
+        },
+        "cloudflare": {
+          "type": "object",
+          "properties": {
+            "tunnelId": {
+              "type": "string",
+              "format": "uuid",
+              "description": "Cloudflare Tunnel UUID"
+            },
+            "zoneId": {
+              "type": "string",
+              "description": "Cloudflare Zone ID"
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Custom metadata"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "SSLConfig": {
+      "type": "object",
+      "description": "SSL certificate configuration",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "autoRenew": {
+          "type": "boolean",
+          "default": true
+        },
+        "provider": {
+          "type": "string",
+          "enum": ["letsencrypt", "cloudflare", "custom"]
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "DNSRecord": {
+      "type": "object",
+      "description": "Required DNS record configuration",
+      "required": ["type", "name", "value"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["A", "AAAA", "CNAME", "TXT"]
+        },
+        "name": {
+          "type": "string",
+          "description": "Record name (@ for root)"
+        },
+        "value": {
+          "type": "string",
+          "description": "Record value"
+        },
+        "ttl": {
+          "type": "integer",
+          "minimum": 60,
+          "description": "TTL in seconds"
+        }
+      }
+    },
+    "CloudflareTunnel": {
+      "type": "object",
+      "description": "Cloudflare Tunnel configuration",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive"],
+          "default": "active"
+        }
+      }
+    }
+  }
+}

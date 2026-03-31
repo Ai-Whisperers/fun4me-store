@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "María L.",
+    "location": "Asunción",
+    "rating": 5,
+    "text": "Llevaba años con vergüenza de entrar a un sex shop. En Fun4Me me sentí cómoda desde el primer momento. La atención fue súper profesional y me ayudaron a encontrar exactamente lo que buscaba sin hacerme sentir juzgada.",
+    "category": "tienda",
+    "date": "2025-11-15",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "author": "Mariana T.",
+    "location": "Encarnación",
+    "rating": 5,
+    "text": "Vivo en el interior y el envío fue súper rápido y discreto. El paquete llegó perfecto, sin ninguna indicación de qué era. Mi mamá lo recibió y no sospechó nada. 10/10 por la discreción.",
+    "category": "envios",
+    "date": "2025-11-05",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "author": "Lucas A.",
+    "location": "Ciudad del Este",
+    "rating": 5,
+    "text": "Compré un vibrador como regalo para mi pareja. La asesoría online fue excelente, me explicaron todo sobre el uso. El producto superó todas mis expectativas. Ya tengo más cosas en el carrito.",
+    "category": "productos",
+    "date": "2025-09-25",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "author": "Camila R.",
+    "location": "Lambaré",
+    "rating": 5,
+    "text": "El Satisfyer Pro 2 cambió mi vida. Suena exagerado pero en serio. Y lo mejor es que acá te explican cómo usarlo bien, no como en otras tiendas que te tiran el producto y chau.",
+    "category": "productos",
+    "date": "2025-12-10",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "author": "Diego V.",
+    "location": "Asunción",
+    "rating": 5,
+    "text": "Excelente variedad de productos y precios accesibles. El delivery llegó al día siguiente y todo muy bien empacado. Definitivamente vuelvo a comprar.",
+    "category": "tienda",
+    "date": "2025-10-18",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "author": "Sofía M.",
+    "location": "San Lorenzo",
+    "rating": 5,
+    "text": "Me encanta que tienen productos de marcas reconocidas. La calidad se nota. El empaque discreto es un plus enorme para los que vivimos con familia.",
+    "category": "productos",
+    "date": "2025-08-22",
+    "verified": true
+  },
+  {
+    "id": 7,
+    "author": "Roberto G.",
+    "location": "Luque",
+    "rating": 5,
+    "text": "Pedí por WhatsApp y me atendieron super bien. Me asesoraron sobre qué lubricante era mejor para lo que necesitaba. Muy profesionales.",
+    "category": "tienda",
+    "date": "2025-07-14",
+    "verified": true
+  },
+  {
+    "id": 8,
+    "author": "Ana P.",
+    "location": "Fernando de la Mora",
+    "rating": 5,
+    "text": "Primera vez comprando en una tienda así y la experiencia fue genial. Sin presiones, respuestas claras a todas mis preguntas. Muy recomendado.",
+    "category": "tienda",
+    "date": "2025-12-02",
+    "verified": true
+  }
+]

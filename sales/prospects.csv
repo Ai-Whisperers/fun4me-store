@@ -1,0 +1,10 @@
+Clinic Name,Location,Size,Contact Name,Phone,Email,Instagram,Website,Status,Priority,Score,Notes,Last Contact,Next Action
+Hospital Veterinario Acosta Ñu,Luque,Large,,0579000995,,,acostanu.com.py,Not Contacted,High,95,Major hospital - high volume - phone found via search,N/A,Call/WhatsApp
+Clínica Veterinaria del Sol,Villa Morra,Medium,,,,,clinicaveterinariasol.com,Not Contacted,High,90,Premium area - needs manual contact lookup,N/A,Visit in person or Google Maps
+Veterinaria San Roque,San Lorenzo,Medium,,,,,veterinariasanroque.com.py,Not Contacted,High,88,Near our area - needs manual contact lookup,N/A,Visit in person
+Pet Center Paraguay,Carmelitas,Medium,,,,,petcenterpy.com,Not Contacted,High,85,Good location - needs contact lookup,N/A,Google Maps lookup
+Clínica Veterinaria Central,Centro,Medium,,,,,,,Not Contacted,Medium,70,Central location - foot traffic,N/A,Find on Google Maps
+Veterinaria Norte,Mburucuyá,Small,,,,,,,Not Contacted,Medium,65,Growing neighborhood,N/A,Find on Maps
+VetPlus Asunción,Recoleta,Small,,,,,,,Not Contacted,Medium,60,Premium area but small,N/A,Research
+Clínica Santa Ana,Fernando de la Mora,Small,,,,,,,Not Contacted,Low,45,Small clinic - maybe later,N/A,Backlog
+Veterinaria Lambaré,Lambaré,Small,,,,,,,Not Contacted,Low,40,Small clinic - maybe later,N/A,Backlog

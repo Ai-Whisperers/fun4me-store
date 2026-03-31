@@ -1,0 +1,409 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "reference.schema.json",
+  "title": "Reference Data Schemas",
+  "description": "Schemas for global reference data: diagnosis codes, drug dosages, lab tests, etc.",
+
+  "definitions": {
+    "DiagnosisCode": {
+      "type": "object",
+      "description": "Veterinary diagnosis code (VeNom/SNOMED-CT based)",
+      "required": ["code", "term"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]{3,4}[0-9]{3}$",
+          "description": "Unique code (e.g., OTIT001)"
+        },
+        "term": {
+          "type": "string",
+          "description": "Medical term/diagnosis name"
+        },
+        "term_en": {
+          "type": "string",
+          "description": "English translation"
+        },
+        "standard": {
+          "type": "string",
+          "enum": ["venom", "snomed", "custom"],
+          "default": "venom"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "dermatology",
+            "gastroenterology",
+            "orthopedics",
+            "ophthalmology",
+            "dentistry",
+            "endocrinology",
+            "nephrology",
+            "cardiology",
+            "parasitology",
+            "infectious",
+            "oncology",
+            "neurology",
+            "urology",
+            "reproductive",
+            "respiratory",
+            "nutrition",
+            "behavior",
+            "other"
+          ]
+        },
+        "species": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["dog", "cat", "bird", "rabbit", "hamster", "all"] },
+          "default": ["all"],
+          "description": "Which species this diagnosis applies to"
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["mild", "moderate", "severe", "critical"],
+          "description": "Typical severity level"
+        },
+        "common_symptoms": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Common presenting symptoms"
+        }
+      }
+    },
+
+    "DrugDosage": {
+      "type": "object",
+      "description": "Drug dosage information per species",
+      "required": ["name", "species", "min_dose_mg_kg", "max_dose_mg_kg"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Generic drug name"
+        },
+        "brand_names": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Common brand names in Paraguay"
+        },
+        "species": {
+          "type": "string",
+          "enum": ["dog", "cat", "bird", "rabbit", "hamster"]
+        },
+        "min_dose_mg_kg": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Minimum dose in mg/kg"
+        },
+        "max_dose_mg_kg": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Maximum dose in mg/kg"
+        },
+        "concentration_mg_ml": {
+          "type": "number",
+          "description": "Common concentration in mg/mL"
+        },
+        "route": {
+          "type": "string",
+          "enum": ["PO", "SC", "IM", "IV", "TOP", "OPH", "OTC"],
+          "description": "Route: PO=oral, SC=subcutaneous, IM=intramuscular, IV=intravenous, TOP=topical, OPH=ophthalmic, OTC=otic"
+        },
+        "frequency": {
+          "type": "string",
+          "enum": ["SID", "BID", "TID", "QID", "EOD", "PRN", "STAT", "SID-BID", "BID-TID"],
+          "description": "SID=once daily, BID=twice daily, TID=three times, QID=four times, EOD=every other day, PRN=as needed"
+        },
+        "duration_days": {
+          "type": "string",
+          "description": "Typical treatment duration (e.g., '7-14', '3-5')"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "antibiotic",
+            "nsaid",
+            "analgesic",
+            "antiparasitic",
+            "antiemetic",
+            "antidiarrheal",
+            "corticosteroid",
+            "antifungal",
+            "cardiac",
+            "sedative",
+            "other"
+          ]
+        },
+        "contraindications": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Contraindications and warnings"
+        },
+        "requires_prescription": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "GrowthStandard": {
+      "type": "object",
+      "description": "Growth curve data point for breed/age/gender",
+      "required": ["breed_category", "gender", "age_weeks", "weight_kg"],
+      "properties": {
+        "species": {
+          "type": "string",
+          "enum": ["dog", "cat"],
+          "default": "dog"
+        },
+        "breed_category": {
+          "type": "string",
+          "enum": ["toy", "small", "medium", "large", "giant", "cat_standard", "cat_large"],
+          "description": "Breed size category"
+        },
+        "gender": {
+          "type": "string",
+          "enum": ["male", "female"]
+        },
+        "age_weeks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 104,
+          "description": "Age in weeks"
+        },
+        "weight_kg": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Expected weight in kg for P50"
+        },
+        "percentile": {
+          "type": "string",
+          "enum": ["P3", "P15", "P50", "P85", "P97"],
+          "default": "P50"
+        },
+        "height_cm": {
+          "type": "number",
+          "description": "Expected height at withers (for dogs)"
+        }
+      }
+    },
+
+    "LabTest": {
+      "type": "object",
+      "description": "Laboratory test catalog entry",
+      "required": ["code", "name"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,6}[0-9]?$",
+          "description": "Test code (e.g., CBC, CHEM10)"
+        },
+        "name": {
+          "type": "string",
+          "description": "Test name in Spanish"
+        },
+        "name_en": {
+          "type": "string",
+          "description": "Test name in English"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "hematology",
+            "chemistry",
+            "urinalysis",
+            "endocrinology",
+            "serology",
+            "parasitology",
+            "coagulation",
+            "cytology",
+            "microbiology",
+            "imaging"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "What this test measures/detects"
+        },
+        "sample_type": {
+          "type": "string",
+          "enum": ["blood", "serum", "plasma", "urine", "feces", "tissue", "swab", "fluid"],
+          "default": "blood"
+        },
+        "base_price": {
+          "type": "integer",
+          "description": "Base price in Guaranies"
+        },
+        "turnaround_days": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 1,
+          "description": "Typical result turnaround in days"
+        },
+        "requires_fasting": {
+          "type": "boolean",
+          "default": false
+        },
+        "species": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["dog", "cat", "bird", "all"] },
+          "default": ["all"]
+        },
+        "reference_ranges": {
+          "type": "object",
+          "description": "Reference ranges by species",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "min": { "type": "number" },
+              "max": { "type": "number" },
+              "unit": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "InsuranceProvider": {
+      "type": "object",
+      "description": "Pet insurance provider",
+      "required": ["name", "code"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Company name"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z_]+$",
+          "description": "Unique provider code"
+        },
+        "country": {
+          "type": "string",
+          "default": "Paraguay"
+        },
+        "phone": {
+          "type": ["string", "null"]
+        },
+        "email": {
+          "type": ["string", "null"],
+          "format": "email"
+        },
+        "claims_email": {
+          "type": ["string", "null"],
+          "format": "email",
+          "description": "Email for submitting claims"
+        },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "coverage_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["accident", "illness", "wellness", "dental", "preventive"]
+          },
+          "description": "Types of coverage offered"
+        },
+        "direct_billing": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether clinic can bill insurance directly"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "VaccineProtocol": {
+      "type": "object",
+      "description": "Vaccine schedule protocol",
+      "required": ["vaccine_name", "species"],
+      "properties": {
+        "vaccine_name": {
+          "type": "string",
+          "description": "Vaccine name"
+        },
+        "vaccine_code": {
+          "type": "string",
+          "description": "Short code"
+        },
+        "species": {
+          "type": "string",
+          "enum": ["dog", "cat", "rabbit", "bird"]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["core", "non-core", "optional"],
+          "description": "core=required, non-core=based on risk, optional=lifestyle"
+        },
+        "diseases_prevented": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Diseases this vaccine prevents"
+        },
+        "first_dose_weeks": {
+          "type": "integer",
+          "description": "Age in weeks for first dose"
+        },
+        "booster_weeks": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "description": "Ages in weeks for booster doses"
+        },
+        "revaccination_months": {
+          "type": "integer",
+          "description": "Adult revaccination interval in months"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+
+    "SpeciesBreed": {
+      "type": "object",
+      "description": "Species and breed master list",
+      "required": ["species", "breed_name"],
+      "properties": {
+        "species": {
+          "type": "string",
+          "enum": ["dog", "cat", "bird", "rabbit", "hamster", "guinea_pig", "fish", "reptile"]
+        },
+        "breed_name": {
+          "type": "string"
+        },
+        "breed_name_en": {
+          "type": "string"
+        },
+        "size_category": {
+          "type": "string",
+          "enum": ["toy", "small", "medium", "large", "giant", "varies"]
+        },
+        "avg_lifespan_years": {
+          "type": "number"
+        },
+        "avg_weight_kg": {
+          "type": "object",
+          "properties": {
+            "male": { "type": "number" },
+            "female": { "type": "number" }
+          }
+        },
+        "common_health_issues": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "coat_type": {
+          "type": "string",
+          "enum": ["short", "medium", "long", "wire", "curly", "hairless", "double"]
+        },
+        "grooming_frequency": {
+          "type": "string",
+          "enum": ["low", "medium", "high"]
+        }
+      }
+    }
+  }
+}

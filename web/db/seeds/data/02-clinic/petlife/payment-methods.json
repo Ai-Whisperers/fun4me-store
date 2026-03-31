@@ -1,0 +1,40 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "payment_methods": [
+    {
+      "name": "Efectivo",
+      "type": "cash",
+      "is_default": true,
+      "display_order": 1,
+      "fee_percentage": 0,
+      "is_active": true
+    },
+    {
+      "name": "Tarjeta",
+      "type": "card",
+      "is_default": false,
+      "display_order": 2,
+      "fee_percentage": 3,
+      "instructions": "Débito y crédito. Visa, Mastercard",
+      "is_active": true
+    },
+    {
+      "name": "Transferencia",
+      "type": "transfer",
+      "is_default": false,
+      "display_order": 3,
+      "fee_percentage": 0,
+      "instructions": "Datos bancarios disponibles en caja",
+      "is_active": true
+    },
+    {
+      "name": "QR",
+      "type": "qr",
+      "is_default": false,
+      "display_order": 4,
+      "fee_percentage": 0,
+      "instructions": "Tigo Money, Personal Pay",
+      "is_active": true
+    }
+  ]
+}

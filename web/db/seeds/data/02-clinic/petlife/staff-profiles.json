@@ -1,0 +1,20 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Staff veterinary profiles for PetLife. IDs must be valid UUIDs.",
+  "staff_profiles": [
+    {
+      "id": "b0000001-0001-0001-0001-000000000001",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440008",
+      "tenant_id": "petlife",
+      "specializations": ["Cardiología", "Medicina Interna"],
+      "license_number": "MV-PY-2015-0234",
+      "license_expiry": "2026-12-31",
+      "education": "Universidad Nacional de Asunción - Especialización en Cardiología Veterinaria",
+      "bio": "Especialista en cardiología veterinaria con 10 años de experiencia.",
+      "hire_date": "2015-01-10",
+      "employment_type": "full_time",
+      "title": "Cardiólogo Veterinario",
+      "is_active": true
+    }
+  ]
+}

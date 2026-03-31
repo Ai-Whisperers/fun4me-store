@@ -1,0 +1,95 @@
+# Vercel
+.vercel
+
+# Environment variables (secrets)
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+out/
+dist/
+
+# IDE/Editor
+.cursor/
+!.cursor/rules/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Testing artifacts
+test-results/
+playwright-report/
+coverage/
+.playwright-mcp/
+
+# Local configs
+mcp_settings.json
+.specstory/
+
+# Logs
+*.log
+npm-debug.log*
+deployment.log
+
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.venv/
+
+# Build info
+tsconfig.tsbuildinfo
+
+# Test artifacts
+test_pet_id.txt
+*.tmp
+
+# E2E Screenshots
+web/screenshots/
+
+# Supabase temp files
+supabase/supabase/
+
+# Auto Claude data directory
+.auto-claude/
+
+# Auto Claude generated files
+.auto-claude-security.json
+.auto-claude-status
+.claude_settings.json
+.worktrees/
+.security-key
+logs/security/
+
+# Temp Claude files
+tmpclaude*
+
+# Backup files
+*.backup
+
+# Archive (old planning docs)
+archive/
+
+# OpenCode
+.opencode/
+
+# Ralphy
+.ralphy/
+
+# AntiGravity
+.antigravity/
+
+# Temporary patch files
+*.patch
+
+# (inventory domain layer now complete - removed from ignore)

@@ -1,0 +1,813 @@
+{
+  "$schema": "../_schemas/store.schema.json",
+  "categories": [
+    {
+      "slug": "NUT",
+      "name": "Nutrición",
+      "description": "Alimentos y dietas para todas las especies",
+      "examples": "-",
+      "level": 1,
+      "display_order": 1,
+      "parent_slug": null,
+      "image_url": "/placeholder-product.svg",
+      "subcategories": [
+        {
+          "slug": "NUT-CAN",
+          "name": "Nutrición Canina",
+          "description": "Todo tipo de alimento formulado para perros",
+          "examples": "-",
+          "level": 2,
+          "display_order": 1,
+          "parent_slug": "NUT",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "NUT-CAN-SEC",
+              "name": "Alimento Seco Perros",
+              "description": "Balanceado, croquetas o pienso seco",
+              "examples": "Royal Canin Adult, Dog Chow, Pedigree",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "NUT-CAN",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-CAN-HUM",
+              "name": "Alimento Húmedo Perros",
+              "description": "Comida en lata, sobres (pouches) o paté",
+              "examples": "Lata Hill's a/d, Sobres Pedigree",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "NUT-CAN",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-CAN-PRE",
+              "name": "Dietas Prescriptivas Perros",
+              "description": "Alimento medicado para patologías específicas",
+              "examples": "Royal Canin Renal, Hill's Urinary",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "NUT-CAN",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-CAN-SNA",
+              "name": "Snacks y Premios Perros",
+              "description": "Golosinas, galletas y premios de entrenamiento",
+              "examples": "Dentastix, Galletas de huesito",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "NUT-CAN",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "NUT-FEL",
+          "name": "Nutrición Felina",
+          "description": "Todo tipo de alimento formulado para gatos",
+          "examples": "-",
+          "level": 2,
+          "display_order": 2,
+          "parent_slug": "NUT",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "NUT-FEL-SEC",
+              "name": "Alimento Seco Gatos",
+              "description": "Balanceado y croquetas para gatos",
+              "examples": "Cat Chow, Whiskas, Pro Plan Gato",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "NUT-FEL",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-FEL-HUM",
+              "name": "Alimento Húmedo Gatos",
+              "description": "Comida húmeda en sobres o latas",
+              "examples": "Whiskas Soufflé, Latas Fancy Feast",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "NUT-FEL",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-FEL-PRE",
+              "name": "Dietas Prescriptivas Gatos",
+              "description": "Alimento medicado para gatos",
+              "examples": "Royal Canin Urinary S/O, Hill's Kidney",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "NUT-FEL",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-FEL-SNA",
+              "name": "Snacks y Premios Gatos",
+              "description": "Golosinas y premios para gatos",
+              "examples": "Dreamies, Temptations",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "NUT-FEL",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "NUT-EXO",
+          "name": "Nutrición Exóticos",
+          "description": "Alimento para especies no tradicionales",
+          "examples": "-",
+          "level": 2,
+          "display_order": 3,
+          "parent_slug": "NUT",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "NUT-EXO-AVE",
+              "name": "Nutrición Aves",
+              "description": "Semillas y pastas para pájaros",
+              "examples": "Mezcla para canarios, Semillas girasol",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "NUT-EXO",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-EXO-PEC",
+              "name": "Nutrición Peces",
+              "description": "Alimento en escamas o pellets para peces",
+              "examples": "TetraMin, Alimento para Goldfish",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "NUT-EXO",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "NUT-EXO-ROE",
+              "name": "Nutrición Roedores",
+              "description": "Alimento para hamsters, conejos y cobayos",
+              "examples": "Heno Timothy, Pellets para conejos",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "NUT-EXO",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ACC",
+      "name": "Accesorios y Confort",
+      "description": "Artículos de uso diario, juego y descanso",
+      "examples": "-",
+      "level": 1,
+      "display_order": 2,
+      "parent_slug": null,
+      "image_url": "/placeholder-product.svg",
+      "subcategories": [
+        {
+          "slug": "ACC-HIG",
+          "name": "Higiene y Aseo",
+          "description": "Productos para la limpieza del animal y entorno",
+          "examples": "-",
+          "level": 2,
+          "display_order": 1,
+          "parent_slug": "ACC",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "ACC-HIG-ARE",
+              "name": "Arenas Sanitarias",
+              "description": "Sustratos para bandejas sanitarias de gatos",
+              "examples": "Arena aglomerante, Piedras de sílice",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-HIG-SHA",
+              "name": "Cosmética y Baño",
+              "description": "Productos para el baño y estética",
+              "examples": "Shampoo Pelo Blanco, Acondicionador, Perfume",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-HIG-PAÑ",
+              "name": "Absorbentes",
+              "description": "Pañales de piso y carpetas sanitarias",
+              "examples": "Pañales de entrenamiento 60x90",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-HIG-DEN",
+              "name": "Cuidado Dental",
+              "description": "Pasta, cepillos y productos de higiene oral",
+              "examples": "Pasta dental enzimática, Cepillo dedo",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-HIG-CEP",
+              "name": "Cepillos y Peines",
+              "description": "Herramientas de grooming",
+              "examples": "Furminator, Cepillo slicker, Cardina",
+              "level": 3,
+              "display_order": 5,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-HIG-OJO",
+              "name": "Oídos y Ojos",
+              "description": "Limpiadores de oídos y ojos",
+              "examples": "Limpiador ótico, Limpia lágrimas",
+              "level": 3,
+              "display_order": 6,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-HIG-BAN",
+              "name": "Areneros y Bandejas",
+              "description": "Bandejas y cajas sanitarias para gatos",
+              "examples": "Arenero con tapa, Bandeja abierta",
+              "level": 3,
+              "display_order": 7,
+              "parent_slug": "ACC-HIG",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "ACC-PAS",
+          "name": "Paseo y Viaje",
+          "description": "Artículos para movilidad fuera de casa",
+          "examples": "-",
+          "level": 2,
+          "display_order": 2,
+          "parent_slug": "ACC",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "ACC-PAS-COL",
+              "name": "Collares y Correas",
+              "description": "Sujeción para paseo",
+              "examples": "Correa retráctil, Collar de cuero, Pretal",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "ACC-PAS",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-PAS-TRA",
+              "name": "Transportadoras",
+              "description": "Cajas y bolsos de transporte",
+              "examples": "Transportadora Skudo, Bolso de tela",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "ACC-PAS",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-PAS-ROP",
+              "name": "Ropa y Abrigos",
+              "description": "Ropa y abrigos para mascotas",
+              "examples": "Chaleco polar, Impermeable, Camiseta",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "ACC-PAS",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "ACC-DES",
+          "name": "Descanso",
+          "description": "Mobiliario para dormir o reposar",
+          "examples": "-",
+          "level": 2,
+          "display_order": 3,
+          "parent_slug": "ACC",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "ACC-DES-CAM",
+              "name": "Camas y Colchonetas",
+              "description": "Lugares de descanso acolchados",
+              "examples": "Cama Moisés, Colchoneta impermeable",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "ACC-DES",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-DES-RAS",
+              "name": "Rascadores",
+              "description": "Muebles para rascar y trepar (Gatos)",
+              "examples": "Torre de 3 pisos, Rascador de cartón",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "ACC-DES",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-DES-CUC",
+              "name": "Cuchas y Casas",
+              "description": "Casas de exterior e interior",
+              "examples": "Cucha de madera, Iglú plástico",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "ACC-DES",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "ACC-JUG",
+          "name": "Juguetes",
+          "description": "Entretenimiento y enriquecimiento ambiental",
+          "examples": "-",
+          "level": 2,
+          "display_order": 4,
+          "parent_slug": "ACC",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "ACC-JUG-INT",
+              "name": "Juguetes Interactivos",
+              "description": "Juguetes para pensar o rellenar con comida",
+              "examples": "Kong Classic, Puzzles de madera",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "ACC-JUG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-JUG-PEL",
+              "name": "Pelotas y Cuerdas",
+              "description": "Juguetes de lanzar o morder",
+              "examples": "Pelota de tenis, Cuerda con nudos",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "ACC-JUG",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-JUG-GAT",
+              "name": "Juguetes para Gatos",
+              "description": "Juguetes específicos para gatos",
+              "examples": "Ratón de peluche, Caña con plumas",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "ACC-JUG",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "ACC-COM",
+          "name": "Comederos y Bebederos",
+          "description": "Platos y fuentes de agua",
+          "examples": "-",
+          "level": 2,
+          "display_order": 5,
+          "parent_slug": "ACC",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "ACC-COM-PER",
+              "name": "Comederos Perros",
+              "description": "Comederos y bebederos para perros",
+              "examples": "Comedero elevado, Fuente automática",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "ACC-COM",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-COM-GAT",
+              "name": "Comederos Gatos",
+              "description": "Comederos y bebederos para gatos",
+              "examples": "Fuente de agua, Comedero antivómito",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "ACC-COM",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "ACC-EXO",
+          "name": "Accesorios Exóticos",
+          "description": "Accesorios para aves, peces y roedores",
+          "examples": "-",
+          "level": 2,
+          "display_order": 6,
+          "parent_slug": "ACC",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "ACC-EXO-AVE",
+              "name": "Accesorios Aves",
+              "description": "Jaulas, perchas y bebederos para aves",
+              "examples": "Jaula grande, Perchas naturales",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "ACC-EXO",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-EXO-PEC",
+              "name": "Accesorios Acuarios",
+              "description": "Peceras, filtros y decoración",
+              "examples": "Acuario 40L, Filtro externo, Plantas",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "ACC-EXO",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "ACC-EXO-ROE",
+              "name": "Accesorios Roedores",
+              "description": "Jaulas, ruedas y bebederos para roedores",
+              "examples": "Jaula hamster, Rueda de ejercicio",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "ACC-EXO",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "FAR",
+      "name": "Farmacia (Venta Libre)",
+      "description": "Medicamentos que no requieren hospitalización",
+      "examples": "-",
+      "level": 1,
+      "display_order": 3,
+      "parent_slug": null,
+      "image_url": "/placeholder-product.svg",
+      "subcategories": [
+        {
+          "slug": "FAR-ANT",
+          "name": "Antiparasitarios",
+          "description": "Control de parásitos internos y externos",
+          "examples": "-",
+          "level": 2,
+          "display_order": 1,
+          "parent_slug": "FAR",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "FAR-ANT-EXT",
+              "name": "Antiparasitarios Externos",
+              "description": "Pipetas, collares y sprays para pulgas/garrapatas",
+              "examples": "Pipeta Frontline, Collar Seresto, Bravecto",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "FAR-ANT",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "FAR-ANT-INT",
+              "name": "Antiparasitarios Internos",
+              "description": "Pastillas o jarabes para parásitos intestinales",
+              "examples": "Drontal, Total Full, Jarabe desparasitación",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "FAR-ANT",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "FAR-SUP",
+          "name": "Suplementos y Vitaminas",
+          "description": "Nutracéuticos de apoyo",
+          "examples": "-",
+          "level": 2,
+          "display_order": 2,
+          "parent_slug": "FAR",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "FAR-SUP-ART",
+              "name": "Articulaciones",
+              "description": "Condroprotectores para huesos y articulaciones",
+              "examples": "Artrin, Condrovet, Colágeno",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "FAR-SUP",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "FAR-SUP-DER",
+              "name": "Dermatológicos",
+              "description": "Suplementos para piel y pelo",
+              "examples": "Ácidos grasos Omega 3, Biotina",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "FAR-SUP",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "FAR-SUP-VIT",
+              "name": "Vitaminas y Minerales",
+              "description": "Multivitamínicos y minerales",
+              "examples": "Hemolitan, Glicopan, Calciplus",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "FAR-SUP",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "FAR-SUP-DIG",
+              "name": "Digestivos y Probióticos",
+              "description": "Probióticos y enzimas digestivas",
+              "examples": "Fortiflora, Pro-Kolin",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "FAR-SUP",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "FAR-DER",
+          "name": "Dermatología",
+          "description": "Tratamientos tópicos para piel",
+          "examples": "-",
+          "level": 2,
+          "display_order": 3,
+          "parent_slug": "FAR",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "FAR-DER-TOP",
+              "name": "Tópicos y Cremas",
+              "description": "Cremas, ungüentos y sprays dermatológicos",
+              "examples": "Spray cicatrizante, Crema antimicótica",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "FAR-DER",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "FAR-DER-OTI",
+              "name": "Óticos y Oftálmicos",
+              "description": "Gotas y tratamientos para ojos/oídos",
+              "examples": "Aurizon, Easotic, Colirio",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "FAR-DER",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "CLI",
+      "name": "Clínica (Uso Interno)",
+      "description": "Insumos exclusivos para veterinarios",
+      "examples": "-",
+      "level": 1,
+      "display_order": 4,
+      "parent_slug": null,
+      "image_url": "/placeholder-product.svg",
+      "subcategories": [
+        {
+          "slug": "CLI-FAR",
+          "name": "Farmacia Hospitalaria",
+          "description": "Drogas de uso controlado o inyectable",
+          "examples": "-",
+          "level": 2,
+          "display_order": 1,
+          "parent_slug": "CLI",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "CLI-FAR-ANE",
+              "name": "Anestesia y Sedación",
+              "description": "Fármacos para cirugías",
+              "examples": "Ketamina, Propofol, Isoflurano",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "CLI-FAR",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-FAR-VAC",
+              "name": "Biológicos y Vacunas",
+              "description": "Vacunas para inmunización",
+              "examples": "Vacuna Quíntuple, Vacuna Antirrábica",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "CLI-FAR",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-FAR-ANB",
+              "name": "Antibióticos",
+              "description": "Antibióticos inyectables y orales",
+              "examples": "Amoxicilina, Enrofloxacina, Cefalexina",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "CLI-FAR",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-FAR-AIN",
+              "name": "Antiinflamatorios",
+              "description": "AINEs y corticoides",
+              "examples": "Meloxicam, Carprofeno, Dexametasona",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "CLI-FAR",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-FAR-FLU",
+              "name": "Fluidoterapia",
+              "description": "Soluciones IV y electrolitos",
+              "examples": "Suero fisiológico, Ringer lactato",
+              "level": 3,
+              "display_order": 5,
+              "parent_slug": "CLI-FAR",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-FAR-NEU",
+              "name": "Neurología",
+              "description": "Anticonvulsivos y medicación neurológica",
+              "examples": "Fenobarbital, Epiphen, Levetiracetam",
+              "level": 3,
+              "display_order": 6,
+              "parent_slug": "CLI-FAR",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "CLI-INS",
+          "name": "Insumos Médicos",
+          "description": "Material descartable de un solo uso",
+          "examples": "-",
+          "level": 2,
+          "display_order": 2,
+          "parent_slug": "CLI",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "CLI-INS-AGU",
+              "name": "Jeringas y Agujas",
+              "description": "Material de punción",
+              "examples": "Jeringa 3ml, Aguja 21G, Catéter IV",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "CLI-INS",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-INS-QUI",
+              "name": "Insumos Quirúrgicos",
+              "description": "Material estéril para operaciones",
+              "examples": "Gasas estériles, Hilo de sutura, Guantes",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "CLI-INS",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-INS-VEN",
+              "name": "Vendajes y Apósitos",
+              "description": "Material de curación",
+              "examples": "Venda elástica, Algodón, Esparadrapo",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "CLI-INS",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-INS-LAB",
+              "name": "Insumos Laboratorio",
+              "description": "Tubos, portaobjetos y reactivos",
+              "examples": "Tubo EDTA, Portaobjetos, Reactivos",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "CLI-INS",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-INS-EPP",
+              "name": "Equipo de Protección",
+              "description": "EPP para personal clínico",
+              "examples": "Guantes, Mascarillas, Batas",
+              "level": 3,
+              "display_order": 5,
+              "parent_slug": "CLI-INS",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        },
+        {
+          "slug": "CLI-EQU",
+          "name": "Equipamiento Médico",
+          "description": "Activos fijos y maquinaria",
+          "examples": "-",
+          "level": 2,
+          "display_order": 3,
+          "parent_slug": "CLI",
+          "image_url": "/placeholder-product.svg",
+          "subcategories": [
+            {
+              "slug": "CLI-EQU-INS",
+              "name": "Instrumental",
+              "description": "Herramientas de acero inoxidable",
+              "examples": "Pinza Kelly, Tijera Mayo, Portagujas",
+              "level": 3,
+              "display_order": 1,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-EQU-DIA",
+              "name": "Diagnóstico",
+              "description": "Equipos electrónicos de medición",
+              "examples": "Ecógrafo, Microscopio, Centrífuga",
+              "level": 3,
+              "display_order": 2,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-EQU-ANE",
+              "name": "Equipos Anestesia",
+              "description": "Máquinas y monitores de anestesia",
+              "examples": "Máquina anestesia, Vaporizador, Monitor",
+              "level": 3,
+              "display_order": 3,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-EQU-DEN",
+              "name": "Odontología",
+              "description": "Equipos e instrumental dental",
+              "examples": "Unidad dental, Ultrasonido, Fórceps",
+              "level": 3,
+              "display_order": 4,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-EQU-MOB",
+              "name": "Mobiliario Clínico",
+              "description": "Mesas, jaulas y muebles clínicos",
+              "examples": "Mesa quirúrgica, Jaula hospitalización",
+              "level": 3,
+              "display_order": 5,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-EQU-EST",
+              "name": "Esterilización",
+              "description": "Autoclaves y esterilizadores",
+              "examples": "Autoclave, Indicadores, Bolsas",
+              "level": 3,
+              "display_order": 6,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            },
+            {
+              "slug": "CLI-EQU-LAB",
+              "name": "Equipos Laboratorio",
+              "description": "Equipamiento para análisis clínicos",
+              "examples": "Centrífuga, Micropipeta, Baño María, Microscopio",
+              "level": 3,
+              "display_order": 7,
+              "parent_slug": "CLI-EQU",
+              "image_url": "/placeholder-product.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

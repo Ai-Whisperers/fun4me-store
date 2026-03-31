@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "name": "Vete - Veterinary Platform",
+  "description": "Multi-tenant Next.js 15 veterinary clinic management SaaS",
+  "context": {
+    "alwaysInclude": [
+      "CLAUDE.md"
+    ],
+    "onDemand": [
+      ".claude/exemplars/*.md",
+      "documentation/architecture/overview.md",
+      "documentation/database/overview.md"
+    ]
+  },
+  "codeStyle": {
+    "language": "typescript",
+    "framework": "next.js",
+    "styling": "tailwind",
+    "testFramework": "vitest",
+    "e2eFramework": "playwright"
+  },
+  "conventions": {
+    "components": "PascalCase.tsx",
+    "utilities": "kebab-case.ts",
+    "apiRoutes": "route.ts in folder",
+    "serverActions": "actions.ts",
+    "tests": "*.test.ts or *.spec.ts",
+    "migrations": "XX_description.sql"
+  },
+  "warnings": [
+    "NEVER upgrade Tailwind to v4 - stay on 3.4.x",
+    "ALWAYS use CSS variables for colors: var(--primary)",
+    "ALWAYS enable RLS on database tables",
+    "ALWAYS filter queries by tenant_id",
+    "ALL user-facing text must be in Spanish"
+  ],
+  "patterns": {
+    "multiTenancy": {
+      "routePattern": "/[clinic]/*",
+      "contentPath": "web/.content_data/[clinic]/",
+      "tenantColumn": "tenant_id",
+      "securityFunction": "is_staff_of(tenant_id)"
+    },
+    "api": {
+      "authCheck": "supabase.auth.getUser()",
+      "tenantFilter": ".eq('tenant_id', profile.tenant_id)",
+      "errorResponse": "{ error: 'No autorizado' }, { status: 401 }"
+    },
+    "theming": {
+      "primary": "var(--primary)",
+      "background": "var(--bg-default)",
+      "text": "var(--text-primary)"
+    }
+  },
+  "directories": {
+    "web": "Next.js application root",
+    "web/app": "App Router pages and API routes",
+    "web/app/[clinic]": "Multi-tenant dynamic routes",
+    "web/components": "React components",
+    "web/lib": "Utilities and Supabase client",
+    "web/db": "SQL migrations",
+    "web/.content_data": "JSON-CMS content per clinic",
+    "documentation": "Full technical documentation"
+  },
+  "tenants": [
+    "adris",
+    "petlife"
+  ],
+  "roles": {
+    "owner": "Pet owners - manage own pets, book appointments",
+    "vet": "Veterinarians - all patients, prescriptions, clinical tools",
+    "admin": "Administrators - everything + settings, team, finances"
+  },
+  "enabledPlugins": {
+    "agent-sdk-dev": true,
+    "code-review": true,
+    "commit-commands": true,
+    "explanatory-output-style": true,
+    "feature-dev": true,
+    "frontend-design": true,
+    "hookify": true,
+    "learning-output-style": true,
+    "plugin-dev": true,
+    "pr-review-toolkit": true,
+    "ralph-loop": true,
+    "security-guidance": true,
+    "vete-veterinary": true
+  }
+}

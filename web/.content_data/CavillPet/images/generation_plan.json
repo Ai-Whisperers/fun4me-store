@@ -1,0 +1,197 @@
+[
+  {
+    "id": "HERO-001",
+    "path": "web\\public\\branding\\terrapet\\images\\hero-bg.jpg",
+    "prompt": "Professional veterinary photography, a friendly golden retriever being gently examined by a female veterinarian in a modern, clean examination room, soft natural lighting from window, the dog looks calm and happy, veterinarian wearing white coat with stethoscope, warm color grading with hints of forest green and gold, shallow depth of field, Canon EOS R5, 85mm lens, commercial quality, warm and inviting atmosphere, space on right side for text overlay, 16:9 aspect ratio, photorealistic, 4K quality"
+  },
+  {
+    "id": "HERO-002",
+    "path": "web\\public\\branding\\terrapet\\images\\about-hero.jpg",
+    "prompt": "Documentary style photograph of a female veterinarian in her 40s holding a rescued puppy, standing in front of a small veterinary clinic that has grown over the years, warm nostalgic feeling, natural lighting, genuine emotional connection between vet and animal, white coat, caring expression, background shows both old and modern elements of a growing practice, storytelling quality, 16:9 aspect ratio, photorealistic"
+  },
+  {
+    "id": "HERO-003",
+    "path": "web\\public\\branding\\terrapet\\images\\services-hero.jpg",
+    "prompt": "Professional veterinary still life photography, silver stethoscope coiled on modern white examination table, soft morning light from window, clean minimalist composition, forest green accent wall visible in background, medical precision implied, commercial product photography style, space at top for text, 16:9 aspect ratio, photorealistic, high quality, shallow depth of field"
+  },
+  {
+    "id": "HERO-004",
+    "path": "web\\public\\branding\\terrapet\\images\\store-hero.jpg",
+    "prompt": "Premium pet product photography, artistic arrangement of high-quality pet food bags, colorful toys, grooming supplies, and accessories on white background, overhead flat lay style, bright airy commercial photography, organized but abundant variety, warm soft shadows, lifestyle product photography, 16:9 aspect ratio, photorealistic, 4K quality"
+  },
+  {
+    "id": "TEAM-001",
+    "path": "web\\public\\branding\\terrapet\\images\\team\\adriana.jpg",
+    "prompt": "Professional headshot portrait of a Latina female veterinarian in her late 40s, warm approachable smile, silver-streaked dark hair pulled back, wearing clean white medical coat with stethoscope, confident compassionate expression, soft studio lighting with slight warmth, neutral blurred background with hint of green, professional corporate portrait style, shoulders and head framing, 3:4 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "TEAM-002",
+    "path": "web\\public\\branding\\terrapet\\images\\team\\jorge.jpg",
+    "prompt": "Professional headshot portrait of a Latino male veterinary surgeon in his late 30s, confident reassuring expression, short dark hair, clean-shaven, wearing surgical scrubs or white coat, slight smile showing competence and approachability, soft studio lighting, surgery room softly visible in background with professional lighting equipment, corporate portrait style, 3:4 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "TEAM-003",
+    "path": "web\\public\\branding\\terrapet\\images\\team\\fernanda.jpg",
+    "prompt": "Professional headshot portrait of a young Latina female veterinarian in her early 30s, intelligent focused expression with warm smile, long dark hair, wearing white coat, modern diagnostic imaging equipment softly blurred in background showing ultrasound machine, tech-forward professional appearance, soft studio lighting, corporate portrait photography, 3:4 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "TEAM-004",
+    "path": "web\\public\\branding\\terrapet\\images\\team\\carolina.jpg",
+    "prompt": "Professional portrait of a young Latina grooming specialist in her late 20s, bright friendly smile, styled hair with colorful streak, wearing professional grooming apron, holding grooming scissors or brush, colorful pet grooming salon softly blurred in background, energetic positive personality, natural bright lighting, more casual than medical portraits but still professional, 3:4 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FAC-001",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\reception.jpg",
+    "prompt": "Modern veterinary clinic reception area interior photography, clean white and wood reception desk, comfortable waiting chairs with pet-friendly fabric, indoor plants, large windows with natural light, organized product display shelf, pet scale visible, clean tile flooring, warm inviting atmosphere, no people, professional architectural interior photography, wide angle, 4:3 aspect ratio, photorealistic, 4K quality"
+  },
+  {
+    "id": "FAC-002",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\surgery.jpg",
+    "prompt": "State-of-the-art veterinary surgery suite, empty surgical table with stainless steel surface, professional surgical lights overhead, anesthesia equipment, vital signs monitors, sterile green/blue color scheme, impeccably clean environment, professional medical photography, reassuring modern medical facility, no patients visible, wide angle view, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FAC-003",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\lab.jpg",
+    "prompt": "Modern veterinary diagnostic laboratory interior, professional microscope on clean counter, blood analysis machines, centrifuge equipment, organized sample storage, white cabinets, bright clinical lighting, scientific precision evident, lab technician silhouette optional, medical laboratory photography style, clean organized professional, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FAC-004",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\grooming.jpg",
+    "prompt": "Bright colorful pet grooming salon interior, professional grooming tables with adjustable arms, wall-mounted dryers, special pet bathtub station, organized wall display of grooming tools and ribbons, cheerful atmosphere with teal and pink accents, clean but fun environment, natural and artificial lighting mix, pet spa feeling, no animals present, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FAC-005",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\hospitalization.jpg",
+    "prompt": "Modern veterinary hospitalization ward, clean individual stainless steel kennels with comfortable bedding, IV stands, monitoring equipment visible, climate control vents, soft calming lighting, observation window, professional 24-hour care facility, reassuring medical environment, no animals visible, medical facility photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FAC-006",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\imaging.jpg",
+    "prompt": "Veterinary diagnostic imaging room, digital X-ray machine, ultrasound station with monitor displaying scan, IDEXX diagnostic equipment, lead apron hanging on wall, dim lighting appropriate for imaging, high-tech medical environment, professional medical photography, modern veterinary technology, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FAC-007",
+    "path": "web\\public\\branding\\terrapet\\images\\facilities\\consultation.jpg",
+    "prompt": "Modern veterinary examination room, padded examination table with non-slip surface, wall-mounted otoscope and ophthalmoscope, computer workstation with screen, pet scale on floor, anatomical charts on wall, sink with soap dispenser, warm welcoming yet professional atmosphere, natural window light, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-001",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\consultation.jpg",
+    "prompt": "Veterinarian performing routine checkup on friendly Labrador dog, using stethoscope to listen to heart, dog sitting calmly on examination table, owner visible in background watching attentively, warm natural lighting, professional but caring interaction, modern clinic setting, emotional connection visible, commercial veterinary photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-002",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\vaccination.jpg",
+    "prompt": "Close-up of veterinarian administering vaccine to young golden puppy, gentle hands holding puppy steady, vaccine syringe visible, puppy appears calm not stressed, assistant's hands supporting, professional medical precision, soft focus background showing vaccine vials, compassionate care evident, veterinary medical photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-003",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\surgery.jpg",
+    "prompt": "Veterinary surgeon in full surgical attire including mask cap and sterile gloves, professional surgical lights illuminating work area, team member assisting in background, modern surgery equipment visible, sterile blue-green environment, focus on professionalism and expertise, no graphic content, reassuring medical photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-004",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\dental.jpg",
+    "prompt": "Veterinarian examining dog's teeth with dental mirror, dog's mouth gently opened showing clean white teeth, professional dental equipment visible, bright dental light, clean clinical setting, demonstrating importance of pet dental health, gentle handling, veterinary dental photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-005",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\imaging.jpg",
+    "prompt": "Veterinarian performing ultrasound on calm cat lying on examination table, ultrasound screen showing internal scan, probe on pet's abdomen, soft lighting in imaging room, high-tech diagnostic environment, professional concentration, modern veterinary medicine, medical diagnostic photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-006",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\lab.jpg",
+    "prompt": "Well-equipped veterinary emergency room ready for action, emergency gurney, oxygen equipment, cardiac monitors, IV stands prepared, crash cart visible, red emergency lighting accent, 24/7 readiness evident, professional urgent care environment, no patients, reassuring preparedness, medical facility photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-007",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\emergency.jpg",
+    "prompt": "Happy golden retriever being bathed in professional pet bathing station, groomer using handheld sprayer, premium shampoo foam visible, dog enjoying the experience with happy expression, colorful grooming salon setting, water splashing slightly, fun spa experience for pets, bright cheerful lighting, pet grooming photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-008",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\hospitalization.jpg",
+    "prompt": "Professional pet groomer styling a fluffy white Bichon Frise, using grooming scissors with precision, dog standing calmly on grooming table, beautiful finished coat becoming visible, grooming supplies in background, artistic pet styling, skilled craftsmanship, bright salon lighting, pet grooming photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-009",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\grooming-bath.jpg",
+    "prompt": "Caring veterinary technician checking on resting dog in comfortable hospital kennel, clipboard in hand noting vitals, dog resting comfortably on soft bedding, IV line visible, warm caring interaction, 24-hour care facility, compassionate monitoring, reassuring medical care, soft lighting, veterinary care photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-010",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\grooming-haircut.jpg",
+    "prompt": "Veterinarian gently examining elderly grey-muzzled dog, extra gentle handling evident, older dog resting comfortably, owner's hand visible comforting pet, compassionate geriatric care, respectful dignified treatment, soft warm lighting, emotional sensitivity, senior pet wellness, veterinary photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-011",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\senior-care.jpg",
+    "prompt": "Official pet health documents and pet passport on desk with stamp, veterinarian signing certificate, travel carrier visible in background, microchip scanner on desk, international travel preparation, official documentation process, professional desk setting, pet travel services, document photography style, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "SVC-012",
+    "path": "web\\public\\branding\\terrapet\\images\\services\\travel-docs.jpg",
+    "prompt": "Veterinary technician analyzing blood sample under microscope, test tubes in rack nearby, digital analysis screen showing results, professional laboratory coat, scientific precision and expertise, modern diagnostic equipment, quick accurate testing implied, medical laboratory photography, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FEAT-001",
+    "path": "web\\public\\branding\\terrapet\\images\\features\\emergency-24h.jpg",
+    "prompt": "Veterinary clinic entrance at night with warm interior lights glowing, emergency entrance sign illuminated, clock showing 2 AM, professional 24-hour care facility, welcoming despite late hour, security and readiness, night photography with warm interior glow, 1:1 square aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FEAT-002",
+    "path": "web\\public\\branding\\terrapet\\images\\features\\certified-vaccines.jpg",
+    "prompt": "Premium veterinary vaccines arranged professionally, Nobivac and other branded vials, official certification seal visible, proper cold storage refrigerator in background, quality assurance implied, medical product photography, professional pharmaceutical display, trust and certification, 1:1 square aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FEAT-003",
+    "path": "web\\public\\branding\\terrapet\\images\\features\\advanced-diagnostics.jpg",
+    "prompt": "Modern veterinary diagnostic equipment array, digital screens showing test results and charts, high-tech laboratory machines, blue LED accent lights, cutting-edge medical technology, fast accurate diagnostics implied, professional medical technology photography, 1:1 square aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "FEAT-004",
+    "path": "web\\public\\branding\\terrapet\\images\\features\\delivery.jpg",
+    "prompt": "Friendly delivery person handing pet product package to happy customer at door, small dog visible at customer's feet excited, professional delivery bag or box with pet product visible, urban South American neighborhood setting, convenience and service, doorstep delivery photography, warm friendly interaction, 1:1 square aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "STORE-001",
+    "path": "web\\public\\branding\\terrapet\\images\\store\\category-food.jpg",
+    "prompt": "Premium pet food product arrangement, Royal Canin Pro Plan and Hills bags artistically displayed, kibble scattered decoratively, clean white background, professional product photography lighting, variety of sizes and formulas, dog and cat food together, commercial e-commerce photography, 4:3 aspect ratio, photorealistic, 4K quality"
+  },
+  {
+    "id": "STORE-002",
+    "path": "web\\public\\branding\\terrapet\\images\\store\\category-accessories.jpg",
+    "prompt": "Colorful pet accessories flat lay arrangement, stylish collars and leashes, comfortable pet beds, food bowls, ID tags, variety of colors and styles, white background with soft shadows, lifestyle product photography, premium pet accessories, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "STORE-003",
+    "path": "web\\public\\branding\\terrapet\\images\\store\\category-health.jpg",
+    "prompt": "Pet health and wellness products arrangement, vitamin supplements, flea and tick preventatives, joint supplements, wound care supplies, professional product photography, clean white background, medical quality products, health-focused display, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "STORE-004",
+    "path": "web\\public\\branding\\terrapet\\images\\store\\category-hygiene.jpg",
+    "prompt": "Colorful assortment of pet toys, rubber chew toys, rope toys, squeaky plush toys, interactive puzzle toys, playful arrangement on white background, bright fun colors, pet toy product photography, variety and fun implied, 4:3 aspect ratio, photorealistic, high quality"
+  },
+  {
+    "id": "TOOL-001",
+    "path": "web\\public\\branding\\terrapet\\images\\tools\\toxic-checker.jpg",
+    "prompt": "Flat lay warning composition of foods toxic to pets, chocolate grapes onions garlic xylitol products arranged with warning symbols, cute dog looking at food with prohibited sign overlay, educational infographic style, clear warning message, red accent colors for danger, informative pet safety, 16:9 aspect ratio, slight illustration style, high quality"
+  },
+  {
+    "id": "TOOL-002",
+    "path": "web\\public\\branding\\terrapet\\images\\tools\\age-calculator.jpg",
+    "prompt": "Creative infographic showing dog aging progression, puppy to senior dog transformation, human age comparison numbers floating, fun engaging illustration style, timeline visualization, educational pet content, warm friendly colors with green and gold accents, playful informative, 16:9 aspect ratio, illustration style, high quality"
+  },
+  {
+    "id": "DECOR-001",
+    "path": "web\\public\\branding\\terrapet\\images\\patterns\\paw-pattern.png",
+    "prompt": "Seamless repeating pattern of subtle paw prints, very light forest green (#2F5233) on white background, minimal opacity around 10-15%, elegant understated pattern, suitable for website background, tileable texture, decorative not distracting, pattern design, PNG with transparency"
+  },
+  {
+    "id": "DECOR-002",
+    "path": "web\\public\\branding\\terrapet\\images\\patterns\\pet-silhouettes.png",
+    "prompt": "Cute illustration of lost confused puppy with map, cartoon style with green and gold color scheme, friendly not sad expression, \"lost\" concept for 404 page, charming pet illustration, helpful supportive mood, simple clean illustration style, transparent background, 1:1 aspect ratio"
+  }
+]

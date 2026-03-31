@@ -1,0 +1,264 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "vetoquinol",
+  "products": [
+    {
+      "sku": "VTQ-TOLFEDINE",
+      "name": "Tolfedine (Ácido Tolfenámico)",
+      "description": "Antiinflamatorio no esteroideo inyectable",
+      "category_slug": "CLI-FAR-AIN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Frasco 10ml (4%)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-10ML"
+        },
+        {
+          "size": "Frasco 30ml (4%)",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-30ML"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E"
+      ],
+      "attributes": {
+        "active_ingredient": "Ácido tolfenámico 4%",
+        "route": "SC, IM, IV",
+        "dosage": "4mg/kg",
+        "rx_required": true
+      }
+    },
+    {
+      "sku": "VTQ-TOLFEDINE-TAB",
+      "name": "Tolfedine Comprimidos",
+      "description": "AINE oral para perros y gatos",
+      "category_slug": "CLI-FAR-AIN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 20 comp (6mg)",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-6MG"
+        },
+        {
+          "size": "Caja x 20 comp (20mg)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-20MG"
+        },
+        {
+          "size": "Caja x 20 comp (60mg)",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-60MG"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6"
+      ],
+      "attributes": {
+        "active_ingredient": "Ácido tolfenámico",
+        "route": "Oral",
+        "rx_required": true
+      }
+    },
+    {
+      "sku": "VTQ-IPAKITINE",
+      "name": "Ipakitine",
+      "description": "Quelante de fósforo para insuficiencia renal",
+      "category_slug": "FAR-SUP-VIT",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Bote 60g",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-60G"
+        },
+        {
+          "size": "Bote 180g",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-180G"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E"
+      ],
+      "attributes": {
+        "active_ingredient": "Quitosano, carbonato de calcio",
+        "indication": "Enfermedad renal crónica",
+        "route": "Oral con alimento"
+      }
+    },
+    {
+      "sku": "VTQ-ZYLKENE",
+      "name": "Zylkene",
+      "description": "Ansiolítico natural (alfa-casozepina)",
+      "category_slug": "FAR-SUP-VIT",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 30 caps (75mg)",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-75MG"
+        },
+        {
+          "size": "Caja x 30 caps (225mg)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-225MG"
+        },
+        {
+          "size": "Caja x 30 caps (450mg)",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-450MG"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6"
+      ],
+      "attributes": {
+        "active_ingredient": "Alfa-casozepina",
+        "indication": "Ansiedad, estrés",
+        "route": "Oral"
+      }
+    },
+    {
+      "sku": "VTQ-MARBOCYL",
+      "name": "Marbocyl (Marbofloxacina)",
+      "description": "Antibiótico fluoroquinolona inyectable",
+      "category_slug": "CLI-FAR-ANB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Frasco 20ml (10%)",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-20ML"
+        },
+        {
+          "size": "Frasco 100ml (10%)",
+          "base_price": 950000,
+          "cost_price": 570000,
+          "sku_suffix": "-100ML"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E"
+      ],
+      "attributes": {
+        "active_ingredient": "Marbofloxacina 10%",
+        "route": "SC, IM, IV",
+        "spectrum": "Amplio espectro",
+        "rx_required": true
+      }
+    },
+    {
+      "sku": "VTQ-MARBOCYL-TAB",
+      "name": "Marbocyl Comprimidos",
+      "description": "Antibiótico oral de amplio espectro",
+      "category_slug": "CLI-FAR-ANB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 10 comp (5mg)",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-5MG"
+        },
+        {
+          "size": "Caja x 10 comp (20mg)",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-20MG"
+        },
+        {
+          "size": "Caja x 10 comp (80mg)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-80MG"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6"
+      ],
+      "attributes": {
+        "active_ingredient": "Marbofloxacina",
+        "route": "Oral",
+        "rx_required": true
+      }
+    },
+    {
+      "sku": "VTQ-AURIZON",
+      "name": "Aurizon Gotas Óticas",
+      "description": "Tratamiento ótico para otitis",
+      "category_slug": "FAR-DER-OTI",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Frasco 10ml",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-10ML"
+        },
+        {
+          "size": "Frasco 20ml",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-20ML"
+        }
+      ],
+      "image_url": "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+      "images": [
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/2025-12/zylkene-classic-group-1.jpg?itok=23nQSJI6",
+        "https://www.vetoquinolusa.com/sites/us2country/files/styles/product_detail__photo_popup/public/flexadin-advanced-group.jpg?itok=ZPeCfV0E"
+      ],
+      "attributes": {
+        "active_ingredient": "Marbofloxacina, clotrimazol, dexametasona",
+        "indication": "Otitis externa",
+        "rx_required": true
+      }
+    }
+  ]
+}

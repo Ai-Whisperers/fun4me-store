@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Descripción general de los servicios."
+  },
+  "services": [
+    {
+      "id": "consultation",
+      "visible": true,
+      "category": "medical",
+      "title": "Servicio Ejemplo",
+      "icon": "stethoscope",
+      "summary": "Resumen corto.",
+      "details": {
+        "description": "Descripción larga del servicio.",
+        "duration_minutes": 30,
+        "includes": ["Incluye 1", "Incluye 2"]
+      },
+      "variants": [
+        {
+          "name": "Precio Único",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Mismo precio para todas las mascotas"
+        },
+        {
+          "name": "Precio por Tamaño",
+          "price_display": "Desde 48.000 Gs",
+          "price_value": 60000,
+          "description": "Precio varía según tamaño de mascota",
+          "size_pricing": {
+            "mini": 48000,
+            "pequeño": 60000,
+            "mediano": 78000,
+            "grande": 90000,
+            "gigante": 108000
+          }
+        },
+        {
+          "name": "Cualquier Tamaño",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "description": "Precio fijo para cualquier tamaño",
+          "size_pricing": {
+            "any_size": 80000
+          }
+        },
+        {
+          "name": "Solo Perros Pequeños",
+          "price_display": "50.000 Gs",
+          "price_value": 50000,
+          "description": "Solo disponible para mascotas pequeñas",
+          "size_pricing": {
+            "mini": 45000,
+            "pequeño": 50000
+          }
+        },
+        {
+          "name": "Consultar",
+          "price_display": "Consultar",
+          "price_value": 0,
+          "description": "Precio a consultar"
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    }
+  ]
+}

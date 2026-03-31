@@ -1,0 +1,468 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "store": "Tienda",
+    "owners_zone": "Zona de Dueños",
+    "login_profile": "LogIn / Mi Perfil",
+    "dashboard": "Inicio",
+    "profile": "Mi Perfil",
+    "back": "Volver"
+  },
+  "portal": {
+    "dashboard": {
+      "staff_title": "Portal Veterinario",
+      "owner_title": "Mis Mascotas",
+      "welcome": "Bienvenido, {name}",
+      "stats": {
+        "patients": "Pacientes Totales",
+        "vaccines": "Vacunas Pendientes",
+        "upcoming_appointments": "Citas Futuras"
+      }
+    },
+    "empty_states": {
+      "no_pets": "No tienes mascotas registradas",
+      "no_pets_desc": "Agrega tu primera mascota para llevar su control.",
+      "add_pet_btn": "Registrar Mascota",
+      "no_vaccines": "Sin vacunas registradas."
+    },
+    "pet_card": {
+      "weight": "Peso",
+      "chip": "Chip",
+      "vaccines": "Vacunas",
+      "add_vaccine": "Agregar Vacuna",
+      "download_pdf": "Descargar PDF"
+    },
+    "appointment_widget": {
+      "title": "Mis Próximas Citas",
+      "status": {
+        "confirmed": "Confirmada",
+        "pending": "Pendiente"
+      }
+    }
+  },
+  "home": {
+    "features_title": "¿Por qué elegirnos?",
+    "features_subtitle": "Compromiso, tecnología y amor por los animales.",
+    "tools_badge": "Herramientas",
+    "contact_badge": "Contacto",
+    "map_button": "Ver ubicación en Google Maps"
+  },
+  "about": {
+    "team_title": "Nuestro Equipo",
+    "intro_badge": "Nuestra Historia"
+  },
+  "services": {
+    "meta_title": "Nuestros Servicios",
+    "book_floating_btn": "Agendar Turno",
+    "vaccine_schedule": {
+      "title": "Calendario de Vacunación (Paraguay)",
+      "subtitle": "Cronograma oficial recomendado por SENACSA.",
+      "dog_label": "Perros",
+      "cat_label": "Gatos",
+      "important_label": "Importante:",
+      "important_text": "Este es un esquema estándar. El veterinario puede ajustarlo según la salud y el estilo de vida de tu mascota.",
+      "data": {
+        "dog": [
+          {
+            "age": "45 días (6 semanas)",
+            "n": 1,
+            "vaccines": ["Puppy DP (Moquillo, Parvo)"],
+            "note": "Primera dosis crítica."
+          },
+          {
+            "age": "3 meses (12 semanas)",
+            "n": 2,
+            "vaccines": ["Séxtuple / Polivalente", "Antirrábica (Obligatoria)"],
+            "note": "Ley Nacional en Paraguay."
+          },
+          {
+            "age": "4 meses (16 semanas)",
+            "n": 3,
+            "vaccines": ["Refuerzo Séxtuple"],
+            "note": "Cierres del esquema."
+          },
+          {
+            "age": "Anual",
+            "n": 4,
+            "vaccines": ["Séxtuple", "Antirrábica"],
+            "note": "Refuerzo cada 12 meses toda la vida."
+          },
+          {
+            "age": "Opcional",
+            "n": 5,
+            "vaccines": ["Tos de las Perreras", "Leishmaniasis"],
+            "note": "Recomendado en zonas endémicas."
+          }
+        ],
+        "cat": [
+          {
+            "age": "2 meses (8 semanas)",
+            "n": 1,
+            "vaccines": ["Triple Felina"],
+            "note": "Panleucopenia, Rinotraqueitis, Calicivirus"
+          },
+          {
+            "age": "3 meses (12 semanas)",
+            "n": 2,
+            "vaccines": ["Refuerzo Triple Felina", "Antirrábica"],
+            "note": "Ley Nacional."
+          },
+          {
+            "age": "4 meses (16 semanas)",
+            "n": 3,
+            "vaccines": ["Leucemia Felina (Test previo)"],
+            "note": "Para gatos que salen al exterior."
+          },
+          {
+            "age": "Anual",
+            "n": 4,
+            "vaccines": ["Triple Felina", "Antirrábica"],
+            "note": "Refuerzo de por vida."
+          }
+        ]
+      }
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "edit": "Editar"
+    }
+  },
+  "store": {
+    "title": "Tienda",
+    "back_home": "Volver al Inicio",
+    "hero_title": "Lo mejor para tu mascota",
+    "hero_subtitle": "Encuentra alimentos, accesorios y medicamentos recomendados por nuestros veterinarios.",
+    "search_placeholder": "Buscar productos...",
+    "all_categories": "Todas las categorías",
+    "empty_state": "No hay productos disponibles.",
+    "product_card": {
+      "add": "Agregar",
+      "added": "Agregado"
+    }
+  },
+  "cart": {
+    "title": "Carrito",
+    "empty": "Tu carrito está vacío.",
+    "item_service": "Servicio",
+    "item_product": "Producto",
+    "clear_btn": "Vaciar carrito",
+    "total_label": "Total:",
+    "checkout_btn": "Preparar pedido"
+  },
+  "checkout": {
+    "title": "Resumen del Pedido",
+    "empty": "No hay items en el carrito.",
+    "print_btn": "Imprimir",
+    "whatsapp_btn": "Pedir por WhatsApp",
+    "back_cart": "Volver al carrito"
+  },
+  "dashboard": {
+    "sidebar": {
+      "agenda": "Agenda",
+      "dashboard": "Dashboard",
+      "calendar": "Calendario",
+      "appointments_today": "Citas Hoy",
+      "vaccines": "Vacunas",
+      "hospital": "Hospital",
+      "laboratory": "Laboratorio",
+      "clients": "Clientes",
+      "directory": "Directorio",
+      "messages": "Mensajes",
+      "consents": "Consentimientos",
+      "finances": "Finanzas",
+      "analytics": "Analytics",
+      "invoices": "Facturas",
+      "inventory": "Inventario",
+      "insurance": "Seguros",
+      "settings": "Configuración",
+      "team": "Equipo",
+      "schedules": "Horarios",
+      "time_off": "Ausencias",
+      "audit": "Auditoría",
+      "tools": "Herramientas",
+      "back_to_portal": "Portal"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "subtitle": "Métricas y estadísticas de tu clínica",
+      "period": {
+        "week": "Semana",
+        "month": "Mes",
+        "quarter": "Trimestre"
+      },
+      "stats": {
+        "revenue": "Ingresos",
+        "appointments": "Citas",
+        "new_clients": "Nuevos Clientes",
+        "new_pets": "Nuevas Mascotas",
+        "vs_previous": "vs período anterior"
+      },
+      "charts": {
+        "revenue_by_day": "Ingresos por Día",
+        "appointments_by_type": "Citas por Tipo",
+        "top_services": "Servicios Más Populares"
+      },
+      "quick_stats": {
+        "satisfaction": "Tasa de Satisfacción",
+        "wait_time": "Tiempo Espera Promedio",
+        "retention": "Retención de Clientes",
+        "low_stock": "Productos Bajo Stock"
+      }
+    },
+    "clients": {
+      "title": "Clientes",
+      "search_placeholder": "Buscar por nombre, email o teléfono...",
+      "export_csv": "Exportar CSV",
+      "new_client": "Nuevo Cliente",
+      "bulk_message": "Mensaje Masivo",
+      "filters": {
+        "all": "Todos los clientes",
+        "vip": "Clientes VIP",
+        "recent": "Visita reciente (30 días)",
+        "inactive": "Sin visita (90+ días)",
+        "criadero": "Criaderos",
+        "rescate": "Rescates"
+      },
+      "detail": {
+        "contact_info": "Información de Contacto",
+        "financial_summary": "Resumen Financiero",
+        "outstanding_balance": "Saldo Pendiente",
+        "total_invoices": "Total Facturas",
+        "registered_pets": "Mascotas Registradas",
+        "internal_notes": "Notas Internas",
+        "add_note": "Agregar Nota",
+        "pets": "Mascotas",
+        "add_pet": "Agregar Mascota",
+        "appointment_history": "Historial de Citas",
+        "invoice_history": "Historial de Facturas",
+        "communication_history": "Historial de Comunicaciones",
+        "new_appointment": "Nueva Cita",
+        "view_invoices": "Ver Facturas",
+        "send_message": "Enviar Mensaje"
+      }
+    },
+    "tags": {
+      "vip": "VIP",
+      "criadero": "Criadero",
+      "rescate": "Rescate",
+      "nuevo": "Nuevo",
+      "frecuente": "Frecuente",
+      "moroso": "Moroso",
+      "empleado": "Empleado",
+      "referido": "Referido",
+      "add": "Agregar",
+      "select_tag": "Seleccionar etiqueta",
+      "all_assigned": "Todas las etiquetas ya están asignadas"
+    },
+    "loyalty": {
+      "title": "Puntos de Lealtad",
+      "current_balance": "Saldo Actual",
+      "lifetime_earned": "Acumulado Total",
+      "next_level": "Próximo nivel",
+      "add": "Agregar",
+      "redeem": "Canjear",
+      "points": "puntos",
+      "levels": {
+        "bronze": "Bronce",
+        "silver": "Plata",
+        "gold": "Oro",
+        "platinum": "Platino"
+      },
+      "transaction_history": "Historial de Transacciones",
+      "points_added": "Puntos agregados",
+      "points_redeemed": "Puntos canjeados",
+      "confirm": "Confirmar"
+    },
+    "notes": {
+      "title": "Notas Internas",
+      "add": "Agregar",
+      "placeholder": "Escribe una nota sobre este cliente...",
+      "private": "Solo visible para ti",
+      "public": "Visible para todo el equipo",
+      "no_notes": "No hay notas registradas",
+      "add_first": "Agregar la primera nota"
+    },
+    "search": {
+      "placeholder": "Buscar clientes, mascotas, citas...",
+      "no_results": "No se encontraron resultados",
+      "try_other": "Intenta con otros términos de búsqueda",
+      "recent": "Búsquedas Recientes",
+      "types": {
+        "client": "Cliente",
+        "pet": "Mascota",
+        "appointment": "Cita",
+        "invoice": "Factura",
+        "product": "Producto"
+      }
+    },
+    "shortcuts": {
+      "title": "Atajos de Teclado",
+      "subtitle": "Navega más rápido con el teclado",
+      "categories": {
+        "general": "Navegación General",
+        "search": "Búsqueda y Filtros",
+        "calendar": "Citas y Calendario",
+        "clients": "Clientes y Pacientes",
+        "quick_actions": "Acciones Rápidas",
+        "other": "Otros"
+      },
+      "press_to_show": "Presiona ? en cualquier momento para ver esta guía"
+    },
+    "bulk_messaging": {
+      "title": "Mensajes Masivos",
+      "steps": {
+        "select": "Selecciona los destinatarios",
+        "compose": "Redacta tu mensaje",
+        "review": "Revisa y envía",
+        "sending": "Enviando..."
+      },
+      "channel": "Canal de envío",
+      "channels": {
+        "whatsapp": "WhatsApp",
+        "email": "Email",
+        "sms": "SMS"
+      },
+      "template": "Plantilla",
+      "templates": {
+        "reminder": "Recordatorio de Vacuna",
+        "promo": "Promoción Especial",
+        "checkup": "Chequeo Anual",
+        "custom": "Mensaje Personalizado"
+      },
+      "message": "Mensaje",
+      "variables_hint": "Variables disponibles: {nombre}, {mascota}, {fecha}",
+      "selected_count": "{count} seleccionados de {total}",
+      "select_all": "Seleccionar todos",
+      "clear": "Limpiar",
+      "continue_with": "Continuar con {count} destinatarios",
+      "confirm_send": "Confirma antes de enviar",
+      "send_warning": "Este mensaje se enviará a {count} clientes. Esta acción no se puede deshacer.",
+      "send": "Enviar Mensajes",
+      "completed": "¡Envío completado!",
+      "sent_count": "{success} enviados correctamente",
+      "failed_count": "{failed} fallidos"
+    },
+    "inventory": {
+      "title": "Inventario",
+      "search_placeholder": "Buscar productos...",
+      "scan_barcode": "Escanear Código",
+      "export": "Exportar",
+      "filters": {
+        "all": "Todos",
+        "in_stock": "En Stock",
+        "low_stock": "Stock Bajo",
+        "out_of_stock": "Sin Stock"
+      },
+      "barcode_scanner": {
+        "title": "Escanear Código",
+        "searching": "Buscando producto...",
+        "not_found": "Producto no encontrado",
+        "use_code": "Usar Código",
+        "scan_another": "Escanear Otro",
+        "manual_entry": "Ingresar código manualmente",
+        "stock_available": "Stock disponible",
+        "price": "Precio"
+      }
+    },
+    "patient_actions": {
+      "title": "Acciones rápidas",
+      "frequent": "Acciones Frecuentes",
+      "more": "Más Opciones",
+      "actions": {
+        "new_appointment": "Nueva Cita",
+        "medical_history": "Historia Clínica",
+        "vaccine": "Vacuna",
+        "prescription": "Receta",
+        "lab": "Laboratorio",
+        "hospitalize": "Hospitalizar",
+        "quality_of_life": "Calidad de Vida",
+        "quick_consult": "Consulta Rápida",
+        "consent": "Consentimiento",
+        "photo_doc": "Foto/Documento",
+        "message_owner": "Mensaje a Dueño"
+      }
+    },
+    "waiting_room": {
+      "title": "Sala de Espera",
+      "refresh": "Actualizar",
+      "check_in": "Check-in",
+      "start_consult": "Iniciar Consulta",
+      "complete": "Completar",
+      "no_show": "No Llegó",
+      "waiting_time": "Esperando",
+      "statuses": {
+        "pending": "Pendiente",
+        "confirmed": "Confirmado",
+        "checked_in": "En Espera",
+        "in_progress": "En Consulta",
+        "completed": "Completado",
+        "cancelled": "Cancelado",
+        "no_show": "No Llegó"
+      }
+    },
+    "settings": {
+      "title": "Configuración",
+      "sections": {
+        "general": "General",
+        "branding": "Marca",
+        "modules": "Módulos",
+        "services": "Servicios y Precios"
+      },
+      "general": {
+        "clinic_name": "Nombre de la Clínica",
+        "description": "Descripción",
+        "contact": "Contacto",
+        "phone": "Teléfono",
+        "email": "Email",
+        "address": "Dirección",
+        "hours": "Horarios"
+      },
+      "branding": {
+        "colors": "Colores",
+        "logo": "Logo",
+        "favicon": "Favicon"
+      },
+      "modules": {
+        "enable_disable": "Activar/desactivar funciones",
+        "clinical": "Clínicas",
+        "features": "Funcionalidades",
+        "commerce": "Comercio"
+      }
+    },
+    "export": {
+      "title": "Exportar CSV",
+      "fields_to_export": "Campos a exportar",
+      "select_all": "Seleccionar todos",
+      "none": "Ninguno",
+      "download": "Descargar CSV",
+      "exporting": "Exportando...",
+      "exported": "¡Exportado!",
+      "fields_selected": "{count} campos seleccionados"
+    },
+    "common": {
+      "loading": "Cargando...",
+      "error": "Error al cargar datos",
+      "retry": "Reintentar",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "confirm": "Confirmar",
+      "close": "Cerrar",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "search": "Buscar",
+      "filter": "Filtrar",
+      "export": "Exportar",
+      "import": "Importar",
+      "view_details": "Ver detalles",
+      "not_registered": "No registrado",
+      "units": "unidades"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="180" r="80" fill="none" stroke="#E91E63" stroke-width="3" opacity="0.6"/>
+  <ellipse cx="200" cy="180" rx="40" ry="60" fill="#E91E63" opacity="0.3"/>
+  <path d="M180 120 Q200 100 220 120" stroke="#E91E63" stroke-width="2" fill="none" opacity="0.6"/>
+  <text x="200" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#E91E63" font-weight="bold">Vibradores</text>
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9C27B0" opacity="0.7">Fun4Me</text>
+</svg>

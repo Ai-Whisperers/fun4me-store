@@ -1,0 +1,102 @@
+# ===========================================
+# HOOKS DE AUTOMATIZACION PARA ESTUDIANTES FPUNA
+# ===========================================
+# Los hooks se ejecutan automaticamente en momentos especificos
+# Descomenta los que necesites
+
+hooks:
+  # ============================================
+  # HOOK: Al iniciar sesion
+  # ============================================
+  session-start:
+    enabled: true
+    description: "Muestra informacion del proyecto al iniciar"
+    actions:
+      - type: message
+        content: |
+          Bienvenido al proyecto!
+          
+          Directorio: {{cwd}}
+          Rama Git: {{git_branch}}
+          
+          Comandos utiles:
+          - /help - Ver ayuda
+          - /status - Estado del proyecto
+
+  # ============================================
+  # HOOK: Antes de editar archivos
+  # ============================================
+  pre-edit:
+    enabled: true
+    description: "Verifica antes de editar archivos sensibles"
+    patterns:
+      - "**/.env*"
+      - "**/credentials*"
+      - "**/secrets*"
+      - "**/*.key"
+      - "**/*.pem"
+    action: block
+    message: |
+      BLOQUEADO: No se permite editar archivos sensibles.
+      
+      Archivos bloqueados:
+      - .env (variables de entorno)
+      - credentials.* (credenciales)
+      - *.key, *.pem (claves privadas)
+      
+      Si necesitas modificar configuracion, usa variables de entorno.
+
+  # ============================================
+  # HOOK: Despues de crear archivos
+  # ============================================
+  post-create:
+    enabled: false
+    description: "Ejecuta acciones despues de crear archivos"
+    patterns:
+      - "**/*.py"
+    actions:
+      - type: shell
+        command: "black {{file}}"  # Formatea Python automaticamente
+
+  # ============================================
+  # HOOK: Antes de commit (git)
+  # ============================================
+  pre-commit:
+    enabled: false
+    description: "Verifica calidad antes de commit"
+    actions:
+      - type: shell
+        command: "npm run lint"
+      - type: shell
+        command: "npm run test"
+    on_failure: block
+
+  # ============================================
+  # HOOK: Recordatorio de buenas practicas
+  # ============================================
+  reminder:
+    enabled: true
+    description: "Recuerda buenas practicas cada N mensajes"
+    interval: 10  # Cada 10 mensajes
+    message: |
+      Recordatorio de buenas practicas:
+      
+      1. Commitea cambios frecuentemente
+      2. Escribe tests para codigo nuevo
+      3. Documenta funciones complejas
+      4. No hardcodees credenciales
+
+# ============================================
+# HOOKS PERSONALIZADOS
+# ============================================
+# Agrega tus propios hooks aqui:
+
+custom_hooks:
+  # Ejemplo: Hook para proyecto especifico
+  # mi-hook:
+  #   enabled: true
+  #   trigger: "on_file_change"
+  #   patterns: ["src/**/*.ts"]
+  #   actions:
+  #     - type: shell
+  #       command: "npm run typecheck"

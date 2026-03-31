@@ -1,0 +1,435 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "medline",
+  "products": [
+    {
+      "sku": "MED-GLOVE-NITRILE",
+      "name": "Guantes de Nitrilo Sin Polvo",
+      "description": "Guantes de examen de nitrilo hipoalergénicos",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "S - Caja x 100",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "M - Caja x 100",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "L - Caja x 100",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-L"
+        },
+        {
+          "size": "XL - Caja x 100",
+          "base_price": 89000,
+          "cost_price": 53400,
+          "sku_suffix": "-XL"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "material": "Nitrilo",
+        "powder_free": true,
+        "latex_free": true,
+        "ambidextrous": true
+      }
+    },
+    {
+      "sku": "MED-GLOVE-LATEX",
+      "name": "Guantes de Látex Sin Polvo",
+      "description": "Guantes de examen de látex natural",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "S - Caja x 100",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "M - Caja x 100",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "L - Caja x 100",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-L"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "material": "Látex natural",
+        "powder_free": true,
+        "ambidextrous": true
+      }
+    },
+    {
+      "sku": "MED-GLOVE-SURGICAL",
+      "name": "Guantes Quirúrgicos Estériles",
+      "description": "Guantes estériles para procedimientos quirúrgicos",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "6.5 - Caja x 50 pares",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-65"
+        },
+        {
+          "size": "7.0 - Caja x 50 pares",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-70"
+        },
+        {
+          "size": "7.5 - Caja x 50 pares",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-75"
+        },
+        {
+          "size": "8.0 - Caja x 50 pares",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-80"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "sterile": true,
+        "beaded_cuff": true,
+        "powder_free": true
+      }
+    },
+    {
+      "sku": "MED-GAUZE-ROLL",
+      "name": "Gasa en Rollo Estéril",
+      "description": "Gasa de algodón para vendaje",
+      "category_slug": "CLI-INS-VEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "5cm x 5m - Paq x 12",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": "-5CM"
+        },
+        {
+          "size": "10cm x 5m - Paq x 12",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-10CM"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "material": "Algodón 100%",
+        "sterile": true,
+        "ply": 8
+      }
+    },
+    {
+      "sku": "MED-GAUZE-SPONGE",
+      "name": "Gasas Estériles 4x4",
+      "description": "Gasas absorbentes para limpieza de heridas",
+      "category_slug": "CLI-INS-VEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 200",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-200"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "size": "10x10cm",
+        "sterile": true,
+        "ply": 12
+      }
+    },
+    {
+      "sku": "MED-BANDAGE-ELASTIC",
+      "name": "Venda Elástica Cohesiva",
+      "description": "Venda autoadherente para vendajes",
+      "category_slug": "CLI-INS-VEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "5cm x 4.5m - Caja x 12",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-5CM"
+        },
+        {
+          "size": "7.5cm x 4.5m - Caja x 12",
+          "base_price": 105000,
+          "cost_price": 63000,
+          "sku_suffix": "-75CM"
+        },
+        {
+          "size": "10cm x 4.5m - Caja x 12",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-10CM"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "self_adherent": true,
+        "latex_free": true,
+        "colors_available": ["Azul", "Verde", "Rojo", "Blanco"]
+      }
+    },
+    {
+      "sku": "MED-COTTON-ROLL",
+      "name": "Algodón Hidrófilo en Rollo",
+      "description": "Algodón absorbente para acolchado",
+      "category_slug": "CLI-INS-VEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "500g",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": "-500G"
+        },
+        {
+          "size": "1kg",
+          "base_price": 75000,
+          "cost_price": 45000,
+          "sku_suffix": "-1KG"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "absorbent": true,
+        "bleached": true
+      }
+    },
+    {
+      "sku": "MED-TAPE-SURGICAL",
+      "name": "Cinta Quirúrgica Microporosa",
+      "description": "Cinta adhesiva hipoalergénica",
+      "category_slug": "CLI-INS-VEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "1.25cm x 9m - Caja x 24",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-125"
+        },
+        {
+          "size": "2.5cm x 9m - Caja x 12",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-25"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "hypoallergenic": true,
+        "breathable": true,
+        "latex_free": true
+      }
+    },
+    {
+      "sku": "MED-SWAB-ALCOHOL",
+      "name": "Torundas de Alcohol",
+      "description": "Algodón con alcohol isopropílico 70%",
+      "category_slug": "CLI-INS-VEN",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 200",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": "-200"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "alcohol_concentration": "70%",
+        "individually_wrapped": true
+      }
+    },
+    {
+      "sku": "MED-MASK-SURGICAL",
+      "name": "Mascarillas Quirúrgicas 3 Capas",
+      "description": "Mascarillas desechables para procedimientos",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "layers": 3,
+        "fluid_resistant": true,
+        "ear_loops": true
+      }
+    },
+    {
+      "sku": "MED-GOWN-SURGICAL",
+      "name": "Bata Quirúrgica Desechable",
+      "description": "Bata estéril para procedimientos",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "M - Paq x 10",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "L - Paq x 10",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-L"
+        },
+        {
+          "size": "XL - Paq x 10",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-XL"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "sterile": true,
+        "fluid_resistant": true,
+        "tie_back": true
+      }
+    },
+    {
+      "sku": "MED-CAP-BOUFFANT",
+      "name": "Gorros Quirúrgicos Desechables",
+      "description": "Gorros tipo bouffant para quirófano",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "one_size": true,
+        "elastic_band": true
+      }
+    },
+    {
+      "sku": "MED-SHOE-COVER",
+      "name": "Cubre Zapatos Desechables",
+      "description": "Cubre calzado antideslizante",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 pares",
+          "base_price": 55000,
+          "cost_price": 33000,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "non_slip": true,
+        "fluid_resistant": true
+      }
+    },
+    {
+      "sku": "MED-DRAPE-SURGICAL",
+      "name": "Campos Quirúrgicos Estériles",
+      "description": "Campos estériles con fenestración",
+      "category_slug": "CLI-INS-EPP",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "75x90cm - Paq x 10",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-75X90"
+        },
+        {
+          "size": "100x150cm - Paq x 10",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-100X150"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904651-MLA74854912346_032024-F.webp"
+      ],
+      "attributes": {
+        "sterile": true,
+        "fenestrated": true,
+        "fluid_resistant": true
+      }
+    }
+  ]
+}

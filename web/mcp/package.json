@@ -1,0 +1,21 @@
+{
+  "name": "vete-mcp-servers",
+  "version": "1.0.0",
+  "description": "MCP servers for Vete veterinary platform",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start:supabase": "node dist/supabase-tenant-wrapper.js",
+    "start:veterinary": "node dist/veterinary-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@supabase/supabase-js": "^2.88.0",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}

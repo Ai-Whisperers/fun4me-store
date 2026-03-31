@@ -1,0 +1,412 @@
+{
+  "id": "terrapet",
+  "name": "Terra Pet",
+  "tagline": "Para Nosotros, Ellos Son Familia",
+  "contact": {
+    "whatsapp_number": "595981673667",
+    "phone_display": "+595 981 673 6670",
+    "email": "contacto@terrapet.com.py",
+    "address": "Fernando de la Mora",
+    "city": "Fernando de la Mora",
+    "country": "Paraguay",
+    "google_maps_id": "ChIJrTLr-GyuEmsRBfy61i59si0",
+    "coordinates": {
+      "lat": -25.2637,
+      "lng": -57.5759
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/Terra.Pet.Py",
+    "instagram": "https://instagram.com/terrapetpy",
+    "tiktok": "",
+    "youtube": ""
+  },
+  "hours": {
+    "weekdays": "08:00 - 20:00",
+    "saturday": "08:00 - 20:00",
+    "sunday": "08:00 - 20:00",
+    "holidays": "Urgencias 24hs"
+  },
+  "settings": {
+    "currency": "PYG",
+    "currency_symbol": "Gs",
+    "locale": "es-PY",
+    "timezone": "America/Asuncion",
+    "emergency_24h": true,
+    "accepts_insurance": true,
+    "insurance_providers": ["Mascota Segura", "PetPlan"],
+    "delivery_enabled": true,
+    "delivery_minimum": 150000,
+    "delivery_zones": ["Santa Teresa", "Villa Morra", "Carmelitas", "Manorá"],
+    "modules": {
+      "toxic_checker": true,
+      "age_calculator": true,
+      "growth_charts": true,
+      "vaccine_tracker": true,
+      "qr_tags": true,
+      "loyalty_program": true,
+      "online_store": true,
+      "booking": true,
+      "telemedicine": true
+    },
+    "inventory_template_google_sheet_url": "https://docs.google.com/spreadsheets/d/15hPrnWt0VcLAJkC2s2l-g5PLbM4Fe8e6KAsaSZUF6uk/copy"
+  },
+  "branding": {
+    "logo_url": "/branding/terrapet/images/logo.png",
+    "logo_dark_url": "/branding/terrapet/images/logo-dark.png",
+    "logo_width": 150,
+    "logo_height": 56,
+    "favicon_url": "/branding/terrapet/images/favicon.ico",
+    "hero_image_url": "/branding/terrapet/images/hero-bg.jpg",
+    "og_image_url": "/branding/terrapet/images/og-image.jpg",
+    "apple_touch_icon": "/branding/terrapet/images/apple-touch-icon.png"
+  },
+  "ui_labels": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Nosotros",
+      "store": "Tienda",
+      "book": "Reservar",
+      "contact": "Contacto",
+      "owners_zone": "Zona de Dueños",
+      "login_profile": "Ingresar",
+      "dashboard": "Mi Portal",
+      "profile": "Mi Perfil",
+      "my_pets": "Mis Mascotas",
+      "back": "Volver",
+      "book_btn": "Agendar Cita",
+      "emergency_btn": "Urgencias 24hs"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos y Condiciones",
+      "contact_us": "Contáctanos",
+      "follow_us": "Síguenos",
+      "newsletter_title": "Suscríbete",
+      "newsletter_placeholder": "Tu email",
+      "newsletter_button": "Enviar"
+    },
+    "home": {
+      "visit_us": "Visítanos",
+      "features_title": "¿Por qué elegirnos?",
+      "features_subtitle": "Compromiso, tecnología y amor por los animales en cada consulta.",
+      "tools_badge": "Herramientas Gratuitas",
+      "contact_badge": "Contacto",
+      "map_button": "Ver ubicación en Google Maps",
+      "hours_title": "Horarios de Atención",
+      "emergency_title": "Urgencias",
+      "emergency_text": "Disponibles las 24 horas, los 365 días del año.",
+      "emergency_cta": "Llamar Ahora"
+    },
+    "services": {
+      "meta_title": "Nuestros Servicios",
+      "meta_subtitle": "Atención integral de clase mundial: Desde prevención hasta alta complejidad.",
+      "online_badge": "Reservable Online",
+      "emergency_badge": "Disponible 24hs",
+      "description_label": "Descripción:",
+      "includes_label": "Incluye:",
+      "duration_label": "Duración aproximada:",
+      "table_variant": "Servicio / Variante",
+      "table_price": "Precio",
+      "book_floating_btn": "Agendar Turno",
+      "filter_all": "Todos",
+      "filter_medical": "Medicina",
+      "filter_surgery": "Cirugía",
+      "filter_diagnostics": "Diagnóstico",
+      "filter_wellness": "Bienestar",
+      "filter_grooming": "Estética",
+      "view_details": "Ver Detalles",
+      "book_now": "Reservar",
+      "contact_for_price": "Consultar Precio",
+      "vaccine_schedule": {
+        "title": "Calendario de Vacunación (Paraguay)",
+        "subtitle": "Cronograma oficial recomendado por SENACSA para la protección de tu mascota.",
+        "dog_label": "Perros",
+        "cat_label": "Gatos",
+        "important_label": "Importante:",
+        "important_text": "Este es un esquema estándar. El veterinario puede ajustarlo según la salud y el estilo de vida de tu mascota. Consulta siempre con nuestros profesionales.",
+        "data": {
+          "dog": [
+            {
+              "age": "45 días (6 semanas)",
+              "n": 1,
+              "vaccines": ["Puppy DP (Moquillo, Parvo)"],
+              "note": "Primera dosis crítica para cachorros."
+            },
+            {
+              "age": "3 meses (12 semanas)",
+              "n": 2,
+              "vaccines": ["Séxtuple / Polivalente", "Antirrábica (Obligatoria)"],
+              "note": "Ley Nacional en Paraguay. Certificado SENACSA."
+            },
+            {
+              "age": "4 meses (16 semanas)",
+              "n": 3,
+              "vaccines": ["Refuerzo Séxtuple"],
+              "note": "Cierre del esquema primario."
+            },
+            {
+              "age": "Anual",
+              "n": 4,
+              "vaccines": ["Séxtuple", "Antirrábica"],
+              "note": "Refuerzo obligatorio cada 12 meses de por vida."
+            },
+            {
+              "age": "Opcional",
+              "n": 5,
+              "vaccines": ["Tos de las Perreras (KC)", "Leishmaniasis", "Giardia"],
+              "note": "Recomendado según estilo de vida y zona endémica."
+            }
+          ],
+          "cat": [
+            {
+              "age": "2 meses (8 semanas)",
+              "n": 1,
+              "vaccines": ["Triple Felina (PRC)"],
+              "note": "Panleucopenia, Rinotraqueitis, Calicivirus"
+            },
+            {
+              "age": "3 meses (12 semanas)",
+              "n": 2,
+              "vaccines": ["Refuerzo Triple Felina", "Antirrábica"],
+              "note": "Ley Nacional en Paraguay."
+            },
+            {
+              "age": "4 meses (16 semanas)",
+              "n": 3,
+              "vaccines": ["Leucemia Felina (FeLV)"],
+              "note": "Requiere test previo. Para gatos que salen al exterior."
+            },
+            {
+              "age": "Anual",
+              "n": 4,
+              "vaccines": ["Triple Felina", "Antirrábica"],
+              "note": "Refuerzo obligatorio de por vida."
+            }
+          ]
+        }
+      }
+    },
+    "about": {
+      "team_title": "Nuestro Equipo",
+      "intro_badge": "Nuestra Historia",
+      "mission_title": "Nuestra Misión",
+      "vision_title": "Nuestra Visión",
+      "values_title": "Nuestros Valores",
+      "certifications_title": "Certificaciones",
+      "facilities_title": "Nuestras Instalaciones"
+    },
+    "portal": {
+      "dashboard": {
+        "staff_title": "Portal Veterinario",
+        "owner_title": "Mis Mascotas",
+        "welcome": "Bienvenido/a, {name}",
+        "quick_actions": "Acciones Rápidas",
+        "recent_activity": "Actividad Reciente",
+        "stats": {
+          "patients": "Pacientes Totales",
+          "vaccines": "Vacunas Pendientes",
+          "upcoming_appointments": "Citas Programadas",
+          "loyalty_points": "Puntos Acumulados"
+        }
+      },
+      "empty_states": {
+        "no_pets": "Aún no tienes mascotas registradas",
+        "no_pets_desc": "Registra a tu primera mascota para llevar su historial médico completo.",
+        "add_pet_btn": "Registrar Mascota",
+        "no_vaccines": "Sin vacunas registradas aún.",
+        "no_appointments": "No tienes citas programadas.",
+        "no_records": "Sin historial médico disponible."
+      },
+      "pet_card": {
+        "weight": "Peso",
+        "chip": "Microchip",
+        "age": "Edad",
+        "breed": "Raza",
+        "vaccines": "Vacunas",
+        "next_vaccine": "Próxima Vacuna",
+        "add_vaccine": "Agregar Vacuna",
+        "view_history": "Ver Historial",
+        "download_pdf": "Descargar Carnet PDF",
+        "edit_pet": "Editar Datos",
+        "qr_code": "Código QR"
+      },
+      "appointment_widget": {
+        "title": "Mis Próximas Citas",
+        "empty": "No hay citas programadas",
+        "new_appointment": "Nueva Cita",
+        "status": {
+          "confirmed": "Confirmada",
+          "pending": "Pendiente",
+          "cancelled": "Cancelada",
+          "completed": "Completada"
+        }
+      },
+      "forms": {
+        "pet_name": "Nombre de la Mascota",
+        "pet_species": "Especie",
+        "pet_breed": "Raza",
+        "pet_birthdate": "Fecha de Nacimiento",
+        "pet_weight": "Peso (kg)",
+        "pet_color": "Color",
+        "pet_gender": "Sexo",
+        "pet_neutered": "¿Esterilizado/a?",
+        "pet_microchip": "Número de Microchip",
+        "species_dog": "Perro",
+        "species_cat": "Gato",
+        "species_bird": "Ave",
+        "species_rabbit": "Conejo",
+        "species_other": "Otro",
+        "gender_male": "Macho",
+        "gender_female": "Hembra",
+        "yes": "Sí",
+        "no": "No"
+      }
+    },
+    "store": {
+      "title": "Tienda",
+      "back_home": "Volver al Inicio",
+      "hero_title": "Lo Mejor para tu Mascota",
+      "hero_subtitle": "Encuentra alimentos premium, accesorios y medicamentos recomendados por nuestros veterinarios. Delivery gratis en compras mayores a 150.000 Gs.",
+      "search_placeholder": "Buscar productos...",
+      "all_categories": "Todas las categorías",
+      "empty_state": "No hay productos disponibles en esta categoría.",
+      "no_results": "No se encontraron productos.",
+      "sort_by": "Ordenar por",
+      "sort_popular": "Más Populares",
+      "sort_price_low": "Menor Precio",
+      "sort_price_high": "Mayor Precio",
+      "sort_newest": "Más Nuevos",
+      "product_card": {
+        "add": "Agregar",
+        "added": "Agregado",
+        "out_of_stock": "Agotado",
+        "view_details": "Ver Detalles"
+      },
+      "categories": {
+        "all": "Todos",
+        "food": "Alimentos",
+        "medicine": "Medicamentos",
+        "accessories": "Accesorios",
+        "hygiene": "Higiene",
+        "toys": "Juguetes"
+      }
+    },
+    "cart": {
+      "title": "Mi Carrito",
+      "empty": "Tu carrito está vacío.",
+      "empty_cta": "Explorar Tienda",
+      "item_service": "Servicio",
+      "item_product": "Producto",
+      "quantity": "Cantidad",
+      "unit_price": "Precio Unitario",
+      "subtotal": "Subtotal",
+      "clear_btn": "Vaciar Carrito",
+      "total_label": "Total:",
+      "continue_shopping": "Seguir Comprando",
+      "checkout_btn": "Proceder al Pago",
+      "delivery_note": "Delivery gratis en compras mayores a 150.000 Gs en zonas habilitadas."
+    },
+    "checkout": {
+      "title": "Resumen del Pedido",
+      "empty": "No hay productos en el carrito.",
+      "customer_info": "Datos del Cliente",
+      "delivery_info": "Datos de Entrega",
+      "payment_method": "Método de Pago",
+      "order_summary": "Resumen",
+      "print_btn": "Imprimir Comprobante",
+      "whatsapp_btn": "Confirmar por WhatsApp",
+      "back_cart": "Volver al Carrito",
+      "order_notes": "Notas Adicionales",
+      "order_notes_placeholder": "Indicaciones especiales para tu pedido..."
+    },
+    "booking": {
+      "title": "Reservar Cita",
+      "select_service": "Selecciona un Servicio",
+      "select_date": "Selecciona Fecha",
+      "select_time": "Selecciona Horario",
+      "select_pet": "Selecciona Mascota",
+      "your_info": "Tus Datos",
+      "confirm_btn": "Confirmar Reserva",
+      "success_title": "¡Cita Confirmada!",
+      "success_message": "Te enviaremos un recordatorio por WhatsApp.",
+      "available_slots": "Horarios Disponibles",
+      "no_slots": "No hay horarios disponibles para esta fecha."
+    },
+    "common": {
+      "loading": "Cargando...",
+      "error": "Ocurrió un error",
+      "retry": "Reintentar",
+      "actions": {
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "confirm": "Confirmar",
+        "close": "Cerrar",
+        "back": "Volver",
+        "next": "Siguiente",
+        "submit": "Enviar",
+        "search": "Buscar",
+        "filter": "Filtrar",
+        "clear": "Limpiar",
+        "download": "Descargar",
+        "share": "Compartir",
+        "copy": "Copiar"
+      },
+      "validation": {
+        "required": "Este campo es requerido",
+        "invalid_email": "Email inválido",
+        "invalid_phone": "Teléfono inválido",
+        "min_length": "Mínimo {n} caracteres",
+        "max_length": "Máximo {n} caracteres"
+      }
+    },
+    "auth": {
+      "login_title": "Iniciar Sesión",
+      "signup_title": "Crear Cuenta",
+      "email_label": "Correo Electrónico",
+      "password_label": "Contraseña",
+      "confirm_password": "Confirmar Contraseña",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "login_btn": "Ingresar",
+      "signup_btn": "Registrarse",
+      "or_divider": "o continúa con",
+      "google_btn": "Google",
+      "no_account": "¿No tienes cuenta?",
+      "has_account": "¿Ya tienes cuenta?",
+      "logout": "Cerrar Sesión"
+    },
+    "tools": {
+      "toxic_food": {
+        "title": "Verificador de Alimentos Tóxicos",
+        "subtitle": "Consulta si un alimento es seguro para tu mascota.",
+        "search_placeholder": "Escribe el nombre del alimento...",
+        "safe": "SEGURO",
+        "toxic": "TÓXICO",
+        "caution": "PRECAUCIÓN",
+        "disclaimer": "Esta herramienta es orientativa. Ante cualquier duda o emergencia, consulta inmediatamente con un veterinario."
+      },
+      "age_calculator": {
+        "title": "Calculadora de Edad",
+        "subtitle": "Descubre la edad humana equivalente de tu mascota.",
+        "pet_age_label": "Edad de tu mascota (años)",
+        "pet_size_label": "Tamaño",
+        "size_small": "Pequeño (<10kg)",
+        "size_medium": "Mediano (10-25kg)",
+        "size_large": "Grande (>25kg)",
+        "result_prefix": "Tu mascota tiene",
+        "result_suffix": "años humanos"
+      }
+    },
+    "errors": {
+      "404_title": "Página no encontrada",
+      "404_message": "La página que buscas no existe.",
+      "500_title": "Error del servidor",
+      "500_message": "Ocurrió un error. Intenta nuevamente.",
+      "go_home": "Volver al Inicio"
+    }
+  }
+}

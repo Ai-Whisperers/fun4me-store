@@ -1,0 +1,145 @@
+{
+  "intro": {
+    "title": "Más que una Veterinaria, una Familia",
+    "text": "Veterinaria Adris nació en 2015 del sueño de la Dra. Adriana Benítez: crear un espacio donde cada mascota recibiera atención médica de primer nivel con el amor de un hogar. Lo que comenzó como una pequeña clínica en Santa Teresa se ha convertido en uno de los centros veterinarios más completos de Asunción, atendiendo a más de 15.000 mascotas y sus familias.\n\nNuestra filosofía es simple: tratamos a cada paciente como si fuera nuestro propio compañero. Combinamos tecnología de punta con el trato humano y cercano que nos caracteriza. Desde un simple baño hasta una cirugía compleja, cada visita a Adris es una experiencia de confianza y cariño.",
+    "founded_year": 2015,
+    "image": "/branding/terrapet/images/about-hero.jpg"
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "text": "Brindar atención veterinaria integral de la más alta calidad, combinando tecnología avanzada con un trato humano y cercano. Nos comprometemos a cuidar la salud y el bienestar de las mascotas, siendo aliados de las familias paraguayas en el cuidado responsable de sus compañeros."
+  },
+  "vision": {
+    "title": "Nuestra Visión",
+    "text": "Ser la clínica veterinaria de referencia en Paraguay, reconocida por la excelencia en atención médica, la innovación tecnológica y el compromiso genuino con el bienestar animal. Aspiramos a transformar la medicina veterinaria del país, elevando los estándares de cuidado y servicio."
+  },
+  "values": [
+    {
+      "icon": "heart",
+      "title": "Amor por los Animales",
+      "text": "Cada mascota es tratada con el mismo cariño que le daríamos a la nuestra."
+    },
+    {
+      "icon": "award",
+      "title": "Excelencia Médica",
+      "text": "Formación continua y equipamiento de última generación para diagnósticos precisos."
+    },
+    {
+      "icon": "users",
+      "title": "Cercanía",
+      "text": "Comunicación clara y honesta con cada familia. Sin tecnicismos innecesarios."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Confianza",
+      "text": "Transparencia en cada tratamiento y presupuesto. Sin sorpresas."
+    }
+  ],
+  "team": [
+    {
+      "name": "Dra. Adriana Benítez",
+      "role": "Directora Médica & Fundadora",
+      "image": "/branding/terrapet/images/team/adriana.jpg",
+      "bio": "Médica Veterinaria egresada de la UNA con más de 14 años de experiencia. Especialista en medicina interna de pequeños animales. Fundó Veterinaria Adris con la visión de ofrecer atención de primer nivel con calidez humana. Apasionada por la educación continua y el bienestar animal.",
+      "specialties": ["Medicina Interna", "Geriatría", "Cardiología"],
+      "education": [
+        "Universidad Nacional de Asunción (UNA)",
+        "Diplomado en Cardiología - Buenos Aires"
+      ]
+    },
+    {
+      "name": "Dr. Jorge Ramírez",
+      "role": "Jefe de Cirugía",
+      "image": "/branding/terrapet/images/team/jorge.jpg",
+      "bio": "Cirujano veterinario con 10 años de experiencia en procedimientos de alta complejidad. Especialista en traumatología y ortopedia. Ha realizado más de 3.000 cirugías exitosas. Certificado en técnicas de anestesia inhalatoria sevofluorane.",
+      "specialties": ["Traumatología", "Ortopedia", "Cirugía de Tejidos Blandos"],
+      "education": ["Universidad Nacional de Asunción (UNA)", "Residencia en Cirugía - São Paulo"]
+    },
+    {
+      "name": "Dra. María Fernanda López",
+      "role": "Imagenología y Diagnóstico",
+      "image": "/branding/terrapet/images/team/fernanda.jpg",
+      "bio": "Especialista en diagnóstico por imágenes con formación en Argentina y Brasil. Experta en ecografía Doppler, ecocardiografía y radiología digital. Responsable del área de diagnóstico avanzado.",
+      "specialties": ["Ecografía", "Radiología", "Ecocardiografía"],
+      "education": [
+        "Universidad Nacional de Asunción (UNA)",
+        "Especialización en Imagenología - Buenos Aires"
+      ]
+    },
+    {
+      "name": "Lic. Carolina Martínez",
+      "role": "Grooming & Estética",
+      "image": "/branding/terrapet/images/team/carolina.jpg",
+      "bio": "Estilista canina certificada con 8 años de experiencia. Especialista en cortes de raza y tratamientos dermatológicos. Certificada en técnicas Fear-Free para reducir el estrés de las mascotas durante el baño y corte.",
+      "specialties": ["Cortes de Raza", "Spa & Tratamientos", "Stripping"],
+      "education": ["Certificación Internacional de Grooming", "Fear-Free Certified Professional"]
+    }
+  ],
+  "facilities": {
+    "title": "Nuestras Instalaciones",
+    "description": "Contamos con instalaciones modernas diseñadas para el confort de tu mascota y tu tranquilidad.",
+    "features": [
+      {
+        "icon": "stethoscope",
+        "title": "3 Consultorios",
+        "text": "Espacios amplios y climatizados para atención sin estrés."
+      },
+      {
+        "icon": "heart-pulse",
+        "title": "Quirófano Inteligente",
+        "text": "Equipado con monitor multiparamétrico y anestesia inhalatoria."
+      },
+      {
+        "icon": "microscope",
+        "title": "Laboratorio Propio",
+        "text": "Resultados de análisis clínicos en minutos."
+      },
+      {
+        "icon": "image",
+        "title": "Centro de Imagen",
+        "text": "Rayos X digitales, ecógrafo Doppler y ecocardiograma."
+      },
+      {
+        "icon": "bed",
+        "title": "Internación 24hs",
+        "text": "Sala de cuidados intensivos con monitoreo constante."
+      },
+      {
+        "icon": "scissors",
+        "title": "Spa Premium",
+        "text": "Área exclusiva de grooming con hidromasaje y secadores silenciosos."
+      }
+    ],
+    "images": [
+      "/branding/terrapet/images/facilities/reception.jpg",
+      "/branding/terrapet/images/facilities/surgery.jpg",
+      "/branding/terrapet/images/facilities/lab.jpg",
+      "/branding/terrapet/images/facilities/grooming.jpg"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "SENACSA",
+      "description": "Habilitación sanitaria para vacunación oficial",
+      "logo": "/certifications/senacsa.png"
+    },
+    {
+      "name": "CMVP",
+      "description": "Colegio de Médicos Veterinarios del Paraguay",
+      "logo": "/certifications/cmvp.png"
+    },
+    {
+      "name": "Fear Free",
+      "description": "Certificación en manejo de estrés animal",
+      "logo": "/certifications/fear-free.png"
+    }
+  ],
+  "timeline": [
+    { "year": "2015", "event": "Fundación de Veterinaria Adris en Av. Santa Teresa" },
+    { "year": "2017", "event": "Inauguración del área de diagnóstico por imágenes" },
+    { "year": "2019", "event": "Apertura del Spa & Grooming Premium" },
+    { "year": "2021", "event": "Lanzamiento del sistema de Carnet Digital" },
+    { "year": "2023", "event": "Renovación del quirófano con tecnología de última generación" },
+    { "year": "2024", "event": "Expansión del equipo y nuevos servicios de especialidades" }
+  ]
+}

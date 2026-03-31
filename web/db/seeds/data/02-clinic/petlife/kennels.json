@@ -1,0 +1,49 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "kennels": [
+    {
+      "name": "Jaula A",
+      "code": "JA",
+      "kennel_type": "standard",
+      "daily_rate": 70000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Internación"
+    },
+    {
+      "name": "Jaula B",
+      "code": "JB",
+      "kennel_type": "standard",
+      "daily_rate": 70000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Internación"
+    },
+    {
+      "name": "Jaula C",
+      "code": "JC",
+      "kennel_type": "standard",
+      "daily_rate": 70000,
+      "current_status": "available",
+      "max_weight_kg": 15,
+      "location": "Internación"
+    },
+    {
+      "name": "Jaula Grande",
+      "code": "JG",
+      "kennel_type": "large",
+      "daily_rate": 90000,
+      "current_status": "available",
+      "max_weight_kg": 35,
+      "location": "Internación"
+    },
+    {
+      "name": "Recuperación",
+      "code": "REC",
+      "kennel_type": "recovery",
+      "daily_rate": 50000,
+      "current_status": "available",
+      "location": "Post-quirúrgico"
+    }
+  ]
+}

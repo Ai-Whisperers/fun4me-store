@@ -1,0 +1,74 @@
+[
+  {
+    "id": "referral-process",
+    "category": "derivaciones",
+    "question": "¿Cómo funciona el proceso de derivación?",
+    "answer": "Es muy simple. El veterinario remitente puede contactarnos por WhatsApp (+595 971 999 888) o agenda online para coordinar el turno. Solicitamos el historial clínico previo por email o WhatsApp. Luego del estudio, enviamos el informe completo con imágenes al veterinario remitente dentro de las 24 horas hábiles."
+  },
+  {
+    "id": "turnaround-time",
+    "category": "informes",
+    "question": "¿En cuánto tiempo recibo los resultados?",
+    "answer": "Para estudios de imagen (ecografía, radiografía), los informes se entregan en 24 horas hábiles. El laboratorio in-house entrega resultados de hemograma y bioquímica en 30-60 minutos. Para casos urgentes, podemos adelantar un informe verbal telefónico."
+  },
+  {
+    "id": "report-format",
+    "category": "informes",
+    "question": "¿Cómo recibo el informe del estudio?",
+    "answer": "Los informes se envían en PDF por email, incluyendo todas las imágenes relevantes en alta resolución. También quedan disponibles en el portal de cliente. Si preferís, podemos enviarlo por WhatsApp al veterinario remitente."
+  },
+  {
+    "id": "appointment-required",
+    "category": "turnos",
+    "question": "¿Necesito turno para hacerme un estudio?",
+    "answer": "Sí, todos los estudios requieren turno previo. Podés agendar online 24/7 desde nuestra web o coordinar por WhatsApp. Para derivaciones de urgencia, tenemos turnos prioritarios disponibles en el día."
+  },
+  {
+    "id": "payment-methods",
+    "category": "pagos",
+    "question": "¿Qué formas de pago aceptan?",
+    "answer": "Aceptamos efectivo, tarjetas de crédito/débito y transferencia bancaria. Para veterinarios derivantes ofrecemos cuenta corriente con facturación mensual."
+  },
+  {
+    "id": "sample-reception",
+    "category": "laboratorio",
+    "question": "¿Puedo enviar muestras de laboratorio sin el paciente?",
+    "answer": "Sí, procesamos muestras enviadas por otras clínicas. Las muestras deben llegar correctamente identificadas y conservadas según protocolo (consultanos por WhatsApp para instrucciones específicas según el análisis). Entregamos resultados por email el mismo día."
+  },
+  {
+    "id": "emergency-availability",
+    "category": "urgencias",
+    "question": "¿Atienden urgencias?",
+    "answer": "Nuestro horario regular es de lunes a viernes 7:00-19:00 y sábados 8:00-14:00. Para urgencias fuera de horario, contamos con un sistema de guardia telefónica para coordinar estudios críticos. Contactanos al WhatsApp de urgencias."
+  },
+  {
+    "id": "specialist-consultation",
+    "category": "consultas",
+    "question": "¿Puedo solicitar una consulta directa con un especialista?",
+    "answer": "Sí, ofrecemos consultas de especialidad en cardiología, medicina interna, dermatología y neurología. Pueden ser presenciales o por telemedicina. También brindamos segundas opiniones con revisión de historial y estudios previos de otras clínicas."
+  },
+  {
+    "id": "anesthesia-studies",
+    "category": "procedimientos",
+    "question": "¿Los estudios de imagen requieren anestesia?",
+    "answer": "La mayoría de ecografías y radiografías se realizan sin sedación, con técnicas de contención Fear-Free. Para ecocardiografía, procedimientos invasivos (punciones, endoscopía) o pacientes muy nerviosos, puede requerirse sedación ligera. Esto se evalúa caso a caso."
+  },
+  {
+    "id": "colleague-pricing",
+    "category": "derivaciones",
+    "question": "¿Hay precios especiales para veterinarios?",
+    "answer": "Sí, ofrecemos tarifas diferenciadas para colegas veterinarios que derivan pacientes. Consultá nuestro programa de derivaciones para conocer los beneficios y tarifas especiales."
+  },
+  {
+    "id": "previous-studies",
+    "category": "informes",
+    "question": "¿Necesito traer estudios previos?",
+    "answer": "Siempre es útil contar con el historial clínico y estudios previos para comparar evolución. Podés enviarlos por email o WhatsApp antes del turno. Si no tenés estudios previos, no hay problema, realizamos el estudio de todas formas."
+  },
+  {
+    "id": "patient-hospitalization",
+    "category": "internacion",
+    "question": "¿Pueden internar a mi mascota para estudios?",
+    "answer": "Sí, contamos con área de internación para pacientes que requieren monitoreo, estudios seriados o recuperación post-procedimiento. La internación incluye monitoreo, alimentación y atención de enfermería. La medicación e insumos se facturan aparte."
+  }
+]

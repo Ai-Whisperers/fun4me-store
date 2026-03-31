@@ -1,0 +1,331 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "idexx",
+  "products": [
+    {
+      "sku": "IDEXX-SNAP-4DX",
+      "name": "SNAP 4Dx Plus Test",
+      "description": "Test rápido para Heartworm, Ehrlichia, Anaplasma, Lyme",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Caja x 5 tests",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-5"
+        },
+        {
+          "size": "Caja x 30 tests",
+          "base_price": 2100000,
+          "cost_price": 1260000,
+          "sku_suffix": "-30"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "sample_type": "Sangre entera o suero",
+        "result_time": "8 minutos",
+        "storage": "2-25°C"
+      }
+    },
+    {
+      "sku": "IDEXX-SNAP-PARVO",
+      "name": "SNAP Parvo Test",
+      "description": "Test rápido para Parvovirus canino",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Caja x 5 tests",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-5"
+        },
+        {
+          "size": "Caja x 30 tests",
+          "base_price": 1050000,
+          "cost_price": 630000,
+          "sku_suffix": "-30"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "sample_type": "Materia fecal",
+        "result_time": "10 minutos",
+        "sensitivity": ">99%"
+      }
+    },
+    {
+      "sku": "IDEXX-SNAP-GIARDIA",
+      "name": "SNAP Giardia Test",
+      "description": "Test rápido para Giardia intestinalis",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 5 tests",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-5"
+        },
+        {
+          "size": "Caja x 30 tests",
+          "base_price": 980000,
+          "cost_price": 588000,
+          "sku_suffix": "-30"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "sample_type": "Materia fecal",
+        "result_time": "10 minutos"
+      }
+    },
+    {
+      "sku": "IDEXX-SNAP-FIV-FELV",
+      "name": "SNAP FIV/FeLV Combo Test",
+      "description": "Test combinado para FIV y Leucemia Felina",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Caja x 5 tests",
+          "base_price": 325000,
+          "cost_price": 195000,
+          "sku_suffix": "-5"
+        },
+        {
+          "size": "Caja x 30 tests",
+          "base_price": 1750000,
+          "cost_price": 1050000,
+          "sku_suffix": "-30"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "sample_type": "Sangre entera, suero o plasma",
+        "result_time": "10 minutos"
+      }
+    },
+    {
+      "sku": "IDEXX-SNAP-cPL",
+      "name": "SNAP cPL Test",
+      "description": "Test rápido para Lipasa Pancreática Canina",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Caja x 5 tests",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-5"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "sample_type": "Suero o plasma",
+        "result_time": "10 minutos",
+        "indication": "Pancreatitis"
+      }
+    },
+    {
+      "sku": "IDEXX-SNAP-fPL",
+      "name": "SNAP fPL Test",
+      "description": "Test rápido para Lipasa Pancreática Felina",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Caja x 5 tests",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-5"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "sample_type": "Suero o plasma",
+        "result_time": "10 minutos",
+        "indication": "Pancreatitis"
+      }
+    },
+    {
+      "sku": "IDEXX-CATALYST-DX",
+      "name": "Catalyst Dx Química Analizador",
+      "description": "Analizador de química sanguínea in-house",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Equipo completo",
+          "base_price": 45000000,
+          "cost_price": 27000000,
+          "sku_suffix": "-UNIT"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "parameters": "27 parámetros",
+        "sample_volume": "100μL",
+        "throughput": "70 muestras/hora"
+      }
+    },
+    {
+      "sku": "IDEXX-PROCYTE-DX",
+      "name": "ProCyte Dx Analizador Hematológico",
+      "description": "Analizador hematológico completo",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Equipo completo",
+          "base_price": 52000000,
+          "cost_price": 31200000,
+          "sku_suffix": "-UNIT"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "parameters": "CBC completo + reticulocitos",
+        "sample_volume": "17μL",
+        "technology": "Fluorescencia láser"
+      }
+    },
+    {
+      "sku": "IDEXX-CATALYST-CLIP",
+      "name": "Catalyst CLIP Bioquímica",
+      "description": "Clips de reactivos para Catalyst",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Perfil renal - 12 tests",
+          "base_price": 485000,
+          "cost_price": 291000,
+          "sku_suffix": "-RENAL"
+        },
+        {
+          "size": "Perfil hepático - 12 tests",
+          "base_price": 485000,
+          "cost_price": 291000,
+          "sku_suffix": "-HEPATIC"
+        },
+        {
+          "size": "Glucosa - 24 tests",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-GLU"
+        },
+        {
+          "size": "Electrolitos - 12 tests",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-LYTES"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "compatible": "Catalyst Dx/One",
+        "storage": "2-8°C"
+      }
+    },
+    {
+      "sku": "IDEXX-SEDIVUE",
+      "name": "SediVue Dx Analizador de Orina",
+      "description": "Analizador automatizado de sedimento urinario",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Equipo completo",
+          "base_price": 28000000,
+          "cost_price": 16800000,
+          "sku_suffix": "-UNIT"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "analysis_time": "3 minutos",
+        "sample_volume": "165μL",
+        "ai_powered": true
+      }
+    },
+    {
+      "sku": "IDEXX-UA-STRIPS",
+      "name": "Tiras de Urianálisis IDEXX",
+      "description": "Tiras reactivas para análisis de orina",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Frasco x 100",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "parameters": "10 parámetros",
+        "read_time": "60 segundos"
+      }
+    },
+    {
+      "sku": "IDEXX-COAG-DX",
+      "name": "Coag Dx Analizador de Coagulación",
+      "description": "Analizador de tiempos de coagulación",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Equipo completo",
+          "base_price": 18500000,
+          "cost_price": 11100000,
+          "sku_suffix": "-UNIT"
+        }
+      ],
+      "image_url": "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png",
+      "images": [
+        "https://www.idexx.com/media/filer_public_thumbnails/filer_public/3c/3d/3c3d0c29-55fe-499d-94ec-a7445da3f30e/snap-4dx-plus-test-top-image-400x400.png__400x400_subsampling-2.png"
+      ],
+      "attributes": {
+        "tests": "PT, aPTT, ACT",
+        "sample_volume": "citrato"
+      }
+    }
+  ]
+}

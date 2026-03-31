@@ -1,0 +1,52 @@
+# =============================================================================
+# Vete Platform - Cloudflare Tunnel Overlay
+# Use with: docker compose -f docker-compose.yml -f docker-compose.cloudflare.yml up -d
+# =============================================================================
+#
+# Prerequisites:
+#   1. Install cloudflared:
+#      curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+#      sudo dpkg -i cloudflared.deb
+#
+#   2. Authenticate and create tunnel:
+#      cloudflared tunnel login
+#      cloudflared tunnel create vete
+#
+#   3. Get tunnel token:
+#      cloudflared tunnel token vete
+#      # Add to .env as CLOUDFLARE_TUNNEL_TOKEN
+#
+#   4. Configure DNS in Cloudflare Dashboard:
+#      - Type: CNAME
+#      - Name: vete
+#      - Target: <tunnel-id>.cfargotunnel.com
+#      - Proxy: ON (orange cloud)
+#
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Cloudflare Tunnel
+  # Routes traffic from vete.ai-whisperers.org to the local container
+  # ---------------------------------------------------------------------------
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: vete-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      vete-web:
+        condition: service_healthy
+    networks:
+      - vete-network
+
+  # ---------------------------------------------------------------------------
+  # Override: Remove external port exposure (tunnel handles routing)
+  # ---------------------------------------------------------------------------
+  vete-web:
+    ports: !reset []
+    labels:
+      - "cloudflare.tunnel.enabled=true"
+      - "cloudflare.tunnel.hostname=vete.ai-whisperers.org"

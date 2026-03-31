@@ -1,0 +1,453 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "bd",
+  "products": [
+    {
+      "sku": "BD-SYRINGE-1ML",
+      "name": "Jeringa BD 1ml con Aguja",
+      "description": "Jeringa estéril para insulina o tuberculina",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (27G)",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-27G"
+        },
+        {
+          "size": "Caja x 100 (25G)",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-25G"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "single_use": true,
+        "luer_lock": false
+      }
+    },
+    {
+      "sku": "BD-SYRINGE-3ML",
+      "name": "Jeringa BD 3ml con Aguja",
+      "description": "Jeringa estéril de uso general",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (23G)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-23G"
+        },
+        {
+          "size": "Caja x 100 (21G)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-21G"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "single_use": true,
+        "luer_lock": true
+      }
+    },
+    {
+      "sku": "BD-SYRINGE-5ML",
+      "name": "Jeringa BD 5ml con Aguja",
+      "description": "Jeringa estéril para medicamentos",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (21G)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-21G"
+        },
+        {
+          "size": "Caja x 100 (22G)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-22G"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "single_use": true,
+        "luer_lock": true
+      }
+    },
+    {
+      "sku": "BD-SYRINGE-10ML",
+      "name": "Jeringa BD 10ml con Aguja",
+      "description": "Jeringa estéril para volúmenes mayores",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (21G)",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-21G"
+        },
+        {
+          "size": "Caja x 100 (18G)",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-18G"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "single_use": true,
+        "luer_lock": true
+      }
+    },
+    {
+      "sku": "BD-SYRINGE-20ML",
+      "name": "Jeringa BD 20ml Luer Lock",
+      "description": "Jeringa estéril de alto volumen",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "sterile": true,
+        "single_use": true,
+        "luer_lock": true
+      }
+    },
+    {
+      "sku": "BD-NEEDLE-18G",
+      "name": "Agujas BD 18G x 1.5\"",
+      "description": "Agujas hipodérmicas estériles",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Caja x 100",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "18G",
+        "length": "1.5 pulgadas",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-NEEDLE-21G",
+      "name": "Agujas BD 21G x 1\"",
+      "description": "Agujas hipodérmicas estériles para inyecciones IM",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100",
+          "base_price": 78000,
+          "cost_price": 46800,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "21G",
+        "length": "1 pulgada",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-NEEDLE-23G",
+      "name": "Agujas BD 23G x 1\"",
+      "description": "Agujas hipodérmicas para inyecciones SC",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100",
+          "base_price": 75000,
+          "cost_price": 45000,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "23G",
+        "length": "1 pulgada",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-NEEDLE-25G",
+      "name": "Agujas BD 25G x 5/8\"",
+      "description": "Agujas finas para inyecciones SC en gatos",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Caja x 100",
+          "base_price": 72000,
+          "cost_price": 43200,
+          "sku_suffix": "-100"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "25G",
+        "length": "5/8 pulgada",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-CATHETER-22G",
+      "name": "Catéter IV BD Insyte 22G",
+      "description": "Catéter intravenoso para gatos y perros pequeños",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "22G",
+        "length": "25mm",
+        "flow_rate": "36ml/min",
+        "color": "Azul"
+      }
+    },
+    {
+      "sku": "BD-CATHETER-20G",
+      "name": "Catéter IV BD Insyte 20G",
+      "description": "Catéter intravenoso para perros medianos",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 275000,
+          "cost_price": 165000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "20G",
+        "length": "30mm",
+        "flow_rate": "61ml/min",
+        "color": "Rosa"
+      }
+    },
+    {
+      "sku": "BD-CATHETER-18G",
+      "name": "Catéter IV BD Insyte 18G",
+      "description": "Catéter intravenoso para perros grandes",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "18G",
+        "length": "32mm",
+        "flow_rate": "103ml/min",
+        "color": "Verde"
+      }
+    },
+    {
+      "sku": "BD-VACUTAINER-EDTA",
+      "name": "Tubos BD Vacutainer EDTA",
+      "description": "Tubos para hemograma con anticoagulante",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (2ml)",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-2ML"
+        },
+        {
+          "size": "Caja x 100 (4ml)",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-4ML"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "anticoagulant": "K2 EDTA",
+        "cap_color": "Lavanda",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-VACUTAINER-SERUM",
+      "name": "Tubos BD Vacutainer Suero",
+      "description": "Tubos sin aditivo para bioquímica",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (4ml)",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-4ML"
+        },
+        {
+          "size": "Caja x 100 (6ml)",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-6ML"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "anticoagulant": "Ninguno",
+        "cap_color": "Rojo",
+        "clot_activator": true
+      }
+    },
+    {
+      "sku": "BD-VACUTAINER-HEPARIN",
+      "name": "Tubos BD Vacutainer Heparina",
+      "description": "Tubos con heparina de litio para química",
+      "category_slug": "CLI-INS-LAB",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 100 (4ml)",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-4ML"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "anticoagulant": "Heparina de litio",
+        "cap_color": "Verde",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-BUTTERFLY-23G",
+      "name": "Mariposa BD 23G",
+      "description": "Set de infusión con alas para venipunción",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "23G",
+        "tubing_length": "30cm",
+        "sterile": true
+      }
+    },
+    {
+      "sku": "BD-BUTTERFLY-25G",
+      "name": "Mariposa BD 25G",
+      "description": "Set de infusión con alas para gatos",
+      "category_slug": "CLI-INS-AGU",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Caja x 50",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-50"
+        }
+      ],
+      "image_url": "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx",
+      "images": [
+        "https://www.bd.com/-/media/global-pages/homepage/bd-products-syringe.ashx"
+      ],
+      "attributes": {
+        "gauge": "25G",
+        "tubing_length": "30cm",
+        "sterile": true
+      }
+    }
+  ]
+}

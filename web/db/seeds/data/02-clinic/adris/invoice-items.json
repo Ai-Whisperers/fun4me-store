@@ -1,0 +1,195 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Invoice line items - services, products, and custom charges",
+  "invoice_items": [
+    {
+      "id": "ii-001-01",
+      "invoice_id": "inv-001-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Consulta General",
+      "quantity": 1,
+      "unit_price": 150000,
+      "discount_amount": 0,
+      "total": 150000
+    },
+    {
+      "id": "ii-001-02",
+      "invoice_id": "inv-001-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Vacuna Antirrábica",
+      "quantity": 1,
+      "unit_price": 80000,
+      "discount_amount": 0,
+      "total": 80000
+    },
+    {
+      "id": "ii-002-01",
+      "invoice_id": "inv-002-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Limpieza Dental Profesional",
+      "quantity": 1,
+      "unit_price": 350000,
+      "discount_amount": 35000,
+      "total": 315000
+    },
+    {
+      "id": "ii-003-01",
+      "invoice_id": "inv-003-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Esterilización Hembra Mediana (10-25kg)",
+      "quantity": 1,
+      "unit_price": 450000,
+      "discount_amount": 0,
+      "total": 450000
+    },
+    {
+      "id": "ii-004-01",
+      "invoice_id": "inv-004-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Cirugía de Tejidos Blandos",
+      "quantity": 1,
+      "unit_price": 600000,
+      "discount_amount": 0,
+      "total": 600000
+    },
+    {
+      "id": "ii-005-01",
+      "invoice_id": "inv-005-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Consulta General",
+      "quantity": 1,
+      "unit_price": 150000,
+      "discount_amount": 0,
+      "total": 150000
+    },
+    {
+      "id": "ii-005-02",
+      "invoice_id": "inv-005-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Desparasitación Interna",
+      "quantity": 1,
+      "unit_price": 35000,
+      "discount_amount": 0,
+      "total": 35000
+    },
+    {
+      "id": "ii-006-01",
+      "invoice_id": "inv-006-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Consulta Especializada",
+      "quantity": 1,
+      "unit_price": 200000,
+      "discount_amount": 0,
+      "total": 200000
+    },
+    {
+      "id": "ii-006-02",
+      "invoice_id": "inv-006-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Radiografía Simple",
+      "quantity": 1,
+      "unit_price": 150000,
+      "discount_amount": 70000,
+      "total": 80000
+    },
+    {
+      "id": "ii-007-01",
+      "invoice_id": "inv-007-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Consulta General",
+      "quantity": 1,
+      "unit_price": 150000,
+      "discount_amount": 90000,
+      "total": 60000
+    },
+    {
+      "id": "ii-007-02",
+      "invoice_id": "inv-007-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Vacuna Triple Felina",
+      "quantity": 1,
+      "unit_price": 100000,
+      "discount_amount": 0,
+      "total": 100000
+    },
+    {
+      "id": "ii-008-01",
+      "invoice_id": "inv-008-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Vacuna Séxtuple Canina",
+      "quantity": 1,
+      "unit_price": 120000,
+      "discount_amount": 12000,
+      "total": 108000
+    },
+    {
+      "id": "ii-008-02",
+      "invoice_id": "inv-008-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "product",
+      "description": "Collar Antipulgas Frontline",
+      "quantity": 1,
+      "unit_price": 85000,
+      "discount_amount": 0,
+      "total": 85000,
+      "sku": "FRONTLINE-COLLAR-M"
+    },
+    {
+      "id": "ii-009-01",
+      "invoice_id": "inv-009-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Baño Perro Pequeño (<10kg)",
+      "quantity": 1,
+      "unit_price": 50000,
+      "discount_amount": 0,
+      "total": 50000
+    },
+    {
+      "id": "ii-009-02",
+      "invoice_id": "inv-009-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Corte de Uñas",
+      "quantity": 1,
+      "unit_price": 25000,
+      "discount_amount": 0,
+      "total": 25000
+    },
+    {
+      "id": "ii-009-03",
+      "invoice_id": "inv-009-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "product",
+      "description": "Shampoo Medicado",
+      "quantity": 1,
+      "unit_price": 45000,
+      "discount_amount": 25000,
+      "total": 20000,
+      "sku": "SHAMPOO-MED-250"
+    },
+    {
+      "id": "ii-010-01",
+      "invoice_id": "inv-010-terrapet",
+      "tenant_id": "terrapet",
+      "item_type": "service",
+      "description": "Ecografía Abdominal",
+      "quantity": 1,
+      "unit_price": 200000,
+      "discount_amount": 0,
+      "total": 200000
+    }
+  ]
+}

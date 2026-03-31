@@ -1,0 +1,110 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "PetLife store orders for multi-tenant e-commerce testing",
+  "store_orders": [
+    {
+      "id": "ord-001-petlife",
+      "tenant_id": "petlife",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440003",
+      "order_number": "PL-ORD-2025-0001",
+      "status": "delivered",
+      "subtotal": 320000,
+      "discount_amount": 0,
+      "coupon_code": null,
+      "shipping_cost": 20000,
+      "tax_amount": 32000,
+      "total": 372000,
+      "payment_method": "card",
+      "shipping_method": "delivery",
+      "shipping_address": {
+        "recipient_name": "María Fernanda López",
+        "street": "Av. Mcal. López 1500",
+        "city": "Asunción",
+        "phone": "+595 983 456 789"
+      },
+      "created_at": "{{daysAgo(12)}}",
+      "shipped_at": "{{daysAgo(11)}}",
+      "delivered_at": "{{daysAgo(9)}}"
+    },
+    {
+      "id": "ord-002-petlife",
+      "tenant_id": "petlife",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440001",
+      "order_number": "PL-ORD-2025-0002",
+      "status": "processing",
+      "subtotal": 185000,
+      "discount_amount": 0,
+      "coupon_code": null,
+      "shipping_cost": 0,
+      "tax_amount": 18500,
+      "total": 203500,
+      "payment_method": "cash_on_delivery",
+      "shipping_method": "pickup",
+      "created_at": "{{daysAgo(1)}}"
+    },
+    {
+      "id": "ord-003-petlife",
+      "tenant_id": "petlife",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440006",
+      "order_number": "PL-ORD-2025-0003",
+      "status": "delivered",
+      "subtotal": 480000,
+      "discount_amount": 48000,
+      "coupon_code": "CARDIO10",
+      "shipping_cost": 20000,
+      "tax_amount": 43200,
+      "total": 495200,
+      "payment_method": "bank_transfer",
+      "shipping_method": "delivery",
+      "shipping_address": {
+        "recipient_name": "José Martínez",
+        "street": "Calle 14 de Mayo 456",
+        "city": "Encarnación",
+        "phone": "+595 984 567 890"
+      },
+      "created_at": "{{daysAgo(20)}}",
+      "shipped_at": "{{daysAgo(18)}}",
+      "delivered_at": "{{daysAgo(15)}}"
+    },
+    {
+      "id": "ord-004-petlife",
+      "tenant_id": "petlife",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440003",
+      "order_number": "PL-ORD-2025-0004",
+      "status": "pending",
+      "subtotal": 145000,
+      "discount_amount": 0,
+      "coupon_code": null,
+      "shipping_cost": 20000,
+      "tax_amount": 14500,
+      "total": 179500,
+      "payment_method": "card",
+      "shipping_method": "delivery",
+      "shipping_address": {
+        "recipient_name": "María Fernanda López",
+        "street": "Av. Mcal. López 1500",
+        "city": "Asunción",
+        "phone": "+595 983 456 789"
+      },
+      "created_at": "{{hoursAgo(3)}}"
+    },
+    {
+      "id": "ord-005-petlife",
+      "tenant_id": "petlife",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440001",
+      "order_number": "PL-ORD-2025-0005",
+      "status": "cancelled",
+      "subtotal": 220000,
+      "discount_amount": 0,
+      "coupon_code": null,
+      "shipping_cost": 20000,
+      "tax_amount": 22000,
+      "total": 262000,
+      "payment_method": "card",
+      "shipping_method": "delivery",
+      "cancelled_at": "{{daysAgo(5)}}",
+      "cancellation_reason": "Cliente cambió de opinión",
+      "created_at": "{{daysAgo(7)}}"
+    }
+  ]
+}

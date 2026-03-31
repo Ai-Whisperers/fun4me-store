@@ -1,0 +1,105 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "progato",
+  "products": [
+    {
+      "sku": "PROGATO-PIEDRA",
+      "name": "Progato Piedra Sanitaria",
+      "description": "Piedra sanitaria económica para gatos",
+      "category_slug": "ACC-HIG-ARE",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "4kg",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": "-4KG"
+        },
+        {
+          "size": "10kg",
+          "base_price": 55000,
+          "cost_price": 33000,
+          "sku_suffix": "-10KG"
+        },
+        {
+          "size": "20kg",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-20KG"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_663559-MLA99939926671_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_663559-MLA99939926671_112025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_778180-MLA75022949570_032024-O.webp"
+      ],
+      "attributes": {
+        "type": "Piedra sanitaria",
+        "clumping": false,
+        "economical": true
+      }
+    },
+    {
+      "sku": "PROGATO-ARENA",
+      "name": "Progato Arena Aglomerante",
+      "description": "Arena sanitaria aglomerante económica",
+      "category_slug": "ACC-HIG-ARE",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "4kg",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-4KG"
+        },
+        {
+          "size": "10kg",
+          "base_price": 75000,
+          "cost_price": 45000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_663559-MLA99939926671_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_663559-MLA99939926671_112025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_778180-MLA75022949570_032024-O.webp"
+      ],
+      "attributes": {
+        "type": "Bentonita",
+        "clumping": true,
+        "economical": true
+      }
+    },
+    {
+      "sku": "PROGATO-PERFUMADA",
+      "name": "Progato Arena Perfumada",
+      "description": "Arena sanitaria aglomerante con perfume",
+      "category_slug": "ACC-HIG-ARE",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "4kg",
+          "base_price": 39000,
+          "cost_price": 23400,
+          "sku_suffix": "-4KG"
+        },
+        {
+          "size": "10kg",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-10KG"
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_663559-MLA99939926671_112025-O.jpg",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_663559-MLA99939926671_112025-O.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_778180-MLA75022949570_032024-O.webp"
+      ],
+      "attributes": {
+        "type": "Bentonita",
+        "clumping": true,
+        "scented": true
+      }
+    }
+  ]
+}

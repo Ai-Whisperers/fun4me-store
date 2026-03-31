@@ -1,0 +1,68 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "payment_methods": [
+    {
+      "name": "Efectivo",
+      "type": "cash",
+      "is_default": true,
+      "display_order": 1,
+      "fee_percentage": 0,
+      "is_active": true
+    },
+    {
+      "name": "Tarjeta de Débito",
+      "type": "card",
+      "is_default": false,
+      "display_order": 2,
+      "fee_percentage": 0,
+      "instructions": "Visa, Mastercard, Cabal",
+      "is_active": true
+    },
+    {
+      "name": "Tarjeta de Crédito",
+      "type": "card",
+      "is_default": false,
+      "display_order": 3,
+      "fee_percentage": 5,
+      "instructions": "Hasta 12 cuotas sin interés con tarjetas participantes",
+      "is_active": true
+    },
+    {
+      "name": "Transferencia Bancaria",
+      "type": "transfer",
+      "is_default": false,
+      "display_order": 4,
+      "fee_percentage": 0,
+      "instructions": "Banco Itaú - Cta. Cte. 12345678 | Banco Continental - Cta. Ahorro 87654321",
+      "is_active": true
+    },
+    {
+      "name": "QR - Billetera Digital",
+      "type": "qr",
+      "is_default": false,
+      "display_order": 5,
+      "fee_percentage": 0,
+      "instructions": "Tigo Money, Personal Pay, Billetera Personal",
+      "is_active": true
+    },
+    {
+      "name": "Cheque",
+      "type": "check",
+      "is_default": false,
+      "display_order": 6,
+      "fee_percentage": 0,
+      "min_amount": 500000,
+      "instructions": "Solo cheques diferidos a 30 días",
+      "is_active": true
+    },
+    {
+      "name": "Crédito Interno",
+      "type": "credit",
+      "is_default": false,
+      "display_order": 7,
+      "fee_percentage": 0,
+      "instructions": "Solo para clientes con historial",
+      "is_active": false
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "dog-chow",
+  "products": [
+    {
+      "sku": "DC-DOG-ADULT-MED-LG",
+      "name": "Dog Chow Adultos Medianos y Grandes",
+      "description": "Alimento completo para perros adultos de razas medianas y grandes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 42000,
+          "cost_price": 25200,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 78000,
+          "cost_price": 46800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 175000,
+          "cost_price": 105000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "21kg",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-21KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/ADULTOS%20MEDIANOS%20Y%20GRANDES-dog-chow-frente.jpeg.webp",
+      "images": [
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/ADULTOS%20MEDIANOS%20Y%20GRANDES-dog-chow-frente.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/ADULTOS%20MEDIANOS%20Y%20GRANDES-dog-chow-lateral.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/ADULTOS%20MEDIANOS%20Y%20GRANDES-dog-chow-trasera.jpeg.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_881371-MLA99338100904_112025-O.jpg",
+        "https://http2.mlstatic.com/D_Q_NP_891071-MLA90632276820_082025-B.jpg"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Mediano y Grande"
+      }
+    },
+    {
+      "sku": "DC-DOG-ADULT-SMALL",
+      "name": "Dog Chow Adultos Pequeños",
+      "description": "Alimento completo para perros adultos de razas pequeñas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 42000,
+          "cost_price": 25200,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 78000,
+          "cost_price": 46800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 175000,
+          "cost_price": 105000,
+          "sku_suffix": "-8KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/styles/webp/public/2022-11/adultos-minis-y-pequenos-pavo.jpg.webp",
+      "images": [
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-11/adultos-minis-y-pequenos-pavo.jpg.webp",
+        "https://purina.com.py/sites/default/files/2022-11/purina-dog-chow-adultos-todos-los-tama%C3%B1os-con-carne.jpg",
+        "https://purina.com.py/sites/default/files/2022-11/dog-chow-adultos-todos-los-tama%C3%B1os-pollo.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_884319-MLA40504691626_012020-O.jpg",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-11/adultos-minis-y-pequenos-pavo.jpg.webp"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Pequeño"
+      }
+    },
+    {
+      "sku": "DC-DOG-PUPPY-SMALL",
+      "name": "Dog Chow Cachorros Pequeños",
+      "description": "Alimento completo para cachorros de razas pequeñas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 48000,
+          "cost_price": 28800,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 88000,
+          "cost_price": 52800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-8KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/cachorros-minis-y-pequen%CC%83os-dog-chow-frente.jpeg.webp",
+      "images": [
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/cachorros-minis-y-pequen%CC%83os-dog-chow-frente.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/cachorros-minis-y-pequen%CC%83os-dog-chow-lateral.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/cachorros-minis-y-pequen%CC%83os-dog-chow-trasera.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/cachorros-minis-y-pequen%CC%83os-dog-chow-frente.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/cachorros-minis-y-pequen%CC%83os-dog-chow-lateral.jpeg.webp"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "breed_size": "Pequeño"
+      }
+    },
+    {
+      "sku": "DC-DOG-PUPPY-MED-LG",
+      "name": "Dog Chow Cachorros Medianos y Grandes",
+      "description": "Alimento completo para cachorros de razas medianas y grandes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 48000,
+          "cost_price": 28800,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 88000,
+          "cost_price": 52800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "21kg",
+          "base_price": 425000,
+          "cost_price": 255000,
+          "sku_suffix": "-21KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/CACHORROS%20MEDIANOS%20Y%20GRANDES-dog-chow-frente.jpeg.webp",
+      "images": [
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/CACHORROS%20MEDIANOS%20Y%20GRANDES-dog-chow-frente.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/CACHORROS%20MEDIANOS%20Y%20GRANDES-dog-chow-lateral.jpeg.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/CACHORROS%20MEDIANOS%20Y%20GRANDES-dog-chow-trasera.jpeg.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_881371-MLA99338100904_112025-O.jpg",
+        "https://http2.mlstatic.com/D_Q_NP_891071-MLA90632276820_082025-F.jpg"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "breed_size": "Mediano y Grande"
+      }
+    },
+    {
+      "sku": "DC-DOG-SENIOR",
+      "name": "Dog Chow Senior 7+",
+      "description": "Alimento para perros mayores de 7 años con antioxidantes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-8KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/styles/webp/public/2023-04/dog-chow-adulto%2B7-longevidad-carne-pollo-front.png.webp",
+      "images": [
+        "https://purina.com.py/sites/default/files/styles/webp/public/2023-04/dog-chow-adulto%2B7-longevidad-carne-pollo-front.png.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2023-04/dog-chow-adulto%2B7-longevidad-carne-pollo-back.png.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2023-04/dog-chow-adulto%2B7-longevidad-carne-pollo-lateral.png.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_926482-MLA99920336703_112025-O.jpg",
+        "https://http2.mlstatic.com/D_Q_NP_680531-MLA99436219258_112025-F.jpg"
+      ],
+      "attributes": {
+        "age_range": "7+ años",
+        "special_need": "Senior"
+      }
+    },
+    {
+      "sku": "DC-DOG-LIGHT",
+      "name": "Dog Chow Light",
+      "description": "Alimento reducido en calorías para perros con sobrepeso",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 82000,
+          "cost_price": 49200,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 178000,
+          "cost_price": 106800,
+          "sku_suffix": "-8KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/PURINA%C2%AE%20DOG%20CHOW%C2%AE%20ADULTOS%20CONTROL%20DE%20PESO-dog-chow-frente.png.webp",
+      "images": [
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/PURINA%C2%AE%20DOG%20CHOW%C2%AE%20ADULTOS%20CONTROL%20DE%20PESO-dog-chow-frente.png.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/PURINA%C2%AE%20DOG%20CHOW%C2%AE%20ADULTOS%20CONTROL%20DE%20PESO-dog-chow-lateral.png.webp",
+        "https://purina.com.py/sites/default/files/styles/webp/public/2022-09/PURINA%C2%AE%20DOG%20CHOW%C2%AE%20ADULTOS%20CONTROL%20DE%20PESO-dog-chow-trasera.png.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_973227-MLA51146814990_082022-O.jpg",
+        "https://http2.mlstatic.com/D_Q_NP_837365-MLA51146843847_082022-F.jpg"
+      ],
+      "attributes": {
+        "special_need": "Control de peso",
+        "low_calorie": true
+      }
+    }
+  ]
+}

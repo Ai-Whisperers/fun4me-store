@@ -1,0 +1,70 @@
+{
+  "$schema": "../../_schemas/store.schema.json#/definitions/TenantProductsFile",
+  "tenant_id": "petlife",
+  "description": "Products carried by PetLife Center with local pricing",
+  "products": [
+    {
+      "sku": "MON-DOG-ADULT-25KG",
+      "sale_price": 595000,
+      "min_stock_level": 3,
+      "location": "Pasillo 1",
+      "initial_stock": 5
+    },
+    {
+      "sku": "MON-DOG-ADULT-15KG",
+      "sale_price": 395000,
+      "min_stock_level": 4,
+      "location": "Pasillo 1",
+      "initial_stock": 8
+    },
+    {
+      "sku": "PP-DOG-PUPPY-LARGE-3KG",
+      "sale_price": 275000,
+      "min_stock_level": 5,
+      "location": "Pasillo 2",
+      "initial_stock": 10
+    },
+    {
+      "sku": "FN-DOG-PUPPY-LARGE-14KG",
+      "sale_price": 660000,
+      "min_stock_level": 3,
+      "location": "Pasillo 2",
+      "initial_stock": 4
+    },
+    {
+      "sku": "FN-DOG-PUPPY-SMALL-7KG",
+      "sale_price": 399000,
+      "min_stock_level": 4,
+      "location": "Pasillo 2",
+      "initial_stock": 6
+    },
+    {
+      "sku": "VIR-ANXITANE-S",
+      "sale_price": 250000,
+      "min_stock_level": 2,
+      "location": "Farmacia",
+      "initial_stock": 5
+    },
+    {
+      "sku": "MED-GLOVE-NITRILE-S",
+      "sale_price": 115000,
+      "min_stock_level": 8,
+      "location": "Bodega",
+      "initial_stock": 30
+    },
+    {
+      "sku": "BD-SYRINGE-1ML-27G",
+      "sale_price": 90000,
+      "min_stock_level": 8,
+      "location": "Bodega",
+      "initial_stock": 25
+    },
+    {
+      "sku": "BD-SYRINGE-3ML-23G",
+      "sale_price": 80000,
+      "min_stock_level": 8,
+      "location": "Bodega",
+      "initial_stock": 25
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "privacy_policy": {
+    "title": "Política de Privacidad",
+    "last_updated": "2024-12-01",
+    "sections": [
+      {
+        "title": "Introducción",
+        "content": "PetLife Center se compromete a proteger la privacidad de los datos personales de nuestros clientes, sus mascotas y los veterinarios derivantes. Esta política describe nuestras prácticas de recopilación, uso y protección de información."
+      },
+      {
+        "title": "Información que Recopilamos",
+        "content": "Recopilamos los siguientes datos:\n\n• **Datos del propietario:** Nombre, cédula, teléfono, email, dirección.\n• **Datos del paciente (mascota):** Nombre, especie, raza, edad, peso, historial clínico.\n• **Datos del veterinario remitente:** Nombre, clínica, matrícula profesional, contacto.\n• **Estudios realizados:** Imágenes, resultados de laboratorio, informes diagnósticos.\n• **Datos de navegación:** Cookies y datos técnicos de nuestra plataforma web."
+      },
+      {
+        "title": "Uso de la Información",
+        "content": "Utilizamos los datos para:\n\n• Realizar y documentar estudios diagnósticos.\n• Generar informes y comunicarlos al veterinario remitente.\n• Mantener el historial clínico del paciente.\n• Enviar recordatorios de controles (si el cliente lo autoriza).\n• Cumplir con requisitos legales y profesionales."
+      },
+      {
+        "title": "Compartir Información",
+        "content": "Compartimos información clínica únicamente con:\n\n• El veterinario remitente que derivó al paciente.\n• El propietario del paciente.\n• Autoridades sanitarias cuando es legalmente requerido.\n\nNo vendemos ni compartimos datos con terceros para fines comerciales."
+      },
+      {
+        "title": "Seguridad y Almacenamiento",
+        "content": "Los datos se almacenan en servidores seguros con encriptación. Las imágenes diagnósticas y los informes se conservan por un mínimo de 10 años según normativa profesional veterinaria. Implementamos medidas de seguridad físicas y digitales para proteger la información."
+      },
+      {
+        "title": "Derechos del Usuario",
+        "content": "Tienes derecho a:\n\n• Acceder a los datos de tu mascota y estudios realizados.\n• Solicitar corrección de información incorrecta.\n• Obtener copias de informes y estudios en cualquier momento.\n• Solicitar que se envíe el historial a otro centro veterinario.\n\nContacto: privacidad@petlifecenter.com.py"
+      },
+      {
+        "title": "Contacto",
+        "content": "Para consultas sobre privacidad:\n\n• Email: privacidad@petlifecenter.com.py\n• WhatsApp: +595 971 999 888\n• Dirección: Ruta 2 Km 14, Mariano Roque Alonso"
+      }
+    ]
+  },
+  "terms_of_service": {
+    "title": "Términos y Condiciones",
+    "last_updated": "2024-12-01",
+    "sections": [
+      {
+        "title": "Aceptación",
+        "content": "Al utilizar los servicios de PetLife Center, ya sea como propietario de mascota o como veterinario derivante, aceptas estos términos en su totalidad."
+      },
+      {
+        "title": "Servicios Ofrecidos",
+        "content": "PetLife Center brinda servicios de diagnóstico veterinario incluyendo: diagnóstico por imágenes (ecografía, radiología, ecocardiografía), laboratorio clínico, consultas de especialidad, procedimientos diagnósticos e internación. No brindamos servicios de atención primaria general ni urgencias 24 horas."
+      },
+      {
+        "title": "Naturaleza del Servicio",
+        "content": "Somos un centro de diagnóstico que trabaja en colaboración con veterinarios clínicos. Los informes diagnósticos son herramientas para el veterinario tratante, quien mantiene la responsabilidad del manejo terapéutico del paciente.\n\nLos estudios diagnósticos tienen limitaciones inherentes. Un resultado 'sin hallazgos significativos' no garantiza ausencia de patología, sino que no se detectaron hallazgos con la metodología empleada."
+      },
+      {
+        "title": "Turnos y Cancelaciones",
+        "content": "• Los turnos deben agendarse con anticipación.\n• Cancelaciones deben realizarse con al menos 12 horas de anticipación.\n• La inasistencia sin aviso puede resultar en cargo administrativo.\n• Para procedimientos con sedación, se requieren 6 horas de ayuno."
+      },
+      {
+        "title": "Informes y Resultados",
+        "content": "• Los informes de imagen se entregan en 24 horas hábiles.\n• Los resultados de laboratorio in-house se entregan en 30-60 minutos.\n• Los informes se envían al veterinario remitente y al propietario.\n• Las imágenes originales se almacenan por 10 años mínimo."
+      },
+      {
+        "title": "Pagos",
+        "content": "• Los aranceles deben abonarse antes o al momento del estudio.\n• Aceptamos efectivo, tarjetas y transferencias.\n• Veterinarios derivantes pueden solicitar cuenta corriente.\n• Los precios publicados son referenciales y pueden variar según complejidad."
+      },
+      {
+        "title": "Limitación de Responsabilidad",
+        "content": "PetLife Center no es responsable por:\n\n• Decisiones terapéuticas tomadas por terceros basadas en nuestros informes.\n• Complicaciones derivadas de sedación (riesgo inherente informado).\n• Daños indirectos o consecuentes.\n\nNuestra responsabilidad máxima se limita al valor del servicio contratado."
+      },
+      {
+        "title": "Jurisdicción",
+        "content": "Estos términos se rigen por las leyes de la República del Paraguay. Las controversias se someterán a los tribunales de la ciudad de Asunción."
+      },
+      {
+        "title": "Contacto",
+        "content": "Para consultas legales:\n\n• Email: legal@petlifecenter.com.py\n• WhatsApp: +595 971 999 888"
+      }
+    ]
+  },
+  "cookie_policy": {
+    "title": "Política de Cookies",
+    "last_updated": "2024-12-01",
+    "content": "Utilizamos cookies esenciales para el funcionamiento de nuestra plataforma de turnos online y portal de clientes. Podés gestionar las preferencias de cookies desde tu navegador."
+  }
+}

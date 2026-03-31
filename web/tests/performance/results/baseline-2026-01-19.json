@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-01-19T20:02:36.203Z",
+  "environment": "test",
+  "measurements_per_endpoint": 20,
+  "warmup_runs": 3,
+  "endpoints": [],
+  "summary": {
+    "total_endpoints": 0,
+    "total_measurements": 0,
+    "average_response_time": null
+  }
+}

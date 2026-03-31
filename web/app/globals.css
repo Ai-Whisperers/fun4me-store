@@ -1,0 +1,1526 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* ========================================
+   * COMPREHENSIVE DESIGN SYSTEM TOKENS
+   * ======================================== */
+
+  /* ----------------------------------------
+   * 1. PRIMARY & SECONDARY COLORS
+   * (Overridden by clinic themes)
+   * ---------------------------------------- */
+  /* Primary: Teal #2DCEA3 */
+  --primary: #2dcea3;
+  --primary-light: #5debc5;
+  --primary-dark: #0f766e;
+  --primary-contrast: #ffffff;
+  --primary-50: #f0fdf9;
+  --primary-100: #ccfbf1;
+  --primary-200: #99f6e4;
+  --primary-300: #5eead4;
+  --primary-400: #2dcea3;
+  --primary-500: #14b8a6;
+  --primary-600: #0d9488;
+  --primary-700: #0f766e;
+  --primary-800: #115e59;
+  --primary-900: #134e4a;
+  /* RGB for opacity manipulation */
+  --primary-rgb: 45, 206, 163;
+
+  /* Secondary: Navy Blue #0F172A */
+  --secondary: #0f172a;
+  --secondary-light: #334155;
+  --secondary-dark: #020617;
+  --secondary-contrast: #ffffff;
+  --secondary-50: #f8fafc;
+  --secondary-100: #f1f5f9;
+  --secondary-200: #e2e8f0;
+  --secondary-300: #cbd5e1;
+  --secondary-400: #94a3b8;
+  --secondary-500: #64748b;
+  --secondary-600: #475569;
+  --secondary-700: #334155;
+  --secondary-800: #1e293b;
+  --secondary-900: #0f172a;
+  --secondary-rgb: 15, 23, 42;
+
+  /* ----------------------------------------
+   * 2. NEUTRAL/GRAY PALETTE
+   * Complete gray scale for consistent UI
+   * ---------------------------------------- */
+  --neutral-50: #fafafa;
+  --neutral-100: #f4f4f5;
+  --neutral-200: #e4e4e7;
+  --neutral-300: #d4d4d8;
+  --neutral-400: #a1a1aa;
+  --neutral-500: #71717a;
+  --neutral-600: #52525b;
+  --neutral-700: #3f3f46;
+  --neutral-800: #27272a;
+  --neutral-900: #18181b;
+  --neutral-950: #09090b;
+
+  /* Slate (cooler gray) for backgrounds */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
+
+  /* ----------------------------------------
+   * 3. BACKGROUND COLORS
+   * Surface colors for elevation and layering
+   * ---------------------------------------- */
+  --bg-default: #ffffff;
+  --bg-paper: #ffffff;
+  --bg-subtle: #f9fafb;
+  --bg-muted: #f3f4f6;
+  --bg-inverse: #1f2937;
+  --bg-dark: #111827;
+  --bg-darker: #030712;
+
+  /* Shadow color (for colored shadows) */
+  --shadow-color: #d1d5db;
+
+  /* Elevated surfaces (cards, modals) */
+  --surface-0: #ffffff; /* Base level */
+  --surface-1: #ffffff; /* Cards */
+  --surface-2: #fafafa; /* Nested cards */
+  --surface-3: #f5f5f5; /* Deeply nested */
+  --surface-raised: #ffffff; /* Dropdowns, popovers */
+  --surface-overlay: #ffffff; /* Modals */
+  --surface-sunken: #f3f4f6; /* Inset areas */
+
+  /* ----------------------------------------
+   * 4. TEXT COLORS
+   * Semantic text colors with proper contrast
+   * ---------------------------------------- */
+  --text-primary: #111827; /* Near black - headings */
+  --text-secondary: #374151; /* Dark grey - body text */
+  --text-tertiary: #6b7280; /* Medium grey - less emphasis */
+  --text-muted: #9ca3af; /* Light grey - hints, captions */
+  --text-placeholder: #9ca3af; /* Placeholder text */
+  --text-disabled: #d1d5db; /* Disabled state */
+  --text-inverse: #ffffff; /* On dark backgrounds */
+  --text-on-primary: #ffffff; /* Text on primary color */
+  --text-on-secondary: #1a331d; /* Text on secondary color */
+
+  /* Link colors */
+  --link-default: #2563eb;
+  --link-hover: #1d4ed8;
+  --link-visited: #7c3aed;
+  --link-active: #1e40af;
+
+  /* ----------------------------------------
+   * 5. BORDER COLORS
+   * Consistent borders throughout the UI
+   * ---------------------------------------- */
+  --border-default: #e5e7eb;
+  --border-light: #f3f4f6;
+  --border-strong: #d1d5db;
+  --border-muted: #e5e7eb;
+  --border-inverse: #374151;
+  --border-focus: var(--primary);
+  --border-error: #ef4444;
+  --border-success: #22c55e;
+  --border-warning: #f59e0b;
+  /* Backwards compatibility */
+  --border: #e5e7eb;
+
+  /* ----------------------------------------
+   * 6. STATUS/SEMANTIC COLORS
+   * Success, warning, error, info with variants
+   * ---------------------------------------- */
+  /* Success */
+  --status-success: #22c55e;
+  --status-success-light: #86efac;
+  --status-success-dark: #15803d;
+  --status-success-bg: #dcfce7;
+  --status-success-border: #bbf7d0;
+  --status-success-text: #166534;
+  --success: #22c55e;
+  --success-rgb: 34, 197, 94;
+
+  /* Warning */
+  --status-warning: #f59e0b;
+  --status-warning-light: #fcd34d;
+  --status-warning-dark: #d97706;
+  --status-warning-bg: #fef3c7;
+  --status-warning-border: #fde68a;
+  --status-warning-text: #92400e;
+  --warning: #f59e0b;
+  --warning-rgb: 245, 158, 11;
+
+  /* Error/Danger */
+  --status-error: #ef4444;
+  --status-error-light: #fca5a5;
+  --status-error-dark: #dc2626;
+  --status-error-bg: #fee2e2;
+  --status-error-border: #fecaca;
+  --status-error-text: #991b1b;
+  --error: #ef4444;
+  --danger: #ef4444;
+  --error-rgb: 239, 68, 68;
+
+  /* Info */
+  --status-info: #3b82f6;
+  --status-info-light: #93c5fd;
+  --status-info-dark: #2563eb;
+  --status-info-bg: #dbeafe;
+  --status-info-border: #bfdbfe;
+  --status-info-text: #1e40af;
+  --info: #3b82f6;
+  --info-rgb: 59, 130, 246;
+
+  /* Special (Purple - in consultation, hospitalized) */
+  --status-special: #8b5cf6;
+  --status-special-light: #c4b5fd;
+  --status-special-dark: #7c3aed;
+  --status-special-bg: #f3e8ff;
+  --status-special-border: #e9d5ff;
+  --status-special-text: #6b21a8;
+
+  /* Neutral (Gray - draft, inactive, unknown) */
+  --status-neutral: #6b7280;
+  --status-neutral-light: #9ca3af;
+  --status-neutral-dark: #4b5563;
+  --status-neutral-bg: #f3f4f6;
+  --status-neutral-border: #e5e7eb;
+  --status-neutral-text: #374151;
+
+  /* ----------------------------------------
+   * 7. INTERACTIVE STATE COLORS
+   * Hover, active, focus, disabled states
+   * ---------------------------------------- */
+  --hover-bg: rgba(0, 0, 0, 0.04);
+  --hover-bg-dark: rgba(255, 255, 255, 0.08);
+  --active-bg: rgba(0, 0, 0, 0.08);
+  --active-bg-dark: rgba(255, 255, 255, 0.12);
+  --focus-ring: var(--primary);
+  --focus-ring-offset: 2px;
+  --disabled-bg: #f3f4f6;
+  --disabled-text: #9ca3af;
+  --disabled-border: #e5e7eb;
+
+  /* Selected/Highlighted states */
+  --selected-bg: rgba(47, 82, 51, 0.08);
+  --selected-bg-strong: rgba(47, 82, 51, 0.16);
+  --selected-border: var(--primary);
+  --highlight-bg: #fef9c3;
+  --highlight-text: #854d0e;
+
+  /* ----------------------------------------
+   * 8. CHART & DATA VISUALIZATION
+   * 12-color palette for charts and graphs
+   * ---------------------------------------- */
+  --chart-1: #3b82f6; /* Blue */
+  --chart-2: #22c55e; /* Green */
+  --chart-3: #f59e0b; /* Amber */
+  --chart-4: #ef4444; /* Red */
+  --chart-5: #8b5cf6; /* Purple */
+  --chart-6: #ec4899; /* Pink */
+  --chart-7: #06b6d4; /* Cyan */
+  --chart-8: #84cc16; /* Lime */
+  --chart-9: #f97316; /* Orange */
+  --chart-10: #14b8a6; /* Teal */
+  --chart-11: #6366f1; /* Indigo */
+  --chart-12: #a855f7; /* Violet */
+
+  /* ----------------------------------------
+   * 9. ACCENT COLORS
+   * For stat cards, tags, and highlights
+   * ---------------------------------------- */
+  /* Blue */
+  --accent-blue: #3b82f6;
+  --accent-blue-light: #dbeafe;
+  --accent-blue-dark: #1d4ed8;
+  --accent-blue-rgb: 59, 130, 246;
+
+  /* Green */
+  --accent-green: #22c55e;
+  --accent-green-light: #dcfce7;
+  --accent-green-dark: #15803d;
+  --accent-green-rgb: 34, 197, 94;
+
+  /* Purple */
+  --accent-purple: #8b5cf6;
+  --accent-purple-light: #ede9fe;
+  --accent-purple-dark: #6d28d9;
+  --accent-purple-rgb: 139, 92, 246;
+
+  /* Orange */
+  --accent-orange: #f97316;
+  --accent-orange-light: #ffedd5;
+  --accent-orange-dark: #c2410c;
+  --accent-orange-rgb: 249, 115, 22;
+
+  /* Cyan */
+  --accent-cyan: #06b6d4;
+  --accent-cyan-light: #cffafe;
+  --accent-cyan-dark: #0891b2;
+  --accent-cyan-rgb: 6, 182, 212;
+
+  /* Pink */
+  --accent-pink: #ec4899;
+  --accent-pink-light: #fce7f3;
+  --accent-pink-dark: #be185d;
+  --accent-pink-rgb: 236, 72, 153;
+
+  /* Teal */
+  --accent-teal: #14b8a6;
+  --accent-teal-light: #ccfbf1;
+  --accent-teal-dark: #0f766e;
+  --accent-teal-rgb: 20, 184, 166;
+
+  /* Indigo */
+  --accent-indigo: #6366f1;
+  --accent-indigo-light: #e0e7ff;
+  --accent-indigo-dark: #4338ca;
+  --accent-indigo-rgb: 99, 102, 241;
+
+  /* Rose */
+  --accent-rose: #f43f5e;
+  --accent-rose-light: #ffe4e6;
+  --accent-rose-dark: #be123c;
+  --accent-rose-rgb: 244, 63, 94;
+
+  /* Amber */
+  --accent-amber: #f59e0b;
+  --accent-amber-light: #fef3c7;
+  --accent-amber-dark: #b45309;
+  --accent-amber-rgb: 245, 158, 11;
+
+  /* ----------------------------------------
+   * 10. GRADIENTS
+   * Pre-defined gradients for UI elements
+   * ---------------------------------------- */
+  /* Directional gradients */
+  --gradient-blue: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  --gradient-green: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+  --gradient-purple: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  --gradient-orange: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+  --gradient-pink: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  --gradient-cyan: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  --gradient-teal: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+  --gradient-indigo: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+
+  /* Brand gradients (overridden by clinic themes) */
+  --gradient-hero: linear-gradient(135deg, #2f5233 0%, #1a331d 100%);
+  --gradient-primary: linear-gradient(135deg, #4e7c54 0%, #2f5233 100%);
+  --gradient-accent: linear-gradient(135deg, #f0c808 0%, #f5d74d 100%);
+  --gradient-dark: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+
+  /* Special gradients */
+  --gradient-shimmer: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  --gradient-glass: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  --gradient-dark-overlay: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  --gradient-light-overlay: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+
+  /* ----------------------------------------
+   * 11. OVERLAY & BACKDROP COLORS
+   * For modals, dialogs, and popovers
+   * ---------------------------------------- */
+  --overlay-light: rgba(255, 255, 255, 0.8);
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --overlay-darker: rgba(0, 0, 0, 0.7);
+  --overlay-blur: rgba(255, 255, 255, 0.85);
+  --backdrop-blur: 12px;
+
+  /* ----------------------------------------
+   * 12. FORM INPUT COLORS
+   * Consistent form styling
+   * ---------------------------------------- */
+  --input-bg: #ffffff;
+  --input-bg-disabled: #f3f4f6;
+  --input-border: #d1d5db;
+  --input-border-hover: #9ca3af;
+  --input-border-focus: var(--primary);
+  --input-border-error: #ef4444;
+  --input-border-success: #22c55e;
+  --input-placeholder: #9ca3af;
+  --input-text: #111827;
+  --input-ring: rgba(47, 82, 51, 0.2);
+  --input-ring-error: rgba(239, 68, 68, 0.2);
+
+  /* ----------------------------------------
+   * 13. SKELETON & LOADING COLORS
+   * For loading states and placeholders
+   * ---------------------------------------- */
+  --skeleton-base: #e5e7eb;
+  --skeleton-highlight: #f3f4f6;
+  --skeleton-animation: shimmer 2s infinite;
+  --loading-spinner: var(--primary);
+  --loading-track: #e5e7eb;
+
+  /* ----------------------------------------
+   * 14. SCROLLBAR COLORS
+   * Custom scrollbar styling
+   * ---------------------------------------- */
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+  --scrollbar-width: 8px;
+
+  /* ----------------------------------------
+   * 15. SHADOWS
+   * Elevation system with consistent shadows
+   * ---------------------------------------- */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  /* Colored shadows */
+  --shadow-primary: 0 4px 14px 0 rgba(47, 82, 51, 0.25);
+  --shadow-error: 0 4px 14px 0 rgba(239, 68, 68, 0.25);
+  --shadow-success: 0 4px 14px 0 rgba(34, 197, 94, 0.25);
+
+  /* Component-specific shadows */
+  --shadow-card: 0 4px 20px -2px rgb(0 0 0 / 0.08);
+  --shadow-card-hover: 0 12px 32px -4px rgb(0 0 0 / 0.12);
+  --shadow-button: 0 4px 14px 0 rgb(0 0 0 / 0.15);
+  --shadow-dropdown: 0 10px 40px -10px rgb(0 0 0 / 0.15);
+  --shadow-modal: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-tooltip: 0 4px 12px rgb(0 0 0 / 0.15);
+
+  /* ----------------------------------------
+   * 16. BORDER RADIUS
+   * Consistent radius tokens
+   * ---------------------------------------- */
+  --radius-none: 0;
+  --radius-xs: 0.25rem; /* 4px */
+  --radius-sm: 0.5rem; /* 8px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 1.5rem; /* 24px */
+  --radius-2xl: 2rem; /* 32px */
+  --radius-3xl: 3rem; /* 48px */
+  --radius-full: 9999px;
+  /* Default radius (overridden by clinic themes) */
+  --radius: 1rem;
+
+  /* ----------------------------------------
+   * 17. SPACING SCALE
+   * Consistent spacing tokens
+   * ---------------------------------------- */
+  --space-0: 0;
+  --space-px: 1px;
+  --space-0-5: 0.125rem; /* 2px */
+  --space-1: 0.25rem; /* 4px */
+  --space-1-5: 0.375rem; /* 6px */
+  --space-2: 0.5rem; /* 8px */
+  --space-2-5: 0.625rem; /* 10px */
+  --space-3: 0.75rem; /* 12px */
+  --space-3-5: 0.875rem; /* 14px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-7: 1.75rem; /* 28px */
+  --space-8: 2rem; /* 32px */
+  --space-9: 2.25rem; /* 36px */
+  --space-10: 2.5rem; /* 40px */
+  --space-11: 2.75rem; /* 44px */
+  --space-12: 3rem; /* 48px */
+  --space-14: 3.5rem; /* 56px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-28: 7rem; /* 112px */
+  --space-32: 8rem; /* 128px */
+
+  /* Section spacing */
+  --section-spacing: 6rem;
+  --section-spacing-sm: 4rem;
+  --container-padding: 1rem;
+
+  /* ----------------------------------------
+   * 18. Z-INDEX SCALE
+   * Consistent layering system
+   * ---------------------------------------- */
+  --z-behind: -1;
+  --z-base: 0;
+  --z-raised: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-header: 40;
+  --z-drawer: 50;
+  --z-modal: 60;
+  --z-popover: 70;
+  --z-tooltip: 80;
+  --z-toast: 90;
+  --z-max: 9999;
+
+  /* ----------------------------------------
+   * 19. ANIMATION & TRANSITION
+   * Consistent motion tokens
+   * ---------------------------------------- */
+  --duration-instant: 0ms;
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-moderate: 300ms;
+  --duration-slow: 400ms;
+  --duration-slower: 500ms;
+
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Legacy transition tokens */
+  --transition-fast: 150ms;
+  --transition-normal: 250ms;
+  --transition-slow: 400ms;
+
+  /* ----------------------------------------
+   * 20. TYPOGRAPHY SCALE
+   * Font sizes and line heights
+   * ---------------------------------------- */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-6xl: 3.75rem; /* 60px */
+
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* ----------------------------------------
+   * 21. shadcn/ui COMPATIBLE VARIABLES
+   * HSL format for shadcn components
+   * ---------------------------------------- */
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --ring: 222.2 84% 4.9%;
+
+  /* ----------------------------------------
+   * 22. LANDING PAGE COLORS
+   * Specific colors for landing/marketing pages
+   * These are isolated from clinic theming
+   * ---------------------------------------- */
+  --landing-dark: #0f172a; /* Dark background - same as slate-900 */
+  --landing-primary: #0d9488; /* Teal-600 - main brand color */
+  --landing-primary-hover: #0f766e; /* Teal-700 */
+  --landing-primary-light: #ccfbf1; /* Teal-100 */
+  --landing-primary-lighter: #f0fdfa; /* Teal-50 */
+  --landing-accent: #00c9ff; /* Cyan - gradients, accents */
+  --landing-purple: #5c6bff; /* Purple - secondary accents */
+  --landing-whatsapp: #25d366; /* WhatsApp brand green */
+  --landing-whatsapp-hover: #20bd5a; /* WhatsApp hover */
+
+  /* Landing text colors */
+  --landing-text-primary: #0f172a; /* slate-900 */
+  --landing-text-secondary: #475569; /* slate-600 */
+  --landing-text-muted: #64748b; /* slate-500 */
+  --landing-text-light: #94a3b8; /* slate-400 */
+
+  /* Landing backgrounds */
+  --landing-bg: #f8fafc; /* slate-50 */
+  --landing-bg-white: #ffffff;
+  --landing-bg-muted: #f1f5f9; /* slate-100 */
+  --landing-border: #e2e8f0; /* slate-200 */
+  --landing-border-light: #f1f5f9; /* slate-100 */
+
+  /* Landing gradients */
+  --landing-gradient-primary: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  --landing-gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --landing-gradient-cta: linear-gradient(135deg, #0d9488 0%, #5c6bff 100%);
+  --landing-gradient-header: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* ACCESSIBILITY: Set base font size to 16px for readability */
+    font-size: 16px;
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: var(
+      --font-body,
+      'Inter',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      sans-serif
+    );
+    /* ACCESSIBILITY: Improved line-height for readability */
+    font-size: 1rem; /* 16px base */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Paragraph and body text defaults */
+  p,
+  li,
+  td,
+  th,
+  label,
+  span {
+    font-size: 1rem; /* 16px minimum for body text */
+    line-height: 1.6;
+  }
+
+  /* Small text utility - still readable at 14px */
+  small,
+  .text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5;
+  }
+
+  /* Extra small text - use sparingly */
+  .text-xs {
+    font-size: 0.8125rem; /* 13px - not smaller for accessibility */
+    line-height: 1.4;
+  }
+
+  /* Better heading defaults with proper hierarchy */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  } /* 40px */
+  h2 {
+    font-size: 2rem;
+  } /* 32px */
+  h3 {
+    font-size: 1.5rem;
+  } /* 24px */
+  h4 {
+    font-size: 1.25rem;
+  } /* 20px */
+  h5 {
+    font-size: 1.125rem;
+  } /* 18px */
+  h6 {
+    font-size: 1rem;
+  } /* 16px */
+
+  /* Focus visible for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--primary, #2f5233);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Section spacing utility */
+  .section-padding {
+    padding-top: var(--section-spacing-sm);
+    padding-bottom: var(--section-spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: var(--section-spacing);
+      padding-bottom: var(--section-spacing);
+    }
+  }
+
+  /* Card component base */
+  .card {
+    background: white;
+    border-radius: var(--radius, 16px);
+    box-shadow: var(--shadow-card);
+    transition:
+      box-shadow var(--transition-normal) ease,
+      transform var(--transition-normal) ease;
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-4px);
+  }
+
+  /* Button base styles */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    font-weight: 700;
+    border-radius: var(--radius, 16px);
+    background: var(--primary);
+    color: white;
+    box-shadow: var(--shadow-button);
+    transition: all var(--transition-normal) ease;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgb(0 0 0 / 0.2);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    font-weight: 700;
+    border-radius: var(--radius, 16px);
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    transition: all var(--transition-normal) ease;
+  }
+
+  .btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  /* Gradient text utility */
+  .gradient-text {
+    background: var(--gradient-primary, linear-gradient(135deg, #2f5233, #4e7c54));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Hide scrollbar but allow scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ========================================
+   * STANDARDIZED SPACING SYSTEM
+   * ======================================== */
+
+  /* Page Container - Standard wrapper for all pages */
+  .page-container {
+    @apply container mx-auto px-4 md:px-6;
+  }
+
+  .page-container-sm {
+    @apply mx-auto max-w-2xl px-4 sm:px-6;
+  }
+
+  .page-container-md {
+    @apply mx-auto max-w-4xl px-4 sm:px-6;
+  }
+
+  .page-container-lg {
+    @apply mx-auto max-w-6xl px-4 md:px-6;
+  }
+
+  .page-container-xl {
+    @apply mx-auto max-w-7xl px-4 md:px-6;
+  }
+
+  /* Page Header - Consistent header spacing */
+  .page-header {
+    @apply mb-8;
+  }
+
+  .page-header-sm {
+    @apply mb-6;
+  }
+
+  /* Section Spacing - Vertical spacing between sections */
+  .section-gap {
+    @apply space-y-6;
+  }
+
+  .section-gap-sm {
+    @apply space-y-4;
+  }
+
+  .section-gap-lg {
+    @apply space-y-8;
+  }
+
+  /* ========================================
+   * STANDARDIZED CARD STYLES
+   * ======================================== */
+
+  /* Card Base - Standard card appearance */
+  .card-base {
+    @apply rounded-2xl border border-gray-100 bg-white shadow-sm;
+  }
+
+  /* Card with hover effect */
+  .card-interactive {
+    @apply rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  /* Card Header - Consistent card header */
+  .card-header {
+    @apply flex items-center gap-3 border-b border-gray-100 px-5 py-4;
+  }
+
+  .card-header-title {
+    @apply font-bold text-[var(--text-primary)];
+  }
+
+  /* Card Body */
+  .card-body {
+    @apply p-5;
+  }
+
+  .card-body-sm {
+    @apply p-4;
+  }
+
+  .card-body-lg {
+    @apply p-6;
+  }
+
+  /* Card Footer */
+  .card-footer {
+    @apply border-t border-gray-100 bg-gray-50/50 px-5 py-3;
+  }
+
+  /* ========================================
+   * STANDARDIZED BUTTON STYLES
+   * ======================================== */
+
+  /* Primary Button - Main action */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl font-bold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-sm {
+    @apply min-h-[36px] px-4 py-2 text-sm;
+  }
+
+  .btn-md {
+    @apply min-h-[44px] px-5 py-2.5 text-sm;
+  }
+
+  .btn-lg {
+    @apply min-h-[48px] px-6 py-3 text-base;
+  }
+
+  .btn-primary-solid {
+    @apply bg-[var(--primary)] text-white shadow-md hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0;
+  }
+
+  .btn-secondary-solid {
+    @apply border border-gray-200 bg-white text-[var(--text-primary)] shadow-sm hover:border-gray-300 hover:bg-gray-50;
+  }
+
+  .btn-ghost {
+    @apply text-[var(--text-secondary)] hover:bg-gray-100 hover:text-[var(--text-primary)];
+  }
+
+  .btn-danger {
+    @apply bg-red-50 text-red-600 hover:bg-red-100;
+  }
+
+  /* ========================================
+   * STANDARDIZED FORM INPUTS
+   * ======================================== */
+
+  .input-base {
+    @apply min-h-[48px] w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition-all;
+    color: var(--text-primary);
+  }
+
+  .input-base:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb, 47, 82, 51), 0.1);
+  }
+
+  .input-with-icon {
+    @apply pl-12;
+  }
+
+  /* ========================================
+   * STANDARDIZED GRID LAYOUTS
+   * ======================================== */
+
+  /* Stats Grid - For dashboard stat cards */
+  .stats-grid {
+    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4;
+  }
+
+  /* Content Grid - Main content with sidebar */
+  .content-grid {
+    @apply grid grid-cols-1 gap-6 lg:grid-cols-12;
+  }
+
+  .content-main {
+    @apply space-y-6 lg:col-span-8;
+  }
+
+  .content-sidebar {
+    @apply space-y-6 lg:col-span-4;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  /* ========================================
+   * STANDARDIZED EMPTY STATES
+   * ======================================== */
+
+  .empty-state {
+    @apply px-6 py-12 text-center;
+  }
+
+  .empty-state-icon {
+    @apply mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 text-gray-400;
+  }
+
+  .empty-state-title {
+    @apply mb-2 text-lg font-bold text-[var(--text-primary)];
+  }
+
+  .empty-state-description {
+    @apply mx-auto mb-6 max-w-sm text-[var(--text-secondary)];
+  }
+
+  /* ========================================
+   * STANDARDIZED BADGES & TAGS
+   * ======================================== */
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold;
+  }
+
+  .badge-success {
+    @apply bg-green-100 text-green-700;
+  }
+
+  .badge-warning {
+    @apply bg-amber-100 text-amber-700;
+  }
+
+  .badge-error {
+    @apply bg-red-100 text-red-700;
+  }
+
+  .badge-info {
+    @apply bg-blue-100 text-blue-700;
+  }
+
+  .badge-neutral {
+    @apply bg-gray-100 text-gray-700;
+  }
+
+  /* ========================================
+   * STANDARDIZED ALERTS & MESSAGES
+   * ======================================== */
+
+  .alert {
+    @apply flex items-start gap-3 rounded-xl p-4;
+  }
+
+  .alert-success {
+    @apply border border-green-100 bg-green-50 text-green-700;
+  }
+
+  .alert-warning {
+    @apply border border-amber-100 bg-amber-50 text-amber-700;
+  }
+
+  .alert-error {
+    @apply border border-red-100 bg-red-50 text-red-700;
+  }
+
+  .alert-info {
+    @apply border border-blue-100 bg-blue-50 text-blue-700;
+  }
+
+  /* ========================================
+   * STANDARDIZED LIST ITEMS
+   * ======================================== */
+
+  .list-item {
+    @apply flex cursor-pointer items-center gap-3 rounded-xl p-3 transition-colors hover:bg-gray-50;
+  }
+
+  .list-item-icon {
+    @apply flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg;
+  }
+
+  /* ========================================
+   * STANDARDIZED MODALS
+   * ======================================== */
+
+  .modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm;
+  }
+
+  .modal-content {
+    @apply animate-in zoom-in-95 max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white shadow-2xl duration-200;
+  }
+
+  .modal-header {
+    @apply flex items-center gap-4 border-b border-gray-100 p-6;
+  }
+
+  .modal-body {
+    @apply p-6;
+  }
+
+  .modal-footer {
+    @apply flex items-center justify-end gap-3 border-t border-gray-100 p-6;
+  }
+
+  /* ========================================
+   * STANDARDIZED TABLE STYLES
+   * ======================================== */
+
+  .table-header {
+    @apply bg-gray-50 px-4 py-3 text-left text-sm font-medium text-[var(--text-secondary)];
+  }
+
+  .table-cell {
+    @apply border-b border-gray-100 px-4 py-3;
+  }
+
+  .table-row {
+    @apply transition-colors hover:bg-gray-50;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar utility */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Stagger animation delay utilities */
+  .stagger-1 {
+    animation-delay: 0.1s;
+  }
+  .stagger-2 {
+    animation-delay: 0.2s;
+  }
+  .stagger-3 {
+    animation-delay: 0.3s;
+  }
+  .stagger-4 {
+    animation-delay: 0.4s;
+  }
+  .stagger-5 {
+    animation-delay: 0.5s;
+  }
+  .stagger-6 {
+    animation-delay: 0.6s;
+  }
+
+  /* Screen reader only - visually hidden but available to screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Screen reader only - focusable variant */
+  .sr-only-focusable:focus,
+  .sr-only-focusable:active {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* Skip to content link for accessibility (hidden until focused) */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary, #2f5233);
+    color: white;
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: left var(--transition-fast);
+  }
+
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+  }
+
+  /* Focus ring utility for custom components */
+  .focus-ring {
+    outline: none;
+  }
+
+  .focus-ring:focus-visible {
+    outline: 2px solid var(--primary, #2f5233);
+    outline-offset: 2px;
+  }
+
+  /* Bounce-in animation for floating elements */
+  .animate-bounce-in {
+    animation: bounceIn 0.5s ease-out;
+  }
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+/* TICKET-CODE-002: Respect prefers-reduced-motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* TICKET-CODE-003: Print styles for better document printing */
+@media print {
+  /* Hide non-essential UI elements */
+  nav,
+  footer,
+  .no-print,
+  .notification-bell,
+  button[aria-label='Toggle Menu'],
+  .mobile-menu {
+    display: none !important;
+  }
+
+  /* Show print-only elements */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Optimize typography for print */
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: black;
+    background: white;
+  }
+
+  /* Remove link underlines except for actual URLs */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Prevent page breaks inside critical elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img,
+  figure,
+  table,
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+  /* Keep headings with their content */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+
+  /* Ensure images fit on page */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* Remove shadows and backgrounds for cleaner print */
+  .card,
+  .glass {
+    box-shadow: none !important;
+    background: white !important;
+  }
+
+  /* Optimize invoice and prescription layouts */
+  .invoice-container,
+  .prescription-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* === CHECKOUT RECEIPT PRINT STYLES === */
+
+  /* Hide all checkout UI except receipt */
+  .checkout-screen-content {
+    display: none !important;
+  }
+
+  /* Show printable receipt */
+  .printable-receipt {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Receipt container - A4 optimized layout */
+  .printable-receipt > div {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 15mm 20mm !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  /* Receipt header */
+  .printable-receipt header {
+    margin-bottom: 8mm !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+  }
+
+  .printable-receipt header h1 {
+    font-size: 18pt !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    margin-bottom: 2mm !important;
+  }
+
+  .printable-receipt header p,
+  .printable-receipt header span {
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Document type badge - preserve background colors */
+  .printable-receipt .border-dashed {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: #fffbeb !important;
+  }
+
+  .printable-receipt .bg-green-50 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: #f0fdf4 !important;
+  }
+
+  /* Customer info card */
+  .printable-receipt .bg-gray-50 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: #f9fafb !important;
+  }
+
+  /* Items table */
+  .printable-receipt table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 9pt !important;
+  }
+
+  .printable-receipt table th,
+  .printable-receipt table td {
+    padding: 3mm 2mm !important;
+    vertical-align: middle !important;
+  }
+
+  .printable-receipt table th {
+    background-color: #f9fafb !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    font-weight: 600 !important;
+    font-size: 8pt !important;
+    text-transform: uppercase !important;
+  }
+
+  .printable-receipt table tbody tr {
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  /* Item type badges */
+  .printable-receipt .rounded-full {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .printable-receipt .bg-blue-100 {
+    background-color: #dbeafe !important;
+  }
+
+  .printable-receipt .bg-amber-100 {
+    background-color: #fef3c7 !important;
+  }
+
+  .printable-receipt .bg-gray-100 {
+    background-color: #f3f4f6 !important;
+  }
+
+  /* Totals section */
+  .printable-receipt .border-gray-900 {
+    border-color: #111827 !important;
+    border-width: 2px !important;
+  }
+
+  /* QR Code - keep reasonable size */
+  .printable-receipt img[alt="Código QR"] {
+    width: 25mm !important;
+    height: 25mm !important;
+  }
+
+  /* Footer */
+  .printable-receipt footer {
+    margin-top: 8mm !important;
+    padding-top: 5mm !important;
+  }
+
+  .printable-receipt footer p {
+    font-size: 8pt !important;
+  }
+
+  /* WhatsApp badge */
+  .printable-receipt .bg-green-50.border-green-200 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: #f0fdf4 !important;
+    border-color: #bbf7d0 !important;
+  }
+
+  /* Paw print decorations */
+  .printable-receipt footer svg {
+    opacity: 0.3 !important;
+  }
+
+  /* Icons - ensure they print */
+  .printable-receipt svg:not([class*="h-5"]) {
+    width: 3.5mm !important;
+    height: 3.5mm !important;
+  }
+
+  /* Text colors for print */
+  .printable-receipt .text-gray-900 {
+    color: #111827 !important;
+  }
+
+  .printable-receipt .text-gray-700 {
+    color: #374151 !important;
+  }
+
+  .printable-receipt .text-gray-600 {
+    color: #4b5563 !important;
+  }
+
+  .printable-receipt .text-gray-500 {
+    color: #6b7280 !important;
+  }
+
+  .printable-receipt .text-amber-700 {
+    color: #b45309 !important;
+  }
+
+  .printable-receipt .text-green-700 {
+    color: #15803d !important;
+  }
+
+  /* Page setup for A4 */
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+}
+
+/* ========================================
+ * LEAFLET MAP CUSTOMIZATIONS
+ * ======================================== */
+
+/* Custom marker styling */
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Leaflet popup styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+}
+
+.leaflet-popup-tip {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Attribution styling */
+.leaflet-control-attribution {
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Zoom controls */
+.leaflet-control-zoom a {
+  color: #0d9488 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  color: #0f766e !important;
+}

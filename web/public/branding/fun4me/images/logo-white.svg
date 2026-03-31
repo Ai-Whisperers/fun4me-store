@@ -1,0 +1,6 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- F4M text in white -->
+  <text x="20" y="55" font-family="Arial Black, Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Fun4Me</text>
+  <!-- Accent dot -->
+  <circle cx="275" cy="45" r="8" fill="#E91E63"/>
+</svg>

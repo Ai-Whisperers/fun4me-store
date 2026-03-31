@@ -1,0 +1,187 @@
+# Dependabot Configuration for Vete Multi-Tenant Platform
+# Automated dependency updates for security patches, bug fixes, and feature enhancements
+# See: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+  # =============================================================================
+  # npm (Next.js Web Application)
+  # =============================================================================
+  - package-ecosystem: 'npm'
+    directory: '/web'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+      timezone: 'America/Asuncion'
+    open-pull-requests-limit: 10
+    
+    # Prefix commits and PR titles
+    commit-message:
+      prefix: 'deps'
+      prefix-development: 'deps(dev)'
+      include: 'scope'
+    
+    # Grouping strategy for cleaner PRs
+    groups:
+      # Group patch updates together
+      patch-updates:
+        patterns:
+          - '*'
+        update-types:
+          - 'patch'
+      
+      # Group minor updates for React/Next.js ecosystem
+      nextjs-minor:
+        patterns:
+          - 'next'
+          - 'react'
+          - 'react-dom'
+        update-types:
+          - 'minor'
+      
+      # Group Supabase dependencies
+      supabase:
+        patterns:
+          - '@supabase/*'
+          - 'supabase'
+        update-types:
+          - 'minor'
+          - 'patch'
+      
+      # Group testing dependencies
+      testing:
+        patterns:
+          - 'vitest'
+          - '@vitest/*'
+          - '@playwright/*'
+          - 'playwright'
+          - '@testing-library/*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      
+      # Group ESLint/Prettier tooling
+      linting:
+        patterns:
+          - 'eslint'
+          - 'eslint-*'
+          - 'prettier'
+          - '@typescript-eslint/*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      
+      # Group TanStack Query
+      tanstack:
+        patterns:
+          - '@tanstack/*'
+        update-types:
+          - 'minor'
+          - 'patch'
+    
+    # Labels for PRs
+    labels:
+      - 'dependencies'
+      - 'automated'
+    
+    # Ignore specific dependencies (if needed)
+    ignore:
+      # CRITICAL: Do NOT upgrade Tailwind CSS to v4 (breaks build)
+      - dependency-name: 'tailwindcss'
+        update-types:
+          - 'version-update:semver-major'
+      
+      # Do not auto-update Next.js major versions (requires migration)
+      - dependency-name: 'next'
+        update-types:
+          - 'version-update:semver-major'
+      
+      # Do not auto-update React major versions
+      - dependency-name: 'react'
+        update-types:
+          - 'version-update:semver-major'
+      - dependency-name: 'react-dom'
+        update-types:
+          - 'version-update:semver-major'
+    
+    # Reviewers (optional - configure in GitHub settings)
+    # reviewers:
+    #   - 'team-name'
+    # assignees:
+    #   - 'username'
+  
+  # =============================================================================
+  # GitHub Actions
+  # =============================================================================
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+      timezone: 'America/Asuncion'
+    
+    commit-message:
+      prefix: 'ci'
+      include: 'scope'
+    
+    labels:
+      - 'ci/cd'
+      - 'dependencies'
+      - 'automated'
+    
+    # Group all GitHub Actions updates
+    groups:
+      github-actions:
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+
+# =============================================================================
+# Dependabot Configuration Notes
+# =============================================================================
+#
+# 1. **Tailwind CSS v3 Only**
+#    - CRITICAL: Project uses Tailwind v3.4.19 - DO NOT upgrade to v4
+#    - v4 breaks the build due to JSON content scanning changes
+#    - Explicitly ignored in major version updates
+#
+# 2. **Major Framework Updates**
+#    - Next.js, React, Supabase major versions are blocked
+#    - These require manual migration and testing
+#    - Minor/patch updates are allowed and grouped
+#
+# 3. **Update Grouping Strategy**
+#    - Patch updates: All grouped together for easy approval
+#    - Minor updates: Grouped by ecosystem (Next.js, Supabase, testing, etc.)
+#    - Reduces PR noise and makes review easier
+#
+# 4. **Weekly Schedule**
+#    - Updates run every Monday at 9 AM (America/Asuncion time)
+#    - Gives team time to review and merge during work week
+#    - Open PR limit: 10 to avoid overwhelming the queue
+#
+# 5. **Security Updates**
+#    - Security patches are automatically created regardless of schedule
+#    - Always reviewed and merged promptly
+#    - Use GitHub Security Advisories for critical alerts
+#
+# 6. **Testing Requirements**
+#    - All dependency PRs must pass CI checks (lint, typecheck, build, test)
+#    - E2E tests must pass (critical path verification)
+#    - Manual testing recommended for major ecosystem updates
+#
+# 7. **Review Process**
+#    - Patch updates: Auto-merge if CI passes (consider enabling auto-merge)
+#    - Minor updates: Review changelog, test locally, then merge
+#    - Major updates: Full regression testing, migration planning
+#
+# 8. **Commit Message Format**
+#    - Production deps: `deps(scope): update package-name to version`
+#    - Dev deps: `deps(dev)(scope): update package-name to version`
+#    - CI/CD: `ci(scope): update action to version`
+#
+# =============================================================================

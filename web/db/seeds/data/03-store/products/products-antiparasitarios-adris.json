@@ -1,0 +1,546 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "terrapet-antiparasitarios",
+  "products": [
+    {
+      "sku": "DOMINAL-10ML",
+      "name": "Dominal 10ml",
+      "description": "Antiparasitario oral de amplio espectro para perros y gatos",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "10ml",
+          "base_price": 15000,
+          "cost_price": 9000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Praziquantel + Pirantel",
+        "form": "Suspensión oral"
+      }
+    },
+    {
+      "sku": "DOMINAL-100ML",
+      "name": "Dominal 100ml",
+      "description": "Antiparasitario oral de amplio espectro para perros y gatos - Presentación grande",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "100ml",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Praziquantel + Pirantel",
+        "form": "Suspensión oral"
+      }
+    },
+    {
+      "sku": "DOMINAL-50ML",
+      "name": "Dominal 50ml",
+      "description": "Antiparasitario oral de amplio espectro para perros y gatos",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "50ml",
+          "base_price": 55000,
+          "cost_price": 33000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Praziquantel + Pirantel",
+        "form": "Suspensión oral"
+      }
+    },
+    {
+      "sku": "DOMINAL-5ML",
+      "name": "Dominal 5ml",
+      "description": "Antiparasitario oral de amplio espectro para cachorros y gatitos",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "5ml",
+          "base_price": 10000,
+          "cost_price": 6000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Praziquantel + Pirantel",
+        "form": "Suspensión oral"
+      }
+    },
+    {
+      "sku": "DOMINAL-20ML",
+      "name": "Dominal 20ml",
+      "description": "Antiparasitario oral de amplio espectro para perros y gatos",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "20ml",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Praziquantel + Pirantel",
+        "form": "Suspensión oral"
+      }
+    },
+    {
+      "sku": "DOMINAL-30ML",
+      "name": "Dominal 30ml",
+      "description": "Antiparasitario oral de amplio espectro para perros y gatos",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "30ml",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Praziquantel + Pirantel",
+        "form": "Suspensión oral"
+      }
+    },
+    {
+      "sku": "AFOXOPET-2-4KG",
+      "name": "Afoxopet 2-4kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros pequeños",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 75000,
+          "cost_price": 45000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-small-dogs-2-35kg/image1xl.jpg",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-small-dogs-2-35kg/image1xl.jpg",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "2-4kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "AFOXOPET-4-10KG",
+      "name": "Afoxopet 4-10kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros medianos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/small-dogs-36-75kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/small-dogs-36-75kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "4-10kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "AFOXOPET-10-25KG",
+      "name": "Afoxopet 10-25kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros grandes",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "10-25kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "AFOXOPET-25-50KG",
+      "name": "Afoxopet 25-50kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros extra grandes",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 105000,
+          "cost_price": 63000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "25-50kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "FLURAPET-0-10KG",
+      "name": "Flurapet 0-10kg",
+      "description": "Antiparasitario masticable contra pulgas, garrapatas y parásitos internos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-small-dogs-2-35kg/image1xl.jpg",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-small-dogs-2-35kg/image1xl.jpg",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Fluralaner + Moxidectina",
+        "weight_range": "0-10kg",
+        "duration": "90 días"
+      }
+    },
+    {
+      "sku": "FLURAPET-10-20KG",
+      "name": "Flurapet 10-20kg",
+      "description": "Antiparasitario masticable contra pulgas, garrapatas y parásitos internos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 115000,
+          "cost_price": 69000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Fluralaner + Moxidectina",
+        "weight_range": "10-20kg",
+        "duration": "90 días"
+      }
+    },
+    {
+      "sku": "FLURAPET-20-40KG",
+      "name": "Flurapet 20-40kg",
+      "description": "Antiparasitario masticable contra pulgas, garrapatas y parásitos internos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Fluralaner + Moxidectina",
+        "weight_range": "20-40kg",
+        "duration": "90 días"
+      }
+    },
+    {
+      "sku": "FLURAPET-40-56KG",
+      "name": "Flurapet 40-56kg",
+      "description": "Antiparasitario masticable contra pulgas, garrapatas y parásitos internos para perros XL",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 155000,
+          "cost_price": 93000,
+          "sku_suffix": "-1"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-large-dogs-301-60kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-large-dogs-301-60kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Fluralaner + Moxidectina",
+        "weight_range": "40-56kg",
+        "duration": "90 días"
+      }
+    },
+    {
+      "sku": "IVERM-ANTEL-50ML",
+      "name": "Iverm-Antel 50ml",
+      "description": "Ivermectina inyectable para tratamiento de parásitos en perros y gatos",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "50ml",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Ivermectina 1%",
+        "form": "Inyectable"
+      }
+    },
+    {
+      "sku": "FIPROMET-PIP-DOG",
+      "name": "Fipromet Pipeta Perros",
+      "description": "Pipeta antiparasitaria externa con Fipronil para perros",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "1 pipeta",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+      "images": [
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Fipronil 10%",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "FIPROMET-PIP-CAT",
+      "name": "Fipromet Pipeta Gatos",
+      "description": "Pipeta antiparasitaria externa con Fipronil para gatos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "1 pipeta",
+          "base_price": 22000,
+          "cost_price": 13200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+      "images": [
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Fipronil 10%",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "FINTOX-TAB-10",
+      "name": "Fintox Tabletas x10",
+      "description": "Antiparasitario interno en tabletas para perros",
+      "category_slug": "FAR-ANT-INT",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "10 tabletas",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+      "images": [
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Fenbendazol",
+        "form": "Tabletas"
+      }
+    },
+    {
+      "sku": "SHOOTER-SPRAY-250ML",
+      "name": "Shooter Spray 250ml",
+      "description": "Spray antiparasitario externo de acción rápida contra pulgas y garrapatas",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "250ml",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+      "images": [
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros-1024x1024.jpg",
+        "https://naricitas.pet/wp-content/uploads/2024/12/naricitas-konig-dominal-max-pipeta-antipulgas-para-perros-5-10kg.jpg",
+        "https://koniglab.com/wp-content/uploads/2025/07/Dominal-Perros.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Fipronil",
+        "form": "Spray"
+      }
+    }
+  ]
+}

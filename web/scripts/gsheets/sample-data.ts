@@ -1,0 +1,3277 @@
+/**
+ * Google Sheets Sample Data
+ * Populates the spreadsheet with data from JSON seed files
+ */
+
+import { updateValues, batchUpdateValues } from './auth'
+import { SPREADSHEET_ID } from './config'
+import { loadCategories, loadBrands, loadSuppliers, loadProducts } from './json-data'
+
+/**
+ * Comprehensive guide content - Horizontal multi-column layout
+ */
+function getGuideContent(): string[][] {
+  return [
+    // ═══════════════════════════════════════════════════════════════════════════
+    // HEADER SECTION
+    // ═══════════════════════════════════════════════════════════════════════════
+    ['🏥 PLANTILLA DE INVENTARIO VETERINARIO', '', '', '', '', '', '', ''],
+    [
+      'Sistema Integral de Gestión de Inventario para Clínicas Veterinarias',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // Critical warning
+    [
+      '⚠️ IMPORTANTE: Antes de comenzar, ve a Archivo → Hacer una copia. Trabaja SOLO en tu copia personal. NO edites esta plantilla original.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SECTION 1: INTRODUCTION
+    // ═══════════════════════════════════════════════════════════════════════════
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['📋 1. ¿QUÉ ES ESTA PLANTILLA?', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+    [
+      'Esta plantilla te permite gestionar TODO el inventario de tu clínica veterinaria desde Google Sheets.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      'Los datos que ingreses aquí se sincronizan con tu sistema web, permitiéndote:',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+    [
+      '  ✅ Carga masiva de productos (importar cientos de productos de una vez)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '  ✅ Actualización de precios en lote (cambiar precios de múltiples productos)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['  ✅ Control de stock con trazabilidad por lotes y vencimientos', '', '', '', '', '', '', ''],
+    ['  ✅ Gestión de proveedores y marcas', '', '', '', '', '', '', ''],
+    ['  ✅ Reportes automáticos de inventario valorizado', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SECTION 2: GETTING STARTED
+    // ═══════════════════════════════════════════════════════════════════════════
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['🚀 2. CÓMO EMPEZAR (PASO A PASO)', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+    ['PASO 1️⃣  Hacer una copia personal', '', '', '', '', '', '', ''],
+    [
+      '           → Archivo → Hacer una copia → Guardar en tu Google Drive',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '           → Trabaja SIEMPRE en tu copia, nunca en la plantilla original',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+    ['PASO 2️⃣  Revisar la configuración', '', '', '', '', '', '', ''],
+    ['           → Ve a la hoja ⚙️ Configuración', '', '', '', '', '', '', ''],
+    [
+      '           → Verifica las ubicaciones de stock (Depósito, Exhibición, Farmacia, etc.)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['           → Ajusta los responsables autorizados', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['PASO 3️⃣  Explorar el catálogo existente', '', '', '', '', '', '', ''],
+    [
+      '           → 📂 Categorías: Revisa la estructura de categorías disponibles',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '           → 🏷️ Marcas: Más de 100 marcas veterinarias ya cargadas',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '           → 🆕 Productos: Catálogo con +2000 productos listos para usar',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+    ['PASO 4️⃣  Agregar TUS productos a "Mis Productos"', '', '', '', '', '', '', ''],
+    ['           → Ve a 📋 Mis Productos', '', '', '', '', '', '', ''],
+    [
+      '           → Selecciona productos del catálogo usando el dropdown en columna A',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['           → Define TU precio de venta (columna B)', '', '', '', '', '', '', ''],
+    ['           → Las demás columnas se llenan automáticamente', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['PASO 5️⃣  Registrar movimientos de stock', '', '', '', '', '', '', ''],
+    ['           → Ve a 📦 Movimientos Stock', '', '', '', '', '', '', ''],
+    ['           → Registra compras, ventas, ajustes, etc.', '', '', '', '', '', '', ''],
+    ['           → El stock se calcula automáticamente', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['PASO 6️⃣  Monitorear lotes y vencimientos', '', '', '', '', '', '', ''],
+    ['           → Ve a 📊 Control Lotes', '', '', '', '', '', '', ''],
+    ['           → Esta hoja se llena AUTOMÁTICAMENTE', '', '', '', '', '', '', ''],
+    ['           → Muestra alertas de productos por vencer', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SECTION 3: SHEET DESCRIPTIONS
+    // ═══════════════════════════════════════════════════════════════════════════
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['📑 3. DESCRIPCIÓN DETALLADA DE CADA HOJA', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.1 Categorías
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 📂 CATEGORÍAS - Estructura jerárquica de productos', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Organiza los productos en una estructura de árbol con hasta 3 niveles de profundidad.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ COLUMNAS:', '', '', '', '', '', '', ''],
+    [
+      '│   A. Código        → Identificador único de la categoría (ej: NUT-CAN-SEC)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   B. Código Padre  → Categoría padre (vacío si es nivel 1)', '', '', '', '', '', '', ''],
+    [
+      '│   C. Nivel         → 🔒 AUTOMÁTICO - Se calcula según jerarquía (1, 2 o 3)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   D. Nombre        → Nombre visible de la categoría', '', '', '', '', '', '', ''],
+    ['│   E. Descripción   → Explicación breve de qué incluye', '', '', '', '', '', '', ''],
+    ['│   F. Ejemplos      → Productos típicos de esta categoría', '', '', '', '', '', '', ''],
+    [
+      '│   G. Categoría #   → 🔒 AUTOMÁTICO - Productos directos en esta categoría',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│   H. Subcategoría #→ 🔒 AUTOMÁTICO - Productos en subcategorías',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│   I. # Total       → 🔒 AUTOMÁTICO - Total de productos (G + H)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   J. Activo        → Sí/No - Si la categoría está habilitada', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ EJEMPLO DE JERARQUÍA:', '', '', '', '', '', '', ''],
+    ['│   Nivel 1: NUTRICIÓN', '', '', '', '', '', '', ''],
+    ['│     └─ Nivel 2: Nutrición Canina', '', '', '', '', '', '', ''],
+    ['│          └─ Nivel 3: Alimento Seco Perros', '', '', '', '', '', '', ''],
+    ['│          └─ Nivel 3: Alimento Húmedo Perros', '', '', '', '', '', '', ''],
+    ['│          └─ Nivel 3: Dietas Prescriptivas Perros', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.2 Proveedores
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 🏭 PROVEEDORES - Directorio de proveedores', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Gestiona la información de contacto y condiciones comerciales de tus proveedores.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ COLUMNAS PRINCIPALES:', '', '', '', '', '', '', ''],
+    ['│   A. Código        → Identificador único (ej: PROV-001)', '', '', '', '', '', '', ''],
+    ['│   B. Nombre        → Nombre comercial del proveedor', '', '', '', '', '', '', ''],
+    ['│   C. Razón Social  → Nombre legal para facturación', '', '', '', '', '', '', ''],
+    ['│   D. RUC           → Número de identificación tributaria', '', '', '', '', '', '', ''],
+    ['│   E. Tipo          → Productos / Servicios / Ambos', '', '', '', '', '', '', ''],
+    [
+      '│   F. Calificación  → ⭐ a ⭐⭐⭐⭐⭐ (evaluación del proveedor)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   G-I. Contacto    → Teléfono, WhatsApp, Email', '', '', '', '', '', '', ''],
+    ['│   J-L. Ubicación   → Sitio web, Dirección, Ciudad', '', '', '', '', '', '', ''],
+    ['│   M-N. Persona     → Nombre y cargo del contacto principal', '', '', '', '', '', '', ''],
+    ['│   O. Pedido Mín.   → Monto mínimo de compra en Gs.', '', '', '', '', '', '', ''],
+    ['│   P. Condiciones   → Contado / Crédito 15/30/60 días', '', '', '', '', '', '', ''],
+    ['│   Q. Días Entrega  → Tiempo promedio de entrega', '', '', '', '', '', '', ''],
+    [
+      '│   R. Marcas        → Marcas que distribuye (separadas por coma)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   V. Verificado    → Si los datos fueron verificados', '', '', '', '', '', '', ''],
+    ['│   X. Activo        → Si el proveedor está activo', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.3 Marcas
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 🏷️ MARCAS - Catálogo de marcas comerciales', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Registro de todas las marcas que comercializas, con información útil para filtros y reportes.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ COLUMNAS:', '', '', '', '', '', '', ''],
+    ['│   A. Código           → Identificador único (ej: royal-canin)', '', '', '', '', '', '', ''],
+    ['│   B. Nombre           → Nombre de la marca', '', '', '', '', '', '', ''],
+    [
+      '│   C. Tipo             → Alimentación / Farmacéutico / Accesorios / Higiene',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│   D. Segmento         → Premium / Económico / Veterinario Exclusivo',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   E. País             → País de origen', '', '', '', '', '', '', ''],
+    ['│   F. Empresa Matriz   → Corporación propietaria', '', '', '', '', '', '', ''],
+    ['│   G. Fundación        → Año de fundación', '', '', '', '', '', '', ''],
+    ['│   H. Especialidades   → Líneas de productos principales', '', '', '', '', '', '', ''],
+    ['│   I. Solo Veterinaria → Si requiere venta en veterinarias', '', '', '', '', '', '', ''],
+    ['│   J. Distribuidor     → Distribuidor local en Paraguay', '', '', '', '', '', '', ''],
+    [
+      '│   M. # Productos      → 🔒 AUTOMÁTICO - Cantidad de productos de esta marca',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      "│ ✨ Ya incluye +100 marcas: Royal Canin, Pro Plan, Hill's, Bravecto, NexGard, Nobivac, etc.",
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.4 Productos (Catálogo Master)
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 🆕 PRODUCTOS - Catálogo Master (más de 2000 productos)', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Base de datos completa de productos disponibles. Selecciona de aquí para agregar a "Mis Productos".',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ COLUMNAS:', '', '', '', '', '', '', ''],
+    [
+      '│   A. SKU              → Código único del producto (ej: RC-DOG-MED-ADULT-15KG)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   B. Nombre           → Nombre completo con presentación', '', '', '', '', '', '', ''],
+    ['│   C. Categoría        → Categoría del producto (dropdown)', '', '', '', '', '', '', ''],
+    ['│   D. Marca            → Marca del producto (dropdown)', '', '', '', '', '', '', ''],
+    [
+      '│   E. Unid. Compra     → Cómo compras al proveedor (Bolsa, Caja, Blister)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   F. Cant. Contenida  → Cuántas unidades de venta contiene', '', '', '', '', '', '', ''],
+    [
+      '│   G. Unid. Venta      → Cómo vendes al cliente (Unidad, Kg, Dosis)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   H. Precio Compra    → Precio de compra por unidad de compra', '', '', '', '', '', '', ''],
+    [
+      '│   I. Costo Unitario   → 🔒 AUTOMÁTICO - Costo por unidad de venta (H ÷ F)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   J. Proveedor        → Proveedor principal (dropdown)', '', '', '', '', '', '', ''],
+    ['│   K. Especies         → Perro / Gato / Ambos / Otros', '', '', '', '', '', '', ''],
+    ['│   L. Receta           → Si requiere prescripción veterinaria', '', '', '', '', '', '', ''],
+    [
+      '│   M. En Stock         → 🔒 AUTOMÁTICO - Si lo tienes en "Mis Productos"',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   N. Descripción      → Descripción detallada del producto', '', '', '', '', '', '', ''],
+    ['│   O. Activo           → Si el producto está disponible', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ 💡 INCLUYE: Alimentos (Royal Canin, Pro Plan, Dog Chow), Antiparasitarios (Bravecto, NexGard),',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│    Vacunas (Nobivac), Medicamentos (Virbac), Accesorios (Kong, Ferplast), y mucho más.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.5 Mis Productos
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 📋 MIS PRODUCTOS - Tu inventario personalizado', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Los productos que TÚ comercializas en tu clínica. Define tus precios de venta y stock mínimo.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ ⭐ COLUMNAS QUE TÚ LLENAS (solo 4):', '', '', '', '', '', '', ''],
+    ['│   A. Producto       → 📝 Selecciona del catálogo (dropdown)', '', '', '', '', '', '', ''],
+    ['│   B. Precio Venta   → 📝 Tu precio de venta en Gs.', '', '', '', '', '', '', ''],
+    ['│   C. Stock Mínimo   → 📝 Cantidad mínima antes de alertar', '', '', '', '', '', '', ''],
+    ['│   D. Ubicación      → 📝 Dónde guardas este producto', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ 🔒 COLUMNAS AUTOMÁTICAS (se llenan solas):', '', '', '', '', '', '', ''],
+    ['│   E. Código         → SKU del producto', '', '', '', '', '', '', ''],
+    ['│   F. Descripción    → Descripción del catálogo', '', '', '', '', '', '', ''],
+    ['│   G. Categoría      → Categoría asignada', '', '', '', '', '', '', ''],
+    ['│   H. Marca          → Marca del producto', '', '', '', '', '', '', ''],
+    ['│   I. Proveedor      → Proveedor principal', '', '', '', '', '', '', ''],
+    ['│   J. Código Barras  → Si está disponible', '', '', '', '', '', '', ''],
+    ['│   K. Receta         → Si requiere prescripción', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ 📊 COLUMNAS CALCULADAS (de movimientos):', '', '', '', '', '', '', ''],
+    ['│   L. Últ. Costo     → Último costo de compra registrado', '', '', '', '', '', '', ''],
+    ['│   M. Margen %       → (Precio Venta - Costo) ÷ Costo × 100', '', '', '', '', '', '', ''],
+    ['│   N. Stock          → Cantidad actual (suma de movimientos)', '', '', '', '', '', '', ''],
+    ['│   O. Valor          → Stock × Último Costo', '', '', '', '', '', '', ''],
+    ['│   P. Estado         → 🟢 OK / 🟡 Stock bajo / 🔴 Sin stock', '', '', '', '', '', '', ''],
+    ['│   Q. Próx. Vence    → Fecha del lote más próximo a vencer', '', '', '', '', '', '', ''],
+    ['│   R. Alertas        → Indicadores visuales de problemas', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.6 Movimientos Stock
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 📦 MOVIMIENTOS STOCK - Registro de entradas y salidas', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Registra TODAS las operaciones que afectan el stock. Es el "libro de movimientos" de tu inventario.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ ⭐ COLUMNAS QUE TÚ LLENAS:', '', '', '', '', '', '', ''],
+    ['│   A. Fecha          → 📝 Fecha del movimiento (dd/mm/yyyy)', '', '', '', '', '', '', ''],
+    [
+      '│   B. Producto       → 📝 Selecciona de Mis Productos (dropdown)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   C. Operación      → 📝 Tipo de movimiento (dropdown):', '', '', '', '', '', '', ''],
+    [
+      '│                         • Compra         → Entrada de mercadería (+)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Venta          → Salida por venta (-)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Ajuste +       → Corrección positiva (+)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Ajuste -       → Corrección negativa (-)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Devolución Prov→ Devuelto al proveedor (-)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Devolución Cli → Cliente devolvió (+)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Vencido        → Producto vencido (-)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Daño           → Producto dañado (-)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Uso Interno    → Usado en clínica (-)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│                         • Transferencia  → Movido entre ubicaciones (±)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│   D. Cantidad       → 📝 Cantidad del movimiento (siempre positivo)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│   E. Lote           → 📝 Número de lote (OBLIGATORIO para Compra)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   F. Responsable    → 📝 Quién realizó el movimiento', '', '', '', '', '', '', ''],
+    ['│   G. Costo Unit.    → 📝 Costo por unidad (solo en Compra)', '', '', '', '', '', '', ''],
+    [
+      '│   H. Vencimiento    → 📝 Fecha de vencimiento (solo en Compra)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ 🔒 COLUMNAS AUTOMÁTICAS:', '', '', '', '', '', '', ''],
+    ['│   I. #              → Número correlativo del movimiento', '', '', '', '', '', '', ''],
+    ['│   J. Código         → SKU del producto', '', '', '', '', '', '', ''],
+    ['│   K. Costo Usado    → Costo aplicado (para valorización)', '', '', '', '', '', '', ''],
+    ['│   L. +/-            → Signo del movimiento (+1 o -1)', '', '', '', '', '', '', ''],
+    ['│   M. Total          → Cantidad × Signo (para sumas)', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ ⚠️ IMPORTANTE: NUNCA borres movimientos. Si te equivocaste, crea un movimiento de Ajuste para corregir.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.7 Control Lotes
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '│ 📊 CONTROL LOTES - Seguimiento de lotes y vencimientos (100% AUTOMÁTICO)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Monitorea el estado de cada lote de productos. Alerta sobre vencimientos próximos.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ ⚠️ NO EDITES ESTA HOJA - Se genera automáticamente desde los movimientos de compra.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ 🔒 TODAS LAS COLUMNAS SON AUTOMÁTICAS:', '', '', '', '', '', '', ''],
+    ['│   A. Producto       → Nombre del producto', '', '', '', '', '', '', ''],
+    ['│   B. Lote           → Número de lote', '', '', '', '', '', '', ''],
+    ['│   C. Código         → SKU del producto', '', '', '', '', '', '', ''],
+    ['│   D. F. Ingreso     → Fecha de la primera compra del lote', '', '', '', '', '', '', ''],
+    ['│   E. Vencimiento    → Fecha de vencimiento del lote', '', '', '', '', '', '', ''],
+    [
+      '│   F. Cantidad       → Stock actual del lote (entradas - salidas)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   G. Costo Unit.    → Costo de compra del lote', '', '', '', '', '', '', ''],
+    ['│   H. Valor          → Cantidad × Costo', '', '', '', '', '', '', ''],
+    [
+      '│   I. Días Vence     → Días hasta vencimiento (negativo = vencido)',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   J. Estado         → Indicador visual:', '', '', '', '', '', '', ''],
+    ['│                         🟢 OK         → Más de 90 días', '', '', '', '', '', '', ''],
+    ['│                         🟠 Revisar    → Entre 30-90 días', '', '', '', '', '', '', ''],
+    ['│                         🟡 Por vencer → Menos de 30 días', '', '', '', '', '', '', ''],
+    ['│                         ⚫ Vencido    → Ya pasó la fecha', '', '', '', '', '', '', ''],
+    ['│                         🔴 Agotado    → Sin stock', '', '', '', '', '', '', ''],
+    [
+      '│                         🟢 Sin venc.  → No tiene fecha de vencimiento',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.8 Configuración
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ ⚙️ CONFIGURACIÓN - Parámetros del sistema', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Define valores que se usan en dropdowns y cálculos.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ COLUMNAS:', '', '', '', '', '', '', ''],
+    ['│   A. Parámetro      → Nombre del parámetro', '', '', '', '', '', '', ''],
+    ['│   B. Valor          → Valor configurado', '', '', '', '', '', '', ''],
+    ['│   C. Descripción    → Explicación del parámetro', '', '', '', '', '', '', ''],
+    ['│   D. Activo         → Si está habilitado', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ PARÁMETROS INCLUIDOS:', '', '', '', '', '', '', ''],
+    [
+      '│   • Ubicaciones     → Depósito Principal, Exhibición, Farmacia, Refrigerador',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│   • Responsables    → Personal autorizado para movimientos', '', '', '', '', '', '', ''],
+    ['│   • IVA             → Tasa de impuesto (10%)', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // 3.9 Datos (Auxiliar)
+    [
+      '┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│ 🔧 DATOS - Hoja auxiliar para dropdowns (NO EDITAR)', '', '', '', '', '', '', ''],
+    [
+      '├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ PROPÓSITO: Contiene listas que alimentan los menús desplegables de otras hojas.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '│ ⚠️ NO EDITES ESTA HOJA - Los cambios pueden romper los dropdowns.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['│', '', '', '', '', '', '', ''],
+    ['│ CONTIENE:', '', '', '', '', '', '', ''],
+    ['│   • Lista de categorías activas', '', '', '', '', '', '', ''],
+    ['│   • Lista de marcas activas', '', '', '', '', '', '', ''],
+    ['│   • Lista de proveedores activos', '', '', '', '', '', '', ''],
+    ['│   • Lista de productos del catálogo', '', '', '', '', '', '', ''],
+    ['│   • Lista de "Mis Productos" activos', '', '', '', '', '', '', ''],
+    ['│   • Lista de ubicaciones', '', '', '', '', '', '', ''],
+    ['│   • Lista de responsables', '', '', '', '', '', '', ''],
+    ['│', '', '', '', '', '', '', ''],
+    [
+      '└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SECTION 4: COMMON WORKFLOWS
+    // ═══════════════════════════════════════════════════════════════════════════
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['🔄 4. FLUJOS DE TRABAJO COMUNES', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['📥 REGISTRAR UNA COMPRA:', '', '', '', '', '', '', ''],
+    ['   1. Ve a 📦 Movimientos Stock', '', '', '', '', '', '', ''],
+    ['   2. En una fila nueva, ingresa:', '', '', '', '', '', '', ''],
+    ['      • Fecha: La fecha de la factura', '', '', '', '', '', '', ''],
+    ['      • Producto: Selecciona del dropdown', '', '', '', '', '', '', ''],
+    ['      • Operación: "Compra"', '', '', '', '', '', '', ''],
+    ['      • Cantidad: Unidades compradas', '', '', '', '', '', '', ''],
+    ['      • Lote: Número del lote (de la etiqueta del producto)', '', '', '', '', '', '', ''],
+    ['      • Responsable: Quién recibió la mercadería', '', '', '', '', '', '', ''],
+    ['      • Costo Unit.: Precio unitario de compra', '', '', '', '', '', '', ''],
+    ['      • Vencimiento: Fecha de vencimiento del lote', '', '', '', '', '', '', ''],
+    ['   3. El stock se actualiza automáticamente en 📋 Mis Productos', '', '', '', '', '', '', ''],
+    ['   4. El lote aparece en 📊 Control Lotes', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+
+    ['🛒 REGISTRAR UNA VENTA:', '', '', '', '', '', '', ''],
+    ['   1. Ve a 📦 Movimientos Stock', '', '', '', '', '', '', ''],
+    ['   2. En una fila nueva, ingresa:', '', '', '', '', '', '', ''],
+    ['      • Fecha: La fecha de la venta', '', '', '', '', '', '', ''],
+    ['      • Producto: Selecciona del dropdown', '', '', '', '', '', '', ''],
+    ['      • Operación: "Venta"', '', '', '', '', '', '', ''],
+    ['      • Cantidad: Unidades vendidas', '', '', '', '', '', '', ''],
+    ['      • Lote: (opcional) Si sabes qué lote salió', '', '', '', '', '', '', ''],
+    ['      • Responsable: Quién realizó la venta', '', '', '', '', '', '', ''],
+    ['   3. El stock se descuenta automáticamente', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+
+    ['➕ AGREGAR UN PRODUCTO NUEVO:', '', '', '', '', '', '', ''],
+    ['   Opción A - Si existe en el catálogo:', '', '', '', '', '', '', ''],
+    ['      1. Ve a 📋 Mis Productos', '', '', '', '', '', '', ''],
+    ['      2. En columna A, selecciona el producto del dropdown', '', '', '', '', '', '', ''],
+    ['      3. Define tu precio de venta en columna B', '', '', '', '', '', '', ''],
+    ['      4. Define stock mínimo y ubicación', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['   Opción B - Si NO existe en el catálogo:', '', '', '', '', '', '', ''],
+    ['      1. Ve a 🆕 Productos (Catálogo Master)', '', '', '', '', '', '', ''],
+    ['      2. Agrega el producto con todos sus datos', '', '', '', '', '', '', ''],
+    ['      3. Luego agrégalo a 📋 Mis Productos', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+
+    ['📊 REVISAR PRODUCTOS POR VENCER:', '', '', '', '', '', '', ''],
+    ['   1. Ve a 📊 Control Lotes', '', '', '', '', '', '', ''],
+    ['   2. Filtra por columna J (Estado):', '', '', '', '', '', '', ''],
+    ['      • 🟡 Por vencer → Vence en menos de 30 días', '', '', '', '', '', '', ''],
+    ['      • 🟠 Revisar → Vence entre 30-90 días', '', '', '', '', '', '', ''],
+    ['      • ⚫ Vencido → Ya pasó la fecha', '', '', '', '', '', '', ''],
+    [
+      '   3. Toma acciones: promocionar, devolver al proveedor, o dar de baja',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SECTION 5: TIPS AND WARNINGS
+    // ═══════════════════════════════════════════════════════════════════════════
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['💡 5. CONSEJOS Y ADVERTENCIAS', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['✅ SÍ PUEDES:', '', '⚠️ NO HAGAS:', '', '💡 CONSEJOS:', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    [
+      '• Agregar más filas de datos',
+      '',
+      '• Eliminar filas de encabezado (fila 1)',
+      '',
+      '• Usa los menús desplegables (▼)',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Modificar datos de ejemplo',
+      '',
+      '• Cambiar nombres de las hojas',
+      '',
+      '• Precios siempre en Guaraníes',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Borrar datos de ejemplo',
+      '',
+      '• Renombrar columnas',
+      '',
+      '• Fechas en formato dd/mm/yyyy',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Usar tus propios códigos',
+      '',
+      '• Editar la plantilla original',
+      '',
+      '• Usa filtros para buscar',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Dejar campos opcionales vacíos',
+      '',
+      '• Borrar movimientos de stock',
+      '',
+      '• Códigos únicos sin espacios',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Agregar nuevas categorías',
+      '',
+      '• Editar la hoja 🔧 Datos',
+      '',
+      '• Revisa 📊 Control Lotes semanalmente',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Agregar nuevos proveedores',
+      '',
+      '• Dejar SKU o Nombre vacíos',
+      '',
+      '• Haz backup periódicamente',
+      '',
+      '',
+      '',
+    ],
+    [
+      '• Agregar nuevas marcas',
+      '',
+      '• Usar códigos duplicados',
+      '',
+      '• Comparte con permisos de "Editor"',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SECTION 6: FAQ
+    // ═══════════════════════════════════════════════════════════════════════════
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['❓ 6. PREGUNTAS FRECUENTES', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Cómo corrijo un error en el stock?', '', '', '', '', '', '', ''],
+    [
+      'R: Crea un movimiento de "Ajuste +" o "Ajuste -" con la diferencia. NUNCA borres movimientos existentes.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Qué pasa si un producto no aparece en el dropdown?', '', '', '', '', '', '', ''],
+    [
+      'R: Primero verifica que esté en 🆕 Productos con "Activo = Sí". Si no existe, agrégalo ahí primero.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Cómo agrego un nuevo proveedor?', '', '', '', '', '', '', ''],
+    [
+      'R: Ve a 🏭 Proveedores, agrega una nueva fila con toda la información. El código debe ser único.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Por qué no se calcula el stock automáticamente?', '', '', '', '', '', '', ''],
+    [
+      'R: Verifica que el nombre del producto en 📦 Movimientos coincida EXACTAMENTE con el de 📋 Mis Productos.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Cómo registro un producto vencido o dañado?', '', '', '', '', '', '', ''],
+    [
+      'R: Crea un movimiento con operación "Vencido" o "Daño". Esto descuenta el stock sin afectar las ventas.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Puedo tener el mismo producto en varias ubicaciones?', '', '', '', '', '', '', ''],
+    [
+      'R: No directamente. Para esto, registra la ubicación al momento de la compra y usa filtros para ver por ubicación.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    ['P: ¿Cómo sincronizo con el sistema web?', '', '', '', '', '', '', ''],
+    [
+      'R: En tu panel web, ve a Configuración → Importar desde Sheets. Pega el enlace de TU COPIA y sigue las instrucciones.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    ['', '', '', '', '', '', '', ''],
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // FOOTER
+    // ═══════════════════════════════════════════════════════════════════════════
+    ['', '', '', '', '', '', '', ''],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '📋 Versión 3.0 | Vete - Sistema Veterinario | ¿Dudas? Contacta soporte técnico: soporte@vete.com.py',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+    [
+      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ],
+  ]
+}
+
+/**
+ * Add all sample data to the spreadsheet
+ */
+export async function addSampleData(spreadsheetId: string = SPREADSHEET_ID): Promise<void> {
+  console.log('\n📝 Adding sample data from JSON files...\n')
+
+  // 📖 Guía Rápida - Horizontal layout
+  console.log('  📖 Guía Rápida...')
+  const guideContent = getGuideContent()
+  await updateValues(spreadsheetId, `'📖 Guía Rápida'!A1:H${guideContent.length}`, guideContent)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📂 Categorías - Load from JSON (10 columns)
+  // A-Código, B-Código Padre, C-Nivel(formula), D-Nombre, E-Descripción, F-Ejemplos,
+  // G-Categoría#(formula), H-Subcategoría#(formula), I-#ProductosTotal(formula), J-Activo
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  📂 Categorías...')
+
+  const categories = loadCategories()
+  console.log(`    → Loaded ${categories.length} categories from JSON`)
+
+  const maxCatRows = Math.max(100, categories.length + 10)
+
+  // Fórmulas para Nivel (C) - calculates hierarchy depth
+  const levelFormulas: string[][] = []
+  for (let i = 2; i <= maxCatRows; i++) {
+    levelFormulas.push([
+      `=IF(A${i}<>"",IF(B${i}="",1,IF(COUNTIF($B$2:$B$${maxCatRows},B${i})>0,VLOOKUP(B${i},$A$2:$C$${maxCatRows},3,FALSE)+1,2)),"")`,
+    ])
+  }
+
+  // Fórmulas para Categoría # (G) - direct count from products sheet
+  // Always counts products that have this exact category name
+  // Uses explicit range to avoid full column reference (performance)
+  const catCategoryCountFormulas: string[][] = []
+  for (let i = 2; i <= maxCatRows; i++) {
+    catCategoryCountFormulas.push([`=IF(D${i}<>"",COUNTIF('🆕 Productos'!$C$2:$C$2100,D${i}),"")`])
+  }
+
+  // Fórmulas para Subcategoría # (H) - sum of children's totals
+  // - If category has children: SUM of children's (Category # + Subcategory #) = SUM of children's I column
+  // - If leaf (no children): 0
+  const catSubcategoryCountFormulas: string[][] = []
+  for (let i = 2; i <= maxCatRows; i++) {
+    catSubcategoryCountFormulas.push([
+      `=IF(D${i}<>"",IF(COUNTIF($B$2:$B$${maxCatRows},A${i})>0,SUMIF($B$2:$B$${maxCatRows},A${i},$I$2:$I$${maxCatRows}),0),"")`,
+    ])
+  }
+
+  // Fórmulas para # Productos Total (I) - sum of Category # + Subcategory #
+  const catTotalCountFormulas: string[][] = []
+  for (let i = 2; i <= maxCatRows; i++) {
+    catTotalCountFormulas.push([`=IF(D${i}<>"",G${i}+H${i},"")`])
+  }
+
+  // Map categories to spreadsheet format (columns A, B, D, E, F, J - skip C, G, H, I which are formulas)
+  const categoryRows = categories.map((c) => [
+    c.slug, // A: Código
+    c.parent_slug || '', // B: Código Padre
+    c.name, // D: Nombre (will write to D separately)
+    c.description || '', // E: Descripción
+    c.examples || '-', // F: Ejemplos
+    'Sí', // J: Activo (moved from H)
+  ])
+
+  // Batch write all category data in a single API call
+  const categoryBatchData: Array<{ range: string; values: any[][] }> = [
+    { range: `'📂 Categorías'!C2:C${maxCatRows}`, values: levelFormulas },
+    { range: `'📂 Categorías'!G2:G${maxCatRows}`, values: catCategoryCountFormulas },
+    { range: `'📂 Categorías'!H2:H${maxCatRows}`, values: catSubcategoryCountFormulas },
+    { range: `'📂 Categorías'!I2:I${maxCatRows}`, values: catTotalCountFormulas },
+  ]
+  if (categoryRows.length > 0) {
+    categoryBatchData.push(
+      {
+        range: `'📂 Categorías'!A2:B${categoryRows.length + 1}`,
+        values: categoryRows.map((r) => [r[0], r[1]]),
+      },
+      {
+        range: `'📂 Categorías'!D2:F${categoryRows.length + 1}`,
+        values: categoryRows.map((r) => [r[2], r[3], r[4]]),
+      },
+      {
+        range: `'📂 Categorías'!J2:J${categoryRows.length + 1}`,
+        values: categoryRows.map((r) => [r[5]]),
+      }
+    )
+  }
+  await batchUpdateValues(spreadsheetId, categoryBatchData)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🏷️ Marcas - Load from JSON (15 columns)
+  // A-Código, B-Nombre, C-Tipo, D-Segmento, E-País, F-Empresa Matriz, G-Fundación,
+  // H-Especialidades, I-Solo Veterinaria, J-Distribuidor, K-Sitio Web, L-Productos Clave,
+  // M-#Productos(formula), N-Descripción, O-Activo
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  🏷️ Marcas...')
+
+  const brands = loadBrands()
+  console.log(`    → Loaded ${brands.length} brands from JSON`)
+
+  // Max rows for formulas
+  const maxBrandRows = Math.max(150, brands.length + 10)
+
+  // Fórmulas for auto-generated codes (A)
+  const brandFormulas: string[][] = []
+  for (let i = 2; i <= maxBrandRows; i++) {
+    brandFormulas.push([
+      `=IF(B${i}<>"",UPPER(LEFT(SUBSTITUTE(B${i}," ",""),2))&"-"&TEXT(SUMPRODUCT((UPPER(LEFT(SUBSTITUTE($B$2:B${i}," ",""),2))=UPPER(LEFT(SUBSTITUTE(B${i}," ",""),2)))*1),"000"),"")`,
+    ])
+  }
+
+  // Fórmulas for #Productos (M) - counts products with this brand
+  // Uses explicit range to avoid full column reference
+  const brandProductCountFormulas: string[][] = []
+  for (let i = 2; i <= maxBrandRows; i++) {
+    brandProductCountFormulas.push([`=IF(B${i}<>"",COUNTIF('🆕 Productos'!$D$2:$D$2100,B${i}),"")`])
+  }
+
+  // Segment translation map (English to Spanish)
+  const segmentMap: Record<string, string> = {
+    economy: 'Económico',
+    standard: 'Estándar',
+    premium: 'Premium',
+    'super-premium': 'Super Premium',
+    veterinary: 'Veterinario',
+    professional: 'Profesional',
+  }
+
+  // Brand type translation map
+  const brandTypeMap: Record<string, string> = {
+    alimentos: 'Alimentos',
+    farmacia: 'Farmacia',
+    accesorios: 'Accesorios',
+    higiene: 'Higiene',
+    equipos: 'Equipos',
+    consumibles: 'Consumibles',
+    suplementos: 'Suplementos',
+  }
+
+  // Map brands to spreadsheet format (columns B-L, N-O - skip A and M which are formulas)
+  const brandRowsBL = brands.map((b) => [
+    b.name, // B: Nombre
+    brandTypeMap[b.brand_type] || b.brand_type || '', // C: Tipo
+    segmentMap[b.market_segment] || b.market_segment || '', // D: Segmento
+    b.country_origin || '', // E: País
+    b.parent_company || '', // F: Empresa Matriz
+    b.founded_year || '', // G: Fundación
+    b.specialties || '', // H: Especialidades
+    b.is_veterinary_exclusive ? 'Sí' : 'No', // I: Solo Veterinaria
+    b.local_distributor || '', // J: Distribuidor
+    b.website || '', // K: Sitio Web
+    b.key_products || '', // L: Productos Clave
+  ])
+
+  const brandRowsNO = brands.map((b) => [
+    b.description || '', // N: Descripción
+    'Sí', // O: Activo
+  ])
+
+  // Batch write all brand data in a single API call
+  const brandBatchData: Array<{ range: string; values: any[][] }> = [
+    { range: `'🏷️ Marcas'!A2:A${maxBrandRows}`, values: brandFormulas },
+    { range: `'🏷️ Marcas'!M2:M${maxBrandRows}`, values: brandProductCountFormulas },
+  ]
+  if (brandRowsBL.length > 0) {
+    brandBatchData.push(
+      { range: `'🏷️ Marcas'!B2:L${brandRowsBL.length + 1}`, values: brandRowsBL },
+      { range: `'🏷️ Marcas'!N2:O${brandRowsNO.length + 1}`, values: brandRowsNO }
+    )
+  }
+  await batchUpdateValues(spreadsheetId, brandBatchData)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🏭 Proveedores - Load from JSON (24 columns)
+  // A-Código(formula), B-Nombre, C-Razón Social, D-RUC, E-Tipo, F-Calificación, G-Teléfono, H-WhatsApp,
+  // I-Email, J-Sitio Web, K-Dirección, L-Ciudad, M-Persona Contacto, N-Cargo,
+  // O-Pedido Mín., P-Condiciones Pago, Q-Días Entrega, R-Marcas,
+  // S-#Productos(formula), T-Total Compras(formula), U-Última Compra(formula), V-Verificado, W-Notas, X-Activo
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  🏭 Proveedores...')
+
+  const suppliers = loadSuppliers()
+  console.log(`    → Loaded ${suppliers.length} suppliers from JSON`)
+
+  const maxSupplierRows = Math.max(100, suppliers.length + 10)
+
+  // Fórmulas for auto-generated codes (A)
+  const providerFormulas: string[][] = []
+  for (let i = 2; i <= maxSupplierRows; i++) {
+    providerFormulas.push([
+      `=IF(B${i}<>"",UPPER(LEFT(SUBSTITUTE(B${i}," ",""),3))&"-"&TEXT(SUMPRODUCT((UPPER(LEFT(SUBSTITUTE($B$2:B${i}," ",""),3))=UPPER(LEFT(SUBSTITUTE(B${i}," ",""),3)))*1),"000"),"")`,
+    ])
+  }
+
+  // Fórmulas for #Productos (S) - counts products from this supplier
+  // Uses explicit range to avoid full column reference
+  const provProductCountFormulas: string[][] = []
+  for (let i = 2; i <= maxSupplierRows; i++) {
+    provProductCountFormulas.push([`=IF(B${i}<>"",COUNTIF('🆕 Productos'!$J$2:$J$2100,B${i}),"")`])
+  }
+
+  // Fórmulas for Total Compras (T) - sum of purchases from this supplier
+  // Joins through Mis Productos to find products from this supplier, then sums from Movimientos
+  // Uses SUMPRODUCT to match: Product in Mov → Proveedor in MisProd → matches Supplier name
+  const provTotalPurchasesFormulas: string[][] = []
+  for (let i = 2; i <= maxSupplierRows; i++) {
+    // Sum Total (O) from Movimientos where product's supplier (via Mis Productos J) = this supplier
+    provTotalPurchasesFormulas.push([
+      `=IF(B${i}<>"",IFERROR(SUMPRODUCT(('📦 Movimientos Stock'!$C$2:$C$1001="Compra")*(IFERROR(VLOOKUP('📦 Movimientos Stock'!$B$2:$B$1001,'📋 Mis Productos'!$A$2:$J$501,10,FALSE),"")=B${i})*('📦 Movimientos Stock'!$O$2:$O$1001)),""),"")`,
+    ])
+  }
+
+  // Fórmulas for Última Compra (U) - last purchase date from this supplier
+  // Uses array formula to find max date where product's supplier matches
+  const provLastPurchaseFormulas: string[][] = []
+  for (let i = 2; i <= maxSupplierRows; i++) {
+    provLastPurchaseFormulas.push([
+      `=IF(B${i}<>"",IFERROR(MAX(IF(('📦 Movimientos Stock'!$C$2:$C$1001="Compra")*(IFERROR(VLOOKUP('📦 Movimientos Stock'!$B$2:$B$1001,'📋 Mis Productos'!$A$2:$J$501,10,FALSE),"")=B${i}),'📦 Movimientos Stock'!$A$2:$A$1001)),""),"")`,
+    ])
+  }
+
+  // Map suppliers to spreadsheet format (columns B-R, skip S-U formulas, then V-X)
+  // Phone/WhatsApp values start with '+' which Sheets interprets as formula
+  // Prefix with ' (apostrophe) to force text interpretation
+  const formatPhone = (val: string | undefined): string => {
+    if (!val) return ''
+    // Prefix with ' if starts with + or number to force text
+    return val.startsWith('+') || /^\d/.test(val) ? `'${val}` : val
+  }
+
+  const supplierRowsBR = suppliers.map((s) => [
+    s.name, // B: Nombre
+    s.legal_name || '', // C: Razón Social
+    s.ruc || '', // D: RUC
+    s.type, // E: Tipo
+    '⭐⭐⭐', // F: Calificación (default 3 stars)
+    formatPhone(s.phone), // G: Teléfono (prefix ' for + numbers)
+    formatPhone(s.whatsapp), // H: WhatsApp (prefix ' for + numbers)
+    s.email || '', // I: Email
+    s.website || '', // J: Sitio Web
+    s.address || '', // K: Dirección
+    s.city, // L: Ciudad
+    s.contact_name || '', // M: Persona Contacto
+    s.contact_position || '', // N: Cargo
+    s.min_order_gs || '', // O: Pedido Mín.(Gs)
+    s.payment_terms || '', // P: Condiciones Pago
+    s.delivery_days || '', // Q: Días Entrega
+    s.brands || '', // R: Marcas
+  ])
+
+  const supplierRowsVX = suppliers.map((s) => [
+    s.verified ? 'Verificado' : 'Pendiente', // V: Verificado
+    s.notes || '', // W: Notas
+    s.active ? 'Sí' : 'No', // X: Activo
+  ])
+
+  // Batch write all supplier data in a single API call
+  const supplierBatchData: Array<{ range: string; values: any[][] }> = [
+    { range: `'🏭 Proveedores'!A2:A${maxSupplierRows}`, values: providerFormulas },
+    { range: `'🏭 Proveedores'!S2:S${maxSupplierRows}`, values: provProductCountFormulas },
+    { range: `'🏭 Proveedores'!T2:T${maxSupplierRows}`, values: provTotalPurchasesFormulas },
+    { range: `'🏭 Proveedores'!U2:U${maxSupplierRows}`, values: provLastPurchaseFormulas },
+  ]
+  if (supplierRowsBR.length > 0) {
+    supplierBatchData.push(
+      { range: `'🏭 Proveedores'!B2:R${supplierRowsBR.length + 1}`, values: supplierRowsBR },
+      { range: `'🏭 Proveedores'!V2:X${supplierRowsVX.length + 1}`, values: supplierRowsVX }
+    )
+  }
+  await batchUpdateValues(spreadsheetId, supplierBatchData)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🆕 Productos - Load from JSON (15 columns)
+  // A-SKU, B-Nombre, C-Categoría, D-Marca, E-Unid.Compra, F-Cant.Contenida, G-Unid.Venta,
+  // H-PrecioCompra, I-CostoUnit(formula), J-Proveedor, K-Especies, L-Receta, M-EnStock(formula), N-Descripción, O-Activo
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  🆕 Productos (Catálogo Master)...')
+
+  const products = loadProducts()
+  console.log(`    → Loaded ${products.length} products (with variants) from JSON`)
+
+  // Build brand slug to name map
+  const brandMap = new Map<string, string>()
+  brands.forEach((b) => brandMap.set(b.slug, b.name))
+
+  // Build category slug to name map (for reference)
+  const categoryMap = new Map<string, string>()
+  categories.forEach((c) => categoryMap.set(c.slug, c.name))
+
+  // Build brand name → supplier name mapping (reverse lookup from suppliers.brands)
+  const brandToSupplier = new Map<string, string>()
+  suppliers.forEach((s) => {
+    // s.brands is a comma-separated string like "Royal Canin, Pro Plan, Hill's"
+    const brandList = s.brands.split(',').map((b) => b.trim().toLowerCase())
+    brandList.forEach((brandName) => {
+      if (!brandToSupplier.has(brandName)) {
+        brandToSupplier.set(brandName, s.name)
+      }
+    })
+  })
+
+  // Species translation map
+  const speciesMap: Record<string, string> = {
+    dog: 'Perro',
+    cat: 'Gato',
+    bird: 'Ave',
+    fish: 'Pez',
+    rabbit: 'Conejo',
+    hamster: 'Hámster',
+    other: 'Otro',
+  }
+
+  // Max rows for formulas
+  const maxProductRows = Math.max(1200, products.length + 10)
+
+  // Fórmulas para Costo Unitario (columna I) = Precio Compra / Cant. Contenida
+  const costFormulas: string[][] = []
+  for (let i = 2; i <= maxProductRows; i++) {
+    costFormulas.push([`=IF(AND(H${i}<>"",F${i}<>"",F${i}>0),ROUND(H${i}/F${i},0),"")`])
+  }
+
+  // Fórmulas para En Stock (columna M) = checks if product exists in Mis Productos
+  const enStockFormulas: string[][] = []
+  for (let i = 2; i <= maxProductRows; i++) {
+    enStockFormulas.push([`=IF(B${i}<>"",IF(COUNTIF('📋 Mis Productos'!$A:$A,B${i})>0,"✓",""),"")`])
+  }
+
+  // Map products to spreadsheet format (15 columns: A-L, skip M, then N-O)
+  // A-SKU, B-Nombre, C-Categoría, D-Marca, E-Unid.Compra, F-Cant.Contenida, G-Unid.Venta,
+  // H-PrecioCompra, I-(formula), J-Proveedor, K-Especies, L-Receta, M-(formula), N-Descripción, O-Activo
+  const productRowsAL = products.map((p) => {
+    // Get brand name and look up supplier
+    const brandName = brandMap.get(p.brand_slug) || p.brand_slug
+    const supplierName = brandToSupplier.get(brandName.toLowerCase()) || ''
+
+    // Translate species from "cat, dog" to "Gato, Perro"
+    const translatedSpecies = p.target_species
+      .split(',')
+      .map((s) => s.trim())
+      .map((s) => speciesMap[s.toLowerCase()] || s)
+      .join(', ')
+
+    return [
+      p.sku, // A: SKU
+      p.name, // B: Nombre
+      categoryMap.get(p.category_slug) || p.category_slug, // C: Categoría (name for user friendliness)
+      brandName, // D: Marca (name)
+      'Unidad', // E: Unid. Compra
+      1, // F: Cant. Contenida
+      'Unidad', // G: Unid. Venta
+      p.cost_price || 0, // H: Precio Compra (cost)
+      '', // I: (formula - skip)
+      supplierName, // J: Proveedor (from brand mapping)
+      translatedSpecies, // K: Especies (translated to Spanish)
+      p.requires_prescription ? 'Sí' : 'No', // L: Receta
+    ]
+  })
+
+  const productRowsNO = products.map((p) => [
+    p.description || '', // N: Descripción
+    'Sí', // O: Activo
+  ])
+
+  // Batch write all product data in a single API call
+  const productBatchData: Array<{ range: string; values: any[][] }> = [
+    { range: `'🆕 Productos'!I2:I${maxProductRows}`, values: costFormulas },
+    { range: `'🆕 Productos'!M2:M${maxProductRows}`, values: enStockFormulas },
+  ]
+  if (productRowsAL.length > 0) {
+    productBatchData.push(
+      { range: `'🆕 Productos'!A2:L${productRowsAL.length + 1}`, values: productRowsAL },
+      { range: `'🆕 Productos'!N2:O${productRowsNO.length + 1}`, values: productRowsNO }
+    )
+  }
+  await batchUpdateValues(spreadsheetId, productBatchData)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📋 Mis Productos (19 columns A-S)
+  // Client enters: A-Producto, B-PrecioVenta, C-StockMín, D-Ubicación, E-Activo (5 cols)
+  // Auto-fill from catalog: F-L (7 cols)
+  // Auto-calculated: M-S (7 cols)
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  📋 Mis Productos...')
+
+  const maxMisProductosRows = 501
+
+  // === AUTO-FILL FROM CATALOG (columns F-L) ===
+  // Use INDEX/MATCH because VLOOKUP can't look left (SKU is col A, Name is col B)
+  // 🆕 Productos structure: A-SKU, B-Nombre, C-Categoría, D-Marca, E-Unid.Compra, F-Cant, G-Unid.Venta,
+  //                        H-PrecioCompra, I-CostoUnit, J-Proveedor, K-Especies, L-Receta, M-EnStock, N-Descripción, O-Activo
+
+  // F: Código (SKU) = INDEX/MATCH from catalog (col A, lookup in col B)
+  const codigoFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    codigoFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('🆕 Productos'!$A$2:$A$2100,MATCH(A${i},'🆕 Productos'!$B$2:$B$2100,0)),""),"")`,
+    ])
+  }
+
+  // G: Descripción = INDEX/MATCH from catalog (col N)
+  const descripcionFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    descripcionFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('🆕 Productos'!$N$2:$N$2100,MATCH(A${i},'🆕 Productos'!$B$2:$B$2100,0)),""),"")`,
+    ])
+  }
+
+  // H: Categoría = INDEX/MATCH from catalog (col C)
+  const categoriaFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    categoriaFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('🆕 Productos'!$C$2:$C$2100,MATCH(A${i},'🆕 Productos'!$B$2:$B$2100,0)),""),"")`,
+    ])
+  }
+
+  // I: Marca = INDEX/MATCH from catalog (col D)
+  const marcaFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    marcaFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('🆕 Productos'!$D$2:$D$2100,MATCH(A${i},'🆕 Productos'!$B$2:$B$2100,0)),""),"")`,
+    ])
+  }
+
+  // J: Proveedor = INDEX/MATCH from catalog (col J)
+  const proveedorFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    proveedorFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('🆕 Productos'!$J$2:$J$2100,MATCH(A${i},'🆕 Productos'!$B$2:$B$2100,0)),""),"")`,
+    ])
+  }
+
+  // K: Código Barras = from catalog (we'll leave empty, user can fill)
+  const codigoBarrasFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    codigoBarrasFormulas.push([``]) // Empty, user fills if needed
+  }
+
+  // L: Receta = INDEX/MATCH from catalog (col L)
+  const recetaFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    recetaFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('🆕 Productos'!$L$2:$L$2100,MATCH(A${i},'🆕 Productos'!$B$2:$B$2100,0)),""),"")`,
+    ])
+  }
+
+  // === AUTO-CALCULATED (columns M-S) ===
+  // M: Último Costo = last purchase cost from movements (where Operación="Compra")
+  // Movimientos structure: A-Fecha, B-Producto, C-Operación, D-Cantidad, E-Lote, F-Ubicación, G-Responsable, H-CostoUnit, I-Vencimiento, J-Documento, K-#, L-Código, M-CostoUsado, N-+/-, O-Total
+  const lastCostFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    // H is Costo Unit. in Movimientos
+    lastCostFormulas.push([
+      `=IF(A${i}<>"",IFERROR(INDEX('📦 Movimientos Stock'!$H$2:$H$1001,MATCH(2,1/('📦 Movimientos Stock'!$B$2:$B$1001=A${i})*1/('📦 Movimientos Stock'!$C$2:$C$1001="Compra")*1/('📦 Movimientos Stock'!$H$2:$H$1001<>""),1)),""),"")`,
+    ])
+  }
+
+  // N: Margen % = (PrecioVenta - ÚltimoCosto) / ÚltimoCosto * 100 (as NUMBER, not text)
+  const marginFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    // Returns actual number so we can format as percentage in formatting.ts
+    marginFormulas.push([`=IF(AND(A${i}<>"",B${i}<>"",M${i}<>"",M${i}>0),(B${i}-M${i})/M${i},"")`])
+  }
+
+  // O: Stock Actual = sum based on operation signs from movements
+  // Uses SUMPRODUCT with explicit range to exclude headers. N is +/- column in Movimientos
+  const stockActualFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    stockActualFormulas.push([
+      `=IF(A${i}<>"",SUMPRODUCT(('📦 Movimientos Stock'!$B$2:$B$1001=A${i})*('📦 Movimientos Stock'!$D$2:$D$1001)*('📦 Movimientos Stock'!$N$2:$N$1001)),"")`,
+    ])
+  }
+
+  // P: Valor Stock = Stock * ÚltimoCosto
+  const valorStockFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    valorStockFormulas.push([`=IF(AND(A${i}<>"",O${i}<>"",M${i}<>""),O${i}*M${i},"")`])
+  }
+
+  // Q: Estado = emoji based on stock level
+  const estadoFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    estadoFormulas.push([`=IF(A${i}<>"",IF(O${i}<=0,"🔴",IF(O${i}<=C${i},"🟡","🟢")),"")`])
+  }
+
+  // R: Próximo Vencimiento = earliest expiration from active lots (exclude headers)
+  // I is Vencimiento in Movimientos
+  const proxVenceFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    proxVenceFormulas.push([
+      `=IF(A${i}<>"",IFERROR(MINIFS('📦 Movimientos Stock'!$I$2:$I$1001,'📦 Movimientos Stock'!$B$2:$B$1001,A${i},'📦 Movimientos Stock'!$I$2:$I$1001,">"&TODAY()),""),"")`,
+    ])
+  }
+
+  // S: Alertas = warnings for expiration, low stock, etc.
+  const alertasFormulas: string[][] = []
+  for (let i = 2; i <= maxMisProductosRows; i++) {
+    alertasFormulas.push([
+      `=IF(A${i}<>"",IFS(O${i}<=0,"❌ Sin stock",AND(R${i}<>"",R${i}<TODAY()),"⚠️ Vencido",AND(R${i}<>"",R${i}<TODAY()+30),"⏰ Por vencer",O${i}<=C${i},"📦 Stock bajo",TRUE,"✅ OK"),"")`,
+    ])
+  }
+
+  // Batch write all Mis Productos formulas
+  await batchUpdateValues(spreadsheetId, [
+    // Auto-fill from catalog (F-L)
+    { range: `'📋 Mis Productos'!F2:F${maxMisProductosRows}`, values: codigoFormulas },
+    { range: `'📋 Mis Productos'!G2:G${maxMisProductosRows}`, values: descripcionFormulas },
+    { range: `'📋 Mis Productos'!H2:H${maxMisProductosRows}`, values: categoriaFormulas },
+    { range: `'📋 Mis Productos'!I2:I${maxMisProductosRows}`, values: marcaFormulas },
+    { range: `'📋 Mis Productos'!J2:J${maxMisProductosRows}`, values: proveedorFormulas },
+    { range: `'📋 Mis Productos'!K2:K${maxMisProductosRows}`, values: codigoBarrasFormulas },
+    { range: `'📋 Mis Productos'!L2:L${maxMisProductosRows}`, values: recetaFormulas },
+    // Auto-calculated (M-S)
+    { range: `'📋 Mis Productos'!M2:M${maxMisProductosRows}`, values: lastCostFormulas },
+    { range: `'📋 Mis Productos'!N2:N${maxMisProductosRows}`, values: marginFormulas },
+    { range: `'📋 Mis Productos'!O2:O${maxMisProductosRows}`, values: stockActualFormulas },
+    { range: `'📋 Mis Productos'!P2:P${maxMisProductosRows}`, values: valorStockFormulas },
+    { range: `'📋 Mis Productos'!Q2:Q${maxMisProductosRows}`, values: estadoFormulas },
+    { range: `'📋 Mis Productos'!R2:R${maxMisProductosRows}`, values: proxVenceFormulas },
+    { range: `'📋 Mis Productos'!S2:S${maxMisProductosRows}`, values: alertasFormulas },
+  ])
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // SIMPLIFIED CLINIC INVENTORY
+  // Client enters ONLY 4 columns: [Producto, PrecioVenta, StockMín, Ubicación]
+  // Everything else is auto-filled from catalog or calculated from movements
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // Helper to find product by SKU from the loaded products array
+  // Returns [name, price, minStock, location] tuple or null if not found
+  const findBySku = (
+    sku: string,
+    minStock: number,
+    location: string
+  ): [string, number, number, string] | null => {
+    const product = products.find((p) => p.sku === sku)
+    if (!product) {
+      console.warn(`    ⚠️ Product not found: ${sku}`)
+      return null
+    }
+    return [product.name, product.base_price, minStock, location]
+  }
+
+  // Build clinic inventory from actual catalog products (ensures names match exactly)
+  // Format: [ProductName, SalePrice, MinStock, Location]
+  const clinicInventoryItems: Array<[string, number, number, string] | null> = [
+    // 🛒 TIENDA - ALIMENTOS PERROS
+    findBySku('RC-DOG-MED-ADULT-15KG', 3, 'Exhibición'),
+    findBySku('RC-DOG-MED-ADULT-3KG', 4, 'Exhibición'),
+    findBySku('PP-DOG-ADULT-MED-15KG', 3, 'Exhibición'),
+    findBySku('PP-DOG-PUPPY-MED-15KG', 3, 'Exhibición'),
+    findBySku('DC-DOG-ADULT-MED-LG-21KG', 4, 'Depósito Principal'),
+    findBySku('PED-DOG-ADULT-21KG', 5, 'Depósito Principal'),
+    // 🛒 TIENDA - ALIMENTOS GATOS
+    findBySku('RC-CAT-STERILISED-4KG', 3, 'Exhibición'),
+    findBySku('WHK-CAT-ADULT-PESCADO-10KG', 4, 'Depósito Principal'),
+    findBySku('CC-CAT-ADULT-8KG', 4, 'Depósito Principal'),
+    // 🛒 TIENDA - DIETAS PRESCRIPTIVAS
+    findBySku('RC-DOG-RENAL-7KG', 2, 'Farmacia'),
+    findBySku('RC-DOG-GASTRO-7.5KG', 2, 'Farmacia'),
+    // 🛒 ANTIPARASITARIOS
+    findBySku('FRT-PLUS-DOG-M-1PIP', 6, 'Farmacia'),
+    findBySku('FRT-PLUS-DOG-L-1PIP', 5, 'Farmacia'),
+    findBySku('FRT-PLUS-CAT-1PIP', 6, 'Farmacia'),
+    findBySku('NXG-DOG-10-25-1', 5, 'Farmacia'),
+    findBySku('BRV-DOG-20-40-1', 3, 'Farmacia'),
+    findBySku('BRV-DOG-10-20-1', 3, 'Farmacia'),
+    // 🛒 HIGIENE
+    findBySku('CATRON-NATURAL-10KG', 6, 'Depósito Principal'),
+    findBySku('CATRON-LAVANDA-10KG', 4, 'Depósito Principal'),
+    // 🛒 ACCESORIOS
+    findBySku('KONG-CLASSIC-M', 3, 'Exhibición'),
+    findBySku('KONG-CLASSIC-L', 2, 'Exhibición'),
+    findBySku('FPL-CARRIER-ATLAS-M-20', 2, 'Exhibición'),
+    // 💉 VACUNAS
+    findBySku('NOB-DHPPI-1D', 10, 'Farmacia'),
+    findBySku('NOB-RABIA-1D', 15, 'Farmacia'),
+    findBySku('NOB-TRICAT-1D', 8, 'Farmacia'),
+    findBySku('NOB-LEPTO-1D', 10, 'Farmacia'),
+    // 💉 FLUIDOTERAPIA Y CONSUMIBLES
+    findBySku('BRAUN-NACL-09-500', 10, 'Farmacia'),
+    findBySku('BRAUN-RINGER-LACTATO-500', 8, 'Farmacia'),
+    findBySku('BRAUN-DEXTROSA-5-500', 6, 'Farmacia'),
+    findBySku('BD-SYRINGE-3ML-23G', 2, 'Consultorio'),
+    findBySku('BD-SYRINGE-5ML-21G', 2, 'Consultorio'),
+  ]
+
+  // Filter out null entries (products not found in catalog)
+  const clinicInventory = clinicInventoryItems.filter(
+    (item): item is [string, number, number, string] => item !== null
+  )
+
+  // Write simplified data: 5 client-entry columns (A-E) including Activo
+  const myProductRows = clinicInventory.map((p) => [p[0], p[1], p[2], p[3], 'Sí']) // Add Activo = 'Sí' for all
+
+  if (myProductRows.length > 0) {
+    await batchUpdateValues(spreadsheetId, [
+      { range: `'📋 Mis Productos'!A2:E${myProductRows.length + 1}`, values: myProductRows },
+    ])
+  }
+
+  console.log(`    → Created ${clinicInventory.length} clinic products (5 cols each)`)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📦 Movimientos Stock (15 columns A-O)
+  // Client enters (A-J): Fecha, Producto, Operación, Cantidad, Lote, Ubicación, Responsable, CostoUnit, Vencimiento, Documento
+  // Auto-calculated (K-O): #, Código, CostoUsado, +/-, Total
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  📦 Movimientos Stock...')
+
+  const maxStockRows = 1001
+
+  // === AUTO-CALCULATED FORMULAS (columns K-O) ===
+
+  // K: 🔒 # = auto-increment row number
+  const rowNumberFormulas: string[][] = []
+  for (let i = 2; i <= maxStockRows; i++) {
+    rowNumberFormulas.push([`=IF(A${i}<>"",ROW()-1,"")`])
+  }
+
+  // L: 🔒 Código = VLOOKUP from Mis Productos (column F has the code now)
+  const codigoMovFormulas: string[][] = []
+  for (let i = 2; i <= maxStockRows; i++) {
+    codigoMovFormulas.push([
+      `=IF(B${i}<>"",IFERROR(VLOOKUP(B${i},'📋 Mis Productos'!$A$2:$F$501,6,FALSE),""),"")`,
+    ])
+  }
+
+  // M: 🔒 Costo Usado = For Compra use column H, else use last purchase cost
+  // Uses INDEX/MATCH to find the most recent Compra cost for this product
+  // H is Costo Unit. in new structure
+  const costoUsadoFormulas: string[][] = []
+  for (let i = 2; i <= maxStockRows; i++) {
+    costoUsadoFormulas.push([
+      `=IF(B${i}<>"",IF(C${i}="Compra",H${i},IFERROR(INDEX($H$2:$H$${maxStockRows},MATCH(2,1/($B$2:$B$${maxStockRows}=B${i})*1/($C$2:$C$${maxStockRows}="Compra")*1/($H$2:$H$${maxStockRows}<>""),1)),"")),"")`,
+    ])
+  }
+
+  // N: 🔒 +/- = Sign based on operation type
+  // Compra, Devolución Cliente, Ajuste +, Hallazgo = 1
+  // Venta, Uso Interno, Devolución Proveedor, Ajuste -, Daño, Vencido = -1
+  const signFormulas: string[][] = []
+  for (let i = 2; i <= maxStockRows; i++) {
+    signFormulas.push([
+      `=IF(C${i}<>"",IFS(OR(C${i}="Compra",C${i}="Devolución Cliente",C${i}="Ajuste +",C${i}="Hallazgo"),1,OR(C${i}="Venta",C${i}="Uso Interno",C${i}="Devolución Proveedor",C${i}="Ajuste -",C${i}="Daño",C${i}="Vencido"),-1,TRUE,0),"")`,
+    ])
+  }
+
+  // O: 💰 Total = Cantidad × CostoUsado × sign
+  const totalFormulas: string[][] = []
+  for (let i = 2; i <= maxStockRows; i++) {
+    totalFormulas.push([`=IF(AND(D${i}<>"",M${i}<>""),D${i}*M${i}*N${i},"")`])
+  }
+
+  // Batch write all Movimientos Stock formulas
+  await batchUpdateValues(spreadsheetId, [
+    { range: `'📦 Movimientos Stock'!K2:K${maxStockRows}`, values: rowNumberFormulas },
+    { range: `'📦 Movimientos Stock'!L2:L${maxStockRows}`, values: codigoMovFormulas },
+    { range: `'📦 Movimientos Stock'!M2:M${maxStockRows}`, values: costoUsadoFormulas },
+    { range: `'📦 Movimientos Stock'!N2:N${maxStockRows}`, values: signFormulas },
+    { range: `'📦 Movimientos Stock'!O2:O${maxStockRows}`, values: totalFormulas },
+  ])
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // SAMPLE STOCK MOVEMENTS - FULL FORMAT (10 client columns)
+  // [Fecha, Producto, Operación, Cantidad, Lote, Ubicación, Responsable, CostoUnit, Vencimiento, Documento]
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Stock movements using EXACT product names from JSON catalog and Mis Productos
+  const stockMovements = [
+    // ─────────────────────────────────────────────────────────────────────────
+    // 📅 01/12/2024 - INVENTARIO INICIAL (Compras de apertura)
+    // ─────────────────────────────────────────────────────────────────────────
+    // [Fecha, Producto, Operación, Cantidad, Lote, Ubicación, Responsable, CostoUnit, Vencimiento, Documento]
+    [
+      '01/12/2024',
+      'Royal Canin Medium Adult 15kg',
+      'Compra',
+      10,
+      'L2024-RC01',
+      'Exhibición',
+      'Juan Pérez',
+      537000,
+      '15/12/2025',
+      'FAC-001-2024',
+    ],
+    [
+      '01/12/2024',
+      'Royal Canin Medium Adult 3kg',
+      'Compra',
+      15,
+      'L2024-RC02',
+      'Exhibición',
+      'Juan Pérez',
+      147000,
+      '15/12/2025',
+      'FAC-001-2024',
+    ],
+    [
+      '01/12/2024',
+      'Pro Plan Adult Medium 15kg',
+      'Compra',
+      10,
+      'L2024-PP01',
+      'Exhibición',
+      'Juan Pérez',
+      417000,
+      '10/11/2025',
+      'FAC-002-2024',
+    ],
+    [
+      '01/12/2024',
+      'Dog Chow Adultos Medianos y Grandes 21kg',
+      'Compra',
+      15,
+      'L2024-DC01',
+      'Depósito Principal',
+      'Juan Pérez',
+      255000,
+      '30/10/2025',
+      'FAC-003-2024',
+    ],
+    [
+      '01/12/2024',
+      'Pedigree Adulto 21kg',
+      'Compra',
+      18,
+      'L2024-PD01',
+      'Depósito Principal',
+      'Juan Pérez',
+      195000,
+      '20/09/2025',
+      'FAC-003-2024',
+    ],
+    [
+      '01/12/2024',
+      'Whiskas Adulto Pescado 10kg',
+      'Compra',
+      12,
+      'L2024-WH01',
+      'Depósito Principal',
+      'Juan Pérez',
+      207000,
+      '20/09/2025',
+      'FAC-004-2024',
+    ],
+
+    // Antiparasitarios
+    [
+      '01/12/2024',
+      'Frontline Plus Perros 10-20kg 1 pipeta',
+      'Compra',
+      20,
+      'FL-2024-M01',
+      'Farmacia',
+      'Dra. María López',
+      37200,
+      '30/06/2026',
+      'FAC-005-2024',
+    ],
+    [
+      '01/12/2024',
+      'Frontline Plus Perros 20-40kg 1 pipeta',
+      'Compra',
+      15,
+      'FL-2024-L01',
+      'Farmacia',
+      'Dra. María López',
+      43200,
+      '30/06/2026',
+      'FAC-005-2024',
+    ],
+    [
+      '01/12/2024',
+      'NexGard Perros 10-25kg 1 comprimido',
+      'Compra',
+      15,
+      'NX-2024-M01',
+      'Farmacia',
+      'Dra. María López',
+      69000,
+      '31/08/2026',
+      'FAC-006-2024',
+    ],
+    [
+      '01/12/2024',
+      'Bravecto Perros 20-40kg 1 comprimido',
+      'Compra',
+      8,
+      'BV-2024-L01',
+      'Farmacia',
+      'Dra. María López',
+      237000,
+      '30/09/2026',
+      'FAC-006-2024',
+    ],
+    [
+      '01/12/2024',
+      'Bravecto Perros 10-20kg 1 comprimido',
+      'Compra',
+      6,
+      'BV-2024-M01',
+      'Farmacia',
+      'Dra. María López',
+      207000,
+      '30/09/2026',
+      'FAC-006-2024',
+    ],
+
+    // Vacunas
+    [
+      '01/12/2024',
+      'Nobivac DHPPi 1 dosis',
+      'Compra',
+      30,
+      'NB-DHPP-2024',
+      'Farmacia',
+      'Dra. María López',
+      51000,
+      '30/06/2025',
+      'FAC-007-2024',
+    ],
+    [
+      '01/12/2024',
+      'Nobivac Rabies 1 dosis',
+      'Compra',
+      50,
+      'NB-RAB-2024',
+      'Farmacia',
+      'Dra. María López',
+      27000,
+      '31/12/2025',
+      'FAC-007-2024',
+    ],
+    [
+      '01/12/2024',
+      'Nobivac Tricat Trio 1 dosis',
+      'Compra',
+      25,
+      'NB-TRI-2024',
+      'Farmacia',
+      'Dra. María López',
+      57000,
+      '30/06/2025',
+      'FAC-007-2024',
+    ],
+    [
+      '01/12/2024',
+      'Nobivac Lepto 1 dosis',
+      'Compra',
+      20,
+      'NB-LEP-2024',
+      'Farmacia',
+      'Dra. María López',
+      33000,
+      '30/06/2025',
+      'FAC-007-2024',
+    ],
+
+    // Consumibles y Fluidoterapia
+    [
+      '01/12/2024',
+      'Jeringa BD 3ml con Aguja Caja x 100 (23G)',
+      'Compra',
+      6,
+      'BD-J3-2024',
+      'Consultorio',
+      'Juan Pérez',
+      111000,
+      '31/12/2027',
+      'FAC-008-2024',
+    ],
+    [
+      '01/12/2024',
+      'Jeringa BD 5ml con Aguja Caja x 100 (21G)',
+      'Compra',
+      4,
+      'BD-J5-2024',
+      'Consultorio',
+      'Juan Pérez',
+      135000,
+      '31/12/2027',
+      'FAC-008-2024',
+    ],
+    [
+      '01/12/2024',
+      'Solución Salina 0.9% 500ml',
+      'Compra',
+      40,
+      'SS-2024-01',
+      'Farmacia',
+      'Juan Pérez',
+      15000,
+      '30/11/2025',
+      'FAC-009-2024',
+    ],
+    [
+      '01/12/2024',
+      'Ringer Lactato 500ml',
+      'Compra',
+      30,
+      'RL-2024-01',
+      'Farmacia',
+      'Juan Pérez',
+      16800,
+      '30/11/2025',
+      'FAC-009-2024',
+    ],
+    [
+      '01/12/2024',
+      'Dextrosa 5% 500ml',
+      'Compra',
+      20,
+      'DX-2024-01',
+      'Farmacia',
+      'Juan Pérez',
+      13200,
+      '30/11/2025',
+      'FAC-009-2024',
+    ],
+
+    // Higiene y Accesorios
+    [
+      '01/12/2024',
+      'Catron Arena Natural 10kg',
+      'Compra',
+      15,
+      'CAT-2024-01',
+      'Depósito Principal',
+      'Juan Pérez',
+      69000,
+      '31/12/2026',
+      'FAC-010-2024',
+    ],
+    [
+      '01/12/2024',
+      'Kong Classic M',
+      'Compra',
+      8,
+      'KONG-M-2024',
+      'Exhibición',
+      'Juan Pérez',
+      66300,
+      '',
+      'FAC-011-2024',
+    ],
+    [
+      '01/12/2024',
+      'Ferplast Atlas 20 Transportadora 58x37x32cm',
+      'Compra',
+      4,
+      'FPL-20-2024',
+      'Exhibición',
+      'Juan Pérez',
+      135000,
+      '',
+      'FAC-011-2024',
+    ],
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // 📅 02-08/12/2024 - PRIMERA SEMANA DE OPERACIONES
+    // ─────────────────────────────────────────────────────────────────────────
+    [
+      '02/12/2024',
+      'Royal Canin Medium Adult 15kg',
+      'Venta',
+      2,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-001-2024',
+    ],
+    [
+      '03/12/2024',
+      'Dog Chow Adultos Medianos y Grandes 21kg',
+      'Venta',
+      3,
+      '',
+      'Depósito Principal',
+      'Ana García',
+      '',
+      '',
+      'TKT-002-2024',
+    ],
+    [
+      '04/12/2024',
+      'Pedigree Adulto 21kg',
+      'Venta',
+      4,
+      '',
+      'Depósito Principal',
+      'Ana García',
+      '',
+      '',
+      'TKT-003-2024',
+    ],
+    [
+      '04/12/2024',
+      'Frontline Plus Perros 10-20kg 1 pipeta',
+      'Venta',
+      3,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-003-2024',
+    ],
+    [
+      '05/12/2024',
+      'NexGard Perros 10-25kg 1 comprimido',
+      'Venta',
+      2,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-004-2024',
+    ],
+    [
+      '06/12/2024',
+      'Whiskas Adulto Pescado 10kg',
+      'Venta',
+      2,
+      '',
+      'Depósito Principal',
+      'Ana García',
+      '',
+      '',
+      'TKT-005-2024',
+    ],
+
+    // Uso clínico (vacunaciones)
+    [
+      '03/12/2024',
+      'Nobivac DHPPi 1 dosis',
+      'Uso Interno',
+      5,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '04/12/2024',
+      'Nobivac Rabies 1 dosis',
+      'Uso Interno',
+      8,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '05/12/2024',
+      'Nobivac Tricat Trio 1 dosis',
+      'Uso Interno',
+      3,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+
+    // Uso clínico (consultas y cirugías)
+    [
+      '06/12/2024',
+      'Jeringa BD 3ml con Aguja Caja x 100 (23G)',
+      'Uso Interno',
+      1,
+      '',
+      'Consultorio',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '07/12/2024',
+      'Solución Salina 0.9% 500ml',
+      'Uso Interno',
+      6,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '07/12/2024',
+      'Ringer Lactato 500ml',
+      'Uso Interno',
+      4,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // 📅 09-15/12/2024 - SEGUNDA SEMANA
+    // ─────────────────────────────────────────────────────────────────────────
+    [
+      '09/12/2024',
+      'Royal Canin Medium Adult 15kg',
+      'Venta',
+      3,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-006-2024',
+    ],
+    [
+      '10/12/2024',
+      'Royal Canin Medium Adult 3kg',
+      'Venta',
+      2,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-007-2024',
+    ],
+    [
+      '10/12/2024',
+      'Pro Plan Adult Medium 15kg',
+      'Venta',
+      2,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-007-2024',
+    ],
+    [
+      '11/12/2024',
+      'Frontline Plus Perros 20-40kg 1 pipeta',
+      'Venta',
+      4,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-008-2024',
+    ],
+    [
+      '11/12/2024',
+      'Bravecto Perros 20-40kg 1 comprimido',
+      'Venta',
+      2,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-008-2024',
+    ],
+    [
+      '12/12/2024',
+      'Frontline Plus Gatos 1 pipeta',
+      'Venta',
+      3,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-009-2024',
+    ],
+
+    // Reposición por bajo stock
+    [
+      '12/12/2024',
+      'Frontline Plus Perros 10-20kg 1 pipeta',
+      'Compra',
+      15,
+      'FL-2024-M02',
+      'Farmacia',
+      'Juan Pérez',
+      37200,
+      '30/06/2026',
+      'FAC-012-2024',
+    ],
+    [
+      '13/12/2024',
+      'Dog Chow Adultos Medianos y Grandes 21kg',
+      'Compra',
+      10,
+      'L2024-DC02',
+      'Depósito Principal',
+      'Juan Pérez',
+      255000,
+      '28/02/2026',
+      'FAC-013-2024',
+    ],
+    [
+      '13/12/2024',
+      'Frontline Plus Gatos 1 pipeta',
+      'Compra',
+      12,
+      'FL-CAT-2024',
+      'Farmacia',
+      'Juan Pérez',
+      33000,
+      '30/06/2026',
+      'FAC-014-2024',
+    ],
+
+    // Más uso clínico
+    [
+      '13/12/2024',
+      'Nobivac DHPPi 1 dosis',
+      'Uso Interno',
+      6,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '13/12/2024',
+      'Nobivac Rabies 1 dosis',
+      'Uso Interno',
+      5,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '14/12/2024',
+      'Jeringa BD 3ml con Aguja Caja x 100 (23G)',
+      'Uso Interno',
+      1,
+      '',
+      'Consultorio',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // 📅 16-22/12/2024 - TERCERA SEMANA (Navidad, más ventas)
+    // ─────────────────────────────────────────────────────────────────────────
+    [
+      '16/12/2024',
+      'Royal Canin Medium Adult 15kg',
+      'Venta',
+      2,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-010-2024',
+    ],
+    [
+      '17/12/2024',
+      'Royal Canin Medium Adult 3kg',
+      'Venta',
+      3,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-011-2024',
+    ],
+    [
+      '18/12/2024',
+      'Kong Classic M',
+      'Venta',
+      2,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-012-2024',
+    ],
+    [
+      '18/12/2024',
+      'Ferplast Atlas 20 Transportadora 58x37x32cm',
+      'Venta',
+      1,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'TKT-012-2024',
+    ],
+
+    // Más ventas y uso
+    [
+      '20/12/2024',
+      'NexGard Perros 10-25kg 1 comprimido',
+      'Venta',
+      3,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-013-2024',
+    ],
+    [
+      '20/12/2024',
+      'Nobivac DHPPi 1 dosis',
+      'Uso Interno',
+      4,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+    [
+      '21/12/2024',
+      'Solución Salina 0.9% 500ml',
+      'Uso Interno',
+      5,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      '',
+    ],
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // 📅 23-31/12/2024 - SEMANA NAVIDAD/AÑO NUEVO
+    // ─────────────────────────────────────────────────────────────────────────
+    [
+      '23/12/2024',
+      'Pedigree Adulto 21kg',
+      'Venta',
+      3,
+      '',
+      'Depósito Principal',
+      'Ana García',
+      '',
+      '',
+      'TKT-014-2024',
+    ],
+    [
+      '23/12/2024',
+      'Cat Chow Adultos Carne y Pollo 8kg',
+      'Venta',
+      2,
+      '',
+      'Depósito Principal',
+      'Ana García',
+      '',
+      '',
+      'TKT-014-2024',
+    ],
+
+    // Producto dañado
+    [
+      '26/12/2024',
+      'Catron Arena Natural 10kg',
+      'Daño',
+      1,
+      '',
+      'Depósito Principal',
+      'Juan Pérez',
+      '',
+      '',
+      'INF-001-2024',
+    ],
+
+    // Ventas post-navidad
+    [
+      '28/12/2024',
+      'Frontline Plus Perros 10-20kg 1 pipeta',
+      'Venta',
+      5,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-015-2024',
+    ],
+    [
+      '28/12/2024',
+      'Frontline Plus Perros 20-40kg 1 pipeta',
+      'Venta',
+      3,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-015-2024',
+    ],
+    [
+      '29/12/2024',
+      'Bravecto Perros 10-20kg 1 comprimido',
+      'Venta',
+      2,
+      '',
+      'Farmacia',
+      'Dra. María López',
+      '',
+      '',
+      'TKT-016-2024',
+    ],
+
+    // Devolución de cliente
+    [
+      '30/12/2024',
+      'Royal Canin Sterilised 4kg',
+      'Devolución Cliente',
+      1,
+      '',
+      'Exhibición',
+      'Ana García',
+      '',
+      '',
+      'DEV-001-2024',
+    ],
+
+    // Compra fin de año
+    [
+      '30/12/2024',
+      'Nobivac DHPPi 1 dosis',
+      'Compra',
+      25,
+      'NB-DHPP-2025',
+      'Farmacia',
+      'Juan Pérez',
+      51000,
+      '30/06/2025',
+      'FAC-015-2024',
+    ],
+    [
+      '30/12/2024',
+      'Nobivac Rabies 1 dosis',
+      'Compra',
+      30,
+      'NB-RAB-2025',
+      'Farmacia',
+      'Juan Pérez',
+      27000,
+      '31/12/2025',
+      'FAC-015-2024',
+    ],
+
+    // Último día
+    [
+      '31/12/2024',
+      'Solución Salina 0.9% 500ml',
+      'Uso Interno',
+      4,
+      '',
+      'Farmacia',
+      'Dr. Carlos Ruiz',
+      '',
+      '',
+      '',
+    ],
+    [
+      '31/12/2024',
+      'Ringer Lactato 500ml',
+      'Uso Interno',
+      3,
+      '',
+      'Farmacia',
+      'Dr. Carlos Ruiz',
+      '',
+      '',
+      '',
+    ],
+    [
+      '31/12/2024',
+      'Dextrosa 5% 500ml',
+      'Uso Interno',
+      2,
+      '',
+      'Farmacia',
+      'Dr. Carlos Ruiz',
+      '',
+      '',
+      '',
+    ],
+  ]
+
+  // Write data to columns A-J (10 client entry columns)
+  // [Fecha, Producto, Operación, Cantidad, Lote, Ubicación, Responsable, CostoUnit, Vencimiento, Documento]
+  const stockRows = stockMovements.map((m) => [
+    m[0],
+    m[1],
+    m[2],
+    m[3],
+    m[4],
+    m[5],
+    m[6],
+    m[7],
+    m[8],
+    m[9],
+  ])
+
+  if (stockRows.length > 0) {
+    await batchUpdateValues(spreadsheetId, [
+      { range: `'📦 Movimientos Stock'!A2:J${stockRows.length + 1}`, values: stockRows },
+    ])
+  }
+  console.log(`    → Created ${stockMovements.length} stock movements (full format)`)
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📊 Control Lotes - 100% FORMULA-BASED (11 columns A-K)
+  // Aggregates lot information from movements for expiration tracking
+  // Column structure: A-Producto, B-Lote (from UNIQUE), C-K (formulas)
+  // Movimientos structure: A-Fecha, B-Producto, C-Operación, D-Cantidad, E-Lote, F-Ubicación, G-Responsable, H-CostoUnit, I-Vencimiento, J-Documento, K-#, L-Código, M-CostoUsado, N-+/-, O-Total
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  📊 Control Lotes...')
+
+  // A2: Master UNIQUE formula - returns Product+Lote pairs from Compra operations
+  // This array formula spills into columns A and B - uses explicit range to exclude headers
+  const lotesUniqueFormula = [
+    [
+      "=IFERROR(UNIQUE(FILTER({'📦 Movimientos Stock'!B$2:B$1001,'📦 Movimientos Stock'!E$2:E$1001},'📦 Movimientos Stock'!E$2:E$1001<>\"\",'📦 Movimientos Stock'!C$2:C$1001=\"Compra\")),\"\")",
+    ],
+  ]
+
+  const maxLotesRows = 1001 // Increased to 1000 data rows
+  const maxMovRows = 1001 // Movement rows range
+
+  // C: 🔒 Código = VLOOKUP from Mis Productos (column F now has SKU)
+  const loteCodigoFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteCodigoFormulas.push([
+      `=IF(A${i}<>"",IFERROR(VLOOKUP(A${i},'📋 Mis Productos'!$A$2:$F$501,6,FALSE),""),"")`,
+    ])
+  }
+
+  // D: 📅 F.Ingreso = First purchase date for this Product+Lote
+  const loteIngresoFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteIngresoFormulas.push([
+      `=IF(AND(A${i}<>"",B${i}<>""),IFERROR(MINIFS('📦 Movimientos Stock'!$A$2:$A$${maxMovRows},'📦 Movimientos Stock'!$B$2:$B$${maxMovRows},A${i},'📦 Movimientos Stock'!$E$2:$E$${maxMovRows},B${i},'📦 Movimientos Stock'!$C$2:$C$${maxMovRows},"Compra"),""),"")`,
+    ])
+  }
+
+  // E: 📅 Vencimiento = Expiration date from purchase (lookup on Product+Lote)
+  // Column I is Vencimiento in new Movimientos structure
+  const loteVencimientoFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteVencimientoFormulas.push([
+      `=IF(AND(A${i}<>"",B${i}<>""),IFERROR(INDEX('📦 Movimientos Stock'!$I$2:$I$${maxMovRows},MATCH(1,('📦 Movimientos Stock'!$B$2:$B$${maxMovRows}=A${i})*('📦 Movimientos Stock'!$E$2:$E$${maxMovRows}=B${i})*('📦 Movimientos Stock'!$C$2:$C$${maxMovRows}="Compra"),0)),""),"")`,
+    ])
+  }
+
+  // F: 📦 Cantidad = Remaining stock (sum entries - exits for this Product+Lote)
+  // Uses SUMPRODUCT with sign column (N is +/- in new structure) - explicit ranges to exclude headers
+  const loteCantidadFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteCantidadFormulas.push([
+      `=IF(AND(A${i}<>"",B${i}<>""),SUMPRODUCT(('📦 Movimientos Stock'!$B$2:$B$${maxMovRows}=A${i})*('📦 Movimientos Stock'!$E$2:$E$${maxMovRows}=B${i})*('📦 Movimientos Stock'!$D$2:$D$${maxMovRows})*('📦 Movimientos Stock'!$N$2:$N$${maxMovRows})),"")`,
+    ])
+  }
+
+  // G: 💰 Costo Unit. = Purchase cost for this lot (H is CostoUnit in new structure)
+  const loteCostoFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteCostoFormulas.push([
+      `=IF(AND(A${i}<>"",B${i}<>""),IFERROR(INDEX('📦 Movimientos Stock'!$H$2:$H$${maxMovRows},MATCH(1,('📦 Movimientos Stock'!$B$2:$B$${maxMovRows}=A${i})*('📦 Movimientos Stock'!$E$2:$E$${maxMovRows}=B${i})*('📦 Movimientos Stock'!$C$2:$C$${maxMovRows}="Compra"),0)),""),"")`,
+    ])
+  }
+
+  // H: 💵 Valor = Cantidad × Costo Unit.
+  const loteValorFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteValorFormulas.push([
+      `=IF(AND(F${i}<>"",G${i}<>"",ISNUMBER(F${i}),ISNUMBER(G${i})),F${i}*G${i},"")`,
+    ])
+  }
+
+  // I: ⏳ Días Vence = Days until expiration (negative = already expired)
+  // Handle text dates by using DATEVALUE for text, or raw value for date numbers
+  const loteDiasFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteDiasFormulas.push([
+      `=IF(E${i}<>"",IFERROR(IF(ISNUMBER(E${i}),E${i}-TODAY(),DATEVALUE(E${i})-TODAY()),""),"")`,
+    ])
+  }
+
+  // J: 🚦 Estado = Simplified status with emoji
+  const loteEstadoFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteEstadoFormulas.push([
+      `=IF(A${i}<>"",IF(NOT(ISNUMBER(F${i})),"⚪",IF(F${i}<=0,"🔴",IF(NOT(ISNUMBER(I${i})),"🟢",IF(I${i}<0,"⚫",IF(I${i}<=30,"🟡",IF(I${i}<=90,"🟠","🟢")))))),"")`,
+    ])
+  }
+
+  // K: 📋 Orden FIFO = Pick order (FEFO priority - earliest expiration first, then oldest receipt)
+  // 1 = use first, higher = use later. Excludes depleted lots (F=0) and expired (I<0)
+  const loteFIFOFormulas: string[][] = []
+  for (let i = 2; i <= maxLotesRows; i++) {
+    loteFIFOFormulas.push([
+      `=IF(AND(A${i}<>"",ISNUMBER(F${i}),F${i}>0),IFERROR(RANK(IF(ISNUMBER(E${i}),E${i},DATE(2099,12,31))+D${i}/1000000,IF(($F$2:$F$${maxLotesRows}>0)*($A$2:$A$${maxLotesRows}=A${i}),IF(ISNUMBER($E$2:$E$${maxLotesRows}),$E$2:$E$${maxLotesRows},DATE(2099,12,31))+$D$2:$D$${maxLotesRows}/1000000,""),1),""),"")`,
+    ])
+  }
+
+  // First, write the master UNIQUE formula (spills into A and B)
+  await updateValues(spreadsheetId, "'📊 Control Lotes'!A2", lotesUniqueFormula)
+
+  // Then write all individual column formulas (C-K)
+  await batchUpdateValues(spreadsheetId, [
+    { range: `'📊 Control Lotes'!C2:C${maxLotesRows}`, values: loteCodigoFormulas },
+    { range: `'📊 Control Lotes'!D2:D${maxLotesRows}`, values: loteIngresoFormulas },
+    { range: `'📊 Control Lotes'!E2:E${maxLotesRows}`, values: loteVencimientoFormulas },
+    { range: `'📊 Control Lotes'!F2:F${maxLotesRows}`, values: loteCantidadFormulas },
+    { range: `'📊 Control Lotes'!G2:G${maxLotesRows}`, values: loteCostoFormulas },
+    { range: `'📊 Control Lotes'!H2:H${maxLotesRows}`, values: loteValorFormulas },
+    { range: `'📊 Control Lotes'!I2:I${maxLotesRows}`, values: loteDiasFormulas },
+    { range: `'📊 Control Lotes'!J2:J${maxLotesRows}`, values: loteEstadoFormulas },
+    { range: `'📊 Control Lotes'!K2:K${maxLotesRows}`, values: loteFIFOFormulas },
+  ])
+
+  console.log('    → Created lot tracking formulas (11 columns, FIFO/FEFO order)')
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ⚙️ Configuración - Side-by-side tables (9 columns A-I)
+  // Ubicaciones table: A-D (Código, Ubicación, Descripción, Activo)
+  // Empty separator: E
+  // Responsables table: F-I (ID, Responsable, Rol/Cargo, Activo)
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  ⚙️ Configuración (tablas separadas)...')
+
+  // Ubicaciones data (A-D)
+  const ubicacionesData = [
+    ['DEP-MAIN', 'Depósito Principal', 'Almacén general de inventario', 'Sí'],
+    ['DEP-FARM', 'Farmacia', 'Medicamentos y productos refrigerados', 'Sí'],
+    ['DEP-REFR', 'Refrigerador', 'Vacunas y productos que requieren frío', 'Sí'],
+    ['DEP-CONS', 'Consultorio', 'Stock de uso diario en consultas', 'Sí'],
+    ['DEP-EXHI', 'Exhibición', 'Productos en tienda para venta', 'Sí'],
+    ['DEP-CIRU', 'Cirugía', 'Insumos y equipos quirúrgicos', 'Sí'],
+    ['DEP-ARCH', 'Archivo', 'Ubicación para items dados de baja', 'No'],
+  ]
+
+  // Responsables data (F-I)
+  const responsablesData = [
+    ['STAFF-001', 'Juan Pérez', 'Encargado de Depósito', 'Sí'],
+    ['STAFF-002', 'Dra. María López', 'Veterinaria Principal', 'Sí'],
+    ['STAFF-003', 'Ana García', 'Recepcionista', 'Sí'],
+    ['STAFF-004', 'Dr. Carlos Ruiz', 'Veterinario', 'Sí'],
+    ['STAFF-005', 'Laura Martínez', 'Auxiliar Veterinaria', 'Sí'],
+    ['STAFF-006', 'Pedro Gómez', 'Asistente de Tienda', 'No'],
+  ]
+
+  // Combine into rows with empty separator column (E)
+  // Pad to equal length for clean layout
+  const maxRows = Math.max(ubicacionesData.length, responsablesData.length)
+  const configData: (string | number)[][] = []
+
+  for (let i = 0; i < maxRows; i++) {
+    const ubic = ubicacionesData[i] || ['', '', '', '']
+    const resp = responsablesData[i] || ['', '', '', '']
+    configData.push([
+      ubic[0],
+      ubic[1],
+      ubic[2],
+      ubic[3],
+      '', // Empty separator column E
+      resp[0],
+      resp[1],
+      resp[2],
+      resp[3],
+    ])
+  }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🔧 Datos - Helper sheet with FILTER formulas for dropdowns (7 columns)
+  // A-Categorías, B-Marcas, C-Proveedores, D-Productos Catálogo, E-Mis Productos, F-Ubicaciones, G-Responsables
+  // Uses explicit ranges to avoid full column performance issues
+  // ═══════════════════════════════════════════════════════════════════════════
+  console.log('  🔧 Datos (listas para dropdowns)...')
+  const datosFormulas = [
+    [
+      // A: Categorías activas - nombres (Nombre is column D, Activo is column J)
+      '=IFERROR(SORT(FILTER(\'📂 Categorías\'!$D$2:$D$500, \'📂 Categorías\'!$J$2:$J$500="Sí")),"")',
+      // B: Marcas activas (Activo is column O)
+      '=IFERROR(SORT(FILTER(\'🏷️ Marcas\'!$B$2:$B$100, \'🏷️ Marcas\'!$O$2:$O$100="Sí")),"")',
+      // C: Proveedores activos (Activo is column X)
+      '=IFERROR(SORT(FILTER(\'🏭 Proveedores\'!$B$2:$B$100, \'🏭 Proveedores\'!$X$2:$X$100="Sí")),"")',
+      // D: Productos del Catálogo activos (Activo is column O)
+      '=IFERROR(SORT(FILTER(\'🆕 Productos\'!$B$2:$B$2100, \'🆕 Productos\'!$O$2:$O$2100="Sí")),"")',
+      // E: Mis Productos activos (Activo is now column E)
+      '=IFERROR(SORT(FILTER(\'📋 Mis Productos\'!$A$2:$A$501, \'📋 Mis Productos\'!$E$2:$E$501="Sí")),"")',
+      // F: Ubicaciones activas - NEW: from column B where A starts with DEP- and D = Sí
+      '=IFERROR(FILTER(\'⚙️ Configuración\'!$B$2:$B$50, LEFT(\'⚙️ Configuración\'!$A$2:$A$50,4)="DEP-", \'⚙️ Configuración\'!$D$2:$D$50="Sí"),"")',
+      // G: Responsables activos - NEW: from column G where F starts with STAFF- and I = Sí
+      '=IFERROR(FILTER(\'⚙️ Configuración\'!$G$2:$G$50, LEFT(\'⚙️ Configuración\'!$F$2:$F$50,6)="STAFF-", \'⚙️ Configuración\'!$I$2:$I$50="Sí"),"")',
+    ],
+  ]
+
+  // Batch write Config and Datos in a single API call
+  await batchUpdateValues(spreadsheetId, [
+    { range: `'⚙️ Configuración'!A2:I${configData.length + 1}`, values: configData },
+    { range: "'🔧 Datos'!A2:G2", values: datosFormulas },
+  ])
+
+  console.log('\n  ✅ Sample data added from JSON files\n')
+}

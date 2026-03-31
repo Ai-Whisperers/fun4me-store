@@ -1,0 +1,19 @@
+{
+  "displayInShowcase": true,
+  "testimonial": "Como centro de diagnostico especializado, necesitabamos una plataforma profesional. Vetic nos dio exactamente eso, con la posibilidad de recibir derivaciones de otras clinicas de forma ordenada.",
+  "shortTestimonial": "Gestion profesional de derivaciones y turnos.",
+  "joinedDate": "2024-08-15",
+  "metrics": {
+    "appointmentsGrowth": "+20%",
+    "onlineBookingsPercent": "80%",
+    "patientsRegistered": "180+",
+    "satisfactionScore": "4.8"
+  },
+  "contactPerson": {
+    "name": "Dr. Carlos Benitez",
+    "role": "Director Medico",
+    "quote": "La plataforma nos permite enfocarnos en lo que mejor hacemos: diagnosticar."
+  },
+  "specialties": ["Diagnostico por Imagenes", "Ecografia", "Radiologia", "Laboratorio"],
+  "highlights": ["Centro de referencia", "Equipo de ultima generacion", "Derivaciones"]
+}

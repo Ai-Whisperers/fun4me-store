@@ -1,0 +1,53 @@
+{
+  "id": "template_id",
+  "name": "Nombre de la Clínica",
+  "contact": {
+    "whatsapp_number": "595900000000",
+    "phone_display": "+595 900 000 000",
+    "email": "contacto@miclinica.com",
+    "address": "Dirección Completa, Ciudad",
+    "google_maps_id": "iframe_embed_code_here"
+  },
+  "settings": {
+    "currency": "PYG",
+    "emergency_24h": true,
+    "modules": {
+      "toxic_checker": true,
+      "age_calculator": true
+    },
+    "inventory_template_google_sheet_url": null
+  },
+  "branding": {
+    "logo_url": "",
+    "logo_width": 150,
+    "logo_height": 40,
+    "favicon_url": "/favicon.ico",
+    "hero_image_url": "",
+    "og_image_url": ""
+  },
+  "ui_labels": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Nosotros",
+      "book_btn": "Agendar"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados."
+    },
+    "home": {
+      "visit_us": "Visítanos"
+    },
+    "services": {
+      "online_badge": "Reservable Online",
+      "description_label": "Descripción:",
+      "includes_label": "Incluye:",
+      "table_variant": "Variante / Tipo",
+      "table_price": "Precio",
+      "book_floating_btn": "Agendar Turno"
+    },
+    "about": {
+      "team_title": "Nuestro Equipo"
+    }
+  }
+}

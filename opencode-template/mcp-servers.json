@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "//": "===========================================",
+  "// SERVIDORES MCP PARA ESTUDIANTES FPUNA": "",
+  "// ===========================================": "",
+  "// Agrega aqui tus conexiones a servicios externos": "",
+  
+  "mcpServers": {
+    
+    "// EJEMPLO: Supabase (base de datos)": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-supabase"],
+      "env": {
+        "SUPABASE_URL": "https://tu-proyecto.supabase.co",
+        "SUPABASE_KEY": "tu-anon-key-aqui"
+      },
+      "description": "Conexion a Supabase para consultas SQL"
+    },
+    
+    "// EJEMPLO: PostgreSQL directo": {
+      "command": "npx", 
+      "args": ["-y", "@anthropic-ai/mcp-server-postgres"],
+      "env": {
+        "DATABASE_URL": "postgresql://user:password@localhost:5432/mydb"
+      },
+      "description": "Conexion directa a PostgreSQL"
+    },
+    
+    "// EJEMPLO: GitHub": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-github"],
+      "env": {
+        "GITHUB_TOKEN": "ghp_tu_token_aqui"
+      },
+      "description": "Acceso a repositorios GitHub"
+    },
+    
+    "// EJEMPLO: Filesystem (acceso a archivos)": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-filesystem", "./"],
+      "description": "Acceso al sistema de archivos del proyecto"
+    },
+    
+    "// EJEMPLO: Web Search (busqueda web)": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "tu-api-key-aqui"
+      },
+      "description": "Busqueda web con Brave Search"
+    }
+  },
+  
+  "// INSTRUCCIONES": [
+    "1. Descomenta el servidor que necesites",
+    "2. Reemplaza las credenciales con las tuyas",
+    "3. Reinicia opencode para aplicar cambios",
+    "",
+    "NOTA: Nunca subas este archivo con credenciales reales a git!"
+  ]
+}

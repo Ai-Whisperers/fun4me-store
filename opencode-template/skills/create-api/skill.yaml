@@ -1,0 +1,160 @@
+# ===========================================
+# SKILL: Crear API REST
+# ===========================================
+# Genera estructura basica para una API REST
+
+name: create-api
+description: "Genera estructura de API REST con endpoints CRUD"
+version: "1.0.0"
+author: "Estudiantes FPUNA"
+
+# Cuando se activa este skill
+triggers:
+  - "/create-api"
+  - "/api"
+  - "crear api"
+  - "generar endpoint"
+
+# Parametros que acepta
+parameters:
+  - name: recurso
+    type: string
+    required: true
+    description: "Nombre del recurso (ej: usuarios, productos)"
+    
+  - name: framework
+    type: string
+    required: false
+    default: "fastapi"
+    options:
+      - fastapi
+      - express
+      - flask
+    description: "Framework a usar"
+    
+  - name: database
+    type: string
+    required: false
+    default: "postgresql"
+    options:
+      - postgresql
+      - mysql
+      - mongodb
+      - sqlite
+    description: "Base de datos"
+
+# Instrucciones para el agente
+instructions: |
+  Genera una API REST completa con:
+  
+  1. **Endpoints CRUD**:
+     - GET /{{recurso}} - Listar todos
+     - GET /{{recurso}}/{id} - Obtener uno
+     - POST /{{recurso}} - Crear
+     - PUT /{{recurso}}/{id} - Actualizar
+     - DELETE /{{recurso}}/{id} - Eliminar
+  
+  2. **Estructura de archivos**:
+     ```
+     api/
+     ├── main.py          # Punto de entrada
+     ├── routes/
+     │   └── {{recurso}}.py   # Rutas del recurso
+     ├── models/
+     │   └── {{recurso}}.py   # Modelo de datos
+     ├── schemas/
+     │   └── {{recurso}}.py   # Esquemas Pydantic
+     └── database.py      # Conexion DB
+     ```
+  
+  3. **Incluir**:
+     - Validacion de datos
+     - Manejo de errores
+     - Documentacion OpenAPI
+     - Ejemplos de uso
+  
+  4. **Buenas practicas**:
+     - Usar status codes apropiados
+     - Respuestas consistentes
+     - Logging basico
+
+# Templates por framework
+templates:
+  fastapi:
+    main: |
+      from fastapi import FastAPI
+      from routes import {{recurso}}
+      
+      app = FastAPI(
+          title="{{recurso}} API",
+          description="API REST para gestionar {{recurso}}",
+          version="1.0.0"
+      )
+      
+      app.include_router({{recurso}}.router)
+      
+      @app.get("/")
+      def root():
+          return {"message": "API funcionando", "docs": "/docs"}
+
+    route: |
+      from fastapi import APIRouter, HTTPException
+      from typing import List
+      from schemas.{{recurso}} import {{Recurso}}Create, {{Recurso}}Response
+      
+      router = APIRouter(prefix="/{{recurso}}", tags=["{{recurso}}"])
+      
+      # Base de datos simulada
+      db = []
+      
+      @router.get("/", response_model=List[{{Recurso}}Response])
+      def listar():
+          """Obtener todos los {{recurso}}"""
+          return db
+      
+      @router.get("/{id}", response_model={{Recurso}}Response)
+      def obtener(id: int):
+          """Obtener un {{recurso}} por ID"""
+          if id >= len(db):
+              raise HTTPException(status_code=404, detail="No encontrado")
+          return db[id]
+      
+      @router.post("/", response_model={{Recurso}}Response, status_code=201)
+      def crear(item: {{Recurso}}Create):
+          """Crear un nuevo {{recurso}}"""
+          db.append(item.dict())
+          return db[-1]
+      
+      @router.put("/{id}", response_model={{Recurso}}Response)
+      def actualizar(id: int, item: {{Recurso}}Create):
+          """Actualizar un {{recurso}}"""
+          if id >= len(db):
+              raise HTTPException(status_code=404, detail="No encontrado")
+          db[id] = item.dict()
+          return db[id]
+      
+      @router.delete("/{id}", status_code=204)
+      def eliminar(id: int):
+          """Eliminar un {{recurso}}"""
+          if id >= len(db):
+              raise HTTPException(status_code=404, detail="No encontrado")
+          db.pop(id)
+
+  express:
+    main: |
+      const express = require('express');
+      const {{recurso}}Routes = require('./routes/{{recurso}}');
+      
+      const app = express();
+      app.use(express.json());
+      
+      app.use('/{{recurso}}', {{recurso}}Routes);
+      
+      app.get('/', (req, res) => {
+        res.json({ message: 'API funcionando' });
+      });
+      
+      const PORT = process.env.PORT || 3000;
+      app.listen(PORT, () => {
+        console.log(`Servidor en puerto ${PORT}`);
+      });

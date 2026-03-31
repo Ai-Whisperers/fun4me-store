@@ -1,0 +1,347 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "pro-plan",
+  "products": [
+    {
+      "sku": "PP-DOG-ADULT-MED",
+      "name": "Pro Plan Adult Medium",
+      "description": "Alimento premium para perros adultos medianos con OptiHealth",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 585000,
+          "cost_price": 351000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/reduced_calorie_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-11/perros_exigent_pro_plan.png"
+      ],
+      "attributes": {
+        "age_range": "1-7 años",
+        "breed_size": "Mediano",
+        "main_ingredient": "Pollo"
+      }
+    },
+    {
+      "sku": "PP-DOG-ADULT-LARGE",
+      "name": "Pro Plan Adult Large",
+      "description": "Alimento premium para perros adultos grandes con glucosamina",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 175000,
+          "cost_price": 105000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 615000,
+          "cost_price": 369000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/active_mind_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/reduced_calorie_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-11/perros_exigent_pro_plan.png"
+      ],
+      "attributes": {
+        "age_range": "1-7 años",
+        "breed_size": "Grande",
+        "joint_support": "Glucosamina"
+      }
+    },
+    {
+      "sku": "PP-DOG-PUPPY-MED",
+      "name": "Pro Plan Puppy Medium",
+      "description": "Alimento para cachorros medianos con OptiStart y DHA",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 635000,
+          "cost_price": 381000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/reduced_calorie_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-11/perros_exigent_pro_plan.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "breed_size": "Mediano",
+        "dha": "Desarrollo cerebral"
+      }
+    },
+    {
+      "sku": "PP-DOG-PUPPY-LARGE",
+      "name": "Pro Plan Puppy Large",
+      "description": "Alimento para cachorros grandes con crecimiento controlado",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "15kg",
+          "base_price": 665000,
+          "cost_price": 399000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/active_mind_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/reduced_calorie_pro_plan.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 2 años",
+        "breed_size": "Grande",
+        "growth_control": true
+      }
+    },
+    {
+      "sku": "PP-DOG-SENSITIVE-SKIN",
+      "name": "Pro Plan Sensitive Skin & Stomach",
+      "description": "Alimento para perros con piel y estómago sensible",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "3kg",
+          "base_price": 198000,
+          "cost_price": 118800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "13.6kg",
+          "base_price": 685000,
+          "cost_price": 411000,
+          "sku_suffix": "-13.6KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/reduced_calorie_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-11/perros_exigent_pro_plan.png"
+      ],
+      "attributes": {
+        "special_need": "Piel y estómago sensible",
+        "protein_source": "Salmón"
+      }
+    },
+    {
+      "sku": "PP-DOG-PERFORMANCE",
+      "name": "Pro Plan Performance",
+      "description": "Alimento de alto rendimiento para perros activos y de trabajo",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 695000,
+          "cost_price": 417000,
+          "sku_suffix": "-15KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/active_mind_pro_plan.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/active_mind_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/adult_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/sensitive_skin_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/reduced_calorie_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/puppy_pro_plan.png"
+      ],
+      "attributes": {
+        "activity_level": "Alto",
+        "protein_content": "30%",
+        "fat_content": "20%"
+      }
+    },
+    {
+      "sku": "PP-CAT-ADULT",
+      "name": "Pro Plan Adult Cat",
+      "description": "Alimento premium para gatos adultos con OptiRenal",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 115000,
+          "cost_price": 69000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 205000,
+          "cost_price": 123000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "7.5kg",
+          "base_price": 445000,
+          "cost_price": 267000,
+          "sku_suffix": "-7.5KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optiprebio_0.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optiprebio_0.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optirenal.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optistar.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optifit.png",
+        "https://purina.com.py/sites/default/files/2022-08/adulto_pollo_alimento_humedo_frente_pro_plan.png"
+      ],
+      "attributes": {
+        "age_range": "1-7 años",
+        "main_ingredient": "Pollo"
+      }
+    },
+    {
+      "sku": "PP-CAT-KITTEN",
+      "name": "Pro Plan Kitten",
+      "description": "Alimento para gatitos con OptiStart y DHA",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-3KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optistar.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optistar.png",
+        "https://purina.com.py/sites/default/files/2022-08/kitten_pollo_alimento_humedo_frente_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optiprebio_0.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optirenal.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optifit.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Kitten"
+      }
+    },
+    {
+      "sku": "PP-CAT-STERILISED",
+      "name": "Pro Plan Sterilised Cat",
+      "description": "Alimento para gatos esterilizados con control de peso",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 119000,
+          "cost_price": 71400,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 215000,
+          "cost_price": 129000,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "7.5kg",
+          "base_price": 465000,
+          "cost_price": 279000,
+          "sku_suffix": "-7.5KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optifit.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optifit.png",
+        "https://purina.com.py/sites/default/files/2022-08/adulto_esterilizado_pollo_alimento_humedo_frente_pro_plan.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optiprebio_0.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optirenal.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optistar.png"
+      ],
+      "attributes": {
+        "special_need": "Esterilizado",
+        "weight_control": true
+      }
+    },
+    {
+      "sku": "PP-CAT-URINARY",
+      "name": "Pro Plan Urinary Cat",
+      "description": "Alimento para gatos con salud urinaria óptima",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1.5kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-1.5KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": "-3KG"
+        }
+      ],
+      "image_url": "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optritact.png",
+      "images": [
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optritact.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optirenal.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optifit.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optiprebio_0.png",
+        "https://purina.com.py/sites/default/files/2022-08/Purina%C2%AE-Proplan%C2%AE-Optistar.png"
+      ],
+      "attributes": {
+        "special_need": "Salud urinaria",
+        "ph_balanced": true
+      }
+    }
+  ]
+}

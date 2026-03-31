@@ -1,0 +1,122 @@
+# ===========================================
+# SKILL: Generar README
+# ===========================================
+# Genera un README.md profesional para proyectos
+
+name: generate-readme
+description: "Genera un README.md completo y profesional"
+version: "1.0.0"
+author: "Estudiantes FPUNA"
+
+# Cuando se activa este skill
+triggers:
+  - "/generate-readme"
+  - "/readme"
+  - "generar readme"
+  - "crear readme"
+
+# Parametros que acepta
+parameters:
+  - name: nombre_proyecto
+    type: string
+    required: true
+    description: "Nombre del proyecto"
+    
+  - name: descripcion
+    type: string
+    required: true
+    description: "Descripcion breve del proyecto"
+    
+  - name: tecnologias
+    type: array
+    required: false
+    description: "Lista de tecnologias usadas"
+    default: []
+    
+  - name: autor
+    type: string
+    required: false
+    description: "Nombre del autor"
+
+# Instrucciones para el agente
+instructions: |
+  Genera un README.md profesional que incluya:
+  
+  1. **Titulo y Badges** (si aplica)
+  2. **Descripcion** clara del proyecto
+  3. **Tabla de contenidos** (si es largo)
+  4. **Requisitos previos**
+  5. **Instalacion** paso a paso
+  6. **Uso** con ejemplos de codigo
+  7. **Estructura del proyecto**
+  8. **Contribucion** (opcional)
+  9. **Licencia**
+  10. **Contacto/Autor**
+  
+  REGLAS:
+  - Usa Markdown correctamente
+  - Incluye ejemplos de codigo con syntax highlighting
+  - Mantén un tono profesional pero accesible
+  - Si detectas el tipo de proyecto (web, CLI, API), adapta las secciones
+
+# Template base
+template: |
+  # {{nombre_proyecto}}
+  
+  > {{descripcion}}
+  
+  ## Tabla de Contenidos
+  
+  - [Requisitos](#requisitos)
+  - [Instalacion](#instalacion)
+  - [Uso](#uso)
+  - [Estructura](#estructura)
+  - [Autor](#autor)
+  
+  ## Requisitos
+  
+  - [Listar requisitos aqui]
+  
+  ## Instalacion
+  
+  ```bash
+  # Clonar el repositorio
+  git clone https://github.com/usuario/{{nombre_proyecto}}.git
+  
+  # Entrar al directorio
+  cd {{nombre_proyecto}}
+  
+  # Instalar dependencias
+  [comando de instalacion]
+  ```
+  
+  ## Uso
+  
+  ```bash
+  # Ejemplo de uso
+  [comando de ejecucion]
+  ```
+  
+  ## Estructura
+  
+  ```
+  {{nombre_proyecto}}/
+  ├── src/           # Codigo fuente
+  ├── tests/         # Tests
+  ├── docs/          # Documentacion
+  └── README.md      # Este archivo
+  ```
+  
+  ## Tecnologias
+  
+  {{#each tecnologias}}
+  - {{this}}
+  {{/each}}
+  
+  ## Autor
+  
+  {{autor}}
+  
+  ---
+  
+  Creado para FPUNA

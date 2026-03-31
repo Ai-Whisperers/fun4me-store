@@ -1,0 +1,150 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Global time-off types (tenant_id = null). Based on Paraguay labor law.",
+  "time_off_types": [
+    {
+      "name": "Vacaciones",
+      "code": "VAC",
+      "is_paid": true,
+      "max_days_per_year": 12,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#4CAF50"
+    },
+    {
+      "name": "Vacaciones (2-5 años)",
+      "code": "VAC2",
+      "is_paid": true,
+      "max_days_per_year": 18,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#43A047"
+    },
+    {
+      "name": "Vacaciones (5-10 años)",
+      "code": "VAC3",
+      "is_paid": true,
+      "max_days_per_year": 24,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#388E3C"
+    },
+    {
+      "name": "Vacaciones (+10 años)",
+      "code": "VAC4",
+      "is_paid": true,
+      "max_days_per_year": 30,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#2E7D32"
+    },
+    {
+      "name": "Enfermedad",
+      "code": "SICK",
+      "is_paid": true,
+      "max_days_per_year": null,
+      "requires_approval": false,
+      "requires_documentation": true,
+      "color": "#F44336"
+    },
+    {
+      "name": "Permiso Personal",
+      "code": "PERS",
+      "is_paid": false,
+      "max_days_per_year": 5,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#2196F3"
+    },
+    {
+      "name": "Maternidad",
+      "code": "MAT",
+      "is_paid": true,
+      "max_days_per_year": 84,
+      "requires_approval": true,
+      "requires_documentation": true,
+      "color": "#E91E63"
+    },
+    {
+      "name": "Paternidad",
+      "code": "PAT",
+      "is_paid": true,
+      "max_days_per_year": 3,
+      "requires_approval": true,
+      "requires_documentation": true,
+      "color": "#9C27B0"
+    },
+    {
+      "name": "Matrimonio",
+      "code": "MARR",
+      "is_paid": true,
+      "max_days_per_year": 3,
+      "requires_approval": true,
+      "requires_documentation": true,
+      "color": "#FF4081"
+    },
+    {
+      "name": "Duelo Familiar Directo",
+      "code": "BER1",
+      "is_paid": true,
+      "max_days_per_year": 4,
+      "requires_approval": false,
+      "requires_documentation": true,
+      "color": "#607D8B"
+    },
+    {
+      "name": "Duelo Familiar Extenso",
+      "code": "BER2",
+      "is_paid": true,
+      "max_days_per_year": 2,
+      "requires_approval": false,
+      "requires_documentation": true,
+      "color": "#78909C"
+    },
+    {
+      "name": "Licencia Sin Goce",
+      "code": "UNPD",
+      "is_paid": false,
+      "max_days_per_year": 30,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#FF9800"
+    },
+    {
+      "name": "Capacitación",
+      "code": "TRAIN",
+      "is_paid": true,
+      "max_days_per_year": 10,
+      "requires_approval": true,
+      "requires_documentation": true,
+      "color": "#00BCD4"
+    },
+    {
+      "name": "Cita Médica",
+      "code": "MED",
+      "is_paid": true,
+      "max_days_per_year": null,
+      "requires_approval": true,
+      "requires_documentation": true,
+      "color": "#FF5722"
+    },
+    {
+      "name": "Examen Académico",
+      "code": "EXAM",
+      "is_paid": true,
+      "max_days_per_year": 12,
+      "requires_approval": true,
+      "requires_documentation": true,
+      "color": "#795548"
+    },
+    {
+      "name": "Mudanza",
+      "code": "MOVE",
+      "is_paid": true,
+      "max_days_per_year": 1,
+      "requires_approval": true,
+      "requires_documentation": false,
+      "color": "#9E9E9E"
+    }
+  ]
+}

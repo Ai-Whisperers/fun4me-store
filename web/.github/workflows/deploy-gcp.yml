@@ -1,0 +1,86 @@
+name: Deploy to GCP
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  GCP_VM_IP: 34.151.201.27
+  GCP_VM_USER: ai-whisperers
+  APP_DIR: /home/ai-whisperers/Vete/web
+  PM2_APP_NAME: vete
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+      
+      - name: Install dependencies
+        working-directory: web
+        run: npm ci
+      
+      - name: Run linter
+        working-directory: web
+        run: npm run lint
+      
+      - name: Run unit tests
+        working-directory: web
+        run: npm run test:unit -- --silent
+        continue-on-error: true
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Deploy to GCP VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ env.GCP_VM_IP }}
+          username: ${{ env.GCP_VM_USER }}
+          key: ${{ secrets.GCP_SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ env.APP_DIR }}
+            
+            # Pull latest changes
+            git fetch origin main
+            git reset --hard origin/main
+            
+            # Install dependencies
+            npm ci --legacy-peer-deps
+            
+            # Build the app
+            npm run build
+            
+            # Restart with PM2
+            pm2 restart ${{ env.PM2_APP_NAME }} || pm2 start npm --name ${{ env.PM2_APP_NAME }} -- start
+            
+            # Save PM2 config
+            pm2 save
+            
+            echo "✅ Deployed successfully to GCP VM"
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Deployment Status
+        run: |
+          if [ "${{ needs.deploy.result }}" == "success" ]; then
+            echo "🚀 Deployment successful!"
+            echo "URL: http://${{ env.GCP_VM_IP }}:3000"
+          else
+            echo "❌ Deployment failed"
+            exit 1
+          fi

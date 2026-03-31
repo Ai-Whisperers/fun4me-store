@@ -1,0 +1,19 @@
+{
+  "displayInShowcase": true,
+  "testimonial": "Vetic transformo nuestra forma de trabajar. Ahora tenemos citas online, historial digital y nuestros clientes pueden ver todo desde su celular. En 3 meses aumentamos las citas un 35%.",
+  "shortTestimonial": "Aumentamos las citas un 35% en 3 meses.",
+  "joinedDate": "2024-06-01",
+  "metrics": {
+    "appointmentsGrowth": "+35%",
+    "onlineBookingsPercent": "65%",
+    "patientsRegistered": "250+",
+    "satisfactionScore": "4.9"
+  },
+  "contactPerson": {
+    "name": "Dra. Maria Gonzalez",
+    "role": "Directora",
+    "quote": "Por fin podemos competir con las grandes cadenas veterinarias."
+  },
+  "specialties": ["Clinica General", "Urgencias 24hs", "Cirugia", "Vacunacion"],
+  "highlights": ["Urgencias 24 horas", "Delivery de productos", "Tienda online"]
+}

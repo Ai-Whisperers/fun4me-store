@@ -1,0 +1,201 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "galpet",
+  "products": [
+    {
+      "sku": "GALPET-SHA-NEUTRO-500ML",
+      "name": "Shampoo Galpet Neutro 500ml",
+      "description": "Shampoo neutro para perros y gatos de uso frecuente",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "type": "Neutro",
+        "suitable_for": "Todo tipo de pelo"
+      }
+    },
+    {
+      "sku": "GALPET-SHA-CLORHEX-500ML",
+      "name": "Shampoo Galpet Clorhexidina 500ml",
+      "description": "Shampoo medicado con clorhexidina para problemas de piel",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "active_ingredient": "Clorhexidina 2%",
+        "type": "Medicado"
+      }
+    },
+    {
+      "sku": "GALPET-SHA-BLANCO-500ML",
+      "name": "Shampoo Galpet Pelo Blanco 500ml",
+      "description": "Shampoo blanqueador para mascotas de pelo blanco o claro",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 40000,
+          "cost_price": 24000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "type": "Blanqueador",
+        "suitable_for": "Pelo blanco o claro"
+      }
+    },
+    {
+      "sku": "PUPPY-SHA-500ML",
+      "name": "Shampoo Puppy 500ml",
+      "description": "Shampoo suave para cachorros y gatitos",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 38000,
+          "cost_price": 22800,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "type": "Suave",
+        "suitable_for": "Cachorros y gatitos"
+      }
+    },
+    {
+      "sku": "GALPET-SHA-COND-500ML",
+      "name": "Shampoo Conditioner Galpet 500ml",
+      "description": "Shampoo con acondicionador 2 en 1 para pelo suave y brillante",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "500ml",
+          "base_price": 42000,
+          "cost_price": 25200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "type": "2 en 1",
+        "suitable_for": "Todo tipo de pelo"
+      }
+    },
+    {
+      "sku": "GALPET-COLONIA-120ML",
+      "name": "Colonia Galpet 120ml",
+      "description": "Colonia perfumada para mascotas de larga duración",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "120ml",
+          "base_price": 28000,
+          "cost_price": 16800,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "type": "Perfume",
+        "fragrance": "Fresco"
+      }
+    },
+    {
+      "sku": "GALPET-TALCO-200G",
+      "name": "Talco Galpet 200g",
+      "description": "Talco perfumado para mascotas, absorbe olores y humedad",
+      "category_slug": "ACC-HIG-SHA",
+      "target_species": ["dog", "cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "200g",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+      "images": [
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg",
+        "https://agropecuariaelproductor.com/wp-content/uploads/2023/11/galpet-verde.jpg"
+      ],
+      "attributes": {
+        "type": "Talco perfumado"
+      }
+    }
+  ]
+}

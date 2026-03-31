@@ -1,0 +1,174 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "bravo",
+  "products": [
+    {
+      "sku": "BRAVO-ADULT-25KG",
+      "name": "Bravo Adulto 25kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "25kg",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+      "images": [
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/uploads/2020/11/bravo_original_2025-300x440.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-LIGHT-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-CORDEIRO-3D-DIR-300x440.png.webp"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "22%"
+      }
+    },
+    {
+      "sku": "BRAVO-ADULT-15KG",
+      "name": "Bravo Adulto 15kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 130000,
+          "cost_price": 78000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+      "images": [
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/uploads/2020/11/bravo_original_2025-300x440.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-LIGHT-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-CORDEIRO-3D-DIR-300x440.png.webp"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "22%"
+      }
+    },
+    {
+      "sku": "BRAVO-ADULT-8KG",
+      "name": "Bravo Adulto 8kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "8kg",
+          "base_price": 80000,
+          "cost_price": 48000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+      "images": [
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/uploads/2020/11/bravo_original_2025-300x440.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-LIGHT-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-CORDEIRO-3D-DIR-300x440.png.webp"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "22%"
+      }
+    },
+    {
+      "sku": "BRAVO-ADULT-4KG",
+      "name": "Bravo Adulto 4kg",
+      "description": "Alimento balanceado para perros adultos de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "4kg",
+          "base_price": 48000,
+          "cost_price": 28800,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-PEQUENAS-3D-DIR-300x440.png.webp",
+      "images": [
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-PEQUENAS-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/uploads/2020/11/bravo_original_2025-300x440.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-LIGHT-3D-DIR-300x440.png.webp"
+      ],
+      "attributes": {
+        "life_stage": "Adulto",
+        "protein": "22%"
+      }
+    },
+    {
+      "sku": "BRAVO-PUPPY-15KG",
+      "name": "Bravo Cachorro 15kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "15kg",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+      "images": [
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/uploads/2020/11/bravo_original_2025-300x440.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-LIGHT-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-CORDEIRO-3D-DIR-300x440.png.webp"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "27%"
+      }
+    },
+    {
+      "sku": "BRAVO-PUPPY-8KG",
+      "name": "Bravo Cachorro 8kg",
+      "description": "Alimento balanceado para cachorros en crecimiento",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "8kg",
+          "base_price": 90000,
+          "cost_price": 54000,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+      "images": [
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-BABY-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-FORMULA-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/uploads/2020/11/bravo_original_2025-300x440.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-LIGHT-3D-DIR-300x440.png.webp",
+        "https://www.alisul.com.br/wp-content/webp-express/webp-images/uploads/2020/11/BRAVO-CORDEIRO-3D-DIR-300x440.png.webp"
+      ],
+      "attributes": {
+        "life_stage": "Cachorro",
+        "protein": "27%"
+      }
+    }
+  ]
+}

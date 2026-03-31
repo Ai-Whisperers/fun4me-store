@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "littmann",
+  "products": [
+    {
+      "sku": "LIT-CLASSIC-III",
+      "name": "Littmann Classic III Estetoscopio",
+      "description": "Estetoscopio clásico para diagnóstico general",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Negro",
+          "base_price": 650000,
+          "cost_price": 390000,
+          "sku_suffix": "-BLK"
+        },
+        {
+          "size": "Azul Navy",
+          "base_price": 650000,
+          "cost_price": 390000,
+          "sku_suffix": "-NVY"
+        },
+        {
+          "size": "Borgoña",
+          "base_price": 650000,
+          "cost_price": 390000,
+          "sku_suffix": "-BRG"
+        }
+      ],
+      "image_url": "https://s7d9.scene7.com/is/image/mmmspinco/5624-01-HERO-01x?qlt=85&dpr=off",
+      "images": [
+        "https://s7d9.scene7.com/is/image/mmmspinco/5624-01-HERO-01x?qlt=85&dpr=off",
+        "https://s7d9.scene7.com/is/image/mmmspinco/5803_Classic_III_Black_Dancing?qlt=85&dpr=off",
+        "https://s7d9.scene7.com/is/image/mmmspinco/Classic-III_5806_04-AuxView_Angled?qlt=85&dpr=off"
+      ],
+      "attributes": {
+        "diaphragm": "Doble cara",
+        "tubing_length": "69cm",
+        "warranty_years": 5
+      }
+    },
+    {
+      "sku": "LIT-CARDIO-IV",
+      "name": "Littmann Cardiology IV Estetoscopio",
+      "description": "Estetoscopio premium para cardiología veterinaria",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Negro",
+          "base_price": 1250000,
+          "cost_price": 750000,
+          "sku_suffix": "-BLK"
+        },
+        {
+          "size": "Azul Navy",
+          "base_price": 1250000,
+          "cost_price": 750000,
+          "sku_suffix": "-NVY"
+        }
+      ],
+      "image_url": "https://s7d9.scene7.com/is/image/mmmspinco/6152-01-HERO-00?qlt=85&dpr=off",
+      "images": [
+        "https://s7d9.scene7.com/is/image/mmmspinco/6152-01-HERO-00?qlt=85&dpr=off",
+        "https://s7d9.scene7.com/is/image/mmmspinco/6152-01-ANGLE-01?qlt=85&dpr=off"
+      ],
+      "attributes": {
+        "diaphragm": "Doble cara sintonizable",
+        "tubing_length": "69cm",
+        "warranty_years": 7,
+        "acoustic_performance": "Superior"
+      }
+    },
+    {
+      "sku": "LIT-LIGHTWEIGHT",
+      "name": "Littmann Lightweight II S.E. Estetoscopio",
+      "description": "Estetoscopio ligero para uso general",
+      "category_slug": "CLI-EQU-DIA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "Negro",
+          "base_price": 350000,
+          "cost_price": 210000,
+          "sku_suffix": "-BLK"
+        }
+      ],
+      "image_url": "https://s7d9.scene7.com/is/image/mmmspinco/2450-01-HERO-00?qlt=85&dpr=off",
+      "images": [
+        "https://s7d9.scene7.com/is/image/mmmspinco/2450-01-HERO-00?qlt=85&dpr=off"
+      ],
+      "attributes": {
+        "weight": "118g",
+        "tubing_length": "71cm",
+        "warranty_years": 3
+      }
+    }
+  ]
+}

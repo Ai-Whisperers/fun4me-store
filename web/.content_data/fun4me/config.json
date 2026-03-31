@@ -1,0 +1,351 @@
+{
+  "id": "fun4me",
+  "name": "Fun4Me",
+  "tagline": "Tu tienda de placer - Hacemos delivery a todo el pais",
+  "contact": {
+    "whatsapp_number": "595981000000",
+    "phone_display": "+595 981 000 000",
+    "email": "hola@fun4me.com.py",
+    "address": "Herrera 875",
+    "city": "Asuncion",
+    "country": "Paraguay",
+    "google_maps_id": "ChIJxxxxxxxxxx",
+    "coordinates": {
+      "lat": -25.2867,
+      "lng": -57.6474
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/FUN4MEStore",
+    "instagram": "https://instagram.com/fun4me_store",
+    "tiktok": "",
+    "youtube": ""
+  },
+  "hours": {
+    "weekdays": "09:00 - 20:00",
+    "saturday": "09:00 - 18:00",
+    "sunday": "Cerrado",
+    "holidays": "Cerrado"
+  },
+  "settings": {
+    "currency": "PYG",
+    "currency_symbol": "Gs",
+    "locale": "es-PY",
+    "timezone": "America/Asuncion",
+    "emergency_24h": false,
+    "accepts_insurance": false,
+    "insurance_providers": [],
+    "delivery_enabled": true,
+    "delivery_minimum": 200000,
+    "delivery_zones": ["Asuncion", "Fernando de la Mora", "San Lorenzo", "Lambare", "Luque"],
+    "modules": {
+      "toxic_checker": false,
+      "age_calculator": false,
+      "growth_charts": false,
+      "vaccine_tracker": false,
+      "qr_tags": false,
+      "loyalty_program": false,
+      "online_store": true,
+      "booking": false,
+      "telemedicine": false,
+      "services_page": false
+    }
+  },
+  "branding": {
+    "logo_url": "/branding/fun4me/images/logo.svg",
+    "logo_dark_url": "/branding/fun4me/images/logo-white.svg",
+    "logo_width": 180,
+    "logo_height": 50,
+    "favicon_url": "/branding/fun4me/images/logo.svg",
+    "hero_image_url": "/branding/fun4me/images/hero-bg.svg",
+    "og_image_url": "/branding/fun4me/images/og-image.svg"
+  },
+  "ui_labels": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Productos",
+      "about": "Nosotros",
+      "store": "Tienda",
+      "book": "Contacto",
+      "contact": "Contacto",
+      "owners_zone": "Mi Cuenta",
+      "login_profile": "Ingresar",
+      "dashboard": "Mi Portal",
+      "profile": "Mi Perfil",
+      "my_pets": "Mis Compras",
+      "back": "Volver",
+      "book_btn": "Contactar",
+      "emergency_btn": "WhatsApp"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Politica de Privacidad",
+      "terms": "Terminos y Condiciones",
+      "contact_us": "Contactanos",
+      "follow_us": "Siguenos",
+      "newsletter_title": "Suscribete",
+      "newsletter_placeholder": "Tu email",
+      "newsletter_button": "Enviar"
+    },
+    "home": {
+      "visit_us": "Visitanos",
+      "features_badge": "Nuestras Ventajas",
+      "features_title": "Por que elegirnos?",
+      "features_subtitle": "Discrecion, calidad y variedad en cada compra.",
+      "testimonials_badge": "Opiniones",
+      "address_label": "Direccion",
+      "phone_label": "Telefono",
+      "schedule_label": "Horarios",
+      "schedule_text": "Lun-Vie: {hours}",
+      "whatsapp_label": "WhatsApp",
+      "whatsapp_text": "Atencion personalizada",
+      "tools_badge": "Productos",
+      "contact_badge": "Contacto",
+      "map_button": "Ver ubicacion en Google Maps",
+      "hours_title": "Horarios de Atencion",
+      "emergency_title": "WhatsApp",
+      "emergency_text": "Consultanos por WhatsApp para atencion personalizada.",
+      "emergency_cta": "Enviar Mensaje"
+    },
+    "services": {
+      "meta_title": "Nuestros Productos",
+      "meta_subtitle": "Productos de calidad para tu placer y bienestar.",
+      "online_badge": "Disponible Online",
+      "emergency_badge": "Nuevo",
+      "description_label": "Descripcion:",
+      "includes_label": "Incluye:",
+      "duration_label": "Entrega estimada:",
+      "table_variant": "Producto / Variante",
+      "table_price": "Precio",
+      "book_floating_btn": "Comprar",
+      "filter_all": "Todos",
+      "filter_medical": "Vibradores",
+      "filter_surgery": "Parejas",
+      "filter_diagnostics": "Lubricantes",
+      "filter_wellness": "Bienestar",
+      "filter_grooming": "Lenceria",
+      "view_details": "Ver Detalles",
+      "book_now": "Comprar",
+      "contact_for_price": "Consultar Precio"
+    },
+    "about": {
+      "team_title": "Nuestro Equipo",
+      "intro_badge": "Nuestra Historia",
+      "mission_title": "Nuestra Mision",
+      "vision_title": "Nuestra Vision",
+      "values_title": "Nuestros Valores",
+      "certifications_title": "Garantias",
+      "facilities_title": "Nuestras Instalaciones"
+    },
+    "portal": {
+      "dashboard": {
+        "staff_title": "Portal Admin",
+        "owner_title": "Mis Compras",
+        "welcome": "Bienvenido/a, {name}",
+        "quick_actions": "Acciones Rapidas",
+        "recent_activity": "Actividad Reciente",
+        "stats": {
+          "patients": "Pedidos Totales",
+          "vaccines": "Pedidos Pendientes",
+          "upcoming_appointments": "Envios Programados",
+          "loyalty_points": "Puntos Acumulados"
+        }
+      },
+      "empty_states": {
+        "no_pets": "Aun no tienes compras registradas",
+        "no_pets_desc": "Explora nuestra tienda y realiza tu primera compra.",
+        "add_pet_btn": "Ir a la Tienda",
+        "no_vaccines": "Sin pedidos pendientes.",
+        "no_appointments": "No tienes envios programados.",
+        "no_records": "Sin historial disponible."
+      },
+      "pet_card": {
+        "weight": "Cantidad",
+        "chip": "Codigo",
+        "age": "Fecha",
+        "breed": "Tipo",
+        "vaccines": "Estado",
+        "next_vaccine": "Proximo Envio",
+        "add_vaccine": "Agregar",
+        "view_history": "Ver Historial",
+        "download_pdf": "Descargar Comprobante",
+        "edit_pet": "Editar",
+        "qr_code": "Codigo QR"
+      },
+      "appointment_widget": {
+        "title": "Mis Pedidos",
+        "empty": "No hay pedidos programados",
+        "new_appointment": "Nueva Compra",
+        "status": {
+          "confirmed": "Confirmado",
+          "pending": "Pendiente",
+          "cancelled": "Cancelado",
+          "completed": "Entregado"
+        }
+      },
+      "forms": {
+        "pet_name": "Nombre",
+        "pet_species": "Categoria",
+        "pet_breed": "Tipo",
+        "pet_birthdate": "Fecha",
+        "pet_weight": "Cantidad",
+        "pet_color": "Color",
+        "pet_gender": "Variante",
+        "pet_neutered": "Disponible?",
+        "pet_microchip": "Codigo",
+        "species_dog": "Vibradores",
+        "species_cat": "Lubricantes",
+        "species_bird": "Lenceria",
+        "species_rabbit": "Accesorios",
+        "species_other": "Otro",
+        "gender_male": "Opcion A",
+        "gender_female": "Opcion B",
+        "yes": "Si",
+        "no": "No"
+      }
+    },
+    "store": {
+      "title": "Tienda",
+      "back_home": "Volver al Inicio",
+      "hero_title": "Tu Placer, Nuestra Prioridad",
+      "hero_subtitle": "Encuentra productos de calidad con envio discreto a todo Paraguay. Envio gratis en compras mayores a 200.000 Gs.",
+      "search_placeholder": "Buscar productos...",
+      "all_categories": "Todas las categorias",
+      "empty_state": "No hay productos disponibles en esta categoria.",
+      "no_results": "No se encontraron productos.",
+      "sort_by": "Ordenar por",
+      "sort_popular": "Mas Populares",
+      "sort_price_low": "Menor Precio",
+      "sort_price_high": "Mayor Precio",
+      "sort_newest": "Mas Nuevos",
+      "product_card": {
+        "add": "Agregar",
+        "added": "Agregado",
+        "out_of_stock": "Agotado",
+        "view_details": "Ver Detalles"
+      },
+      "categories": {
+        "all": "Todos",
+        "food": "Vibradores",
+        "medicine": "Lubricantes",
+        "accessories": "Accesorios",
+        "hygiene": "Higiene",
+        "toys": "Parejas"
+      }
+    },
+    "cart": {
+      "title": "Mi Carrito",
+      "empty": "Tu carrito esta vacio.",
+      "empty_cta": "Explorar Tienda",
+      "item_service": "Servicio",
+      "item_product": "Producto",
+      "quantity": "Cantidad",
+      "unit_price": "Precio Unitario",
+      "subtotal": "Subtotal",
+      "clear_btn": "Vaciar Carrito",
+      "total_label": "Total:",
+      "continue_shopping": "Seguir Comprando",
+      "checkout_btn": "Proceder al Pago",
+      "delivery_note": "Envio 100% discreto. Envio gratis en compras mayores a 200.000 Gs."
+    },
+    "checkout": {
+      "title": "Resumen del Pedido",
+      "empty": "No hay productos en el carrito.",
+      "customer_info": "Datos del Cliente",
+      "delivery_info": "Datos de Entrega",
+      "payment_method": "Metodo de Pago",
+      "order_summary": "Resumen",
+      "print_btn": "Imprimir Comprobante",
+      "whatsapp_btn": "Confirmar por WhatsApp",
+      "back_cart": "Volver al Carrito",
+      "order_notes": "Notas Adicionales",
+      "order_notes_placeholder": "Indicaciones especiales para tu pedido..."
+    },
+    "booking": {
+      "title": "Contactar",
+      "select_service": "Selecciona un Producto",
+      "select_date": "Selecciona Fecha",
+      "select_time": "Selecciona Horario",
+      "select_pet": "Selecciona Categoria",
+      "your_info": "Tus Datos",
+      "confirm_btn": "Enviar Consulta",
+      "success_title": "Consulta Enviada!",
+      "success_message": "Te responderemos por WhatsApp pronto.",
+      "available_slots": "Horarios Disponibles",
+      "no_slots": "No hay horarios disponibles para esta fecha."
+    },
+    "common": {
+      "loading": "Cargando...",
+      "error": "Ocurrio un error",
+      "retry": "Reintentar",
+      "actions": {
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "confirm": "Confirmar",
+        "close": "Cerrar",
+        "back": "Volver",
+        "next": "Siguiente",
+        "submit": "Enviar",
+        "search": "Buscar",
+        "filter": "Filtrar",
+        "clear": "Limpiar",
+        "download": "Descargar",
+        "share": "Compartir",
+        "copy": "Copiar"
+      },
+      "validation": {
+        "required": "Este campo es requerido",
+        "invalid_email": "Email invalido",
+        "invalid_phone": "Telefono invalido",
+        "min_length": "Minimo {n} caracteres",
+        "max_length": "Maximo {n} caracteres"
+      }
+    },
+    "auth": {
+      "login_title": "Iniciar Sesion",
+      "signup_title": "Crear Cuenta",
+      "email_label": "Correo Electronico",
+      "password_label": "Contrasena",
+      "confirm_password": "Confirmar Contrasena",
+      "forgot_password": "Olvidaste tu contrasena?",
+      "login_btn": "Ingresar",
+      "signup_btn": "Registrarse",
+      "or_divider": "o continua con",
+      "google_btn": "Google",
+      "no_account": "No tienes cuenta?",
+      "has_account": "Ya tienes cuenta?",
+      "logout": "Cerrar Sesion"
+    },
+    "tools": {
+      "toxic_food": {
+        "title": "Guia de Productos",
+        "subtitle": "Encuentra el producto perfecto para ti.",
+        "search_placeholder": "Escribe el nombre del producto...",
+        "safe": "DISPONIBLE",
+        "toxic": "AGOTADO",
+        "caution": "ULTIMAS UNIDADES",
+        "disclaimer": "Consulta con nosotros para asesoramiento personalizado."
+      },
+      "age_calculator": {
+        "title": "Calculadora de Envio",
+        "subtitle": "Calcula el costo de envio a tu zona.",
+        "pet_age_label": "Codigo postal",
+        "pet_size_label": "Tamano del paquete",
+        "size_small": "Pequeno",
+        "size_medium": "Mediano",
+        "size_large": "Grande",
+        "result_prefix": "El costo de envio es",
+        "result_suffix": "guaranies"
+      }
+    },
+    "errors": {
+      "404_title": "Pagina no encontrada",
+      "404_message": "La pagina que buscas no existe.",
+      "500_title": "Error del servidor",
+      "500_message": "Ocurrio un error. Intenta nuevamente.",
+      "go_home": "Volver al Inicio"
+    }
+  }
+}

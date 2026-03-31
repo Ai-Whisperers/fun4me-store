@@ -1,0 +1,70 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Shopping carts with items for testing cart abandonment and persistence",
+  "store_carts": [
+    {
+      "id": "cart-001-terrapet",
+      "tenant_id": "terrapet",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440001",
+      "items": [
+        {
+          "product_id": "prod-rc-dog-adult-med-15kg",
+          "sku": "RC-DOG-ADULT-MED-15KG",
+          "name": "Royal Canin Medium Adult 15kg",
+          "quantity": 1,
+          "price": 485000,
+          "image_url": "/products/royal-canin-adult.jpg"
+        },
+        {
+          "product_id": "prod-nexgard-m-3",
+          "sku": "NEXGARD-M-3",
+          "name": "NexGard Mediano (10-25kg) x3",
+          "quantity": 2,
+          "price": 165000,
+          "image_url": "/products/nexgard-m.jpg"
+        }
+      ],
+      "updated_at": "{{hoursAgo(2)}}"
+    },
+    {
+      "id": "cart-002-terrapet",
+      "tenant_id": "terrapet",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440006",
+      "items": [
+        {
+          "product_id": "prod-hills-sd-adult-12kg",
+          "sku": "HILLS-SD-ADULT-12KG",
+          "name": "Hills Science Diet Adult 12kg",
+          "quantity": 1,
+          "price": 520000,
+          "image_url": "/products/hills-adult.jpg"
+        }
+      ],
+      "updated_at": "{{daysAgo(1)}}"
+    },
+    {
+      "id": "cart-003-terrapet",
+      "tenant_id": "terrapet",
+      "customer_id": "550e8400-e29b-41d4-a716-446655440007",
+      "items": [
+        {
+          "product_id": "prod-rc-cat-adult-4kg",
+          "sku": "RC-CAT-ADULT-4KG",
+          "name": "Royal Canin Cat Adult 4kg",
+          "quantity": 2,
+          "price": 195000,
+          "image_url": "/products/royal-canin-cat.jpg"
+        },
+        {
+          "product_id": "prod-nexgard-s-3",
+          "sku": "NEXGARD-S-3",
+          "name": "NexGard Pequeño (2-4kg) x3",
+          "quantity": 1,
+          "price": 145000,
+          "image_url": "/products/nexgard-s.jpg"
+        }
+      ],
+      "updated_at": "{{daysAgo(3)}}"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "../_schemas/reference.schema.json",
+  "insurance_providers": [
+    {
+      "name": "PetPlan",
+      "code": "PETPLAN",
+      "country": "USA",
+      "phone": "+1 866-467-3875",
+      "email": "info@petplan.com",
+      "claims_email": "claims@petplan.com",
+      "website": "https://petplan.com",
+      "coverage_types": ["accident", "illness", "wellness"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "Embrace Pet Insurance",
+      "code": "EMBRACE",
+      "country": "USA",
+      "phone": "+1 800-511-9172",
+      "email": "info@embracepet.com",
+      "claims_email": "claims@embracepet.com",
+      "website": "https://embracepet.com",
+      "coverage_types": ["accident", "illness", "wellness", "dental"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "Nationwide Pet",
+      "code": "NATIONWIDE",
+      "country": "USA",
+      "phone": "+1 877-738-7874",
+      "email": "info@nationwide.com",
+      "claims_email": "petclaims@nationwide.com",
+      "website": "https://nationwide.com/pet",
+      "coverage_types": ["accident", "illness", "wellness", "preventive"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "Trupanion",
+      "code": "TRUPANION",
+      "country": "USA",
+      "phone": "+1 855-591-3100",
+      "email": "info@trupanion.com",
+      "claims_email": "claims@trupanion.com",
+      "website": "https://trupanion.com",
+      "coverage_types": ["accident", "illness"],
+      "direct_billing": true,
+      "is_active": true
+    },
+    {
+      "name": "Healthy Paws",
+      "code": "HEALTHYPAWS",
+      "country": "USA",
+      "phone": "+1 855-898-8991",
+      "email": "info@healthypaws.com",
+      "claims_email": "claims@healthypaws.com",
+      "website": "https://healthypaws.com",
+      "coverage_types": ["accident", "illness"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "ASPCA Pet Insurance",
+      "code": "ASPCA",
+      "country": "USA",
+      "phone": "+1 888-716-1203",
+      "email": "info@aspcapetinsurance.com",
+      "claims_email": "claims@aspcapetinsurance.com",
+      "website": "https://aspcapetinsurance.com",
+      "coverage_types": ["accident", "illness", "preventive"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "Mapfre Seguros Paraguay",
+      "code": "MAPFRE_PY",
+      "country": "Paraguay",
+      "phone": "+595 21 6174000",
+      "email": "info@mapfre.com.py",
+      "claims_email": "reclamos@mapfre.com.py",
+      "website": "https://mapfre.com.py",
+      "coverage_types": ["accident", "illness"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "Sancor Seguros Paraguay",
+      "code": "SANCOR_PY",
+      "country": "Paraguay",
+      "phone": "+595 21 4180900",
+      "email": "info@sancorseguros.com.py",
+      "website": "https://sancorseguros.com.py",
+      "coverage_types": ["accident"],
+      "direct_billing": false,
+      "is_active": true
+    },
+    {
+      "name": "Otro Seguro",
+      "code": "OTHER",
+      "country": "Paraguay",
+      "phone": null,
+      "email": null,
+      "claims_email": null,
+      "website": null,
+      "coverage_types": [],
+      "direct_billing": false,
+      "is_active": true
+    }
+  ]
+}

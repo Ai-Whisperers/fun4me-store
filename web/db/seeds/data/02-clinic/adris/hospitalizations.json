@@ -1,0 +1,161 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Hospitalizations demonstrate the full hospitalization workflow with vitals, medications, and feeding tracking",
+  "hospitalizations": [
+    {
+      "id": "hosp-001-terrapet",
+      "tenant_id": "terrapet",
+      "pet_id": "660e8400-e29b-41d4-a716-446655440004",
+      "kennel_id": "1",
+      "admitted_at": "2024-11-15T17:00:00Z",
+      "status": "discharged",
+      "acuity_level": "critical",
+      "discharged_at": "2024-11-18T10:00:00Z",
+      "reason_for_admission": "Crisis respiratoria por braquicefalia",
+      "discharge_diagnosis": "Síndrome braquicefálico resuelto",
+      "discharge_instructions": "Reposo 7 días. Continuar medicación por 5 días. Control en 48 horas.",
+      "vet_id": "550e8400-e29b-41d4-a716-446655440005"
+    },
+    {
+      "id": "hosp-002-terrapet",
+      "tenant_id": "terrapet",
+      "pet_id": "660e8400-e29b-41d4-a716-446655440001",
+      "kennel_id": "2",
+      "admitted_at": "2024-05-20T14:00:00Z",
+      "status": "discharged",
+      "acuity_level": "normal",
+      "discharged_at": "2024-05-22T09:00:00Z",
+      "reason_for_admission": "Cirugía de esterilización",
+      "discharge_diagnosis": "Ovariohisterectomía sin complicaciones",
+      "discharge_instructions": "Puntos se retiran en 10 días. Actividad restringida 7 días. Control post-operatorio en 3 días.",
+      "vet_id": "550e8400-e29b-41d4-a716-446655440004"
+    },
+    {
+      "id": "hosp-003-terrapet",
+      "tenant_id": "terrapet",
+      "pet_id": "660e8400-e29b-41d4-a716-446655440003",
+      "kennel_id": "3",
+      "admitted_at": "2024-12-15T08:00:00Z",
+      "status": "admitted",
+      "acuity_level": "normal",
+      "reason_for_admission": "Deshidratación y vómitos persistentes",
+      "vet_id": "550e8400-e29b-41d4-a716-446655440004"
+    },
+    {
+      "id": "hosp-004-terrapet",
+      "tenant_id": "terrapet",
+      "pet_id": "660e8400-e29b-41d4-a716-446655440009",
+      "kennel_id": "KG1",
+      "admitted_at": "2024-12-20T13:00:00Z",
+      "status": "admitted",
+      "acuity_level": "normal",
+      "reason_for_admission": "Cirugía de castración programada",
+      "vet_id": "550e8400-e29b-41d4-a716-446655440005"
+    }
+  ],
+  "hospitalization_vitals": [
+    {
+      "id": "hosp-vitals-001-terrapet",
+      "hospitalization_id": "hosp-001-terrapet",
+      "recorded_at": "2024-11-15T18:00:00Z",
+      "temperature": 39.1,
+      "heart_rate": 120,
+      "respiratory_rate": 35,
+      "pain_score": 3,
+      "recorded_by": "550e8400-e29b-41d4-a716-446655440005"
+    },
+    {
+      "id": "hosp-vitals-002-terrapet",
+      "hospitalization_id": "hosp-001-terrapet",
+      "recorded_at": "2024-11-15T22:00:00Z",
+      "temperature": 38.8,
+      "heart_rate": 95,
+      "respiratory_rate": 25,
+      "pain_score": 2,
+      "recorded_by": "550e8400-e29b-41d4-a716-446655440005"
+    },
+    {
+      "id": "hosp-vitals-003-terrapet",
+      "hospitalization_id": "hosp-003-terrapet",
+      "recorded_at": "2024-12-15T10:00:00Z",
+      "temperature": 38.4,
+      "heart_rate": 180,
+      "respiratory_rate": 45,
+      "pain_score": 1,
+      "weight_kg": 4.1,
+      "recorded_by": "550e8400-e29b-41d4-a716-446655440004"
+    },
+    {
+      "id": "hosp-vitals-004-terrapet",
+      "hospitalization_id": "hosp-004-terrapet",
+      "recorded_at": "2024-12-20T15:00:00Z",
+      "temperature": 38.2,
+      "heart_rate": 85,
+      "respiratory_rate": 20,
+      "pain_score": 2,
+      "recorded_by": "550e8400-e29b-41d4-a716-446655440005"
+    }
+  ],
+  "hospitalization_medications": [
+    {
+      "id": "hosp-med-001-terrapet",
+      "hospitalization_id": "hosp-001-terrapet",
+      "medication_name": "Dexametasona",
+      "dose": "0.5mg/kg",
+      "route": "IV",
+      "frequency": "BID",
+      "administered_at": "2024-11-15T17:30:00Z",
+      "administered_by": "550e8400-e29b-41d4-a716-446655440005"
+    },
+    {
+      "id": "hosp-med-002-terrapet",
+      "hospitalization_id": "hosp-001-terrapet",
+      "medication_name": "Acepromazina",
+      "dose": "0.02mg/kg",
+      "route": "IM",
+      "frequency": "SID",
+      "administered_at": "2024-11-15T17:30:00Z",
+      "administered_by": "550e8400-e29b-41d4-a716-446655440005"
+    },
+    {
+      "id": "hosp-med-003-terrapet",
+      "hospitalization_id": "hosp-003-terrapet",
+      "medication_name": "Metoclopramida",
+      "dose": "0.2mg/kg",
+      "route": "SC",
+      "frequency": "TID",
+      "administered_at": "2024-12-15T08:30:00Z",
+      "administered_by": "550e8400-e29b-41d4-a716-446655440004"
+    },
+    {
+      "id": "hosp-med-004-terrapet",
+      "hospitalization_id": "hosp-003-terrapet",
+      "medication_name": "Fluidoterapia",
+      "dose": "50ml/kg/día",
+      "route": "SC",
+      "frequency": "SID",
+      "administered_at": "2024-12-15T09:00:00Z",
+      "administered_by": "550e8400-e29b-41d4-a716-446655440004"
+    }
+  ],
+  "hospitalization_feedings": [
+    {
+      "id": "hosp-feed-001-terrapet",
+      "hospitalization_id": "hosp-003-terrapet",
+      "food_type": "Dieta blanda veterinaria",
+      "amount": "50g",
+      "fed_at": "2024-12-15T12:00:00Z",
+      "fed_by": "550e8400-e29b-41d4-a716-446655440004",
+      "notes": "Comió completo"
+    },
+    {
+      "id": "hosp-feed-002-terrapet",
+      "hospitalization_id": "hosp-003-terrapet",
+      "food_type": "Dieta blanda veterinaria",
+      "amount": "30g",
+      "fed_at": "2024-12-15T18:00:00Z",
+      "fed_by": "550e8400-e29b-41d4-a716-446655440004",
+      "notes": "Comió la mitad, dejó resto"
+    }
+  ]
+}

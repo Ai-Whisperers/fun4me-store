@@ -1,0 +1,20 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="parGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e" />
+      <stop offset="100%" style="stop-color:#16213e" />
+    </linearGradient>
+    <radialGradient id="parGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#parGrad)"/>
+  <ellipse cx="300" cy="200" rx="200" ry="150" fill="url(#parGlow)"/>
+  <!-- Heart icon -->
+  <g transform="translate(260, 130)" opacity="0.5">
+    <path d="M40 20 Q40 0 60 0 Q80 0 80 20 Q80 0 100 0 Q120 0 120 20 Q120 50 80 80 Q40 50 40 20 Z" fill="#E91E63"/>
+  </g>
+  <text x="300" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" opacity="0.9">Para Parejas</text>
+  <text x="300" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#E91E63" opacity="0.8">Juguetes disenados para compartir</text>
+</svg>

@@ -1,0 +1,193 @@
+{
+  "$schema": "../_schemas/store.schema.json",
+  "description": "Local brands available at Veterinaria Adris - Paraguay market",
+  "brands": [
+    {
+      "slug": "dominal",
+      "name": "Dominal",
+      "brand_type": "farmacia",
+      "description": "Antiparasitario interno de amplio espectro para perros y gatos",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Suspensión oral antiparasitaria"]
+    },
+    {
+      "slug": "afoxopet",
+      "name": "Afoxopet",
+      "brand_type": "farmacia",
+      "description": "Antiparasitario masticable contra pulgas y garrapatas",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "standard",
+      "is_veterinary_exclusive": true,
+      "key_products": ["Comprimido masticable mensual"]
+    },
+    {
+      "slug": "flurapet",
+      "name": "Flurapet",
+      "brand_type": "farmacia",
+      "description": "Antiparasitario de amplio espectro con acción de 3 meses",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "standard",
+      "is_veterinary_exclusive": true,
+      "key_products": ["Comprimido masticable trimestral"]
+    },
+    {
+      "slug": "iverm-antel",
+      "name": "Iverm-Antel",
+      "brand_type": "farmacia",
+      "description": "Ivermectina inyectable para tratamiento de parásitos",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": true,
+      "key_products": ["Ivermectina 1% inyectable"]
+    },
+    {
+      "slug": "fipromet",
+      "name": "Fipromet",
+      "brand_type": "farmacia",
+      "description": "Pipeta antiparasitaria externa con Fipronil",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Pipeta spot-on"]
+    },
+    {
+      "slug": "fintox",
+      "name": "Fintox",
+      "brand_type": "farmacia",
+      "description": "Antiparasitario interno en tabletas",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Tabletas antiparasitarias"]
+    },
+    {
+      "slug": "shooter",
+      "name": "Shooter",
+      "brand_type": "farmacia",
+      "description": "Spray antiparasitario externo de acción rápida",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Spray antiparasitario"]
+    },
+    {
+      "slug": "collar-tea",
+      "name": "Collar Tea",
+      "brand_type": "farmacia",
+      "description": "Collar antiparasitario natural con aceite de árbol de té",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Collar antiparasitario natural"]
+    },
+    {
+      "slug": "galpet",
+      "name": "Galpet",
+      "brand_type": "higiene",
+      "description": "Línea completa de productos de higiene para mascotas",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Shampoos", "Colonias", "Talcos"]
+    },
+    {
+      "slug": "sandcat",
+      "name": "Sand Cat",
+      "brand_type": "accesorios",
+      "description": "Arena sanitaria aglomerante para gatos",
+      "country_origin": "Paraguay",
+      "specialties": ["gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Arena aglomerante"]
+    },
+    {
+      "slug": "nutrimix",
+      "name": "Nutrimix",
+      "brand_type": "alimentos",
+      "description": "Alimento balanceado económico para perros",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Balanceado Adulto", "Balanceado Cachorro"]
+    },
+    {
+      "slug": "bravo",
+      "name": "Bravo",
+      "brand_type": "alimentos",
+      "description": "Alimento balanceado de calidad para perros",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Balanceado Adulto", "Balanceado Cachorro"]
+    },
+    {
+      "slug": "hop",
+      "name": "Hop!",
+      "brand_type": "alimentos",
+      "description": "Alimento premium para perros con variedad de sabores",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "standard",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Adulto Carne", "Adulto Pollo", "Cachorro"]
+    },
+    {
+      "slug": "belcats",
+      "name": "BelCats",
+      "brand_type": "alimentos",
+      "description": "Alimento balanceado especialmente formulado para gatos",
+      "country_origin": "Paraguay",
+      "specialties": ["gatos"],
+      "market_segment": "standard",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Adulto", "Gatitos"]
+    },
+    {
+      "slug": "belcan",
+      "name": "BelCan",
+      "brand_type": "alimentos",
+      "description": "Alimento balanceado de calidad para perros de todas las razas",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "standard",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Adulto", "Cachorro"]
+    },
+    {
+      "slug": "wet-complete",
+      "name": "Wet Complete",
+      "brand_type": "alimentos",
+      "description": "Alimento húmedo completo en sobres para perros y gatos",
+      "country_origin": "Paraguay",
+      "specialties": ["perros", "gatos"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Sobres húmedos varios sabores"]
+    },
+    {
+      "slug": "wet-balanced",
+      "name": "Wet Balanced",
+      "brand_type": "alimentos",
+      "description": "Alimento húmedo balanceado en sobres",
+      "country_origin": "Paraguay",
+      "specialties": ["perros"],
+      "market_segment": "economy",
+      "is_veterinary_exclusive": false,
+      "key_products": ["Sobres húmedos carne y pollo"]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "PetLife discount coupons for multi-tenant testing",
+  "store_coupons": [
+    {
+      "id": "coup-001-petlife",
+      "tenant_id": "petlife",
+      "code": "CARDIO10",
+      "name": "Descuento Cardiología",
+      "description": "10% de descuento en productos cardiológicos",
+      "type": "percentage",
+      "value": 10,
+      "minimum_order_amount": 200000,
+      "usage_limit": 100,
+      "usage_limit_per_user": 3,
+      "used_count": 12,
+      "starts_at": "{{daysAgo(60)}}",
+      "expires_at": "{{daysFromNow(120)}}",
+      "is_active": true,
+      "created_by": "550e8400-e29b-41d4-a716-446655440008",
+      "created_at": "{{daysAgo(60)}}"
+    },
+    {
+      "id": "coup-002-petlife",
+      "tenant_id": "petlife",
+      "code": "PETLIFE20",
+      "name": "Descuento PetLife",
+      "description": "20% de descuento por ser cliente PetLife",
+      "type": "percentage",
+      "value": 20,
+      "minimum_order_amount": 300000,
+      "usage_limit": 50,
+      "usage_limit_per_user": 1,
+      "used_count": 8,
+      "starts_at": "{{daysAgo(30)}}",
+      "expires_at": "{{daysFromNow(60)}}",
+      "is_active": true,
+      "created_by": "550e8400-e29b-41d4-a716-446655440008",
+      "created_at": "{{daysAgo(30)}}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit validation..."
+
+# Run lint-staged (formatting and linting)
+npx lint-staged
+
+# Run custom validation script
+node ../scripts/pre-commit-validate.js
+
+# Exit with the result of validation
+exit $?

@@ -1,0 +1,25 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dilGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e" />
+      <stop offset="100%" style="stop-color:#16213e" />
+    </linearGradient>
+    <radialGradient id="dilGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#dilGrad)"/>
+  <ellipse cx="300" cy="200" rx="200" ry="150" fill="url(#dilGlow)"/>
+  <!-- Adjustments icon -->
+  <g transform="translate(260, 130)" opacity="0.5">
+    <rect x="0" y="20" width="80" height="8" rx="4" fill="#E91E63"/>
+    <rect x="0" y="46" width="80" height="8" rx="4" fill="#E91E63"/>
+    <rect x="0" y="72" width="80" height="8" rx="4" fill="#E91E63"/>
+    <circle cx="20" cy="24" r="12" fill="#E91E63"/>
+    <circle cx="60" cy="50" r="12" fill="#E91E63"/>
+    <circle cx="35" cy="76" r="12" fill="#E91E63"/>
+  </g>
+  <text x="300" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" opacity="0.9">Dildos</text>
+  <text x="300" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#E91E63" opacity="0.8">Realistas, fantasy y de todas las formas</text>
+</svg>

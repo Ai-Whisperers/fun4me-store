@@ -1,0 +1,8 @@
+{
+  "track_id": "implement_global_rate_limiting_20251223",
+  "type": "bug",
+  "status": "new",
+  "created_at": "2025-12-23T12:00:00Z",
+  "updated_at": "2025-12-23T12:00:00Z",
+  "description": "Implement global API rate limiting to protect the application from abuse."
+}

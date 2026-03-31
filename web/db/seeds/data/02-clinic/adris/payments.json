@@ -1,0 +1,84 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Payment records linked to invoices",
+  "payments": [
+    {
+      "id": "pay-001-terrapet",
+      "tenant_id": "terrapet",
+      "invoice_id": "inv-001-terrapet",
+      "amount": 253000,
+      "payment_method_name": "Efectivo",
+      "payment_date": "{{daysAgo(10)}}",
+      "status": "completed",
+      "reference_number": null,
+      "notes": "Pago en efectivo",
+      "created_at": "{{daysAgo(10)}}",
+      "processed_at": "{{daysAgo(10)}}"
+    },
+    {
+      "id": "pay-002-terrapet",
+      "tenant_id": "terrapet",
+      "invoice_id": "inv-002-terrapet",
+      "amount": 346500,
+      "payment_method_name": "Tarjeta de Débito",
+      "payment_date": "{{daysAgo(8)}}",
+      "status": "completed",
+      "reference_number": "TXN-2025-00234",
+      "notes": "Tarjeta de débito",
+      "created_at": "{{daysAgo(8)}}",
+      "processed_at": "{{daysAgo(8)}}"
+    },
+    {
+      "id": "pay-003-terrapet",
+      "tenant_id": "terrapet",
+      "invoice_id": "inv-004-terrapet",
+      "amount": 330000,
+      "payment_method_name": "Transferencia Bancaria",
+      "payment_date": "{{daysAgo(18)}}",
+      "status": "completed",
+      "reference_number": "TRF-2025-00567",
+      "notes": "Primera cuota (50%)",
+      "created_at": "{{daysAgo(18)}}",
+      "processed_at": "{{daysAgo(18)}}"
+    },
+    {
+      "id": "pay-004-terrapet",
+      "tenant_id": "terrapet",
+      "invoice_id": "inv-008-terrapet",
+      "amount": 118800,
+      "payment_method_name": "Efectivo",
+      "payment_date": "{{daysAgo(7)}}",
+      "status": "completed",
+      "reference_number": null,
+      "notes": "Efectivo",
+      "created_at": "{{daysAgo(7)}}",
+      "processed_at": "{{daysAgo(7)}}"
+    },
+    {
+      "id": "pay-005-terrapet",
+      "tenant_id": "terrapet",
+      "invoice_id": "inv-010-terrapet",
+      "amount": 220000,
+      "payment_method_name": "Tarjeta de Crédito",
+      "payment_date": "{{daysAgo(20)}}",
+      "status": "completed",
+      "reference_number": "TXN-2025-00189",
+      "notes": "Tarjeta de crédito",
+      "created_at": "{{daysAgo(20)}}",
+      "processed_at": "{{daysAgo(20)}}"
+    }
+  ],
+  "refunds": [
+    {
+      "id": "ref-001-terrapet",
+      "tenant_id": "terrapet",
+      "payment_id": "pay-002-terrapet",
+      "amount": 35000,
+      "reason": "Ajuste por descuento aplicado posteriormente",
+      "status": "completed",
+      "processed_by": "550e8400-e29b-41d4-a716-446655440004",
+      "created_at": "{{daysAgo(6)}}",
+      "processed_at": "{{daysAgo(6)}}"
+    }
+  ]
+}

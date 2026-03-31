@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "headline": "Título Principal de la Clínica",
+    "subhead": "Subtítulo atractivo describiendo los servicios principales.",
+    "cta_primary": "Botón Principal",
+    "cta_secondary": "Botón Secundario"
+  },
+  "features": [
+    {
+      "icon": "heart-pulse",
+      "title": "Característica 1",
+      "text": "Descripción breve."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Característica 2",
+      "text": "Descripción breve."
+    },
+    {
+      "icon": "clock",
+      "title": "Característica 3",
+      "text": "Descripción breve."
+    }
+  ],
+  "promo_banner": {
+    "enabled": true,
+    "text": "Texto de promoción o anuncio importante",
+    "link": "#"
+  },
+  "interactive_tools_section": {
+    "title": "Herramientas",
+    "subtitle": "Subtítulo de herramientas",
+    "toxic_food_cta": "Botón Toxicidad",
+    "age_calc_cta": "Botón Edad"
+  },
+  "testimonials_section": {
+    "enabled": true,
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen nuestros clientes."
+  },
+  "seo": {
+    "meta_title": "Título SEO para Google",
+    "meta_description": "Descripción SEO para Google."
+  }
+}

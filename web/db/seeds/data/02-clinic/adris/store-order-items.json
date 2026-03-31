@@ -1,0 +1,191 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Store order line items with product references",
+  "store_order_items": [
+    {
+      "id": "oi-001-01",
+      "order_id": "ord-001-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-DOG-ADULT-MED-15KG",
+      "product_name": "Royal Canin Medium Adult 15kg",
+      "quantity": 1,
+      "unit_price": 485000,
+      "line_total": 485000
+    },
+    {
+      "id": "oi-001-02",
+      "order_id": "ord-001-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-DOG-ADULT-MED-3KG",
+      "product_name": "Royal Canin Medium Adult 3kg",
+      "quantity": 1,
+      "unit_price": 125000,
+      "line_total": 125000
+    },
+    {
+      "id": "oi-002-01",
+      "order_id": "ord-002-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "NEXGARD-M-3",
+      "product_name": "NexGard Mediano (10-25kg) x3",
+      "quantity": 1,
+      "unit_price": 165000,
+      "line_total": 165000
+    },
+    {
+      "id": "oi-002-02",
+      "order_id": "ord-002-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-DOG-ADULT-MED-3KG",
+      "product_name": "Royal Canin Medium Adult 3kg",
+      "quantity": 1,
+      "unit_price": 125000,
+      "line_total": 125000
+    },
+    {
+      "id": "oi-003-01",
+      "order_id": "ord-003-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "HILLS-SD-ADULT-12KG",
+      "product_name": "Hills Science Diet Adult 12kg",
+      "quantity": 1,
+      "unit_price": 520000,
+      "line_total": 520000
+    },
+    {
+      "id": "oi-004-01",
+      "order_id": "ord-004-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "NEXGARD-L-3",
+      "product_name": "NexGard Grande (25-50kg) x3",
+      "quantity": 1,
+      "unit_price": 180000,
+      "line_total": 180000
+    },
+    {
+      "id": "oi-005-01",
+      "order_id": "ord-005-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-CAT-ADULT-4KG",
+      "product_name": "Royal Canin Cat Adult 4kg",
+      "quantity": 1,
+      "unit_price": 195000,
+      "line_total": 195000
+    },
+    {
+      "id": "oi-005-02",
+      "order_id": "ord-005-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "NEXGARD-S-3",
+      "product_name": "NexGard Pequeño (2-4kg) x3",
+      "quantity": 1,
+      "unit_price": 145000,
+      "line_total": 145000
+    },
+    {
+      "id": "oi-006-01",
+      "order_id": "ord-006-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "NEXGARD-S-3",
+      "product_name": "NexGard Pequeño (2-4kg) x3",
+      "quantity": 1,
+      "unit_price": 145000,
+      "line_total": 145000
+    },
+    {
+      "id": "oi-007-01",
+      "order_id": "ord-007-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-DOG-PUPPY-MED-3KG",
+      "product_name": "Royal Canin Medium Puppy 3kg",
+      "quantity": 1,
+      "unit_price": 135000,
+      "line_total": 135000,
+      "notes": "Cancelado por cliente"
+    },
+    {
+      "id": "oi-008-01",
+      "order_id": "ord-008-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-DOG-ADULT-MED-15KG",
+      "product_name": "Royal Canin Medium Adult 15kg",
+      "quantity": 1,
+      "unit_price": 485000,
+      "line_total": 485000
+    },
+    {
+      "id": "oi-009-01",
+      "order_id": "ord-009-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "NEXGARD-M-3",
+      "product_name": "NexGard Mediano (10-25kg) x3",
+      "quantity": 1,
+      "unit_price": 165000,
+      "line_total": 165000
+    },
+    {
+      "id": "oi-010-01",
+      "order_id": "ord-010-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-CAT-KITTEN-4KG",
+      "product_name": "Royal Canin Kitten 4kg",
+      "quantity": 1,
+      "unit_price": 210000,
+      "line_total": 210000
+    },
+    {
+      "id": "oi-011-01",
+      "order_id": "ord-011-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-DOG-ADULT-MED-3KG",
+      "product_name": "Royal Canin Medium Adult 3kg",
+      "quantity": 1,
+      "unit_price": 125000,
+      "line_total": 125000
+    },
+    {
+      "id": "oi-012-01",
+      "order_id": "ord-012-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-CAT-ADULT-4KG",
+      "product_name": "Royal Canin Cat Adult 4kg",
+      "quantity": 1,
+      "unit_price": 195000,
+      "line_total": 195000
+    },
+    {
+      "id": "oi-013-01",
+      "order_id": "ord-013-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "HILLS-SD-PUPPY-12KG",
+      "product_name": "Hills Science Diet Puppy 12kg",
+      "quantity": 1,
+      "unit_price": 550000,
+      "line_total": 550000,
+      "notes": "Descuento VIP aplicado"
+    },
+    {
+      "id": "oi-014-01",
+      "order_id": "ord-014-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "NEXGARD-S-3",
+      "product_name": "NexGard Pequeño (2-4kg) x3",
+      "quantity": 1,
+      "unit_price": 145000,
+      "line_total": 145000,
+      "notes": "Devuelto - producto defectuoso"
+    },
+    {
+      "id": "oi-015-01",
+      "order_id": "ord-015-terrapet",
+      "tenant_id": "terrapet",
+      "product_sku": "RC-CAT-KITTEN-4KG",
+      "product_name": "Royal Canin Kitten 4kg",
+      "quantity": 1,
+      "unit_price": 210000,
+      "line_total": 210000,
+      "requires_prescription": true,
+      "prescription_status": "approved"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "cd web && npm run build",
+  "outputDirectory": "web/.next",
+  "installCommand": "cd web && npm install",
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--max_old_space_size=8192"
+    }
+  }
+}

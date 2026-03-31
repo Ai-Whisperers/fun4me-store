@@ -1,0 +1,18 @@
+{
+  "name": "vete-veterinary",
+  "version": "1.0.0",
+  "description": "Comprehensive veterinary platform skills including clinical medicine, business operations, integrations, and security patterns for the Vete multi-tenant platform.",
+  "author": "Vete Platform",
+  "skills": [
+    "skills/veterinary-clinical",
+    "skills/whatsapp-business",
+    "skills/paraguay-localization",
+    "skills/supabase-analytics",
+    "skills/email-campaign",
+    "skills/thermal-printer",
+    "skills/react-native-vet",
+    "skills/lab-integration",
+    "skills/appointment-optimization",
+    "skills/nextjs-security"
+  ]
+}

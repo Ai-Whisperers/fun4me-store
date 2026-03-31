@@ -1,0 +1,411 @@
+{
+  "id": "petlife",
+  "name": "PetLife Center",
+  "tagline": "Tecnología y Salud Animal de Vanguardia",
+  "contact": {
+    "whatsapp_number": "595971999888",
+    "phone_display": "+595 971 999 888",
+    "email": "info@petlifecenter.com.py",
+    "address": "Ruta 2 Km 14, Mariano Roque Alonso",
+    "city": "Mariano Roque Alonso",
+    "country": "Paraguay",
+    "google_maps_id": "ChIJN1t_tDeuEmsRUsoyG83frY4",
+    "coordinates": {
+      "lat": -25.215,
+      "lng": -57.518
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/petlifecenterpy",
+    "instagram": "https://instagram.com/petlifecenter",
+    "tiktok": "https://tiktok.com/@petlifecenterpy",
+    "youtube": "https://youtube.com/@petlifecenter"
+  },
+  "hours": {
+    "weekdays": "07:00 - 19:00",
+    "saturday": "08:00 - 14:00",
+    "sunday": "Cerrado",
+    "holidays": "Cerrado"
+  },
+  "settings": {
+    "currency": "PYG",
+    "currency_symbol": "Gs",
+    "locale": "es-PY",
+    "timezone": "America/Asuncion",
+    "emergency_24h": false,
+    "accepts_insurance": false,
+    "insurance_providers": [],
+    "delivery_enabled": false,
+    "delivery_minimum": 0,
+    "delivery_zones": [],
+    "modules": {
+      "toxic_checker": false,
+      "age_calculator": true,
+      "growth_charts": true,
+      "vaccine_tracker": true,
+      "qr_tags": false,
+      "loyalty_program": false,
+      "online_store": false,
+      "booking": true,
+      "telemedicine": true
+    }
+  },
+  "branding": {
+    "logo_url": "/branding/petlife/logo.png",
+    "logo_dark_url": "/branding/petlife/logo-dark.png",
+    "logo_width": 160,
+    "logo_height": 50,
+    "favicon_url": "/branding/petlife/favicon.ico",
+    "hero_image_url": "/branding/petlife/hero-bg.jpg",
+    "og_image_url": "/branding/petlife/og-image.jpg",
+    "apple_touch_icon": "/branding/petlife/apple-touch-icon.png"
+  },
+  "ui_labels": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Estudios",
+      "about": "El Centro",
+      "store": "Productos",
+      "book": "Agendar",
+      "contact": "Contacto",
+      "owners_zone": "Mi Cuenta",
+      "login_profile": "Acceder",
+      "dashboard": "Panel",
+      "profile": "Perfil",
+      "my_pets": "Mis Pacientes",
+      "back": "Atrás",
+      "book_btn": "Reservar Turno",
+      "emergency_btn": "Consulta Urgente"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "terms": "Términos de Uso",
+      "contact_us": "Contacto",
+      "follow_us": "Redes Sociales",
+      "newsletter_title": "Newsletter",
+      "newsletter_placeholder": "correo@ejemplo.com",
+      "newsletter_button": "Suscribir"
+    },
+    "home": {
+      "visit_us": "Encontranos",
+      "features_title": "Centro de Referencia",
+      "features_subtitle": "Equipamiento de última generación para diagnósticos precisos y tratamientos efectivos.",
+      "tools_badge": "Recursos",
+      "contact_badge": "Ubicación",
+      "map_button": "Cómo Llegar",
+      "hours_title": "Horario de Atención",
+      "emergency_title": "Derivaciones",
+      "emergency_text": "Recibimos derivaciones de otras clínicas para estudios especializados.",
+      "emergency_cta": "Coordinar Derivación"
+    },
+    "services": {
+      "meta_title": "Estudios y Procedimientos",
+      "meta_subtitle": "Centro especializado en diagnóstico por imágenes y medicina de alta complejidad.",
+      "online_badge": "Agenda Online",
+      "emergency_badge": "Derivación",
+      "description_label": "Descripción del estudio:",
+      "includes_label": "El estudio incluye:",
+      "duration_label": "Tiempo estimado:",
+      "table_variant": "Estudio / Procedimiento",
+      "table_price": "Arancel",
+      "book_floating_btn": "Solicitar Turno",
+      "filter_all": "Todos",
+      "filter_medical": "Consultas",
+      "filter_surgery": "Cirugías",
+      "filter_diagnostics": "Imágenes",
+      "filter_wellness": "Prevención",
+      "filter_grooming": "Estética",
+      "view_details": "Más Información",
+      "book_now": "Agendar",
+      "contact_for_price": "Consultar Arancel",
+      "vaccine_schedule": {
+        "title": "Protocolo de Vacunación",
+        "subtitle": "Esquema basado en las guías de WSAVA y normativa SENACSA.",
+        "dog_label": "Caninos",
+        "cat_label": "Felinos",
+        "important_label": "Nota Técnica:",
+        "important_text": "El protocolo puede ajustarse según evaluación clínica individual, factores de riesgo epidemiológico y estilo de vida del paciente.",
+        "data": {
+          "dog": [
+            {
+              "age": "6-8 semanas",
+              "n": 1,
+              "vaccines": ["DHPPi (Core)"],
+              "note": "Inicio de inmunización activa."
+            },
+            {
+              "age": "10-12 semanas",
+              "n": 2,
+              "vaccines": ["DHPPi Refuerzo", "Antirrábica"],
+              "note": "Obligatoria por SENACSA."
+            },
+            {
+              "age": "14-16 semanas",
+              "n": 3,
+              "vaccines": ["DHPPi Final"],
+              "note": "Completar esquema primario."
+            },
+            {
+              "age": "12 meses",
+              "n": 4,
+              "vaccines": ["DHPPi Anual", "Antirrábica"],
+              "note": "Primer refuerzo anual."
+            },
+            {
+              "age": "Según riesgo",
+              "n": 5,
+              "vaccines": ["Bordetella", "Leptospira", "Influenza"],
+              "note": "No-core, evaluar indicación."
+            }
+          ],
+          "cat": [
+            {
+              "age": "6-8 semanas",
+              "n": 1,
+              "vaccines": ["FVRCP (Core)"],
+              "note": "Herpesvirus, Calicivirus, Panleucopenia."
+            },
+            {
+              "age": "10-12 semanas",
+              "n": 2,
+              "vaccines": ["FVRCP Refuerzo", "Antirrábica"],
+              "note": "Obligatoria por SENACSA."
+            },
+            {
+              "age": "14-16 semanas",
+              "n": 3,
+              "vaccines": ["FeLV"],
+              "note": "Previo test FIV/FeLV. Indicado en gatos outdoor."
+            },
+            {
+              "age": "12 meses",
+              "n": 4,
+              "vaccines": ["FVRCP Anual", "Antirrábica"],
+              "note": "Refuerzo de por vida."
+            }
+          ]
+        }
+      }
+    },
+    "about": {
+      "team_title": "Equipo Profesional",
+      "intro_badge": "Sobre Nosotros",
+      "mission_title": "Misión",
+      "vision_title": "Visión",
+      "values_title": "Valores Institucionales",
+      "certifications_title": "Acreditaciones",
+      "facilities_title": "Infraestructura"
+    },
+    "portal": {
+      "dashboard": {
+        "staff_title": "Panel de Control",
+        "owner_title": "Mis Pacientes",
+        "welcome": "Hola, {name}",
+        "quick_actions": "Accesos Rápidos",
+        "recent_activity": "Últimos Movimientos",
+        "stats": {
+          "patients": "Pacientes Registrados",
+          "vaccines": "Estudios Pendientes",
+          "upcoming_appointments": "Turnos Agendados",
+          "loyalty_points": "N/A"
+        }
+      },
+      "empty_states": {
+        "no_pets": "Sin pacientes registrados",
+        "no_pets_desc": "Registra tu primera mascota para acceder al historial digital.",
+        "add_pet_btn": "Nuevo Paciente",
+        "no_vaccines": "Sin estudios previos.",
+        "no_appointments": "Sin turnos agendados.",
+        "no_records": "Historial vacío."
+      },
+      "pet_card": {
+        "weight": "Peso",
+        "chip": "Microchip",
+        "age": "Edad",
+        "breed": "Raza",
+        "vaccines": "Inmunizaciones",
+        "next_vaccine": "Próximo Control",
+        "add_vaccine": "Registrar Vacuna",
+        "view_history": "Historial Clínico",
+        "download_pdf": "Exportar PDF",
+        "edit_pet": "Modificar",
+        "qr_code": "QR ID"
+      },
+      "appointment_widget": {
+        "title": "Turnos Programados",
+        "empty": "Sin turnos próximos",
+        "new_appointment": "Nuevo Turno",
+        "status": {
+          "confirmed": "Confirmado",
+          "pending": "Pendiente",
+          "cancelled": "Cancelado",
+          "completed": "Realizado"
+        }
+      },
+      "forms": {
+        "pet_name": "Nombre del Paciente",
+        "pet_species": "Especie",
+        "pet_breed": "Raza",
+        "pet_birthdate": "Fecha de Nacimiento",
+        "pet_weight": "Peso (kg)",
+        "pet_color": "Pelaje/Color",
+        "pet_gender": "Sexo",
+        "pet_neutered": "¿Castrado/a?",
+        "pet_microchip": "Nº Microchip",
+        "species_dog": "Canino",
+        "species_cat": "Felino",
+        "species_bird": "Ave",
+        "species_rabbit": "Lagomorfo",
+        "species_other": "Otro",
+        "gender_male": "Macho",
+        "gender_female": "Hembra",
+        "yes": "Sí",
+        "no": "No"
+      }
+    },
+    "store": {
+      "title": "Productos",
+      "back_home": "Volver",
+      "hero_title": "Insumos Veterinarios",
+      "hero_subtitle": "Próximamente: Tienda online con insumos y medicamentos veterinarios.",
+      "search_placeholder": "Buscar...",
+      "all_categories": "Todas",
+      "empty_state": "Sección en desarrollo.",
+      "no_results": "Sin resultados.",
+      "sort_by": "Ordenar",
+      "sort_popular": "Populares",
+      "sort_price_low": "Menor Precio",
+      "sort_price_high": "Mayor Precio",
+      "sort_newest": "Recientes",
+      "product_card": {
+        "add": "Agregar",
+        "added": "Agregado",
+        "out_of_stock": "Sin Stock",
+        "view_details": "Detalles"
+      },
+      "categories": {
+        "all": "Todos",
+        "food": "Alimentos",
+        "medicine": "Fármacos",
+        "accessories": "Accesorios",
+        "hygiene": "Higiene",
+        "toys": "Juguetes"
+      }
+    },
+    "cart": {
+      "title": "Carrito",
+      "empty": "Carrito vacío.",
+      "empty_cta": "Ver Productos",
+      "item_service": "Servicio",
+      "item_product": "Producto",
+      "quantity": "Cant.",
+      "unit_price": "P. Unit.",
+      "subtotal": "Subtotal",
+      "clear_btn": "Vaciar",
+      "total_label": "Total:",
+      "continue_shopping": "Seguir Viendo",
+      "checkout_btn": "Finalizar",
+      "delivery_note": ""
+    },
+    "checkout": {
+      "title": "Resumen",
+      "empty": "Sin items.",
+      "customer_info": "Datos Cliente",
+      "delivery_info": "Entrega",
+      "payment_method": "Pago",
+      "order_summary": "Detalle",
+      "print_btn": "Imprimir",
+      "whatsapp_btn": "Enviar por WhatsApp",
+      "back_cart": "Volver",
+      "order_notes": "Observaciones",
+      "order_notes_placeholder": "Notas adicionales..."
+    },
+    "booking": {
+      "title": "Agendar Turno",
+      "select_service": "Tipo de Estudio",
+      "select_date": "Fecha",
+      "select_time": "Horario",
+      "select_pet": "Paciente",
+      "your_info": "Datos de Contacto",
+      "confirm_btn": "Confirmar",
+      "success_title": "Turno Registrado",
+      "success_message": "Recibirás confirmación por WhatsApp dentro de 24 horas hábiles.",
+      "available_slots": "Horarios Disponibles",
+      "no_slots": "Sin disponibilidad para esta fecha. Intenta otro día."
+    },
+    "common": {
+      "loading": "Cargando...",
+      "error": "Error",
+      "retry": "Reintentar",
+      "actions": {
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "confirm": "Confirmar",
+        "close": "Cerrar",
+        "back": "Volver",
+        "next": "Siguiente",
+        "submit": "Enviar",
+        "search": "Buscar",
+        "filter": "Filtrar",
+        "clear": "Limpiar",
+        "download": "Descargar",
+        "share": "Compartir",
+        "copy": "Copiar"
+      },
+      "validation": {
+        "required": "Campo obligatorio",
+        "invalid_email": "Email inválido",
+        "invalid_phone": "Teléfono inválido",
+        "min_length": "Mínimo {n} caracteres",
+        "max_length": "Máximo {n} caracteres"
+      }
+    },
+    "auth": {
+      "login_title": "Acceder",
+      "signup_title": "Registrarse",
+      "email_label": "Email",
+      "password_label": "Contraseña",
+      "confirm_password": "Repetir Contraseña",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "login_btn": "Ingresar",
+      "signup_btn": "Crear Cuenta",
+      "or_divider": "o",
+      "google_btn": "Google",
+      "no_account": "¿No tienes cuenta?",
+      "has_account": "¿Ya tienes cuenta?",
+      "logout": "Salir"
+    },
+    "tools": {
+      "toxic_food": {
+        "title": "Verificador de Toxicidad",
+        "subtitle": "Herramienta no disponible en este centro.",
+        "search_placeholder": "Buscar alimento...",
+        "safe": "SEGURO",
+        "toxic": "TÓXICO",
+        "caution": "PRECAUCIÓN",
+        "disclaimer": "Consulte con su veterinario de cabecera."
+      },
+      "age_calculator": {
+        "title": "Edad Fisiológica",
+        "subtitle": "Estima la edad equivalente según especie y tamaño.",
+        "pet_age_label": "Edad cronológica (años)",
+        "pet_size_label": "Categoría de peso",
+        "size_small": "Pequeño (<10kg)",
+        "size_medium": "Mediano (10-25kg)",
+        "size_large": "Grande (>25kg)",
+        "result_prefix": "Equivale a",
+        "result_suffix": "años humanos"
+      }
+    },
+    "errors": {
+      "404_title": "No encontrado",
+      "404_message": "La página solicitada no existe.",
+      "500_title": "Error interno",
+      "500_message": "Ocurrió un problema. Intenta más tarde.",
+      "go_home": "Ir al Inicio"
+    }
+  }
+}

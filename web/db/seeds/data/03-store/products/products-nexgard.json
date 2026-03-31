@@ -1,0 +1,290 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "nexgard",
+  "products": [
+    {
+      "sku": "NXG-DOG-2-4",
+      "name": "NexGard Perros 2-4kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros pequeños",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 89000,
+          "cost_price": 53400,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-small-dogs-2-35kg/image1xl.jpg",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-small-dogs-2-35kg/image1xl.jpg",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "2-4kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "NXG-DOG-4-10",
+      "name": "NexGard Perros 4-10kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros medianos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 98000,
+          "cost_price": 58800,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 269000,
+          "cost_price": 161400,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/small-dogs-36-75kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/small-dogs-36-75kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "4-10kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "NXG-DOG-10-25",
+      "name": "NexGard Perros 10-25kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros grandes",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 115000,
+          "cost_price": 69000,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 315000,
+          "cost_price": 189000,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "10-25kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "NXG-DOG-25-50",
+      "name": "NexGard Perros 25-50kg",
+      "description": "Antiparasitario masticable mensual contra pulgas y garrapatas para perros extra grandes",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 369000,
+          "cost_price": 221400,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+      "images": [
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-large-dogs-301-60kg.gif",
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner",
+        "weight_range": "25-50kg",
+        "duration": "30 días"
+      }
+    },
+    {
+      "sku": "NXG-SPECTRA-3.5-7.5",
+      "name": "NexGard Spectra 3.5-7.5kg",
+      "description": "Protección completa contra pulgas, garrapatas, ácaros y parásitos internos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 395000,
+          "cost_price": 237000,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+      "images": [
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/small-dogs-36-75kg.gif",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner + Milbemicina oxima",
+        "weight_range": "3.5-7.5kg",
+        "duration": "30 días",
+        "coverage": "Pulgas, garrapatas, ácaros, gusano del corazón, parásitos intestinales"
+      }
+    },
+    {
+      "sku": "NXG-SPECTRA-7.5-15",
+      "name": "NexGard Spectra 7.5-15kg",
+      "description": "Protección completa contra pulgas, garrapatas, ácaros y parásitos internos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 449000,
+          "cost_price": 269400,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+      "images": [
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/medium-dogs-76-15kg.gif",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner + Milbemicina oxima",
+        "weight_range": "7.5-15kg",
+        "duration": "30 días",
+        "coverage": "Pulgas, garrapatas, ácaros, gusano del corazón, parásitos intestinales"
+      }
+    },
+    {
+      "sku": "NXG-SPECTRA-15-30",
+      "name": "NexGard Spectra 15-30kg",
+      "description": "Protección completa contra pulgas, garrapatas, ácaros y parásitos internos",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 189000,
+          "cost_price": 113400,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 515000,
+          "cost_price": 309000,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+      "images": [
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/large-dogs-151-30kg.gif",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner + Milbemicina oxima",
+        "weight_range": "15-30kg",
+        "duration": "30 días",
+        "coverage": "Pulgas, garrapatas, ácaros, gusano del corazón, parásitos intestinales"
+      }
+    },
+    {
+      "sku": "NXG-SPECTRA-30-60",
+      "name": "NexGard Spectra 30-60kg",
+      "description": "Protección completa contra pulgas, garrapatas, ácaros y parásitos internos para perros XL",
+      "category_slug": "FAR-ANT-EXT",
+      "target_species": ["dog"],
+      "requires_prescription": true,
+      "variants": [
+        {
+          "size": "1 comprimido",
+          "base_price": 215000,
+          "cost_price": 129000,
+          "sku_suffix": "-1"
+        },
+        {
+          "size": "3 comprimidos",
+          "base_price": 585000,
+          "cost_price": 351000,
+          "sku_suffix": "-3"
+        }
+      ],
+      "image_url": "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+      "images": [
+        "https://mma.prnewswire.com/media/2390876/Boehringer_NexGard_SPECTRA.jpg",
+        "https://www.petshed.com/PetShed/images/brands/nexgard/NEXSPECTRA-CONFIG/extra-large-dogs-301-60kg.gif",
+        "https://www.direct4pet.co.uk/cdn/shop/products/qivwyxtffew.png?v=1745533413",
+        "https://www.direct4pet.co.uk/cdn/shop/products/12kowto3gzx.jpg?v=1745533414",
+        "https://www.direct4pet.co.uk/cdn/shop/products/cohthfniu4g.jpg?v=1745533414"
+      ],
+      "attributes": {
+        "active_ingredient": "Afoxolaner + Milbemicina oxima",
+        "weight_range": "30-60kg",
+        "duration": "30 días",
+        "coverage": "Pulgas, garrapatas, ácaros, gusano del corazón, parásitos intestinales"
+      }
+    }
+  ]
+}

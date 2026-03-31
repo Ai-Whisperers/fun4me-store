@@ -1,0 +1,426 @@
+{
+  "meta": {
+    "title": "Estudios y Procedimientos",
+    "subtitle": "Centro especializado en diagnóstico por imágenes y medicina de alta complejidad. Equipamiento de última generación y especialistas certificados."
+  },
+  "services": [
+    {
+      "id": "imaging",
+      "visible": true,
+      "category": "diagnostics",
+      "title": "Diagnóstico por Imágenes",
+      "icon": "scan",
+      "summary": "Estudios de alta resolución con equipos de última generación.",
+      "details": {
+        "description": "Nuestro centro cuenta con equipamiento de diagnóstico por imágenes de última generación. Todos los estudios son realizados por especialistas certificados y los informes se entregan en formato digital con imágenes adjuntas dentro de las 24 horas hábiles.",
+        "duration_minutes": 30,
+        "includes": [
+          "Informe escrito por especialista",
+          "Imágenes digitales en alta resolución",
+          "Consulta post-estudio incluida"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Radiografía Digital DR (1 Proyección)",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "description": "Sistema de detección directa. Imagen disponible en segundos."
+        },
+        {
+          "name": "Radiografía Digital (Par Radiológico)",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Dos proyecciones ortogonales para evaluación completa."
+        },
+        {
+          "name": "Estudio Radiológico Completo (4+ placas)",
+          "price_display": "280.000 Gs",
+          "price_value": 280000,
+          "description": "Múltiples proyecciones según necesidad clínica."
+        },
+        {
+          "name": "Ecografía Abdominal Completa",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Evaluación de hígado, bazo, riñones, vejiga, próstata/útero, tracto GI."
+        },
+        {
+          "name": "Ecografía Gestacional",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "description": "Confirmación de gestación, conteo fetal y viabilidad."
+        },
+        {
+          "name": "Ecografía Doppler Color",
+          "price_display": "250.000 Gs",
+          "price_value": 250000,
+          "description": "Evaluación hemodinámica. Incluye estudio convencional."
+        },
+        {
+          "name": "Ecocardiografía Doppler Completa",
+          "price_display": "350.000 Gs",
+          "price_value": 350000,
+          "description": "Realizado por cardiólogo veterinario certificado. Incluye informe detallado con mediciones y diagnóstico."
+        },
+        {
+          "name": "FAST Abdominal (Trauma/Urgencia)",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Evaluación rápida de líquido libre abdominal."
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": true }
+    },
+    {
+      "id": "laboratory",
+      "visible": true,
+      "category": "diagnostics",
+      "title": "Laboratorio Clínico",
+      "icon": "flask-conical",
+      "summary": "Análisis clínicos con resultados rápidos y precisos.",
+      "details": {
+        "description": "Laboratorio in-house con analizadores automáticos de última generación. Resultados de hemograma y bioquímica en 30 minutos. Procesamos muestras propias y de clínicas derivantes.",
+        "duration_minutes": 45,
+        "includes": ["Extracción de muestra", "Procesamiento inmediato", "Informe digital"]
+      },
+      "variants": [
+        {
+          "name": "Hemograma Completo (CBC)",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "description": "Analizador hematológico automático 5-diff."
+        },
+        {
+          "name": "Bioquímica Básica (6 parámetros)",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Glucosa, urea, creatinina, ALT, FA, proteínas totales."
+        },
+        {
+          "name": "Bioquímica Completa (12 parámetros)",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Panel extendido incluyendo electrolitos."
+        },
+        {
+          "name": "Perfil Prequirúrgico",
+          "price_display": "200.000 Gs",
+          "price_value": 200000,
+          "description": "Hemograma + Bioquímica básica + Coagulograma."
+        },
+        {
+          "name": "Urianálisis Completo",
+          "price_display": "60.000 Gs",
+          "price_value": 60000,
+          "description": "Físico-químico + sedimento."
+        },
+        {
+          "name": "Perfil Tiroideo (T4 Total + TSH)",
+          "price_display": "200.000 Gs",
+          "price_value": 200000,
+          "description": "Screening de hipo/hipertiroidismo."
+        },
+        {
+          "name": "Test Rápido 4DX (Ehrlichia, Lyme, Anaplasma, Dirofilaria)",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Detección de enfermedades transmitidas por vectores."
+        },
+        {
+          "name": "Test FIV/FeLV (Snap)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "description": "Detección de retrovirosis felina."
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": true }
+    },
+    {
+      "id": "hospital",
+      "visible": true,
+      "category": "medical",
+      "title": "Internación y Cuidados Intensivos",
+      "icon": "bed",
+      "summary": "Hospitalización con monitoreo especializado.",
+      "details": {
+        "description": "Área de internación climatizada con monitoreo continuo. Personal capacitado en cuidados intensivos. Los valores son por día de internación y no incluyen medicación, insumos descartables ni estudios complementarios.",
+        "duration_minutes": 1440,
+        "includes": [
+          "Monitoreo continuo de signos vitales",
+          "Alimentación según indicación médica",
+          "Registro digital de evolución"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Día de Internación (Sala General)",
+          "price_display": "Desde 160.000 Gs",
+          "price_value": 200000,
+          "description": "Pacientes estables en observación o recuperación.",
+          "size_pricing": {
+            "mini": 160000,
+            "pequeño": 200000,
+            "mediano": 240000,
+            "grande": 280000,
+            "gigante": 320000
+          }
+        },
+        {
+          "name": "Día de Internación (Cuidados Intermedios)",
+          "price_display": "Desde 224.000 Gs",
+          "price_value": 280000,
+          "description": "Monitoreo cada 2 horas. Fluidoterapia incluida.",
+          "size_pricing": {
+            "mini": 224000,
+            "pequeño": 280000,
+            "mediano": 336000,
+            "grande": 392000,
+            "gigante": 448000
+          }
+        },
+        {
+          "name": "Día de Internación (UCI)",
+          "price_display": "Desde 320.000 Gs",
+          "price_value": 400000,
+          "description": "Monitoreo continuo, oxigenoterapia, bombas de infusión.",
+          "size_pricing": {
+            "mini": 320000,
+            "pequeño": 400000,
+            "mediano": 480000,
+            "grande": 560000,
+            "gigante": 640000
+          }
+        },
+        {
+          "name": "Día de Internación (Infectocontagiosos)",
+          "price_display": "Desde 280.000 Gs",
+          "price_value": 350000,
+          "description": "Aislamiento estricto. Sala separada con protocolo de bioseguridad.",
+          "size_pricing": {
+            "mini": 280000,
+            "pequeño": 350000,
+            "mediano": 420000,
+            "grande": 490000,
+            "gigante": 560000
+          }
+        },
+        {
+          "name": "Fluidoterapia Ambulatoria",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "description": "Sesión de hidratación subcutánea o IV de 2-3 horas."
+        },
+        {
+          "name": "Oxigenoterapia (Por hora)",
+          "price_display": "50.000 Gs",
+          "price_value": 50000,
+          "description": "Jaula de oxígeno o mascarilla según necesidad."
+        }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    },
+    {
+      "id": "consultation",
+      "visible": true,
+      "category": "medical",
+      "title": "Consultas Especializadas",
+      "icon": "stethoscope",
+      "summary": "Atención por especialistas certificados.",
+      "details": {
+        "description": "Consultas realizadas por veterinarios especialistas en cada área. Ideales para segunda opinión, casos complejos o derivaciones de otras clínicas.",
+        "duration_minutes": 45,
+        "includes": [
+          "Evaluación completa por especialista",
+          "Informe escrito con diagnóstico y plan",
+          "Comunicación con veterinario remitente"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Consulta Medicina Interna",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Casos de diagnóstico complejo, enfermedades sistémicas."
+        },
+        {
+          "name": "Consulta Cardiología",
+          "price_display": "200.000 Gs",
+          "price_value": 200000,
+          "description": "Evaluación cardiológica completa. Ecocardiograma aparte."
+        },
+        {
+          "name": "Consulta Dermatología",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Patologías de piel, alergias, otitis crónicas."
+        },
+        {
+          "name": "Consulta Neurología",
+          "price_display": "220.000 Gs",
+          "price_value": 220000,
+          "description": "Evaluación neurológica completa. Convulsiones, paresias."
+        },
+        {
+          "name": "Consulta Traumatología",
+          "price_display": "180.000 Gs",
+          "price_value": 180000,
+          "description": "Evaluación ortopédica. Claudicaciones, fracturas."
+        },
+        {
+          "name": "Segunda Opinión (con historial)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "description": "Revisión de caso con estudios previos de otra clínica."
+        },
+        {
+          "name": "Teleconsulta con Especialista",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "description": "Videollamada de 30 min. Requiere envío previo de historial."
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    },
+    {
+      "id": "procedures",
+      "visible": true,
+      "category": "surgery",
+      "title": "Procedimientos y Cirugías",
+      "icon": "syringe",
+      "summary": "Procedimientos diagnósticos y terapéuticos especializados.",
+      "details": {
+        "description": "Realizamos procedimientos mínimamente invasivos y cirugías especializadas. Quirófano equipado con anestesia inhalatoria y monitoreo multiparamétrico.",
+        "duration_minutes": 60,
+        "includes": [
+          "Evaluación prequirúrgica",
+          "Anestesia y monitoreo",
+          "Seguimiento post-procedimiento"
+        ]
+      },
+      "variants": [
+        {
+          "name": "Punción Ecoguiada (PAAF)",
+          "price_display": "150.000 Gs",
+          "price_value": 150000,
+          "description": "Punción de masas/órganos guiada por ecografía. Incluye citología."
+        },
+        {
+          "name": "Cistocentesis",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "description": "Obtención de orina estéril guiada por ecografía."
+        },
+        {
+          "name": "Abdominocentesis",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Drenaje de líquido abdominal diagnóstico/terapéutico."
+        },
+        {
+          "name": "Toracocentesis",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "description": "Drenaje de efusión pleural."
+        },
+        {
+          "name": "Pericardiocentesis",
+          "price_display": "200.000 Gs",
+          "price_value": 200000,
+          "description": "Drenaje de efusión pericárdica. Procedimiento de emergencia."
+        },
+        {
+          "name": "Endoscopía Digestiva Alta",
+          "price_display": "Desde 450.000 Gs",
+          "price_value": 500000,
+          "description": "Evaluación de esófago, estómago, duodeno. Incluye biopsias.",
+          "size_pricing": {
+            "mini": 450000,
+            "pequeño": 500000,
+            "mediano": 550000,
+            "grande": 600000,
+            "gigante": 650000
+          }
+        },
+        {
+          "name": "Colonoscopía",
+          "price_display": "Desde 450.000 Gs",
+          "price_value": 500000,
+          "description": "Evaluación de colon. Incluye biopsias.",
+          "size_pricing": {
+            "mini": 450000,
+            "pequeño": 500000,
+            "mediano": 550000,
+            "grande": 600000,
+            "gigante": 650000
+          }
+        },
+        {
+          "name": "Cirugía de Tejidos Blandos",
+          "price_display": "A presupuestar",
+          "price_value": 0,
+          "description": "Mastectomías, esplenectomías, cistotomías, etc."
+        },
+        {
+          "name": "Cirugía Ortopédica",
+          "price_display": "A presupuestar",
+          "price_value": 0,
+          "description": "Fracturas, TPLO, luxaciones. Requiere evaluación previa."
+        }
+      ],
+      "booking": { "online_enabled": false, "emergency_available": true }
+    },
+    {
+      "id": "preventive",
+      "visible": true,
+      "category": "preventative",
+      "title": "Medicina Preventiva",
+      "icon": "shield-check",
+      "summary": "Vacunación y chequeos de rutina.",
+      "details": {
+        "description": "Programa de vacunación según guías WSAVA y normativa SENACSA. Incluimos registro digital de vacunas y recordatorios automáticos.",
+        "duration_minutes": 20,
+        "includes": ["Examen clínico previo", "Vacuna de primera calidad", "Registro digital"]
+      },
+      "variants": [
+        {
+          "name": "Vacuna Antirrábica",
+          "price_display": "80.000 Gs",
+          "price_value": 80000,
+          "description": "Certificada SENACSA. Válida para viajes."
+        },
+        {
+          "name": "Polivalente Canina (DHPPi)",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Distemper, Hepatitis, Parvo, Parainfluenza."
+        },
+        {
+          "name": "Triple Felina (FVRCP)",
+          "price_display": "100.000 Gs",
+          "price_value": 100000,
+          "description": "Herpesvirus, Calicivirus, Panleucopenia."
+        },
+        {
+          "name": "Leucemia Felina (FeLV)",
+          "price_display": "120.000 Gs",
+          "price_value": 120000,
+          "description": "Requiere test previo negativo."
+        },
+        {
+          "name": "Chequeo Anual Completo",
+          "price_display": "350.000 Gs",
+          "price_value": 350000,
+          "description": "Consulta + Hemograma + Bioquímica básica + Urianálisis."
+        },
+        {
+          "name": "Chequeo Geriátrico",
+          "price_display": "500.000 Gs",
+          "price_value": 500000,
+          "description": "Consulta + Lab completo + Ecografía abdominal + ECG."
+        }
+      ],
+      "booking": { "online_enabled": true, "emergency_available": false }
+    }
+  ]
+}

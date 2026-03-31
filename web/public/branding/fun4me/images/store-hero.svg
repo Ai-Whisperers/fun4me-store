@@ -1,0 +1,22 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="storeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f1a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="storeGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#storeGradient)"/>
+  <ellipse cx="960" cy="540" rx="800" ry="500" fill="url(#storeGlow)"/>
+  <!-- Shopping bag icon -->
+  <g transform="translate(860, 400)" opacity="0.3">
+    <path d="M50 80 L50 180 Q50 200 70 200 L130 200 Q150 200 150 180 L150 80 Z" fill="none" stroke="#E91E63" stroke-width="3"/>
+    <path d="M70 80 L70 60 Q70 30 100 30 Q130 30 130 60 L130 80" fill="none" stroke="#E91E63" stroke-width="3"/>
+  </g>
+  <!-- Decorative circles -->
+  <circle cx="400" cy="300" r="80" fill="none" stroke="#9C27B0" stroke-width="1" opacity="0.2"/>
+  <circle cx="1500" cy="700" r="120" fill="none" stroke="#E91E63" stroke-width="1" opacity="0.2"/>
+</svg>

@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "formula-natural",
+  "products": [
+    {
+      "sku": "FN-DOG-ADULT-MINI",
+      "name": "Formula Natural Life Adultos Mini",
+      "description": "Alimento super premium para perros adultos de razas mini",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 55000,
+          "cost_price": 33000,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "2.5kg",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Mini"
+      }
+    },
+    {
+      "sku": "FN-DOG-ADULT-SMALL",
+      "name": "Formula Natural Life Adultos Pequeños",
+      "description": "Alimento super premium para perros adultos de razas pequeñas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 52000,
+          "cost_price": 31200,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "2.5kg",
+          "base_price": 119000,
+          "cost_price": 71400,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 279000,
+          "cost_price": 167400,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Pequeño"
+      }
+    },
+    {
+      "sku": "FN-DOG-ADULT-MED",
+      "name": "Formula Natural Life Adultos Medianos",
+      "description": "Alimento super premium para perros adultos de razas medianas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 115000,
+          "cost_price": 69000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 265000,
+          "cost_price": 159000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "14kg",
+          "base_price": 475000,
+          "cost_price": 285000,
+          "sku_suffix": "-14KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Mediano"
+      }
+    },
+    {
+      "sku": "FN-DOG-ADULT-LARGE",
+      "name": "Formula Natural Life Adultos Grandes",
+      "description": "Alimento super premium para perros adultos de razas grandes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 109000,
+          "cost_price": 65400,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 255000,
+          "cost_price": 153000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "14kg",
+          "base_price": 455000,
+          "cost_price": 273000,
+          "sku_suffix": "-14KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Grande"
+      }
+    },
+    {
+      "sku": "FN-DOG-PUPPY-MINI",
+      "name": "Formula Natural Life Cachorros Mini",
+      "description": "Alimento super premium para cachorros de razas mini",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 59000,
+          "cost_price": 35400,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "2.5kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-2.5KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 10 meses",
+        "breed_size": "Mini"
+      }
+    },
+    {
+      "sku": "FN-DOG-PUPPY-SMALL",
+      "name": "Formula Natural Life Cachorros Pequeños",
+      "description": "Alimento super premium para cachorros de razas pequeñas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 56000,
+          "cost_price": 33600,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "2.5kg",
+          "base_price": 129000,
+          "cost_price": 77400,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 299000,
+          "cost_price": 179400,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 12 meses",
+        "breed_size": "Pequeño"
+      }
+    },
+    {
+      "sku": "FN-DOG-PUPPY-MED",
+      "name": "Formula Natural Life Cachorros Medianos",
+      "description": "Alimento super premium para cachorros de razas medianas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "14kg",
+          "base_price": 515000,
+          "cost_price": 309000,
+          "sku_suffix": "-14KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 12 meses",
+        "breed_size": "Mediano"
+      }
+    },
+    {
+      "sku": "FN-DOG-PUPPY-LARGE",
+      "name": "Formula Natural Life Cachorros Grandes",
+      "description": "Alimento super premium para cachorros de razas grandes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 119000,
+          "cost_price": 71400,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 275000,
+          "cost_price": 165000,
+          "sku_suffix": "-7KG"
+        },
+        {
+          "size": "14kg",
+          "base_price": 495000,
+          "cost_price": 297000,
+          "sku_suffix": "-14KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 18 meses",
+        "breed_size": "Grande"
+      }
+    },
+    {
+      "sku": "FN-DOG-SENIOR",
+      "name": "Formula Natural Life Senior 7+",
+      "description": "Alimento super premium para perros mayores de 7 años",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "2.5kg",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-2.5KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "7+ años",
+        "special_need": "Senior"
+      }
+    },
+    {
+      "sku": "FN-CAT-ADULT",
+      "name": "Formula Natural Life Gatos Adultos",
+      "description": "Alimento super premium para gatos adultos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 365000,
+          "cost_price": 219000,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "1+ años"
+      }
+    },
+    {
+      "sku": "FN-CAT-KITTEN",
+      "name": "Formula Natural Life Gatitos",
+      "description": "Alimento super premium para gatitos",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 69000,
+          "cost_price": 41400,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Kitten"
+      }
+    },
+    {
+      "sku": "FN-CAT-CASTRADO",
+      "name": "Formula Natural Life Gatos Castrados",
+      "description": "Alimento super premium para gatos esterilizados",
+      "category_slug": "NUT-FEL-SEC",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 67000,
+          "cost_price": 40200,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "7kg",
+          "base_price": 375000,
+          "cost_price": 225000,
+          "sku_suffix": "-7KG"
+        }
+      ],
+      "image_url": "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+      "images": [
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2021/10/2399750_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-800x1255.png",
+        "https://adimax.com.br/wp-content/uploads/2023/07/FN_FRESH_MEAT_GATOS_CASTRADOS_SALMAO_FRENTE-800x1295.png",
+        "https://adimax.com.br/wp-content/uploads/2021/07/01210_formula_natural_BASE_NOVO_MOCKUP_CAES_2_05-4-800x1255.png"
+      ],
+      "attributes": {
+        "special_need": "Esterilizado",
+        "weight_control": true
+      }
+    }
+  ]
+}

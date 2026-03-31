@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "core.schema.json",
+  "title": "Core Seed Data Schemas",
+  "description": "Schemas for foundational data: tenants and demo accounts",
+
+  "definitions": {
+    "Tenant": {
+      "type": "object",
+      "description": "A clinic tenant in the multi-tenant system",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Unique tenant slug (used in URLs)"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100,
+          "description": "Display name of the clinic"
+        },
+        "legal_name": {
+          "type": "string",
+          "description": "Legal business name for invoices"
+        },
+        "tax_id": {
+          "type": "string",
+          "description": "RUC or tax identification number"
+        },
+        "city": {
+          "type": "string",
+          "description": "City where the clinic is located"
+        },
+        "country": {
+          "type": "string",
+          "default": "Paraguay",
+          "description": "Country (defaults to Paraguay)"
+        },
+        "address": {
+          "type": "string",
+          "description": "Full street address"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Main phone number"
+        },
+        "whatsapp": {
+          "type": "string",
+          "description": "WhatsApp number for customer contact"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Main contact email"
+        },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Clinic website URL"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "timezone": {
+              "type": "string",
+              "default": "America/Asuncion"
+            },
+            "currency": {
+              "type": "string",
+              "enum": ["PYG", "USD"],
+              "default": "PYG"
+            },
+            "language": {
+              "type": "string",
+              "enum": ["es", "en"],
+              "default": "es"
+            },
+            "tax_rate": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.1,
+              "description": "Tax rate as decimal (0.1 = 10%)"
+            },
+            "appointment_buffer_minutes": {
+              "type": "integer",
+              "default": 15,
+              "description": "Buffer time between appointments"
+            },
+            "enable_online_booking": {
+              "type": "boolean",
+              "default": true
+            },
+            "enable_store": {
+              "type": "boolean",
+              "default": true
+            },
+            "enable_whatsapp": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "business_hours": {
+          "type": "object",
+          "description": "Operating hours per day (1=Monday, 7=Sunday)",
+          "patternProperties": {
+            "^[1-7]$": {
+              "type": "object",
+              "properties": {
+                "open": { "type": "string", "pattern": "^[0-2][0-9]:[0-5][0-9]$" },
+                "close": { "type": "string", "pattern": "^[0-2][0-9]:[0-5][0-9]$" },
+                "closed": { "type": "boolean", "default": false }
+              }
+            }
+          }
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+
+    "DemoAccount": {
+      "type": "object",
+      "description": "Demo/test account for development",
+      "required": ["email", "tenant_id", "role"],
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Login email address"
+        },
+        "tenant_id": {
+          "type": "string",
+          "description": "Tenant this account belongs to"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["owner", "vet", "admin"],
+          "description": "User role: owner (pet owner), vet (veterinarian), admin (clinic admin)"
+        },
+        "full_name": {
+          "type": "string",
+          "description": "Display name for the account"
+        },
+        "password_hint": {
+          "type": "string",
+          "description": "Hint for demo password (never store actual passwords)"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  },
+
+  "type": "object",
+  "properties": {
+    "tenants": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Tenant" }
+    },
+    "demo_accounts": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/DemoAccount" }
+    }
+  }
+}

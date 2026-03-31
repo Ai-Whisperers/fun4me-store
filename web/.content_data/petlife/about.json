@@ -1,0 +1,172 @@
+{
+  "intro": {
+    "title": "Centro de Referencia en Diagnóstico Veterinario",
+    "text": "PetLife Center fue fundado en 2018 con una visión clara: ser el centro de referencia para diagnóstico veterinario en el área metropolitana de Asunción. Ubicados estratégicamente en Ruta 2 Km 14, recibimos pacientes y muestras de clínicas de todo el país.\n\nNos especializamos en diagnóstico por imágenes y medicina de alta complejidad. Nuestro equipo está conformado por veterinarios especialistas certificados que trabajan con equipamiento de última generación para ofrecer diagnósticos precisos y oportunos.\n\nColaboramos estrechamente con veterinarios clínicos de la región, ofreciendo estudios especializados, segundas opiniones y soporte técnico para casos complejos.",
+    "founded_year": 2018,
+    "image": "/branding/petlife/about-hero.jpg"
+  },
+  "mission": {
+    "title": "Misión",
+    "text": "Proveer servicios de diagnóstico veterinario de alta precisión, utilizando tecnología de vanguardia y conocimiento especializado. Ser aliados de los veterinarios clínicos en la resolución de casos complejos, contribuyendo a mejores resultados terapéuticos para los pacientes."
+  },
+  "vision": {
+    "title": "Visión",
+    "text": "Consolidarnos como el centro de referencia líder en diagnóstico veterinario de Paraguay, reconocido por la calidad de nuestros estudios, la capacitación continua de nuestro equipo y la implementación constante de nuevas tecnologías diagnósticas."
+  },
+  "values": [
+    {
+      "icon": "microscope",
+      "title": "Precisión Diagnóstica",
+      "text": "Cada estudio es realizado con rigor técnico y analizado por especialistas."
+    },
+    {
+      "icon": "graduation-cap",
+      "title": "Formación Continua",
+      "text": "Actualizamos constantemente nuestros conocimientos y protocolos."
+    },
+    {
+      "icon": "handshake",
+      "title": "Colaboración",
+      "text": "Trabajamos en equipo con veterinarios remitentes para el mejor resultado."
+    },
+    {
+      "icon": "clock",
+      "title": "Oportunidad",
+      "text": "Entendemos que el tiempo es crítico. Entregamos informes en 24 horas."
+    }
+  ],
+  "team": [
+    {
+      "name": "Dr. Carlos Aquino",
+      "role": "Director Técnico - Imagenología",
+      "image": "/branding/petlife/team/carlos.jpg",
+      "bio": "Médico Veterinario con Especialización en Diagnóstico por Imágenes (UBA, Argentina). Más de 15 años de experiencia en ecografía y radiología veterinaria. Docente invitado en cursos de postgrado. Ha realizado más de 20.000 estudios de imagen.",
+      "specialties": ["Ecografía Abdominal", "Ecografía Doppler", "Radiología Digital"],
+      "education": [
+        "Universidad Nacional de Asunción",
+        "Especialización en Imagenología - UBA, Buenos Aires"
+      ]
+    },
+    {
+      "name": "Dra. Sofía Giménez",
+      "role": "Cardiología Veterinaria",
+      "image": "/branding/petlife/team/sofia.jpg",
+      "bio": "Cardióloga veterinaria certificada por el Colegio Latinoamericano de Cardiología Veterinaria. Especialista en ecocardiografía Doppler y manejo de cardiopatías congénitas y adquiridas en pequeños animales.",
+      "specialties": ["Ecocardiografía", "Electrocardiografía", "Holter 24hs"],
+      "education": [
+        "Universidad Nacional de Asunción",
+        "Residencia en Cardiología - São Paulo, Brasil"
+      ]
+    },
+    {
+      "name": "Dr. Rodrigo Villalba",
+      "role": "Medicina Interna",
+      "image": "/branding/petlife/team/rodrigo.jpg",
+      "bio": "Especialista en Medicina Interna de Pequeños Animales. Enfoque en enfermedades gastrointestinales, endocrinas y nefrológicas. Certificado en endoscopía diagnóstica y terapéutica.",
+      "specialties": ["Gastroenterología", "Endocrinología", "Nefrología"],
+      "education": ["Universidad Nacional de Asunción", "Diplomado en Medicina Interna - Chile"]
+    },
+    {
+      "name": "Dra. Lorena Cabañas",
+      "role": "Laboratorio Clínico",
+      "image": "/branding/petlife/team/lorena.jpg",
+      "bio": "Responsable del laboratorio clínico y citopatología. Especializada en hematología veterinaria y análisis de efusiones. Garantiza la calidad y precisión de todos los estudios de laboratorio.",
+      "specialties": ["Hematología", "Citología", "Bioquímica Clínica"],
+      "education": [
+        "Universidad Nacional de Asunción",
+        "Certificación en Laboratorio Clínico - IDEXX"
+      ]
+    }
+  ],
+  "facilities": {
+    "title": "Infraestructura de Vanguardia",
+    "description": "Nuestras instalaciones fueron diseñadas específicamente para el diagnóstico veterinario de alta complejidad.",
+    "features": [
+      {
+        "icon": "scan",
+        "title": "Sala de Ecografía",
+        "text": "Equipada con ecógrafo GE Logiq con sondas convexas, lineales y cardíacas."
+      },
+      {
+        "icon": "x-ray",
+        "title": "Sala de Rayos X",
+        "text": "Sistema de radiología digital directa (DR) con mesa basculante."
+      },
+      {
+        "icon": "heart-pulse",
+        "title": "Sala de Cardiología",
+        "text": "Ecocardiograma Doppler color, ECG y sistema Holter 24hs."
+      },
+      {
+        "icon": "flask-conical",
+        "title": "Laboratorio In-House",
+        "text": "Analizadores automáticos IDEXX para resultados en minutos."
+      },
+      {
+        "icon": "video",
+        "title": "Endoscopía",
+        "text": "Torre de endoscopía con gastroscopio y colonoscopio pediátrico."
+      },
+      {
+        "icon": "bed",
+        "title": "Internación",
+        "text": "Área de hospitalización con UCI, aislamiento y monitoreo continuo."
+      }
+    ],
+    "images": [
+      "/branding/petlife/facilities/ultrasound.jpg",
+      "/branding/petlife/facilities/radiology.jpg",
+      "/branding/petlife/facilities/lab.jpg",
+      "/branding/petlife/facilities/hospital.jpg"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "SENACSA",
+      "description": "Habilitación oficial para vacunación antirrábica",
+      "logo": "/certifications/senacsa.png"
+    },
+    {
+      "name": "CMVP",
+      "description": "Registro en Colegio de Médicos Veterinarios",
+      "logo": "/certifications/cmvp.png"
+    },
+    {
+      "name": "IDEXX Partner",
+      "description": "Centro certificado en diagnóstico de laboratorio",
+      "logo": "/certifications/idexx.png"
+    }
+  ],
+  "timeline": [
+    { "year": "2018", "event": "Fundación de PetLife Center en Ruta 2 Km 14" },
+    { "year": "2019", "event": "Incorporación de ecógrafo Doppler color y laboratorio IDEXX" },
+    { "year": "2020", "event": "Apertura del servicio de cardiología con ecocardiograma" },
+    { "year": "2021", "event": "Instalación de equipo de radiología digital directa (DR)" },
+    { "year": "2022", "event": "Lanzamiento del programa de derivaciones para veterinarios" },
+    { "year": "2023", "event": "Ampliación de área de internación y UCI" },
+    { "year": "2024", "event": "Inauguración de sala de endoscopía" }
+  ],
+  "referral_program": {
+    "title": "Programa para Veterinarios Derivantes",
+    "description": "Diseñamos un programa especial para colegas que necesitan estudios especializados para sus pacientes.",
+    "benefits": [
+      {
+        "icon": "calendar",
+        "title": "Turnos Prioritarios",
+        "text": "Agenda preferencial para derivaciones"
+      },
+      {
+        "icon": "file-text",
+        "title": "Informes Completos",
+        "text": "Documentación detallada con imágenes"
+      },
+      { "icon": "phone", "title": "Línea Directa", "text": "WhatsApp exclusivo para coordinación" },
+      {
+        "icon": "percent",
+        "title": "Tarifas Especiales",
+        "text": "Precios diferenciados para colegas"
+      }
+    ],
+    "cta_text": "Conocer el Programa"
+  }
+}

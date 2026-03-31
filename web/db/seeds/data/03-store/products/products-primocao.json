@@ -1,0 +1,136 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "primocao",
+  "products": [
+    {
+      "sku": "PC-DOG-ADULT-SMALL",
+      "name": "Primocao Adultos Pequeños Pollo y Vegetal",
+      "description": "Alimento económico para perros adultos de razas pequeñas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 25000,
+          "cost_price": 15000,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 62000,
+          "cost_price": 37200,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "20kg",
+          "base_price": 315000,
+          "cost_price": 189000,
+          "sku_suffix": "-20KG"
+        }
+      ],
+      "image_url": "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/40598676/3648f6a20e.jpg",
+      "images": [
+        "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/40598676/3648f6a20e.jpg",
+        "https://cdn.awsli.com.br/600x1000/1095/1095221/produto/40598676/f06ad3a6b3.jpg",
+        "https://cdn.awsli.com.br/400x400/1095/1095221/produto/41670662/427d98a859.jpg"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Pequeño",
+        "flavor": "Pollo y Vegetal"
+      }
+    },
+    {
+      "sku": "PC-DOG-ADULT-MED-LG",
+      "name": "Primocao Adultos Medianos y Grandes",
+      "description": "Alimento económico para perros adultos de razas medianas y grandes",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 22000,
+          "cost_price": 13200,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 58000,
+          "cost_price": 34800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 135000,
+          "cost_price": 81000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "20kg",
+          "base_price": 295000,
+          "cost_price": 177000,
+          "sku_suffix": "-20KG"
+        }
+      ],
+      "image_url": "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/40598676/3648f6a20e.jpg",
+      "images": [
+        "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/40598676/3648f6a20e.jpg",
+        "https://cdn.awsli.com.br/600x1000/1095/1095221/produto/40598676/f06ad3a6b3.jpg",
+        "https://cdn.awsli.com.br/400x400/1095/1095221/produto/41670662/427d98a859.jpg"
+      ],
+      "attributes": {
+        "age_range": "1+ años",
+        "breed_size": "Mediano y Grande"
+      }
+    },
+    {
+      "sku": "PC-DOG-PUPPY",
+      "name": "Primocao Cachorros",
+      "description": "Alimento económico para cachorros de todas las razas",
+      "category_slug": "NUT-CAN-SEC",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "1kg",
+          "base_price": 28000,
+          "cost_price": 16800,
+          "sku_suffix": "-1KG"
+        },
+        {
+          "size": "3kg",
+          "base_price": 68000,
+          "cost_price": 40800,
+          "sku_suffix": "-3KG"
+        },
+        {
+          "size": "8kg",
+          "base_price": 155000,
+          "cost_price": 93000,
+          "sku_suffix": "-8KG"
+        },
+        {
+          "size": "20kg",
+          "base_price": 335000,
+          "cost_price": 201000,
+          "sku_suffix": "-20KG"
+        }
+      ],
+      "image_url": "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/40598676/3648f6a20e.jpg",
+      "images": [
+        "https://cdn.awsli.com.br/2500x2500/1095/1095221/produto/40598676/3648f6a20e.jpg",
+        "https://cdn.awsli.com.br/600x1000/1095/1095221/produto/40598676/f06ad3a6b3.jpg",
+        "https://cdn.awsli.com.br/400x400/1095/1095221/produto/41670662/427d98a859.jpg"
+      ],
+      "attributes": {
+        "age_range": "Hasta 1 año",
+        "lifestage": "Puppy"
+      }
+    }
+  ]
+}

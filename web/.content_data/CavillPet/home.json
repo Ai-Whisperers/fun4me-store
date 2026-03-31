@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "badge_text": "Emergencias Disponibles",
+    "headline": "Cuidamos a tu mascota como familia.",
+    "subhead": "Atención veterinaria cercana y profesional. Consultas, cirugías, guardería y peluquería con el cariño que tu mascota merece.",
+    "cta_primary": "Agendar Cita",
+    "cta_secondary": "WhatsApp",
+    "trust_badges": [
+      { "icon": "heart", "text": "Trato familiar" },
+      { "icon": "clock", "text": "Emergencias disponibles" },
+      { "icon": "home", "text": "Guardería 24hs" }
+    ]
+  },
+  "features": [
+    {
+      "icon": "heart-pulse",
+      "title": "Consultas Veterinarias",
+      "text": "Atención cercana y personalizada. Consultas generales, de emergencia y a domicilio."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Vacunación Completa",
+      "text": "Vacunas para perros y gatos con carnet incluido. Plan de vacunación desde cachorros."
+    },
+    {
+      "icon": "clock",
+      "title": "Emergencias",
+      "text": "Atendemos emergencias fuera de horario. Recargo de Gs. 50.000 en horarios especiales."
+    },
+    {
+      "icon": "stethoscope",
+      "title": "Cirugías",
+      "text": "Esterilizaciones, cirugías generales, cesáreas y más. Hospitalización post-quirúrgica disponible."
+    },
+    {
+      "icon": "scissors",
+      "title": "Peluquería",
+      "text": "Baños, cortes y spa para tu mascota. Tratamiento antipulgas incluido."
+    },
+    {
+      "icon": "home",
+      "title": "Guardería 24hs",
+      "text": "Dejá a tu mascota en buenas manos. Cuidado profesional las 24 horas."
+    }
+  ],
+  "promo_banner": {
+    "enabled": false,
+    "text": "",
+    "link": "",
+    "expires": ""
+  },
+  "stats_section": {
+    "enabled": false,
+    "title": "Números que nos respaldan",
+    "stats": []
+  },
+  "interactive_tools_section": {
+    "enabled": true,
+    "title": "¿Dudas Rápidas?",
+    "subtitle": "Usa nuestras herramientas gratuitas mientras esperas. Información verificada por veterinarios.",
+    "toxic_food_cta": "Verificador de Alimentos Tóxicos",
+    "age_calc_cta": "Calculadora de Edad",
+    "tools": [
+      {
+        "id": "toxic-food",
+        "icon": "alert-triangle",
+        "title": "¿Es Tóxico?",
+        "description": "Verifica si un alimento es seguro para tu mascota",
+        "color": "#EF4444"
+      },
+      {
+        "id": "age-calculator",
+        "icon": "calculator",
+        "title": "Edad Humana",
+        "description": "Calcula la edad equivalente de tu mascota",
+        "color": "#3B82F6"
+      }
+    ]
+  },
+  "services_preview": {
+    "enabled": true,
+    "title": "Servicios Destacados",
+    "subtitle": "Todo lo que necesita tu mascota en un solo lugar",
+    "featured_services": ["consultation", "vaccination", "grooming", "surgery"],
+    "cta_text": "Ver Todos los Servicios"
+  },
+  "testimonials_section": {
+    "enabled": false,
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Historias reales de mascotas felices y dueños satisfechos.",
+    "show_count": 3
+  },
+  "partners_section": {
+    "enabled": false,
+    "title": "Marcas que Trabajamos",
+    "logos": []
+  },
+  "cta_section": {
+    "enabled": true,
+    "title": "¿Tu mascota necesita atención?",
+    "subtitle": "Agenda una cita o comunícate con nosotros por WhatsApp",
+    "primary_cta": "Agendar Cita",
+    "secondary_cta": "Escribir por WhatsApp"
+  },
+  "seo": {
+    "meta_title": "CavillPet | Servicios Veterinarios en Asunción, Paraguay",
+    "meta_description": "CavillPet - Servicios Veterinarios con guardería 24hs en Asunción. Consultas, vacunas, cirugías, peluquería y atención de emergencias. Cuidamos a tu mascota como familia.",
+    "keywords": [
+      "veterinaria asuncion",
+      "guarderia mascotas",
+      "peluqueria canina",
+      "vacunas perros",
+      "vacunas gatos",
+      "cirugia veterinaria",
+      "emergencias veterinarias"
+    ],
+    "og_type": "website",
+    "og_locale": "es_PY"
+  }
+}

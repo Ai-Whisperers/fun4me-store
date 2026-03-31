@@ -1,0 +1,110 @@
+{
+  "$schema": "https://github.com/code-yeongyu/oh-my-opencode/assets/oh-my-opencode.schema.json",
+  
+  "// ===========================================": "",
+  "// CONFIGURACION PARA ESTUDIANTES FPUNA": "",
+  "// ===========================================": "",
+  "// Copia esta carpeta a tu proyecto como .opencode/": "",
+  "// Ejecuta: opencode para iniciar": "",
+  
+  "agents": {
+    "prometheus": {
+      "enabled": true,
+      "replace_plan": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "temperature": 0.7,
+      "// NOTE": "Agente principal de planificacion"
+    },
+    "oracle": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "// USAGE": "Consultor de arquitectura y debugging complejo"
+    },
+    "explore": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "// USAGE": "Busqueda contextual en el codebase",
+      "permission": {
+        "edit": "deny",
+        "bash": "allow",
+        "webfetch": "deny"
+      }
+    },
+    "librarian": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "// USAGE": "Busqueda de documentacion externa y ejemplos",
+      "permission": {
+        "edit": "deny",
+        "bash": "allow",
+        "webfetch": "allow"
+      }
+    },
+    "code-reviewer": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "// USAGE": "Revision de codigo y sugerencias"
+    },
+    "test-writer": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "// USAGE": "Generacion de tests automatizados"
+    },
+    "debugger": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-5",
+      "// USAGE": "Debugging sistematico de errores"
+    }
+  },
+  
+  "disabled_agents": [],
+  "disabled_hooks": [],
+  "disabled_mcps": [],
+  "disabled_skills": [],
+  "disabled_commands": [],
+  
+  "background_task": {
+    "defaultConcurrency": 5,
+    "providerConcurrency": {
+      "anthropic": 5,
+      "google": 10,
+      "openai": 3
+    }
+  },
+  
+  "experimental": {
+    "preemptive_compaction": true,
+    "preemptive_compaction_threshold": 0.85,
+    "auto_resume": true
+  },
+  
+  "claude_code": {
+    "mcp": true,
+    "commands": true,
+    "skills": true,
+    "agents": true,
+    "hooks": true
+  },
+  
+  "skills": {
+    "sources": [
+      "./.opencode/skills"
+    ],
+    "enable": [],
+    "disable": []
+  },
+  
+  "mcpServers": {
+    "// INSTRUCCIONES": "Agrega tus servidores MCP aqui",
+    "// EJEMPLO-SUPABASE": {
+      "// command": "npx",
+      "// args": ["-y", "@anthropic-ai/mcp-server-supabase"],
+      "// env": {
+        "// SUPABASE_URL": "tu-url-aqui",
+        "// SUPABASE_KEY": "tu-key-aqui"
+      }
+    }
+  }
+}

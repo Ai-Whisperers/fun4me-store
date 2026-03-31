@@ -1,0 +1,86 @@
+[
+  {
+    "id": "age-verification",
+    "category": "general",
+    "question": "¿Por qué necesitan verificar mi edad?",
+    "answer": "Por ley, nuestros productos son exclusivamente para mayores de 18 años. La verificación protege a menores y nos permite brindarte la mejor experiencia sin restricciones."
+  },
+  {
+    "id": "discrete-shipping",
+    "category": "envios",
+    "question": "¿El envío es realmente discreto?",
+    "answer": "100% discreto. El paquete no tiene logos, nombres ni ninguna indicación del contenido. Nadie sabrá qué hay dentro excepto vos."
+  },
+  {
+    "id": "payment-methods",
+    "category": "pagos",
+    "question": "¿Qué formas de pago aceptan?",
+    "answer": "Aceptamos tarjetas de crédito/débito (Visa, Mastercard), transferencia bancaria, billeteras electrónicas (Tigo Money, Personal Pay), y efectivo contra entrega en Asunción."
+  },
+  {
+    "id": "payment-statement",
+    "category": "pagos",
+    "question": "¿Qué aparece en mi estado de cuenta?",
+    "answer": "El cargo aparece de forma discreta sin referencias explícitas al tipo de productos."
+  },
+  {
+    "id": "shipping-time",
+    "category": "envios",
+    "question": "¿Cuánto tarda el envío?",
+    "answer": "Asunción: 24-48 horas. Gran Asunción: 48-72 horas. Interior: 3-5 días hábiles. Envío express disponible con entrega el mismo día en Asunción (cargo adicional)."
+  },
+  {
+    "id": "returns",
+    "category": "compras",
+    "question": "¿Puedo devolver un producto?",
+    "answer": "Por razones de higiene, no aceptamos devoluciones de productos íntimos una vez abiertos. Si el producto llega defectuoso o dañado, lo reemplazamos sin costo. Lencería sin usar con etiquetas puede devolverse en 7 días."
+  },
+  {
+    "id": "product-safety",
+    "category": "productos",
+    "question": "¿Los productos son seguros?",
+    "answer": "Trabajamos con productos de marcas reconocidas. Todos nuestros vibradores son de silicona, ABS libre de ftalatos, o materiales seguros para el cuerpo."
+  },
+  {
+    "id": "lubricant-silicone",
+    "category": "productos",
+    "question": "¿Puedo usar lubricante de silicona con juguetes de silicona?",
+    "answer": "No recomendado. Los lubricantes de silicona pueden degradar la superficie de juguetes de silicona. Usá lubricantes a base de agua con juguetes de silicona."
+  },
+  {
+    "id": "store-visit",
+    "category": "tienda",
+    "question": "¿Puedo visitar la tienda física?",
+    "answer": "¡Claro! Te esperamos en Herrera 875, Asunción. Nuestro horario es de lunes a viernes de 09:00 a 20:00 y sábados de 09:00 a 18:00."
+  },
+  {
+    "id": "gift-cards",
+    "category": "compras",
+    "question": "¿Tienen gift cards?",
+    "answer": "Sí, consultanos por WhatsApp para opciones de gift cards en diferentes montos."
+  },
+  {
+    "id": "privacy-data",
+    "category": "privacidad",
+    "question": "¿Cómo protegen mis datos?",
+    "answer": "Tus datos están protegidos y nunca se comparten con terceros. No enviamos comunicaciones físicas a tu domicilio sin tu consentimiento."
+  },
+  {
+    "id": "whatsapp-order",
+    "category": "compras",
+    "question": "¿Puedo hacer pedidos por WhatsApp?",
+    "answer": "¡Sí! Escribinos por WhatsApp, te asesoramos y podés hacer tu pedido directamente por ahí."
+  },
+  {
+    "id": "free-shipping",
+    "category": "envios",
+    "question": "¿Tienen envío gratis?",
+    "answer": "Sí, el envío es gratis en compras mayores a Gs. 200.000 a todo el país."
+  },
+  {
+    "id": "product-warranty",
+    "category": "productos",
+    "question": "¿Los productos tienen garantía?",
+    "answer": "Los productos electrónicos tienen garantía según el fabricante. Satisfyer tiene 15 años de garantía, LELO 1 año, We-Vibe 2 años."
+  }
+]

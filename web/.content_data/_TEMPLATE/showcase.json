@@ -1,0 +1,19 @@
+{
+  "displayInShowcase": false,
+  "testimonial": "",
+  "shortTestimonial": "",
+  "joinedDate": "",
+  "metrics": {
+    "appointmentsGrowth": "",
+    "onlineBookingsPercent": "",
+    "patientsRegistered": "",
+    "satisfactionScore": ""
+  },
+  "contactPerson": {
+    "name": "",
+    "role": "",
+    "quote": ""
+  },
+  "specialties": [],
+  "highlights": []
+}

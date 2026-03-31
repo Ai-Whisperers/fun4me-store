@@ -1,0 +1,65 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Staff schedules for PetLife. All IDs are UUIDs.",
+  "staff_schedules": [
+    {
+      "id": "c0000002-0001-0001-0001-000000000001",
+      "staff_id": "b0000001-0001-0001-0001-000000000001",
+      "tenant_id": "petlife",
+      "name": "Horario Cardiología",
+      "is_default": true,
+      "effective_from": "2024-01-01",
+      "is_active": true
+    }
+  ],
+  "staff_schedule_entries": [
+    {
+      "id": "d0000002-0001-0001-0001-000000000001",
+      "schedule_id": "c0000002-0001-0001-0001-000000000001",
+      "tenant_id": "petlife",
+      "day_of_week": 1,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:30",
+      "break_end": "13:30"
+    },
+    {
+      "id": "d0000002-0001-0001-0001-000000000002",
+      "schedule_id": "c0000002-0001-0001-0001-000000000001",
+      "tenant_id": "petlife",
+      "day_of_week": 2,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:30",
+      "break_end": "13:30"
+    },
+    {
+      "id": "d0000002-0001-0001-0001-000000000003",
+      "schedule_id": "c0000002-0001-0001-0001-000000000001",
+      "tenant_id": "petlife",
+      "day_of_week": 3,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:30",
+      "break_end": "13:30"
+    },
+    {
+      "id": "d0000002-0001-0001-0001-000000000004",
+      "schedule_id": "c0000002-0001-0001-0001-000000000001",
+      "tenant_id": "petlife",
+      "day_of_week": 4,
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "break_start": "12:30",
+      "break_end": "13:30"
+    },
+    {
+      "id": "d0000002-0001-0001-0001-000000000005",
+      "schedule_id": "c0000002-0001-0001-0001-000000000001",
+      "tenant_id": "petlife",
+      "day_of_week": 5,
+      "start_time": "09:00",
+      "end_time": "13:00"
+    }
+  ]
+}

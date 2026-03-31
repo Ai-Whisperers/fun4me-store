@@ -1,0 +1,54 @@
+{
+  "$schema": "../_schemas/core.schema.json",
+  "_comment": "Demo accounts for development. In production, set is_active=false or delete.",
+  "demo_accounts": [
+    {
+      "email": "admin@terrapet.demo",
+      "tenant_id": "terrapet",
+      "role": "admin",
+      "full_name": "Maria Garcia (Admin)",
+      "password_hint": "demo123",
+      "is_active": true
+    },
+    {
+      "email": "vet@terrapet.demo",
+      "tenant_id": "terrapet",
+      "role": "vet",
+      "full_name": "Dr. Carlos Rodriguez",
+      "password_hint": "demo123",
+      "is_active": true
+    },
+    {
+      "email": "owner@terrapet.demo",
+      "tenant_id": "terrapet",
+      "role": "owner",
+      "full_name": "Juan Perez (Cliente)",
+      "password_hint": "demo123",
+      "is_active": true
+    },
+    {
+      "email": "admin@petlife.demo",
+      "tenant_id": "petlife",
+      "role": "admin",
+      "full_name": "Ana Martinez (Admin)",
+      "password_hint": "demo123",
+      "is_active": true
+    },
+    {
+      "email": "vet@petlife.demo",
+      "tenant_id": "petlife",
+      "role": "vet",
+      "full_name": "Dra. Laura Gonzalez",
+      "password_hint": "demo123",
+      "is_active": true
+    },
+    {
+      "email": "owner@petlife.demo",
+      "tenant_id": "petlife",
+      "role": "owner",
+      "full_name": "Sofia Benitez (Cliente)",
+      "password_hint": "demo123",
+      "is_active": true
+    }
+  ]
+}

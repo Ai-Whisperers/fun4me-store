@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "badge_text": "Envio Discreto",
+    "headline": "Tu Tienda de Placer",
+    "subhead": "Hace tus compras online o veni a visitarnos. Delivery a todo el pais con total discrecion.",
+    "cta_primary": "Explorar Tienda",
+    "cta_secondary": "Contactanos",
+    "cta_secondary_link": "whatsapp",
+    "trust_badges": [
+      { "icon": "truck", "text": "Envio a Todo el Pais" },
+      { "icon": "shield", "text": "Pago Seguro" },
+      { "icon": "package", "text": "Empaque Discreto" }
+    ]
+  },
+  "features": [
+    {
+      "icon": "lock",
+      "title": "100% Discreto",
+      "text": "Empaque neutro, facturacion discreta y envio confidencial garantizado."
+    },
+    {
+      "icon": "truck",
+      "title": "Delivery a Todo el Pais",
+      "text": "Envios rapidos y seguros a cualquier punto de Paraguay."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Productos de Calidad",
+      "text": "Seleccion de las mejores marcas con garantia de calidad."
+    },
+    {
+      "icon": "heart",
+      "title": "Atencion Personalizada",
+      "text": "Te asesoramos para encontrar el producto perfecto para vos."
+    }
+  ],
+  "promo_banner": {
+    "enabled": true,
+    "text": "Envio GRATIS en compras mayores a Gs. 200.000",
+    "link": "/fun4me/store",
+    "expires": ""
+  },
+  "stats_section": {
+    "enabled": true,
+    "title": "Numeros que nos respaldan",
+    "stats": [
+      { "value": "7+", "label": "Anos de Experiencia" },
+      { "value": "5.000+", "label": "Clientes Satisfechos" },
+      { "value": "200+", "label": "Productos Disponibles" },
+      { "value": "100%", "label": "Envio Discreto" }
+    ]
+  },
+  "interactive_tools_section": {
+    "enabled": false,
+    "title": "Herramientas",
+    "subtitle": "",
+    "toxic_food_cta": "",
+    "age_calc_cta": "",
+    "tools": []
+  },
+  "services_preview": {
+    "enabled": true,
+    "title": "Categorias Destacadas",
+    "subtitle": "Todo lo que necesitas para disfrutar",
+    "featured_services": ["vibradores", "parejas", "lubricantes"],
+    "cta_text": "Ver Todo el Catalogo"
+  },
+  "testimonials_section": {
+    "enabled": true,
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Testimonios reales de clientes satisfechos.",
+    "show_count": 3
+  },
+  "partners_section": {
+    "enabled": true,
+    "title": "Marcas Disponibles",
+    "logos": [
+      { "name": "Satisfyer", "image": "/images/placeholders/product-placeholder.svg" },
+      { "name": "LELO", "image": "/images/placeholders/product-placeholder.svg" },
+      { "name": "We-Vibe", "image": "/images/placeholders/product-placeholder.svg" }
+    ]
+  },
+  "cta_section": {
+    "enabled": true,
+    "title": "Tenes alguna consulta?",
+    "subtitle": "Escribinos por WhatsApp y te asesoramos",
+    "primary_cta": "Ver Tienda",
+    "secondary_cta": "Escribir por WhatsApp"
+  },
+  "seo": {
+    "meta_title": "Fun4Me - Sex Shop Online en Paraguay | Envio Discreto",
+    "meta_description": "Juguetes para adultos, lenceria, accesorios y mas. Compra online con envio discreto a todo Paraguay. Tienda fisica en Asuncion. Solo mayores de 18.",
+    "keywords": [
+      "sex shop paraguay",
+      "juguetes adultos",
+      "lenceria",
+      "fun4me",
+      "tienda erotica asuncion"
+    ]
+  }
+}

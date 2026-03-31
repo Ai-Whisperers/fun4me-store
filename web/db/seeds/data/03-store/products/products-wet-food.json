@@ -1,0 +1,150 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "wet-food",
+  "products": [
+    {
+      "sku": "WET-COMPLETE-CARNE-100G",
+      "name": "Wet Complete Carne 100g",
+      "description": "Alimento húmedo completo sabor carne para perros",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "100g",
+          "base_price": 8500,
+          "cost_price": 5100,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp"
+      ],
+      "attributes": {
+        "flavor": "Carne",
+        "type": "Complete"
+      }
+    },
+    {
+      "sku": "WET-COMPLETE-POLLO-100G",
+      "name": "Wet Complete Pollo 100g",
+      "description": "Alimento húmedo completo sabor pollo para perros",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "100g",
+          "base_price": 8500,
+          "cost_price": 5100,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp"
+      ],
+      "attributes": {
+        "flavor": "Pollo",
+        "type": "Complete"
+      }
+    },
+    {
+      "sku": "WET-COMPLETE-RES-100G",
+      "name": "Wet Complete Res 100g",
+      "description": "Alimento húmedo completo sabor res para perros",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "100g",
+          "base_price": 8500,
+          "cost_price": 5100,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp"
+      ],
+      "attributes": {
+        "flavor": "Res",
+        "type": "Complete"
+      }
+    },
+    {
+      "sku": "WET-BALANCED-CARNE-100G",
+      "name": "Wet Balanced Carne 100g",
+      "description": "Alimento húmedo balanceado sabor carne para perros",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "100g",
+          "base_price": 7500,
+          "cost_price": 4500,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp"
+      ],
+      "attributes": {
+        "flavor": "Carne",
+        "type": "Balanced"
+      }
+    },
+    {
+      "sku": "WET-BALANCED-POLLO-100G",
+      "name": "Wet Balanced Pollo 100g",
+      "description": "Alimento húmedo balanceado sabor pollo para perros",
+      "category_slug": "NUT-CAN-HUM",
+      "target_species": ["dog"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "100g",
+          "base_price": 7500,
+          "cost_price": 4500,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp"
+      ],
+      "attributes": {
+        "flavor": "Pollo",
+        "type": "Balanced"
+      }
+    },
+    {
+      "sku": "WET-CAT-COMPLETE-85G",
+      "name": "Wet Complete Gatos 85g",
+      "description": "Alimento húmedo completo para gatos adultos",
+      "category_slug": "NUT-FEL-HUM",
+      "target_species": ["cat"],
+      "requires_prescription": false,
+      "variants": [
+        {
+          "size": "85g",
+          "base_price": 7000,
+          "cost_price": 4200,
+          "sku_suffix": ""
+        }
+      ],
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759377-MLA70114093107_062023-F.webp"
+      ],
+      "attributes": {
+        "flavor": "Mix",
+        "type": "Complete"
+      }
+    }
+  ]
+}

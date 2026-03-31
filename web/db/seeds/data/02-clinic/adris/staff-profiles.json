@@ -1,0 +1,34 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Extended staff profile information for veterinarians. IDs must be valid UUIDs.",
+  "staff_profiles": [
+    {
+      "id": "a0000001-0001-0001-0001-000000000001",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440004",
+      "tenant_id": "terrapet",
+      "specializations": ["Medicina General", "Dermatología"],
+      "license_number": "MV-PY-2018-0456",
+      "license_expiry": "2026-12-31",
+      "education": "Universidad Nacional de Asunción - Medicina Veterinaria",
+      "bio": "Especialista en dermatología veterinaria con más de 6 años de experiencia. Enfoque en tratamiento de alergias y enfermedades de la piel.",
+      "hire_date": "2018-03-15",
+      "employment_type": "full_time",
+      "title": "Veterinario Senior",
+      "is_active": true
+    },
+    {
+      "id": "a0000001-0001-0001-0001-000000000002",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440005",
+      "tenant_id": "terrapet",
+      "specializations": ["Cirugía General", "Traumatología"],
+      "license_number": "MV-PY-2015-0234",
+      "license_expiry": "2026-12-31",
+      "education": "Universidad Nacional de Asunción - Medicina Veterinaria, Especialización en Cirugía",
+      "bio": "Cirujano veterinario con especialización en ortopedia y traumatología. Más de 9 años realizando cirugías complejas.",
+      "hire_date": "2015-06-01",
+      "employment_type": "full_time",
+      "title": "Cirujano Veterinario",
+      "is_active": true
+    }
+  ]
+}

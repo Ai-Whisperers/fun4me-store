@@ -1,0 +1,374 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# SEED DATA - INVENTARIO VETERINARIO PARAGUAY
+# Precios en Guaraníes (PYG) - Diciembre 2024
+#
+# ARQUITECTURA:
+# - 🆕 Productos: Catálogo master de TODOS los productos del mercado
+# - 📋 Mis Productos: Productos que TU CLÍNICA tiene (con tus precios y stock)
+# - 📦 Movimientos Stock: Historial de compras, ventas, ajustes
+#
+# INSTRUCCIONES:
+# 1. Cada sección corresponde a una hoja del Google Sheets
+# 2. Copiar los datos SIN las líneas de comentario (#)
+# 3. Las columnas marcadas con (auto) o (fórmula) NO se copian
+# ═══════════════════════════════════════════════════════════════════════════════
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOJA: 📂 Categorías
+# Columnas: Nombre, Nivel, Categoría Padre, Activo
+# (Copiar desde B2 - la columna A es auto-generada)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+Alimentos,1,,Sí
+Medicamentos,1,,Sí
+Antiparasitarios,1,,Sí
+Vacunas,1,,Sí
+Insumos Clínicos,1,,Sí
+Accesorios,1,,Sí
+Higiene,1,,Sí
+Perros,2,ALI,Sí
+Gatos,2,ALI,Sí
+Terapéuticos,2,ALI,Sí
+Cachorros,3,ALI-PER,Sí
+Adultos,3,ALI-PER,Sí
+Senior,3,ALI-PER,Sí
+Razas Pequeñas,3,ALI-PER,Sí
+Razas Grandes,3,ALI-PER,Sí
+Kitten,3,ALI-GAT,Sí
+Adult,3,ALI-GAT,Sí
+Esterilizados,3,ALI-GAT,Sí
+Antibióticos,2,MED,Sí
+Antiinflamatorios,2,MED,Sí
+Corticoides,2,MED,Sí
+Analgésicos,2,MED,Sí
+Dermatológicos,2,MED,Sí
+Oftálmicos,2,MED,Sí
+Gastrointestinales,2,MED,Sí
+Cardiovasculares,2,MED,Sí
+Sueros,2,MED,Sí
+Externos,2,ANT,Sí
+Internos,2,ANT,Sí
+Combinados,2,ANT,Sí
+Caninas,2,VAC,Sí
+Felinas,2,VAC,Sí
+Antirrábicas,2,VAC,Sí
+Jeringas,2,INS,Sí
+Guantes,2,INS,Sí
+Gasas y Vendas,2,INS,Sí
+Catéteres,2,INS,Sí
+Suturas,2,INS,Sí
+Descartables,2,INS,Sí
+Collares y Correas,2,ACC,Sí
+Camas,2,ACC,Sí
+Juguetes,2,ACC,Sí
+Transportadoras,2,ACC,Sí
+Comederos,2,ACC,Sí
+Shampoos,2,HIG,Sí
+Cepillos,2,HIG,Sí
+Limpieza Oídos,2,HIG,Sí
+Dental,2,HIG,Sí
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOJA: 🏭 Proveedores
+# Columnas: Nombre, Tipo, Teléfono, Email, Notas, Activo
+# (Copiar desde B2 - la columna A es auto-generada)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+Caldetec S.A.,Productos,021-615-2000,ventas@caldetec.com.py,Dist. oficial Royal Canin Pro Plan. Entrega L-M-V,Sí
+Cedivep S.R.L.,Ambos,021-290-4000,pedidos@cedivep.com.py,Dist. Boehringer (Nexgard Frontline). Crédito 30 días,Sí
+Consult-Pec S.A.,Ambos,021-550-7700,ventas@consultpec.com.py,Dist. Zoetis (Simparica vacunas). Min compra 500k,Sí
+Invet Paraguay,Insumos,021-225-9000,insumos@invet.com.py,Insumos quirúrgicos 3M material descartable,Sí
+Droguería Alemana,Ambos,021-497-5000,farmacia@droale.com.py,Farmacia veterinaria antibióticos corticoides,Sí
+Pet Food Paraguay,Productos,021-660-8800,mayorista@petfood.com.py,Hills Pedigree Whiskas. Delivery gratis +1M,Sí
+Agrovet Central,Ambos,021-510-3300,central@agrovet.com.py,Productos rurales y urbanos. Interior país,Sí
+Bio-Vet S.A.,Productos,021-295-6600,bio@biovet.com.py,Biológicos vacunas importadas,Sí
+Medic Vet Importadora,Insumos,021-445-2200,import@medicvet.com.py,Equipos monitores anestesia,Sí
+Distribuidora San Lorenzo,Productos,021-585-1100,sanlorenzo@dist.com.py,Accesorios higiene camas. Zona Central,Sí
+Farmavet Asunción,Ambos,021-233-4400,compras@farmavet.com.py,Farmacia 24hs. Urgencias veterinarias,Sí
+ProVet Distribuciones,Productos,021-677-9900,provet@distribuciones.com.py,Mars (Pedigree) Nestlé (Purina),Sí
+Laboratorios Bagó Py,Ambos,021-205-7000,vetpy@bago.com.py,Genéricos veterinarios precios competitivos,Sí
+MSD Animal Health Py,Ambos,021-612-8000,msd@animalhealth.com.py,Bravecto Nobivac. Soporte técnico incluido,Sí
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOJA: 🏷️ Marcas
+# Columnas: Nombre, País, Activo
+# (Copiar desde B2 - la columna A es auto-generada)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+Royal Canin,Francia,Sí
+Pro Plan,USA,Sí
+Hills Science Diet,USA,Sí
+Eukanuba,USA,Sí
+Acana,Canadá,Sí
+Orijen,Canadá,Sí
+Pedigree,USA,Sí
+Whiskas,USA,Sí
+Dog Chow,USA,Sí
+Cat Chow,USA,Sí
+Boehringer Ingelheim,Alemania,Sí
+Zoetis,USA,Sí
+MSD Animal Health,USA,Sí
+Elanco,USA,Sí
+Virbac,Francia,Sí
+Bayer Animal Health,Alemania,Sí
+Dechra,Reino Unido,Sí
+Ceva,Francia,Sí
+Laboratorios Bagó,Argentina,Sí
+Holliday-Scott,Argentina,Sí
+3M Health Care,USA,Sí
+BD (Becton Dickinson),USA,Sí
+Braun Veterinario,Alemania,Sí
+Kruuse,Dinamarca,Sí
+Trixie,Alemania,Sí
+Kong,USA,Sí
+Furminator,USA,Sí
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOJA: 🆕 Productos (CATÁLOGO MASTER)
+# Este es el catálogo de TODOS los productos disponibles en el mercado
+# Los precios son de REFERENCIA del proveedor, NO precios de venta
+#
+# Columnas (B a L, sin A que es auto-generada, sin I que es fórmula):
+# Nombre, Categoría, Marca, Unid.Compra, Cant.Contenida, Unid.Venta,
+# PrecioCompra, (CostoUnit=fórmula), Proveedor, Descripción, Activo
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ALIMENTOS PERROS PREMIUM
+Royal Canin Medium Adult 15kg,ALI-PER-ADU,RO-001,Bolsa,1,Bolsa,580000,CAL-001,Alimento premium perros adultos 12m-7años razas medianas,Sí
+Royal Canin Medium Puppy 15kg,ALI-PER-CAC,RO-001,Bolsa,1,Bolsa,595000,CAL-001,Alimento cachorros razas medianas hasta 12 meses,Sí
+Royal Canin Mini Adult 7.5kg,ALI-PER-RAZ,RO-001,Bolsa,1,Bolsa,385000,CAL-001,Alimento perros adultos razas pequeñas 1-10kg,Sí
+Royal Canin Maxi Adult 15kg,ALI-PER-RAZ,RO-001,Bolsa,1,Bolsa,565000,CAL-001,Alimento perros adultos razas grandes 26-44kg,Sí
+Royal Canin Maxi Puppy 15kg,ALI-PER-CAC,RO-001,Bolsa,1,Bolsa,590000,CAL-001,Alimento cachorros razas grandes hasta 15 meses,Sí
+Royal Canin Veterinary Renal 10kg,ALI-TER,RO-001,Bolsa,1,Bolsa,720000,CAL-001,Dieta renal insuficiencia renal crónica,Sí
+Royal Canin Veterinary Gastrointestinal 10kg,ALI-TER,RO-001,Bolsa,1,Bolsa,695000,CAL-001,Dieta gastrointestinal trastornos digestivos,Sí
+Pro Plan Adult Medium 15kg,ALI-PER-ADU,PR-001,Bolsa,1,Bolsa,520000,CAL-001,Alimento premium perros adultos razas medianas,Sí
+Pro Plan Puppy Medium 15kg,ALI-PER-CAC,PR-001,Bolsa,1,Bolsa,535000,CAL-001,Alimento cachorros razas medianas DHA cerebro,Sí
+Pro Plan Small Breed Adult 7.5kg,ALI-PER-RAZ,PR-001,Bolsa,1,Bolsa,365000,CAL-001,Alimento perros pequeños adultos alta energía,Sí
+Pedigree Adult 21kg,ALI-PER-ADU,PE-007,Bolsa,1,Bolsa,285000,PRO-012,Alimento económico perros adultos todas razas,Sí
+Pedigree Puppy 17kg,ALI-PER-CAC,PE-007,Bolsa,1,Bolsa,275000,PRO-012,Alimento económico cachorros en crecimiento,Sí
+Dog Chow Adult 21kg,ALI-PER-ADU,DO-009,Bolsa,1,Bolsa,265000,PRO-012,Alimento perros adultos nutrición completa,Sí
+Dog Chow Puppy 21kg,ALI-PER-CAC,DO-009,Bolsa,1,Bolsa,280000,PRO-012,Alimento cachorros con DHA desarrollo cerebral,Sí
+Eukanuba Adult Medium 15kg,ALI-PER-ADU,EU-004,Bolsa,1,Bolsa,545000,CAL-001,Alimento premium adultos razas medianas,Sí
+Hills Science Diet Adult 15kg,ALI-PER-ADU,HI-003,Bolsa,1,Bolsa,615000,PET-006,Alimento clínico perros adultos mantenimiento,Sí
+Hills Prescription Diet k/d 8kg,ALI-TER,HI-003,Bolsa,1,Bolsa,580000,PET-006,Dieta renal enfermedad renal crónica,Sí
+Hills Prescription Diet i/d 8kg,ALI-TER,HI-003,Bolsa,1,Bolsa,565000,PET-006,Dieta digestiva trastornos gastrointestinales,Sí
+
+# ALIMENTOS GATOS
+Royal Canin Fit 32 10kg,ALI-GAT-ADU,RO-001,Bolsa,1,Bolsa,485000,CAL-001,Alimento gatos adultos moderada actividad,Sí
+Royal Canin Indoor 27 10kg,ALI-GAT-ADU,RO-001,Bolsa,1,Bolsa,495000,CAL-001,Alimento gatos interior baja actividad,Sí
+Royal Canin Kitten 10kg,ALI-GAT-KIT,RO-001,Bolsa,1,Bolsa,520000,CAL-001,Alimento gatitos hasta 12 meses,Sí
+Royal Canin Sterilised 10kg,ALI-GAT-EST,RO-001,Bolsa,1,Bolsa,510000,CAL-001,Alimento gatos esterilizados control peso,Sí
+Pro Plan Adult Cat 7.5kg,ALI-GAT-ADU,PR-001,Bolsa,1,Bolsa,420000,CAL-001,Alimento premium gatos adultos,Sí
+Pro Plan Kitten 7.5kg,ALI-GAT-KIT,PR-001,Bolsa,1,Bolsa,435000,CAL-001,Alimento gatitos DHA desarrollo,Sí
+Whiskas Adult 10kg,ALI-GAT-ADU,WH-008,Bolsa,1,Bolsa,185000,PRO-012,Alimento económico gatos adultos,Sí
+Cat Chow Adult 8kg,ALI-GAT-ADU,CA-010,Bolsa,1,Bolsa,175000,PRO-012,Alimento gatos adultos pelo brillante,Sí
+
+# ANTIPARASITARIOS COMBINADOS (se compra caja se vende por tableta)
+NexGard Spectra XS 2-3.5kg,ANT-COM,BO-011,Caja,3,Tableta,185000,CED-002,Antiparasitario oral mensual perros toy pulgas garrapatas gusanos,Sí
+NexGard Spectra S 3.5-7.5kg,ANT-COM,BO-011,Caja,3,Tableta,195000,CED-002,Antiparasitario oral mensual perros pequeños amplio espectro,Sí
+NexGard Spectra M 7.5-15kg,ANT-COM,BO-011,Caja,3,Tableta,205000,CED-002,Antiparasitario oral mensual perros medianos 3 en 1,Sí
+NexGard Spectra L 15-30kg,ANT-COM,BO-011,Caja,3,Tableta,225000,CED-002,Antiparasitario oral mensual perros grandes,Sí
+NexGard Spectra XL 30-60kg,ANT-COM,BO-011,Caja,3,Tableta,245000,CED-002,Antiparasitario oral mensual perros gigantes,Sí
+Simparica Trio XS 1.25-2.5kg,ANT-COM,ZO-012,Caja,3,Tableta,195000,CON-003,Triple acción pulgas garrapatas gusanos corazón,Sí
+Simparica Trio S 2.5-5kg,ANT-COM,ZO-012,Caja,3,Tableta,205000,CON-003,Antiparasitario oral mensual triple acción,Sí
+Simparica Trio M 5-10kg,ANT-COM,ZO-012,Caja,3,Tableta,215000,CON-003,Antiparasitario oral perros medianos sabroso,Sí
+Simparica Trio L 10-20kg,ANT-COM,ZO-012,Caja,3,Tableta,235000,CON-003,Triple protección perros grandes,Sí
+Simparica Trio XL 20-40kg,ANT-COM,ZO-012,Caja,3,Tableta,255000,CON-003,Antiparasitario oral perros extra grandes,Sí
+
+# ANTIPARASITARIOS EXTERNOS
+Bravecto Perro 2-4.5kg,ANT-EXT,MS-013,Caja,1,Tableta,145000,MSD-014,Antiparasitario oral 3 meses pulgas garrapatas,Sí
+Bravecto Perro 4.5-10kg,ANT-EXT,MS-013,Caja,1,Tableta,155000,MSD-014,Protección trimestral perros pequeños,Sí
+Bravecto Perro 10-20kg,ANT-EXT,MS-013,Caja,1,Tableta,175000,MSD-014,Antiparasitario 12 semanas perros medianos,Sí
+Bravecto Perro 20-40kg,ANT-EXT,MS-013,Caja,1,Tableta,195000,MSD-014,Protección trimestral perros grandes,Sí
+Bravecto Perro 40-56kg,ANT-EXT,MS-013,Caja,1,Tableta,215000,MSD-014,Antiparasitario oral perros gigantes,Sí
+Frontline Plus Perro S hasta 10kg,ANT-EXT,BO-011,Caja,3,Pipeta,95000,CED-002,Pipeta mensual pulgas y garrapatas,Sí
+Frontline Plus Perro M 10-20kg,ANT-EXT,BO-011,Caja,3,Pipeta,105000,CED-002,Pipeta antiparasitaria perros medianos,Sí
+Frontline Plus Perro L 20-40kg,ANT-EXT,BO-011,Caja,3,Pipeta,115000,CED-002,Pipeta spot-on perros grandes,Sí
+Frontline Plus Gato,ANT-EXT,BO-011,Caja,3,Pipeta,92000,CED-002,Pipeta mensual gatos pulgas,Sí
+Seresto Collar Perro Grande,ANT-EXT,EL-014,Unidad,1,Unidad,285000,CED-002,Collar 8 meses pulgas garrapatas perros +8kg,Sí
+Seresto Collar Perro Pequeño,ANT-EXT,EL-014,Unidad,1,Unidad,265000,CED-002,Collar 8 meses perros hasta 8kg,Sí
+Seresto Collar Gato,ANT-EXT,EL-014,Unidad,1,Unidad,255000,CED-002,Collar 8 meses gatos todas edades,Sí
+
+# ANTIPARASITARIOS INTERNOS
+Drontal Plus Perro S,ANT-INT,BA-016,Caja,4,Tableta,48000,DRO-005,Desparasitante interno perros hasta 10kg,Sí
+Drontal Plus Perro M,ANT-INT,BA-016,Caja,4,Tableta,65000,DRO-005,Desparasitante amplio espectro 10-20kg,Sí
+Drontal Plus Perro L,ANT-INT,BA-016,Caja,4,Tableta,85000,DRO-005,Desparasitante perros grandes 20-35kg,Sí
+Drontal Gato,ANT-INT,BA-016,Caja,4,Tableta,52000,DRO-005,Desparasitante interno gatos,Sí
+Milpro Perro S 0.5-5kg,ANT-INT,VI-015,Caja,4,Tableta,75000,FAR-011,Antiparasitario interno perros pequeños,Sí
+Milpro Perro M 5-25kg,ANT-INT,VI-015,Caja,4,Tableta,95000,FAR-011,Desparasitante perros medianos sabroso,Sí
+Milpro Gato S 0.5-2kg,ANT-INT,VI-015,Caja,4,Tableta,68000,FAR-011,Desparasitante gatitos y gatos pequeños,Sí
+Milpro Gato 2-8kg,ANT-INT,VI-015,Caja,4,Tableta,78000,FAR-011,Antiparasitario interno gatos adultos,Sí
+
+# VACUNAS (se compra caja se vende por dosis)
+Nobivac DHPPi+L,VAC-CAN,MS-013,Caja,10,Dosis,320000,MSD-014,Vacuna séxtuple canina moquillo parvo hepatitis,Sí
+Nobivac Puppy DP,VAC-CAN,MS-013,Caja,10,Dosis,280000,MSD-014,Vacuna cachorros 6 semanas moquillo parvo,Sí
+Nobivac KC,VAC-CAN,MS-013,Caja,10,Dosis,265000,MSD-014,Vacuna tos de las perreras intranasal,Sí
+Nobivac Rabia,VAC-ANT,MS-013,Caja,10,Dosis,185000,MSD-014,Vacuna antirrábica 1 año protección,Sí
+Vanguard Plus 5/CV-L,VAC-CAN,ZO-012,Caja,10,Dosis,295000,CON-003,Vacuna polivalente canina 7 vías,Sí
+Vanguard Puppy Parvo,VAC-CAN,ZO-012,Caja,10,Dosis,195000,CON-003,Vacuna parvovirus cachorros 4 semanas,Sí
+Defensor 3,VAC-ANT,ZO-012,Caja,10,Dosis,175000,CON-003,Vacuna antirrábica 3 años,Sí
+Felocell 4,VAC-FEL,ZO-012,Caja,10,Dosis,285000,CON-003,Vacuna cuádruple felina herpes calici pan,Sí
+Felocell CVR,VAC-FEL,ZO-012,Caja,10,Dosis,245000,CON-003,Vacuna triple felina básica,Sí
+Purevax RCPCh,VAC-FEL,BO-011,Caja,10,Dosis,295000,CED-002,Vacuna recombinante felina sin adyuvantes,Sí
+Rabisin,VAC-ANT,BO-011,Caja,10,Dosis,165000,CED-002,Vacuna antirrábica inactivada,Sí
+
+# FARMACIA - ANTIBIÓTICOS (se compra caja se vende por tableta)
+Amoxicilina 500mg,MED-ANT,LA-019,Caja,10,Tableta,42000,DRO-005,Antibiótico amplio espectro infecciones,Sí
+Amoxicilina+Ác.Clavulánico 500mg,MED-ANT,LA-019,Caja,10,Tableta,68000,DRO-005,Antibiótico potenciado infecciones resistentes,Sí
+Cefalexina 500mg,MED-ANT,LA-019,Caja,10,Tableta,55000,DRO-005,Cefalosporina 1ra generación piel,Sí
+Enrofloxacina 50mg,MED-ANT,BA-016,Caja,10,Tableta,38000,DRO-005,Fluoroquinolona infecciones urinarias,Sí
+Enrofloxacina 150mg,MED-ANT,BA-016,Caja,10,Tableta,65000,DRO-005,Fluoroquinolona perros grandes,Sí
+Doxiciclina 100mg,MED-ANT,LA-019,Caja,10,Tableta,45000,DRO-005,Tetraciclina ehrlichiosis leptospirosis,Sí
+Metronidazol 500mg,MED-ANT,LA-019,Caja,10,Tableta,32000,DRO-005,Antiprotozoario giardiasis anaerobios,Sí
+Convenia 80mg/ml 8ml,MED-ANT,ZO-012,Frasco,1,Frasco,385000,CON-003,Antibiótico inyectable 14 días acción,Sí
+Baytril 5% 50ml,MED-ANT,BA-016,Frasco,1,Frasco,125000,DRO-005,Enrofloxacina inyectable,Sí
+
+# FARMACIA - ANTIINFLAMATORIOS/ANALGÉSICOS
+Meloxicam 2mg,MED-ANT,LA-019,Caja,10,Tableta,35000,DRO-005,AINE perros artritis dolor,Sí
+Meloxicam 4mg,MED-ANT,LA-019,Caja,10,Tableta,48000,DRO-005,AINE perros grandes dolor crónico,Sí
+Carprofeno 75mg,MED-ANT,ZO-012,Caja,20,Tableta,145000,CON-003,AINE osteoartritis perros,Sí
+Carprofeno 100mg,MED-ANT,ZO-012,Caja,20,Tableta,185000,CON-003,AINE dolor postquirúrgico,Sí
+Tramadol 50mg,MED-ANA,LA-019,Caja,10,Tableta,28000,DRO-005,Analgésico opioide dolor moderado severo,Sí
+Gabapentina 300mg,MED-ANA,LA-019,Caja,10,Cápsula,42000,DRO-005,Analgésico neuropático dolor crónico,Sí
+
+# FARMACIA - CORTICOIDES
+Prednisolona 5mg,MED-COR,LA-019,Caja,20,Tableta,28000,DRO-005,Corticoide oral alergias inflamación,Sí
+Prednisolona 20mg,MED-COR,LA-019,Caja,20,Tableta,45000,DRO-005,Corticoide perros grandes enf autoinmunes,Sí
+Dexametasona 4mg/ml 10ml,MED-COR,LA-019,Caja,5,Ampolla,65000,DRO-005,Corticoide inyectable emergencias,Sí
+Prednisona 50mg,MED-COR,LA-019,Caja,10,Tableta,38000,DRO-005,Corticoide oral altas dosis,Sí
+Dipirona 500mg/ml 10ml,MED-ANA,LA-019,Caja,5,Ampolla,35000,DRO-005,Analgésico antipirético inyectable,Sí
+
+# FARMACIA - DERMATOLÓGICOS
+Otomax Gotas 15ml,MED-DER,MS-013,Frasco,1,Frasco,85000,MSD-014,Ótico antibiótico antifúngico antiinflamatorio,Sí
+Surolan Gotas 15ml,MED-DER,EL-014,Frasco,1,Frasco,78000,FAR-011,Ótico otitis externa bacteriana fúngica,Sí
+Easotic 10ml,MED-DER,VI-015,Frasco,1,Frasco,125000,FAR-011,Ótico hidrocortisona gentamicina miconazol,Sí
+Malaseb Shampoo 250ml,MED-DER,DE-017,Frasco,1,Frasco,145000,FAR-011,Shampoo dermatitis seborreica malassezia,Sí
+Apoquel 5.4mg,MED-DER,ZO-012,Caja,20,Tableta,485000,CON-003,Antipruriginoso dermatitis atópica,Sí
+Apoquel 16mg,MED-DER,ZO-012,Caja,20,Tableta,685000,CON-003,Antipruriginoso perros grandes,Sí
+Cytopoint 20mg,MED-DER,ZO-012,Caja,2,Ampolla,385000,CON-003,Anticuerpo monoclonal prurito 4-8 semanas,Sí
+
+# FARMACIA - OFTÁLMICOS
+Tobramicina Oftálmica 5ml,MED-OFT,LA-019,Frasco,1,Frasco,32000,DRO-005,Antibiótico oftálmico conjuntivitis,Sí
+Ciprofloxacina Oftálmica 5ml,MED-OFT,LA-019,Frasco,1,Frasco,28000,DRO-005,Fluoroquinolona oftálmica,Sí
+Optimmune 3.5g,MED-OFT,MS-013,Tubo,1,Tubo,285000,MSD-014,Ciclosporina queratoconjuntivitis seca,Sí
+Lágrimas Artificiales 15ml,MED-OFT,LA-019,Frasco,1,Frasco,25000,DRO-005,Lubricante ocular ojo seco,Sí
+
+# FARMACIA - GASTROINTESTINALES
+Metoclopramida 10mg,MED-GAS,LA-019,Caja,10,Tableta,22000,DRO-005,Antiemético procinético vómitos,Sí
+Omeprazol 20mg,MED-GAS,LA-019,Caja,14,Cápsula,38000,DRO-005,Inhibidor bomba protones gastritis,Sí
+Ranitidina 150mg,MED-GAS,LA-019,Caja,20,Tableta,28000,DRO-005,Antiácido H2 úlceras gástricas,Sí
+Sucralfato 1g,MED-GAS,LA-019,Caja,20,Tableta,45000,DRO-005,Protector gástrico úlceras,Sí
+Cerenia 16mg,MED-GAS,ZO-012,Caja,4,Tableta,145000,CON-003,Antiemético maropitant mareo vómitos,Sí
+Cerenia 24mg,MED-GAS,ZO-012,Caja,4,Tableta,175000,CON-003,Antiemético perros grandes,Sí
+
+# FARMACIA - SUEROS
+Solución Salina 0.9% 500ml,MED-SUE,BR-023,Bolsa,1,Bolsa,18000,INV-004,Suero fisiológico hidratación IV,Sí
+Ringer Lactato 500ml,MED-SUE,BR-023,Bolsa,1,Bolsa,22000,INV-004,Solución electrolítica deshidratación,Sí
+Dextrosa 5% 500ml,MED-SUE,BR-023,Bolsa,1,Bolsa,25000,INV-004,Solución glucosada hipoglucemia,Sí
+Manitol 20% 250ml,MED-SUE,BR-023,Frasco,1,Frasco,45000,INV-004,Diurético osmótico edema cerebral,Sí
+
+# INSUMOS - JERINGAS (se compra caja se vende por unidad)
+Jeringa 1ml c/aguja x100,INS-JER,BD-022,Caja,100,Unidad,65000,INV-004,Jeringas insulina/tuberculina,Sí
+Jeringa 3ml c/aguja x100,INS-JER,BD-022,Caja,100,Unidad,72000,INV-004,Jeringas uso general vacunas,Sí
+Jeringa 5ml c/aguja x100,INS-JER,BD-022,Caja,100,Unidad,78000,INV-004,Jeringas medicación IM IV,Sí
+Jeringa 10ml c/aguja x100,INS-JER,BD-022,Caja,100,Unidad,95000,INV-004,Jeringas sueros medicación,Sí
+Jeringa 20ml c/aguja x50,INS-JER,BD-022,Caja,50,Unidad,85000,INV-004,Jeringas grandes fluidoterapia,Sí
+
+# INSUMOS - GUANTES
+Guantes Látex S x100,INS-GUA,3M-021,Caja,100,Unidad,48000,INV-004,Guantes examen talla pequeña,Sí
+Guantes Látex M x100,INS-GUA,3M-021,Caja,100,Unidad,52000,INV-004,Guantes examen talla mediana,Sí
+Guantes Látex L x100,INS-GUA,3M-021,Caja,100,Unidad,55000,INV-004,Guantes examen talla grande,Sí
+Guantes Nitrilo M x100,INS-GUA,3M-021,Caja,100,Unidad,85000,INV-004,Guantes nitrilo sin látex,Sí
+Guantes Nitrilo L x100,INS-GUA,3M-021,Caja,100,Unidad,88000,INV-004,Guantes nitrilo talla grande,Sí
+Guantes Quirúrgicos 7 x50,INS-GUA,3M-021,Caja,50,Par,125000,INV-004,Guantes estériles cirugía,Sí
+Guantes Quirúrgicos 7.5 x50,INS-GUA,3M-021,Caja,50,Par,125000,INV-004,Guantes estériles cirugía,Sí
+
+# INSUMOS - GASAS Y VENDAS
+Gasa Estéril 10x10 x100,INS-GAS,3M-021,Paquete,100,Unidad,45000,INV-004,Gasas estériles curaciones,Sí
+Gasa No Estéril 10x10 x100,INS-GAS,3M-021,Paquete,100,Unidad,28000,INV-004,Gasas limpieza general,Sí
+Venda Elástica 10cm x5m,INS-GAS,3M-021,Unidad,1,Unidad,8500,INV-004,Venda cohesiva vendajes,Sí
+Venda Elástica 5cm x5m,INS-GAS,3M-021,Unidad,1,Unidad,6500,INV-004,Venda pequeña miembros,Sí
+Esparadrapo 5cm x4.5m,INS-GAS,3M-021,Unidad,1,Unidad,18000,INV-004,Cinta adhesiva fijación,Sí
+Algodón 500g,INS-GAS,3M-021,Bolsa,1,Bolsa,25000,INV-004,Algodón absorbente,Sí
+
+# INSUMOS - CATÉTERES
+Catéter IV 24G x50,INS-CAT,BD-022,Caja,50,Unidad,85000,INV-004,Catéter gatos animales pequeños,Sí
+Catéter IV 22G x50,INS-CAT,BD-022,Caja,50,Unidad,85000,INV-004,Catéter perros pequeños/medianos,Sí
+Catéter IV 20G x50,INS-CAT,BD-022,Caja,50,Unidad,85000,INV-004,Catéter perros medianos/grandes,Sí
+Catéter IV 18G x50,INS-CAT,BD-022,Caja,50,Unidad,85000,INV-004,Catéter perros grandes fluidoterapia,Sí
+Equipo Venoclisis x50,INS-CAT,BD-022,Caja,50,Unidad,75000,INV-004,Set administración sueros,Sí
+Llave 3 Vías x25,INS-CAT,BD-022,Caja,25,Unidad,55000,INV-004,Llave conexión múltiple,Sí
+
+# INSUMOS - SUTURAS
+Sutura Nylon 3-0 x12,INS-SUT,3M-021,Caja,12,Unidad,85000,INV-004,Sutura no absorbible piel,Sí
+Sutura Nylon 2-0 x12,INS-SUT,3M-021,Caja,12,Unidad,85000,INV-004,Sutura piel animales grandes,Sí
+Sutura Vicryl 3-0 x12,INS-SUT,3M-021,Caja,12,Unidad,145000,INV-004,Sutura absorbible tejidos,Sí
+Sutura Vicryl 2-0 x12,INS-SUT,3M-021,Caja,12,Unidad,145000,INV-004,Sutura absorbible músculo,Sí
+Sutura Catgut 2-0 x12,INS-SUT,3M-021,Caja,12,Unidad,65000,INV-004,Sutura absorbible económica,Sí
+
+# HIGIENE - SHAMPOOS
+Shampoo Avena Perros 500ml,HIG-SHA,TR-025,Frasco,1,Frasco,35000,DIS-010,Shampoo piel sensible hidratante,Sí
+Shampoo Pelo Blanco 500ml,HIG-SHA,TR-025,Frasco,1,Frasco,38000,DIS-010,Shampoo blanqueador,Sí
+Shampoo Antipulgas 500ml,HIG-SHA,TR-025,Frasco,1,Frasco,42000,DIS-010,Shampoo control pulgas temporal,Sí
+Shampoo Cachorro 250ml,HIG-SHA,TR-025,Frasco,1,Frasco,28000,DIS-010,Shampoo suave cachorros,Sí
+Shampoo Gatos 250ml,HIG-SHA,TR-025,Frasco,1,Frasco,32000,DIS-010,Shampoo específico gatos,Sí
+
+# ACCESORIOS
+Collar Nylon M,ACC-COL,TR-025,Unidad,1,Unidad,18000,DIS-010,Collar nylon ajustable medianos,Sí
+Collar Nylon L,ACC-COL,TR-025,Unidad,1,Unidad,22000,DIS-010,Collar nylon grandes,Sí
+Correa Nylon 1.5m,ACC-COL,TR-025,Unidad,1,Unidad,25000,DIS-010,Correa paseo estándar,Sí
+Correa Extensible 5m,ACC-COL,TR-025,Unidad,1,Unidad,85000,DIS-010,Correa retráctil,Sí
+Arnés Perro M,ACC-COL,TR-025,Unidad,1,Unidad,45000,DIS-010,Arnés pecho medianos,Sí
+Transportadora S Gatos,ACC-TRA,TR-025,Unidad,1,Unidad,125000,DIS-010,Transportadora plástica gatos,Sí
+Transportadora M Perros,ACC-TRA,TR-025,Unidad,1,Unidad,185000,DIS-010,Transportadora perros medianos,Sí
+Comedero Inox 16cm,ACC-COM,TR-025,Unidad,1,Unidad,15000,DIS-010,Comedero acero inoxidable,Sí
+Comedero Inox 21cm,ACC-COM,TR-025,Unidad,1,Unidad,22000,DIS-010,Comedero grande,Sí
+Bebedero Fuente 2L,ACC-COM,TR-025,Unidad,1,Unidad,145000,DIS-010,Fuente agua circulante,Sí
+Cama Polar M,ACC-CAM,TR-025,Unidad,1,Unidad,65000,DIS-010,Cama polar perros medianos,Sí
+Cama Polar L,ACC-CAM,TR-025,Unidad,1,Unidad,85000,DIS-010,Cama polar grandes,Sí
+Kong Classic M,ACC-JUG,KO-026,Unidad,1,Unidad,75000,DIS-010,Juguete rellenable resistente,Sí
+Kong Classic L,ACC-JUG,KO-026,Unidad,1,Unidad,95000,DIS-010,Kong perros grandes,Sí
+Pelota Tennis x3,ACC-JUG,TR-025,Pack,3,Unidad,25000,DIS-010,Pelotas juego fetch,Sí
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOJA: 📋 Mis Productos (PRODUCTOS DE TU CLÍNICA)
+# Aquí defines QUÉ productos vendes, a QUÉ PRECIO, y tu STOCK
+# El margen se calcula automáticamente basado en el costo del catálogo
+#
+# Columnas: Producto, Precio Venta, (Margen%=fórmula), Stock Mín, Stock Inicial, Ubicación, Requiere Receta, Activo
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# EJEMPLO: Productos que una clínica típica tendría
+# (Estos son ejemplos - cada clínica define sus propios productos y precios)
+
+Royal Canin Medium Adult 15kg,750000,5,20,Depósito Principal,No,Sí
+Royal Canin Medium Puppy 15kg,770000,4,15,Depósito Principal,No,Sí
+Pro Plan Adult Medium 15kg,680000,5,18,Depósito Principal,No,Sí
+NexGard Spectra M 7.5-15kg,95000,10,30,Farmacia,Sí,Sí
+NexGard Spectra L 15-30kg,105000,10,25,Farmacia,Sí,Sí
+Simparica Trio M 5-10kg,100000,10,20,Farmacia,Sí,Sí
+Amoxicilina 500mg,7500,20,50,Farmacia,Sí,Sí
+Enrofloxacina 50mg,6500,20,40,Farmacia,Sí,Sí
+Dexametasona 4mg/ml 10ml,18000,15,25,Farmacia,Sí,Sí
+Nobivac DHPPi+L,48000,25,50,Farmacia,Sí,Sí
+Nobivac Rabia,28000,30,60,Farmacia,Sí,Sí
+Jeringa 5ml c/aguja x100,1400,5,200,Consultorio,No,Sí
+Guantes Látex M x100,950,10,300,Consultorio,No,Sí
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOJA: ⚙️ Configuración (Ubicaciones)
+# Define las ubicaciones de stock de tu clínica
+# ═══════════════════════════════════════════════════════════════════════════════
+
+DEP-MAIN,Depósito Principal,Almacén general de inventario,Sí
+DEP-FARM,Farmacia,Medicamentos y productos refrigerados,Sí
+DEP-CONS,Consultorio,Stock de uso diario en consultas,Sí
+DEP-EXHI,Exhibición,Productos en tienda para venta,Sí
+DEP-FRIO,Refrigerador,Vacunas y biológicos,Sí
+DEP-ARCH,Archivo,Ubicación para items dados de baja,No

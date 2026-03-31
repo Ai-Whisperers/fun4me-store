@@ -1,0 +1,60 @@
+# EditorConfig - Cross-editor consistency for Vete project
+# https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# TypeScript/JavaScript files
+[*.{ts,tsx,js,jsx,mjs,cjs}]
+indent_size = 2
+max_line_length = 120
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# Shell scripts
+[*.{sh,bash}]
+indent_size = 2
+
+# SQL files
+[*.sql]
+indent_size = 2
+
+# Configuration files
+[{package.json,.eslintrc,.prettierrc,.babelrc}]
+indent_size = 2
+
+# Makefiles
+[Makefile]
+indent_style = tab
+
+# Python files (for scripts)
+[*.py]
+indent_size = 4
+
+# PowerShell scripts
+[*.ps1]
+indent_size = 4
+
+# Batch files
+[*.{bat,cmd}]
+end_of_line = crlf

@@ -1,0 +1,13 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4081;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#F50057;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <path d="M140 180 Q160 140 200 150 Q240 140 260 180 Q260 200 240 210 L200 280 L160 210 Q140 200 140 180" fill="#FF4081" opacity="0.3" stroke="#FF4081" stroke-width="2"/>
+  <path d="M170 170 Q200 190 230 170" stroke="#F50057" stroke-width="2" fill="none" opacity="0.5"/>
+  <text x="200" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#FF4081" font-weight="bold">Lenceria</text>
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F50057" opacity="0.7">Fun4Me</text>
+</svg>

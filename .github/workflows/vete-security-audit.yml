@@ -1,0 +1,263 @@
+name: Vete Security Audit
+
+# Automated security validation for multi-tenant safety
+# Runs on: PRs, pushes to main/develop, manual trigger
+# Validates: tenant_id filtering, RLS policies, hardcoded colors
+
+on:
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'web/app/api/**/*.ts'
+      - 'web/app/actions/**/*.ts'
+      - 'web/db/**/*.sql'
+      - 'web/lib/**/*.ts'
+  push:
+    branches: [main, develop]
+    paths:
+      - 'web/app/api/**/*.ts'
+      - 'web/app/actions/**/*.ts'
+      - 'web/db/**/*.sql'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  security-audit:
+    runs-on: ubuntu-latest
+    name: Multi-Tenant Security Audit
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # Full history for better analysis
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+      
+      - name: Install dependencies
+        run: |
+          cd web
+          npm ci
+          
+      - name: Install MCP dependencies
+        run: |
+          cd web/mcp
+          npm ci
+      
+      - name: Build MCP servers
+        run: |
+          cd web/mcp
+          npm run build
+      
+      - name: Build custom tools
+        run: |
+          # Skip if .opencode/tool doesn't exist
+          if [ -d ".opencode/tool" ]; then
+            cd .opencode/tool
+            echo "Custom tools ready"
+          else
+            echo "No custom tools directory found, skipping"
+          fi
+      
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            web/app/api/**/*.ts
+            web/app/actions/**/*.ts
+            web/db/**/*.sql
+      
+      - name: Validate tenant_id filtering (tenant-guard)
+        id: tenant-guard
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          echo "## 🔒 Tenant Isolation Audit" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          VIOLATIONS=0
+          
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            # Only check API routes and actions
+            if [[ "$file" == web/app/api/* ]] || [[ "$file" == web/app/actions/* ]]; then
+              echo "Checking: $file" >> $GITHUB_STEP_SUMMARY
+              
+              # Check if file has Supabase queries
+              if grep -q "\.from(" "$file"; then
+                # Check if it has tenant_id filter
+                if ! grep -q "\.eq(['\"]tenant_id['\"]" "$file" && ! grep -q "WHERE.*tenant_id" "$file"; then
+                  echo "⚠️ **VIOLATION**: Missing tenant_id filter in \`$file\`" >> $GITHUB_STEP_SUMMARY
+                  echo "" >> $GITHUB_STEP_SUMMARY
+                  VIOLATIONS=$((VIOLATIONS + 1))
+                else
+                  echo "✅ tenant_id filter present" >> $GITHUB_STEP_SUMMARY
+                fi
+              fi
+            fi
+          done
+          
+          if [ $VIOLATIONS -gt 0 ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "❌ **FAILED**: Found $VIOLATIONS tenant isolation violations" >> $GITHUB_STEP_SUMMARY
+            echo "violations=$VIOLATIONS" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "✅ **PASSED**: All API routes properly filter by tenant_id" >> $GITHUB_STEP_SUMMARY
+            echo "violations=0" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Validate RLS policies (rls-validator)
+        id: rls-validator
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          echo "## 🛡️ RLS Policy Audit" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          VIOLATIONS=0
+          
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            # Only check SQL migrations
+            if [[ "$file" == web/db/*.sql ]]; then
+              echo "Checking: $file" >> $GITHUB_STEP_SUMMARY
+              
+              # Check if migration creates a table
+              if grep -q "CREATE TABLE" "$file"; then
+                HAS_TENANT_ID=$(grep -c "tenant_id.*NOT NULL" "$file" || true)
+                HAS_RLS=$(grep -c "ENABLE ROW LEVEL SECURITY" "$file" || true)
+                HAS_POLICY=$(grep -c "CREATE POLICY" "$file" || true)
+                
+                ISSUES=""
+                
+                if [ $HAS_TENANT_ID -eq 0 ]; then
+                  ISSUES="$ISSUES\n  - Missing tenant_id column"
+                  VIOLATIONS=$((VIOLATIONS + 1))
+                fi
+                
+                if [ $HAS_RLS -eq 0 ]; then
+                  ISSUES="$ISSUES\n  - RLS not enabled"
+                  VIOLATIONS=$((VIOLATIONS + 1))
+                fi
+                
+                if [ $HAS_POLICY -eq 0 ]; then
+                  ISSUES="$ISSUES\n  - No RLS policies"
+                  VIOLATIONS=$((VIOLATIONS + 1))
+                fi
+                
+                if [ -n "$ISSUES" ]; then
+                  echo "⚠️ **VIOLATION**: $file$ISSUES" >> $GITHUB_STEP_SUMMARY
+                else
+                  echo "✅ RLS compliant" >> $GITHUB_STEP_SUMMARY
+                fi
+              fi
+            fi
+          done
+          
+          if [ $VIOLATIONS -gt 0 ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "❌ **FAILED**: Found $VIOLATIONS RLS policy violations" >> $GITHUB_STEP_SUMMARY
+            echo "violations=$VIOLATIONS" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "✅ **PASSED**: All migrations have proper RLS policies" >> $GITHUB_STEP_SUMMARY
+            echo "violations=0" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Check for hardcoded colors
+        id: color-check
+        run: |
+          echo "## 🎨 Theme Compliance Audit" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          VIOLATIONS=0
+          
+          # Search for hardcoded Tailwind colors (bg-blue-500, text-red-600, etc.)
+          if grep -r -E "(bg|text|border)-(slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-[0-9]" web/app web/components --include="*.tsx" --include="*.ts" > /tmp/color_violations.txt 2>/dev/null; then
+            VIOLATIONS=$(wc -l < /tmp/color_violations.txt)
+            echo "⚠️ Found $VIOLATIONS hardcoded color classes" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            head -n 20 /tmp/color_violations.txt >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Use \`var(--primary)\`, \`var(--text-primary)\`, etc. instead" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ **PASSED**: No hardcoded colors found" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "violations=$VIOLATIONS" >> $GITHUB_OUTPUT
+      
+      - name: Run TypeScript checks
+        run: |
+          cd web
+          npm run typecheck
+      
+      - name: Run linter
+        run: |
+          cd web
+          npm run lint
+      
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tenantViolations = '${{ steps.tenant-guard.outputs.violations }}' || '0';
+            const rlsViolations = '${{ steps.rls-validator.outputs.violations }}' || '0';
+            const colorViolations = '${{ steps.color-check.outputs.violations }}' || '0';
+            
+            const totalViolations = parseInt(tenantViolations) + parseInt(rlsViolations) + parseInt(colorViolations);
+            
+            let message = '## 🔒 Vete Security Audit\n\n';
+            
+            if (totalViolations === 0) {
+              message += '✅ **All security checks passed!**\n\n';
+              message += '- ✅ tenant_id filtering correct\n';
+              message += '- ✅ RLS policies compliant\n';
+              message += '- ✅ No hardcoded colors\n';
+              message += '- ✅ TypeScript checks passed\n';
+              message += '- ✅ Linting passed\n';
+            } else {
+              message += '❌ **Security audit found issues**\n\n';
+              message += `Total violations: ${totalViolations}\n\n`;
+              
+              if (tenantViolations !== '0') {
+                message += `- ⚠️ ${tenantViolations} tenant_id filtering violations\n`;
+              }
+              if (rlsViolations !== '0') {
+                message += `- ⚠️ ${rlsViolations} RLS policy violations\n`;
+              }
+              if (colorViolations !== '0') {
+                message += `- ⚠️ ${colorViolations} hardcoded color violations\n`;
+              }
+              
+              message += '\n### Required Actions:\n\n';
+              message += '1. Add `.eq("tenant_id", profile.tenant_id)` to all Supabase queries\n';
+              message += '2. Enable RLS on all new tables: `ALTER TABLE ... ENABLE ROW LEVEL SECURITY`\n';
+              message += '3. Create RLS policies: `CREATE POLICY ... USING (is_staff_of(tenant_id))`\n';
+              message += '4. Replace hardcoded colors with CSS variables: `var(--primary)`\n';
+              message += '\nSee detailed results in workflow summary above.\n';
+            }
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });
+      
+      - name: Fail if violations found
+        if: steps.tenant-guard.outputs.violations != '0' || steps.rls-validator.outputs.violations != '0'
+        run: |
+          echo "❌ Security violations found - blocking merge"
+          exit 1

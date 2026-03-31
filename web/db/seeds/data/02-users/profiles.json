@@ -1,0 +1,192 @@
+{
+  "$schema": "../../_schemas/clinic.schema.json",
+  "_comment": "Pet owners exist independently of clinics - they can visit multiple clinics",
+  "profiles": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "full_name": "Ana María González Pérez",
+      "email": "ana.gonzalez@email.com",
+      "phone": "+595 981 234 567",
+      "role": "owner",
+      "client_code": null,
+      "address": "Av. España 1234, Asunción",
+      "city": "Asunción",
+      "document_type": "CI",
+      "document_number": "4.567.890-1",
+      "preferred_contact": "phone"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "full_name": "Carlos Alberto Rodríguez Silva",
+      "email": "carlos.rodriguez@email.com",
+      "phone": "+595 982 345 678",
+      "role": "owner",
+      "client_code": null,
+      "address": "Calle Palma 567, Luque",
+      "city": "Luque",
+      "document_type": "CI",
+      "document_number": "3.456.789-2",
+      "preferred_contact": "whatsapp"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440003",
+      "full_name": "María Elena López Fernández",
+      "email": "maria.lopez@email.com",
+      "phone": "+595 983 456 789",
+      "role": "owner",
+      "client_code": null,
+      "address": "Av. Mariscal López 890, Asunción",
+      "city": "Asunción",
+      "document_type": "CI",
+      "document_number": "5.678.901-3",
+      "preferred_contact": "email"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440006",
+      "full_name": "José Miguel Martínez Ramírez",
+      "email": "jose.martinez@email.com",
+      "phone": "+595 984 567 890",
+      "role": "owner",
+      "client_code": null,
+      "address": "Calle 14 de Mayo 456, Encarnación",
+      "city": "Encarnación",
+      "document_type": "CI",
+      "document_number": "2.345.678-4",
+      "preferred_contact": "phone"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440007",
+      "full_name": "Laura Patricia Benítez Castillo",
+      "email": "laura.benitez@email.com",
+      "phone": "+595 985 678 901",
+      "role": "owner",
+      "client_code": null,
+      "address": "Av. Santísima Trinidad 234, Asunción",
+      "city": "Asunción",
+      "document_type": "CI",
+      "document_number": "6.789.012-5",
+      "preferred_contact": "whatsapp"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440004",
+      "full_name": "Dra. Silvia Carolina Sánchez",
+      "email": "dra.sanchez@terrapet.vet",
+      "phone": "+595 21 600 123",
+      "role": "vet",
+      "client_code": null,
+      "address": "Veterinaria Adris, Asunción",
+      "city": "Asunción",
+      "document_type": "CI",
+      "document_number": "1.234.567-8",
+      "preferred_contact": "phone"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440005",
+      "full_name": "Dr. Roberto Javier Díaz",
+      "email": "dr.diaz@terrapet.vet",
+      "phone": "+595 21 600 124",
+      "role": "vet",
+      "client_code": null,
+      "address": "Veterinaria Adris, Asunción",
+      "city": "Asunción",
+      "document_type": "CI",
+      "document_number": "9.876.543-2",
+      "preferred_contact": "phone"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440008",
+      "full_name": "Dra. Patricia Elena Morales",
+      "email": "dra.morales@petlife.vet",
+      "phone": "+595 21 500 456",
+      "role": "vet",
+      "client_code": null,
+      "address": "PetLife Center, Asunción",
+      "city": "Asunción",
+      "document_type": "CI",
+      "document_number": "7.654.321-9",
+      "preferred_contact": "phone"
+    }
+  ],
+  "clinic_profiles": [
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440001",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440001",
+      "tenant_id": "terrapet",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440002",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440002",
+      "tenant_id": "terrapet",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-02-20T14:30:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440003",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440003",
+      "tenant_id": "petlife",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-03-10T09:15:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440004",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440006",
+      "tenant_id": "terrapet",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-04-05T16:45:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440005",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440007",
+      "tenant_id": "terrapet",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-05-12T11:20:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440006",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440004",
+      "tenant_id": "terrapet",
+      "role": "vet",
+      "is_active": true,
+      "joined_at": "2023-01-01T08:00:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440007",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440005",
+      "tenant_id": "terrapet",
+      "role": "vet",
+      "is_active": true,
+      "joined_at": "2023-01-01T08:00:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440008",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440008",
+      "tenant_id": "petlife",
+      "role": "vet",
+      "is_active": true,
+      "joined_at": "2023-06-01T08:00:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440009",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440001",
+      "tenant_id": "petlife",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-06-20T11:30:00Z"
+    },
+    {
+      "id": "770e8400-e29b-41d4-a716-446655440010",
+      "profile_id": "550e8400-e29b-41d4-a716-446655440006",
+      "tenant_id": "petlife",
+      "role": "owner",
+      "is_active": true,
+      "joined_at": "2024-07-15T14:00:00Z"
+    }
+  ]
+}

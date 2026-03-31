@@ -1,0 +1,357 @@
+{
+  "$schema": "../../../schemas/store.schema.json",
+  "brand_slug": "ferplast",
+  "products": [
+    {
+      "sku": "FPL-CARRIER-ATLAS-S",
+      "name": "Ferplast Atlas 10 Transportadora",
+      "description": "Transportadora aprobada para avión tamaño pequeño",
+      "category_slug": "ACC-PAS-TRA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "48x32x29cm",
+          "base_price": 165000,
+          "cost_price": 99000,
+          "sku_suffix": "-10"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019431_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018119_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019825_400x.jpg"
+      ],
+      "attributes": {
+        "iata_approved": true,
+        "max_weight_kg": 5,
+        "ventilation": "4 lados",
+        "dishwasher_safe": true
+      }
+    },
+    {
+      "sku": "FPL-CARRIER-ATLAS-M",
+      "name": "Ferplast Atlas 20 Transportadora",
+      "description": "Transportadora aprobada para avión tamaño mediano",
+      "category_slug": "ACC-PAS-TRA",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "58x37x32cm",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-20"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019431_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018119_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019825_400x.jpg"
+      ],
+      "attributes": {
+        "iata_approved": true,
+        "max_weight_kg": 8,
+        "ventilation": "4 lados",
+        "dishwasher_safe": true
+      }
+    },
+    {
+      "sku": "FPL-CARRIER-ATLAS-L",
+      "name": "Ferplast Atlas 30 Transportadora",
+      "description": "Transportadora aprobada para avión tamaño grande",
+      "category_slug": "ACC-PAS-TRA",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "60x40x38cm",
+          "base_price": 285000,
+          "cost_price": 171000,
+          "sku_suffix": "-30"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180019431_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180019431_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018119_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019825_400x.jpg"
+      ],
+      "attributes": {
+        "iata_approved": true,
+        "max_weight_kg": 15,
+        "ventilation": "4 lados",
+        "dishwasher_safe": true
+      }
+    },
+    {
+      "sku": "FPL-CARRIER-ATLAS-XL",
+      "name": "Ferplast Atlas 40 Transportadora",
+      "description": "Transportadora aprobada para avión tamaño extra grande",
+      "category_slug": "ACC-PAS-TRA",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "68x49x45cm",
+          "base_price": 385000,
+          "cost_price": 231000,
+          "sku_suffix": "-40"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180019825_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180019825_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019431_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018119_400x.jpg"
+      ],
+      "attributes": {
+        "iata_approved": true,
+        "max_weight_kg": 25,
+        "ventilation": "4 lados",
+        "wheels_optional": true
+      }
+    },
+    {
+      "sku": "FPL-CAMA-SIESTA-DLX",
+      "name": "Ferplast Siesta Deluxe",
+      "description": "Cama plástica con cojín para perros",
+      "category_slug": "ACC-DES-CAM",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Talla 4 (61cm)",
+          "base_price": 125000,
+          "cost_price": 75000,
+          "sku_suffix": "-4"
+        },
+        {
+          "size": "Talla 6 (70cm)",
+          "base_price": 155000,
+          "cost_price": 93000,
+          "sku_suffix": "-6"
+        },
+        {
+          "size": "Talla 8 (82cm)",
+          "base_price": 195000,
+          "cost_price": 117000,
+          "sku_suffix": "-8"
+        },
+        {
+          "size": "Talla 10 (93cm)",
+          "base_price": 245000,
+          "cost_price": 147000,
+          "sku_suffix": "-10"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180009468_1800x1800.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180009468_1800x1800.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180014302_52ad96cf-7ae3-49d1-a9ac-08ba583b8197_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019231_ea31373b-bcdf-4b68-834b-8c95510aeba0_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019691_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180017665_400x.jpg"
+      ],
+      "attributes": {
+        "cushion_included": true,
+        "washable_cushion": true,
+        "elevated_design": true
+      }
+    },
+    {
+      "sku": "FPL-BOWL-GLAM",
+      "name": "Ferplast Glam Comedero",
+      "description": "Comedero de acero inoxidable con base antideslizante",
+      "category_slug": "ACC-COM-PER",
+      "target_species": ["dog", "cat"],
+      "variants": [
+        {
+          "size": "XS (0.2L)",
+          "base_price": 35000,
+          "cost_price": 21000,
+          "sku_suffix": "-XS"
+        },
+        {
+          "size": "S (0.4L)",
+          "base_price": 45000,
+          "cost_price": 27000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "M (0.8L)",
+          "base_price": 55000,
+          "cost_price": 33000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "L (1.2L)",
+          "base_price": 65000,
+          "cost_price": 39000,
+          "sku_suffix": "-L"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180016702_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180016702_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180009468_1800x1800.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180002548_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019567_400x.jpg"
+      ],
+      "attributes": {
+        "material": "Acero inoxidable",
+        "non_slip_base": true,
+        "dishwasher_safe": true
+      }
+    },
+    {
+      "sku": "FPL-LEASH-AMIGO",
+      "name": "Ferplast Amigo Correa Retráctil",
+      "description": "Correa retráctil con sistema de frenado",
+      "category_slug": "ACC-PAS-COL",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Small (5m - 15kg)",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-S"
+        },
+        {
+          "size": "Medium (5m - 25kg)",
+          "base_price": 115000,
+          "cost_price": 69000,
+          "sku_suffix": "-M"
+        },
+        {
+          "size": "Large (5m - 50kg)",
+          "base_price": 145000,
+          "cost_price": 87000,
+          "sku_suffix": "-L"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180002548_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180002548_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019567_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180011117_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180007188_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180007044_400x.jpg"
+      ],
+      "attributes": {
+        "length_meters": 5,
+        "brake_system": true,
+        "ergonomic_handle": true
+      }
+    },
+    {
+      "sku": "FPL-LITTER-DAMA",
+      "name": "Ferplast Dama Arenero con Tapa",
+      "description": "Arenero cerrado con filtro de carbón",
+      "category_slug": "ACC-HIG-BAN",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Estándar",
+          "base_price": 185000,
+          "cost_price": 111000,
+          "sku_suffix": "-STD"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180016702_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180009468_1800x1800.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019567_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180011117_400x.jpg"
+      ],
+      "attributes": {
+        "carbon_filter": true,
+        "swing_door": true,
+        "easy_clean": true
+      }
+    },
+    {
+      "sku": "FPL-LITTER-MAXI-BELLA",
+      "name": "Ferplast Maxi Bella Arenero Cubierto",
+      "description": "Arenero grande con sistema de filtro",
+      "category_slug": "ACC-HIG-BAN",
+      "target_species": ["cat"],
+      "variants": [
+        {
+          "size": "Grande",
+          "base_price": 225000,
+          "cost_price": 135000,
+          "sku_suffix": "-L"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180018448_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018941_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180016702_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180009468_1800x1800.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180019567_400x.jpg"
+      ],
+      "attributes": {
+        "carbon_filter": true,
+        "swing_door": true,
+        "handle_for_transport": true,
+        "spacious_interior": true
+      }
+    },
+    {
+      "sku": "FPL-HARNESS-AGILA",
+      "name": "Ferplast Agila Arnés",
+      "description": "Arnés ergonómico con acolchado",
+      "category_slug": "ACC-PAS-COL",
+      "target_species": ["dog"],
+      "variants": [
+        {
+          "size": "Talla 3 (XS)",
+          "base_price": 75000,
+          "cost_price": 45000,
+          "sku_suffix": "-3"
+        },
+        {
+          "size": "Talla 5 (S)",
+          "base_price": 85000,
+          "cost_price": 51000,
+          "sku_suffix": "-5"
+        },
+        {
+          "size": "Talla 7 (M)",
+          "base_price": 95000,
+          "cost_price": 57000,
+          "sku_suffix": "-7"
+        },
+        {
+          "size": "Talla 9 (L)",
+          "base_price": 105000,
+          "cost_price": 63000,
+          "sku_suffix": "-9"
+        }
+      ],
+      "image_url": "https://www.ferplast.com/cdn/shop/files/1-0180014935_64b66837-8354-4269-8593-fc638febdd4e_400x.jpg",
+      "images": [
+        "https://www.ferplast.com/cdn/shop/files/1-0180014935_64b66837-8354-4269-8593-fc638febdd4e_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180009442_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180017949_e2cab3db-8a95-49f5-90a4-4957a125c789_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180012401_400x.jpg",
+        "https://www.ferplast.com/cdn/shop/files/1-0180018411_437b5d47-c398-41a3-8a5c-61276aeaaea5_400x.jpg"
+      ],
+      "attributes": {
+        "padded": true,
+        "reflective": true,
+        "adjustable": true
+      }
+    }
+  ]
+}

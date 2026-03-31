@@ -1,0 +1,71 @@
+{
+  "$schema": "../_schemas/core.schema.json",
+  "tenants": [
+    {
+      "id": "terrapet",
+      "name": "Veterinaria Adris",
+      "legal_name": "Veterinaria Adris S.R.L.",
+      "ruc": "80012345-6",
+      "city": "Asuncion",
+      "country": "Paraguay",
+      "address": "Av. Mariscal Lopez 1234, Barrio Villa Morra",
+      "phone": "+595 21 600 123",
+      "whatsapp": "+595 981 234 567",
+      "email": "info@veterinaria-terrapet.com.py",
+      "website_url": "https://veterinaria-terrapet.com.py",
+      "settings": {
+        "timezone": "America/Asuncion",
+        "currency": "PYG",
+        "language": "es",
+        "tax_rate": 0.1,
+        "appointment_buffer_minutes": 15,
+        "enable_online_booking": true,
+        "enable_store": true,
+        "enable_whatsapp": true
+      },
+      "business_hours": {
+        "1": { "open": "08:00", "close": "18:00" },
+        "2": { "open": "08:00", "close": "18:00" },
+        "3": { "open": "08:00", "close": "18:00" },
+        "4": { "open": "08:00", "close": "18:00" },
+        "5": { "open": "08:00", "close": "18:00" },
+        "6": { "open": "08:00", "close": "13:00" },
+        "7": { "closed": true }
+      },
+      "is_active": true
+    },
+    {
+      "id": "petlife",
+      "name": "PetLife Center",
+      "legal_name": "PetLife Center S.A.",
+      "ruc": "80098765-4",
+      "city": "Asuncion",
+      "country": "Paraguay",
+      "address": "Shopping del Sol, Local 45, San Lorenzo",
+      "phone": "+595 21 500 456",
+      "whatsapp": "+595 982 345 678",
+      "email": "contacto@petlife.com.py",
+      "website_url": "https://petlife.com.py",
+      "settings": {
+        "timezone": "America/Asuncion",
+        "currency": "PYG",
+        "language": "es",
+        "tax_rate": 0.1,
+        "appointment_buffer_minutes": 10,
+        "enable_online_booking": true,
+        "enable_store": true,
+        "enable_whatsapp": false
+      },
+      "business_hours": {
+        "1": { "open": "09:00", "close": "18:00" },
+        "2": { "open": "09:00", "close": "18:00" },
+        "3": { "open": "09:00", "close": "18:00" },
+        "4": { "open": "09:00", "close": "18:00" },
+        "5": { "open": "09:00", "close": "18:00" },
+        "6": { "open": "09:00", "close": "14:00" },
+        "7": { "closed": true }
+      },
+      "is_active": true
+    }
+  ]
+}
