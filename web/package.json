@@ -156,7 +156,7 @@
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
     "exceljs": "^4.4.0",
-    "framer-motion": "^12.23.26",
+    "framer-motion": "^12.38.0",
     "html5-qrcode": "^2.3.8",
     "inngest": "^3.49.3",
     "leaflet": "^1.9.4",
