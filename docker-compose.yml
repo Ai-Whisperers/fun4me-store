@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  fun4me-store:
+    build:
+      context: .
+      args:
+        - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+        - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+        - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL:-https://fun4me.sunstein.cloud}
+    container_name: fun4me-store
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - fun4me-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.fun4me.rule=Host(`fun4me.sunstein.cloud`)"
+      - "traefik.http.routers.fun4me.entrypoints=websecure"
+      - "traefik.http.routers.fun4me.tls.certresolver=letsencrypt"
+      - "traefik.http.services.fun4me.loadbalancer.server.port=3000"
+      - "traefik.docker.network=fun4me-net"
+
+networks:
+  fun4me-net:
+    driver: bridge
