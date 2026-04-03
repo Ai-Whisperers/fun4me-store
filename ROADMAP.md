@@ -1,943 +1,821 @@
-# Fun4Me Store — Ultimate Product Roadmap
-## Ecommerce + Community Platform for Paraguay's Leading Adult & BDSM Store
+# Fun4Me Store — Product Roadmap v3.0
+## Roasted, Rebuilt, Revenue-First
 
 ---
 
-## 1. COMPETITIVE INTELLIGENCE
+## ⚠️ THE ROAST: Why v2.0 Was a Fantasy
 
-### Fun4Me — Current State
-| Detail           | Value                                         |
-|------------------|-----------------------------------------------|
-| Name             | Fun4Me Sex Store                              |
-| Type             | Physical boutique + Instagram sales           |
-| Address          | 25 de Mayo 2338, Asunción 1429, Paraguay      |
-| Phone            | +595 976 569739                               |
-| Google Rating    | 4.9★                                          |
-| Instagram        | @fun4me_store                                 |
-| Website          | NONE — this project fills that gap            |
-| WhatsApp         | Active (primary order channel)                |
+### Problem 1: Terminal Scope Creep
+v2 proposed **239 features** for a **single boutique** in Asunción (metro pop: ~2.5M,
+GDP per capita: ~$6,000). That's more features than Shopify had at launch. We were
+building FetLife + Shopify + Eventbrite + Substack + a CRM + an LMS + a loyalty
+engine — for a shop that currently sells via Instagram DMs.
 
-### Global Competitor Analysis
+**Rule: You don't build a platform. You build a store that sells things.**
 
-| Store                  | Country   | Killer Feature                          | Revenue Model         |
-|------------------------|-----------|----------------------------------------|-----------------------|
-| **Lovehoney**          | UK/Global | 365-day guarantee, community forum      | Direct + brand licensing |
-| **Adam & Eve**         | US        | 50yr heritage, franchise stores, sexpert column | D2C + franchise |
-| **SheVibe**            | US        | Comic art branding, gender-inclusive     | Curated D2C          |
-| **Stockroom**          | US        | **STOCKROOM UNIVERSITY** (live BDSM classes + Zoom) | D2C + education |
-| **Extreme Restraints** | US        | "Shop by Kink" navigation, 12 kink categories | D2C + wholesale |
-| **Oxy-shop**           | US        | **AI Domina Chatbot**, 3D-printed devices | Niche D2C + content |
-| **Mr. S Leather**      | US        | Leather community hub, Puppy Park, artisan goods | D2C + retail |
-| **Bondara**            | UK        | BDSM specialist, points loyalty program  | D2C                  |
-| **Diversual**          | Spain     | "Academia" education hub, own-brand products, heart/like system | D2C + brand |
-| **Dona Coelha**        | Brazil    | Sexologist-founded, 141K IG, women-first, sells on Shopee | D2C + marketplace |
-| **SexShop.com.py**     | Paraguay  | 17yr market leader, WhatsApp on EVERY product | D2C + physical |
+### Problem 2: Fantasy Timeline
+239 features in 24 weeks = 10 features/week. Real estimates:
+- "Bancard vPOS integration: 8h" → Reality: **2-4 weeks** (bureaucracy, sandbox
+  issues, test cards, webhook debugging, merchant approval wait)
+- "Forum with moderation: 6h" → Reality: **a separate product**
+- "Subscription recurring billing: 6h" → Reality: **recurring payments in Paraguay
+  don't exist as a simple API call**
+- "Community profiles with privacy controls: 4h" → Reality: **weeks of work** when
+  privacy is life-or-death for a BDSM audience
 
-### Innovations to Steal
+Real timeline for v2's scope: **12-18 months**, not 6.
 
-| Innovation                        | Source              | Priority for Fun4Me |
-|-----------------------------------|---------------------|---------------------|
-| "Shop by Kink" navigation         | Stockroom, ExtRest  | **MUST HAVE**       |
-| Live BDSM classes (in-person+Zoom)| Stockroom Univ.     | **DIFFERENTIATOR**  |
-| AI chatbot assistant              | Oxy-shop            | Phase 3             |
-| Own-brand products                | Diversual           | V2                  |
-| "Academia" education hub          | Diversual           | Phase 5             |
-| Community forum                   | Lovehoney           | Phase 6             |
-| 365-day product guarantee         | Lovehoney           | Phase 5             |
-| Heart/Like social proof           | Diversual           | Phase 4             |
-| Subscription boxes                | Kink Crate, Unbound | Phase 5             |
-| Sexpert column/advice             | Adam & Eve          | Phase 5             |
-| Comic/art-style branding          | SheVibe             | Brand identity      |
-| Material-based navigation         | Mr. S Leather       | Phase 2             |
-| Experience level labels           | Lovehoney           | Phase 1             |
-| WhatsApp ordering per product     | SexShop.com.py      | **Phase 1 MVP**     |
-| Women-first wellness positioning  | Dona Coelha         | Brand identity      |
-| Bachelorette party supplies       | SexShop.com.ar      | Phase 4             |
-| Franchise/home party model        | Adam & Eve, Fantasia| V2                  |
+### Problem 3: Zero Business Validation
+The roadmap assumed demand for everything. But:
+- How many customers does Fun4Me actually have? 50? 500? 5,000?
+- What's their monthly revenue? Gs 5M? 50M? 500M?
+- What's the average order value?
+- What % are BDSM community vs. casual buyers?
+- Has anyone asked customers if they WANT an online store?
+- Will Paraguayans pay Gs 500,000/month (~$70 USD = 14% of average monthly income)
+  for a subscription box of sex toys?
+- Is the BDSM community in Asunción large enough to sustain a forum?
 
-### Paraguay Market Gap Analysis
+**None of these were answered. We built features instead of validating a business.**
 
-| Feature                    | SexShop.com.py | Fun4Me (Target) | Opportunity     |
-|----------------------------|----------------|-----------------|-----------------|
-| Professional website       | Basic HTML     | Modern Next.js  | ★★★★★          |
-| Online card payments       | ❌             | Bancard vPOS    | ★★★★★          |
-| Loyalty/rewards program    | ❌             | Full tiers      | ★★★★★          |
-| BDSM community features   | ❌             | Forum+events    | ★★★★★          |
-| Educational content        | Basic blog     | Full academy    | ★★★★★          |
-| Subscription boxes         | ❌             | Monthly curated | ★★★★★          |
-| Live workshops/classes     | ❌             | In-person+Zoom  | ★★★★★          |
-| WhatsApp integration       | ✅ Every product| ✅ + automation | ★★★            |
-| Mobile experience          | Poor           | Mobile-first    | ★★★★           |
-| "Shop by Kink"             | ❌             | ✅              | ★★★★★          |
-| Product reviews            | ❌             | ✅ + verified   | ★★★★           |
-| Gift cards                 | ❌             | Digital + physical | ★★★★        |
-| Cuotas/installments        | ❌             | Via Bancard     | ★★★★★          |
+### Problem 4: Technical Over-Engineering
+**35+ database tables** before a single customer buys a product:
+- community_profiles + forum_topics + forum_replies + private_messages = you're
+  building a social network
+- event_registrations + consent waivers = you're building Eventbrite
+- subscription_plans + recurring billing = you're building Stripe Billing
+- educational_videos + premium gating = you're building a course platform
+- ambassador tracking + commission payouts = you're building an affiliate network
 
----
+Each of these is a startup-scale product. Combining them in a custom build means
+maintaining ALL of them forever with (probably) 1-2 developers.
 
-## 2. COMPLETE PRODUCT CATEGORY TAXONOMY
+### Problem 5: The Community Platform Trap
+FetLife has 12.6M users and is barely profitable. They've been running since 2008.
+Building a BDSM community platform is a **separate business** from selling vibrators.
 
-### Store Navigation Structure
+Community features will:
+- Take 3x longer than estimated
+- Have 10x the moderation overhead expected
+- Require serious safety/privacy engineering
+- Generate **zero direct revenue**
+- Distract from the actual money-maker
 
-```
-PRIMARY NAV:
-├── Tienda (Shop)
-│   ├── Novedades (New Arrivals)
-│   ├── Más Vendidos (Bestsellers)  
-│   ├── Ofertas (Deals)
-│   └── Kits para Principiantes (Starter Kits)
-│
-├── Por Categoría (By Category)
-│   ├── Vibradores (Vibrators)
-│   │   ├── De Clítoris / Succionadores
-│   │   ├── Punto G
-│   │   ├── Rabbit / Conejito
-│   │   ├── Bullet / Bala
-│   │   ├── De Parejas
-│   │   ├── Control Remoto / App
-│   │   └── Varita Mágica
-│   │
-│   ├── Consoladores (Dildos)
-│   │   ├── Realísticos
-│   │   ├── Fantasía
-│   │   ├── De Vidrio / Metal
-│   │   ├── Con Ventosa
-│   │   └── Doble Penetración
-│   │
-│   ├── Anal
-│   │   ├── Plugs Anales
-│   │   ├── Estimuladores de Próstata
-│   │   ├── Beads / Bolitas
-│   │   └── Kits Anales
-│   │
-│   ├── Para Él
-│   │   ├── Masturbadores
-│   │   ├── Anillos de Pene
-│   │   ├── Bombas
-│   │   ├── Extensores
-│   │   └── Estimuladores de Próstata
-│   │
-│   ├── Para Parejas
-│   │   ├── Vibradores de Parejas
-│   │   ├── Juegos Eróticos
-│   │   ├── Kits Románticos
-│   │   └── Dados / Cartas
-│   │
-│   ├── Lencería
-│   │   ├── Conjuntos
-│   │   ├── Bodys / Teddies
-│   │   ├── Medias / Ligas
-│   │   ├── Disfraces / Cosplay
-│   │   └── Para Él
-│   │
-│   ├── Lubricantes y Cosmética
-│   │   ├── Lubricantes (Agua, Silicona, Híbrido)
-│   │   ├── Aceites de Masaje
-│   │   ├── Geles Estimulantes
-│   │   ├── Preservativos
-│   │   └── Higiene Íntima
-│   │
-│   └── Bienestar Sexual
-│       ├── Kegel / Suelo Pélvico
-│       ├── Dilatadores
-│       └── Libros / Guías
-│
-├── 🔥 Por Kink (Shop by Kink) ← DIFFERENTIATOR
-│   ├── Bondage (Ataduras, cuerdas, esposas)
-│   ├── Impacto (Fustas, paletas, floggers)
-│   ├── Dominación & Sumisión (Collares, correas)
-│   ├── Sensaciones (Velas, plumas, hielo)
-│   ├── Privación Sensorial (Vendas, mordazas)
-│   ├── Castidad (Jaulas, cinturones)
-│   ├── Pet Play (Orejas, colas, máscaras)
-│   ├── Electro (E-stim, electro-juguetes)
-│   ├── Juego Médico (Instrumentos, guantes)
-│   ├── Juego de Roles (Disfraces, accesorios)
-│   ├── Cuerdas & Shibari (Cuerdas, suspensión)
-│   └── Mobiliario (Cruces, bancos, columpios)
-│
-├── Academia Fun4Me ← EDUCATION HUB
-│   ├── Guías para Principiantes
-│   ├── Blog / Artículos
-│   ├── Talleres y Eventos
-│   ├── Videos Educativos
-│   └── Preguntas Frecuentes
-│
-├── Comunidad ← COMMUNITY
-│   ├── Eventos / Calendario
-│   ├── Foro
-│   ├── Programa de Membresía
-│   └── Embajadores
-│
-└── Cajas Sorpresa (Subscription Boxes)
-    ├── Caja Explorador (Principiante)
-    ├── Caja Pasión (Parejas)
-    ├── Caja Kink (BDSM)
-    └── Arma tu Caja (Build Your Own)
-```
+### Problem 6: Revenue Prioritization Backwards
+v2 pushed revenue features to later phases:
+- Card payments → Phase 2 (week 5+)
+- Subscriptions → Phase 7 (week 21+, unvalidated)
+- Loyalty → Phase 4 (you need customers before loyalty)
+- Community → Phase 6 (zero revenue, maximum complexity)
 
-### Experience Level Labels (on every product)
-```
-🟢 PRINCIPIANTE — Para quienes recién empiezan
-🟡 INTERMEDIO   — Para quienes ya exploraron lo básico  
-🔴 AVANZADO     — Para quienes buscan intensidad
-```
+Meanwhile, actual revenue drivers were buried or missing:
+- WhatsApp Commerce (how Paraguay ACTUALLY buys)
+- Checkout upsells / cross-sells
+- Abandoned cart recovery
+- Seasonal campaigns (Valentine's Day = 40-50% of annual sex shop revenue)
+- Repeat purchase automation
+
+### Problem 7: What Was Missing
+- **Customer interviews** — talk to 20 real customers before writing code
+- **Inventory audit** — how many SKUs does Fun4Me actually carry? 50? 500?
+- **Operations plan** — who fulfills? Who answers support? Who moderates?
+- **Content plan** — who writes 20+ articles for "Academia"? The owners are running
+  a store, not a media company
+- **Budget reality** — what can they actually afford?
+- **WhatsApp-first thinking** — the store should be WhatsApp with a website, not
+  a website with WhatsApp bolted on
+
+### Problem 8: Paraguay Reality Check
+- Average monthly income: ~Gs 3,500,000 ($500 USD)
+- "Caja Kink" at Gs 500,000/month = **14% of average income** for a box of toys
+- Credit card penetration is LOW — most transactions are cash
+- Total addressable market for BDSM in Asunción: maybe 500-2,000 people
+- You don't build a platform for millions when your market is thousands
 
 ---
 
-## 3. TECH STACK (Final)
+## ✅ THE FIX: Revenue-First, Validation-Driven Roadmap
 
-| Layer              | Technology                       | Why                                    |
-|--------------------|----------------------------------|----------------------------------------|
-| Frontend           | Next.js 14+ (App Router)        | SSR/SEO, team knows it from Vete       |
-| Styling            | Tailwind CSS + shadcn/ui        | Fast, consistent                       |
-| Cart State         | Zustand                         | Lightweight client state               |
-| Database           | Supabase (PostgreSQL)           | Auth, Storage, Realtime, RLS, Edge Fn  |
-| Payments (Cards)   | Bancard vPOS                    | THE standard in Paraguay               |
-| Payments (COD)     | Custom                          | Essential for PY market                |
-| Payments (Transfer)| Custom                          | Bank transfer + receipt upload         |
-| WhatsApp           | Meta Cloud API                  | Automated notifications                |
-| Email              | Resend                          | Transactional emails                   |
-| Analytics          | Umami (self-hosted)             | Privacy-focused, no cookie banner      |
-| Search             | Supabase FTS (tsvector)         | Built-in, zero cost                    |
-| Hosting            | Self-hosted VPS (Docker+Coolify)| No censorship risk                     |
-| CDN                | Cloudflare                      | Cache, DDoS, SSL, images               |
-| Video              | Mux or Cloudflare Stream        | For educational content                |
-| Chat (future)      | Custom or Crisp                 | Live support                           |
-| AI (future)        | OpenAI API                      | Product recommendations, chatbot       |
+### Core Philosophy
+
+```
+OLD: "What features do global competitors have? Build all of them."
+NEW: "What makes Fun4Me money TODAY? Do more of that. Online."
+
+OLD: Build a platform → hope customers come
+NEW: Validate demand → build only what's proven → measure → iterate
+
+OLD: 239 features in 24 weeks
+NEW: 60 features in 20 weeks, each phase paying for the next
+```
+
+### Principles
+1. **VALIDATE BEFORE BUILDING** — every major feature needs evidence of demand
+2. **REVENUE EVERY PHASE** — no phase exists purely for "growth" or "community"
+3. **WHATSAPP-FIRST** — Paraguay lives on WhatsApp. The website supplements it
+4. **SHIP SMALL, LEARN FAST** — 2-week cycles, measure everything
+5. **BUY DON'T BUILD** — use Telegram for community, YouTube for videos,
+   Google Forms for event registration, Instagram for social proof
+6. **THE OWNERS' TIME IS FINITE** — every feature has an operations cost
 
 ---
 
-## 4. DATABASE SCHEMA (Complete)
+## 1. PHASE 0: VALIDATION & PREPARATION (Weeks -2 to 0)
+
+> **Goal:** Know your numbers. Get legal/payment blockers started. Talk to customers.
+> **Cost:** $0 in development. Only time.
+
+### Business Intelligence (MUST DO FIRST)
+
+| #  | Task                                              | Owner     | Effort |
+|----|---------------------------------------------------|-----------|--------|
+| 01 | Interview 20 customers (in-store + WhatsApp)      | Owners    | 1 week |
+|    | → What do you wish we had online?                 |           |        |
+|    | → Would you buy from a website or prefer WhatsApp? |           |        |
+|    | → What products do you wish we carried?            |           |        |
+|    | → Would you attend a workshop? Pay how much?       |           |        |
+|    | → Would you subscribe to a monthly box? At what price? |       |        |
+| 02 | Inventory audit: count SKUs, categorize, photograph| Owners    | 1 week |
+| 03 | Financial baseline: monthly revenue, AOV, top 20 products | Owners | 2h |
+| 04 | Competitor shopping: buy from SexShop.com.py, document experience | Dev | 4h |
+| 05 | Apply for Bancard vPOS merchant account            | Owners    | 1 day  |
+|    | ⚠️ This takes 2-6 weeks. START NOW.                |           |        |
+| 06 | Register domain (fun4me.com.py or fun4mestore.com) | Dev       | 1h     |
+| 07 | Set up Cloudflare (DNS, SSL ready)                 | Dev       | 1h     |
+| 08 | Supabase project creation                          | Dev       | 30min  |
+
+### Validation Questions to Answer
+
+```
+MUST KNOW BEFORE WRITING CODE:
+├── How many products do they sell? (drives catalog complexity)
+├── Monthly revenue in Gs? (drives investment justification)
+├── Top 20 products by revenue? (drives what to feature first)
+├── Customer split: walk-in vs. Instagram vs. WhatsApp? (drives channel strategy)
+├── Do customers want a website? (don't assume yes)
+├── Workshop interest: yes/no + price sensitivity? (drives events phase)
+├── Subscription interest: yes/no + price point? (drives subscription phase)
+└── BDSM community size in Asunción? (drives community investment)
+```
+
+**Exit Gate:** Business baseline documented. Bancard application submitted. 
+Domain registered. Customer interview insights written up.
+
+---
+
+## 2. TECH STACK (Simplified)
+
+| Layer              | Technology                   | Why                                     |
+|--------------------|------------------------------|-----------------------------------------|
+| Frontend           | Next.js 15 (App Router)     | SSR/SEO, team knows it                  |
+| Styling            | Tailwind CSS + shadcn/ui    | Fast, consistent, accessible            |
+| Cart State         | Zustand + localStorage      | Persists across sessions                |
+| Database           | Supabase (PostgreSQL)       | Auth, Storage, RLS, Edge Functions      |
+| Payments           | Bancard vPOS                | Only game in town for PY cards          |
+| WhatsApp           | Meta Cloud API              | Automated notifications                 |
+| Email              | Resend                      | Transactional + simple campaigns        |
+| Analytics          | Umami (self-hosted)         | Privacy-focused, free, lightweight      |
+| Search             | Supabase FTS                | Built-in, zero cost, good enough        |
+| Hosting            | VPS + Docker + Coolify      | No content policy risk, full control    |
+| CDN                | Cloudflare                  | Free tier covers everything needed      |
+| Community          | Telegram group (FREE)       | Don't build what exists                 |
+| Events             | Google Forms + site listing  | Don't build Eventbrite                  |
+| Video              | YouTube embeds              | Don't build a video platform            |
+| Live Chat          | WhatsApp (already have it)  | Don't add another tool                  |
+
+### What We're NOT Building (Use Existing Tools Instead)
+
+| v2 Proposed                  | v3 Replacement          | Savings        |
+|------------------------------|-------------------------|----------------|
+| Forum platform (6+ tables)   | Telegram group          | ~80h dev time  |
+| Private messaging system      | WhatsApp / Telegram DMs | ~30h dev time  |
+| Community profiles + privacy  | Telegram pseudonyms     | ~40h dev time  |
+| Video platform + premium gate | YouTube + embeds        | ~20h dev time  |
+| Event management system       | Google Forms + page     | ~60h dev time  |
+| AI chatbot                    | WhatsApp human support  | ~40h dev time  |
+| Full CRM                      | Supabase + spreadsheet  | ~30h dev time  |
+| **TOTAL SAVED**              |                         | **~300h**      |
+
+---
+
+## 3. DATABASE SCHEMA (Right-Sized)
+
+### Phase 1 Tables Only (12 tables — not 35)
 
 ```sql
--- CORE COMMERCE
-categories (id, name, slug, description, parent_id, image_url, sort_order, is_active)
-products (id, name, slug, description_short, description_long, price, compare_at_price,
-          category_id, brand, sku, images[], tags[], experience_level, material,
-          kink_categories[], is_active, is_featured, is_new, meta_title, meta_description,
-          care_instructions, body_safe_rating, weight_grams, dimensions_json, created_at)
-product_variants (id, product_id, name, sku, price_override, stock_quantity,
-                  attributes JSONB, images[], is_active, sort_order)
-kink_categories (id, name, slug, description, icon, image_url, sort_order)
-product_kinks (product_id, kink_category_id)  -- many-to-many
+-- PRODUCTS (4 tables)
+categories (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,
+  slug TEXT UNIQUE NOT NULL,
+  description TEXT,
+  parent_id UUID REFERENCES categories(id),
+  image_url TEXT,
+  sort_order INT DEFAULT 0,
+  is_active BOOLEAN DEFAULT true,
+  created_at TIMESTAMPTZ DEFAULT now()
+);
 
--- INVENTORY
-inventory_movements (id, variant_id, quantity_change, type ENUM, reference, notes, created_at)
-  -- types: sale, restock, adjustment, return, reservation, reservation_release
+products (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,
+  slug TEXT UNIQUE NOT NULL,
+  description TEXT,
+  price BIGINT NOT NULL,              -- Price in Guaranies (no decimals)
+  compare_at_price BIGINT,            -- Strike-through price
+  category_id UUID REFERENCES categories(id),
+  brand TEXT,
+  sku TEXT UNIQUE,
+  images TEXT[] DEFAULT '{}',
+  tags TEXT[] DEFAULT '{}',
+  experience_level TEXT CHECK (experience_level IN ('beginner','intermediate','advanced')),
+  material TEXT,
+  is_active BOOLEAN DEFAULT true,
+  is_featured BOOLEAN DEFAULT false,
+  stock_quantity INT DEFAULT 0,
+  meta_title TEXT,
+  meta_description TEXT,
+  created_at TIMESTAMPTZ DEFAULT now(),
+  updated_at TIMESTAMPTZ DEFAULT now()
+);
+-- NOTE: No product_variants table at launch. Add ONLY if inventory
+-- audit reveals products with multiple variants. Most sex shop products
+-- don't have variants (a vibrator is a vibrator). Don't over-model.
 
--- CUSTOMERS
-customers (id, auth_user_id, email, full_name, phone, cedula_hash, age_verified,
-           age_verified_at, default_address_idx, addresses JSONB[],
-           loyalty_tier, loyalty_points, referral_code, referred_by,
-           preferences JSONB, newsletter_subscribed, created_at)
+kink_categories (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,
+  slug TEXT UNIQUE NOT NULL,
+  description TEXT,
+  image_url TEXT,
+  sort_order INT DEFAULT 0
+);
 
--- ORDERS
-orders (id, customer_id, order_number, status ENUM, subtotal, discount_amount,
-        shipping_cost, tax_amount, total, payment_method, payment_ref, payment_status,
-        shipping_address JSONB, billing_address JSONB, shipping_zone_id,
-        tracking_number, carrier, notes, is_gift, gift_message,
-        gift_wrap, coupon_id, created_at, updated_at)
-order_items (id, order_id, product_id, variant_id, quantity, unit_price, line_total)
-order_status_history (id, order_id, status, changed_by, notes, created_at)
+product_kinks (
+  product_id UUID REFERENCES products(id) ON DELETE CASCADE,
+  kink_id UUID REFERENCES kink_categories(id) ON DELETE CASCADE,
+  PRIMARY KEY (product_id, kink_id)
+);
 
--- CART
-carts (id, customer_id, session_id, expires_at, created_at)
-cart_items (id, cart_id, variant_id, quantity, added_at)
+-- CUSTOMERS (1 table — extends Supabase auth.users)
+customers (
+  id UUID PRIMARY KEY REFERENCES auth.users(id),
+  full_name TEXT,
+  phone TEXT,
+  age_verified BOOLEAN DEFAULT false,
+  addresses JSONB DEFAULT '[]',        -- Array of address objects
+  newsletter_opt_in BOOLEAN DEFAULT false,
+  created_at TIMESTAMPTZ DEFAULT now()
+);
 
--- SHIPPING
-shipping_zones (id, name, cities[], price, free_above, est_days, is_active, sort_order)
+-- ORDERS (3 tables)
+orders (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_number SERIAL,
+  customer_id UUID REFERENCES customers(id),
+  guest_email TEXT,                     -- For guest checkout
+  guest_phone TEXT,
+  status TEXT DEFAULT 'pending' CHECK (status IN (
+    'pending','payment_pending','payment_confirmed','preparing',
+    'shipped','delivered','completed','cancelled'
+  )),
+  subtotal BIGINT NOT NULL,
+  shipping_cost BIGINT DEFAULT 0,
+  discount_amount BIGINT DEFAULT 0,
+  total BIGINT NOT NULL,
+  payment_method TEXT CHECK (payment_method IN ('bank_transfer','cod','bancard','gift_card')),
+  payment_ref TEXT,
+  shipping_address JSONB NOT NULL,
+  notes TEXT,
+  is_gift BOOLEAN DEFAULT false,
+  gift_message TEXT,
+  created_at TIMESTAMPTZ DEFAULT now(),
+  updated_at TIMESTAMPTZ DEFAULT now()
+);
 
--- PAYMENTS & FINANCE
-payment_transactions (id, order_id, method, provider, provider_ref, amount,
-                      currency, status, metadata JSONB, created_at)
-bank_transfer_receipts (id, order_id, image_url, uploaded_at, verified_by, verified_at)
+order_items (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_id UUID REFERENCES orders(id) ON DELETE CASCADE,
+  product_id UUID REFERENCES products(id),
+  product_name TEXT NOT NULL,           -- Snapshot at time of order
+  quantity INT NOT NULL DEFAULT 1,
+  unit_price BIGINT NOT NULL,
+  line_total BIGINT NOT NULL
+);
 
--- MARKETING
-coupons (id, code, type ENUM, value, min_order, max_uses, uses_count,
-         customer_limit, expires_at, is_active, applicable_categories[], applicable_products[])
-gift_cards (id, code, initial_balance, current_balance, purchaser_id,
-            recipient_email, recipient_name, message, is_active, expires_at)
-loyalty_transactions (id, customer_id, points, type ENUM, reference, created_at)
-  -- types: earn_purchase, earn_review, earn_referral, redeem, expire, admin_adjust
+shipping_zones (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,                   -- "Asunción", "Gran Asunción", "Interior"
+  neighborhoods TEXT[] DEFAULT '{}',
+  price BIGINT NOT NULL,
+  free_above BIGINT,                   -- Free shipping threshold
+  est_days TEXT,                       -- "Mismo día", "1-2 días"
+  is_active BOOLEAN DEFAULT true,
+  sort_order INT DEFAULT 0
+);
 
--- REVIEWS & SOCIAL PROOF
-reviews (id, product_id, customer_id, rating, title, comment, pros, cons,
-         experience_level, is_verified_purchase, is_approved, helpful_count,
-         admin_response, created_at)
-product_likes (product_id, customer_id, created_at)  -- heart/like system
-wishlists (id, customer_id, name, is_public, share_code)
-wishlist_items (id, wishlist_id, product_id, variant_id, added_at, notes)
+-- PAYMENTS (2 tables)
+payment_transactions (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_id UUID REFERENCES orders(id),
+  method TEXT NOT NULL,
+  provider TEXT,                        -- 'bancard', 'manual'
+  provider_ref TEXT,
+  amount BIGINT NOT NULL,
+  status TEXT DEFAULT 'pending' CHECK (status IN ('pending','confirmed','failed','refunded')),
+  metadata JSONB DEFAULT '{}',
+  created_at TIMESTAMPTZ DEFAULT now()
+);
 
--- COMMUNITY
-community_profiles (id, customer_id, display_name, bio, avatar_url,
-                    role_identity, interests[], experience_level,
-                    is_public, privacy_settings JSONB, created_at)
-  -- role_identity: dominant, submissive, switch, curious, educator, etc.
-forum_categories (id, name, slug, description, sort_order, is_active)
-forum_topics (id, category_id, author_id, title, content, is_pinned,
-              is_locked, view_count, reply_count, created_at, updated_at)
-forum_replies (id, topic_id, author_id, content, is_edited, created_at)
-private_messages (id, sender_id, recipient_id, subject, content, is_read, created_at)
+bank_transfer_receipts (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_id UUID REFERENCES orders(id),
+  image_url TEXT NOT NULL,
+  verified BOOLEAN DEFAULT false,
+  verified_by UUID,
+  verified_at TIMESTAMPTZ,
+  uploaded_at TIMESTAMPTZ DEFAULT now()
+);
 
--- EVENTS
-events (id, title, slug, description, type ENUM, location, is_virtual,
-        virtual_link, start_at, end_at, capacity, registered_count,
-        waitlist_count, price, instructor_name, instructor_bio,
-        skill_level, image_url, required_products[], is_active, created_at)
-  -- types: munch, workshop, class, demo, play_party, online_webinar
-event_registrations (id, event_id, customer_id, status ENUM, paid, waiver_signed,
-                     created_at)
-  -- status: registered, waitlisted, cancelled, attended, no_show
-event_series (id, name, description, recurrence_rule, next_event_id)
+-- MARKETING (1 table — only coupons, added Phase 2)
+coupons (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  code TEXT UNIQUE NOT NULL,
+  type TEXT CHECK (type IN ('percentage','fixed','free_shipping')),
+  value BIGINT NOT NULL,               -- % or Gs amount
+  min_order BIGINT DEFAULT 0,
+  max_uses INT,
+  uses_count INT DEFAULT 0,
+  expires_at TIMESTAMPTZ,
+  is_active BOOLEAN DEFAULT true
+);
+```
 
--- SUBSCRIPTIONS
-subscription_plans (id, name, slug, description, price, interval ENUM,
-                    contents_description, image_url, max_subscribers, is_active)
-  -- interval: monthly, quarterly
-subscriptions (id, plan_id, customer_id, status ENUM, preferences JSONB,
-               next_billing_at, started_at, cancelled_at)
-subscription_shipments (id, subscription_id, order_id, shipped_at, items JSONB)
+### Tables Added ONLY When Needed (Phase 3+)
 
--- CONTENT / EDUCATION
-articles (id, title, slug, content, excerpt, author_name, category,
-          tags[], image_url, reading_time_min, is_published, published_at)
-article_categories (id, name, slug, sort_order)
-educational_videos (id, title, description, video_url, thumbnail_url,
-                    duration_seconds, instructor, skill_level, category,
-                    is_premium, view_count, created_at)
+```sql
+-- ADD IN PHASE 3 (when loyalty is validated)
+reviews (...);                  -- Only if customers are willing to write them
+loyalty_points (...);           -- Only if repeat purchase rate warrants it
 
--- AMBASSADOR / AFFILIATE
-ambassadors (id, customer_id, code, commission_rate, total_earned,
-             total_paid, status, social_links JSONB, created_at)
-ambassador_referrals (id, ambassador_id, order_id, commission_amount, created_at)
+-- ADD IN PHASE 4 (when events are validated)
+events (...);                   -- Simple: title, date, location, capacity, price
+event_registrations (...);      -- Simple: event_id, customer_id, paid
 
--- ADMIN
-admin_users (id, auth_user_id, name, role ENUM, permissions JSONB)
-  -- roles: super_admin, manager, support, warehouse, content_editor
-activity_log (id, admin_id, action, entity_type, entity_id, details JSONB, created_at)
-notifications_log (id, recipient_type, recipient_id, channel ENUM,
-                   template, content, status, sent_at)
-  -- channel: whatsapp, email, sms, push
+-- ADD IN PHASE 5 (when subscriptions are validated)
+subscription_plans (...);
+subscriptions (...);
+
+-- MAYBE NEVER
+forum_categories, forum_topics, forum_replies  -- Use Telegram instead
+community_profiles                              -- Use Telegram instead
+private_messages                                -- Use WhatsApp instead
+educational_videos                              -- Use YouTube instead
+ambassadors, ambassador_referrals               -- Premature
 ```
 
 ---
 
-## 5. PHASED ROADMAP (Expanded & Detailed)
+## 4. THE REAL ROADMAP
 
 ```
-TIMELINE OVERVIEW:
+TIMELINE (20 weeks, expandable based on results):
 
-Phase 0  (Week 1)     ██  Foundation
-Phase 1  (Weeks 2-4)  ██████  MVP: Browse + Buy + Admin
-Phase 2  (Weeks 5-6)  ████  Online Payments (Bancard)
-Phase 3  (Weeks 7-9)  ██████  Notifications + Accounts + WhatsApp Commerce
-Phase 4  (Weeks 10-12) ██████  Loyalty + Reviews + Social Proof
-Phase 5  (Weeks 13-16) ████████  Education Hub + Content
-Phase 6  (Weeks 17-20) ████████  Community + Events Platform
-Phase 7  (Weeks 21-24) ████████  Subscriptions + Advanced Features
-─────────────────────────────────────────────────
-MVP LAUNCH        → Week 4  (basic orders)
-PAYMENT LAUNCH    → Week 6  (cards working)
-COMMUNITY BETA    → Week 20 (forum + events)
-V1 FULL LAUNCH    → Week 24 (everything live)
+Phase 0  (Pre-dev)    ░░  Validation + Legal/Payment Setup
+Phase 1  (Weeks 1-4)  ████████  MVP: Browse + Buy + Admin
+Phase 2  (Weeks 5-8)  ████████  Payments + Conversion Optimization
+Phase 3  (Weeks 9-12) ████████  Retention: Accounts + Loyalty + Reviews
+Phase 4  (Weeks 13-16) ████████ Growth: Content + Events + Bundles
+Phase 5  (Weeks 17-20) ████████ Scale What Works (data-driven)
+──────────────────────────────────────────
+MVP SOFT LAUNCH       → Week 3  (friends & family)
+MVP PUBLIC LAUNCH     → Week 4  (Instagram announcement)
+CARD PAYMENTS LIVE    → Week 6  (Bancard approved by now)
+FIRST CAMPAIGN        → Week 10 (seasonal or themed)
+V1 COMPLETE           → Week 20
 ```
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 0: Foundation (Week 1)
-### ═══════════════════════════════════════════════════════════
+### ═══════════════════════════════════════════════════════════════
+### PHASE 1: THE MONEY-MAKING MVP (Weeks 1-4)
+### ═══════════════════════════════════════════════════════════════
 
-**Goal:** Bulletproof project setup. Everything CI/CD'd from day 1.
+> **Goal:** Customers find products online and BUY them. That's it.
+> **Measure:** Orders per week, conversion rate, AOV, traffic source.
 
-| #  | Task                                          | Effort | Notes                                |
-|----|-----------------------------------------------|--------|--------------------------------------|
-| 01 | Init Next.js 14 (App Router, TypeScript)      | 2h     | pnpm, strict TS                      |
-| 02 | Tailwind + shadcn/ui + design tokens          | 2h     | Brand colors, typography, spacing    |
-| 03 | Supabase project + full schema migration      | 6h     | All tables from schema above         |
-| 04 | RLS policies (customer, admin, public)        | 4h     | Critical for security                |
-| 05 | Docker + docker-compose (dev + prod)          | 3h     | Postgres, Supabase local, app        |
-| 06 | CI pipeline: lint + typecheck + test           | 3h     | GitHub Actions                       |
-| 07 | Coolify deploy pipeline + domain + SSL        | 3h     | Auto-deploy on push to main          |
-| 08 | Seed script (categories, 50+ sample products) | 3h     | Realistic PY data in Guaranies       |
-| 09 | Vitest + Playwright setup                     | 2h     | TDD from day 1                       |
-| 10 | ESLint + Prettier + Husky pre-commit          | 1h     | Enforce code quality                 |
-| 11 | Brand identity: logo placement, favicon, OG   | 2h     | Fun4Me branding                      |
-| 12 | .env management + secrets                     | 1h     | Supabase keys, API keys              |
+#### Week 1: Foundation + Skeleton
 
-**Exit:** `pnpm dev` runs. CI green. Deploy works. DB seeded.
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 01 | Next.js 15 project: App Router, TS strict, pnpm   | 2   | —    |
+| 02 | Tailwind + shadcn/ui + Fun4Me design tokens        | 3   | —    |
+| 03 | Supabase: Phase 1 schema (12 tables) + RLS         | 6   | Integration tests |
+| 04 | Docker dev environment (Supabase local + app)       | 2   | —    |
+| 05 | CI: GitHub Actions (lint + typecheck + vitest)      | 2   | —    |
+| 06 | Coolify deploy: docker-compose → VPS + domain + SSL| 3   | Deploy smoke test |
+| 07 | Seed script: real categories + 30 products from inventory | 4 | —  |
+| 08 | Age gate: DOB entry, 30-day cookie, middleware      | 2   | E2E test |
+| 09 | Layout: header (logo, nav, search, cart icon) + footer | 4 | Visual |
+| 10 | Mobile responsive nav (hamburger, categories)       | 3   | Mobile test |
+| 11 | WhatsApp floating button (global, links to business WA) | 1 | — |
+| 12 | Vitest + Playwright config                          | 2   | —    |
+
+**Week 1 total: 34h | Exit: Site deploys, age gate works, seeded data visible**
+
+#### Week 2: Product Catalog + Discovery
+
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 13 | Homepage: hero banner + featured + categories grid  | 6  | Visual |
+| 14 | Homepage: "Explora por Kink" section with kink grid | 3  | —    |
+| 15 | Homepage: bestsellers + new arrivals carousels      | 3  | —    |
+| 16 | Homepage: trust badges bar (discreet shipping, PY company, 4.9★) | 2 | — |
+| 17 | Category page: product grid + filters (price, experience) | 6 | E2E |
+| 18 | "Shop by Kink" page: kink category grid → filtered products | 4 | E2E |
+| 19 | Product card component: image, name, price, exp badge, WA button | 3 | Unit |
+| 20 | Search: Supabase FTS with autocomplete              | 4  | Integration |
+| 21 | Sort: price (asc/desc), newest, name                | 2  | Unit |
+| 22 | Breadcrumbs + pagination                            | 2  | —    |
+
+**Week 2 total: 35h | Exit: All products browsable, searchable, filterable**
+
+#### Week 3: Product Detail + Cart + Checkout
+
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 23 | Product detail page: gallery, price, description, specs | 6 | E2E |
+| 24 | Experience level badge (🟢🟡🔴) + material info     | 1  | —    |
+| 25 | "Add to Cart" + quantity + "Pedir por WhatsApp" button | 3 | E2E |
+| 26 | WhatsApp order: pre-populated message with product name + link | 2 | Manual |
+| 27 | Related products: "También te puede gustar" (same category) | 2 | — |
+| 28 | SEO: meta tags + JSON-LD Product schema per product  | 3  | Lighthouse |
+| 29 | Cart drawer (slide-in): items, quantities, subtotal  | 4  | E2E |
+| 30 | Cart: free shipping progress bar                     | 2  | Unit |
+| 31 | Checkout page: shipping address form                 | 3  | E2E |
+| 32 | Checkout: shipping zone auto-select + cost display   | 3  | Integration |
+| 33 | Checkout: payment method selection (transfer / COD)  | 2  | E2E |
+| 34 | Checkout: bank transfer → show account details + receipt upload | 3 | E2E |
+| 35 | Checkout: COD → confirm and place order              | 2  | E2E |
+| 36 | Order confirmation page + order number               | 2  | E2E |
+| 37 | Order confirmation email via Resend (branded, discreet) | 3 | Integration |
+
+**Week 3 total: 41h | Exit: Full purchase flow works end-to-end**
+
+#### Week 4: Admin Panel + Soft Launch
+
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 38 | Admin: auth (Supabase role-based, admin flag)       | 2  | —    |
+| 39 | Admin: dashboard — today's orders, revenue, low stock | 4 | — |
+| 40 | Admin: product list + create + edit + delete         | 8  | E2E |
+| 41 | Admin: image upload (Supabase Storage, drag & drop)  | 3  | —    |
+| 42 | Admin: category + kink category management           | 3  | —    |
+| 43 | Admin: order list with status filters + search       | 4  | —    |
+| 44 | Admin: order detail → update status → trigger email  | 3  | Integration |
+| 45 | Admin: bank transfer receipt viewer + verify button   | 2  | —    |
+| 46 | Admin: print packing slip (DISCREET — generic items)  | 2  | —    |
+| 47 | XML sitemap (auto-generated from products)           | 2  | —    |
+| 48 | robots.txt + RTA adult meta tag                      | 1  | —    |
+| 49 | Load 100% of real inventory from audit               | 4  | —    |
+| 50 | Soft launch: share with 20 loyal customers for feedback | — | — |
+
+**Week 4 total: 38h | EXIT: LIVE. Taking real orders. Measuring everything.**
+
+### MVP Metrics to Track From Day 1
+```
+Daily:   Orders, revenue, unique visitors, WhatsApp clicks
+Weekly:  Conversion rate, AOV, top products, traffic sources
+Monthly: Returning visitors %, cart abandonment rate, search queries (what are people looking for?)
+```
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 1: MVP — Browse & Buy (Weeks 2-4)
-### ═══════════════════════════════════════════════════════════
+### ═══════════════════════════════════════════════════════════════
+### PHASE 2: PAYMENTS + CONVERSION (Weeks 5-8)
+### ═══════════════════════════════════════════════════════════════
 
-**Goal:** Customers browse, add to cart, order. Admin manages everything.
+> **Goal:** Remove buying friction. Add card payments. Increase AOV.
+> **Measure:** Conversion rate improvement, AOV increase, payment method split.
+> **Gate:** Only proceed if MVP is getting orders. If zero orders, FIX THAT first.
 
-#### 1A. Age Gate & Layout (Week 2, Days 1-2)
+#### Weeks 5-6: Bancard Integration
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 13 | Age gate modal (18+ with DOB entry)         | 3h     |
-| 14 | Cookie persistence (30 days)                | 1h     |
-| 15 | Main layout: header, nav, footer, mobile    | 6h     |
-| 16 | Mobile hamburger menu with categories        | 3h     |
-| 17 | WhatsApp floating button (global)           | 1h     |
-| 18 | Announcement bar (rotating, admin-editable) | 2h     |
-| 19 | RTA adult meta tag + robots.txt             | 1h     |
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 51 | Bancard vPOS sandbox: API integration               | 10 | Integration |
+| 52 | Checkout: Bancard payment flow (redirect or iframe)  | 8  | E2E |
+| 53 | Bancard: webhook handler for payment confirmation    | 4  | Integration |
+| 54 | Auto order status update: pending → payment_confirmed | 2 | Integration |
+| 55 | Cuotas/installments: display options at checkout     | 4  | E2E |
+| 56 | Payment failure page + retry option                  | 3  | E2E |
+| 57 | Bancard production deployment + testing              | 4  | Smoke test |
+| 58 | Admin: payment transactions view + reconciliation    | 3  | —    |
 
-#### 1B. Homepage (Week 2, Days 3-5)
+#### Weeks 7-8: Conversion Optimization
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 20 | Hero section (slideshow, CTAs)              | 4h     |
-| 21 | Featured products carousel                  | 3h     |
-| 22 | Category grid (visual, with images)         | 3h     |
-| 23 | "Shop by Kink" section preview              | 3h     |
-| 24 | Bestsellers section                         | 2h     |
-| 25 | New arrivals section                        | 2h     |
-| 26 | Trust badges bar (discreet shipping, etc)   | 2h     |
-| 27 | Newsletter signup footer                    | 2h     |
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 59 | Abandoned cart: WhatsApp message after 2h (manual first) | 4 | — |
+|    | ↳ Just a Supabase cron + WA Cloud API template     |     |      |
+| 60 | Checkout upsell: "Agregar lubricante por Gs 25,000" | 4  | A/B |
+| 61 | Cross-sell on product page: "Clientes también compraron" | 3 | — |
+| 62 | Free shipping threshold: adjust based on AOV data    | 1  | —    |
+| 63 | Coupon code engine (% off, fixed, free shipping)     | 5  | E2E  |
+| 64 | Admin: coupon CRUD + usage tracking                  | 3  | —    |
+| 65 | Announcement bar: rotating promos, admin-editable    | 3  | —    |
+| 66 | Product page: stock urgency ("¡Quedan solo 3!")      | 2  | —    |
+| 67 | Guest checkout optimization: fewer fields, phone-first | 3 | E2E |
+| 68 | Speed optimization: image lazy load, Cloudflare cache | 4 | Lighthouse |
+| 69 | WhatsApp Cloud API setup: order confirmed template   | 4  | Integration |
+| 70 | WhatsApp: shipped + delivered notification templates  | 3  | Integration |
+| 71 | Admin: trigger WhatsApp notifications on status change | 3 | — |
 
-#### 1C. Product Catalog (Week 3, Days 1-3)
+**Phase 2 total: ~71h over 4 weeks**
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 28 | Category listing page with products         | 6h     |
-| 29 | "Shop by Kink" page with kink grid          | 4h     |
-| 30 | Filters: price, material, experience level, brand | 6h |
-| 31 | Sort: price, newest, bestselling, rating    | 2h     |
-| 32 | Product card: image, name, price, rating, experience badge, heart | 3h |
-| 33 | Pagination / infinite scroll                | 2h     |
-| 34 | Search bar with autocomplete (tsvector)     | 4h     |
-| 35 | "No results" with suggestions               | 1h     |
-| 36 | Breadcrumbs                                 | 1h     |
-
-#### 1D. Product Detail Page (Week 3, Days 4-5)
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 37 | Image gallery with zoom + thumbnails        | 4h     |
-| 38 | Price display (Gs + compare_at strikethrough)| 2h    |
-| 39 | Variant selector (color, size)              | 3h     |
-| 40 | Experience level badge (🟢🟡🔴)             | 1h     |
-| 41 | Body-safe material info                     | 1h     |
-| 42 | "Add to Cart" + quantity selector           | 2h     |
-| 43 | "WhatsApp order" button per product         | 2h     |
-| 44 | Wishlist heart button                       | 2h     |
-| 45 | Tabs: Description, Specs, Care, Reviews     | 3h     |
-| 46 | "Customers also bought" (related products)  | 3h     |
-| 47 | SEO: meta tags, JSON-LD structured data     | 3h     |
-
-#### 1E. Cart & Checkout (Week 4, Days 1-3)
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 48 | Cart drawer (slide-in, no page reload)      | 4h     |
-| 49 | Cart page (full view)                       | 3h     |
-| 50 | Free shipping progress bar                  | 2h     |
-| 51 | Guest checkout (no account required)        | 4h     |
-| 52 | Shipping address form + address validation  | 3h     |
-| 53 | Shipping zone auto-calculation              | 3h     |
-| 54 | Order summary with breakdown                | 2h     |
-| 55 | Payment: Bank Transfer option               | 3h     |
-| 56 | Payment: Cash on Delivery option            | 2h     |
-| 57 | Receipt upload for bank transfers           | 3h     |
-| 58 | Gift wrap option (Gs 15,000 upsell)        | 2h     |
-| 59 | Gift message field                          | 1h     |
-| 60 | Order confirmation page                     | 3h     |
-| 61 | Order confirmation email (Resend)           | 3h     |
-
-#### 1F. Admin Panel MVP (Week 4, Days 4-5)
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 62 | Admin auth + role-based access              | 3h     |
-| 63 | Admin dashboard: orders today, revenue, low stock | 4h |
-| 64 | Product CRUD (create/edit/delete)           | 8h     |
-| 65 | Image upload to Supabase Storage            | 3h     |
-| 66 | Category management CRUD                    | 4h     |
-| 67 | Kink category management                    | 2h     |
-| 68 | Order list with filters + search            | 4h     |
-| 69 | Order detail + status updates               | 3h     |
-| 70 | Print packing slip (discreet, no product names) | 3h |
-| 71 | Bank transfer receipt verification          | 2h     |
-
-**MVP Exit Criteria:**
-- ✅ Customer browses → adds to cart → checks out → pays (transfer/COD)
-- ✅ "Shop by Kink" navigation works
-- ✅ WhatsApp order button on every product
-- ✅ Experience level badges on products
-- ✅ Admin manages products, categories, orders
-- ✅ Mobile-first, fast, deployed, SSL
-- ✅ Age gate functional
+### Phase 2 Decision Gate
+```
+MEASURE AFTER 2 WEEKS OF CARD PAYMENTS:
+├── What % pay by card vs. COD vs. transfer?
+├── Has conversion rate improved?
+├── What's the new AOV? (cuotas should increase it)
+├── What are the top search queries? (reveals unmet demand)
+└── What products get viewed but not bought? (pricing or trust issue?)
+```
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 2: Online Payments (Weeks 5-6)
-### ═══════════════════════════════════════════════════════════
+### ═══════════════════════════════════════════════════════════════
+### PHASE 3: RETENTION + REPEAT PURCHASES (Weeks 9-12)
+### ═══════════════════════════════════════════════════════════════
 
-**Goal:** Accept credit/debit cards with installments.
+> **Goal:** Turn one-time buyers into repeat customers.
+> **Measure:** Repeat purchase rate, review submission rate, email list size.
+> **Gate:** Only build loyalty if you have 100+ customers. Otherwise, focus on acquisition.
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 72 | Bancard vPOS sandbox integration            | 8h     |
-| 73 | Checkout flow: redirect to Bancard          | 6h     |
-| 74 | Webhook handler: payment confirmation       | 4h     |
-| 75 | Auto order status update on payment         | 2h     |
-| 76 | Cuotas (installments) display at checkout   | 4h     |
-| 77 | Payment failure handling + retry page       | 3h     |
-| 78 | Bancard QR payment option                   | 4h     |
-| 79 | Bancard production deployment               | 4h     |
-| 80 | Admin: payment reconciliation view          | 4h     |
-| 81 | Admin: manual refund initiation             | 3h     |
-| 82 | Gift card system: purchase + redeem         | 6h     |
-| 83 | Gift card: digital delivery (email/WhatsApp)| 3h     |
-| 84 | Coupon code engine (%, fixed, free shipping)| 6h     |
-| 85 | Coupon: admin CRUD + usage tracking         | 3h     |
+#### Weeks 9-10: Accounts + Reviews
 
-**Requirements:** RUC registered, Bancard merchant agreement signed.
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 72 | Customer registration (email + password)             | 3  | E2E  |
+| 73 | Login + persistent session + magic link option       | 3  | E2E  |
+| 74 | Customer profile: name, phone, addresses             | 3  | E2E  |
+| 75 | Order history page (past orders + status)            | 4  | E2E  |
+| 76 | Saved addresses (manage multiple)                    | 3  | —    |
+| 77 | Wishlist: heart button → saved products page         | 4  | E2E  |
+| 78 | Reviews: submit (stars + text), verified purchase badge | 5 | E2E |
+| 79 | Reviews: display on product page + aggregate rating  | 3  | Unit |
+| 80 | Reviews: admin moderation queue                      | 3  | —    |
+| 81 | Google review prompt: after 3rd purchase, link to GMB | 2 | —   |
+
+#### Weeks 11-12: Loyalty + First Campaign
+
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 82 | Loyalty: simple points system (1 pt / Gs 1,000)    | 4  | Integration |
+|    | ↳ ONE tier only. No "Explorador/Amante/VIP" — premature. |  |    |
+| 83 | Loyalty: points display in account + at checkout    | 3  | E2E  |
+| 84 | Loyalty: redeem points as checkout discount          | 3  | E2E  |
+| 85 | Email list: newsletter popup (delayed, non-annoying) | 2  | —   |
+| 86 | First email campaign: top products + coupon          | 3  | —    |
+| 87 | WhatsApp broadcast: first promo to opt-in list       | 2  | —    |
+| 88 | Seasonal campaign prep: [Valentine's/Mother's Day/etc] | 4 | — |
+|    | ↳ Landing page + curated collection + limited coupon |    |      |
+| 89 | Blog: 5 SEO articles (product guides, BDSM basics)  | 8  | —    |
+|    | ↳ Written by dev/owner, optimized for PY keywords    |    |      |
+| 90 | Gift cards: digital (email delivery), redeem at checkout | 5 | E2E |
+
+**Phase 3 total: ~60h over 4 weeks**
+
+### Phase 3 Decision Gate
+```
+CRITICAL METRICS:
+├── Repeat purchase rate — target >15% within 60 days
+├── Reviews submitted — are customers engaging?
+├── Email list size — growing?
+├── Loyalty points redeemed — are people using it?
+├── Blog traffic — is SEO working?
+└── Customer feedback — what do they want NEXT?
+
+BASED ON DATA, DECIDE:
+├── IF events/workshops interest validated → build events in Phase 4
+├── IF subscription box interest validated → build subscriptions in Phase 5
+├── IF community demand exists → launch Telegram group (FREE, instant)
+├── IF blog drives traffic → expand content in Phase 4
+└── IF none of the above → focus on more products + better marketing
+```
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 3: Notifications + Accounts + WhatsApp Commerce (Weeks 7-9)
-### ═══════════════════════════════════════════════════════════
+### ═══════════════════════════════════════════════════════════════
+### PHASE 4: GROWTH — CONTENT + EVENTS + BUNDLES (Weeks 13-16)
+### ═══════════════════════════════════════════════════════════════
 
-**Goal:** Automated comms, customer accounts, WhatsApp as sales channel.
+> **Goal:** New revenue streams. Leverage community admin expertise.
+> **Measure:** Event ticket revenue, bundle AOV, organic traffic growth.
+> **Gate:** Only build what Phase 3 data says customers want.
 
-#### 3A. WhatsApp Business Integration
+#### Weeks 13-14: "Shop by Kink" + Bundles + Content
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 86 | WhatsApp Cloud API setup (Meta Business)    | 4h     |
-| 87 | Template: order confirmed (DISCREET)        | 2h     |
-| 88 | Template: payment received                  | 1h     |
-| 89 | Template: order shipped + tracking          | 2h     |
-| 90 | Template: delivered + review request        | 2h     |
-| 91 | DB trigger → Edge Function → WhatsApp       | 4h     |
-| 92 | Admin alert: new order via WhatsApp         | 2h     |
-| 93 | Admin alert: low stock via WhatsApp         | 2h     |
-| 94 | WhatsApp Catalog sync (product catalog in WA)| 6h    |
-| 95 | Pre-populated "order via WhatsApp" messages | 2h     |
-| 96 | Abandoned cart recovery via WhatsApp (24h)  | 4h     |
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 91 | "Shop by Kink" page: full kink descriptions + curated products | 6 | E2E |
+|    | ↳ Each kink page has: description, beginner guide, products |   |    |
+| 92 | Product bundles engine: create bundles with discount | 5 | E2E |
+|    | ↳ "Kit Bondage Principiante" = 3 items, 15% off    |    |      |
+| 93 | Bundle display: on homepage + relevant product pages | 3 | —   |
+| 94 | Blog: 10 more articles (BDSM education, product guides) | 10 | — |
+| 95 | Blog: "Related Products" sidebar in articles         | 2  | —    |
+| 96 | FAQ page: shipping, returns, privacy, materials      | 3  | —    |
+| 97 | Referral program: share code → both get Gs 25,000 off | 4 | E2E |
+| 98 | Referral: tracking dashboard for customers           | 2  | —    |
 
-#### 3B. Customer Accounts
+#### Weeks 15-16: Events (Lightweight)
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 97 | Registration (email + password)             | 4h     |
-| 98 | Login + persistent session                  | 2h     |
-| 99 | Password reset flow                         | 2h     |
-| 100| Google OAuth login                          | 2h     |
-| 101| Customer profile page                       | 4h     |
-| 102| Order history with status tracking          | 4h     |
-| 103| Saved addresses (multiple, manage)          | 3h     |
-| 104| Wishlist page (save products for later)     | 4h     |
-| 105| Wishlist share link (privacy-controlled)    | 2h     |
-| 106| Communication preferences                   | 2h     |
-| 107| Account deletion (privacy compliance)       | 2h     |
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 99 | Events page: list of upcoming events with details   | 4  | —    |
+| 100| Event detail page: date, time, location, price, description | 3 | — |
+| 101| Event registration: simple form + Bancard payment   | 4  | E2E  |
+|    | ↳ OR free events: just name + email + WhatsApp      |     |      |
+| 102| Event capacity tracking + "Sold Out" display        | 2  | —    |
+| 103| Event reminder: WhatsApp message 24h before         | 2  | Integration |
+| 104| Admin: create/edit events + view registrations      | 4  | —    |
+| 105| "Shop supplies for this workshop" link to products  | 2  | —    |
+|    | ↳ E.g., Shibari workshop → link to ropes            |    |      |
+| 106| Bachelorette party bundles: curated gift sets        | 3  | —    |
+| 107| Gift card: physical card design (for in-store sales) | 2  | —    |
 
-#### 3C. Email Notifications
+**Phase 4 total: ~61h over 4 weeks**
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 108| Order confirmation email (HTML branded)     | 3h     |
-| 109| Shipping notification email                 | 2h     |
-| 110| Delivery confirmation email                 | 2h     |
-| 111| Welcome email on registration               | 2h     |
-| 112| Password reset email                        | 1h     |
-| 113| Abandoned cart email (48h)                  | 3h     |
+**Events Types to Launch (Simple):**
+```
+START WITH 2-3 EVENTS:
+├── Monthly "Fun4Me Social" munch (free, café meetup)
+├── "Intro to Bondage" workshop (paid, at store or rented space)
+└── Online Q&A with sexologist (Zoom, free, builds email list)
+
+DO NOT BUILD:
+├── Full event management with waitlists, series, consent waivers
+├── Instructor profile system
+├── Recurring event automation
+└── Virtual event link management
+↳ These are Phase 5 features IF events prove profitable
+```
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 4: Loyalty + Reviews + Social Proof (Weeks 10-12)
-### ═══════════════════════════════════════════════════════════
+### ═══════════════════════════════════════════════════════════════
+### PHASE 5: SCALE WHAT WORKS (Weeks 17-20)
+### ═══════════════════════════════════════════════════════════════
 
-**Goal:** Retention engine — points, reviews, hearts, referrals.
+> **Goal:** Double down on proven winners. Cut what doesn't work.
+> **This phase is DATA-DRIVEN. Features depend on Phase 3-4 results.**
 
-#### 4A. Loyalty Program — "Fun Points"
+#### The Decision Matrix
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 114| Points engine: earn on purchase (1pt/Gs 1000)| 4h    |
-| 115| Points engine: earn on review (+50 pts)     | 2h     |
-| 116| Points engine: earn on referral (+200 pts)  | 2h     |
-| 117| Points redemption at checkout               | 3h     |
-| 118| Tier system: Explorador / Amante / VIP      | 4h     |
-| 119| Tier perks: discounts, free shipping, early access | 3h |
-| 120| Loyalty dashboard (customer-facing)         | 3h     |
-| 121| Admin: loyalty management + manual adjust   | 3h     |
-| 122| Birthday bonus points (auto-send)           | 2h     |
-
-**Tier Structure:**
 ```
-🟢 EXPLORADOR  (0-999 pts)    — Earn 1pt per Gs 1,000 spent
-🟡 AMANTE      (1000-4999 pts) — Earn 1.5x, 5% off, free shipping >Gs 300K
-🔴 VIP         (5000+ pts)     — Earn 2x, 10% off, free shipping always, early access
+IF events are profitable (>10 attendees, positive feedback):
+  → Build event series, recurring events, instructor profiles
+  → Build consent waiver system
+  → Expand to monthly workshop calendar
+
+IF events flopped:
+  → Kill it. Keep using Google Forms for occasional meetups.
+
+IF subscription boxes validated (>30 people said yes in survey):
+  → Build ONE subscription tier
+  → Simple: monthly, fixed price, curated by owners
+  → Manual billing first (invoice via WhatsApp), automate later
+
+IF subscriptions not validated:
+  → Don't build it. Sell bundles instead (one-time purchase, no commitment).
+
+IF blog driving significant traffic (>500 visits/month):
+  → Expand "Academia": more articles, consider video embeds
+  → Add email course: "7 Days of Kink Discovery" (drip campaign)
+
+IF blog traffic is negligible:
+  → Stop writing. Focus marketing budget on Instagram + WhatsApp.
+
+IF community demand is real (people asking for it):
+  → Create Telegram group with owners as admins (FREE, instant)
+  → Link from website: "Únete a la comunidad Fun4Me"
+  → If Telegram grows to 200+ members → THEN consider forum
+
+IF referral program working:
+  → Expand to ambassador program (power users with unique codes)
+  → Give top referrers early access + free products
+
+ALWAYS BUILD (regardless of data):
 ```
 
-#### 4B. Reviews & Ratings
+| #  | Task                                              | Hrs | Test |
+|----|---------------------------------------------------|-----|------|
+| 108| Advanced analytics dashboard: revenue trends, funnels | 6 | — |
+| 109| Customer segmentation: new / returning / VIP / dormant | 4 | — |
+| 110| Re-engagement: WhatsApp to dormant customers (30+ days) | 3 | — |
+| 111| Email: abandoned cart sequence (2h, 24h, 48h)      | 4  | Integration |
+| 112| Product recommendations: "Basado en tu historial"  | 4  | —    |
+| 113| Speed + SEO audit: Core Web Vitals, Schema markup  | 4  | Lighthouse |
+| 114| Admin: bulk product import/export (CSV)             | 4  | —    |
+| 115| Admin: inventory alerts + stock history             | 3  | —    |
+| 116| Performance marketing: prepare Google Ads campaign  | 4  | —    |
+|    | ↳ Target "sex shop Paraguay" keywords (competitors aren't bidding) |  |  |
 
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 123| Review submission form (stars, pros, cons)  | 4h     |
-| 124| Verified purchase badge on reviews          | 2h     |
-| 125| Experience level tag on reviews              | 1h     |
-| 126| "Helpful" voting on reviews                 | 2h     |
-| 127| Admin review moderation queue               | 3h     |
-| 128| Admin response to reviews                   | 2h     |
-| 129| Star ratings on product cards + PDP         | 2h     |
-| 130| Review request trigger (after delivery)     | 2h     |
-| 131| Review incentive (50 loyalty points)        | 1h     |
-
-#### 4C. Social Proof & Engagement
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 132| Heart/Like button on products (Diversual-style) | 3h |
-| 133| Like count display on product cards          | 1h    |
-| 134| "Recently Viewed" products                   | 3h    |
-| 135| Referral program: unique code per customer   | 4h    |
-| 136| Referral: discount for both parties          | 2h    |
-| 137| Referral tracking dashboard                  | 3h    |
-| 138| Bachelorette party / group order features    | 4h    |
-| 139| Gift registry (couples, events)              | 6h    |
+**Phase 5 total: ~36h base + conditional features**
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 5: Education Hub — "Academia Fun4Me" (Weeks 13-16)
-### ═══════════════════════════════════════════════════════════
+## 5. FEATURE COMPARISON: v2 vs v3
 
-**Goal:** Become the trusted education source. SEO traffic machine.
-
-#### 5A. Blog & Articles
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 140| Blog engine (Supabase + MDX)                | 6h     |
-| 141| Article page: reading time, author, related | 4h     |
-| 142| Blog listing with category filter           | 3h     |
-| 143| Rich text editor for admin                  | 4h     |
-| 144| Image upload in articles                    | 2h     |
-| 145| "Related Products" in articles              | 3h     |
-| 146| Article SEO: meta, OG, JSON-LD             | 2h     |
-| 147| XML sitemap (products + articles, dynamic)  | 2h     |
-
-**Content Calendar (launch with 20+ articles):**
-```
-BEGINNER GUIDES:
-  "Cómo elegir tu primer vibrador"
-  "Guía de lubricantes: ¿Cuál es para mí?"
-  "BDSM para principiantes: 10 cosas que debes saber"
-  "Introducción al bondage seguro"
-  "Safe words: la guía completa"
-  "Aftercare: por qué es tan importante"
-  
-COUPLES:
-  "5 juegos eróticos para reinventar tu relación"
-  "Guía de juguetes para parejas"
-  "Cómo introducir juguetes en la relación"
-  
-WELLNESS:
-  "Ejercicios de Kegel: guía completa"
-  "Salud íntima: mitos y verdades"
-  "Cómo limpiar y cuidar tus juguetes"
-  
-BDSM EDUCATION:
-  "Roles en BDSM: Dominante, Sumiso y Switch"
-  "Consentimiento en BDSM: SSC vs RACK"
-  "Guía de Shibari para principiantes"
-  "Impacto: fustas, paletas y floggers"
-  "Negociación de escenas BDSM"
-  "Sub drop y top drop: qué son y cómo manejarlos"
-
-PRODUCT GUIDES:
-  "Los 10 más vendidos del mes"
-  "Guía de materiales seguros para el cuerpo"
-  "Comparativa de succionadores de clítoris"
-```
-
-#### 5B. Video Content
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 148| Video player integration (Mux/Cloudflare)   | 4h     |
-| 149| Video library page with categories           | 4h     |
-| 150| Premium vs. free video access                | 3h     |
-| 151| Video linked to related products             | 2h     |
-
-#### 5C. Sexpert / Expert Column
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 152| "Ask the Expert" Q&A submission form        | 3h     |
-| 153| Expert answers page (curated, moderated)    | 3h     |
-| 154| Expert profile page                         | 2h     |
-
-#### 5D. Advanced SEO
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 155| Google Business Profile optimization        | 2h     |
-| 156| Schema.org Product markup on all products   | 3h     |
-| 157| Schema.org Article markup on all posts      | 2h     |
-| 158| Hreflang tags (if multi-language later)     | 1h     |
-| 159| Core Web Vitals optimization sprint         | 4h     |
-| 160| Internal linking automation                 | 2h     |
-| 161| FAQ schema on category pages                | 2h     |
+| Feature                         | v2 (Fantasy)     | v3 (Reality)                      |
+|---------------------------------|------------------|-----------------------------------|
+| Total features                  | 239              | ~116                              |
+| Database tables at launch       | 35+              | 12                                |
+| Timeline                        | 24 weeks         | 20 weeks (expandable)             |
+| Forum                           | Custom-built     | Telegram group (free)             |
+| Community profiles              | Full privacy engine | Telegram pseudonyms            |
+| Private messaging               | Custom-built     | WhatsApp / Telegram DMs           |
+| Video platform                  | Mux + premium gating | YouTube embeds               |
+| Event management                | Full Eventbrite clone | Simple page + form + payment |
+| AI chatbot                      | Custom-built     | Cut entirely                      |
+| Subscription boxes              | 4 tiers at launch | Validated first, 1 tier if proven|
+| Ambassador program              | Phase 7          | Only if referrals prove demand    |
+| Loyalty tiers                   | 3 tiers          | 1 simple points system            |
+| CRM                             | Custom-built     | Supabase queries + common sense   |
+| Blog                            | Full CMS engine  | Markdown in Supabase, simple      |
+| Payment integration             | Week 5           | Started in Phase 0 (bureaucracy!) |
+| Customer validation             | None             | Phase 0: 20 interviews            |
+| Business metrics                | Phase 7          | Day 1                             |
+| Decision gates                  | None             | Every phase                       |
+| Operational cost considered?    | No               | Yes, every feature                |
+| Dev hours estimated             | ~1,200h          | ~450h                             |
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 6: Community + Events Platform (Weeks 17-20)
-### ═══════════════════════════════════════════════════════════
+## 6. PRODUCT CATEGORY TAXONOMY (Simplified)
 
-**Goal:** Fun4Me becomes the BDSM community hub for Paraguay.
+> Based on what a REAL boutique in Asunción would stock.
+> Finalize after inventory audit in Phase 0.
 
-#### 6A. Community Profiles
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 162| Community profile creation (pseudonymous)   | 4h     |
-| 163| Role identity selector (Dom, sub, switch, curious...) | 2h |
-| 164| Interest/kink checklist on profile           | 3h    |
-| 165| Experience level on profile                  | 1h    |
-| 166| Granular privacy controls per field          | 4h    |
-| 167| Avatar upload                                | 2h    |
-| 168| Profile visibility tiers (public/members/private) | 3h |
-| 169| Verification badge system                    | 3h    |
-| 170| Community member directory (with consent)    | 3h    |
-
-#### 6B. Forum / Discussion Boards
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 171| Forum categories (by topic/kink)            | 3h     |
-| 172| Topic creation + reply threads              | 6h     |
-| 173| Rich text editor for posts                  | 3h     |
-| 174| Moderator tools (pin, lock, delete, warn)   | 4h     |
-| 175| Content warning tags on posts               | 2h     |
-| 176| Anonymous posting option                    | 2h     |
-| 177| Report/flag system                          | 3h     |
-| 178| Forum search                                | 2h     |
-| 179| "Expert" flair for verified educators       | 1h     |
-
-#### 6C. Events Platform — "Fun4Me Events"
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 180| Event creation (admin)                      | 6h     |
-| 181| Event types: munch, workshop, class, demo, webinar | 2h |
-| 182| Event page: details, instructor, skill level| 4h     |
-| 183| Registration + capacity + waitlist          | 4h     |
-| 184| Ticket/payment for paid events              | 4h     |
-| 185| Digital consent/waiver form                 | 3h     |
-| 186| Event calendar page with filters            | 4h     |
-| 187| Recurring events (weekly munches, etc)      | 3h     |
-| 188| Virtual event: Zoom/Meet link management    | 2h     |
-| 189| Post-event feedback form                    | 2h     |
-| 190| "Shop supplies for this event" link to store| 3h     |
-| 191| Instructor profiles                         | 2h     |
-| 192| Event series (e.g. "Shibari 101, 102, 103")| 3h     |
-| 193| Email/WhatsApp reminders before events      | 3h     |
-| 194| Attendance tracking (check-in)              | 2h     |
-
-**Planned Event Types:**
 ```
-MONTHLY MUNCHES:
-  "Fun4Me Social" — Casual meetup at a café/bar in Asunción
-  Open to all experience levels
-  Free, RSVP required
-
-WORKSHOPS (paid):
-  "Introducción al Bondage Seguro" — 2h hands-on
-  "Shibari para Principiantes" — 3h with rope included
-  "Impacto 101: Fustas y Paletas" — 2h with demo
-  "Comunicación y Negociación en BDSM" — 1.5h
-  "Aftercare: Lo Que No Te Dicen" — 1h
-  "Electro Play Seguro" — 2h (equipment provided)
-
-ONLINE WEBINARS (Zoom):
-  "Q&A con Experta en Sexualidad" — monthly, free
-  "Guía de Compras: Qué Vibrador Elegir" — with product links
-  
-COUPLES NIGHTS:
-  "Noche de Parejas: Juegos y Conexión" — quarterly
-  Includes product sampling + activities
-
-THEMED EVENTS:
-  Valentine's Day special workshop
-  "Kink 101" intro series (4-week course)
-  Pride Month celebration
+MAIN NAVIGATION:
+├── 🛍️ Tienda
+│   ├── Novedades
+│   ├── Más Vendidos
+│   ├── Ofertas
+│   └── Kits / Bundles
+│
+├── 📂 Categorías
+│   ├── Vibradores
+│   ├── Consoladores
+│   ├── Anal
+│   ├── Para Él
+│   ├── Para Parejas
+│   ├── Lencería
+│   ├── Lubricantes y Cosmética
+│   └── Bienestar Sexual
+│
+├── 🔥 Por Kink
+│   ├── Bondage
+│   ├── Impacto
+│   ├── Dominación & Sumisión
+│   ├── Sensaciones
+│   ├── Privación Sensorial
+│   └── [Expand based on inventory]
+│
+├── 📚 Guías (Phase 3+)
+│   ├── Blog
+│   ├── Guías para Principiantes
+│   └── FAQ
+│
+└── 🎪 Eventos (Phase 4+)
+    ├── Próximos Eventos
+    └── Talleres
 ```
 
-#### 6D. Private Messaging
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 195| Direct messages between members             | 6h     |
-| 196| Consent-first: mutual follow required to DM | 2h     |
-| 197| Block/report in messaging                   | 2h     |
-| 198| Message notifications (in-app)              | 2h     |
+**Experience Level Labels (keep these — they're excellent):**
+```
+🟢 Principiante
+🟡 Intermedio
+🔴 Avanzado
+```
 
 ---
 
-### ═══════════════════════════════════════════════════════════
-### PHASE 7: Subscriptions + Advanced (Weeks 21-24) — V1 LAUNCH
-### ═══════════════════════════════════════════════════════════
-
-**Goal:** Revenue-multiplying features. Complete platform.
-
-#### 7A. Subscription Boxes — "Cajas Fun4Me"
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 199| Subscription plan pages (3 tiers)           | 4h     |
-| 200| Preference questionnaire (kinks, exp level) | 4h     |
-| 201| Subscription checkout + recurring billing   | 6h     |
-| 202| Subscription management (pause, skip, cancel)| 4h    |
-| 203| Admin: shipment preparation workflow        | 4h     |
-| 204| Admin: box curation tools                   | 3h     |
-| 205| Gift subscription option                    | 3h     |
-| 206| "Build Your Own Box" customizer             | 6h     |
-| 207| Unboxing gallery (community photos)         | 3h     |
-
-**Subscription Tiers:**
-```
-📦 CAJA EXPLORADOR — Gs 250,000/mes
-   For beginners. 3-4 items.
-   1 toy + 1 lubricant + 1 surprise item + guide booklet
-
-📦 CAJA PASIÓN — Gs 400,000/mes
-   For couples. 4-5 items.
-   1 couples toy + 1 lingerie piece + 1 game + lubricant + guide
-
-📦 CAJA KINK — Gs 500,000/mes
-   BDSM-themed. 4-6 items.
-   2 BDSM items + 1 toy + accessories + educational booklet
-
-📦 ARMA TU CAJA — Custom pricing
-   Choose your items. Pick 4-6 from curated selection.
-```
-
-#### 7B. Ambassador Program
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 208| Ambassador application form                 | 3h     |
-| 209| Unique referral codes + tracking            | 3h     |
-| 210| Commission dashboard (ambassador-facing)    | 4h     |
-| 211| Admin: ambassador management + payouts      | 4h     |
-| 212| Ambassador content kit (images, copy)       | 2h     |
-
-#### 7C. Advanced Admin Features
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 213| Inventory: bulk import/export (CSV)         | 4h     |
-| 214| Inventory: low stock alerts dashboard       | 3h     |
-| 215| Inventory: stock reservation on checkout (30min) | 4h |
-| 216| Inventory: expiry tracking (lubricants, cosmetics) | 3h |
-| 217| CRM: customer segments (new, repeat, VIP)   | 4h    |
-| 218| CRM: purchase history + preferences         | 3h    |
-| 219| Reports: revenue by period, by category     | 4h     |
-| 220| Reports: top products, conversion funnel    | 4h     |
-| 221| Reports: cart abandonment analysis          | 3h     |
-| 222| Marketing: email campaign builder           | 6h     |
-| 223| Marketing: WhatsApp broadcast (with consent)| 4h     |
-| 224| Staff roles: warehouse, support, content    | 3h     |
-| 225| Activity log (all admin actions)            | 3h     |
-| 226| Seasonal sale scheduler (Valentine's, etc)  | 3h     |
-
-#### 7D. Advanced Storefront
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 227| Product bundles engine                      | 4h     |
-| 228| "Frequently bought together" recommendations| 3h    |
-| 229| Product comparison tool                     | 4h     |
-| 230| Personalized homepage (based on preferences)| 6h     |
-| 231| Size/compatibility guide per product type   | 3h     |
-| 232| Material safety database page               | 3h     |
-| 233| Multi-currency display (Gs + USD toggle)    | 3h     |
-| 234| Announcement bar: admin-editable, scheduled | 2h     |
-
-#### 7E. Analytics Dashboard
-
-| #  | Task                                        | Effort |
-|----|---------------------------------------------|--------|
-| 235| Umami setup (self-hosted)                   | 2h     |
-| 236| Ecommerce events: view, cart, checkout, buy | 4h     |
-| 237| Admin analytics: revenue, AOV, top products | 6h     |
-| 238| Conversion funnel visualization             | 4h     |
-| 239| Heatmap integration (PostHog or Clarity)    | 2h     |
-
----
-
-## 6. POST-V1 BACKLOG (V1.x and V2)
-
-| Feature                              | Version | Priority | Notes                            |
-|--------------------------------------|---------|----------|----------------------------------|
-| AI Product Recommender               | V1.1    | HIGH     | "Based on your purchases..."     |
-| AI Chat Assistant                    | V1.1    | HIGH     | Product help, NOT domina roleplay|
-| MercadoPago integration              | V1.1    | HIGH     | Secondary payment method         |
-| Tigo Money / Personal Pay            | V1.1    | MEDIUM   | Mobile wallets                   |
-| PWA (installable app)                | V1.2    | HIGH     | Push notifications, app-like     |
-| Multi-language (Guaraní/English)     | V1.2    | MEDIUM   | Expand market                    |
-| Live chat (Crisp/Tawk.to)           | V1.1    | MEDIUM   | Real-time support                |
-| A/B testing framework                | V1.3    | MEDIUM   | Optimize conversion              |
-| MercadoLibre marketplace sync        | V1.2    | HIGH     | Multi-channel selling            |
-| WhatsApp Shop catalog                | V1.1    | HIGH     | Full catalog in WhatsApp         |
-| Supplier management module           | V1.3    | LOW      | Track suppliers, costs           |
-| Own-brand product line               | V2.0    | HIGH     | Higher margins, brand identity   |
-| Home party booking system            | V2.0    | MEDIUM   | Consultants visit homes          |
-| Dungeon/space rental management      | V2.0    | LOW      | If physical space available      |
-| Kink Academy (paid video courses)    | V2.0    | HIGH     | Recurring revenue stream         |
-| Mobile app (React Native)            | V2.0    | LOW      | Only if traffic justifies it     |
-| International shipping               | V2.0    | LOW      | LATAM expansion                  |
-| Wholesale / B2B portal              | V2.0    | MEDIUM   | Sell to other stores             |
-| Physical POS integration             | V2.0    | HIGH     | Unify online + in-store inventory|
-| 3D product viewer                    | V2.0    | LOW      | AR/3D for product inspection     |
-
----
-
-## 7. BRAND IDENTITY GUIDELINES
-
-### Positioning
-```
-NOT: "Sex Shop" (taboo, cheap connotation)
-YES: "Tienda de bienestar íntimo y comunidad kink"
-     (Intimate wellness store & kink community)
-
-TAGLINE OPTIONS:
-  "Tu espacio seguro para explorar"
-  "Más que una tienda — una comunidad"
-  "Explora. Aprende. Disfruta."
-```
-
-### Tone of Voice
-- **Educational, not salacious** — like Dona Coelha
-- **Empowering, not shameful** — "Aquí nadie te juzga"
-- **Professional, not crude** — medical-grade language for products
-- **Inclusive** — all genders, orientations, experience levels
-- **Discreet** — every external touchpoint is neutral
+## 7. BRAND & TRUST (Keep from v2 — This Was Good)
 
 ### Discreet Branding Rules
 ```
-ON PACKAGING:     "F4M Comercial" — plain brown box, no logos
-ON BANK STMT:     "F4M COM" — generic merchant name
-ON DELIVERY:      Generic sender, no product descriptions on label
-ON WHATSAPP:      No product names in automated messages
-ON PACKING SLIP:  Inside box only, neutral item codes
+PACKAGING:      "F4M Comercial" — plain box, zero branding
+BANK STATEMENT: "F4M COM" — generic merchant name
+DELIVERY:       Generic sender, no product descriptions
+WHATSAPP:       No product names in automated messages
+PACKING SLIP:   Inside box only, neutral codes
 ```
 
-### Trust Signals (display on every page)
+### Trust Signals (every page)
 ```
 🔒 Pago 100% Seguro
 📦 Envío Discreto Garantizado
@@ -949,98 +827,123 @@ ON PACKING SLIP:  Inside box only, neutral item codes
 
 ---
 
-## 8. LEGAL CHECKLIST
+## 8. RISK REGISTER (Honest)
 
-| Requirement                            | Status | Phase | Notes                          |
-|----------------------------------------|--------|-------|--------------------------------|
-| RUC (tax ID) for ecommerce            | ⬜     | 0     | Required before launch         |
-| Municipal commerce license             | ⬜     | 0     | Patente comercial, Asunción    |
-| IVA configuration (10%)               | ⬜     | 0     | Built into all prices          |
-| Bancard merchant agreement             | ⬜     | 2     | Verify adult merchant policy   |
-| DINAVISA for lubricants/cosmetics      | ⬜     | 0     | Check if registration needed   |
-| Consumer Protection (Ley 1334/98)      | ⬜     | 1     | Prices in Gs, clear policies   |
-| Privacy Policy                         | ⬜     | 1     | Prominent, comprehensive       |
-| Terms of Service                       | ⬜     | 1     | 18+ requirement, returns       |
-| Return/Exchange Policy                 | ⬜     | 1     | Hygiene restrictions for opened|
-| Cookie Policy                          | ⬜     | 1     | Age gate cookie disclosure     |
-| WhatsApp opt-in compliance             | ⬜     | 3     | Explicit consent for marketing |
-| Event liability waivers               | ⬜     | 6     | For workshops/events           |
-| Community content moderation policy    | ⬜     | 6     | Terms for forum/messaging      |
+| Risk                                      | Likelihood | Impact | Mitigation                              |
+|-------------------------------------------|-----------|--------|------------------------------------------|
+| Bancard rejects adult merchant            | MEDIUM    | CRITICAL | Apply early. Frame as "wellness." Have bank transfer as fallback. |
+| Zero online orders (customers prefer WA)  | MEDIUM    | HIGH   | WhatsApp ordering on every product. Website supplements, doesn't replace. |
+| Nobody writes reviews                     | HIGH      | LOW    | Offer loyalty points for reviews. Seed with 10 authentic reviews. |
+| Blog doesn't drive traffic                | MEDIUM    | LOW    | Try for 3 months. If no traction, reallocate time to Instagram/WA marketing. |
+| Events don't attract attendees            | MEDIUM    | LOW    | Start with free munch (zero cost). Only invest in paid workshops if free events succeed. |
+| Subscription box demand is zero           | HIGH      | LOW    | Validate in Phase 0 interviews. Don't build until proven. |
+| Dev capacity insufficient                 | HIGH      | HIGH   | Scope is right-sized for 1 dev. Add second only if revenue justifies. |
+| Payment fraud (especially COD)            | MEDIUM    | MEDIUM | COD limit per order. Phone verification. Bancard handles card fraud. |
+| Hosting goes down                         | LOW       | HIGH   | Cloudflare caching. VPS monitoring. Coolify auto-restart. |
+| Community platform liability (safety)     | N/A       | N/A    | NOT BUILDING IT. Using Telegram instead. Zero liability. |
 
 ---
 
-## 9. KEY METRICS TO TRACK
+## 9. SUCCESS METRICS BY PHASE
 
-### Commerce Metrics
-```
-Conversion Rate        — Target: 2-3% (industry avg for adult: 1.5-4%)
-Average Order Value    — Target: Gs 250,000+ (~$35 USD)
-Cart Abandonment Rate  — Target: <65% (industry avg: 70%+)
-Repeat Purchase Rate   — Target: >30% within 90 days
-Customer Lifetime Value — Track from month 1
-Revenue per Visitor    — Track and optimize
-```
+| Phase | Week | North Star Metric            | Target                    |
+|-------|------|------------------------------|---------------------------|
+| 1     | 4    | First paid order             | 1+ orders in week 4       |
+| 1     | 4    | Products loaded              | 100% of inventory          |
+| 2     | 8    | Weekly orders                | 10+ orders/week            |
+| 2     | 8    | Card payment adoption        | >30% of orders             |
+| 2     | 8    | Conversion rate              | >1.5%                      |
+| 3     | 12   | Repeat customers             | >15% repeat within 60 days|
+| 3     | 12   | Email list                   | 300+ subscribers           |
+| 3     | 12   | Reviews                      | 50+ reviews on products    |
+| 4     | 16   | Organic traffic              | 500+ monthly visitors from SEO |
+| 4     | 16   | Event attendance             | 15+ at first workshop      |
+| 4     | 16   | Bundle AOV lift              | +20% AOV on bundle orders  |
+| 5     | 20   | Monthly revenue (online)     | Gs 15M+ (~$2,000 USD)     |
+| 5     | 20   | Customer base                | 200+ unique customers      |
 
-### Community Metrics
-```
-Monthly Active Users      — Forum + events
-Event Attendance Rate     — Registered vs. attended
-Forum Posts per Week      — Community health
-Subscription Retention    — Monthly churn rate
-NPS Score                 — Quarterly survey
-```
+---
 
-### Marketing Metrics
+## 10. WHAT NOT TO BUILD (The Kill List)
+
+These were in v2. They're cut. Here's why.
+
+| Feature                          | Why It's Cut                                               |
+|----------------------------------|------------------------------------------------------------|
+| Custom forum                     | Use Telegram/Discord. Free, moderated, already built.      |
+| Community profiles               | FetLife exists. Don't compete. Use Telegram pseudonyms.    |
+| Private messaging                | WhatsApp exists. Don't reinvent it.                        |
+| AI chatbot                       | Gimmick. Doesn't sell products. Owners ARE the experts.    |
+| Video platform                   | YouTube is free. Embed it.                                 |
+| 4-tier subscription boxes        | Validate demand first. Build 1 tier IF proven.             |
+| 3-tier loyalty program           | Start with 1 tier. Add tiers when you have 500+ customers. |
+| Ambassador program (Phase 7)     | Build referral program first. Ambassador is just referral+. |
+| Product comparison tool          | Nobody uses these. Especially in adult commerce.           |
+| Multi-currency display           | You sell in Guaranies. Period.                             |
+| Material-based navigation        | Nice in theory. Nobody in PY searches by material.         |
+| Gift registry                    | Maybe 5 people/year would use this. Not worth building.    |
+| Bachelorette party features      | Just sell bundles labeled "despedida de soltera."           |
+| Home party booking               | Operations nightmare. Not a tech feature.                  |
+| Dungeon rental management        | If you need this, use Google Calendar.                     |
+| PWA                              | Mobile website is fine. App install friction kills conversion. |
+| Mobile app                       | Absolutely not. Website is enough.                         |
+| Wholesale B2B portal             | Completely different business. Don't.                      |
+| 3D product viewer                | Absurd for this market.                                    |
+| Kink Academy paid courses        | You'd need 10,000+ customers to justify this.              |
+| Consent waiver system            | Use a Google Form or paper form at the door.               |
+| Instructor profile system        | The instructor is the owner. They don't need a profile page.|
+| Event series management          | Premature. You don't know if events work yet.              |
+| Full CRM                         | Supabase queries + a spreadsheet until you need more.      |
+| Email campaign builder           | Use Resend's dashboard or Brevo free tier.                 |
+
+---
+
+## 11. DEVELOPMENT PRINCIPLES (Revised)
+
 ```
-Organic Search Traffic    — Target: 60%+ of total
-WhatsApp Order Rate       — % of orders via WhatsApp
-Email Open Rate           — Target: >25%
-Referral Rate             — % of customers who refer
-Content Engagement        — Blog reads, video views
+1. REVENUE BEFORE FEATURES     — If it doesn't make money or save time, don't build it.
+2. VALIDATE BEFORE BUILDING    — Customer interviews > competitor analysis.
+3. WHATSAPP IS THE PRODUCT     — The website helps WhatsApp sell more, not the other way around.
+4. 12 TABLES BEFORE 35         — Add schema when you need it, not before.
+5. MEASURE EVERYTHING          — Umami analytics from day 1. Decisions are data-driven.
+6. SHIP EVERY 2 WEEKS          — No phase longer than 4 weeks without a deploy.
+7. ONE DEV CAN DO THIS         — If the scope requires a team, the scope is wrong.
+8. BUY > BUILD                 — Telegram, YouTube, Google Forms, Resend. Don't reinvent.
+9. OPERATIONS = FEATURES       — Every feature has a human cost. Who runs it?
+10. PHASE GATES ARE MANDATORY  — Don't start Phase N+1 until Phase N metrics are met.
 ```
 
 ---
 
-## 10. DEVELOPMENT PRINCIPLES
-
-1. **Test-Driven Development** — Vitest for unit, Playwright for E2E
-2. **Mobile-First** — 80%+ PY traffic is mobile
-3. **Discreet by Default** — Every touchpoint is neutral externally
-4. **SEO from Day 1** — SSR, meta, structured data, sitemap
-5. **Ship Fast** — MVP in 4 weeks, iterate based on real data
-6. **WhatsApp-Native** — PY lives on WhatsApp; it's a first-class channel
-7. **Guaraníes First** — All prices in PYG
-8. **Privacy-First Community** — Pseudonymous, granular controls, consent
-9. **Education = Trust** — Content builds authority and SEO
-10. **Accessibility** — WCAG 2.1 AA compliance, screen reader friendly
-
----
-
-## 11. REVENUE STREAMS
+## 12. REVENUE STREAMS (Realistic)
 
 ```
-PRIMARY:
-  └── Product Sales (D2C ecommerce)
-  
-SECONDARY:
-  ├── Subscription Boxes (monthly recurring)
-  ├── Paid Workshops/Classes (in-person + Zoom)
-  ├── Premium Membership (VIP tier with perks)
-  └── Gift Cards
-  
-FUTURE:
-  ├── Own-Brand Products (higher margins)
-  ├── Kink Academy (paid video courses)
-  ├── Ambassador Commissions (they sell, you keep margin)
-  ├── Event Space Rental (if applicable)
-  ├── Wholesale (B2B to other stores)
-  └── Home Party Consultant Network
+YEAR 1 (prove the model):
+  └── Product Sales (90%+ of revenue)
+  └── Gift Cards (5%)
+  └── Paid Workshops (5%) — IF validated
+
+YEAR 2 (expand what works):
+  ├── Product Sales (70%)
+  ├── Bundles / Kits (10%)
+  ├── Subscription Box — 1 tier, IF validated (10%)
+  ├── Workshops / Events (5%)
+  └── Gift Cards (5%)
+
+YEAR 3+ (diversify):
+  ├── Product Sales (60%)
+  ├── Subscriptions (15%)
+  ├── Events / Education (10%)
+  ├── Bundles (10%)
+  └── Own-Brand Products (5%) — highest margin play
 ```
 
 ---
 
-*Document version: 2.0*
+*Document version: 3.0 — "The Roasted Edition"*
 *Created: 2026-04-03*
 *Repository: github.com/Ai-Whisperers/fun4me-store*
-*Total estimated features: 239 tasks across 8 phases*
-*Timeline: 24 weeks (6 months) to full V1*
+*Total features: ~116 (down from 239)*
+*Dev hours: ~450h (down from ~1,200h)*
+*Timeline: 20 weeks with phase gates (down from 24 weeks waterfall)*
+*Philosophy: Revenue first. Validate everything. Build less, sell more.*
