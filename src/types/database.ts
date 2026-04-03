@@ -1,6 +1,5 @@
 /**
- * Placeholder types for Supabase database
- * These will be auto-generated with: pnpm supabase gen types typescript
+ * Types for Supabase database
  */
 
 export interface Database {
@@ -107,6 +106,36 @@ export interface OrderItem {
   total_price: number;
 }
 
+// Base types from Supabase
 export type Product = Database['public']['Tables']['products']['Row'];
 export type Category = Database['public']['Tables']['categories']['Row'];
 export type Order = Database['public']['Tables']['orders']['Row'];
+
+// Extended product type with additional columns from the seeded database
+export interface ExtendedProduct extends Product {
+  short_description?: string | null;
+  sku?: string | null;
+  material?: string | null;
+  experience_level?: string | null;
+  is_body_safe?: boolean | null;
+  care_instructions?: string | null;
+  specifications?: Record<string, unknown> | null;
+  emoji?: string | null;
+}
+
+// Extended category type with emoji
+export interface ExtendedCategory extends Category {
+  emoji?: string | null;
+}
+
+// Kink category (not in typed schema, accessed via `as any`)
+export interface KinkCategory {
+  id: string;
+  created_at: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  emoji: string | null;
+  sort_order: number;
+  is_active: boolean;
+}
