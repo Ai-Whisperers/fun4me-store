@@ -9,6 +9,19 @@ import { ProductCard } from '@/components/store/product-card';
 import { generateWhatsAppLink } from '@/lib/utils/whatsapp';
 import { CATEGORY_IMAGES, KINK_IMAGES, HERO_IMAGE } from '@/lib/images';
 import type { ExtendedProduct, ExtendedCategory, KinkCategory } from '@/types/database';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Fun4Me Store | Tienda Intima en Paraguay',
+  description:
+    'Tu tienda online de productos intimos y de bienestar en Asuncion, Paraguay. Envio discreto a todo el pais. Vibradores, lubricantes, lenceria y mas.',
+  openGraph: {
+    title: 'Fun4Me Store | Tienda Intima en Paraguay',
+    description:
+      'Productos intimos con envio discreto en todo Paraguay. Explora vibradores, lubricantes, lenceria y mas.',
+    url: 'https://fun4me.sunstein.cloud',
+  },
+};
 
 export default async function HomePage() {
   const supabase = await createClient();

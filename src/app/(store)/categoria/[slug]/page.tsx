@@ -23,9 +23,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return { title: 'Categoría no encontrada' };
   const cat = category as unknown as { name: string; description: string | null };
 
+  const description = cat.description || `Explora nuestra coleccion de ${cat.name} en Fun4Me Store. Envio discreto en todo Paraguay.`;
+
   return {
-    title: `${cat.name} | Fun4Me Store`,
-    description: cat.description || `Explorá nuestra colección de ${cat.name}`,
+    title: cat.name,
+    description,
+    openGraph: {
+      title: `${cat.name} | Fun4Me Store`,
+      description,
+      url: `https://fun4me.sunstein.cloud/categoria/${slug}`,
+    },
   };
 }
 

@@ -14,10 +14,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Fun4Me Store',
+  metadataBase: new URL('https://fun4me.sunstein.cloud'),
+  title: {
+    default: 'Fun4Me Store | Tienda Intima en Paraguay',
+    template: '%s | Fun4Me Store',
+  },
   description:
-    'Tu tienda online en Paraguay - Productos divertidos para toda la familia',
-  keywords: ['tienda', 'Paraguay', 'online', 'fun4me'],
+    'Tu tienda online de productos intimos y de bienestar en Asuncion, Paraguay. Envio discreto a todo el pais. Vibradores, lubricantes, lenceria y mas.',
+  keywords: [
+    'tienda intima',
+    'productos adultos',
+    'Paraguay',
+    'Asuncion',
+    'vibradores',
+    'lubricantes',
+    'lenceria',
+    'bienestar intimo',
+    'envio discreto',
+    'fun4me',
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'es_PY',
+    url: 'https://fun4me.sunstein.cloud',
+    siteName: 'Fun4Me Store',
+    title: 'Fun4Me Store | Tienda Intima en Paraguay',
+    description:
+      'Tu tienda online de productos intimos y de bienestar en Asuncion, Paraguay. Envio discreto a todo el pais.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Fun4Me Store',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fun4Me Store | Tienda Intima en Paraguay',
+    description:
+      'Tu tienda online de productos intimos y de bienestar en Asuncion, Paraguay. Envio discreto a todo el pais.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  other: {
+    'theme-color': '#ec4899',
+  },
 };
 
 export default function RootLayout({

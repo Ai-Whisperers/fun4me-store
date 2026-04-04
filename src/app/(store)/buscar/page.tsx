@@ -12,7 +12,11 @@ interface Props {
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const sp = await searchParams;
   return {
-    title: sp.q ? `Buscar: ${sp.q} | Fun4Me Store` : 'Buscar | Fun4Me Store',
+    title: sp.q ? `Buscar: ${sp.q}` : 'Buscar Productos',
+    description: sp.q
+      ? `Resultados de busqueda para "${sp.q}" en Fun4Me Store.`
+      : 'Busca productos intimos y de bienestar en Fun4Me Store.',
+    robots: { index: false, follow: true },
   };
 }
 

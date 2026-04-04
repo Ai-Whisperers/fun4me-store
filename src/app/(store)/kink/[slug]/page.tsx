@@ -25,9 +25,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!kinkData) return { title: 'Kink no encontrado' };
   const k = kinkData as { name: string; description: string | null };
 
+  const description = k.description || `Explora productos de ${k.name} en Fun4Me Store. Envio discreto en todo Paraguay.`;
+
   return {
-    title: `${k.name} | Fun4Me Store`,
-    description: k.description || `Explorá productos de ${k.name}`,
+    title: k.name,
+    description,
+    openGraph: {
+      title: `${k.name} | Fun4Me Store`,
+      description,
+      url: `https://fun4me.sunstein.cloud/kink/${slug}`,
+    },
   };
 }
 

@@ -38,16 +38,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const supabase = await createClient();
   const { data: product } = await supabase
     .from('products')
-    .select('name, description, price')
+    .select('name, description, price, images')
     .eq('slug', slug)
     .single();
 
   if (!product) return { title: 'Producto no encontrado' };
-  const p = product as unknown as { name: string; description: string | null; price: number };
+  const p = product as unknown as { name: string; description: string | null; price: number; images: string[] };
+
+  const title = p.name;
+  const description = p.description || `Compra ${p.name} en Fun4Me Store. Envio discreto en todo Paraguay.`;
+  const productUrl = `https://fun4me.sunstein.cloud/producto/${slug}`;
 
   return {
-    title: `${p.name} | Fun4Me Store`,
-    description: p.description || `Comprá ${p.name} en Fun4Me Store`,
+    title,
+    description,
+    openGraph: {
+      title: `${p.name} | Fun4Me Store`,
+      description,
+      url: productUrl,
+      type: 'website',
+      images: p.images?.[0] ? [{ url: p.images[0], alt: p.name }] : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${p.name} | Fun4Me Store`,
+      description,
+    },
   };
 }
 
@@ -83,18 +99,41 @@ export default async function ProductPage({ params }: Props) {
 
   const relatedProducts = (related || []) as unknown as (ExtendedProduct & { categories: { slug: string } | null })[];
 
-  // JSON-LD
+  // JSON-LD Product Schema
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: p.name,
-    description: p.description,
+    description: p.description || `${p.name} - disponible en Fun4Me Store`,
+    image: p.images?.[0] || undefined,
+    url: `https://fun4me.sunstein.cloud/producto/${slug}`,
+    brand: {
+      '@type': 'Brand',
+      name: 'Fun4Me Store',
+    },
+    ...(p.sku ? { sku: p.sku } : {}),
+    ...(p.categories ? { category: p.categories.name } : {}),
     offers: {
       '@type': 'Offer',
       price: p.price,
       priceCurrency: 'PYG',
       availability: p.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+      url: `https://fun4me.sunstein.cloud/producto/${slug}`,
+      seller: {
+        '@type': 'Organization',
+        name: 'Fun4Me Store',
+      },
+      ...(hasDiscount && p.compare_at_price ? {
+        priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+      } : {}),
     },
+    ...(p.material ? {
+      additionalProperty: [{
+        '@type': 'PropertyValue',
+        name: 'Material',
+        value: p.material,
+      }],
+    } : {}),
   };
 
   return (
@@ -225,7 +264,7 @@ export default async function ProductPage({ params }: Props) {
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <section className="mt-16">
-            <h2 className="mb-6 text-2xl font-bold">Productos Relacionados</h2>
+            <h2 className="mb-6 text-2xl font-bold">También te puede gustar</h2>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
               {relatedProducts.map((rp) => (
                 <ProductCard

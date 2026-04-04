@@ -2,12 +2,24 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 import { useCartStore } from '@/lib/store/cart';
 import { formatPrice } from '@/lib/utils/format';
 import { generateOrderWhatsAppLink } from '@/lib/utils/whatsapp';
-import { Plus, Minus, Trash2, ShoppingCart, ArrowLeft } from 'lucide-react';
+import {
+  Plus,
+  Minus,
+  Trash2,
+  ShoppingCart,
+  ArrowLeft,
+  Truck,
+  Gift,
+  Shield,
+  Package,
+  ArrowRight,
+} from 'lucide-react';
 
-const FREE_SHIPPING_THRESHOLD = 500000;
+const FREE_SHIPPING_THRESHOLD = 300_000;
 
 export default function CartPage() {
   const items = useCartStore((s) => s.items);
@@ -21,6 +33,7 @@ export default function CartPage() {
   const count = totalItems();
   const progress = Math.min((total / FREE_SHIPPING_THRESHOLD) * 100, 100);
   const remaining = FREE_SHIPPING_THRESHOLD - total;
+  const isFreeShipping = remaining <= 0;
 
   if (items.length === 0) {
     return (
@@ -43,29 +56,81 @@ export default function CartPage() {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumbs */}
       <nav className="mb-6 flex items-center gap-2 text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-foreground">Inicio</Link>
+        <Link href="/" className="hover:text-foreground">
+          Inicio
+        </Link>
         <span>/</span>
         <span className="text-foreground">Carrito</span>
       </nav>
 
-      <h1 className="mb-8 text-3xl font-bold">Tu Carrito ({count} {count === 1 ? 'producto' : 'productos'})</h1>
+      <h1 className="mb-8 text-3xl font-bold">
+        Tu Carrito ({count} {count === 1 ? 'producto' : 'productos'})
+      </h1>
 
-      {/* Free shipping progress */}
-      <div className="mb-8 rounded-xl border p-4">
-        {remaining > 0 ? (
-          <p className="mb-2 text-sm text-muted-foreground">
-            Agregá {formatPrice(remaining)} mas para envio gratis!
-          </p>
-        ) : (
-          <p className="mb-2 text-sm font-medium text-green-600">
-            Tenes envio gratis!
-          </p>
-        )}
-        <div className="h-3 w-full overflow-hidden rounded-full bg-muted">
-          <div
-            className="h-full rounded-full bg-gradient-to-r from-rose-500 to-purple-600 transition-all"
-            style={{ width: `${progress}%` }}
-          />
+      {/* ── Free Shipping Progress Bar ──────────────────────── */}
+      <div className="mb-8 overflow-hidden rounded-xl border">
+        <div
+          className={`p-4 ${isFreeShipping ? 'bg-gradient-to-r from-green-50 to-emerald-50' : 'bg-gradient-to-r from-rose-50 to-purple-50'}`}
+        >
+          <div className="mb-3 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              {isFreeShipping ? (
+                <>
+                  <Gift className="h-5 w-5 text-green-500" />
+                  <span className="text-sm font-bold text-green-700">
+                    &#127881; ¡Tenés envío gratis!
+                  </span>
+                </>
+              ) : (
+                <>
+                  <Truck className="h-5 w-5 text-rose-500" />
+                  <span className="text-sm font-medium text-muted-foreground">
+                    Agregá{' '}
+                    <strong className="text-rose-600">
+                      {formatPrice(remaining)}
+                    </strong>{' '}
+                    más para envío gratis
+                  </span>
+                </>
+              )}
+            </div>
+            <span className="text-xs text-muted-foreground">
+              {isFreeShipping
+                ? 'Envío gratis aplicado'
+                : `Meta: ${formatPrice(FREE_SHIPPING_THRESHOLD)}`}
+            </span>
+          </div>
+
+          {/* Progress bar */}
+          <div className="relative h-4 w-full overflow-hidden rounded-full bg-white/80 shadow-inner">
+            <div
+              className={`absolute left-0 top-0 h-full rounded-full transition-all duration-700 ease-out ${
+                isFreeShipping
+                  ? 'bg-gradient-to-r from-green-400 to-emerald-500'
+                  : 'bg-gradient-to-r from-rose-500 to-purple-600'
+              }`}
+              style={{ width: `${progress}%` }}
+            />
+            {/* Milestone markers */}
+            <div className="absolute inset-0 flex items-center justify-between px-1">
+              {[25, 50, 75].map((pct) => (
+                <div
+                  key={pct}
+                  className={`h-2 w-0.5 rounded-full ${
+                    progress >= pct ? 'bg-white/60' : 'bg-gray-300/40'
+                  }`}
+                  style={{ marginLeft: `${pct}%`, position: 'absolute', left: 0 }}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Progress labels */}
+          <div className="mt-1.5 flex justify-between text-[10px] text-muted-foreground">
+            <span>{formatPrice(0)}</span>
+            <span>{formatPrice(FREE_SHIPPING_THRESHOLD / 2)}</span>
+            <span>{formatPrice(FREE_SHIPPING_THRESHOLD)}</span>
+          </div>
         </div>
       </div>
 
@@ -83,19 +148,27 @@ export default function CartPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-medium">{item.name}</h3>
-                  <p className="text-sm font-bold text-rose-600">{formatPrice(item.price)}</p>
+                  <p className="text-sm font-bold text-rose-600">
+                    {formatPrice(item.price)}
+                  </p>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2 rounded-lg border">
                     <button
-                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      onClick={() =>
+                        updateQuantity(item.id, item.quantity - 1)
+                      }
                       className="flex h-8 w-8 items-center justify-center hover:bg-muted"
                     >
                       <Minus className="h-4 w-4" />
                     </button>
-                    <span className="w-8 text-center text-sm font-medium">{item.quantity}</span>
+                    <span className="w-8 text-center text-sm font-medium">
+                      {item.quantity}
+                    </span>
                     <button
-                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                      onClick={() =>
+                        updateQuantity(item.id, item.quantity + 1)
+                      }
                       className="flex h-8 w-8 items-center justify-center hover:bg-muted"
                     >
                       <Plus className="h-4 w-4" />
@@ -121,7 +194,12 @@ export default function CartPage() {
                 <ArrowLeft className="mr-1 h-4 w-4" /> Seguir Comprando
               </Button>
             </Link>
-            <Button variant="outline" size="sm" onClick={clearCart} className="text-red-500 hover:bg-red-50">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={clearCart}
+              className="text-red-500 hover:bg-red-50"
+            >
               <Trash2 className="mr-1 h-4 w-4" /> Vaciar Carrito
             </Button>
           </div>
@@ -133,14 +211,18 @@ export default function CartPage() {
             <h2 className="mb-4 text-lg font-bold">Resumen del Pedido</h2>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Subtotal ({count} productos)</span>
+                <span className="text-muted-foreground">
+                  Subtotal ({count} productos)
+                </span>
                 <span>{formatPrice(total)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Envío</span>
-                <span>{remaining <= 0 ? 'Gratis' : 'A calcular'}</span>
+                <span className={isFreeShipping ? 'font-medium text-green-600' : ''}>
+                  {isFreeShipping ? '¡Gratis!' : 'A calcular en checkout'}
+                </span>
               </div>
-              <div className="my-3 border-t" />
+              <Separator className="my-3" />
               <div className="flex justify-between text-lg font-bold">
                 <span>Total</span>
                 <span className="text-rose-600">{formatPrice(total)}</span>
@@ -148,28 +230,53 @@ export default function CartPage() {
             </div>
 
             <div className="mt-6 space-y-3">
+              {/* Primary CTA: Go to Checkout */}
+              <Link href="/checkout" className="block">
+                <Button
+                  className="h-11 w-full bg-gradient-to-r from-rose-500 to-purple-600 text-white"
+                  size="lg"
+                >
+                  Ir al Checkout
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+
+              {/* Secondary: WhatsApp */}
               <a
                 href={generateOrderWhatsAppLink(items)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
               >
-                <Button className="w-full bg-green-500 text-white hover:bg-green-600" size="lg">
-                  Finalizar por WhatsApp
+                <Button
+                  className="w-full bg-green-500 text-white hover:bg-green-600"
+                  size="lg"
+                >
+                  Pedir por WhatsApp
                 </Button>
               </a>
+
               <p className="text-center text-xs text-muted-foreground">
-                Enviamos tu pedido por WhatsApp para confirmar la compra y coordinar el envío.
+                Podés finalizar por el checkout o por WhatsApp.
               </p>
             </div>
 
             {/* Mini trust badges */}
-            <div className="mt-6 grid grid-cols-2 gap-2">
-              <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                Envio discreto
+            <Separator className="my-4" />
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Package className="h-4 w-4 text-purple-500" />
+                Envío discreto y sin marcas
               </div>
-              <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                Pago seguro
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Shield className="h-4 w-4 text-green-500" />
+                Pago 100% seguro
+              </div>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Truck className="h-4 w-4 text-rose-500" />
+                {isFreeShipping
+                  ? '¡Envío gratis aplicado!'
+                  : `Envío gratis desde ${formatPrice(FREE_SHIPPING_THRESHOLD)}`}
               </div>
             </div>
           </div>
