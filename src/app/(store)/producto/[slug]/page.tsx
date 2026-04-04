@@ -1,11 +1,13 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
 import { formatPrice } from '@/lib/utils/format';
 import { Badge } from '@/components/ui/badge';
 import { ProductCard } from '@/components/store/product-card';
 import { ProductActions } from './product-actions';
 import { ProductTabs } from './product-tabs';
+import { PRODUCT_PLACEHOLDERS, DEFAULT_PRODUCT_IMAGE } from '@/lib/images';
 import type { ExtendedProduct, ExtendedCategory } from '@/types/database';
 import type { Metadata } from 'next';
 
@@ -21,10 +23,10 @@ const CATEGORY_GRADIENTS: Record<string, string> = {
   default: 'from-rose-400 to-purple-500',
 };
 
-const LEVEL_BADGES: Record<string, { emoji: string; label: string; color: string }> = {
-  principiante: { emoji: '🟢', label: 'Principiante', color: 'bg-green-100 text-green-800' },
-  intermedio: { emoji: '🟡', label: 'Intermedio', color: 'bg-yellow-100 text-yellow-800' },
-  avanzado: { emoji: '🔴', label: 'Avanzado', color: 'bg-red-100 text-red-800' },
+const LEVEL_BADGES: Record<string, { label: string; color: string; dot: string }> = {
+  principiante: { label: 'Principiante', color: 'bg-green-100 text-green-800', dot: 'bg-green-500' },
+  intermedio: { label: 'Intermedio', color: 'bg-yellow-100 text-yellow-800', dot: 'bg-yellow-500' },
+  avanzado: { label: 'Avanzado', color: 'bg-red-100 text-red-800', dot: 'bg-red-500' },
 };
 
 interface Props {
@@ -119,8 +121,14 @@ export default async function ProductPage({ params }: Props) {
 
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Product Image */}
-          <div className={`aspect-square rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center`}>
-            <span className="text-9xl opacity-30">🛍️</span>
+          <div className="relative aspect-square overflow-hidden rounded-2xl">
+            <Image
+              src={p.images?.[0] || PRODUCT_PLACEHOLDERS[categorySlug] || DEFAULT_PRODUCT_IMAGE}
+              alt={p.name}
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
 
           {/* Product Info */}
@@ -153,26 +161,27 @@ export default async function ProductPage({ params }: Props) {
             <div className="flex flex-wrap gap-2">
               {level && (
                 <Badge variant="outline" className={level.color}>
-                  {level.emoji} {level.label}
+                  <span className={`mr-1.5 inline-block h-2 w-2 rounded-full ${level.dot}`} />
+                  {level.label}
                 </Badge>
               )}
               {p.is_body_safe && (
                 <Badge variant="outline" className="bg-green-50 text-green-700">
-                  ✅ Body Safe
+                  Body Safe
                 </Badge>
               )}
               {p.material && (
                 <Badge variant="outline">
-                  🧪 {p.material}
+                  {p.material}
                 </Badge>
               )}
               {p.stock > 0 ? (
                 <Badge variant="outline" className="bg-green-50 text-green-700">
-                  ✅ En Stock
+                  En Stock
                 </Badge>
               ) : (
                 <Badge variant="outline" className="bg-red-50 text-red-700">
-                  ❌ Agotado
+                  Agotado
                 </Badge>
               )}
             </div>
@@ -188,16 +197,16 @@ export default async function ProductPage({ params }: Props) {
             {/* Trust badges inline */}
             <div className="grid grid-cols-2 gap-3 rounded-xl border p-4">
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span>📦</span> Envío discreto
+                Envio discreto
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span>🔒</span> Pago seguro
+                Pago seguro
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span>🇵🇾</span> Empresa paraguaya
+                Empresa paraguaya
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span>✅</span> Garantía
+                Garantia
               </div>
             </div>
           </div>

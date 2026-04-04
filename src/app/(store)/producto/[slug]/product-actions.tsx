@@ -30,7 +30,7 @@ export function ProductActions({ product }: Props) {
     toast.success('¡Producto agregado al carrito!');
   }
 
-  const whatsappMessage = `¡Hola! Me interesa este producto:\n\n📦 ${product.name}\n💰 ${formatPrice(product.price)}\n🔗 https://fun4me.sunstein.cloud/producto/${product.slug}\n\n¿Está disponible?`;
+  const whatsappMessage = `¡Hola! Me interesa este producto:\n\n${product.name}\nPrecio: ${formatPrice(product.price)}\nhttps://fun4me.sunstein.cloud/producto/${product.slug}\n\n¿Está disponible?`;
   const whatsappLink = generateWhatsAppLink(whatsappMessage);
 
   return (
@@ -46,7 +46,7 @@ export function ProductActions({ product }: Props) {
       </Button>
       <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block">
         <Button variant="outline" size="lg" className="w-full border-green-300 text-green-600 hover:bg-green-50">
-          💬 Pedir por WhatsApp
+          Pedir por WhatsApp
         </Button>
       </a>
     </div>

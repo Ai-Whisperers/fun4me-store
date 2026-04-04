@@ -1,7 +1,10 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
 import { ProductCard } from '@/components/store/product-card';
+import { KINK_IMAGES } from '@/lib/images';
+import { Search } from 'lucide-react';
 import type { Product, KinkCategory } from '@/types/database';
 import type { Metadata } from 'next';
 
@@ -74,19 +77,28 @@ export default async function KinkPage({ params }: Props) {
       </nav>
 
       {/* Kink Header */}
-      <div className="mb-10 rounded-2xl bg-gradient-to-r from-orange-50 to-rose-50 p-8">
-        <div className="flex items-center gap-3">
-          <span className="text-4xl">🔥</span>
-          <h1 className="text-3xl font-bold">{kinkCat.name}</h1>
-        </div>
-        {kinkCat.description && (
-          <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed">
-            {kinkCat.description}
-          </p>
+      <div className="relative mb-10 overflow-hidden rounded-2xl bg-gradient-to-r from-orange-50 to-rose-50 p-8">
+        {KINK_IMAGES[kinkCat.slug] && (
+          <div className="absolute inset-0">
+            <Image
+              src={KINK_IMAGES[kinkCat.slug]}
+              alt={kinkCat.name}
+              fill
+              className="object-cover opacity-10"
+            />
+          </div>
         )}
-        <p className="mt-3 text-sm text-muted-foreground">
-          💡 Recordá que la comunicación con tu pareja es clave. Todos los productos son seleccionados pensando en tu seguridad y bienestar.
-        </p>
+        <div className="relative">
+          <h1 className="text-3xl font-bold">{kinkCat.name}</h1>
+          {kinkCat.description && (
+            <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed">
+              {kinkCat.description}
+            </p>
+          )}
+          <p className="mt-3 text-sm text-muted-foreground">
+            Recorda que la comunicacion con tu pareja es clave. Todos los productos son seleccionados pensando en tu seguridad y bienestar.
+          </p>
+        </div>
       </div>
 
       <p className="mb-6 text-sm text-muted-foreground">{products.length} productos</p>
@@ -106,8 +118,8 @@ export default async function KinkPage({ params }: Props) {
         </div>
       ) : (
         <div className="flex flex-col items-center justify-center py-20 text-center">
-          <span className="mb-4 text-6xl">🔍</span>
-          <h2 className="text-xl font-semibold">Próximamente</h2>
+          <Search className="mx-auto mb-4 h-16 w-16 text-muted-foreground/30" />
+          <h2 className="text-xl font-semibold">Proximamente</h2>
           <p className="mt-2 text-muted-foreground">
             Estamos agregando productos para esta categoría. ¡Volvé pronto!
           </p>

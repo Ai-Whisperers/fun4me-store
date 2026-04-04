@@ -17,9 +17,9 @@ const PRICE_RANGES = [
 ];
 
 const LEVELS = [
-  { value: 'principiante', label: '🟢 Principiante' },
-  { value: 'intermedio', label: '🟡 Intermedio' },
-  { value: 'avanzado', label: '🔴 Avanzado' },
+  { value: 'principiante', label: 'Principiante' },
+  { value: 'intermedio', label: 'Intermedio' },
+  { value: 'avanzado', label: 'Avanzado' },
 ];
 
 const SORT_OPTIONS = [

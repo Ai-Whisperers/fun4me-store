@@ -58,19 +58,19 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold">Contacto</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
-                <span>💬</span>
+                <span>WhatsApp</span>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
                   +595 976 569 739
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <span>📧</span>
+                <span>Email</span>
                 <a href="mailto:contacto@fun4me.com" className="hover:text-foreground">
                   contacto@fun4me.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <span>📍</span>
+                <span>Ubicación</span>
                 <span>Asunción, Paraguay</span>
               </li>
             </ul>
@@ -81,7 +81,7 @@ export function Footer() {
       <div className="border-t py-4 text-center text-xs text-muted-foreground">
         <div className="container mx-auto px-4">
           <p>&copy; {new Date().getFullYear()} Fun4Me Store. Todos los derechos reservados.</p>
-          <p className="mt-1">Asunción, Paraguay 🇵🇾</p>
+          <p className="mt-1">Asunción, Paraguay</p>
         </div>
       </div>
     </footer>

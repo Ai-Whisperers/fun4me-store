@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -6,6 +7,7 @@ import { TrustBadges } from '@/components/store/trust-badges';
 import { Newsletter } from '@/components/store/newsletter';
 import { ProductCard } from '@/components/store/product-card';
 import { generateWhatsAppLink } from '@/lib/utils/whatsapp';
+import { CATEGORY_IMAGES, KINK_IMAGES, HERO_IMAGE } from '@/lib/images';
 import type { ExtendedProduct, ExtendedCategory, KinkCategory } from '@/types/database';
 
 export default async function HomePage() {
@@ -25,22 +27,19 @@ export default async function HomePage() {
 
   const whatsappLink = generateWhatsAppLink('¡Hola! Me interesa saber más sobre Fun4Me Store.');
 
-  const CATEGORY_EMOJIS: Record<string, string> = {
-    vibradores: '💜',
-    dildos: '🍆',
-    lubricantes: '💧',
-    lenceria: '👙',
-    'juegos-de-pareja': '🎲',
-    bdsm: '⛓️',
-    masturbadores: '🌀',
-    accesorios: '✨',
-  };
-
   return (
     <div>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-rose-500 via-pink-500 to-purple-600 py-20 sm:py-32">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMSkiLz48L3N2Zz4=')] opacity-50" />
+        <div className="absolute inset-0">
+          <Image
+            src={HERO_IMAGE}
+            alt="Fun4Me Store"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
         <div className="container relative mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Tu espacio seguro para explorar
@@ -51,12 +50,12 @@ export default async function HomePage() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="#categorias">
               <Button size="lg" className="bg-white text-rose-600 hover:bg-white/90">
-                🛍️ Explorar Tienda
+                Explorar Tienda
               </Button>
             </Link>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                💬 Consultar por WhatsApp
+                Consultar por WhatsApp
               </Button>
             </a>
           </div>
@@ -76,16 +75,26 @@ export default async function HomePage() {
             {categories.map((cat) => (
               <Link key={cat.id} href={`/categoria/${cat.slug}`}>
                 <Card className="group cursor-pointer overflow-hidden transition-all hover:ring-2 hover:ring-rose-300">
-                  <div className="flex aspect-square flex-col items-center justify-center bg-gradient-to-br from-rose-50 to-purple-50 p-4 transition-colors group-hover:from-rose-100 group-hover:to-purple-100">
-                    <span className="mb-3 text-5xl">
-                      {cat.emoji || CATEGORY_EMOJIS[cat.slug] || '📦'}
-                    </span>
-                    <h3 className="text-center text-sm font-semibold">{cat.name}</h3>
-                    {cat.description && (
-                      <p className="mt-1 line-clamp-2 text-center text-xs text-muted-foreground">
-                        {cat.description}
-                      </p>
+                  <div className="relative aspect-square overflow-hidden">
+                    {CATEGORY_IMAGES[cat.slug] ? (
+                      <Image
+                        src={CATEGORY_IMAGES[cat.slug]}
+                        alt={cat.name}
+                        fill
+                        className="object-cover transition-transform group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-rose-50 to-purple-50" />
                     )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                      <h3 className="text-center text-sm font-semibold">{cat.name}</h3>
+                      {cat.description && (
+                        <p className="mt-1 line-clamp-2 text-center text-xs text-white/80">
+                          {cat.description}
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </Card>
               </Link>
@@ -98,7 +107,7 @@ export default async function HomePage() {
       <section id="kinks" className="bg-muted/30 py-16">
         <div className="container mx-auto px-4">
           <h2 className="mb-2 text-center text-2xl font-bold sm:text-3xl">
-            🔥 Explora por Kink
+            Explora por Kink
           </h2>
           <p className="mb-8 text-center text-muted-foreground">
             Descubrí productos según tus fantasías
@@ -107,15 +116,27 @@ export default async function HomePage() {
             {kinks.map((kink) => (
               <Link key={kink.id} href={`/kink/${kink.slug}`}>
                 <Card className="group cursor-pointer overflow-hidden transition-all hover:ring-2 hover:ring-orange-300">
-                  <CardContent className="flex flex-col items-center justify-center p-6">
-                    <span className="mb-3 text-4xl">🔥</span>
-                    <h3 className="text-center text-sm font-semibold">{kink.name}</h3>
-                    {kink.description && (
-                      <p className="mt-1 line-clamp-2 text-center text-xs text-muted-foreground">
-                        {kink.description}
-                      </p>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    {KINK_IMAGES[kink.slug] ? (
+                      <Image
+                        src={KINK_IMAGES[kink.slug]}
+                        alt={kink.name}
+                        fill
+                        className="object-cover transition-transform group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-orange-50 to-rose-50" />
                     )}
-                  </CardContent>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                      <h3 className="text-center text-sm font-semibold">{kink.name}</h3>
+                      {kink.description && (
+                        <p className="mt-1 line-clamp-2 text-center text-xs text-white/80">
+                          {kink.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
                 </Card>
               </Link>
             ))}
@@ -127,7 +148,7 @@ export default async function HomePage() {
       <section id="ofertas" className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="mb-2 text-center text-2xl font-bold sm:text-3xl">
-            ⭐ Los Más Vendidos
+            Los Mas Vendidos
           </h2>
           <p className="mb-8 text-center text-muted-foreground">
             Los favoritos de nuestros clientes

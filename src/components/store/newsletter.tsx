@@ -20,7 +20,7 @@ export function Newsletter() {
     <section className="bg-gradient-to-r from-rose-500 to-purple-600 py-16">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-2xl font-bold text-white sm:text-3xl">
-          💌 Recibí Ofertas Exclusivas
+          Recibí Ofertas Exclusivas
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm text-white/80">
           Suscribite a nuestro newsletter y recibí descuentos especiales, novedades y consejos de bienestar íntimo.

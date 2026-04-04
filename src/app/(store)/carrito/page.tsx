@@ -54,11 +54,11 @@ export default function CartPage() {
       <div className="mb-8 rounded-xl border p-4">
         {remaining > 0 ? (
           <p className="mb-2 text-sm text-muted-foreground">
-            🚚 ¡Agregá {formatPrice(remaining)} más para envío gratis!
+            Agregá {formatPrice(remaining)} mas para envio gratis!
           </p>
         ) : (
           <p className="mb-2 text-sm font-medium text-green-600">
-            🎉 ¡Tenés envío gratis!
+            Tenes envio gratis!
           </p>
         )}
         <div className="h-3 w-full overflow-hidden rounded-full bg-muted">
@@ -79,7 +79,7 @@ export default function CartPage() {
                 className="flex flex-col gap-4 rounded-xl border p-4 sm:flex-row sm:items-center"
               >
                 <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-rose-400 to-purple-500">
-                  <span className="text-3xl">🛍️</span>
+                  <ShoppingCart className="h-8 w-8 text-white" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-medium">{item.name}</h3>
@@ -138,7 +138,7 @@ export default function CartPage() {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Envío</span>
-                <span>{remaining <= 0 ? 'Gratis 🎉' : 'A calcular'}</span>
+                <span>{remaining <= 0 ? 'Gratis' : 'A calcular'}</span>
               </div>
               <div className="my-3 border-t" />
               <div className="flex justify-between text-lg font-bold">
@@ -155,7 +155,7 @@ export default function CartPage() {
                 className="block"
               >
                 <Button className="w-full bg-green-500 text-white hover:bg-green-600" size="lg">
-                  💬 Finalizar por WhatsApp
+                  Finalizar por WhatsApp
                 </Button>
               </a>
               <p className="text-center text-xs text-muted-foreground">
@@ -166,10 +166,10 @@ export default function CartPage() {
             {/* Mini trust badges */}
             <div className="mt-6 grid grid-cols-2 gap-2">
               <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                <span>📦</span> Envío discreto
+                Envio discreto
               </div>
               <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                <span>🔒</span> Pago seguro
+                Pago seguro
               </div>
             </div>
           </div>

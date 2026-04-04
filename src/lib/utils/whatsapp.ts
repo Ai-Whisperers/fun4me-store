@@ -18,8 +18,8 @@ export function generateOrderMessage(
   items: CartItem[],
   customerName?: string,
 ): string {
-  const header = '🛒 *Nuevo Pedido - Fun4Me Store*\n\n';
-  const customerLine = customerName ? `👤 *Cliente:* ${customerName}\n\n` : '';
+  const header = '*Nuevo Pedido - Fun4Me Store*\n\n';
+  const customerLine = customerName ? `*Cliente:* ${customerName}\n\n` : '';
 
   const itemLines = items
     .map(
@@ -32,7 +32,7 @@ export function generateOrderMessage(
     (sum, item) => sum + item.price * item.quantity,
     0,
   );
-  const totalLine = `\n\n💰 *Total: ${formatPrice(total)}*`;
+  const totalLine = `\n\n*Total: ${formatPrice(total)}*`;
 
   return `${header}${customerLine}${itemLines}${totalLine}`;
 }

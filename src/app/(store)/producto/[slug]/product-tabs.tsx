@@ -77,10 +77,10 @@ export function ProductTabs({ description, specifications, careInstructions, mat
               <p className="whitespace-pre-wrap text-muted-foreground leading-relaxed">{careInstructions}</p>
             ) : (
               <div className="space-y-3 text-sm text-muted-foreground">
-                <p>🧼 <strong>Limpieza:</strong> Lavar con agua tibia y jabón neutro antes y después de cada uso.</p>
-                <p>💧 <strong>Lubricantes:</strong> Usar lubricante a base de agua para mayor durabilidad del producto.</p>
-                <p>📦 <strong>Almacenamiento:</strong> Guardar en un lugar seco y fresco, de preferencia en su empaque original.</p>
-                <p>⚠️ <strong>Importante:</strong> No compartir sin protección adecuada. Revisar regularmente el estado del producto.</p>
+                <p><strong>Limpieza:</strong> Lavar con agua tibia y jabon neutro antes y despues de cada uso.</p>
+                <p><strong>Lubricantes:</strong> Usar lubricante a base de agua para mayor durabilidad del producto.</p>
+                <p><strong>Almacenamiento:</strong> Guardar en un lugar seco y fresco, de preferencia en su empaque original.</p>
+                <p><strong>Importante:</strong> No compartir sin proteccion adecuada. Revisar regularmente el estado del producto.</p>
               </div>
             )}
           </div>

@@ -49,7 +49,7 @@ function AgeVerificationForm() {
   return (
     <Card className="w-full max-w-md">
       <CardHeader className="text-center">
-        <div className="mx-auto mb-4 text-5xl">🔞</div>
+        <div className="mx-auto mb-4 text-2xl font-bold text-red-500">+18</div>
         <CardTitle className="text-2xl">Verificación de Edad</CardTitle>
         <CardDescription>
           Confirma que sos mayor de 18 años para acceder a Fun4Me Store

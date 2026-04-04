@@ -77,7 +77,6 @@ export function Header() {
                       onClick={() => setCategoriesOpen(false)}
                       className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-muted"
                     >
-                      <span>{cat.emoji || '📦'}</span>
                       {cat.name}
                     </Link>
                   ))}
@@ -149,7 +148,7 @@ export function Header() {
               </div>
             </form>
             <Link href="/" onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-muted">
-              🏠 Inicio
+              Inicio
             </Link>
             <p className="px-3 pt-3 text-xs font-semibold uppercase text-muted-foreground">Categorías</p>
             {categories.map((cat) => (
@@ -159,7 +158,7 @@ export function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="block rounded-md px-3 py-2 text-sm hover:bg-muted"
               >
-                {cat.emoji || '📦'} {cat.name}
+                {cat.name}
               </Link>
             ))}
             <p className="px-3 pt-3 text-xs font-semibold uppercase text-muted-foreground">Por Kink</p>
@@ -170,7 +169,7 @@ export function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="block rounded-md px-3 py-2 text-sm hover:bg-muted"
               >
-                🔥 {k.name}
+                {k.name}
               </Link>
             ))}
           </div>

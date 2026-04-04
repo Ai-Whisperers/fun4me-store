@@ -86,7 +86,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       </nav>
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">{cat.emoji || '📦'} {cat.name}</h1>
+        <h1 className="text-3xl font-bold">{cat.name}</h1>
         {cat.description && (
           <p className="mt-2 text-muted-foreground">{cat.description}</p>
         )}
@@ -115,7 +115,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             </div>
           ) : (
             <div className="flex flex-col items-center justify-center py-20 text-center">
-              <span className="mb-4 text-6xl">🔍</span>
+              <span className="mb-4 text-2xl font-semibold text-muted-foreground">Sin resultados</span>
               <h2 className="text-xl font-semibold">No encontramos productos</h2>
               <p className="mt-2 text-muted-foreground">Intentá con otros filtros o explorá otras categorías.</p>
             </div>

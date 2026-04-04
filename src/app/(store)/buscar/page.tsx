@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { ProductCard } from '@/components/store/product-card';
+import { Search } from 'lucide-react';
 import type { ExtendedProduct } from '@/types/database';
 import type { Metadata } from 'next';
 
@@ -68,23 +69,23 @@ export default async function SearchPage({ searchParams }: Props) {
 
       {query && products.length === 0 && (
         <div className="flex flex-col items-center justify-center py-20 text-center">
-          <span className="mb-4 text-6xl">🔍</span>
+          <Search className="mx-auto mb-4 h-16 w-16 text-muted-foreground/30" />
           <h2 className="text-xl font-semibold">No encontramos resultados</h2>
           <p className="mt-2 max-w-md text-muted-foreground">
-            No encontramos productos para &ldquo;{query}&rdquo;. Probá con otras palabras o explorá nuestras categorías.
+            No encontramos productos para &ldquo;{query}&rdquo;. Proba con otras palabras o explora nuestras categorias.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             <Link href="/categoria/vibradores" className="rounded-full border px-4 py-2 text-sm hover:bg-muted">
-              💜 Vibradores
+              Vibradores
             </Link>
             <Link href="/categoria/lubricantes" className="rounded-full border px-4 py-2 text-sm hover:bg-muted">
-              💧 Lubricantes
+              Lubricantes
             </Link>
             <Link href="/categoria/lenceria" className="rounded-full border px-4 py-2 text-sm hover:bg-muted">
-              👙 Lencería
+              Lenceria
             </Link>
             <Link href="/categoria/juegos-de-pareja" className="rounded-full border px-4 py-2 text-sm hover:bg-muted">
-              🎲 Juegos de Pareja
+              Juegos de Pareja
             </Link>
           </div>
         </div>
@@ -92,8 +93,8 @@ export default async function SearchPage({ searchParams }: Props) {
 
       {!query && (
         <div className="flex flex-col items-center justify-center py-20 text-center">
-          <span className="mb-4 text-6xl">🔍</span>
-          <h2 className="text-xl font-semibold">¿Qué estás buscando?</h2>
+          <Search className="mx-auto mb-4 h-16 w-16 text-muted-foreground/30" />
+          <h2 className="text-xl font-semibold">Que estas buscando?</h2>
           <p className="mt-2 text-muted-foreground">
             Usá la barra de búsqueda para encontrar productos.
           </p>

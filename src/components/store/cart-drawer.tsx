@@ -56,11 +56,11 @@ export function CartDrawer() {
             <div className="px-4">
               {remaining > 0 ? (
                 <p className="mb-2 text-xs text-muted-foreground">
-                  ¡Agregá {formatPrice(remaining)} más para envío gratis! 🚚
+                  Agrega {formatPrice(remaining)} mas para envio gratis!
                 </p>
               ) : (
                 <p className="mb-2 text-xs font-medium text-green-600">
-                  🎉 ¡Tenés envío gratis!
+                  Tenes envio gratis!
                 </p>
               )}
               <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
@@ -77,7 +77,7 @@ export function CartDrawer() {
                 {items.map((item) => (
                   <div key={item.id} className="flex items-center gap-3 rounded-lg border p-3">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-rose-400 to-purple-500">
-                      <span className="text-lg">🛍️</span>
+                      <ShoppingCart className="h-5 w-5 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="truncate text-sm font-medium">{item.name}</p>
@@ -130,7 +130,7 @@ export function CartDrawer() {
                 className="block"
               >
                 <Button className="w-full bg-green-500 text-white hover:bg-green-600">
-                  💬 Pedir por WhatsApp
+                  Pedir por WhatsApp
                 </Button>
               </a>
             </div>
