@@ -38,7 +38,7 @@ export function Footer() {
               <li><Link href="/" className="hover:text-foreground">Inicio</Link></li>
               <li><Link href="/#categorias" className="hover:text-foreground">Categorías</Link></li>
               <li><Link href="/#kinks" className="hover:text-foreground">Por Kink</Link></li>
-              <li><Link href="/#ofertas" className="hover:text-foreground">Ofertas</Link></li>
+              <li><Link href="/ofertas" className="hover:text-foreground">Ofertas</Link></li>
             </ul>
           </div>
 
@@ -46,10 +46,10 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-sm font-semibold">Ayuda</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><span className="hover:text-foreground cursor-default">Envíos y Entregas</span></li>
-              <li><span className="hover:text-foreground cursor-default">Política de Devolución</span></li>
-              <li><span className="hover:text-foreground cursor-default">Preguntas Frecuentes</span></li>
-              <li><span className="hover:text-foreground cursor-default">Privacidad</span></li>
+              <li><Link href="/envios" className="hover:text-foreground">Envíos y Entregas</Link></li>
+              <li><Link href="/devoluciones" className="hover:text-foreground">Política de Devolución</Link></li>
+              <li><Link href="/faq" className="hover:text-foreground">Preguntas Frecuentes</Link></li>
+              <li><Link href="/privacidad" className="hover:text-foreground">Privacidad</Link></li>
             </ul>
           </div>
 

@@ -25,14 +25,16 @@ interface ProductCardProps {
     compare_at_price: number | null;
     is_featured: boolean;
     experience_level?: string | null;
+    images?: string[] | null;
     image_url?: string | null;
     category_slug?: string;
+    stock?: number;
   };
 }
 
 export function ProductCard({ product }: ProductCardProps) {
   const addItem = useCartStore((s) => s.addItem);
-  const productImage = product.image_url || PRODUCT_PLACEHOLDERS[product.category_slug || 'default'] || DEFAULT_PRODUCT_IMAGE;
+  const productImage = product.images?.[0] || product.image_url || PRODUCT_PLACEHOLDERS[product.category_slug || 'default'] || DEFAULT_PRODUCT_IMAGE;
   const level = product.experience_level
     ? LEVEL_BADGES[product.experience_level.toLowerCase()]
     : null;
@@ -48,13 +50,15 @@ export function ProductCard({ product }: ProductCardProps) {
       id: product.id,
       name: product.name,
       price: product.price,
+      image_url: productImage,
+      max_stock: product.stock,
     });
     toast.success('Producto agregado al carrito');
   }
 
   return (
-    <Link href={`/producto/${product.slug}`}>
-      <Card className="group overflow-hidden transition-all hover:ring-2 hover:ring-rose-300">
+    <Card className="group overflow-hidden transition-all hover:ring-2 hover:ring-rose-300">
+      <Link href={`/producto/${product.slug}`}>
         <div className="relative aspect-square overflow-hidden">
           <Image
             src={productImage}
@@ -87,15 +91,17 @@ export function ProductCard({ product }: ProductCardProps) {
               {level.label}
             </Badge>
           )}
-          <Button
-            onClick={handleAddToCart}
-            size="sm"
-            className="w-full bg-gradient-to-r from-rose-500 to-purple-600 text-white hover:from-rose-600 hover:to-purple-700"
-          >
-            Agregar al Carrito
-          </Button>
         </CardContent>
-      </Card>
-    </Link>
+      </Link>
+      <div className="px-3 pb-3">
+        <Button
+          onClick={handleAddToCart}
+          size="sm"
+          className="w-full bg-gradient-to-r from-rose-500 to-purple-600 text-white hover:from-rose-600 hover:to-purple-700"
+        >
+          Agregar al Carrito
+        </Button>
+      </div>
+    </Card>
   );
 }

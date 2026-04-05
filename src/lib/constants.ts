@@ -1,6 +1,8 @@
 export const STORE_NAME = 'Fun4Me Store';
 
-export const WHATSAPP_NUMBER = '+595976569739';
+export const WHATSAPP_NUMBER = '+595 976 569 739';
+
+export const FREE_SHIPPING_THRESHOLD = 300_000;
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://fun4me.sunstein.cloud';

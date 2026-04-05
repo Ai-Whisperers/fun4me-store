@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   Sheet,
   SheetTrigger,
@@ -14,10 +15,11 @@ import { formatPrice } from '@/lib/utils/format';
 import { generateOrderWhatsAppLink } from '@/lib/utils/whatsapp';
 import { ShoppingCart, Plus, Minus, Trash2 } from 'lucide-react';
 import Link from 'next/link';
-
-const FREE_SHIPPING_THRESHOLD = 500000;
+import { FREE_SHIPPING_THRESHOLD } from '@/lib/constants';
 
 export function CartDrawer() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
   const items = useCartStore((s) => s.items);
   const totalItems = useCartStore((s) => s.totalItems);
   const totalPrice = useCartStore((s) => s.totalPrice);
@@ -25,7 +27,7 @@ export function CartDrawer() {
   const removeItem = useCartStore((s) => s.removeItem);
 
   const total = totalPrice();
-  const count = totalItems();
+  const count = mounted ? totalItems() : 0;
   const progress = Math.min((total / FREE_SHIPPING_THRESHOLD) * 100, 100);
   const remaining = FREE_SHIPPING_THRESHOLD - total;
 
@@ -33,7 +35,7 @@ export function CartDrawer() {
     <Sheet>
       <SheetTrigger className="relative inline-flex items-center">
         <ShoppingCart className="h-5 w-5" />
-        {count > 0 && (
+        {mounted && count > 0 && (
           <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-rose-500 text-[10px] font-bold text-white">
             {count}
           </span>
@@ -87,6 +89,7 @@ export function CartDrawer() {
                       <button
                         onClick={() => updateQuantity(item.id, item.quantity - 1)}
                         className="flex h-6 w-6 items-center justify-center rounded border hover:bg-muted"
+                        aria-label="Disminuir cantidad"
                       >
                         <Minus className="h-3 w-3" />
                       </button>
@@ -94,12 +97,14 @@ export function CartDrawer() {
                       <button
                         onClick={() => updateQuantity(item.id, item.quantity + 1)}
                         className="flex h-6 w-6 items-center justify-center rounded border hover:bg-muted"
+                        aria-label="Aumentar cantidad"
                       >
                         <Plus className="h-3 w-3" />
                       </button>
                       <button
                         onClick={() => removeItem(item.id)}
                         className="ml-1 flex h-6 w-6 items-center justify-center rounded text-red-500 hover:bg-red-50"
+                        aria-label="Eliminar del carrito"
                       >
                         <Trash2 className="h-3 w-3" />
                       </button>

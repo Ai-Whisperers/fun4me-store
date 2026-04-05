@@ -14,6 +14,7 @@ import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, User, Phone, Mail, MapPin, FileText } from 'lucide-react';
 import Link from 'next/link';
 import { OrderStatusUpdate } from '@/components/admin/order-status-update';
+import { formatPrice } from '@/lib/utils/format';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -34,14 +35,6 @@ export default async function PedidoDetailPage({ params }: Props) {
   }
 
   const order = orderData as any;
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-PY', {
-      style: 'currency',
-      currency: 'PYG',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
 
   const statusLabels: Record<string, string> = {
     pending: 'Pendiente',

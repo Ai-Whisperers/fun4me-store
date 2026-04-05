@@ -14,6 +14,7 @@ interface Props {
     price: number;
     stock: number;
     slug: string;
+    images?: string[] | null;
   };
 }
 
@@ -25,6 +26,7 @@ export function ProductActions({ product }: Props) {
       id: product.id,
       name: product.name,
       price: product.price,
+      image_url: product.images?.[0],
       max_stock: product.stock,
     });
     toast.success('¡Producto agregado al carrito!');

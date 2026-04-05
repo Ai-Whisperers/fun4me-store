@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Plus, Pencil } from 'lucide-react';
+import { formatPrice } from '@/lib/utils/format';
 
 export default async function ProductosPage() {
   const supabase = await createClient();
@@ -21,14 +22,6 @@ export default async function ProductosPage() {
     .order('created_at', { ascending: false });
 
   const products = (productsData as any[]) || [];
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-PY', {
-      style: 'currency',
-      currency: 'PYG',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
 
   return (
     <div className="space-y-6">

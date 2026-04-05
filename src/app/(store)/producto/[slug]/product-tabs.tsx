@@ -22,11 +22,15 @@ export function ProductTabs({ description, specifications, careInstructions, mat
   return (
     <div>
       {/* Tab Navigation */}
-      <div className="flex border-b">
+      <div className="flex border-b" role="tablist">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            aria-controls={`tabpanel-${tab.id}`}
+            id={`tab-${tab.id}`}
             className={cn(
               'px-4 py-3 text-sm font-medium transition-colors',
               activeTab === tab.id
@@ -42,7 +46,12 @@ export function ProductTabs({ description, specifications, careInstructions, mat
       {/* Tab Content */}
       <div className="py-6">
         {activeTab === 'descripcion' && (
-          <div className="prose prose-sm max-w-none">
+          <div
+            className="prose prose-sm max-w-none"
+            role="tabpanel"
+            id="tabpanel-descripcion"
+            aria-labelledby="tab-descripcion"
+          >
             {description ? (
               <p className="whitespace-pre-wrap text-muted-foreground leading-relaxed">{description}</p>
             ) : (
@@ -52,7 +61,12 @@ export function ProductTabs({ description, specifications, careInstructions, mat
         )}
 
         {activeTab === 'especificaciones' && (
-          <div className="space-y-3">
+          <div
+            className="space-y-3"
+            role="tabpanel"
+            id="tabpanel-especificaciones"
+            aria-labelledby="tab-especificaciones"
+          >
             {material && (
               <div className="flex items-center justify-between rounded-lg border px-4 py-3">
                 <span className="text-sm font-medium">Material</span>
@@ -72,7 +86,12 @@ export function ProductTabs({ description, specifications, careInstructions, mat
         )}
 
         {activeTab === 'cuidados' && (
-          <div className="prose prose-sm max-w-none">
+          <div
+            className="prose prose-sm max-w-none"
+            role="tabpanel"
+            id="tabpanel-cuidados"
+            aria-labelledby="tab-cuidados"
+          >
             {careInstructions ? (
               <p className="whitespace-pre-wrap text-muted-foreground leading-relaxed">{careInstructions}</p>
             ) : (

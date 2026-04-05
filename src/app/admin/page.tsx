@@ -14,6 +14,7 @@ import {
   AlertTriangle,
 } from 'lucide-react';
 import Link from 'next/link';
+import { formatPrice } from '@/lib/utils/format';
 
 export default async function AdminDashboard() {
   const supabase = await createClient();
@@ -56,14 +57,6 @@ export default async function AdminDashboard() {
     .limit(5);
 
   const recentOrders = (recentOrdersData as any[]) || [];
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-PY', {
-      style: 'currency',
-      currency: 'PYG',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
 
   const statusLabels: Record<string, string> = {
     pending: 'Pendiente',

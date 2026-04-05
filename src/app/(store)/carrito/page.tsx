@@ -1,11 +1,13 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { useCartStore } from '@/lib/store/cart';
 import { formatPrice } from '@/lib/utils/format';
 import { generateOrderWhatsAppLink } from '@/lib/utils/whatsapp';
+import { FREE_SHIPPING_THRESHOLD } from '@/lib/constants';
 import {
   Plus,
   Minus,
@@ -19,9 +21,10 @@ import {
   ArrowRight,
 } from 'lucide-react';
 
-const FREE_SHIPPING_THRESHOLD = 300_000;
-
 export default function CartPage() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   const items = useCartStore((s) => s.items);
   const totalItems = useCartStore((s) => s.totalItems);
   const totalPrice = useCartStore((s) => s.totalPrice);
@@ -34,6 +37,15 @@ export default function CartPage() {
   const progress = Math.min((total / FREE_SHIPPING_THRESHOLD) * 100, 100);
   const remaining = FREE_SHIPPING_THRESHOLD - total;
   const isFreeShipping = remaining <= 0;
+
+  if (!mounted) {
+    return (
+      <div className="container mx-auto px-4 py-20 text-center">
+        <div className="mx-auto mb-6 h-24 w-24 animate-pulse rounded-full bg-muted" />
+        <div className="mx-auto h-6 w-48 animate-pulse rounded bg-muted" />
+      </div>
+    );
+  }
 
   if (items.length === 0) {
     return (
@@ -159,6 +171,7 @@ export default function CartPage() {
                         updateQuantity(item.id, item.quantity - 1)
                       }
                       className="flex h-8 w-8 items-center justify-center hover:bg-muted"
+                      aria-label="Disminuir cantidad"
                     >
                       <Minus className="h-4 w-4" />
                     </button>
@@ -170,6 +183,7 @@ export default function CartPage() {
                         updateQuantity(item.id, item.quantity + 1)
                       }
                       className="flex h-8 w-8 items-center justify-center hover:bg-muted"
+                      aria-label="Aumentar cantidad"
                     >
                       <Plus className="h-4 w-4" />
                     </button>
@@ -180,6 +194,7 @@ export default function CartPage() {
                   <button
                     onClick={() => removeItem(item.id)}
                     className="flex h-8 w-8 items-center justify-center rounded text-red-500 hover:bg-red-50"
+                    aria-label="Eliminar del carrito"
                   >
                     <Trash2 className="h-4 w-4" />
                   </button>

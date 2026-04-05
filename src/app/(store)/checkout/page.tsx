@@ -19,6 +19,7 @@ import {
   MapPin,
   Phone,
   User,
+  Mail,
   ShoppingCart,
   CheckCircle,
   Package,
@@ -82,6 +83,7 @@ export default function CheckoutPage() {
 
   /* ── Form state ──────────────────────────────────────────── */
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const [city, setCity] = useState('');
@@ -122,6 +124,8 @@ export default function CheckoutPage() {
   function validate(): boolean {
     const newErrors: Record<string, string> = {};
     if (!name.trim()) newErrors.name = 'Ingresá tu nombre completo';
+    if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))
+      newErrors.email = 'Ingresá un correo electrónico válido';
     if (!phone.trim()) newErrors.phone = 'Ingresá tu número de teléfono';
     else if (!/^0\d{8,10}$/.test(phone.replace(/\s/g, '')))
       newErrors.phone = 'Formato: 0981123456';
@@ -138,38 +142,76 @@ export default function CheckoutPage() {
   async function handleSubmit() {
     if (!validate()) return;
     setIsSubmitting(true);
+    setErrors({});
 
     try {
-      // Generate order number (timestamp-based for now)
-      const orderNumber = `F4M-${Date.now().toString(36).toUpperCase()}`;
-
-      // Store order info in sessionStorage for the confirmation page
       const orderData = {
-        orderNumber,
-        customerName: name,
-        customerPhone: phone,
-        customerAddress: `${address}, ${neighborhood}, ${city}`,
-        shippingZone: selectedZone?.label,
-        shippingCost,
-        paymentMethod,
+        customer_name: name.trim(),
+        customer_email: email.trim() || undefined,
+        customer_phone: phone.trim(),
+        shipping_address: {
+          address: address.trim(),
+          city: city.trim(),
+          neighborhood: neighborhood.trim(),
+        },
+        shipping_zone: selectedZone?.label ?? '',
+        shipping_cost: shippingCost,
+        payment_method: paymentMethod,
+        subtotal,
+        total,
+        notes: notes.trim() || undefined,
         items: items.map((item) => ({
+          product_id: item.id,
           name: item.name,
           quantity: item.quantity,
           price: item.price,
-          total: item.price * item.quantity,
         })),
-        subtotal,
-        total,
-        createdAt: new Date().toISOString(),
       };
 
-      sessionStorage.setItem('fun4me-last-order', JSON.stringify(orderData));
+      let response: Response;
 
-      // Clear cart and redirect
+      if (receiptFile) {
+        // Enviar como FormData si hay comprobante
+        const formData = new FormData();
+        formData.append('order_data', JSON.stringify(orderData));
+        formData.append('receipt', receiptFile);
+
+        response = await fetch('/api/checkout', {
+          method: 'POST',
+          body: formData,
+        });
+      } else {
+        response = await fetch('/api/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(orderData),
+        });
+      }
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        if (result.code === 'INSUFFICIENT_STOCK') {
+          setErrors({
+            submit: result.error,
+          });
+        } else if (response.status === 429) {
+          setErrors({
+            submit: 'Demasiados pedidos. Esperá un momento antes de intentar de nuevo.',
+          });
+        } else {
+          setErrors({
+            submit: result.error || 'Ocurrió un error. Por favor intentá de nuevo.',
+          });
+        }
+        return;
+      }
+
+      // Éxito: limpiar carrito y redirigir
       clearCart();
-      router.push('/confirmacion');
+      router.push(`/confirmacion?id=${result.order.id}`);
     } catch {
-      setErrors({ submit: 'Ocurrió un error. Por favor intentá de nuevo.' });
+      setErrors({ submit: 'Error de conexión. Verificá tu internet e intentá de nuevo.' });
     } finally {
       setIsSubmitting(false);
     }
@@ -254,6 +296,26 @@ export default function CheckoutPage() {
                 />
                 {errors.name && (
                   <p className="mt-1 text-xs text-red-500">{errors.name}</p>
+                )}
+              </div>
+
+              {/* Email */}
+              <div className="sm:col-span-2">
+                <Label htmlFor="email" className="mb-1.5">
+                  <Mail className="h-4 w-4 text-muted-foreground" />
+                  Correo electrónico (opcional)
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="tu@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  aria-invalid={!!errors.email}
+                  className="h-10"
+                />
+                {errors.email && (
+                  <p className="mt-1 text-xs text-red-500">{errors.email}</p>
                 )}
               </div>
 
@@ -457,6 +519,7 @@ export default function CheckoutPage() {
               <button
                 type="button"
                 onClick={() => setPaymentMethod('cod')}
+                aria-pressed={paymentMethod === 'cod'}
                 className={`flex flex-col items-center gap-3 rounded-xl border-2 p-5 transition-all ${
                   paymentMethod === 'cod'
                     ? 'border-rose-500 bg-rose-50 shadow-md'

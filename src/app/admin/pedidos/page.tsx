@@ -10,6 +10,7 @@ import {
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Eye } from 'lucide-react';
+import { formatPrice } from '@/lib/utils/format';
 import { OrderStatusFilter } from '@/components/admin/order-status-filter';
 
 interface Props {
@@ -31,14 +32,6 @@ export default async function PedidosPage({ searchParams }: Props) {
 
   const { data: ordersData } = await query;
   const orders = (ordersData as any[]) || [];
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-PY', {
-      style: 'currency',
-      currency: 'PYG',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
 
   const statusLabels: Record<string, string> = {
     pending: 'Pendiente',

@@ -87,7 +87,7 @@ export function Header() {
           <Link href="/#kinks">
             <Button variant="ghost" size="sm">Por Kink</Button>
           </Link>
-          <Link href="/#ofertas">
+          <Link href="/ofertas">
             <Button variant="ghost" size="sm">Ofertas</Button>
           </Link>
         </nav>
@@ -125,6 +125,7 @@ export function Header() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden"
             aria-label="Menú"
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>

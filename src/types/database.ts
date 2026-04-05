@@ -66,8 +66,14 @@ export interface Database {
           customer_phone: string;
           customer_email: string | null;
           customer_address: string | null;
-          status: string;
+          shipping_address: Record<string, unknown> | null;
+          shipping_zone: string | null;
+          shipping_cost: number;
+          payment_method: string | null;
+          payment_ref: string | null;
+          subtotal: number;
           total: number;
+          status: string;
           notes: string | null;
           items: OrderItem[];
         };
