@@ -99,6 +99,19 @@ export default async function ProductPage({ params }: Props) {
 
   const relatedProducts = (related || []) as unknown as (ExtendedProduct & { categories: { slug: string } | null })[];
 
+  // Cross-sell: random products from same category (excluding current + related)
+  const excludeIds = [p.id, ...relatedProducts.map((r) => r.id)];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const { data: crossSellData } = await (supabase as any)
+    .from('products')
+    .select('*, categories(slug)')
+    .eq('is_active', true)
+    .eq('category_id', p.category_id || '')
+    .not('id', 'in', `(${excludeIds.join(',')})`)
+    .limit(4);
+
+  const crossSellProducts = (crossSellData || []) as unknown as (ExtendedProduct & { categories: { slug: string } | null })[];
+
   // JSON-LD Product Schema
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -230,6 +243,18 @@ export default async function ProductPage({ params }: Props) {
               <p className="text-muted-foreground">{p.short_description}</p>
             )}
 
+            {/* Stock urgency */}
+            {p.stock > 0 && p.stock < 5 && (
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-red-100 px-3 py-1 text-sm font-semibold text-red-700">
+                🔥 ¡Quedan solo {p.stock}!
+              </div>
+            )}
+            {p.stock === 0 && (
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
+                Agotado
+              </div>
+            )}
+
             {/* Actions */}
             <ProductActions product={p} />
 
@@ -272,6 +297,24 @@ export default async function ProductPage({ params }: Props) {
                   product={{
                     ...rp,
                     category_slug: rp.categories?.slug || undefined,
+                  }}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Cross-sell */}
+        {crossSellProducts.length > 0 && (
+          <section className="mt-16">
+            <h2 className="mb-6 text-2xl font-bold">Clientes también compraron</h2>
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+              {crossSellProducts.map((cp) => (
+                <ProductCard
+                  key={cp.id}
+                  product={{
+                    ...cp,
+                    category_slug: cp.categories?.slug || undefined,
                   }}
                 />
               ))}

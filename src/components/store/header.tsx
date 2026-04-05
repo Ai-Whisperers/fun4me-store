@@ -2,20 +2,17 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { CartDrawer } from '@/components/store/cart-drawer';
+import { SearchAutocomplete } from '@/components/store/search-autocomplete';
 import { generateWhatsAppLink } from '@/lib/utils/whatsapp';
-import { Search, Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import type { ExtendedCategory, KinkCategory } from '@/types/database';
 
 export function Header() {
-  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
   const [categories, setCategories] = useState<ExtendedCategory[]>([]);
   const [kinks, setKinks] = useState<KinkCategory[]>([]);
 
@@ -30,15 +27,6 @@ export function Header() {
       if (data) setKinks(data);
     });
   }, []);
-
-  function handleSearch(e: React.FormEvent) {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      router.push(`/buscar?q=${encodeURIComponent(searchQuery.trim())}`);
-      setSearchQuery('');
-      setMobileOpen(false);
-    }
-  }
 
   const whatsappLink = generateWhatsAppLink('¡Hola! Me interesa saber más sobre Fun4Me Store.');
 
@@ -93,18 +81,7 @@ export function Header() {
         </nav>
 
         {/* Search Bar */}
-        <form onSubmit={handleSearch} className="hidden flex-1 max-w-xs md:flex">
-          <div className="relative w-full">
-            <Search className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              type="search"
-              placeholder="Buscar productos..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-8"
-            />
-          </div>
-        </form>
+        <SearchAutocomplete className="hidden flex-1 max-w-xs md:block" />
 
         {/* Right Icons */}
         <div className="flex items-center gap-3">
@@ -136,18 +113,9 @@ export function Header() {
       {mobileOpen && (
         <div className="border-t bg-background md:hidden">
           <div className="container mx-auto space-y-1 px-4 py-4">
-            <form onSubmit={handleSearch} className="mb-4">
-              <div className="relative">
-                <Search className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                <Input
-                  type="search"
-                  placeholder="Buscar productos..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-8"
-                />
-              </div>
-            </form>
+            <div className="mb-4">
+              <SearchAutocomplete onNavigate={() => setMobileOpen(false)} />
+            </div>
             <Link href="/" onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-muted">
               Inicio
             </Link>

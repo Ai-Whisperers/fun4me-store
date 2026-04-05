@@ -1,4 +1,5 @@
 import { AdminSidebarNav } from '@/components/admin/sidebar-nav';
+import { AdminMobileNav } from '@/components/admin/mobile-nav';
 
 export default function AdminLayout({
   children,
@@ -16,7 +17,8 @@ export default function AdminLayout({
         <AdminSidebarNav />
       </aside>
       <div className="flex flex-1 flex-col">
-        <header className="flex h-16 items-center border-b px-6">
+        <header className="flex h-16 items-center border-b px-6 gap-4">
+          <AdminMobileNav />
           <h1 className="text-lg font-semibold">Panel de Administración</h1>
         </header>
         <main className="flex-1 p-6 bg-muted/20">{children}</main>

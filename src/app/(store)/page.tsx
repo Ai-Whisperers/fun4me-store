@@ -94,6 +94,8 @@ export default async function HomePage() {
                         src={CATEGORY_IMAGES[cat.slug]}
                         alt={cat.name}
                         fill
+                        loading="lazy"
+                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
                         className="object-cover transition-transform group-hover:scale-105"
                       />
                     ) : (
@@ -135,6 +137,8 @@ export default async function HomePage() {
                         src={KINK_IMAGES[kink.slug]}
                         alt={kink.name}
                         fill
+                        loading="lazy"
+                        sizes="(max-width: 640px) 50vw, 33vw"
                         className="object-cover transition-transform group-hover:scale-105"
                       />
                     ) : (

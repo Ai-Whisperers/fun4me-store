@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Separator } from '@/components/ui/separator';
 import { useCartStore } from '@/lib/store/cart';
 import { formatPrice } from '@/lib/utils/format';
+import { CouponInput, type AppliedCoupon } from '@/components/store/coupon-input';
 import {
   ArrowLeft,
   Truck,
@@ -95,6 +96,7 @@ export default function CheckoutPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [mounted, setMounted] = useState(false);
+  const [appliedCoupon, setAppliedCoupon] = useState<AppliedCoupon | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -116,9 +118,10 @@ export default function CheckoutPage() {
     [shippingZone],
   );
 
-  const isFreeShipping = subtotal >= FREE_SHIPPING_THRESHOLD;
+  const couponDiscount = appliedCoupon?.discountAmount ?? 0;
+  const isFreeShipping = subtotal >= FREE_SHIPPING_THRESHOLD || appliedCoupon?.type === 'free_shipping';
   const shippingCost = isFreeShipping ? 0 : (selectedZone?.cost ?? 0);
-  const total = subtotal + shippingCost;
+  const total = subtotal - couponDiscount + shippingCost;
 
   /* ── Validation ──────────────────────────────────────────── */
   function validate(): boolean {
@@ -675,6 +678,14 @@ export default function CheckoutPage() {
         {/* ─── Right column: Order Summary ────────────────── */}
         <div className="lg:col-span-1">
           <div className="sticky top-32 space-y-6">
+            {/* Coupon Input */}
+            <div className="rounded-xl border p-6">
+              <CouponInput
+                orderTotal={subtotal}
+                onCouponApplied={setAppliedCoupon}
+              />
+            </div>
+
             {/* Order Summary Card */}
             <div className="rounded-xl border p-6">
               <h2 className="mb-4 text-lg font-bold">Resumen del Pedido</h2>
@@ -709,6 +720,12 @@ export default function CheckoutPage() {
                   <span className="text-muted-foreground">Subtotal</span>
                   <span>{formatPrice(subtotal)}</span>
                 </div>
+                {appliedCoupon && appliedCoupon.type !== 'free_shipping' && couponDiscount > 0 && (
+                  <div className="flex justify-between text-green-600">
+                    <span>Cupón ({appliedCoupon.code})</span>
+                    <span>-{formatPrice(couponDiscount)}</span>
+                  </div>
+                )}
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Envío</span>
                   <span>
@@ -719,6 +736,12 @@ export default function CheckoutPage() {
                         : formatPrice(shippingCost)}
                   </span>
                 </div>
+                {appliedCoupon?.type === 'free_shipping' && (
+                  <div className="flex justify-between text-green-600">
+                    <span className="text-xs">Cupón envío gratis</span>
+                    <span className="text-xs">Aplicado ✓</span>
+                  </div>
+                )}
                 {isFreeShipping && shippingZone && (
                   <div className="flex justify-between text-green-600">
                     <span className="text-xs">Descuento envío</span>

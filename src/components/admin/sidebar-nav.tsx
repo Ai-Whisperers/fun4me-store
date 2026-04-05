@@ -7,6 +7,10 @@ import {
   Package,
   ShoppingCart,
   LogOut,
+  FolderTree,
+  Heart,
+  Ticket,
+  Megaphone,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
@@ -26,6 +30,26 @@ const navItems = [
     label: 'Pedidos',
     href: '/admin/pedidos',
     icon: ShoppingCart,
+  },
+  {
+    label: 'Categorías',
+    href: '/admin/categorias',
+    icon: FolderTree,
+  },
+  {
+    label: 'Kinks',
+    href: '/admin/kinks',
+    icon: Heart,
+  },
+  {
+    label: 'Cupones',
+    href: '/admin/cupones',
+    icon: Ticket,
+  },
+  {
+    label: 'Anuncios',
+    href: '/admin/anuncios',
+    icon: Megaphone,
   },
 ];
 

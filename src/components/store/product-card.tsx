@@ -43,9 +43,13 @@ export function ProductCard({ product }: ProductCardProps) {
     ? Math.round(((product.compare_at_price! - product.price) / product.compare_at_price!) * 100)
     : 0;
 
+  const isOutOfStock = product.stock !== undefined && product.stock === 0;
+  const isLowStock = product.stock !== undefined && product.stock > 0 && product.stock < 5;
+
   function handleAddToCart(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
+    if (isOutOfStock) return;
     addItem({
       id: product.id,
       name: product.name,
@@ -64,6 +68,8 @@ export function ProductCard({ product }: ProductCardProps) {
             src={productImage}
             alt={product.name}
             fill
+            loading="lazy"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="object-cover transition-transform group-hover:scale-105"
           />
           {hasDiscount && (
@@ -73,6 +79,16 @@ export function ProductCard({ product }: ProductCardProps) {
           )}
           {level && (
             <span className={`absolute right-2 top-2 h-3 w-3 rounded-full ${level.dot}`} title={level.label} />
+          )}
+          {isOutOfStock && (
+            <span className="absolute left-2 bottom-2 rounded-full bg-gray-800 px-2 py-0.5 text-xs font-bold text-white">
+              Agotado
+            </span>
+          )}
+          {isLowStock && (
+            <span className="absolute left-2 bottom-2 rounded-full bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
+              ¡Quedan solo {product.stock}!
+            </span>
           )}
         </div>
         <CardContent className="space-y-2 p-3">
@@ -97,9 +113,10 @@ export function ProductCard({ product }: ProductCardProps) {
         <Button
           onClick={handleAddToCart}
           size="sm"
-          className="w-full bg-gradient-to-r from-rose-500 to-purple-600 text-white hover:from-rose-600 hover:to-purple-700"
+          disabled={isOutOfStock}
+          className={`w-full ${isOutOfStock ? 'bg-gray-400 text-white cursor-not-allowed' : 'bg-gradient-to-r from-rose-500 to-purple-600 text-white hover:from-rose-600 hover:to-purple-700'}`}
         >
-          Agregar al Carrito
+          {isOutOfStock ? 'Agotado' : 'Agregar al Carrito'}
         </Button>
       </div>
     </Card>

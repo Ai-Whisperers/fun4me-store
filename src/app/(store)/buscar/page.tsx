@@ -1,12 +1,16 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { ProductCard } from '@/components/store/product-card';
+import { Pagination } from '@/components/store/pagination';
+import { SortSelect } from '@/components/store/sort-select';
 import { Search } from 'lucide-react';
 import type { ExtendedProduct } from '@/types/database';
 import type { Metadata } from 'next';
 
+const PAGE_SIZE = 12;
+
 interface Props {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; sort?: string; page?: string }>;
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
@@ -26,18 +30,56 @@ export default async function SearchPage({ searchParams }: Props) {
   const supabase = await createClient();
 
   let products: (ExtendedProduct & { categories: { slug: string } | null })[] = [];
+  let total = 0;
+  const currentPage = Math.max(1, parseInt(sp.page || '1', 10));
 
   if (query) {
-    const { data } = await supabase
+    // Count total results
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const { count } = await (supabase as any)
+      .from('products')
+      .select('id', { count: 'exact', head: true })
+      .eq('is_active', true)
+      .or(`name.ilike.%${query}%,description.ilike.%${query}%`);
+
+    total = count || 0;
+
+    const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+    const safePage = Math.min(currentPage, totalPages);
+    const from = (safePage - 1) * PAGE_SIZE;
+    const to = from + PAGE_SIZE - 1;
+
+    let dbQuery = supabase
       .from('products')
       .select('*, categories(slug)')
       .eq('is_active', true)
-      .or(`name.ilike.%${query}%,description.ilike.%${query}%`)
-      .order('is_featured', { ascending: false })
-      .limit(24);
+      .or(`name.ilike.%${query}%,description.ilike.%${query}%`);
 
+    switch (sp.sort) {
+      case 'price-asc':
+        dbQuery = dbQuery.order('price', { ascending: true });
+        break;
+      case 'price-desc':
+        dbQuery = dbQuery.order('price', { ascending: false });
+        break;
+      case 'newest':
+        dbQuery = dbQuery.order('created_at', { ascending: false });
+        break;
+      case 'name':
+        dbQuery = dbQuery.order('name', { ascending: true });
+        break;
+      default:
+        dbQuery = dbQuery.order('is_featured', { ascending: false });
+    }
+
+    dbQuery = dbQuery.range(from, to);
+
+    const { data } = await dbQuery;
     products = (data || []) as unknown as (ExtendedProduct & { categories: { slug: string } | null })[];
   }
+
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const safePage = Math.min(currentPage, totalPages);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -53,22 +95,33 @@ export default async function SearchPage({ searchParams }: Props) {
       </h1>
       {query && (
         <p className="mb-8 text-muted-foreground">
-          {products.length} {products.length === 1 ? 'resultado encontrado' : 'resultados encontrados'}
+          {total} {total === 1 ? 'resultado encontrado' : 'resultados encontrados'}
         </p>
       )}
 
       {query && products.length > 0 && (
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={{
-                ...product,
-                category_slug: product.categories?.slug || undefined,
-              }}
-            />
-          ))}
-        </div>
+        <>
+          <div className="mb-4 flex justify-end">
+            <SortSelect />
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={{
+                  ...product,
+                  category_slug: product.categories?.slug || undefined,
+                }}
+              />
+            ))}
+          </div>
+          <Pagination
+            currentPage={safePage}
+            totalPages={totalPages}
+            totalItems={total}
+            pageSize={PAGE_SIZE}
+          />
+        </>
       )}
 
       {query && products.length === 0 && (

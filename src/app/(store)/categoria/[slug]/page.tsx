@@ -2,13 +2,17 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { ProductCard } from '@/components/store/product-card';
+import { Pagination } from '@/components/store/pagination';
+import { SortSelect } from '@/components/store/sort-select';
 import type { ExtendedProduct, ExtendedCategory } from '@/types/database';
 import type { Metadata } from 'next';
 import { CategoryFilters } from './filters';
 
+const PAGE_SIZE = 12;
+
 interface Props {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ sort?: string; level?: string; min?: string; max?: string }>;
+  searchParams: Promise<{ sort?: string; level?: string; min?: string; max?: string; page?: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -50,6 +54,34 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   if (!category) notFound();
   const cat = category as unknown as ExtendedCategory;
 
+  const currentPage = Math.max(1, parseInt(sp.page || '1', 10));
+
+  // Build query for counting
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let countQuery = (supabase as any)
+    .from('products')
+    .select('id', { count: 'exact', head: true })
+    .eq('category_id', cat.id)
+    .eq('is_active', true);
+
+  if (sp.level) {
+    countQuery = countQuery.eq('experience_level', sp.level);
+  }
+  if (sp.min) {
+    countQuery = countQuery.gte('price', parseInt(sp.min));
+  }
+  if (sp.max) {
+    countQuery = countQuery.lte('price', parseInt(sp.max));
+  }
+
+  const { count: totalCount } = await countQuery;
+  const total = totalCount || 0;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const safePage = Math.min(currentPage, totalPages);
+  const from = (safePage - 1) * PAGE_SIZE;
+  const to = from + PAGE_SIZE - 1;
+
+  // Build query for products
   let query = supabase
     .from('products')
     .select('*, categories(slug)')
@@ -67,18 +99,25 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   }
 
   switch (sp.sort) {
+    case 'price-asc':
     case 'price_asc':
       query = query.order('price', { ascending: true });
       break;
+    case 'price-desc':
     case 'price_desc':
       query = query.order('price', { ascending: false });
       break;
     case 'newest':
       query = query.order('created_at', { ascending: false });
       break;
+    case 'name':
+      query = query.order('name', { ascending: true });
+      break;
     default:
       query = query.order('is_featured', { ascending: false }).order('created_at', { ascending: false });
   }
+
+  query = query.range(from, to);
 
   const { data: products } = await query;
   const items = (products || []) as unknown as (ExtendedProduct & { categories: { slug: string } | null })[];
@@ -97,7 +136,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         {cat.description && (
           <p className="mt-2 text-muted-foreground">{cat.description}</p>
         )}
-        <p className="mt-1 text-sm text-muted-foreground">{items.length} productos</p>
+        <p className="mt-1 text-sm text-muted-foreground">{total} productos</p>
       </div>
 
       <div className="flex flex-col gap-8 lg:flex-row">
@@ -108,18 +147,31 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
         {/* Product Grid */}
         <div className="flex-1">
+          {/* Sort dropdown */}
+          <div className="mb-4 flex justify-end">
+            <SortSelect />
+          </div>
+
           {items.length > 0 ? (
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {items.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={{
-                    ...product,
-                    category_slug: product.categories?.slug || slug,
-                  }}
-                />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {items.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={{
+                      ...product,
+                      category_slug: product.categories?.slug || slug,
+                    }}
+                  />
+                ))}
+              </div>
+              <Pagination
+                currentPage={safePage}
+                totalPages={totalPages}
+                totalItems={total}
+                pageSize={PAGE_SIZE}
+              />
+            </>
           ) : (
             <div className="flex flex-col items-center justify-center py-20 text-center">
               <span className="mb-4 text-2xl font-semibold text-muted-foreground">Sin resultados</span>
