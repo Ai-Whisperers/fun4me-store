@@ -133,7 +133,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
-    "@modelcontextprotocol/sdk": "^1.25.3",
+    "@modelcontextprotocol/sdk": "^1.29.0",
     "@react-pdf/renderer": "^4.3.2",
     "@sentry/nextjs": "^10.32.1",
     "@stripe/react-stripe-js": "^5.4.1",
