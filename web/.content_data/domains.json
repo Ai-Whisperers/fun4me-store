@@ -1,71 +1,23 @@
 {
   "$schema": "./schemas/domains.schema.json",
   "version": "1.0.0",
-  "defaultDomain": "vetic.ai-whisperers.org",
+  "defaultDomain": "paragu-ai.com",
   "domains": [
     {
-      "domain": "vetic.ai-whisperers.org",
+      "domain": "paragu-ai.com",
       "tenant": "platform",
       "type": "primary",
-      "provider": "vercel",
+      "provider": "cloudflare",
       "status": "active",
       "createdAt": "2026-02-12T00:00:00Z"
     },
     {
-      "domain": "vetepy-bay.vercel.app",
+      "domain": "www.paragu-ai.com",
       "tenant": "platform",
       "type": "alias",
-      "provider": "vercel",
+      "provider": "cloudflare",
       "status": "active",
       "createdAt": "2026-02-12T00:00:00Z"
-    },
-    {
-      "domain": "terrapet.vetic.vercel.app",
-      "tenant": "terrapet",
-      "type": "subdomain",
-      "provider": "vercel",
-      "ssl": {
-        "enabled": true,
-        "autoRenew": true
-      },
-      "status": "active",
-      "createdAt": "2025-01-31T00:00:00Z"
-    },
-    {
-      "domain": "petlife.vetic.vercel.app",
-      "tenant": "petlife",
-      "type": "subdomain",
-      "provider": "vercel",
-      "ssl": {
-        "enabled": true,
-        "autoRenew": true
-      },
-      "status": "active",
-      "createdAt": "2025-01-31T00:00:00Z"
-    },
-    {
-      "domain": "cavillpet.vetic.vercel.app",
-      "tenant": "CavillPet",
-      "type": "subdomain",
-      "provider": "vercel",
-      "ssl": {
-        "enabled": true,
-        "autoRenew": true
-      },
-      "status": "active",
-      "createdAt": "2025-01-31T00:00:00Z"
-    },
-    {
-      "domain": "fun4me.vetic.vercel.app",
-      "tenant": "fun4me",
-      "type": "subdomain",
-      "provider": "vercel",
-      "ssl": {
-        "enabled": true,
-        "autoRenew": true
-      },
-      "status": "active",
-      "createdAt": "2025-01-31T00:00:00Z"
     }
   ],
   "cloudflare": {
